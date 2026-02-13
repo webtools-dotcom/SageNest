@@ -156,6 +156,7 @@ Cloudflare serves `index.html` for route hydration.
   - constrained CSS,
   - no blocking third-party scripts.
 
+
 ## Supabase Admin Setup
 
 Add these variables in `.env.local` and Cloudflare Pages environment variables:
@@ -186,3 +187,5 @@ npm run check:conflicts
 ```
 
 `npm run build` now runs these checks first via `prebuild`.
+
+

@@ -7,16 +7,24 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
+ 
     "test": "vitest run",
     "check:package": "node scripts/check-package-json.mjs",
     "check:conflicts": "bash scripts/check-conflicts.sh",
     "prebuild": "npm run check:package && npm run check:conflicts"
+
+    "test": "vitest run"
+
   },
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+
     "react-router-dom": "^6.28.0",
     "@supabase/supabase-js": "^2.49.1"
+
+    "react-router-dom": "^6.28.0"
+
   },
   "devDependencies": {
     "@types/react": "^18.3.12",
