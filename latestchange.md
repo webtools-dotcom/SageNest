@@ -5,6 +5,7 @@
 
 - Added guidance for handling the Codex limitation: when a pull request has been modified outside Codex, create a brand-new PR from the latest branch head instead of trying to update the original PR.
 - Confirmed this repository contains no unresolved git conflict markers.
+- Fixed malformed `package.json` that was breaking Cloudflare/npm installs (`EJSONPARSE`) by removing duplicated keys and restoring valid JSON structure for scripts and dependencies.
 
 ### Vibe-coder friendly steps to create a new PR safely
 
@@ -19,4 +20,3 @@
 
 - Verified codebase is clean of git conflict markers using the repository conflict check script.
 - Added explicit GitHub conflict-resolution steps for PR UI so merge-marker text is not committed by mistake.
-
