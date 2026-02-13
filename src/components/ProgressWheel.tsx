@@ -19,8 +19,10 @@ export const ProgressWheel = ({ value }: ProgressWheelProps) => {
 
   return (
     <div className="progress-wheel" role="status" aria-label={`Pregnancy progress ${percent}%`}>
-      <div className="progress-wheel__ring" style={{ '--progress': `${percent}%` } as CSSProperties}>
-        <span className="progress-wheel__value">{percent}%</span>
+      <div className="progress-wheel__ring" style={{ '--progress': `${percent}%` } as React.CSSProperties}>
+        <div className="progress-wheel__inner">
+          <div className="progress-wheel__value">{percent}%</div>
+        </div>
       </div>
       <p className="progress-wheel__label">Progress through 40 weeks</p>
     </div>
