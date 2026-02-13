@@ -14,12 +14,15 @@ function App() {
     <>
       <a href="#main-content" className="skip-link">Skip to content</a>
       <header className="site-header">
-        <Link to="/pregnancy-due-date-calculator" className="brand">SageNest</Link>
-        <nav>
-          <Link to="/pregnancy-due-date-calculator">Calculator</Link>
-          <Link to="/blog">Blog</Link>
-        </nav>
-      </header>
+  <Link to="/pregnancy-due-date-calculator" className="brand">
+    <div className="brand-icon">🌿</div>
+    SageNest
+  </Link>
+  <nav>
+    <Link to="/pregnancy-due-date-calculator">Calculator</Link>
+    <Link to="/blog">Blog</Link>
+  </nav>
+</header>
       <Routes>
         <Route path="/" element={<CalculatorPage />} />
         <Route path="/pregnancy-due-date-calculator" element={<CalculatorPage />} />
