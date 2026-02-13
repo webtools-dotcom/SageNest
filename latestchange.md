@@ -22,3 +22,11 @@
 
 - Verified codebase is clean of git conflict markers using the repository conflict check script.
 - Added explicit GitHub conflict-resolution steps for PR UI so merge-marker text is not committed by mistake.
+
+## 2026-02-13 (Calculator page refactor)
+
+- Added a dedicated `CalculatorPage` at `src/pages/Calculator.tsx` and moved calculator-page content/SEO/FAQ composition out of `App.tsx`.
+- Added new UI components: `CalculatorCard`, `CalculatorSteps`, `ResultCard`, `ProgressWheel`, `PregnancyTimeline`, `InfoGrid`, and `FAQAccordion`.
+- Updated routing so `/pregnancy-due-date-calculator` (and `/`) render the new calculator page while keeping the existing header/footer links unchanged.
+- Kept calculation logic sourced from `src/lib/calc.ts` by consuming existing utility imports from UI components.
+- Added supporting styles for the new calculator layout sections (progress wheel, timeline card, info grid, FAQ accordion).
