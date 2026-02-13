@@ -155,3 +155,37 @@ Cloudflare serves `index.html` for route hydration.
   - semantic markup,
   - constrained CSS,
   - no blocking third-party scripts.
+
+
+## Supabase Admin Setup
+
+Add these variables in `.env.local` and Cloudflare Pages environment variables:
+
+```bash
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+Configure Supabase Google OAuth redirect URLs:
+
+- `http://localhost:5173/admin/login`
+- `https://sagenest.pages.dev/admin/login`
+
+Security guidance:
+
+- Enable RLS on `blog` table.
+- Add policies so only `testforsavr@gmail.com` can `INSERT`, `UPDATE`, and `DELETE`.
+- Protect `blog` storage bucket so only admin can upload and public can read published assets.
+
+## Cloudflare Deployment Guardrails
+
+To prevent deploy failures from malformed `package.json` or unresolved merge markers, run:
+
+```bash
+npm run check:package
+npm run check:conflicts
+```
+
+`npm run build` now runs these checks first via `prebuild`.
+
+
