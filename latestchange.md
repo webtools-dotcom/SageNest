@@ -48,3 +48,10 @@
 - Moved medical disclaimer text below the result card while keeping privacy/disclaimer messaging visible in the results flow.
 - Updated calculator wiring/styles so gestational metadata feeds the new result card shape and responsive layout remains stable.
 
+
+## 2026-02-13 (Timeline + info content refresh)
+
+- Rebuilt `PregnancyTimeline` with trimester bands for weeks 1-13, 14-27, and 28-40, including a calculated current-week marker and a stacked mobile fallback view.
+- Reworked `InfoGrid` into four educational cards with icon-led headers and short explainers for calculator method, gestational age, cycle-length impact, and post-result next steps.
+- Added `Read more` links on each info card that route to existing `/about` or `/blog` pages.
+- Extended global styles with timeline band/marker styles and responsive info card styling for the new components.
