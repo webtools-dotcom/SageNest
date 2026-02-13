@@ -4,9 +4,18 @@ interface ProgressWheelProps {
   value: number;
 }
 
+const clampProgress = (value: number): number => Math.min(1, Math.max(0, value));
+
+export const progressToPercent = (value: number): number => Math.round(clampProgress(value) * 100);
+
+export const progressToCircumference = (value: number, radius: number): number => {
+  const safeRadius = Math.max(0, radius);
+  const circumference = 2 * Math.PI * safeRadius;
+  return circumference * clampProgress(value);
+};
+
 export const ProgressWheel = ({ value }: ProgressWheelProps) => {
-  const clamped = Math.min(1, Math.max(0, value));
-  const percent = Math.round(clamped * 100);
+  const percent = progressToPercent(value);
 
   return (
     <div className="progress-wheel" role="status" aria-label={`Pregnancy progress ${percent}%`}>

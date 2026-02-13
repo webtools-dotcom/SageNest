@@ -1,11 +1,6 @@
 import { type FormEvent, useMemo, useState } from 'react';
-import {
-  conceptionWindow,
-  gestationalAge,
-  lmpToDueDate,
-  trimesterFromDueDate,
-  validateLMP
-} from '../lib/calc';
+import { conceptionWindow, trimesterFromDueDate, validateLMP } from '../lib/calc';
+import { dueDateFromLMP, weeksAndDaysFromLMP } from '../lib/dateHelpers';
 import { CalculatorSteps } from './CalculatorSteps';
 import { PregnancyTimeline } from './PregnancyTimeline';
 import { ResultCard } from './ResultCard';
@@ -72,7 +67,7 @@ export const CalculatorCard = () => {
       return;
     }
 
-    setDueDate(lmpToDueDate(selectedDate, cycleLength));
+    setDueDate(dueDateFromLMP(selectedDate, cycleLength));
     setError('');
   };
 
@@ -80,7 +75,7 @@ export const CalculatorCard = () => {
     if (!dueDate || !date) return null;
 
     const lmpEstimate = new Date(`${date}T00:00:00`);
-    const ga = gestationalAge(lmpEstimate);
+    const ga = weeksAndDaysFromLMP(lmpEstimate);
     const trimester = trimesterFromDueDate(dueDate);
     const window = conceptionWindow(lmpEstimate, cycleLength);
 

@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { formatDate } from '../lib/calc';
+import { formatDateToReadable, formatWeeksAndDays } from '../lib/dateHelpers';
 import { ProgressWheel } from './ProgressWheel';
 
 interface ResultCardProps {
@@ -36,13 +36,13 @@ const getMilestoneMessage = (weeks: number) => {
 
 const getShareText = ({ dueDate, gestationalWeeks, gestationalDays, trimester, conceptionDate }: ResultCardProps) => {
   const lines = [
-    `Estimated due date: ${formatDate(dueDate)}`,
+    `Estimated due date: ${formatDateToReadable(dueDate)}`,
     `Gestational age: ${gestationalWeeks}w ${gestationalDays}d`,
     `Trimester: ${trimester}`
   ];
 
   if (conceptionDate) {
-    lines.push(`Estimated conception date: ${formatDate(conceptionDate)}`);
+    lines.push(`Estimated conception date: ${formatDateToReadable(conceptionDate)}`);
   }
 
   return lines.join('\n');
@@ -98,12 +98,12 @@ export const ResultCard = (props: ResultCardProps) => {
   return (
     <section className={`results-card results-card--reveal ${revealed ? 'is-visible' : ''}`} aria-live="polite">
       <p className="eyebrow">Estimated due date</p>
-      <h2>{formatDate(dueDate)}</h2>
+      <h2>{formatDateToReadable(dueDate)}</h2>
 
       <div className="results-card__meta">
-        <p><strong>Gestational age:</strong> {gestationalWeeks} weeks {gestationalDays} days</p>
+        <p><strong>Gestational age:</strong> {formatWeeksAndDays(gestationalWeeks, gestationalDays)}</p>
         <p><strong>Trimester:</strong> <span className="trimester-badge">{trimester}</span></p>
-        {conceptionDate ? <p><strong>Estimated conception date:</strong> {formatDate(conceptionDate)}</p> : null}
+        {conceptionDate ? <p><strong>Estimated conception date:</strong> {formatDateToReadable(conceptionDate)}</p> : null}
       </div>
 
       <div className="results-card__progress">

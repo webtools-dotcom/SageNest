@@ -4,14 +4,10 @@ SageNest is a fully static, production-ready React + TypeScript web app for preg
 
 ## Core Features
 
-- Pregnancy Due Date Calculator with three modes:
-  - LMP (Naegele’s rule + cycle-length adjustment)
-  - Conception date (+266 days)
-  - IVF transfer date (+280 minus embryo age)
-- Gestational age output (weeks + days)
+- Pregnancy Due Date Calculator with a guided 3-step LMP flow (date → cycle length → review/calculate)
+- Gestational age output with normalized week/day formatting
 - Trimester status and conception window (±3 days around ovulation estimate)
 - Local timezone date formatting
-- Client-side `.ics` calendar export
 - Native share with clipboard fallback
 - Static blog system:
   - `/blog` listing
@@ -19,7 +15,7 @@ SageNest is a fully static, production-ready React + TypeScript web app for preg
   - `/blogposter` static publishing helper
 - JSON-LD SEO schema for WebPage, FAQPage, Blog, Article, and SearchAction
 - Accessibility baseline (skip link, htmlFor labels, keyboard focus styles, aria-live)
-- Vitest unit tests for all required date scenarios
+- Vitest unit tests covering calculator math, date helper formatting, and progress-wheel mapping
 
 ## Tech Stack
 

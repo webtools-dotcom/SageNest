@@ -63,3 +63,12 @@
 - Added and exported `getFAQJsonLD(faqs)` from `FAQAccordion` to generate stringified FAQPage JSON-LD from the same Q/A source of truth.
 - Updated calculator page SEO behavior to safely inject FAQ JSON-LD via a dedicated `faq-jsonld-root` script tag in `Calculator.tsx` while preserving existing `SEOHead` metadata.
 - Updated FAQ styles in `global.css` to support the new button/panel accordion structure.
+
+## 2026-02-13 (Date helper module + calculator metadata/test updates)
+
+- Added `src/lib/dateHelpers.ts` with UI-facing helper functions (`formatDateToReadable`, `weeksAndDaysFromLMP`, `dueDateFromLMP`, `formatWeeksAndDays`) that delegate core pregnancy math to `src/lib/calc.ts`.
+- Updated calculator and results wiring to use the new helper layer without changing core math logic.
+- Updated calculator page metadata description copy while keeping title as `Pregnancy Due Date Calculator — SageNest`.
+- Added Vitest coverage for `formatWeeksAndDays()` normalization behavior and `ProgressWheel` percentage/circumference mapping helpers.
+- Added `README_UI_UPDATE.md` with a calculator component map, local test checklist, and manual QA steps.
+- Updated `README.md` calculator feature bullets to match the current LMP-first UI flow and current test coverage.
