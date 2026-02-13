@@ -13,3 +13,17 @@
 4. Use a fresh PR title/description (do not reopen the old locked PR flow).
 5. Verify the PR diff has no conflict symbols and `package.json` is valid JSON.
 6. Merge only after Cloudflare build passes.
+
+## 2026-02-14
+
+- Verified codebase is clean of git conflict markers using the repository conflict check script.
+- Added explicit GitHub conflict-resolution steps for PR UI so merge-marker text is not committed by mistake.
+
+### How to resolve this in GitHub (simple steps)
+
+1. Open the PR and click **Resolve conflicts**.
+2. For each file, keep only final code (no conflict marker lines).
+3. Click **Mark as resolved** for every conflicted file.
+4. Click **Commit merge**.
+5. Re-run Cloudflare deploy.
+6. If deploy fails again, run `npm run check:conflicts` locally before pushing.
