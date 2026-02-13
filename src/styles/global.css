@@ -1,0 +1,31 @@
+:root { color: #2d2d2d; background: #faf9f6; font-family: Inter, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #faf9f6; }
+a { color: #2d2d2d; }
+.skip-link { position:absolute; left:-9999px; }
+.skip-link:focus { left: 1rem; top: 1rem; background:#fff; padding:.5rem; }
+.site-header { display:flex; justify-content:space-between; padding:1.25rem 2rem; border-bottom:1px solid #f0ede9; position:sticky; top:0; background:#faf9f6; }
+.brand { font-family: 'Playfair Display', serif; font-size:1.6rem; text-decoration:none; }
+nav { display:flex; gap:1rem; align-items:center; }
+nav a { text-decoration:none; }
+.container { max-width: 900px; margin: 2.5rem auto; padding: 0 1rem 4rem; }
+.hero-card, .results-card, .blog-card { max-width:760px; background:#fff; border:1px solid #f0ede9; border-radius:20px; padding:2rem; margin:0 auto 2rem; }
+h1,h2,h3 { font-family: 'Playfair Display', serif; font-weight: 600; }
+.field-row { display:flex; flex-direction:column; margin-bottom:1rem; }
+label { margin-bottom:.5rem; font-weight:500; }
+input, select, textarea { height:56px; border-radius:32px; border:1px solid #efece8; padding:0 1rem; background:#fff; font:inherit; }
+textarea { height:auto; border-radius:20px; padding:1rem; }
+button { border:1px solid #efece8; border-radius:32px; padding:.85rem 1.2rem; background:#fff; cursor:pointer; }
+button:active { transform: scale(0.98); }
+button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, a:focus-visible { outline:2px solid #9aa88d; outline-offset:2px; }
+button.primary { background:#9aa88d; border-color:#9aa88d; color:#fff; width:100%; }
+.error { color:#8f2c2c; }
+.eyebrow { text-transform: uppercase; letter-spacing: .08em; font-size:.75rem; color:#666; }
+.results-card h2 { font-size:2rem; margin-top:0; }
+.cta-row { display:flex; gap:.75rem; flex-wrap:wrap; margin-bottom:2rem; }
+.privacy,.disclaimer { font-size:.9rem; color:#555; }
+.blog-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:1rem; }
+.article p, .editorial p { line-height:1.75; }
+.cta-inline { border:1px solid #efece8; border-radius:16px; padding:1rem; background:#fff; }
+.modal { border:1px solid #efece8; border-radius:20px; max-width:420px; }
+@media (max-width: 720px){ .site-header { flex-direction:column; gap:.75rem; } }
