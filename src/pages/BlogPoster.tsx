@@ -118,7 +118,7 @@ export const BlogPosterPage = () => {
     setDescription(post.description);
     setContent(post.content);
     setImageUrl(post.image_url ?? '');
-    setMessage(`Editing “${post.title}”.`);
+    setMessage(`Editing "${post.title}".`);
   };
 
   const deletePost = async (postId: string) => {
