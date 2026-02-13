@@ -9,7 +9,6 @@ import { Footer } from './components/Footer';
 import { AdminLogin } from './pages/AdminLogin';
 import { BlogPosterPage } from './pages/BlogPoster';
 import { ProtectedRoute } from './components/ProtectedRoute';
-import { BlogPoster } from './components/BlogPoster';
 
 const faq = [
   ['How accurate is a due date calculator?', 'It provides a planning estimate; your clinician may adjust dating based on ultrasound and cycle history.'],
@@ -45,7 +44,7 @@ const HomePage = () => {
         <h2>How to calculate due date with confidence</h2>
         <p>Pregnancy timelines can feel emotional and practical at the same time. You may be planning care visits, work leave, travel limits, and family support while also processing uncertainty. A due date calculator offers a grounded starting point that helps you anchor those conversations. In clinical settings, professionals usually begin with standard dating methods and then refine as needed using imaging or cycle context. The goal is not perfection on one day; the goal is thoughtful planning with realistic windows and medically informed follow-up.</p>
         <h2>What this due date calculator does</h2>
-        <p>SageNest supports three common paths: last menstrual period (LMP), conception date, and IVF embryo transfer. For LMP entries, Naegele’s rule adds 280 days and then adjusts for cycle length differences. For conception entries, the tool adds 266 days. For IVF, it applies transfer date plus 280 minus embryo age in days. These methods mirror common clinical frameworks used for early planning before full chart review.</p>
+        <p>SageNest supports three common paths: last menstrual period (LMP), conception date, and IVF embryo transfer. For LMP entries, Naegele's rule adds 280 days and then adjusts for cycle length differences. For conception entries, the tool adds 266 days. For IVF, it applies transfer date plus 280 minus embryo age in days. These methods mirror common clinical frameworks used for early planning before full chart review.</p>
         <h3>Why cycle length matters</h3>
         <p>If your cycle is longer than 28 days, ovulation may occur later, shifting the estimate forward. If shorter, timing can move earlier. That is why the calculator accepts cycles from 21 to 40 days and defaults to 28. This keeps the estimate practical for irregular but still common cycle patterns.</p>
         <h3>Gestational age made simple</h3>
@@ -84,9 +83,6 @@ function App() {
         <nav>
           <Link to="/pregnancy-due-date-calculator">Calculator</Link>
           <Link to="/blog">Blog</Link>
-          <Link to="/about">About</Link>
-          <Link to="/privacy">Privacy</Link>
-          <Link to="/blogposter">BlogPoster</Link>
         </nav>
       </header>
       <Routes>
@@ -94,7 +90,6 @@ function App() {
         <Route path="/pregnancy-due-date-calculator" element={<HomePage />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
-        <Route path="/blogposter" element={<BlogPoster />} />
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route
           path="/admin/blogposter"
