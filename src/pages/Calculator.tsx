@@ -1,10 +1,11 @@
+import { useEffect } from 'react';
 import { CalculatorCard } from '../components/CalculatorCard';
-import { FAQAccordion } from '../components/FAQAccordion';
+import { FAQAccordion, FAQItem, getFAQJsonLD } from '../components/FAQAccordion';
 import { InfoGrid } from '../components/InfoGrid';
 import { SEOHead } from '../components/SEOHead';
 import { blogPosts } from '../data/blogPosts';
 
-const faq: Array<[string, string]> = [
+const faq: FAQItem[] = [
   ['How accurate is a due date calculator?', 'It provides a planning estimate; your clinician may adjust dating based on ultrasound and cycle history.'],
   ['Can I use this with irregular cycles?', 'Yes. Enter cycle length between 21 and 40 days for a better estimate.'],
   ['Does conception date differ from LMP dating?', 'Yes. Conception-based dating starts from fertilization, while LMP starts about two weeks earlier.'],
@@ -18,9 +19,23 @@ const faq: Array<[string, string]> = [
 ];
 
 export const CalculatorPage = () => {
+  useEffect(() => {
+    const prior = document.getElementById('faq-jsonld-root');
+    if (prior) prior.remove();
+
+    const script = document.createElement('script');
+    script.id = 'faq-jsonld-root';
+    script.type = 'application/ld+json';
+    script.textContent = getFAQJsonLD(faq);
+    document.head.appendChild(script);
+
+    return () => {
+      script.remove();
+    };
+  }, []);
+
   const jsonLd = [
     { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Pregnancy Due Date Calculator — SageNest', url: 'https://sagenest.app/pregnancy-due-date-calculator' },
-    { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })) },
     { '@context': 'https://schema.org', '@type': 'Blog', name: 'SageNest Blog', url: 'https://sagenest.app/blog' },
     ...blogPosts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, url: `https://sagenest.app/blog/${post.slug}` })),
     { '@context': 'https://schema.org', '@type': 'WebSite', name: 'SageNest', potentialAction: { '@type': 'SearchAction', target: 'https://sagenest.app/blog?query={search_term_string}', 'query-input': 'required name=search_term_string' } }

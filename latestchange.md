@@ -55,3 +55,11 @@
 - Reworked `InfoGrid` into four educational cards with icon-led headers and short explainers for calculator method, gestational age, cycle-length impact, and post-result next steps.
 - Added `Read more` links on each info card that route to existing `/about` or `/blog` pages.
 - Extended global styles with timeline band/marker styles and responsive info card styling for the new components.
+
+## 2026-02-13 (FAQ accordion accessibility + schema injection)
+
+- Rebuilt `FAQAccordion` to a controlled React accordion with one expanded item at a time and keyboard support for Arrow Up/Down navigation and Enter/Space toggling.
+- Added proper ARIA wiring for FAQ triggers and panels (`aria-expanded`, `aria-controls`, panel `id`, and `aria-labelledby`).
+- Added and exported `getFAQJsonLD(faqs)` from `FAQAccordion` to generate stringified FAQPage JSON-LD from the same Q/A source of truth.
+- Updated calculator page SEO behavior to safely inject FAQ JSON-LD via a dedicated `faq-jsonld-root` script tag in `Calculator.tsx` while preserving existing `SEOHead` metadata.
+- Updated FAQ styles in `global.css` to support the new button/panel accordion structure.
