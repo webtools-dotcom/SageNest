@@ -1,5 +1,3 @@
-import type { CSSProperties } from 'react';
-
 interface ProgressWheelProps {
   value: number;
 }
