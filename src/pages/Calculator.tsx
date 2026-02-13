@@ -45,7 +45,7 @@ export const CalculatorPage = () => {
     <main id="main-content" className="container">
       <SEOHead
         title="Pregnancy Due Date Calculator — SageNest"
-        description="SageNest pregnancy due date calculator for due date calculator US, pregnancy week calculator, and how to calculate due date safely."
+        description="Estimate your due date from your last menstrual period, view current pregnancy progress by weeks and days, and get a clear planning snapshot to discuss with your care team."
         canonicalPath="/pregnancy-due-date-calculator"
         jsonLd={jsonLd}
       />
