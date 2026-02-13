@@ -77,9 +77,10 @@ button.primary { background:#9aa88d; border-color:#9aa88d; color:#fff; }
 .info-card p { margin:.2rem 0 .3rem; line-height:1.55; color:#444; }
 .info-card__action { font-weight:600; text-decoration:none; }
 .faq-list { display:grid; gap:.75rem; }
-.faq-list details { background:#fff; border:1px solid #f0ede9; border-radius:12px; padding:.85rem 1rem; }
-.faq-list summary { cursor:pointer; font-weight:600; }
-.faq-list p { margin:.7rem 0 0; line-height:1.6; }
+.faq-item { background:#fff; border:1px solid #f0ede9; border-radius:12px; padding:.3rem .9rem .8rem; }
+.faq-item__heading { margin:.2rem 0; font-size:1rem; font-family:Inter, sans-serif; }
+.faq-item__trigger { width:100%; text-align:left; padding:.55rem .2rem; border:none; background:transparent; border-radius:10px; font-weight:600; }
+.faq-item__panel p { margin:.2rem 0 0; line-height:1.6; }
 
 
 .results-card--reveal { opacity: 0; transform: translateY(10px); transition: opacity 280ms ease, transform 280ms ease; }
