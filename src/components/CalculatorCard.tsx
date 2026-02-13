@@ -6,10 +6,8 @@ import {
   trimesterFromDueDate,
   validateLMP
 } from '../lib/calc';
-import { weekSummaries } from '../data/weekSummaries';
 import { CalculatorSteps } from './CalculatorSteps';
 import { PregnancyTimeline } from './PregnancyTimeline';
-import { ProgressWheel } from './ProgressWheel';
 import { ResultCard } from './ResultCard';
 
 const CYCLE_PRESETS = [26, 28, 30] as const;
@@ -87,12 +85,10 @@ export const CalculatorCard = () => {
     const window = conceptionWindow(lmpEstimate, cycleLength);
 
     return {
-      gestational: `${ga.weeks} weeks ${ga.days} days`,
+      gestationalWeeks: ga.weeks,
+      gestationalDays: ga.days,
       trimester,
-      conceptionWindow: `${window.start.toLocaleDateString()} to ${window.end.toLocaleDateString()}`,
-      summary: weekSummaries[trimester],
-      weeks: ga.weeks,
-      days: ga.days
+      conceptionDate: window.ovulationEstimate
     };
   }, [cycleLength, date, dueDate]);
 
@@ -182,13 +178,13 @@ export const CalculatorCard = () => {
         <>
           <ResultCard
             dueDate={dueDate}
-            gestational={derived.gestational}
+            gestationalWeeks={derived.gestationalWeeks}
+            gestationalDays={derived.gestationalDays}
             trimester={derived.trimester}
-            conceptionWindow={derived.conceptionWindow}
-            summary={derived.summary}
+            conceptionDate={derived.conceptionDate}
           />
+          <p className="disclaimer">For informational purposes only. Not medical advice. Consult a healthcare provider.</p>
           <div className="results-grid">
-            <ProgressWheel weeks={derived.weeks} days={derived.days} />
             <PregnancyTimeline dueDate={dueDate} />
           </div>
         </>
