@@ -1,5 +1,4 @@
 import { CalculatorCard } from '../components/CalculatorCard';
-import { CalculatorSteps } from '../components/CalculatorSteps';
 import { FAQAccordion } from '../components/FAQAccordion';
 import { InfoGrid } from '../components/InfoGrid';
 import { SEOHead } from '../components/SEOHead';
@@ -36,7 +35,6 @@ export const CalculatorPage = () => {
         jsonLd={jsonLd}
       />
       <CalculatorCard />
-      <CalculatorSteps />
       <InfoGrid />
       <FAQAccordion items={faq} />
     </main>
