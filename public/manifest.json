@@ -1,0 +1,9 @@
+{
+  "name": "SageNest",
+  "short_name": "SageNest",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F6",
+  "theme_color": "#9AA88D",
+  "icons": [{ "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
