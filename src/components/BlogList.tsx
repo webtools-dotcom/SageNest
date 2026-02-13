@@ -28,15 +28,7 @@ export const BlogList = () => {
 
       if (error || !data) return;
 
-      const mapped: PublicBlogPost[] = data.map((item: {
-        id?: string;
-        slug: string;
-        title: string;
-        description?: string | null;
-        content: string;
-        image_url?: string | null;
-        updated_at?: string | null;
-      }) => ({
+      const mapped: PublicBlogPost[] = data.map((item) => ({
         id: item.id,
         slug: item.slug,
         title: item.title,
