@@ -10,6 +10,11 @@ import { AdminLogin } from './pages/AdminLogin';
 import { BlogPosterPage } from './pages/BlogPoster';
 import { ProtectedRoute } from './components/ProtectedRoute';
 
+import { BlogPoster } from './components/BlogPoster';
+import { SEOHead } from './components/SEOHead';
+import { blogPosts } from './data/blogPosts';
+
+
 const faq = [
   ['How accurate is a due date calculator?', 'It provides a planning estimate; your clinician may adjust dating based on ultrasound and cycle history.'],
   ['Can I use this with irregular cycles?', 'Yes. Enter cycle length between 21 and 40 days for a better estimate.'],
@@ -82,7 +87,14 @@ function App() {
         <Link to="/pregnancy-due-date-calculator" className="brand">SageNest</Link>
         <nav>
           <Link to="/pregnancy-due-date-calculator">Calculator</Link>
+
           <Link to="/blog">Blogs</Link>
+
+          <Link to="/blog">Blog</Link>
+          <Link to="/about">About</Link>
+          <Link to="/privacy">Privacy</Link>
+          <Link to="/blogposter">BlogPoster</Link>
+
         </nav>
       </header>
       <Routes>
@@ -103,6 +115,12 @@ function App() {
         <Route path="/privacy" element={<SimplePage title="Privacy" />} />
       </Routes>
       <Footer />
+
+        <Route path="/blogposter" element={<BlogPoster />} />
+        <Route path="/about" element={<SimplePage title="About SageNest" />} />
+        <Route path="/privacy" element={<SimplePage title="Privacy" />} />
+      </Routes>
+
     </>
   );
 }

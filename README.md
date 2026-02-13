@@ -155,6 +155,7 @@ Cloudflare serves `index.html` for route hydration.
   - semantic markup,
   - constrained CSS,
   - no blocking third-party scripts.
+ codex/generate-static-pregnancy-due-date-calculator-app-g1llqp
 
 ## Supabase Admin Setup
 
@@ -175,3 +176,5 @@ Security guidance:
 - Enable RLS on `blog` table.
 - Add policies so only `testforsavr@gmail.com` can `INSERT`, `UPDATE`, and `DELETE`.
 - Protect `blog` storage bucket so only admin can upload and public can read published assets.
+
+ main

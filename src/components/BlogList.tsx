@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { blogPosts as fallbackPosts } from '../data/blogPosts';
@@ -48,6 +49,16 @@ export const BlogList = () => {
   const jsonLd = [
     { '@context': 'https://schema.org', '@type': 'Blog', name: 'SageNest Pregnancy Blog', url: 'https://sagenest.app/blog' },
     ...posts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, datePublished: post.publishDate, description: post.description, url: `https://sagenest.app/blog/${post.slug}` }))
+
+import { Link } from 'react-router-dom';
+import { blogPosts } from '../data/blogPosts';
+import { SEOHead } from './SEOHead';
+
+export const BlogList = () => {
+  const jsonLd = [
+    { '@context': 'https://schema.org', '@type': 'Blog', name: 'SageNest Pregnancy Blog', url: 'https://sagenest.app/blog' },
+    ...blogPosts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, datePublished: post.publishDate, description: post.description, url: `https://sagenest.app/blog/${post.slug}` }))
+
   ];
 
   return (
@@ -55,9 +66,14 @@ export const BlogList = () => {
       <SEOHead title="Pregnancy & Due Date Guides — SageNest" description="Evidence-aware pregnancy planning guides from SageNest." canonicalPath="/blog" jsonLd={jsonLd} />
       <h1>Pregnancy & Due Date Guides — SageNest</h1>
       <div className="blog-grid">
+
         {posts.map((post) => (
           <article key={post.id ?? post.slug} className="blog-card">
             {post.image_url ? <img src={post.image_url} alt="" className="blog-thumb" loading="lazy" /> : null}
+
+        {blogPosts.map((post) => (
+          <article key={post.slug} className="blog-card">
+
             <h2><Link to={`/blog/${post.slug}`}>{post.title}</Link></h2>
             <p>{post.description}</p>
             <small>{post.publishDate} · {post.readingTime}</small>
