@@ -53,7 +53,7 @@ export const FAQAccordion = ({ items }: FAQAccordionProps) => {
 
   return (
     <section className="info-section">
-      <h2>Frequently asked questions</h2>
+      <h2>Frequently Asked Questions</h2>
       <div className="faq-list">
         {items.map(([question, answer], index) => {
           const panelId = `${sectionId}-panel-${index}`;
