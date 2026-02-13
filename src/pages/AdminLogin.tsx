@@ -25,7 +25,10 @@ export const AdminLogin = () => {
       setLoading(false);
     };
 
-    const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
+    const { data: authListener } = supabase.auth.onAuthStateChange((
+      _event: unknown,
+      session: { user?: { email?: string | null } | null } | null
+    ) => {
       const email = session?.user?.email?.toLowerCase() ?? '';
       if (!email) return;
       if (email === ADMIN_EMAIL) {
