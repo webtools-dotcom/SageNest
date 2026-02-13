@@ -59,3 +59,16 @@ button.primary { background:#9aa88d; border-color:#9aa88d; color:#fff; }
 .faq-list details { background:#fff; border:1px solid #f0ede9; border-radius:12px; padding:.85rem 1rem; }
 .faq-list summary { cursor:pointer; font-weight:600; }
 .faq-list p { margin:.7rem 0 0; line-height:1.6; }
+
+
+.results-card--reveal { opacity: 0; transform: translateY(10px); transition: opacity 280ms ease, transform 280ms ease; }
+.results-card--reveal.is-visible { opacity: 1; transform: translateY(0); }
+.results-card__meta { display:grid; gap:.35rem; margin-bottom:1rem; }
+.trimester-badge { display:inline-block; padding:.2rem .7rem; border-radius:999px; border:1px solid #d7d1c8; background:#f6f4ef; font-size:.85rem; }
+.results-card__progress { display:grid; grid-template-columns:160px 1fr; gap:1rem; align-items:center; margin-bottom:1rem; }
+.results-card__milestone { margin:0; line-height:1.55; }
+.hero-card > .disclaimer { max-width:760px; margin:-1rem auto 1.5rem; text-align:left; }
+
+@media (max-width: 720px){
+  .results-card__progress { grid-template-columns:1fr; }
+}
