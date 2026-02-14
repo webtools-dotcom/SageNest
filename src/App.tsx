@@ -6,8 +6,8 @@ import { ProtectedRoute } from './components/ProtectedRoute';
 import { AdminLogin } from './pages/AdminLogin';
 import { BlogPosterPage } from './pages/BlogPoster';
 import { CalculatorPage } from './pages/Calculator';
-
-const SimplePage = ({ title }: { title: string }) => <main id="main-content" className="container"><h1>{title}</h1><p>This static page is part of SageNest.</p></main>;
+import { AboutPage } from './pages/About';
+import { PrivacyPage } from './pages/Privacy';
 
 function App() {
   return (
@@ -37,8 +37,8 @@ function App() {
             </ProtectedRoute>
           }
         />
-        <Route path="/about" element={<SimplePage title="About SageNest" />} />
-        <Route path="/privacy" element={<SimplePage title="Privacy" />} />
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/privacy" element={<PrivacyPage />} />
       </Routes>
       <Footer />
     </>
