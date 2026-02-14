@@ -72,3 +72,10 @@
 - Added Vitest coverage for `formatWeeksAndDays()` normalization behavior and `ProgressWheel` percentage/circumference mapping helpers.
 - Added `README_UI_UPDATE.md` with a calculator component map, local test checklist, and manual QA steps.
 - Updated `README.md` calculator feature bullets to match the current LMP-first UI flow and current test coverage.
+
+## 2026-02-14 (Markdown sanitization hardening)
+
+- Hardened `markdownToHtml` to sanitize raw HTML input by stripping `<script>/<style>` tags, removing inline event-handler attributes, escaping user text, and blocking unsafe URL protocols such as `javascript:`/`data:`/`vbscript:`.
+- Kept markdown support for headings, bold text, links, paragraphs, and list rendering while routing all blog post HTML through sanitized conversion output.
+- Updated `BlogPost` to compute sanitized HTML via `markdownToHtml` before passing it to `dangerouslySetInnerHTML`.
+- Added focused Vitest coverage for malicious markdown payloads and safe markdown rendering, including fallback post content and Supabase-like content samples.
