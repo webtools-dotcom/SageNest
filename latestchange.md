@@ -79,3 +79,9 @@
 - Kept markdown support for headings, bold text, links, paragraphs, and list rendering while routing all blog post HTML through sanitized conversion output.
 - Updated `BlogPost` to compute sanitized HTML via `markdownToHtml` before passing it to `dangerouslySetInnerHTML`.
 - Added focused Vitest coverage for malicious markdown payloads and safe markdown rendering, including fallback post content and Supabase-like content samples.
+
+## 2026-02-14 (BlogPoster admin guard parity)
+
+- Added `assertAdminUser` in `src/pages/BlogPoster.tsx` to validate Supabase `auth.getUser()` against `ADMIN_EMAIL` before admin blog operations.
+- Added `runAdminGuardedAction` helper and applied it at the start of `loadPosts`, `onUpload`, `savePost`, and `deletePost` so unauthorized attempts stop immediately and surface clear messages via `setMessage(...)`.
+- Added unit tests in `tests/blogPosterAuth.test.ts` to cover helper authorization logic and an unauthorized action-abort path.

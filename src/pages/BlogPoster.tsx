@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { supabase } from '../supabase/client';
+import { ADMIN_EMAIL, supabase } from '../supabase/client';
 
 interface BlogRow {
   id: string;
@@ -21,6 +21,35 @@ const slugify = (value: string): string =>
     .replace(/\s+/g, '-')
     .replace(/-+/g, '-');
 
+const UNAUTHORIZED_MESSAGE = 'You are not authorized to manage blog posts.';
+
+export const assertAdminUser = async () => {
+  const { data, error } = await supabase.auth.getUser();
+
+  if (error) {
+    throw new Error(`Authorization check failed: ${error.message}`);
+  }
+
+  if ((data.user?.email ?? '').toLowerCase() !== ADMIN_EMAIL) {
+    throw new Error(UNAUTHORIZED_MESSAGE);
+  }
+};
+
+export const runAdminGuardedAction = async (
+  setMessage: (message: string) => void,
+  action: () => Promise<void>
+) => {
+  try {
+    await assertAdminUser();
+  } catch (error) {
+    setMessage(error instanceof Error ? error.message : UNAUTHORIZED_MESSAGE);
+    return false;
+  }
+
+  await action();
+  return true;
+};
+
 export const BlogPosterPage = () => {
   const [id, setId] = useState<string | null>(null);
   const [title, setTitle] = useState('');
@@ -35,17 +64,19 @@ export const BlogPosterPage = () => {
   const resolvedSlug = useMemo(() => (slug.trim() ? slugify(slug) : slugify(title)), [slug, title]);
 
   const loadPosts = async () => {
-    const { data, error } = await supabase
-      .from('blog')
-      .select('*')
-      .order('updated_at', { ascending: false });
+    await runAdminGuardedAction(setMessage, async () => {
+      const { data, error } = await supabase
+        .from('blog')
+        .select('*')
+        .order('updated_at', { ascending: false });
 
-    if (error) {
-      setMessage(`Failed to load posts: ${error.message}`);
-      return;
-    }
+      if (error) {
+        setMessage(`Failed to load posts: ${error.message}`);
+        return;
+      }
 
-    setPosts((data ?? []) as BlogRow[]);
+      setPosts((data ?? []) as BlogRow[]);
+    });
   };
 
   useEffect(() => {
@@ -62,53 +93,57 @@ export const BlogPosterPage = () => {
   };
 
   const onUpload = async (file: File) => {
-    const fileExt = file.name.split('.').pop() ?? 'jpg';
-    const filePath = `${Date.now()}-${slugify(file.name.replace(/\.[^.]+$/, ''))}.${fileExt}`;
+    await runAdminGuardedAction(setMessage, async () => {
+      const fileExt = file.name.split('.').pop() ?? 'jpg';
+      const filePath = `${Date.now()}-${slugify(file.name.replace(/\.[^.]+$/, ''))}.${fileExt}`;
 
-    const { error } = await supabase.storage.from('blog').upload(filePath, file, { upsert: false });
-    if (error) {
-      setMessage(`Image upload failed: ${error.message}`);
-      return;
-    }
+      const { error } = await supabase.storage.from('blog').upload(filePath, file, { upsert: false });
+      if (error) {
+        setMessage(`Image upload failed: ${error.message}`);
+        return;
+      }
 
-    const { data } = supabase.storage.from('blog').getPublicUrl(filePath);
-    setImageUrl(data.publicUrl);
-    setMessage('Image uploaded successfully.');
+      const { data } = supabase.storage.from('blog').getPublicUrl(filePath);
+      setImageUrl(data.publicUrl);
+      setMessage('Image uploaded successfully.');
+    });
   };
 
   const savePost = async (isPublished: boolean) => {
-    if (!title.trim() || !resolvedSlug || !content.trim()) {
-      setMessage('Title, slug, and content are required.');
-      return;
-    }
+    await runAdminGuardedAction(setMessage, async () => {
+      if (!title.trim() || !resolvedSlug || !content.trim()) {
+        setMessage('Title, slug, and content are required.');
+        return;
+      }
 
-    setLoading(true);
-    setMessage('');
+      setLoading(true);
+      setMessage('');
 
-    const payload = {
-      title: title.trim(),
-      slug: resolvedSlug,
-      description: description.trim(),
-      content,
-      image_url: imageUrl || null,
-      is_published: isPublished,
-      updated_at: new Date().toISOString()
-    };
+      const payload = {
+        title: title.trim(),
+        slug: resolvedSlug,
+        description: description.trim(),
+        content,
+        image_url: imageUrl || null,
+        is_published: isPublished,
+        updated_at: new Date().toISOString()
+      };
 
-    const result = id
-      ? await supabase.from('blog').update(payload).eq('id', id).select().single()
-      : await supabase.from('blog').insert({ ...payload, created_at: new Date().toISOString() }).select().single();
+      const result = id
+        ? await supabase.from('blog').update(payload).eq('id', id).select().single()
+        : await supabase.from('blog').insert({ ...payload, created_at: new Date().toISOString() }).select().single();
 
-    setLoading(false);
+      setLoading(false);
 
-    if (result.error) {
-      setMessage(`Failed to save: ${result.error.message}`);
-      return;
-    }
+      if (result.error) {
+        setMessage(`Failed to save: ${result.error.message}`);
+        return;
+      }
 
-    setMessage(isPublished ? 'Post published successfully.' : 'Draft saved successfully.');
-    resetForm();
-    await loadPosts();
+      setMessage(isPublished ? 'Post published successfully.' : 'Draft saved successfully.');
+      resetForm();
+      await loadPosts();
+    });
   };
 
   const editPost = (post: BlogRow) => {
@@ -122,18 +157,20 @@ export const BlogPosterPage = () => {
   };
 
   const deletePost = async (postId: string) => {
-    const confirmed = window.confirm('Delete this post? This cannot be undone.');
-    if (!confirmed) return;
+    await runAdminGuardedAction(setMessage, async () => {
+      const confirmed = window.confirm('Delete this post? This cannot be undone.');
+      if (!confirmed) return;
 
-    const { error } = await supabase.from('blog').delete().eq('id', postId);
-    if (error) {
-      setMessage(`Delete failed: ${error.message}`);
-      return;
-    }
+      const { error } = await supabase.from('blog').delete().eq('id', postId);
+      if (error) {
+        setMessage(`Delete failed: ${error.message}`);
+        return;
+      }
 
-    setMessage('Post deleted.');
-    if (id === postId) resetForm();
-    await loadPosts();
+      setMessage('Post deleted.');
+      if (id === postId) resetForm();
+      await loadPosts();
+    });
   };
 
   return (
