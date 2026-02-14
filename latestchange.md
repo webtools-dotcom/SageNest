@@ -85,3 +85,8 @@
 - Added `assertAdminUser` in `src/pages/BlogPoster.tsx` to validate Supabase `auth.getUser()` against `ADMIN_EMAIL` before admin blog operations.
 - Added `runAdminGuardedAction` helper and applied it at the start of `loadPosts`, `onUpload`, `savePost`, and `deletePost` so unauthorized attempts stop immediately and surface clear messages via `setMessage(...)`.
 - Added unit tests in `tests/blogPosterAuth.test.ts` to cover helper authorization logic and an unauthorized action-abort path.
+
+## 2026-02-14 (Git ignore secret patterns hardening)
+
+- Updated the repository root `.gitignore` to keep existing frontend build/test ignores (`node_modules`, `dist`, `.vite`, `coverage`) and add required secret-safe entries from `SECURITY.md`: `.env`, `.env.local`, `.env.*.local`, `*.key`, `*.pem`, and `secrets/`.
+- Ran tracked-file checks to verify no files matching secret patterns are currently committed.
