@@ -1,16 +1,62 @@
-export const markdownToHtml = (markdown: string): string => {
+const removeRawHtml = (markdown: string): string => {
   return markdown
-    .replace(/^###\s(.+)$/gm, '<h3>$1</h3>')
-    .replace(/^##\s(.+)$/gm, '<h2>$1</h2>')
-    .replace(/^#\s(.+)$/gm, '<h1>$1</h1>')
-    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-    .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2">$1</a>')
-    .replace(/^-\s(.+)$/gm, '<li>$1</li>')
-    .replace(/(<li>.*<\/li>)/gs, '<ul>$1</ul>')
+    .replace(/<\s*(script|style)\b[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, '')
+    .replace(/\son\w+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, '')
+    .replace(/<[^>]+>/g, '');
+};
+
+const escapeHtml = (value: string): string => {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+};
+
+const sanitizeUrl = (url: string): string => {
+  const trimmed = url.trim();
+  const firstToken = trimmed.split(/\s+/)[0]?.replace(/^['"]|['"]$/g, '') ?? '';
+  const normalized = firstToken.replace(/[\u0000-\u001F\u007F\s]+/g, '').toLowerCase();
+
+  if (normalized.startsWith('javascript:') || normalized.startsWith('data:') || normalized.startsWith('vbscript:')) {
+    return '#';
+  }
+
+  return firstToken;
+};
+
+const renderInlineMarkdown = (text: string): string => {
+  const escaped = escapeHtml(text);
+
+  return escaped
+    .replace(/\[(.*?)\]\((.*?)\)/g, (_match, label: string, href: string) => `<a href="${escapeHtml(sanitizeUrl(href))}">${label}</a>`)
+    .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+};
+
+export const markdownToHtml = (markdown: string): string => {
+  const cleanMarkdown = removeRawHtml(markdown);
+
+  return cleanMarkdown
     .split(/\n\n+/)
+    .map((rawBlock) => rawBlock.trim())
+    .filter(Boolean)
     .map((block) => {
-      if (block.startsWith('<h') || block.startsWith('<ul>')) return block;
-      return `<p>${block.replace(/\n/g, '<br />')}</p>`;
+      const lines = block.split('\n').map((line) => line.trim());
+
+      if (lines.length === 1) {
+        const line = lines[0];
+        if (line.startsWith('### ')) return `<h3>${renderInlineMarkdown(line.slice(4))}</h3>`;
+        if (line.startsWith('## ')) return `<h2>${renderInlineMarkdown(line.slice(3))}</h2>`;
+        if (line.startsWith('# ')) return `<h1>${renderInlineMarkdown(line.slice(2))}</h1>`;
+      }
+
+      if (lines.every((line) => /^-\s+/.test(line))) {
+        const items = lines.map((line) => `<li>${renderInlineMarkdown(line.replace(/^-\s+/, ''))}</li>`).join('');
+        return `<ul>${items}</ul>`;
+      }
+
+      return `<p>${lines.map((line) => renderInlineMarkdown(line)).join('<br />')}</p>`;
     })
     .join('');
 };

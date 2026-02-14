@@ -50,6 +50,7 @@ export const BlogPost = () => {
   }, [slug]);
 
   const related = useMemo(() => fallbackPosts.filter((p) => p.slug !== post?.slug).slice(0, 2), [post?.slug]);
+  const postHtml = useMemo(() => markdownToHtml(post?.content ?? ''), [post?.content]);
 
   if (!post) return <main className="container"><h1>Post not found</h1></main>;
 
@@ -64,7 +65,7 @@ export const BlogPost = () => {
       <h1>{post.title}</h1>
       <p>{post.publishDate} · {post.readingTime}</p>
       {post.image_url ? <img src={post.image_url} alt="" className="blog-cover" loading="lazy" /> : null}
-      <div dangerouslySetInnerHTML={{ __html: markdownToHtml(post.content) }} />
+      <div dangerouslySetInnerHTML={{ __html: postHtml }} />
       <aside className="cta-inline"><h3>Try our Pregnancy Due Date Calculator</h3><Link to="/pregnancy-due-date-calculator">Open calculator</Link></aside>
       <section>
         <h2>Related posts</h2>
