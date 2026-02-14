@@ -22,6 +22,26 @@ const slugify = (value: string): string =>
     .replace(/-+/g, '-');
 
 const UNAUTHORIZED_MESSAGE = 'You are not authorized to manage blog posts.';
+const MAX_UPLOAD_SIZE_BYTES = 2 * 1024 * 1024;
+
+export const ALLOWED_IMAGE_MIME_TO_EXTENSION: Record<string, string> = {
+  'image/jpeg': 'jpg',
+  'image/png': 'png',
+  'image/webp': 'webp'
+};
+
+export const validateBlogImageUpload = (file: File): string | null => {
+  if (!(file.type in ALLOWED_IMAGE_MIME_TO_EXTENSION)) {
+    const allowedMimeList = Object.keys(ALLOWED_IMAGE_MIME_TO_EXTENSION).join(', ');
+    return `Unsupported image type. Please upload one of: ${allowedMimeList}.`;
+  }
+
+  if (file.size > MAX_UPLOAD_SIZE_BYTES) {
+    return 'Image is too large. Maximum allowed size is 2MB.';
+  }
+
+  return null;
+};
 
 export const assertAdminUser = async () => {
   const { data, error } = await supabase.auth.getUser();
@@ -94,7 +114,13 @@ export const BlogPosterPage = () => {
 
   const onUpload = async (file: File) => {
     await runAdminGuardedAction(setMessage, async () => {
-      const fileExt = file.name.split('.').pop() ?? 'jpg';
+      const validationMessage = validateBlogImageUpload(file);
+      if (validationMessage) {
+        setMessage(validationMessage);
+        return;
+      }
+
+      const fileExt = ALLOWED_IMAGE_MIME_TO_EXTENSION[file.type];
       const filePath = `${Date.now()}-${slugify(file.name.replace(/\.[^.]+$/, ''))}.${fileExt}`;
 
       const { error } = await supabase.storage.from('blog').upload(filePath, file, { upsert: false });

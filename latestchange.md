@@ -90,3 +90,10 @@
 
 - Updated the repository root `.gitignore` to keep existing frontend build/test ignores (`node_modules`, `dist`, `.vite`, `coverage`) and add required secret-safe entries from `SECURITY.md`: `.env`, `.env.local`, `.env.*.local`, `*.key`, `*.pem`, and `secrets/`.
 - Ran tracked-file checks to verify no files matching secret patterns are currently committed.
+
+## 2026-02-14 (BlogPoster upload validation hardening)
+
+- Added MIME allowlist validation in `src/pages/BlogPoster.tsx` for image uploads (`image/jpeg`, `image/png`, `image/webp`) with clear user-facing rejection messaging.
+- Added max image size enforcement (2MB) before Supabase Storage upload and abort behavior for invalid files.
+- Updated upload filename extension generation to use a trusted MIME-to-extension mapping rather than raw filename extension parsing.
+- Added `tests/blogPosterUploadValidation.test.ts` coverage for allowed uploads, disallowed MIME rejection, and oversized file rejection.
