@@ -1089,6 +1089,13 @@ button:disabled {
   line-height: 1.6;
 }
 
+
+.field-help {
+  color: var(--text-tertiary);
+  font-size: 0.8125rem;
+  margin-top: var(--space-xs);
+}
+
 /* Utility Classes */
 .error {
   color: #C14545;

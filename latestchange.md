@@ -1,6 +1,16 @@
  
 # Latest Change Log
 
+
+## 2026-02-16 (React pregnancy weight gain calculator accessibility + guidance)
+
+- Added `src/pages/PregnancyWeightGainCalculator.tsx` with native labeled form controls for pre-pregnancy weight, height, trimester, optional week, and optional current weight.
+- Implemented accessibility wiring for helper text + inline validation (`aria-describedby`, `aria-invalid`, and `role="alert"` for field errors).
+- Added live-updating result output using `role="status"` + `aria-live="polite"` to announce BMI, BMI category, IOM total gain range, and week-specific gain recommendations.
+- Added optional gain-so-far output when current weight is entered and included a clear clinical caveat to contact a practitioner for personalized care.
+- Wired a new React route in `src/App.tsx` for `/pregnancy-weight-gain-calculator` and added helper-text styling in `src/styles/global.css`.
+- Updated `README.md` feature and route documentation to reflect the live pregnancy weight gain calculator page.
+
 ## 2026-02-13
 
 - Added guidance for handling the Codex limitation: when a pull request has been modified outside Codex, create a brand-new PR from the latest branch head instead of trying to update the original PR.
