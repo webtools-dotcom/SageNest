@@ -106,3 +106,10 @@
 - Added optional client-side enhancement JavaScript for interactive weight-gain estimates while preserving meaningful no-JS content.
 - Updated `public/_redirects` to map `/pregnancy-weight-gain-calculator` directly to the static HTML before SPA fallback.
 - Added the new calculator URL to `public/sitemap.xml`.
+
+## 2026-02-16 (Internal linking update for pregnancy calculators)
+
+- Added contextual educational copy on the due-date calculator page that links directly to `/pregnancy-weight-gain-calculator` from main content (not nav/footer).
+- Expanded footer resource links with descriptive anchor text and added a direct inbound link to `/pregnancy-weight-gain-calculator`.
+- Added a new "Related tools" section on the static pregnancy weight gain calculator page linking to `/pregnancy-due-date-calculator` and `/about`.
+- Kept all new links as standard React `Link` or HTML `<a>` elements with clear, descriptive anchor text.
