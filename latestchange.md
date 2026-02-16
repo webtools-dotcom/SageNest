@@ -97,3 +97,12 @@
 - Added max image size enforcement (2MB) before Supabase Storage upload and abort behavior for invalid files.
 - Updated upload filename extension generation to use a trusted MIME-to-extension mapping rather than raw filename extension parsing.
 - Added `tests/blogPosterUploadValidation.test.ts` coverage for allowed uploads, disallowed MIME rejection, and oversized file rejection.
+
+## 2026-02-16 (Static pre-rendered pregnancy weight gain route)
+
+- Added a fully pre-rendered HTML page at `public/pregnancy-weight-gain-calculator/index.html` so `/pregnancy-weight-gain-calculator` serves crawlable content without JavaScript.
+- Included required SEO tags in initial HTML (`<title>`, 150–160 char description meta, canonical URL) and visible on-page content sections (H1, intro, explainer, ranges table, FAQ).
+- Embedded FAQ JSON-LD directly in the static HTML with question/answer text matching the visible FAQ copy exactly.
+- Added optional client-side enhancement JavaScript for interactive weight-gain estimates while preserving meaningful no-JS content.
+- Updated `public/_redirects` to map `/pregnancy-weight-gain-calculator` directly to the static HTML before SPA fallback.
+- Added the new calculator URL to `public/sitemap.xml`.
