@@ -8,6 +8,35 @@
 - Added `https://sagenest.app/pregnancy-weight-gain-calculator` to `public/sitemap.xml` for crawl discovery.
 - Verified `public/robots.txt` still points at `https://sagenest.app/sitemap.xml` and does not include `noindex` directives.
 
+
+
+## 2026-02-16 (Pregnancy weight gain calculator QA docs + numeric test coverage)
+
+- Added shared calculator logic in `src/lib/pregnancyWeightGain.ts` for BMI band selection, total gain ranges, week-based gain targets, and gain-so-far outputs.
+- Updated `src/pages/PregnancyWeightGainCalculator.tsx` to reuse the shared helper so UI output and test expectations stay aligned.
+- Added `tests/pregnancyWeightGain.test.ts` with at least three concrete numeric scenarios validating BMI, BMI category, total gain range, and gain-so-far values.
+- Appended rollback + local test guidance to `README_UI_UPDATE.md`, including touched files and quick route/page/sitemap revert steps.
+
+
+## 2026-02-16 (Static pregnancy weight gain content expansion + FAQ schema sync)
+
+- Expanded `public/pregnancy-weight-gain-calculator/index.html` with 600–800 words of plain-English educational content, including a 40–60 word intro caveat, an extended "How it works" section, and clearer counseling context.
+- Kept a compact recommended-ranges table for singleton pregnancies with category rows for underweight, normal weight, overweight, and obese BMI groups plus total gain ranges in kilograms.
+- Added a related-tools section with direct links to `/pregnancy-due-date-calculator`, `/blog`, and `/about`.
+- Added five visible FAQ items below the main content and updated the inline `FAQPage` JSON-LD so each `mainEntity` question/answer exactly mirrors visible FAQ text.
+- Verified consistency so FAQ numeric gain values match the visible ranges table (normal: 11.5–16 kg, overweight: 7–11.5 kg, obesity: 5–9 kg).
+
+
+## 2026-02-16 (React pregnancy weight gain calculator accessibility + guidance)
+
+- Added `src/pages/PregnancyWeightGainCalculator.tsx` with native labeled form controls for pre-pregnancy weight, height, trimester, optional week, and optional current weight.
+- Implemented accessibility wiring for helper text + inline validation (`aria-describedby`, `aria-invalid`, and `role="alert"` for field errors).
+- Added live-updating result output using `role="status"` + `aria-live="polite"` to announce BMI, BMI category, IOM total gain range, and week-specific gain recommendations.
+- Added optional gain-so-far output when current weight is entered and included a clear clinical caveat to contact a practitioner for personalized care.
+- Wired a new React route in `src/App.tsx` for `/pregnancy-weight-gain-calculator` and added helper-text styling in `src/styles/global.css`.
+- Updated `README.md` feature and route documentation to reflect the live pregnancy weight gain calculator page.
+
+
 ## 2026-02-13
 
 - Added guidance for handling the Codex limitation: when a pull request has been modified outside Codex, create a brand-new PR from the latest branch head instead of trying to update the original PR.
@@ -104,3 +133,19 @@
 - Added max image size enforcement (2MB) before Supabase Storage upload and abort behavior for invalid files.
 - Updated upload filename extension generation to use a trusted MIME-to-extension mapping rather than raw filename extension parsing.
 - Added `tests/blogPosterUploadValidation.test.ts` coverage for allowed uploads, disallowed MIME rejection, and oversized file rejection.
+
+## 2026-02-16 (Static pre-rendered pregnancy weight gain route)
+
+- Added a fully pre-rendered HTML page at `public/pregnancy-weight-gain-calculator/index.html` so `/pregnancy-weight-gain-calculator` serves crawlable content without JavaScript.
+- Included required SEO tags in initial HTML (`<title>`, 150–160 char description meta, canonical URL) and visible on-page content sections (H1, intro, explainer, ranges table, FAQ).
+- Embedded FAQ JSON-LD directly in the static HTML with question/answer text matching the visible FAQ copy exactly.
+- Added optional client-side enhancement JavaScript for interactive weight-gain estimates while preserving meaningful no-JS content.
+- Updated `public/_redirects` to map `/pregnancy-weight-gain-calculator` directly to the static HTML before SPA fallback.
+- Added the new calculator URL to `public/sitemap.xml`.
+
+## 2026-02-16 (Internal linking update for pregnancy calculators)
+
+- Added contextual educational copy on the due-date calculator page that links directly to `/pregnancy-weight-gain-calculator` from main content (not nav/footer).
+- Expanded footer resource links with descriptive anchor text and added a direct inbound link to `/pregnancy-weight-gain-calculator`.
+- Added a new "Related tools" section on the static pregnancy weight gain calculator page linking to `/pregnancy-due-date-calculator` and `/about`.
+- Kept all new links as standard React `Link` or HTML `<a>` elements with clear, descriptive anchor text.
