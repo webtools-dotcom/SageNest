@@ -47,3 +47,26 @@ Expected:
    - future LMP date shows validation error,
    - out-of-range cycle length shows validation error,
    - large day normalization displays correctly in formatted values (covered by unit tests).
+
+## Rollback + local test quick guide (pregnancy weight gain feature)
+
+### Files touched in this update
+
+- `src/lib/pregnancyWeightGain.ts`
+- `src/pages/PregnancyWeightGainCalculator.tsx`
+- `tests/pregnancyWeightGain.test.ts`
+- `README_UI_UPDATE.md`
+- `latestchange.md`
+
+### Quick rollback for route/page/sitemap changes
+
+1. Revert route registration in `src/App.tsx` (remove `/pregnancy-weight-gain-calculator` route) if you need to disable the React page quickly.
+2. Revert static route mapping in `public/_redirects` for `/pregnancy-weight-gain-calculator` if you need to send traffic back to SPA fallback.
+3. Revert `/pregnancy-weight-gain-calculator` entry in `public/sitemap.xml` to remove the URL from discovery.
+4. Deploy rollback commit and run URL Inspection in Google Search Console to request re-crawl.
+
+### Local test commands
+
+1. `npm run test -- pregnancyWeightGain.test.ts`
+2. `npm run test`
+3. `npm run build`
