@@ -2,6 +2,15 @@
 # Latest Change Log
 
 
+
+## 2026-02-16 (Pregnancy weight gain calculator QA docs + numeric test coverage)
+
+- Added shared calculator logic in `src/lib/pregnancyWeightGain.ts` for BMI band selection, total gain ranges, week-based gain targets, and gain-so-far outputs.
+- Updated `src/pages/PregnancyWeightGainCalculator.tsx` to reuse the shared helper so UI output and test expectations stay aligned.
+- Added `tests/pregnancyWeightGain.test.ts` with at least three concrete numeric scenarios validating BMI, BMI category, total gain range, and gain-so-far values.
+- Appended rollback + local test guidance to `README_UI_UPDATE.md`, including touched files and quick route/page/sitemap revert steps.
+
+
 ## 2026-02-16 (Static pregnancy weight gain content expansion + FAQ schema sync)
 
 - Expanded `public/pregnancy-weight-gain-calculator/index.html` with 600–800 words of plain-English educational content, including a 40–60 word intro caveat, an extended "How it works" section, and clearer counseling context.

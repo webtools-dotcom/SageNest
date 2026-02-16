@@ -1,31 +1,6 @@
 import { ChangeEvent, useMemo, useState } from 'react';
 import { SEOHead } from '../components/SEOHead';
-
-type Trimester = 'first' | 'second' | 'third';
-
-type BMIBand = {
-  key: 'underweight' | 'normal' | 'overweight' | 'obesity';
-  label: string;
-  min: number;
-  max: number;
-  totalGain: [number, number];
-  weeklyGain: [number, number];
-};
-
-const bmiBands: BMIBand[] = [
-  { key: 'underweight', label: 'Underweight (BMI below 18.5)', min: 0, max: 18.5, totalGain: [12.5, 18], weeklyGain: [0.44, 0.58] },
-  { key: 'normal', label: 'Normal weight (BMI 18.5 to 24.9)', min: 18.5, max: 25, totalGain: [11.5, 16], weeklyGain: [0.35, 0.5] },
-  { key: 'overweight', label: 'Overweight (BMI 25.0 to 29.9)', min: 25, max: 30, totalGain: [7, 11.5], weeklyGain: [0.23, 0.33] },
-  { key: 'obesity', label: 'Obesity (BMI 30.0 and above)', min: 30, max: Number.POSITIVE_INFINITY, totalGain: [5, 9], weeklyGain: [0.17, 0.27] }
-];
-
-const weekRanges: Record<Trimester, [number, number]> = {
-  first: [1, 13],
-  second: [14, 27],
-  third: [28, 42]
-};
-
-const formatKg = (value: number): string => `${value.toFixed(1)} kg`;
+import { calculatePregnancyWeightGain, formatKg, Trimester, weekRanges } from '../lib/pregnancyWeightGain';
 
 export const PregnancyWeightGainCalculatorPage = () => {
   const [prePregnancyWeight, setPrePregnancyWeight] = useState('');
@@ -74,10 +49,9 @@ export const PregnancyWeightGainCalculatorPage = () => {
       return { errors, bmi: null, band: null, weekValue, currentWeightValue };
     }
 
-    const bmi = preWeightValue / Math.pow(heightValue / 100, 2);
-    const band = bmiBands.find((entry) => bmi >= entry.min && bmi < entry.max) ?? bmiBands[bmiBands.length - 1];
+    const results = calculatePregnancyWeightGain(preWeightValue, heightValue);
 
-    return { errors, bmi, band, weekValue, currentWeightValue };
+    return { errors, bmi: results.bmi, band: results.band, weekValue, currentWeightValue };
   }, [prePregnancyWeight, heightCm, currentWeek, currentWeight, trimester]);
 
   const progress = useMemo(() => {
@@ -85,16 +59,7 @@ export const PregnancyWeightGainCalculatorPage = () => {
       return null;
     }
 
-    const [weeklyLow, weeklyHigh] = parsed.band.weeklyGain;
-
-    if (parsed.weekValue <= 13) {
-      return { min: 0.5, max: 2 };
-    }
-
-    return {
-      min: 0.5 + (parsed.weekValue - 13) * weeklyLow,
-      max: 2 + (parsed.weekValue - 13) * weeklyHigh
-    };
+    return calculatePregnancyWeightGain(Number(prePregnancyWeight), Number(heightCm), parsed.weekValue).recommendedByWeek;
   }, [parsed]);
 
   const currentGain = useMemo(() => {
@@ -103,7 +68,7 @@ export const PregnancyWeightGainCalculatorPage = () => {
       return null;
     }
 
-    return parsed.currentWeightValue - preWeightValue;
+    return calculatePregnancyWeightGain(preWeightValue, Number(heightCm), undefined, parsed.currentWeightValue).gainSoFar;
   }, [prePregnancyWeight, parsed.currentWeightValue, parsed.errors.currentWeight]);
 
   const preWeightHelp = 'pre-pregnancy-weight-help';
