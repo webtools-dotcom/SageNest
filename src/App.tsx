@@ -8,6 +8,7 @@ import { BlogPosterPage } from './pages/BlogPoster';
 import { CalculatorPage } from './pages/Calculator';
 import { AboutPage } from './pages/About';
 import { PrivacyPage } from './pages/Privacy';
+import { PregnancyWeightGainCalculatorPage } from './pages/PregnancyWeightGainCalculator';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<CalculatorPage />} />
         <Route path="/pregnancy-due-date-calculator" element={<CalculatorPage />} />
+        <Route path="/pregnancy-weight-gain-calculator" element={<PregnancyWeightGainCalculatorPage />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/admin/login" element={<AdminLogin />} />

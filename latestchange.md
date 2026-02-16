@@ -1,6 +1,13 @@
  
 # Latest Change Log
 
+## 2026-02-16
+
+- Added a new routed page `src/pages/PregnancyWeightGainCalculator.tsx` that keeps pregnancy-weight-gain calculator UI and calculation logic self-contained for easy rollback.
+- Registered `/pregnancy-weight-gain-calculator` in `src/App.tsx` using `PregnancyWeightGainCalculatorPage`.
+- Added `https://sagenest.app/pregnancy-weight-gain-calculator` to `public/sitemap.xml` for crawl discovery.
+- Verified `public/robots.txt` still points at `https://sagenest.app/sitemap.xml` and does not include `noindex` directives.
+
 ## 2026-02-13
 
 - Added guidance for handling the Codex limitation: when a pull request has been modified outside Codex, create a brand-new PR from the latest branch head instead of trying to update the original PR.
