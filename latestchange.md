@@ -2,6 +2,15 @@
 # Latest Change Log
 
 
+## 2026-02-16 (Static pregnancy weight gain content expansion + FAQ schema sync)
+
+- Expanded `public/pregnancy-weight-gain-calculator/index.html` with 600–800 words of plain-English educational content, including a 40–60 word intro caveat, an extended "How it works" section, and clearer counseling context.
+- Kept a compact recommended-ranges table for singleton pregnancies with category rows for underweight, normal weight, overweight, and obese BMI groups plus total gain ranges in kilograms.
+- Added a related-tools section with direct links to `/pregnancy-due-date-calculator`, `/blog`, and `/about`.
+- Added five visible FAQ items below the main content and updated the inline `FAQPage` JSON-LD so each `mainEntity` question/answer exactly mirrors visible FAQ text.
+- Verified consistency so FAQ numeric gain values match the visible ranges table (normal: 11.5–16 kg, overweight: 7–11.5 kg, obesity: 5–9 kg).
+
+
 ## 2026-02-16 (React pregnancy weight gain calculator accessibility + guidance)
 
 - Added `src/pages/PregnancyWeightGainCalculator.tsx` with native labeled form controls for pre-pregnancy weight, height, trimester, optional week, and optional current weight.
