@@ -41,6 +41,7 @@ function App() {
         />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
+        <Route path="/pregnancy-weight-gain-calculator" element={<PregnancyWeightGainCalculatorPage />} />
       </Routes>
       <Footer />
     </>
