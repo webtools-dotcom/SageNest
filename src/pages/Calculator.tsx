@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { CalculatorCard } from '../components/CalculatorCard';
 import { FAQAccordion, FAQItem, getFAQJsonLD } from '../components/FAQAccordion';
 import { InfoGrid } from '../components/InfoGrid';
@@ -74,6 +75,15 @@ export const CalculatorPage = () => {
 
       {/* Info Grid */}
       <InfoGrid />
+
+      <section aria-labelledby="planning-tools-heading" className="content-section" style={{ marginTop: 'var(--space-2xl)' }}>
+        <h2 id="planning-tools-heading">More planning tools for each pregnancy stage</h2>
+        <p>
+          If you are also planning healthy prenatal milestones beyond your estimated due date, try our{' '}
+          <Link to="/pregnancy-weight-gain-calculator">pregnancy weight gain calculator</Link>{' '}
+          to review trimester-based guidance you can discuss with your healthcare provider.
+        </p>
+      </section>
 
       {/* FAQ Section */}
       <FAQAccordion items={faq} />
