@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, NavLink, Route, Routes } from 'react-router-dom';
 import { BlogList } from './components/BlogList';
 import { BlogPost } from './components/BlogPost';
 import { Footer } from './components/Footer';
@@ -9,21 +9,22 @@ import { CalculatorPage } from './pages/Calculator';
 import { AboutPage } from './pages/About';
 import { PrivacyPage } from './pages/Privacy';
 import { PregnancyWeightGainCalculatorPage } from './pages/PregnancyWeightGainCalculator';
+import SimilarToolsPage from './pages/SimilarTools';
 
 function App() {
   return (
     <>
       <a href="#main-content" className="skip-link">Skip to content</a>
       <header className="site-header">
-  <Link to="/pregnancy-due-date-calculator" className="brand">
-    <div className="brand-icon">🌿</div>
-    SageNest
-  </Link>
-  <nav>
-    <Link to="/pregnancy-due-date-calculator">Calculator</Link>
-    <Link to="/blog">Blog</Link>
-  </nav>
-</header>
+        <Link to="/pregnancy-due-date-calculator" className="brand">
+          <div className="brand-icon">🌿</div>
+          SageNest
+        </Link>
+        <nav aria-label="Primary">
+          <NavLink to="/similar-tools" className="nav-pill">Similar tools</NavLink>
+          <NavLink to="/blog" className="nav-pill">Blog</NavLink>
+        </nav>
+      </header>
       <Routes>
         <Route path="/" element={<CalculatorPage />} />
         <Route path="/pregnancy-due-date-calculator" element={<CalculatorPage />} />
@@ -41,6 +42,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/pregnancy-weight-gain-calculator" element={<PregnancyWeightGainCalculatorPage />} />
+        <Route path="/similar-tools" element={<SimilarToolsPage />} />
       </Routes>
       <Footer />
     </>

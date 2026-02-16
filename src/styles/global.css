@@ -100,6 +100,16 @@ a:hover {
   color: var(--sage-primary);
 }
 
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--sage-primary);
+  outline-offset: 2px;
+}
+
 /* Skip Link */
 .skip-link {
   position: absolute;
@@ -152,6 +162,7 @@ nav {
   align-items: center;
 }
 
+.nav-pill,
 nav a {
   font-weight: 500;
   font-size: 0.875rem;
@@ -163,14 +174,92 @@ nav a {
   border-radius: var(--radius-pill);
   background: var(--sand);
   border: 1px solid var(--border-hairline);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.nav-pill:hover,
 nav a:hover {
   background: var(--sage-primary);
   color: var(--off-white);
   border-color: var(--sage-primary);
   transform: translateY(-1px);
   box-shadow: var(--shadow-soft);
+}
+
+.nav-pill[aria-current='page'] {
+  background: var(--sage-softest);
+  border-color: var(--sage-light);
+}
+
+.nav-pill-small {
+  font-size: 0.8125rem;
+  padding: 0.4rem 1rem;
+}
+
+
+.muted {
+  color: var(--text-secondary);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.tool-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.tool-header h1 {
+  margin-bottom: var(--space-xs);
+}
+
+.tool-header-inline {
+  align-items: center;
+  margin-bottom: var(--space-md);
+}
+
+.tools-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-md);
+}
+
+.tool-card {
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-md);
+  background: var(--off-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.tool-link {
+  display: block;
+  padding: var(--space-lg);
+  height: 100%;
+}
+
+.tool-link h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.tool-link:hover {
+  color: var(--charcoal);
 }
 
 /* Container - Generous Margins */
@@ -929,6 +1018,7 @@ button:disabled {
   color: var(--sage-primary);
 }
 
+
 .blog-card p {
   color: var(--text-secondary);
   line-height: 1.7;
@@ -1079,6 +1169,7 @@ button:disabled {
   color: var(--sage-primary);
 }
 
+
 .site-footer__copyright {
   text-align: center;
   margin-top: var(--space-xl);
@@ -1160,9 +1251,15 @@ button:disabled {
     gap: var(--space-sm);
   }
 
+  .nav-pill,
   nav a {
     font-size: 0.8125rem;
     padding: 0.4rem 1rem;
+  }
+
+  .tool-header {
+    align-items: stretch;
+    flex-direction: column;
   }
 
   .container {

@@ -141,3 +141,12 @@
 - Expanded footer resource links with descriptive anchor text and added a direct inbound link to `/pregnancy-weight-gain-calculator`.
 - Added a new "Related tools" section on the static pregnancy weight gain calculator page linking to `/pregnancy-due-date-calculator` and `/about`.
 - Kept all new links as standard React `Link` or HTML `<a>` elements with clear, descriptive anchor text.
+
+## 2026-02-16 (Similar tools hub + due date hero removal)
+
+- Added a new single-source tool registry in `src/data/tools.ts` for all calculator metadata (id, slug, title, description, route path).
+- Added a new `/similar-tools` route and `src/pages/SimilarTools.tsx` that renders a semantic, accessible tools list from `tools.ts`, including an empty-state fallback message.
+- Replaced header nav pill label/link from `Calculator` to `Similar tools`, preserving the existing pill visual style and active-page state.
+- Added reusable `src/components/SimilarToolsButton.tsx` and integrated it into both tool pages for quick cross-navigation.
+- Removed the large center hero block from the due date calculator page and replaced it with a compact tool header so the calculator UI appears earlier.
+- Added minimal shared styles for tool headers, tool cards/grid, muted text utility, and consistent keyboard focus visibility.
