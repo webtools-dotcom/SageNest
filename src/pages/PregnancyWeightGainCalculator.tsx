@@ -60,7 +60,7 @@ export const PregnancyWeightGainCalculatorPage = () => {
     }
 
     return calculatePregnancyWeightGain(Number(prePregnancyWeight), Number(heightCm), parsed.weekValue).recommendedByWeek;
-  }, [parsed]);
+  }, [parsed, prePregnancyWeight, heightCm]);
 
   const currentGain = useMemo(() => {
     const preWeightValue = Number(prePregnancyWeight);
@@ -69,7 +69,7 @@ export const PregnancyWeightGainCalculatorPage = () => {
     }
 
     return calculatePregnancyWeightGain(preWeightValue, Number(heightCm), undefined, parsed.currentWeightValue).gainSoFar;
-  }, [prePregnancyWeight, parsed.currentWeightValue, parsed.errors.currentWeight]);
+  }, [prePregnancyWeight, heightCm, parsed.currentWeightValue, parsed.errors.currentWeight]);
 
   const preWeightHelp = 'pre-pregnancy-weight-help';
   const heightHelp = 'height-help';
