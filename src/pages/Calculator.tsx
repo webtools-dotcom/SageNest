@@ -4,7 +4,6 @@ import { CalculatorCard } from '../components/CalculatorCard';
 import { FAQAccordion, FAQItem, getFAQJsonLD } from '../components/FAQAccordion';
 import { InfoGrid } from '../components/InfoGrid';
 import { SEOHead } from '../components/SEOHead';
-import SimilarToolsButton from '../components/SimilarToolsButton';
 import { blogPosts } from '../data/blogPosts';
 
 const faq: FAQItem[] = [
@@ -57,7 +56,6 @@ export const CalculatorPage = () => {
           <h1>Pregnancy Due Date Calculator</h1>
           <p className="muted">Calculate your due date in seconds. No signup required.</p>
         </div>
-        <SimilarToolsButton />
       </header>
 
       <CalculatorCard />
