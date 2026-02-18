@@ -3,6 +3,11 @@
 
 
 
+## 2026-02-18 (Ovulation calculator unit test coverage)
+
+- Added `tests/ovulationCalc.test.ts` with eight Vitest cases covering 28-day and 32-day ovulation estimates, fertile-window and peak-fertility inclusive duration assertions, and invalid-input checks for future/stale LMP plus cycle lengths outside 21–40 days.
+
+
 ## 2026-02-18 (Ovulation-to-due-date calculator state handoff)
 
 - Updated `src/pages/OvulationCalculator.tsx` to add a CTA button after ovulation results that navigates to `/pregnancy-due-date-calculator` with route state (`mode: conception`, `conceptionDate`, `autoCalculate`, and `sourceContext`).
