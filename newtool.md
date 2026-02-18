@@ -299,5 +299,3 @@ If you want an AI (Codex / ChatGPT automation) to review a PR or a set of change
 
 ---
 
-If you want, I can also generate a ready-to-paste pull request description and a branch name for each new tool. Just tell me the tool title and slug and I will produce them.
-
