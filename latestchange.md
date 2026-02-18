@@ -210,3 +210,9 @@
 - Updated `src/pages/OvulationCalculator.tsx` to wire both components into the submitted-results view, keep selected day state, and map selected date to cycle-day chart highlighting.
 - Added shared fertility-visual styles in `src/styles/global.css` for layout, chart, and calendar phase styling.
 
+
+## 2026-02-18 (BlogPoster guarded action single try/catch hardening)
+
+- Refactored `runAdminGuardedAction` in `src/pages/BlogPoster.tsx` so both `assertAdminUser()` and the supplied `action()` run inside one `try` block and return `true` only on full success.
+- Added safe catch-path handling that preserves the explicit unauthorized message but maps all other failures to a generic user-facing message (`Something went wrong. Please try again.`) before returning `false`.
+- Expanded `tests/blogPosterAuth.test.ts` coverage to verify unauthorized failures, action-thrown failures with graceful messaging, and successful guarded execution returning `true`.
