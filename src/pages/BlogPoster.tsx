@@ -22,6 +22,7 @@ const slugify = (value: string): string =>
     .replace(/-+/g, '-');
 
 const UNAUTHORIZED_MESSAGE = 'You are not authorized to manage blog posts.';
+const ACTION_FAILURE_MESSAGE = 'Something went wrong. Please try again.';
 const MAX_UPLOAD_SIZE_BYTES = 2 * 1024 * 1024;
 
 export const ALLOWED_IMAGE_MIME_TO_EXTENSION: Record<string, string> = {
@@ -61,13 +62,13 @@ export const runAdminGuardedAction = async (
 ) => {
   try {
     await assertAdminUser();
+    await action();
+    return true;
   } catch (error) {
-    setMessage(error instanceof Error ? error.message : UNAUTHORIZED_MESSAGE);
+    const isUnauthorizedError = error instanceof Error && error.message === UNAUTHORIZED_MESSAGE;
+    setMessage(isUnauthorizedError ? UNAUTHORIZED_MESSAGE : ACTION_FAILURE_MESSAGE);
     return false;
   }
-
-  await action();
-  return true;
 };
 
 export const BlogPosterPage = () => {

@@ -46,7 +46,7 @@ describe('BlogPoster admin guard', () => {
     await expect(assertAdminUser()).rejects.toThrow('You are not authorized to manage blog posts.');
   });
 
-  test('runAdminGuardedAction aborts action and sets message when unauthorized', async () => {
+  test('runAdminGuardedAction returns false and sets unauthorized message when unauthorized', async () => {
     getUserMock.mockResolvedValue({
       data: {
         user: {
@@ -64,5 +64,47 @@ describe('BlogPoster admin guard', () => {
     expect(didRun).toBe(false);
     expect(action).not.toHaveBeenCalled();
     expect(setMessage).toHaveBeenCalledWith('You are not authorized to manage blog posts.');
+  });
+
+  test('runAdminGuardedAction returns false and sets safe message when action throws', async () => {
+    getUserMock.mockResolvedValue({
+      data: {
+        user: {
+          email: 'admin@example.com'
+        }
+      },
+      error: null
+    });
+
+    const setMessage = vi.fn();
+    const action = vi.fn(async () => {
+      throw new Error('internal failure details');
+    });
+
+    const didRun = await runAdminGuardedAction(setMessage, action);
+
+    expect(didRun).toBe(false);
+    expect(action).toHaveBeenCalledOnce();
+    expect(setMessage).toHaveBeenCalledWith('Something went wrong. Please try again.');
+  });
+
+  test('runAdminGuardedAction returns true when admin check and action succeed', async () => {
+    getUserMock.mockResolvedValue({
+      data: {
+        user: {
+          email: 'admin@example.com'
+        }
+      },
+      error: null
+    });
+
+    const setMessage = vi.fn();
+    const action = vi.fn(async () => {});
+
+    const didRun = await runAdminGuardedAction(setMessage, action);
+
+    expect(didRun).toBe(true);
+    expect(action).toHaveBeenCalledOnce();
+    expect(setMessage).not.toHaveBeenCalled();
   });
 });
