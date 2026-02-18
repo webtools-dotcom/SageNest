@@ -1,4 +1,5 @@
 import { FormEvent, useMemo, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FertilityCalendar } from '../components/FertilityCalendar';
 import { FertilityChart } from '../components/FertilityChart';
 import { SEOHead } from '../components/SEOHead';
@@ -47,6 +48,7 @@ const FAQ_ITEMS = [
 ];
 
 export const OvulationCalculatorPage = () => {
+  const navigate = useNavigate();
   const [lmp, setLmp] = useState(toInputDate(new Date()));
   const [preset, setPreset] = useState<PresetValue>('28');
   const [customCycleLength, setCustomCycleLength] = useState('');
@@ -137,6 +139,21 @@ export const OvulationCalculatorPage = () => {
     setHasSubmitted(true);
     setSelectedCalendarDate(null);
     setTouched({ lmp: true, cycleLength: true });
+  };
+
+  const onUseConceptionDate = () => {
+    if (!result) {
+      return;
+    }
+
+    navigate('/pregnancy-due-date-calculator', {
+      state: {
+        mode: 'conception',
+        conceptionDate: toInputDate(result.ovulationEstimate),
+        autoCalculate: true,
+        sourceContext: 'ovulation-calculator',
+      },
+    });
   };
 
   return (
@@ -275,6 +292,12 @@ export const OvulationCalculatorPage = () => {
             <div style={{ background: 'var(--sand)', borderRadius: 'var(--radius-sm)', padding: 'var(--space-md)', border: '1px solid var(--border-hairline)' }}>
               <p style={{ marginBottom: 'var(--space-xs)' }}><strong>Next period estimate:</strong> {formatDate(result.nextPeriodEstimate)}</p>
               <p style={{ marginBottom: 0 }}>Consider intercourse every 1–2 days during the fertile window for best conception chances.</p>
+            </div>
+
+            <div style={{ marginTop: 'var(--space-md)' }}>
+              <button type="button" onClick={onUseConceptionDate}>
+                Use ovulation date in due date calculator
+              </button>
             </div>
 
             <div className="fertility-visuals">

@@ -1,10 +1,22 @@
-import { type FormEvent, useMemo, useState } from 'react';
+import { type FormEvent, useEffect, useMemo, useRef, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { conceptionToDueDate, conceptionWindow, ivfToDueDate, lmpToDueDate, trimesterFromDueDate, validateLMP } from '../lib/calc';
 import { dueDateFromLMP, weeksAndDaysFromLMP } from '../lib/dateHelpers';
 import { PregnancyTimeline } from './PregnancyTimeline';
 import { ResultCard } from './ResultCard';
 
 type CalcMode = 'lmp' | 'conception' | 'ivf';
+
+type CalculatorNavState = {
+  mode?: CalcMode;
+  conceptionDate?: string;
+  autoCalculate?: boolean;
+  sourceContext?: string;
+};
+
+type CalculatorCardProps = {
+  navState?: CalculatorNavState;
+};
 
 const CYCLE_PRESETS = [21, 24, 28, 30, 35] as const;
 const IVF_DAY_PRESETS = [3, 5, 6] as const;
@@ -21,7 +33,7 @@ const MODE_DESCRIPTIONS: Record<CalcMode, string> = {
   ivf: 'Calculate from embryo transfer date',
 };
 
-export const CalculatorCard = () => {
+export const CalculatorCard = ({ navState }: CalculatorCardProps) => {
   const [mode, setMode] = useState<CalcMode>('lmp');
   const [currentStep, setCurrentStep] = useState(1);
   const [date, setDate] = useState('');
@@ -32,8 +44,50 @@ export const CalculatorCard = () => {
   const [error, setError] = useState('');
   const [dueDate, setDueDate] = useState<Date | null>(null);
   const [showHint, setShowHint] = useState<CalcMode | null>(null);
+  const [sourceContext, setSourceContext] = useState<string | null>(null);
+  const hydratedStateKeyRef = useRef<string | null>(null);
 
   const totalSteps = mode === 'lmp' ? 2 : 1;
+
+  useEffect(() => {
+    if (!navState || navState.mode !== 'conception' || !navState.conceptionDate) {
+      return;
+    }
+
+    const hydrationKey = `${navState.mode}|${navState.conceptionDate}|${navState.autoCalculate ? 'auto' : 'manual'}|${navState.sourceContext ?? ''}`;
+    if (hydratedStateKeyRef.current === hydrationKey) {
+      return;
+    }
+
+    hydratedStateKeyRef.current = hydrationKey;
+    setMode('conception');
+    setCurrentStep(1);
+    setDate(navState.conceptionDate);
+    setDateError('');
+    setCycleError('');
+    setError('');
+    setSourceContext(navState.sourceContext ?? null);
+
+    if (!navState.autoCalculate) {
+      setDueDate(null);
+      return;
+    }
+
+    const selectedDate = new Date(`${navState.conceptionDate}T00:00:00`);
+    if (Number.isNaN(selectedDate.getTime())) {
+      setDueDate(null);
+      setError('Please select a valid conception date');
+      return;
+    }
+
+    if (selectedDate > new Date()) {
+      setDueDate(null);
+      setError('Conception date cannot be in the future');
+      return;
+    }
+
+    setDueDate(conceptionToDueDate(selectedDate));
+  }, [navState]);
 
   const validateStepOne = () => {
     if (!date) { setDateError('Please select a date'); return false; }
@@ -64,6 +118,7 @@ export const CalculatorCard = () => {
     setCycleError('');
     setError('');
     setDueDate(null);
+    setSourceContext(null);
   };
 
   const handleModeChange = (newMode: CalcMode) => {
@@ -125,6 +180,23 @@ export const CalculatorCard = () => {
           <h2 className="calculator-title">Calculate Your Due Date</h2>
           <p className="calculator-subtitle">Private, evidence-based — no signup required</p>
         </div>
+
+        {sourceContext === 'ovulation-calculator' && date && (
+          <div
+            style={{
+              marginBottom: 'var(--space-lg)',
+              background: 'var(--sage-softest)',
+              border: '1px solid var(--sage-light)',
+              borderRadius: 'var(--radius-sm)',
+              padding: 'var(--space-md)',
+            }}
+          >
+            <p style={{ marginBottom: 0 }}>
+              <strong>Based on ovulation date:</strong> {new Date(`${date}T00:00:00`).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })}.{' '}
+              <Link to="/ovulation-calculator">Back to ovulation calculator</Link>
+            </p>
+          </div>
+        )}
 
         {/* Mode Selector */}
         <div style={{ marginBottom: 'var(--space-xl)' }}>

@@ -1,10 +1,17 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { CalculatorCard } from '../components/CalculatorCard';
 import { FAQAccordion, FAQItem, getFAQJsonLD } from '../components/FAQAccordion';
 import { InfoGrid } from '../components/InfoGrid';
 import { SEOHead } from '../components/SEOHead';
 import { blogPosts } from '../data/blogPosts';
+
+type CalculatorNavState = {
+  mode?: 'lmp' | 'conception' | 'ivf';
+  conceptionDate?: string;
+  autoCalculate?: boolean;
+  sourceContext?: string;
+};
 
 const faq: FAQItem[] = [
   ['How accurate is a due date calculator?', 'It provides a planning estimate based on the standard 280-day pregnancy. Your clinician may adjust dating based on ultrasound measurements and your unique cycle history.'],
@@ -20,6 +27,8 @@ const faq: FAQItem[] = [
 ];
 
 export const CalculatorPage = () => {
+  const location = useLocation();
+  const navState = (location.state as CalculatorNavState | null) ?? undefined;
   useEffect(() => {
     const prior = document.getElementById('faq-jsonld-root');
     if (prior) prior.remove();
@@ -58,7 +67,7 @@ export const CalculatorPage = () => {
         </div>
       </header>
 
-      <CalculatorCard />
+      <CalculatorCard navState={navState} />
 
       <InfoGrid />
 

@@ -3,6 +3,15 @@
 
 
 
+## 2026-02-18 (Ovulation-to-due-date calculator state handoff)
+
+- Updated `src/pages/OvulationCalculator.tsx` to add a CTA button after ovulation results that navigates to `/pregnancy-due-date-calculator` with route state (`mode: conception`, `conceptionDate`, `autoCalculate`, and `sourceContext`).
+- Updated `src/pages/Calculator.tsx` to read `useLocation().state` and forward typed navigation state into `CalculatorCard`.
+- Updated `src/components/CalculatorCard.tsx` to hydrate from conception-state once (idempotent), auto-calculate when requested, and show a contextual “Based on ovulation date …” banner with a link back to `/ovulation-calculator`.
+
+
+
+
 
 ## 2026-02-18 (Tool registry + footer link alignment for ovulation calculator)
 
