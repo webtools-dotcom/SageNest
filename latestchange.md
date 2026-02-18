@@ -3,6 +3,13 @@
 
 
 
+
+## 2026-02-18 (Tool registry + footer link alignment for ovulation calculator)
+
+- Updated `src/data/tools.ts` so the ovulation tool uses `id: "ovulation-calculator"` and refreshed the card copy to: "Find your fertile window and peak conception days with an interactive calendar.".
+- Updated `src/components/Footer.tsx` Resources links to include `/ovulation-calculator` between the due date and weight gain calculator links.
+- Confirmed `src/pages/SimilarTools.tsx` auto-renders the updated ovulation card because it maps directly over the `tools` array from `src/data/tools.ts`.
+
 ## 2026-02-18 (New ovulation calculator tool page + route)
 
 - Added `src/pages/OvulationCalculator.tsx` with full tool-page layout, including SEO metadata, canonical path, JSON-LD (`WebApplication` + `FAQPage`), and a header `SimilarToolsButton`.
