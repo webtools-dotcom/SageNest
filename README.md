@@ -59,6 +59,18 @@ npm run test
 5. Add your custom domain in Cloudflare Pages > Custom domains.
 6. Ensure DNS points to Cloudflare and SSL is enabled.
 
+### Security headers (Cloudflare Pages)
+
+- Security headers are managed in `public/_headers` (Cloudflare Pages `_headers` file format).
+- Keep Cloudflare dashboard header/rules configuration aligned with `public/_headers` so production behavior stays consistent across preview and live deployments.
+- Current baseline includes:
+  - `X-Content-Type-Options: nosniff`
+  - `X-Frame-Options: DENY`
+  - `X-XSS-Protection: 1; mode=block`
+  - `Referrer-Policy: strict-origin-when-cross-origin`
+  - `Permissions-Policy: geolocation=(), microphone=(), camera=()`
+  - `Content-Security-Policy` for self-hosted app assets, Google Fonts, and Supabase (`https://*.supabase.co` and `wss://*.supabase.co`).
+
 ## Static Route Strategy
 
 The app uses SPA routing with `_redirects` fallback:
@@ -188,5 +200,4 @@ npm run check:conflicts
 ```
 
 `npm run build` now runs these checks first via `prebuild`.
-
 

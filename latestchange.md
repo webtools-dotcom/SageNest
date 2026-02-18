@@ -3,6 +3,13 @@
 
 
 
+
+## 2026-02-18 (Cloudflare Pages security headers baseline)
+
+- Added `public/_headers` with required sitewide security headers: `X-Content-Type-Options`, `X-Frame-Options`, `X-XSS-Protection`, `Referrer-Policy`, and `Permissions-Policy`.
+- Added an enforced baseline `Content-Security-Policy` for same-origin scripts, Google Fonts, Supabase API/WebSocket connections, and safe image/font sources used by the current app.
+- Updated `README.md` Cloudflare deployment documentation to state that security headers are managed via `public/_headers` and should match Cloudflare dashboard configuration.
+
 ## 2026-02-18 (Ovulation calculator unit test coverage)
 
 - Added `tests/ovulationCalc.test.ts` with eight Vitest cases covering 28-day and 32-day ovulation estimates, fertile-window and peak-fertility inclusive duration assertions, and invalid-input checks for future/stale LMP plus cycle lengths outside 21–40 days.
