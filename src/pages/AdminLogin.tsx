@@ -2,6 +2,41 @@ import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ADMIN_EMAIL, supabase } from '../supabase/client';
 
+export const SESSION_VERIFY_ERROR_MESSAGE = 'Unable to verify session. Please try again.';
+
+type SessionUser = {
+  email?: string | null;
+} | null;
+
+type SessionState = {
+  data: {
+    user: SessionUser;
+  };
+  error: unknown;
+};
+
+type SessionCheckOutcome =
+  | { type: 'error'; message: string }
+  | { type: 'no-user' }
+  | { type: 'authorized' }
+  | { type: 'unauthorized' };
+
+export const getSessionCheckOutcome = ({ data, error }: SessionState): SessionCheckOutcome => {
+  if (error) {
+    return { type: 'error', message: SESSION_VERIFY_ERROR_MESSAGE };
+  }
+
+  if (!data.user) {
+    return { type: 'no-user' };
+  }
+
+  if ((data.user.email ?? '').toLowerCase() === ADMIN_EMAIL) {
+    return { type: 'authorized' };
+  }
+
+  return { type: 'unauthorized' };
+};
+
 export const AdminLogin = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
@@ -9,13 +44,21 @@ export const AdminLogin = () => {
 
   useEffect(() => {
     const checkSession = async () => {
-      const { data } = await supabase.auth.getUser();
-      if (!data.user) {
+      const { data, error } = await supabase.auth.getUser();
+      const outcome = getSessionCheckOutcome({ data, error });
+
+      if (outcome.type === 'error') {
+        setError(outcome.message);
         setLoading(false);
         return;
       }
 
-      if ((data.user.email ?? '').toLowerCase() === ADMIN_EMAIL) {
+      if (outcome.type === 'no-user') {
+        setLoading(false);
+        return;
+      }
+
+      if (outcome.type === 'authorized') {
         navigate('/admin/blogposter', { replace: true });
         return;
       }
