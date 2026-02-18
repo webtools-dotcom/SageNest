@@ -3,6 +3,14 @@
 
 
 
+## 2026-02-18 (Ovulation calculation utility module)
+
+- Added `src/lib/ovulationCalc.ts` with typed ovulation outputs (`OvulationResult`), month-grid day modeling (`CalendarDay`), and user-facing validation output (`ValidationResult`).
+- Implemented normalized-date ovulation math for ovulation estimate, fertile window, peak fertility range, and next period estimate via `calculateOvulation(...)`.
+- Added `getFertilityProbability(...)` using Wilcox-style day-to-ovulation probabilities with linear interpolation for fractional day values and a safe zero fallback outside the fertile interval.
+- Added `generateCalendarMonth(...)` to produce a full Sunday-through-Saturday calendar grid including cycle day, phase label, fertile/peak flags, and daily fertility probability values.
+- Added `getPhaseLabel(...)` and `validateOvulationInputs(...)` enforcing no-future LMP, 12-month recency, and cycle-length bounds of 21–40 days.
+
 ## 2026-02-16 (Pregnancy weight gain calculator QA docs + numeric test coverage)
 
 - Added shared calculator logic in `src/lib/pregnancyWeightGain.ts` for BMI band selection, total gain ranges, week-based gain targets, and gain-so-far outputs.
