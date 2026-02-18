@@ -14,12 +14,50 @@ const escapeHtml = (value: string): string => {
     .replace(/'/g, '&#39;');
 };
 
+const decodeHtmlEntities = (value: string): string => {
+  return value
+    .replace(/&amp;?/gi, '&')
+    .replace(/&#(\d+);?/g, (_match, code: string) => String.fromCodePoint(Number(code)))
+    .replace(/&#x([\da-f]+);?/gi, (_match, hex: string) => String.fromCodePoint(parseInt(hex, 16)))
+    .replace(/&colon;?/gi, ':');
+};
+
+const decodeForProtocolCheck = (value: string): string => {
+  let decoded = value;
+
+  for (let pass = 0; pass < 5; pass += 1) {
+    let next = decodeHtmlEntities(decoded);
+
+    try {
+      next = decodeURIComponent(next);
+    } catch {
+      // Keep the best-effort decoded value for comparison.
+    }
+
+    if (next === decoded) {
+      break;
+    }
+
+    decoded = next;
+  }
+
+  return decoded;
+};
+
 const sanitizeUrl = (url: string): string => {
   const trimmed = url.trim();
-  const firstToken = trimmed.split(/\s+/)[0]?.replace(/^['"]|['"]$/g, '') ?? '';
-  const normalized = firstToken.replace(/[\u0000-\u001F\u007F\s]+/g, '').toLowerCase();
+  const quoteStripped = trimmed.replace(/^['"]|['"]$/g, '');
+  const firstToken = quoteStripped.split(/\s+/)[0] ?? '';
+  const decodedComparison = decodeForProtocolCheck(quoteStripped)
+    .toLowerCase()
+    .replace(/[\u0000-\u001F\u007F\s]+/g, '');
 
-  if (normalized.startsWith('javascript:') || normalized.startsWith('data:') || normalized.startsWith('vbscript:')) {
+  if (
+    decodedComparison.startsWith('javascript:') ||
+    decodedComparison.startsWith('data:') ||
+    decodedComparison.startsWith('vbscript:') ||
+    decodedComparison.startsWith('file:')
+  ) {
     return '#';
   }
 
