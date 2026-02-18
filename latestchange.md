@@ -2,6 +2,12 @@
 # Latest Change Log
 
 
+## 2026-02-18 (Markdown URL protocol decoding hardening)
+
+- Updated `src/lib/markdown.ts` `sanitizeUrl(...)` to decode repeated HTML entity and percent-encoded protocol obfuscation before protocol validation, normalize casing/controls for comparison, and block `file:` alongside existing dangerous schemes while preserving safe original cleaned links.
+- Added regression tests in `tests/markdown.test.ts` for entity-encoded (`&#58;`/`&#x3A;`), percent-encoded (`%3A`), and mixed-case/whitespace-obfuscated `javascript:` payloads plus a safe `https://...` rendering check.
+
+
 
 ## 2026-02-18 (Ovulation calculator unit test coverage)
 
