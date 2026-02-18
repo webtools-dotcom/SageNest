@@ -1,6 +1,9 @@
 import { FormEvent, useMemo, useState } from 'react';
+import { FertilityCalendar } from '../components/FertilityCalendar';
+import { FertilityChart } from '../components/FertilityChart';
 import { SEOHead } from '../components/SEOHead';
 import SimilarToolsButton from '../components/SimilarToolsButton';
+import { normalizeDate } from '../lib/calc';
 import { calculateOvulation, validateOvulationInputs } from '../lib/ovulationCalc';
 
 const CYCLE_PRESETS = [28, 30, 32] as const;
@@ -49,6 +52,7 @@ export const OvulationCalculatorPage = () => {
   const [customCycleLength, setCustomCycleLength] = useState('');
   const [touched, setTouched] = useState({ lmp: false, cycleLength: false });
   const [hasSubmitted, setHasSubmitted] = useState(false);
+  const [selectedCalendarDate, setSelectedCalendarDate] = useState<Date | null>(null);
 
   const cycleLengthValue = preset === 'custom' ? customCycleLength : preset;
 
@@ -87,6 +91,19 @@ export const OvulationCalculatorPage = () => {
     return calculateOvulation(new Date(lmp), Number(cycleLengthValue));
   }, [cycleLengthValue, errors.cycleLength, errors.lmp, lmp]);
 
+  const selectedCycleDay = useMemo(() => {
+    if (!result) {
+      return null;
+    }
+
+    const normalizedLmp = normalizeDate(new Date(lmp));
+    const selectedDate = normalizeDate(selectedCalendarDate ?? result.ovulationEstimate);
+    const daysSinceLmp = Math.floor((selectedDate.getTime() - normalizedLmp.getTime()) / 86_400_000);
+    const cycleLength = Number(cycleLengthValue);
+    const offset = ((daysSinceLmp % cycleLength) + cycleLength) % cycleLength;
+    return offset + 1;
+  }, [result, lmp, selectedCalendarDate, cycleLengthValue]);
+
   const jsonLd = useMemo(
     () => [
       {
@@ -118,6 +135,7 @@ export const OvulationCalculatorPage = () => {
   const onSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setHasSubmitted(true);
+    setSelectedCalendarDate(null);
     setTouched({ lmp: true, cycleLength: true });
   };
 
@@ -257,6 +275,23 @@ export const OvulationCalculatorPage = () => {
             <div style={{ background: 'var(--sand)', borderRadius: 'var(--radius-sm)', padding: 'var(--space-md)', border: '1px solid var(--border-hairline)' }}>
               <p style={{ marginBottom: 'var(--space-xs)' }}><strong>Next period estimate:</strong> {formatDate(result.nextPeriodEstimate)}</p>
               <p style={{ marginBottom: 0 }}>Consider intercourse every 1–2 days during the fertile window for best conception chances.</p>
+            </div>
+
+            <div className="fertility-visuals">
+              <FertilityCalendar
+                lmp={new Date(lmp)}
+                cycleLength={Number(cycleLengthValue)}
+                ovulationResult={result}
+                selectedDate={selectedCalendarDate ?? result.ovulationEstimate}
+                onSelectDate={setSelectedCalendarDate}
+              />
+              {selectedCycleDay ? (
+                <FertilityChart
+                  cycleLength={Number(cycleLengthValue)}
+                  ovulationCycleDay={Number(cycleLengthValue) - 13}
+                  selectedCycleDay={selectedCycleDay}
+                />
+              ) : null}
             </div>
           </>
         ) : (
