@@ -2,6 +2,14 @@
 # Latest Change Log
 
 
+
+## 2026-02-18 (Admin login session error handling)
+
+- Updated `src/pages/AdminLogin.tsx` `checkSession` flow to read `{ data, error }` from `supabase.auth.getUser()` and handle auth-read failures first with a user-safe message: “Unable to verify session. Please try again.” while ending loading state.
+- Preserved existing authorized/unauthorized branching behavior after the new error-first handling path by routing session evaluation through `getSessionCheckOutcome(...)`.
+- Added `tests/adminLoginAuth.test.ts` to cover admin session outcome states, including a `getUser` error case asserting the user-facing error message contract and non-loading outcome path.
+
+
 ## 2026-02-18 (Markdown URL protocol decoding hardening)
 
 - Updated `src/lib/markdown.ts` `sanitizeUrl(...)` to decode repeated HTML entity and percent-encoded protocol obfuscation before protocol validation, normalize casing/controls for comparison, and block `file:` alongside existing dangerous schemes while preserving safe original cleaned links.
