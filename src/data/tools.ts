@@ -25,10 +25,10 @@ const tools: Tool[] = [
     path: '/pregnancy-weight-gain-calculator'
   },
   {
-    id: 'ovulation',
+    id: 'ovulation-calculator',
     title: 'Ovulation Calculator',
     slug: 'ovulation-calculator',
-    description: 'Estimate ovulation timing and fertile window dates.',
+    description: 'Find your fertile window and peak conception days with an interactive calendar.',
     path: '/ovulation-calculator'
   }
 ];
