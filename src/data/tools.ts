@@ -23,6 +23,13 @@ const tools: Tool[] = [
     slug: 'pregnancy-weight-gain-calculator',
     description: 'Track safe weight gain ranges during pregnancy.',
     path: '/pregnancy-weight-gain-calculator'
+  },
+  {
+    id: 'ovulation',
+    title: 'Ovulation Calculator',
+    slug: 'ovulation-calculator',
+    description: 'Estimate ovulation timing and fertile window dates.',
+    path: '/ovulation-calculator'
   }
 ];
 

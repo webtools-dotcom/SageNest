@@ -6,6 +6,7 @@ SageNest is a fully static, production-ready React + TypeScript web app for preg
 
 - Pregnancy Due Date Calculator with a guided 3-step LMP flow (date → cycle length → review/calculate)
 - Pregnancy Weight Gain Calculator with BMI category, IOM total gain bands, and week-specific gain guidance
+- Ovulation Calculator with LMP input, cycle-length presets/custom mode, and fertile-window estimate
 - Gestational age output with normalized week/day formatting
 - Trimester status and conception window (±3 days around ovulation estimate)
 - Local timezone date formatting
@@ -15,6 +16,7 @@ SageNest is a fully static, production-ready React + TypeScript web app for preg
   - `/blog/:slug` detail pages
   - `/admin/blogposter` static publishing helper
 - `/pregnancy-weight-gain-calculator` interactive page
+- `/ovulation-calculator` interactive page
 - JSON-LD SEO schema for WebPage, FAQPage, Blog, Article, and SearchAction
 - Accessibility baseline (skip link, htmlFor labels, keyboard focus styles, aria-live)
 - Vitest unit tests covering calculator math, date helper formatting, and progress-wheel mapping
@@ -69,6 +71,7 @@ The app uses SPA routing with `_redirects` fallback:
 - `/about`
 - `/privacy`
 - `/pregnancy-weight-gain-calculator`
+- `/ovulation-calculator`
 
 Cloudflare serves `index.html` for route hydration.
 

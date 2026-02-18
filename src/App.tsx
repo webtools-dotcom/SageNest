@@ -9,6 +9,7 @@ import { CalculatorPage } from './pages/Calculator';
 import { AboutPage } from './pages/About';
 import { PrivacyPage } from './pages/Privacy';
 import { PregnancyWeightGainCalculatorPage } from './pages/PregnancyWeightGainCalculator';
+import { OvulationCalculatorPage } from './pages/OvulationCalculator';
 import SimilarToolsPage from './pages/SimilarTools';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/pregnancy-weight-gain-calculator" element={<PregnancyWeightGainCalculatorPage />} />
+        <Route path="/ovulation-calculator" element={<OvulationCalculatorPage />} />
         <Route path="/similar-tools" element={<SimilarToolsPage />} />
       </Routes>
       <Footer />

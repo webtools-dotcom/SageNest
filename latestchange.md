@@ -3,6 +3,15 @@
 
 
 
+## 2026-02-18 (New ovulation calculator tool page + route)
+
+- Added `src/pages/OvulationCalculator.tsx` with full tool-page layout, including SEO metadata, canonical path, JSON-LD (`WebApplication` + `FAQPage`), and a header `SimilarToolsButton`.
+- Implemented LMP date input and cycle-length presets (28/30/32) plus custom cycle input with blur/submit inline validation behavior.
+- Added accessible result rendering with `aria-live="polite"`, fertile window details, educational guidance, medical disclaimer text, and a privacy banner.
+- Updated `src/App.tsx` to register the new `/ovulation-calculator` route.
+- Updated `README.md` feature list and route list to include the ovulation calculator page.
+
+
 ## 2026-02-18 (Ovulation calculation utility module)
 
 - Added `src/lib/ovulationCalc.ts` with typed ovulation outputs (`OvulationResult`), month-grid day modeling (`CalendarDay`), and user-facing validation output (`ValidationResult`).
