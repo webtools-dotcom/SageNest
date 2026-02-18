@@ -167,3 +167,12 @@
 - Added reusable `src/components/SimilarToolsButton.tsx` and integrated it into both tool pages for quick cross-navigation.
 - Removed the large center hero block from the due date calculator page and replaced it with a compact tool header so the calculator UI appears earlier.
 - Added minimal shared styles for tool headers, tool cards/grid, muted text utility, and consistent keyboard focus visibility.
+
+## 2026-02-18 (Ovulation visuals: fertility calendar + probability chart)
+
+- Added `src/components/FertilityCalendar.tsx` with month navigation, weekday/day grid rendering from `generateCalendarMonth(...)`, keyboard arrow-key navigation, focus management, and day-level descriptive `aria-label` output.
+- Implemented phase and status class hooks for cycle context (`phase-menstrual`, `phase-fertile`, `phase-peak`, `phase-ovulation`) plus non-color indicators and a legend for accessibility clarity.
+- Added `src/components/FertilityChart.tsx` to render an accessible SVG fertility-probability line chart by cycle day, including selected-day and ovulation markers plus explanatory captioning.
+- Updated `src/pages/OvulationCalculator.tsx` to wire both components into the submitted-results view, keep selected day state, and map selected date to cycle-day chart highlighting.
+- Added shared fertility-visual styles in `src/styles/global.css` for layout, chart, and calendar phase styling.
+
