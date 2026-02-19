@@ -159,7 +159,7 @@ export const OvulationCalculatorPage = () => {
   return (
     <main id="main-content" className="container">
       <SEOHead
-        title="Ovulation Calculator — SageNest"
+        title="Ovulation Calculator"
         description="Estimate your ovulation day, fertile window, and next period date using your last menstrual period and average cycle length."
         canonicalPath="/ovulation-calculator"
         jsonLd={jsonLd}

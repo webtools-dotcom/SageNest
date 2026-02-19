@@ -5,7 +5,7 @@ export const AboutPage = () => {
   return (
     <main id="main-content" className="container article">
       <SEOHead
-        title="About SageNest — Evidence-Based Pregnancy Planning Tools"
+        title="About SageNest"
         description="Learn about SageNest's mission to provide trustworthy, private pregnancy due date calculators and evidence-based guidance for expectant parents."
         canonicalPath="/about"
       />

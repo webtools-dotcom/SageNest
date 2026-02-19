@@ -45,7 +45,7 @@ export const CalculatorPage = () => {
   }, []);
 
   const jsonLd = [
-    { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Pregnancy Due Date Calculator — SageNest', url: 'https://sagenest.app/pregnancy-due-date-calculator' },
+    { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Pregnancy Due Date Calculator', url: 'https://sagenest.app/pregnancy-due-date-calculator' },
     { '@context': 'https://schema.org', '@type': 'Blog', name: 'SageNest Blog', url: 'https://sagenest.app/blog' },
     ...blogPosts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, url: `https://sagenest.app/blog/${post.slug}` })),
     { '@context': 'https://schema.org', '@type': 'WebSite', name: 'SageNest', potentialAction: { '@type': 'SearchAction', target: 'https://sagenest.app/blog?query={search_term_string}', 'query-input': 'required name=search_term_string' } }
@@ -54,7 +54,7 @@ export const CalculatorPage = () => {
   return (
     <main id="main-content" className="container">
       <SEOHead
-        title="Pregnancy Due Date Calculator — SageNest"
+        title="Pregnancy Due Date Calculator"
         description="Estimate your due date from your last menstrual period, view current pregnancy progress by weeks and days, and get a clear planning snapshot to discuss with your care team."
         canonicalPath="/pregnancy-due-date-calculator"
         jsonLd={jsonLd}

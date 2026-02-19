@@ -8,8 +8,10 @@ interface SEOHeadProps {
 }
 
 export const SEOHead = ({ title, description, canonicalPath, jsonLd }: SEOHeadProps): null => {
+  const siteTagline = 'SageNest Health – Smart Tools for Women’s Wellness';
+
   useEffect(() => {
-    document.title = title;
+    document.title = title.includes(siteTagline) ? title : `${title} | ${siteTagline}`;
     const descTag = document.querySelector('meta[name="description"]') || document.createElement('meta');
     descTag.setAttribute('name', 'description');
     descTag.setAttribute('content', description);
