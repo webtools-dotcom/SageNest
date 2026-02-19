@@ -1,6 +1,5 @@
 import { ChangeEvent, useMemo, useState } from 'react';
 import { SEOHead } from '../components/SEOHead';
-import SimilarToolsButton from '../components/SimilarToolsButton';
 import { calculatePregnancyWeightGain, formatKg, Trimester, weekRanges } from '../lib/pregnancyWeightGain';
 
 // BMI band color map for visual gauge
@@ -251,7 +250,6 @@ export const PregnancyWeightGainCalculatorPage = () => {
       <section className="hero-section">
         <div className="tool-header tool-header-inline">
           <div className="trust-badge">Evidence-aligned prenatal guidance</div>
-          <SimilarToolsButton />
         </div>
         <h1 className="hero-title">Pregnancy Weight Gain <span>Calculator</span></h1>
         <p className="hero-description">

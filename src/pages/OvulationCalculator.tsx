@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { FertilityCalendar } from '../components/FertilityCalendar';
 import { FertilityChart } from '../components/FertilityChart';
 import { SEOHead } from '../components/SEOHead';
-import SimilarToolsButton from '../components/SimilarToolsButton';
 import { normalizeDate } from '../lib/calc';
 import { calculateOvulation, validateOvulationInputs } from '../lib/ovulationCalc';
 
@@ -168,7 +167,6 @@ export const OvulationCalculatorPage = () => {
       <section className="hero-section">
         <div className="tool-header tool-header-inline">
           <div className="trust-badge">Private, browser-only fertility estimate</div>
-          <SimilarToolsButton />
         </div>
         <h1 className="hero-title">Ovulation <span>Calculator</span></h1>
         <p className="hero-description">
