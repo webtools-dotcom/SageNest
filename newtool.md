@@ -12,7 +12,7 @@
 4. Files to create / update (step-by-step)
 5. `src/data/tools.ts` — canonical tools registry (format + examples)
 6. Page template (React + TSX) — copyable starting point
-7. Header / Nav changes — adding the small Similar Tools button
+7. Header / Nav changes — keep a single Similar Tools nav pill
 8. Styling & layout guidelines
 9. Accessibility checklist
 10. SEO & meta tags
@@ -37,7 +37,7 @@ This document is the definitive guide contributors and automation (bots/AI) shou
 
 1. Create the new tool page component (suggested location: `src/pages/<slug>.tsx`).
 2. Implement the tool UI and logic. Reuse shared UI patterns (Container, Header, Card) used elsewhere.
-3. Add a `SimilarToolsButton` component into the tool page top area so users can navigate to `/similar-tools`.
+3. Do **not** add a second in-page Similar tools pill; global header nav already contains it.
 4. Add the tool metadata to `src/data/tools.ts` (the single source of truth).
 5. Add the new route to the routing file (usually `src/App.tsx` or `src/routes.tsx`).
 6. Run local build/dev, verify `/similar-tools` lists the new tool and links work.
@@ -61,8 +61,8 @@ For each new tool, the minimum changes are:
 - Optional: `src/components/<ToolName>/*` if the tool has multiple subcomponents.
 - Update: `src/App.tsx` (or central routing file) — add `<Route path="/slug" element={<Page/>} />`.
 - Update: `src/data/tools.ts` — add the tool metadata (id, title, path, description, thumbnail if any).
-- Update (if needed): `src/components/Header.tsx` — header should already contain the `Similar tools` pill; if not present, add `SimilarToolsButton` to header.
-- Reuse: `src/components/SimilarToolsButton.tsx` — place it inside the tool page header area for quick navigation.
+- Update (if needed): `src/components/Header.tsx` — header should contain a single global `Similar tools` pill in nav.
+- Do not add `Similar tools` buttons inside individual tool hero sections; this causes duplicate pills.
 
 > Note: If the repo uses JS instead of TS, the page file can be `.jsx` / `.js`. Keep the same structure.
 
@@ -113,7 +113,6 @@ Use this as the starting point. Replace placeholder logic with your tool's real 
 // src/pages/<slug>.tsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SimilarToolsButton from '../components/SimilarToolsButton';
 
 export default function ToolPage() {
   return (
@@ -124,7 +123,6 @@ export default function ToolPage() {
           <p className="muted">Short description or instructions for the tool.</p>
         </div>
         <div className="actions flex justify-end items-center">
-          <SimilarToolsButton />
         </div>
       </header>
 
@@ -139,9 +137,9 @@ export default function ToolPage() {
 }
 ```
 
-**Placement**: the `SimilarToolsButton` should appear top-right of the header. On small screens, ensure it wraps below the title but remains accessible.
+**Placement**: keep only the global nav pill in the site header. Do not place a second Similar tools pill in the page hero.
 
-# 7. Header / Nav changes — Similar Tools button
+# 7. Header / Nav changes — keep a single Similar Tools nav pill
 
 There should be exactly one prominent nav pill in the top-right of the site that links to `/similar-tools`. Keep its style identical to the old "Calculator" pill. Implementation notes:
 
@@ -149,25 +147,7 @@ There should be exactly one prominent nav pill in the top-right of the site that
 - Render a count optionally: `Similar tools (N)` where `N = tools.filter(t => !t.hidden).length`.
 - Do not add dropdowns; the link should go to `/similar-tools` page where tools are listed in a data-driven way.
 
-Example small component used site-wide:
-
-```tsx
-// src/components/SimilarToolsButton.tsx
-import React from 'react';
-import { Link } from 'react-router-dom';
-import tools from '../data/tools';
-
-export default function SimilarToolsButton({ className = '' }: { className?: string }) {
-  const visibleCount = tools.filter(t => !t.hidden).length;
-  return (
-    <Link to="/similar-tools" className={`nav-pill ${className}`} aria-label="Open similar tools list">
-      Similar tools {visibleCount > 0 ? `(${visibleCount})` : ''}
-    </Link>
-  );
-}
-```
-
-Place this component in `Header.tsx` and in each tool page header.
+Keep this link only in `Header.tsx` (global nav). Do not duplicate it inside individual tool pages.
 
 # 8. Styling & layout guidelines
 
@@ -205,7 +185,7 @@ Before merging, verify:
 - **Functionality**: The tool works in dev and production build (no runtime errors).
 - **Similar tools** listing: `/similar-tools` shows the new tool (title, description, link).
 - **Navigation**: The global header's Similar tools pill links to `/similar-tools`.
-- **Tool-level link**: The top-right SimilarToolsButton on the new tool page navigates correctly.
+- **Tool-level link**: Verify no duplicate Similar tools pill appears inside the tool hero.
 - **No large hero**: Ensure the old hero component is removed from the tool page.
 - **Accessibility**: Run `axe` or Lighthouse Accessibility checks and fix high-impact issues.
 - **Responsiveness**: Check on multiple viewports.
@@ -222,7 +202,7 @@ This example demonstrates the exact minimal steps to add the tool.
 
 1. **Create page file** `src/pages/pregnancy-weight-gain-calculator.tsx` using the page template in section 6.
 2. **Implement UI**: inputs for pre-pregnancy weight, height, BMI calc, week selection, and a results card.
-3. **Add similar tools button**: Import `SimilarToolsButton` and place in header.
+3. **Avoid duplicate nav pills**: Do not import `SimilarToolsButton` into new tool pages.
 4. **Add route**: In `src/App.tsx`, add `<Route path="/pregnancy-weight-gain-calculator" element={<PregnancyWeightGainCalculator />} />`.
 5. **Register tool**: In `src/data/tools.ts`, add the metadata object for weight-gain tool.
 6. **Run & verify**: `npm run dev`, open `http://localhost:5173/similar-tools`, confirm weight gain tool appears.
@@ -245,7 +225,7 @@ This example demonstrates the exact minimal steps to add the tool.
 - [ ] `src/pages/<slug>.tsx` added
 - [ ] Route added to routing file
 - [ ] `src/data/tools.ts` updated
-- [ ] `SimilarToolsButton` present on the page
+- [ ] No duplicate in-page `Similar tools` pill
 - [ ] Hero removed from tool page
 - [ ] Accessibility checklist completed
 - [ ] Local build succeeded: `npm run build`
@@ -260,7 +240,7 @@ feat(tool): add <Tool Title> (path: /<slug>)
 - add page: src/pages/<slug>.tsx
 - register in src/data/tools.ts
 - add route in src/App.tsx
-- add SimilarToolsButton to page header
+- do not add in-page Similar tools pill
 ```
 
 # 15. How to use this file with AI for automatic review
@@ -268,7 +248,7 @@ feat(tool): add <Tool Title> (path: /<slug>)
 If you want an AI (Codex / ChatGPT automation) to review a PR or a set of changes and ensure they match this guide, instruct the AI to do the following checks:
 
 1. Verify `src/data/tools.ts` has one entry for the new tool and `path` matches the route in the router.
-2. Verify `src/pages/<slug>.tsx` exists and contains the `SimilarToolsButton` component import and render.
+2. Verify `src/pages/<slug>.tsx` exists and does not render a duplicate `Similar tools` button inside the page hero.
 3. Verify the global header contains a link to `/similar-tools` using `Link` from `react-router-dom`.
 4. Verify the main hero (if present previously) has been removed from the tool page.
 5. Run static analysis on the code (lint) — check for missing labels, `aria-*` usage, and presence of `aria-live` if results are dynamic.
@@ -279,7 +259,7 @@ If you want an AI (Codex / ChatGPT automation) to review a PR or a set of change
 
 > "Please review the changed files in this PR and confirm they follow `NEW_TOOL_GUIDE.md`:
 > - `src/data/tools.ts` must have a single entry for the new tool with path `/my-slug`.
-> - `src/pages/my-slug.tsx` must exist and include `SimilarToolsButton` and no hero component.
+> - `src/pages/my-slug.tsx` must exist and should not include a duplicate in-page `Similar tools` button.
 > - `src/App.tsx` (or router file) must contain a `<Route path="/my-slug" ...>`.
 > - Run accessibility checklist items and report failures.
 > Provide a concise report with any required fixes."
@@ -290,7 +270,7 @@ If you want an AI (Codex / ChatGPT automation) to review a PR or a set of change
 
 1. Page file added & route wired ✅
 2. Tool registered in `src/data/tools.ts` ✅
-3. `SimilarToolsButton` included ✅
+3. Duplicate Similar tools pill avoided ✅
 4. Hero removed from tool page ✅
 5. Accessibility labels for inputs & results ✅
 6. SEO meta set ✅

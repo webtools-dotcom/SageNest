@@ -237,3 +237,9 @@
 - Simplified per-page SEO title props (calculator, ovulation, weight gain, blog list/post, privacy, about, similar tools) to page-specific labels, relying on the shared tagline suffix for consistency.
 - Updated calculator JSON-LD `WebPage` name string to remove the old `— SageNest` suffix and align with the new global title pattern.
 
+
+## 2026-02-19 (Removed duplicate in-page Similar tools pills on tool pages)
+
+- Removed the extra in-page `Similar tools` pill from the ovulation and pregnancy weight gain tool hero sections so only the global header nav pill remains.
+- Removed the unused `src/components/SimilarToolsButton.tsx` component to prevent accidental reuse that caused duplicate pills.
+- Updated `newtool.md` so future tool creation instructions explicitly forbid adding a second in-page Similar tools pill and keep a single global nav link.
