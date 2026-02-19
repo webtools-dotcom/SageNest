@@ -6,7 +6,7 @@ export const Footer = () => (
       <div>
         <p className="site-footer__brand">SageNest</p>
         <p className="site-footer__description">
-          Supporting pregnancy planning with evidence-based tools and trusted guidance.
+          SageNest Health – Smart Tools for Women’s Wellness
         </p>
       </div>
       <div>
