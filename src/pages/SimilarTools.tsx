@@ -6,7 +6,7 @@ export default function SimilarToolsPage() {
   return (
     <main id="main-content" className="container" aria-labelledby="similar-tools-title">
       <SEOHead
-        title="Similar tools — SageNest"
+        title="Similar tools"
         description="Discover all pregnancy calculators and planning tools available on SageNest."
         canonicalPath="/similar-tools"
       />

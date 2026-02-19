@@ -5,7 +5,7 @@ export const PrivacyPage = () => {
   return (
     <main id="main-content" className="container article">
       <SEOHead
-        title="Privacy Policy — SageNest"
+        title="Privacy Policy"
         description="SageNest's privacy-first approach: all calculations happen in your browser with zero data collection. Learn how we protect your privacy."
         canonicalPath="/privacy"
       />

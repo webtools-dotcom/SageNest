@@ -1,6 +1,6 @@
 # SageNest
 
-SageNest is a fully static, production-ready React + TypeScript web app for pregnancy due date estimation and SEO-focused educational blog content. It is designed for Cloudflare Pages with zero backend, zero database, and zero data collection.
+SageNest Health – Smart Tools for Women’s Wellness is a fully static, production-ready React + TypeScript web app for women-focused wellness tools and SEO-focused educational blog content. It is designed for Cloudflare Pages with zero backend, zero database, and zero data collection.
 
 ## Core Features
 

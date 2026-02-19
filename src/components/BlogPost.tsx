@@ -61,7 +61,7 @@ export const BlogPost = () => {
 
   return (
     <main id="main-content" className="container article">
-      <SEOHead title={`${post.title} — SageNest`} description={post.description} canonicalPath={`/blog/${post.slug}`} jsonLd={jsonLd} />
+      <SEOHead title={post.title} description={post.description} canonicalPath={`/blog/${post.slug}`} jsonLd={jsonLd} />
       <h1>{post.title}</h1>
       <p>{post.publishDate} · {post.readingTime}</p>
       {post.image_url ? <img src={post.image_url} alt="" className="blog-cover" loading="lazy" /> : null}

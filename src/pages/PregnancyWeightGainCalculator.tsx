@@ -243,7 +243,7 @@ export const PregnancyWeightGainCalculatorPage = () => {
   return (
     <main id="main-content" className="container">
       <SEOHead
-        title="Pregnancy Weight Gain Calculator — SageNest"
+        title="Pregnancy Weight Gain Calculator"
         description="Estimate pre-pregnancy BMI, IOM total pregnancy weight gain range, and week-by-week gain targets to discuss with your prenatal clinician."
         canonicalPath="/pregnancy-weight-gain-calculator"
       />

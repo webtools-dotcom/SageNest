@@ -224,3 +224,16 @@
 - Refactored `runAdminGuardedAction` in `src/pages/BlogPoster.tsx` so both `assertAdminUser()` and the supplied `action()` run inside one `try` block and return `true` only on full success.
 - Added safe catch-path handling that preserves the explicit unauthorized message but maps all other failures to a generic user-facing message (`Something went wrong. Please try again.`) before returning `false`.
 - Expanded `tests/blogPosterAuth.test.ts` coverage to verify unauthorized failures, action-thrown failures with graceful messaging, and successful guarded execution returning `true`.
+
+## 2026-02-19 (Website tagline refresh)
+
+- Updated the global website tagline text to `SageNest Health – Smart Tools for Women’s Wellness` in the shared footer brand description.
+- Updated base `index.html` metadata so default page title and meta description use the new site-wide tagline before React hydration.
+- Updated the README opening product description to align with the new website-wide tagline positioning.
+
+## 2026-02-19 (Tagline applied to dynamic page titles)
+
+- Updated `SEOHead` to apply the site-wide tagline (`SageNest Health – Smart Tools for Women’s Wellness`) to runtime page titles so browser tabs on all routed pages consistently show the new branding.
+- Simplified per-page SEO title props (calculator, ovulation, weight gain, blog list/post, privacy, about, similar tools) to page-specific labels, relying on the shared tagline suffix for consistency.
+- Updated calculator JSON-LD `WebPage` name string to remove the old `— SageNest` suffix and align with the new global title pattern.
+
