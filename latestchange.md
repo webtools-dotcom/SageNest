@@ -251,3 +251,10 @@
 - Removed the extra in-page `Similar tools` pill from the ovulation and pregnancy weight gain tool hero sections so only the global header nav pill remains.
 - Removed the unused `src/components/SimilarToolsButton.tsx` component to prevent accidental reuse that caused duplicate pills.
 - Updated `newtool.md` so future tool creation instructions explicitly forbid adding a second in-page Similar tools pill and keep a single global nav link.
+
+## 2026-02-20 (Sitemap Fix 2 aligned to canonical pages.dev domain)
+
+- Replaced `public/sitemap.xml` with the exact Fix 2 XML from `sagenest-seo-codex-prompt.md`.
+- Ensured every `<loc>` uses `https://sagenest.pages.dev`.
+- Added `/ovulation-calculator` and included all specified `<lastmod>` and `<priority>` values.
+- Kept XML header and sitemap `<urlset>` namespace intact for valid sitemap parsing.
