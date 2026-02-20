@@ -2,6 +2,14 @@
 # Latest Change Log
 
 
+
+## 2026-02-20 (Redirect rules sync for blog slugs + due date calculator)
+
+- Updated `public/_redirects` to include all seven Fix 7c blog slug-to-static-index rewrite rules before the SPA catch-all.
+- Added `/pregnancy-due-date-calculator /pregnancy-due-date-calculator/index.html 200` before the final catch-all route.
+- Kept `/* /index.html 200` as the last line to preserve SPA fallback behavior.
+
+
 ## 2026-02-20 (Fix 7 deployment hotfix: robust BlogPost interface stripping)
 
 - Fixed `scripts/generate-blog-html.mjs` TypeScript stripping logic to remove the full `BlogPost` interface block (including nested inline object type braces) before `new Function(...)` evaluation.
