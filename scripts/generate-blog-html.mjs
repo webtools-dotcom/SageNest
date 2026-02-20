@@ -67,7 +67,7 @@ function extractBlogPosts() {
 
   // Remove TypeScript interface/type declarations
   let js = src
-    .replace(/export\s+interface\s+\w+\s*\{[\s\S]*?\}/g, '')
+    .replace(/export\s+interface\s+BlogPost\s*\{[\s\S]*?\n\}\s*/g, '')
     .replace(/export\s+type\s+\w+[^;]*;/g, '')
     .replace(/:\s*BlogPost\[\]/g, '')
     .replace(/:\s*Array<[^>]+>/g, '')

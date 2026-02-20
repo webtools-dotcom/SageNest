@@ -2,6 +2,12 @@
 # Latest Change Log
 
 
+## 2026-02-20 (Fix 7 deployment hotfix: robust BlogPost interface stripping)
+
+- Fixed `scripts/generate-blog-html.mjs` TypeScript stripping logic to remove the full `BlogPost` interface block (including nested inline object type braces) before `new Function(...)` evaluation.
+- Resolved Cloudflare build failure (`SyntaxError: Unexpected token '>'`) in `npm run generate:blog` during `prebuild`.
+- Re-ran blog static generation successfully for all 7 blog slugs.
+
 ## 2026-02-20 (Fix 7 blog static HTML generator + build hook)
 
 - Added `scripts/generate-blog-html.mjs` with the full Fix 7 generator implementation to pre-render blog post HTML from `src/data/blogPosts.ts` into `public/blog/[slug]/index.html`.
