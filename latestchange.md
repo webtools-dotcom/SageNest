@@ -3,6 +3,14 @@
 
 
 
+## 2026-02-20 (SEO domain + metadata string alignment)
+
+- Updated JSON-LD URL strings in `src/pages/Calculator.tsx` from `https://sagenest.app...` to `https://sagenest.pages.dev...`, including the WebPage URL, Blog URL, article URL template, and SearchAction target URL.
+- Updated `src/pages/OvulationCalculator.tsx` JSON-LD WebApplication URL from `https://sagenest.app/ovulation-calculator` to `https://sagenest.pages.dev/ovulation-calculator`.
+- Updated JSON-LD blog/article URL strings in `src/components/BlogList.tsx` and `src/components/BlogPost.tsx` to use `https://sagenest.pages.dev`.
+- Replaced only `SEOHead` `description` prop strings in `src/pages/Calculator.tsx`, `src/pages/OvulationCalculator.tsx`, and `src/pages/PregnancyWeightGainCalculator.tsx` with the exact long-tail copy specified in `sagenest-seo-codex-prompt.md`.
+
+
 ## 2026-02-18 (Admin login session error handling)
 
 - Updated `src/pages/AdminLogin.tsx` `checkSession` flow to read `{ data, error }` from `supabase.auth.getUser()` and handle auth-read failures first with a user-safe message: “Unable to verify session. Please try again.” while ending loading state.

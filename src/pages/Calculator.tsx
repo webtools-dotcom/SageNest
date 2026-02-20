@@ -45,17 +45,17 @@ export const CalculatorPage = () => {
   }, []);
 
   const jsonLd = [
-    { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Pregnancy Due Date Calculator', url: 'https://sagenest.app/pregnancy-due-date-calculator' },
-    { '@context': 'https://schema.org', '@type': 'Blog', name: 'SageNest Blog', url: 'https://sagenest.app/blog' },
-    ...blogPosts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, url: `https://sagenest.app/blog/${post.slug}` })),
-    { '@context': 'https://schema.org', '@type': 'WebSite', name: 'SageNest', potentialAction: { '@type': 'SearchAction', target: 'https://sagenest.app/blog?query={search_term_string}', 'query-input': 'required name=search_term_string' } }
+    { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Pregnancy Due Date Calculator', url: 'https://sagenest.pages.dev/pregnancy-due-date-calculator' },
+    { '@context': 'https://schema.org', '@type': 'Blog', name: 'SageNest Blog', url: 'https://sagenest.pages.dev/blog' },
+    ...blogPosts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, url: `https://sagenest.pages.dev/blog/${post.slug}` })),
+    { '@context': 'https://schema.org', '@type': 'WebSite', name: 'SageNest', potentialAction: { '@type': 'SearchAction', target: 'https://sagenest.pages.dev/blog?query={search_term_string}', 'query-input': 'required name=search_term_string' } }
   ];
 
   return (
     <main id="main-content" className="container">
       <SEOHead
         title="Pregnancy Due Date Calculator"
-        description="Estimate your due date from your last menstrual period, view current pregnancy progress by weeks and days, and get a clear planning snapshot to discuss with your care team."
+        description="Free pregnancy due date calculator — enter your LMP and cycle length to estimate your due date, gestational age, and trimester instantly. No signup required."
         canonicalPath="/pregnancy-due-date-calculator"
         jsonLd={jsonLd}
       />

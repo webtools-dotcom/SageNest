@@ -243,7 +243,7 @@ export const PregnancyWeightGainCalculatorPage = () => {
     <main id="main-content" className="container">
       <SEOHead
         title="Pregnancy Weight Gain Calculator"
-        description="Estimate pre-pregnancy BMI, IOM total pregnancy weight gain range, and week-by-week gain targets to discuss with your prenatal clinician."
+        description="Free pregnancy weight gain calculator — enter your pre-pregnancy BMI to get your IOM-recommended total gain range and week-by-week targets by trimester. No signup required."
         canonicalPath="/pregnancy-weight-gain-calculator"
       />
 

@@ -111,7 +111,7 @@ export const OvulationCalculatorPage = () => {
         '@context': 'https://schema.org',
         '@type': 'WebApplication',
         name: 'Ovulation Calculator',
-        url: 'https://sagenest.app/ovulation-calculator',
+        url: 'https://sagenest.pages.dev/ovulation-calculator',
         applicationCategory: 'HealthApplication',
         operatingSystem: 'Any',
         description:
@@ -159,7 +159,7 @@ export const OvulationCalculatorPage = () => {
     <main id="main-content" className="container">
       <SEOHead
         title="Ovulation Calculator"
-        description="Estimate your ovulation day, fertile window, and next period date using your last menstrual period and average cycle length."
+        description="Free ovulation calculator — enter your last period date and cycle length to find your fertile window, peak fertility days, and estimated ovulation date. No signup required."
         canonicalPath="/ovulation-calculator"
         jsonLd={jsonLd}
       />
