@@ -10,7 +10,8 @@
     "test": "vitest run",
     "check:package": "node scripts/check-package-json.mjs",
     "check:conflicts": "bash scripts/check-conflicts.sh",
-    "prebuild": "npm run check:package && npm run check:conflicts"
+    "generate:blog": "node scripts/generate-blog-html.mjs",
+    "prebuild": "npm run check:package && npm run check:conflicts && npm run generate:blog"
   },
   "dependencies": {
     "react": "^18.3.1",
