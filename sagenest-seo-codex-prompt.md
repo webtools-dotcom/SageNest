@@ -1,11 +1,5 @@
 # SageNest SEO Fix — Full Codex Prompt
 
-> Paste everything below this line into Codex as your task prompt.
-
----
-
-## CONTEXT
-
 You are working on the SageNest pregnancy calculator website, a React + TypeScript + Vite SPA deployed on Cloudflare Pages at **https://sagenest.pages.dev**. The codebase uses React Router for client-side routing, with a `public/_redirects` file for Cloudflare SPA fallback. Blog posts are stored as static data in `src/data/blogPosts.ts`. There is one existing pre-rendered static HTML page at `public/pregnancy-weight-gain-calculator/index.html` — this is the gold standard pattern for the fixes below.
 
 **The canonical domain for this site is `https://sagenest.pages.dev`.** There is no custom domain. All SEO fixes must use `https://sagenest.pages.dev` — not `sagenest.app`.
