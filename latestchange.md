@@ -3,6 +3,13 @@
 
 
 
+## 2026-02-20 (Fixes 8 and 9: static due date page + weight gain metadata alignment)
+
+- Added `public/pregnancy-due-date-calculator/index.html` with the full static pre-rendered HTML from the SEO prompt so crawlers can index complete due-date content without JS.
+- Updated `public/pregnancy-weight-gain-calculator/index.html` canonical URL to `https://sagenest.pages.dev/pregnancy-weight-gain-calculator`.
+- Replaced the weight gain page meta description with the requested keyword-targeted copy and inserted OG/Twitter tags immediately after canonical.
+
+
 ## 2026-02-20 (Redirect rules sync for blog slugs + due date calculator)
 
 - Updated `public/_redirects` to include all seven Fix 7c blog slug-to-static-index rewrite rules before the SPA catch-all.
