@@ -46,8 +46,8 @@ export const BlogList = () => {
   }, []);
 
   const jsonLd = [
-    { '@context': 'https://schema.org', '@type': 'Blog', name: 'SageNest Pregnancy Blog', url: 'https://sagenest.app/blog' },
-    ...posts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, datePublished: post.publishDate, description: post.description, url: `https://sagenest.app/blog/${post.slug}` }))
+    { '@context': 'https://schema.org', '@type': 'Blog', name: 'SageNest Pregnancy Blog', url: 'https://sagenest.pages.dev/blog' },
+    ...posts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, datePublished: post.publishDate, description: post.description, url: `https://sagenest.pages.dev/blog/${post.slug}` }))
   ];
 
   return (

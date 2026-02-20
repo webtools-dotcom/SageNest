@@ -55,7 +55,7 @@ export const BlogPost = () => {
   if (!post) return <main className="container"><h1>Post not found</h1></main>;
 
   const jsonLd = [
-    { '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.description, datePublished: post.publishDate, mainEntityOfPage: `https://sagenest.app/blog/${post.slug}` },
+    { '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.description, datePublished: post.publishDate, mainEntityOfPage: `https://sagenest.pages.dev/blog/${post.slug}` },
     post.faq ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: post.faq.map((x) => ({ '@type': 'Question', name: x.question, acceptedAnswer: { '@type': 'Answer', text: x.answer } })) } : null
   ].filter(Boolean) as Record<string, unknown>[];
 
