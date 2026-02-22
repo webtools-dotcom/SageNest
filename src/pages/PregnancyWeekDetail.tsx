@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { SEOHead } from '../components/SEOHead';
+import { pregnancyWeekByNumber } from '../data/pregnancyWeeks';
 
 const MIN_WEEK = 1;
 const MAX_WEEK = 40;
@@ -46,24 +47,35 @@ export const PregnancyWeekDetailPage = () => {
   }
 
   const trimester = getTrimesterLabel(weekNumber);
+  const weekData = pregnancyWeekByNumber[weekNumber];
+  const description = `${weekData.summary} ${weekData.disclaimer}`;
+  const canonicalPath = `/pregnancy-week-by-week/week-${weekNumber}`;
+  const url = `https://sagenest.pages.dev${canonicalPath}`;
 
   const jsonLd = [
     {
       '@context': 'https://schema.org',
-      '@type': 'MedicalWebPage',
-      name: `Pregnancy Week ${weekNumber}`,
-      url: `https://sagenest.pages.dev/pregnancy-week-by-week/week-${weekNumber}`,
-      about: `Pregnancy week ${weekNumber} overview`,
-      description: `Educational overview of pregnancy week ${weekNumber}, including likely body changes and key prenatal planning notes.`,
+      '@type': 'Article',
+      headline: `Pregnancy Week ${weekNumber}: ${trimester} Guide`,
+      description,
+      url,
+      mainEntityOfPage: url,
+      datePublished: '2026-02-22',
+      dateModified: '2026-02-22',
+      publisher: {
+        '@type': 'Organization',
+        name: 'SageNest',
+        url: 'https://sagenest.pages.dev',
+      },
     },
   ];
 
   return (
     <main id="main-content" className="container">
       <SEOHead
-        title={`Pregnancy Week ${weekNumber}`}
-        description={`Week ${weekNumber} pregnancy overview with trimester context, development highlights, and planning guidance.`}
-        canonicalPath={`/pregnancy-week-by-week/week-${weekNumber}`}
+        title={`Pregnancy Week ${weekNumber}: ${trimester} Milestones and Planning`}
+        description={description}
+        canonicalPath={canonicalPath}
         jsonLd={jsonLd}
       />
 

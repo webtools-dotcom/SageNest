@@ -1,3 +1,10 @@
+## 2026-02-22 (Pregnancy week-by-week SEO + sitemap expansion)
+
+- Updated the pregnancy week-by-week hub SEO metadata to use a unique title/description/canonical and added CollectionPage + ItemList JSON-LD for all 40 week links.
+- Updated each pregnancy week detail page to generate week-specific SEO fields (title, summary-based description, and canonical URL) and emit Article JSON-LD including publisher, URL, and publish/modified dates.
+- Expanded `public/sitemap.xml` with `/pregnancy-week-by-week` and `/pregnancy-week-by-week/week-1` through `/pregnancy-week-by-week/week-40`.
+- Verified generated canonical paths are unique per week and week descriptions are not reused generic text.
+
 ## 2026-02-22 (Week-by-week internal linking expansion)
 
 - Added a contextual result CTA in `src/components/CalculatorCard.tsx` that links to `/pregnancy-week-by-week/week-{calculatedWeek}` when gestational week is in range, with fallback to `/pregnancy-week-by-week`.
