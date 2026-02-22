@@ -25,6 +25,13 @@ const tools: Tool[] = [
     path: '/pregnancy-weight-gain-calculator'
   },
   {
+    id: 'pregnancy-week-by-week',
+    title: 'Pregnancy Week by Week',
+    slug: 'pregnancy-week-by-week',
+    description: 'Explore weekly baby development milestones and body changes across all 40 weeks.',
+    path: '/pregnancy-week-by-week'
+  },
+  {
     id: 'ovulation-calculator',
     title: 'Ovulation Calculator',
     slug: 'ovulation-calculator',
