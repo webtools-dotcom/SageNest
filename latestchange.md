@@ -1,3 +1,10 @@
+## 2026-02-22 (Pregnancy week dataset added)
+
+- Added `src/data/pregnancyWeeks.ts` with a strongly typed `PregnancyWeek` interface and a complete week-by-week dataset covering gestational weeks 1 through 40.
+- Included medically cautious, educational week content with nested keys for `funFact`, symptom red flags, symptoms, milestones, preparation checklist, and related guidance.
+- Added `pregnancyWeekByNumber` for O(1) week lookup and a runtime validation guard to ensure all weeks 1-40 are present in order.
+
+
 ## 2026-02-22 (Week detail route parsing hotfix)
 
 - Fixed React Router matching for pregnancy week detail URLs by changing the route from a non-parameterized mixed segment to `/pregnancy-week-by-week/:weekSlug`.
