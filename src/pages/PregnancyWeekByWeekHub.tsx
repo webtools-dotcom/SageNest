@@ -16,17 +16,28 @@ export const PregnancyWeekByWeekHubPage = () => {
     {
       '@context': 'https://schema.org',
       '@type': 'CollectionPage',
-      name: 'Pregnancy Week by Week Guide',
+      name: 'Pregnancy Week-by-Week Guide',
       url: 'https://sagenest.pages.dev/pregnancy-week-by-week',
       description: 'Browse each pregnancy week from 1 to 40 with guidance on fetal development, body changes, and planning checkpoints.',
+      mainEntity: {
+        '@type': 'ItemList',
+        itemListOrder: 'https://schema.org/ItemListOrderAscending',
+        numberOfItems: TOTAL_WEEKS,
+        itemListElement: weeks.map((weekNumber) => ({
+          '@type': 'ListItem',
+          position: weekNumber,
+          name: `Pregnancy week ${weekNumber}`,
+          url: `https://sagenest.pages.dev/pregnancy-week-by-week/week-${weekNumber}`,
+        })),
+      },
     },
   ];
 
   return (
     <main id="main-content" className="container">
       <SEOHead
-        title="Pregnancy Week-by-Week Guide"
-        description="Browse all 40 pregnancy weeks with quick guidance on fetal development, maternal body changes, and practical planning checkpoints."
+        title="Pregnancy Week-by-Week Hub: Weeks 1-40 Guide"
+        description="Explore every pregnancy week from 1 to 40 with focused guidance on baby development, body changes, and planning checkpoints in one organized hub."
         canonicalPath="/pregnancy-week-by-week"
         jsonLd={jsonLd}
       />
