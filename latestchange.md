@@ -1,3 +1,10 @@
+## 2026-02-22 (Pregnancy week detail accessibility navigation + heading hierarchy)
+
+- Added an accessible breadcrumb (`nav[aria-label="Breadcrumb"]`) on the pregnancy week detail page linking back to the week-by-week hub and marking the current week.
+- Added adjacent-week navigation (`section[aria-label="Adjacent weeks"]`) with descriptive previous/next links and non-interactive disabled text at week boundaries (week 1 and week 40).
+- Reworked week-detail content into a strict heading hierarchy with one `h1`, major `h2` sections (baby development, maternal changes, to-do, medical guidance), and `h3` subsection labels.
+- Replaced generic static week text with structured, data-driven sections from `pregnancyWeekByNumber` for development, symptoms, checklist items, and red-flag guidance.
+
 ## 2026-02-22 (Pregnancy week-by-week SEO + sitemap expansion)
 
 - Updated the pregnancy week-by-week hub SEO metadata to use a unique title/description/canonical and added CollectionPage + ItemList JSON-LD for all 40 week links.

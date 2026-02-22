@@ -48,6 +48,8 @@ export const PregnancyWeekDetailPage = () => {
 
   const trimester = getTrimesterLabel(weekNumber);
   const weekData = pregnancyWeekByNumber[weekNumber];
+  const previousWeek = weekNumber > MIN_WEEK ? weekNumber - 1 : null;
+  const nextWeek = weekNumber < MAX_WEEK ? weekNumber + 1 : null;
   const description = `${weekData.summary} ${weekData.disclaimer}`;
   const canonicalPath = `/pregnancy-week-by-week/week-${weekNumber}`;
   const url = `https://sagenest.pages.dev${canonicalPath}`;
@@ -81,25 +83,84 @@ export const PregnancyWeekDetailPage = () => {
 
       <header className="tool-header">
         <div>
+          <nav aria-label="Breadcrumb">
+            <ol>
+              <li>
+                <Link to="/pregnancy-week-by-week">Pregnancy week-by-week hub</Link>
+              </li>
+              <li aria-current="page">Week {weekNumber}</li>
+            </ol>
+          </nav>
           <h1>Pregnancy Week {weekNumber}</h1>
           <p className="muted">{trimester}</p>
         </div>
       </header>
 
-      <section className="content-section" aria-labelledby="week-overview-heading">
-        <h2 id="week-overview-heading">What to expect this week</h2>
+      <section className="content-section" aria-label="Adjacent weeks">
+        <h2>Navigate weeks</h2>
         <p>
-          During week {weekNumber}, your care plan and symptoms can vary person to person. Use this page as a quick educational reference and confirm medical decisions with your prenatal provider.
+          {previousWeek ? (
+            <Link to={`/pregnancy-week-by-week/week-${previousWeek}`}>Go to week {previousWeek}</Link>
+          ) : (
+            <span aria-disabled="true">Previous week unavailable at week 1</span>
+          )}
+        </p>
+        <p>
+          {nextWeek ? (
+            <Link to={`/pregnancy-week-by-week/week-${nextWeek}`}>Go to week {nextWeek}</Link>
+          ) : (
+            <span aria-disabled="true">Next week unavailable at week 40</span>
+          )}
         </p>
       </section>
 
-      <section className="content-section" aria-labelledby="week-planning-heading" style={{ marginTop: 'var(--space-2xl)' }}>
-        <h2 id="week-planning-heading">Planning checklist</h2>
+      <section className="content-section" aria-labelledby="baby-development-heading" style={{ marginTop: 'var(--space-2xl)' }}>
+        <h2 id="baby-development-heading">Baby development</h2>
+        <p>Estimated size this week: {weekData.baby.sizeComparison}.</p>
+        <h3>Development highlights</h3>
         <ul>
-          <li>Track any new symptoms and bring questions to your next prenatal appointment.</li>
-          <li>Review hydration, sleep, and nutrition routines that support this trimester.</li>
-          <li>Keep using evidence-based tools from SageNest for due date and weight gain planning.</li>
+          {weekData.baby.development.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
         </ul>
+      </section>
+
+      <section className="content-section" aria-labelledby="maternal-changes-heading" style={{ marginTop: 'var(--space-2xl)' }}>
+        <h2 id="maternal-changes-heading">Maternal changes</h2>
+        <h3>Common symptoms</h3>
+        <ul>
+          {weekData.body.symptoms.common.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+        <h3>Less common symptoms</h3>
+        <ul>
+          {weekData.body.symptoms.lessCommon.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="content-section" aria-labelledby="to-do-heading" style={{ marginTop: 'var(--space-2xl)' }}>
+        <h2 id="to-do-heading">To-do</h2>
+        <ul>
+          {weekData.preparation.checklist.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="content-section" aria-labelledby="medical-guidance-heading" style={{ marginTop: 'var(--space-2xl)' }}>
+        <h2 id="medical-guidance-heading">Medical guidance</h2>
+        <h3>Appointment focus</h3>
+        <p>{weekData.preparation.appointmentFocus}</p>
+        <h3>Call your clinician urgently if you notice</h3>
+        <ul>
+          {weekData.body.symptoms.redFlags.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+        <p>{weekData.disclaimer}</p>
         <p><Link to="/pregnancy-week-by-week">Back to all weeks</Link></p>
       </section>
     </main>
