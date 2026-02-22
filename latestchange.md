@@ -1,3 +1,11 @@
+
+## 2026-02-22 (Pregnancy week-by-week routes)
+
+- Added `src/pages/PregnancyWeekByWeekHub.tsx` with a new week-by-week hub page that uses the shared container/section/SEO layout style and links to all weeks 1 through 40.
+- Added `src/pages/PregnancyWeekDetail.tsx` with param parsing and strict week validation so only integer weeks 1-40 render detail content.
+- Implemented an in-page not-found fallback on the week detail route for invalid week values and linked users back to the hub page.
+- Registered new routes in `src/App.tsx` for `/pregnancy-week-by-week` and `/pregnancy-week-by-week/week-:weekNumber`.
+
  
 # Latest Change Log
 
