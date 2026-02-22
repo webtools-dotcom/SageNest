@@ -78,6 +78,11 @@ export const CalculatorPage = () => {
           <Link to="/pregnancy-weight-gain-calculator">pregnancy weight gain calculator</Link>{' '}
           to review trimester-based guidance you can discuss with your healthcare provider.
         </p>
+        <p>
+          You can also explore our{' '}
+          <Link to="/pregnancy-week-by-week">pregnancy week-by-week guide</Link>{' '}
+          for focused guidance as your pregnancy progresses.
+        </p>
       </section>
 
       <FAQAccordion items={faq} />

@@ -15,6 +15,7 @@ export const Footer = () => (
           <Link to="/pregnancy-due-date-calculator">Pregnancy Due Date Calculator</Link>
           <Link to="/ovulation-calculator">Ovulation Calculator</Link>
           <Link to="/pregnancy-weight-gain-calculator">Pregnancy Weight Gain Calculator</Link>
+          <Link to="/pregnancy-week-by-week">Pregnancy Week-by-Week</Link>
           <Link to="/blog">Blog</Link>
         </div>
       </div>

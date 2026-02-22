@@ -1,3 +1,10 @@
+## 2026-02-22 (Week-by-week internal linking expansion)
+
+- Added a contextual result CTA in `src/components/CalculatorCard.tsx` that links to `/pregnancy-week-by-week/week-{calculatedWeek}` when gestational week is in range, with fallback to `/pregnancy-week-by-week`.
+- Added a section-level internal link in `src/pages/Calculator.tsx` from the planning tools section to the pregnancy week-by-week hub page.
+- Added a new footer resource link in `src/components/Footer.tsx` for “Pregnancy Week-by-Week”.
+
+
 ## 2026-02-22 (Pregnancy week dataset added)
 
 - Added `src/data/pregnancyWeeks.ts` with a strongly typed `PregnancyWeek` interface and a complete week-by-week dataset covering gestational weeks 1 through 40.

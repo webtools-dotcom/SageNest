@@ -173,6 +173,13 @@ export const CalculatorCard = ({ navState }: CalculatorCardProps) => {
     : mode === 'conception' ? 'An approximate date is fine — your provider will confirm with ultrasound'
     : 'The calendar date of your transfer procedure';
 
+  const weekByWeekPath = derived && derived.gestationalWeeks >= 1 && derived.gestationalWeeks <= 40
+    ? `/pregnancy-week-by-week/week-${derived.gestationalWeeks}`
+    : '/pregnancy-week-by-week';
+  const weekByWeekLabel = derived && derived.gestationalWeeks >= 1 && derived.gestationalWeeks <= 40
+    ? `See pregnancy week-by-week guidance for week ${derived.gestationalWeeks}`
+    : 'See the full pregnancy week-by-week guide';
+
   return (
     <>
       <div className="calculator-card">
@@ -416,6 +423,12 @@ export const CalculatorCard = ({ navState }: CalculatorCardProps) => {
             trimester={derived.trimester}
             conceptionDate={derived.conceptionDate}
           />
+
+          <p style={{ textAlign: 'center', margin: 'var(--space-lg) 0 0 0' }}>
+            <Link to={weekByWeekPath}>
+              {weekByWeekLabel}
+            </Link>
+          </p>
 
           <div style={{ textAlign: 'center', margin: 'var(--space-xl) 0' }}>
             <button onClick={resetCalculator} className="primary">Calculate New Date</button>
