@@ -1,127 +1,1261 @@
+// src/data/pregnancyWeeks.ts
 export interface PregnancyWeek {
   week: number;
-  trimester: 'First trimester' | 'Second trimester' | 'Third trimester';
+  trimester: 1 | 2 | 3;
   title: string;
-  summary: string;
-  baby: {
-    sizeComparison: string;
-    development: string[];
-  };
-  body: {
-    symptoms: {
-      common: string[];
-      lessCommon: string[];
-      redFlags: string[];
-    };
-    milestones: string[];
-  };
-  preparation: {
-    checklist: string[];
-    appointmentFocus: string;
-  };
-  wellness: {
-    nutrition: string[];
-    movement: string[];
-  };
-  funFact: string;
-  disclaimer: string;
+  babySize: string;           // fruit/object comparison
+  babyLength: string;         // crown-rump or crown-heel length
+  babyWeight: string;
+  highlight: string;          // one-line wow fact
+  babyDevelopment: string[];  // 4–5 bullet points
+  momChanges: string[];       // 3–4 bullet points
+  symptoms: string[];         // common symptoms this week
+  tips: string[];             // 3–4 actionable tips
+  nutrition: string;          // key nutrient focus
+  weeklyFact: string;         // interesting trivia / milestone
 }
 
-const defaultDisclaimer = 'Educational guidance only. Symptoms and timelines vary by person, so contact your prenatal clinician for personalized advice or urgent concerns.';
-
-const sizeByWeek = [
-  'poppy seed', 'sesame seed', 'lentil', 'blueberry', 'apple seed', 'sweet pea', 'raspberry', 'kidney bean', 'grape', 'kumquat',
-  'fig', 'lime', 'pea pod', 'lemon', 'apple', 'avocado', 'pomegranate', 'bell pepper', 'tomato', 'banana',
-  'carrot', 'spaghetti squash', 'large mango', 'ear of corn', 'rutabaga', 'scallion bunch', 'cauliflower head', 'eggplant', 'butternut squash', 'cabbage',
-  'coconut', 'jicama', 'pineapple', 'cantaloupe', 'honeydew melon', 'romaine heart', 'Swiss chard bunch', 'leek bunch', 'small watermelon', 'mini pumpkin'
-] as const;
-
-const weekMilestone = (week: number): string => {
-  if (week <= 4) return 'Early pregnancy support starts with folic acid, medication review, and confirming prenatal care plans.';
-  if (week <= 8) return 'Core organs and neural structures are developing rapidly, making routine prenatal guidance especially important.';
-  if (week <= 13) return 'First-trimester screening discussions often begin, including labs, ultrasound timing, and symptom management.';
-  if (week <= 20) return 'Growth and movement become easier to track, and anatomy-scan planning is usually reviewed with your care team.';
-  if (week <= 27) return 'Second-trimester monitoring often includes glucose testing, blood pressure checks, and ongoing fetal growth review.';
-  if (week <= 34) return 'Third-trimester visits focus on movement patterns, blood pressure trends, and delivery preference conversations.';
-  return 'Final-weeks planning usually covers labor signs, postpartum support, and when to contact triage or labor and delivery.';
-};
-
-const getTrimester = (week: number): PregnancyWeek['trimester'] => {
-  if (week <= 13) return 'First trimester';
-  if (week <= 27) return 'Second trimester';
-  return 'Third trimester';
-};
-
-const createWeek = (week: number): PregnancyWeek => ({
-  week,
-  trimester: getTrimester(week),
-  title: `Pregnancy week ${week}`,
-  summary: `Week ${week} is a checkpoint for tracking development, maternal symptoms, and practical planning with your prenatal team.`,
-  baby: {
-    sizeComparison: sizeByWeek[week - 1],
-    development: [
-      `Growth this week is often compared to a ${sizeByWeek[week - 1]} by educational references.`,
-      weekMilestone(week),
-      'Exact growth pace can differ from pregnancy to pregnancy and is interpreted with ultrasound and clinical context.',
+export const pregnancyWeeks: PregnancyWeek[] = [
+  // ─────────────────────────────────────────────
+  // FIRST TRIMESTER — Weeks 1–13
+  // ─────────────────────────────────────────────
+  {
+    week: 1,
+    trimester: 1,
+    title: "Your Journey Begins",
+    babySize: "Microscopic — smaller than a grain of sand",
+    babyLength: "Not yet measurable",
+    babyWeight: "Not yet measurable",
+    highlight: "Week 1 is technically counted from the first day of your last period — conception hasn't happened yet!",
+    babyDevelopment: [
+      "Your body is preparing for ovulation, releasing hormones to ripen a follicle in one of your ovaries.",
+      "The uterine lining is shedding and rebuilding, creating the perfect environment for implantation.",
+      "Estrogen levels are rising, signaling the release of an egg in approximately 14 days.",
+      "Though pregnancy is 'counted' from this week, fertilization won't occur until around week 2–3.",
     ],
+    momChanges: [
+      "Menstruation is occurring — your uterus is preparing a fresh lining for potential implantation.",
+      "Hormonal shifts may cause mild cramping, bloating, and mood changes typical of a period.",
+      "Your cervical mucus will begin to change throughout the cycle, becoming more fertile-friendly near ovulation.",
+    ],
+    symptoms: ["Menstrual cramps", "Light to moderate bleeding", "Bloating", "Mood changes", "Breast tenderness"],
+    tips: [
+      "Start taking a prenatal vitamin with at least 400–800 mcg of folic acid — ideally 3 months before conception.",
+      "Track your cycle using an app or basal body temperature to identify your fertile window.",
+      "Schedule a preconception appointment with your OB-GYN or midwife to review your health history.",
+      "Eliminate alcohol, smoking, and recreational drugs now — these can affect egg quality before conception.",
+    ],
+    nutrition: "Folic acid (400–800 mcg daily) is essential to prevent neural tube defects in the early weeks of development.",
+    weeklyFact: "Only about 1 in 300 sperm that enter the cervix will actually reach the fallopian tube — making fertilization a true race.",
   },
-  body: {
-    symptoms: {
-      common: [
-        'Fatigue or changing sleep quality.',
-        'Digestive shifts such as bloating, nausea, or heartburn.',
-        'Breast, pelvic, or back discomfort that can fluctuate during the week.',
-      ],
-      lessCommon: [
-        'Headaches, nasal congestion, or skin changes.',
-        'Mood variability related to hormones, stress, and sleep.',
-      ],
-      redFlags: [
-        'Heavy bleeding, fluid leakage, or regular painful contractions before term.',
-        'Persistent severe headache, vision changes, chest pain, or shortness of breath.',
-        'Fever, severe abdominal pain, or noticeably reduced fetal movement in later pregnancy.',
-      ],
-    },
-    milestones: [
-      weekMilestone(week),
-      'Symptom intensity may change quickly, so week-to-week tracking can improve appointment discussions.',
+  {
+    week: 2,
+    trimester: 1,
+    title: "Ovulation & Fertilization",
+    babySize: "One single cell — a zygote",
+    babyLength: "0.1 mm",
+    babyWeight: "Essentially zero",
+    highlight: "The moment of fertilization — when sperm meets egg — determines your baby's biological sex and unique genetic blueprint.",
+    babyDevelopment: [
+      "Ovulation occurs: a mature egg bursts from its follicle and is swept into the fallopian tube.",
+      "If sperm is present, fertilization can happen within 12–24 hours of ovulation.",
+      "The fertilized egg — now a zygote — immediately begins cell division as it travels toward the uterus.",
+      "The zygote's sex chromosomes are already determined: XX for girl, XY for boy.",
+      "Cell division continues rapidly, creating a blastocyst of around 100 cells by the time it reaches the uterus.",
     ],
+    momChanges: [
+      "Cervical mucus becomes clear, stretchy, and 'egg-white' textured around ovulation — the most fertile sign.",
+      "A mild twinge of pain on one side (Mittelschmerz) may signal ovulation.",
+      "Basal body temperature rises slightly (0.2–0.5°C) after ovulation due to progesterone.",
+    ],
+    symptoms: ["Ovulation pain (Mittelschmerz)", "Increased libido", "Clear stretchy discharge", "Slight breast tenderness"],
+    tips: [
+      "Have sex every 1–2 days during your fertile window (5 days before ovulation through ovulation day) to maximize chances.",
+      "Use an ovulation predictor kit (OPK) to pinpoint your LH surge 24–36 hours before ovulation.",
+      "Avoid lubricants like KY Jelly — they can impair sperm motility. Choose sperm-friendly options like Pre-Seed.",
+      "Stay horizontal for 15–20 minutes after sex — while not proven, it may give sperm a head start.",
+    ],
+    nutrition: "Zinc (found in pumpkin seeds, oysters, beef) supports sperm health and egg quality during conception.",
+    weeklyFact: "The fertilized egg contains all the genetic information it will ever have — eye color, height, and personality traits are already encoded.",
   },
-  preparation: {
-    checklist: [
-      'Write down new symptoms, medication questions, and mental health check-ins for your next visit.',
-      'Review hydration, protein, fiber, and iron-rich meal patterns that fit your clinician guidance.',
-      'Plan practical support (work schedule, household help, and postpartum resources) early when possible.',
+  {
+    week: 3,
+    trimester: 1,
+    title: "Implantation",
+    babySize: "A pinhead",
+    babyLength: "0.2 mm",
+    babyWeight: "Essentially zero",
+    highlight: "Your embryo burrows into the uterine lining this week — a process called implantation that triggers the first pregnancy hormones.",
+    babyDevelopment: [
+      "The blastocyst hatches from its outer shell (zona pellucida) and prepares to implant in the uterine wall.",
+      "Implantation occurs 6–12 days after fertilization, when the blastocyst embeds into the endometrium.",
+      "Cells begin to differentiate into two groups: the inner cell mass (future baby) and trophoblast (future placenta).",
+      "The trophoblast cells start producing hCG (human chorionic gonadotropin) — the pregnancy hormone.",
+      "Primitive cells that will form the yolk sac, amnion, and embryo proper are already organized.",
     ],
-    appointmentFocus: week <= 13
-      ? 'Confirm dating, baseline labs, and first-trimester screening options with your clinician.'
-      : week <= 27
-        ? 'Review anatomy and growth updates, glucose screening, and blood pressure trends.'
-        : 'Discuss labor planning, fetal movement expectations, and postpartum recovery support.',
+    momChanges: [
+      "Implantation bleeding may occur — light spotting, usually pink or brown, lasting 1–2 days.",
+      "hCG production begins, though levels are too low to detect on most home tests just yet.",
+      "Progesterone rises to prevent the uterine lining from shedding and support early pregnancy.",
+    ],
+    symptoms: ["Implantation spotting", "Mild cramping", "Breast tenderness", "Fatigue", "Heightened sense of smell (early sign)"],
+    tips: [
+      "Wait until after your missed period to take a home pregnancy test for the most accurate result.",
+      "Avoid NSAIDs like ibuprofen, which may interfere with implantation — use acetaminophen if needed.",
+      "Continue your prenatal vitamin and maintain a balanced diet rich in whole grains, leafy greens, and lean protein.",
+      "Reduce caffeine to under 200 mg/day (roughly one 12 oz coffee) — high intake is linked to implantation failure.",
+    ],
+    nutrition: "Vitamin B6 (in chickpeas, bananas, chicken) helps regulate hormones and may reduce early nausea as it begins.",
+    weeklyFact: "The embryo produces enough hCG to signal to the corpus luteum to keep making progesterone — essentially sending a 'keep me alive' message.",
   },
-  wellness: {
-    nutrition: [
-      'Use food safety and prenatal vitamin guidance from your care team.',
-      'Maintain steady hydration and include nutrient-dense snacks if appetite fluctuates.',
+  {
+    week: 4,
+    trimester: 1,
+    title: "A Positive Test!",
+    babySize: "A poppy seed",
+    babyLength: "0.4 mm",
+    babyWeight: "< 1 g",
+    highlight: "Home pregnancy tests can now detect hCG in urine — your baby is the size of a poppy seed but already organizing into three distinct cell layers.",
+    babyDevelopment: [
+      "The embryo has three distinct germ layers: ectoderm (skin, brain, spine), mesoderm (muscles, heart, bones), endoderm (lungs, gut, liver).",
+      "The neural groove — the first sign of the brain and spinal cord — is beginning to form.",
+      "The primitive heart cells are clustering together and will begin beating by the end of week 5.",
+      "The amniotic sac and yolk sac are forming to cushion and nourish the embryo.",
+      "The placenta is taking shape from trophoblast cells, beginning to connect to your blood supply.",
     ],
-    movement: [
-      'Use low-impact movement as tolerated and approved by your clinician.',
-      'Stop activity and seek care if you notice warning symptoms such as dizziness, bleeding, or contractions.',
+    momChanges: [
+      "A missed period is the most common first sign of pregnancy at this stage.",
+      "hCG levels double approximately every 48–72 hours in a healthy early pregnancy.",
+      "The corpus luteum in your ovary continues producing progesterone to maintain the uterine lining.",
     ],
+    symptoms: ["Missed period", "Breast tenderness and swelling", "Fatigue", "Bloating", "Mild nausea beginning", "Frequent urination starting"],
+    tips: [
+      "Call your OB-GYN or midwife to schedule your first prenatal appointment — typically between weeks 8–10.",
+      "Take a photo of your positive pregnancy test — you'll treasure it forever.",
+      "Begin tracking your symptoms in a pregnancy journal or app to share with your doctor.",
+      "Avoid X-rays, hot tubs, and saunas — neural tube formation is happening now and heat can be harmful.",
+    ],
+    nutrition: "Iron (in red meat, lentils, spinach) is crucial — your blood volume will increase by nearly 50% during pregnancy.",
+    weeklyFact: "The placenta will eventually weigh about 1–2 pounds and produce enough progesterone to sustain the entire pregnancy from week 10 onward.",
   },
-  funFact: `By week ${week}, pregnancy care still relies on gestational-age tracking from the first day of the last menstrual period rather than conception date alone.`,
-  disclaimer: defaultDisclaimer,
-});
+  {
+    week: 5,
+    trimester: 1,
+    title: "The Heart Begins to Beat",
+    babySize: "An apple seed",
+    babyLength: "~1.5 mm",
+    babyWeight: "< 1 g",
+    highlight: "Your baby's heart is forming and may begin its first tentative beats this week — a momentous developmental milestone.",
+    babyDevelopment: [
+      "The heart tube begins to beat — approximately 90–110 times per minute, though irregular at first.",
+      "The neural tube is closing, forming the foundation of the brain, spinal cord, and nervous system.",
+      "Arm and leg buds appear as tiny paddle-shaped protrusions from the embryonic body.",
+      "The stomach, liver, and intestines are beginning to differentiate from the primitive gut tube.",
+      "The embryo now has a head-to-tail axis and a left-right body plan is being established.",
+    ],
+    momChanges: [
+      "Morning sickness often begins this week due to rapidly rising hCG levels — it can strike any time of day.",
+      "Breasts may feel heavy, sore, or tingly as milk ducts begin to develop.",
+      "Fatigue deepens as your body redirects enormous energy to build a placenta and sustain the embryo.",
+    ],
+    symptoms: ["Morning sickness (nausea with or without vomiting)", "Extreme fatigue", "Breast tenderness", "Heightened sense of smell", "Food aversions", "Frequent urination"],
+    tips: [
+      "Eat small, frequent meals every 2–3 hours to keep blood sugar stable and reduce nausea.",
+      "Keep crackers on your nightstand — eating a few before getting up can ease morning sickness.",
+      "Ginger (ginger tea, ginger chews, ginger ale) has proven nausea-reducing effects — try it before medication.",
+      "Rest when you can — fatigue in the first trimester is profound and biologically normal.",
+    ],
+    nutrition: "Vitamin B6 (10–25 mg up to 3x/day) is the first-line recommendation for pregnancy nausea — discuss with your doctor before supplementing.",
+    weeklyFact: "The embryonic heart at week 5 has no valves yet — it's essentially a tube that pumps blood through a looping wave motion called peristalsis.",
+  },
+  {
+    week: 6,
+    trimester: 1,
+    title: "Heartbeat on Ultrasound",
+    babySize: "A lentil",
+    babyLength: "~4–6 mm",
+    babyWeight: "< 1 g",
+    highlight: "A transvaginal ultrasound can now detect your baby's heartbeat — a flickering light on the screen that makes it all feel real.",
+    babyDevelopment: [
+      "The heart is beating 100–160 times per minute and visible on ultrasound as a tiny flicker.",
+      "The baby's face is forming: optic vesicles (future eyes) and nasal pits are visible indentations.",
+      "Arm and leg buds are growing and will develop distinct segments (shoulder, elbow, wrist) by week 8.",
+      "The brain is dividing into five distinct regions: telencephalon, diencephalon, mesencephalon, metencephalon, and myelencephalon.",
+      "The baby is beginning to make spontaneous movements, though you won't feel them for months.",
+    ],
+    momChanges: [
+      "The uterus has grown to about the size of a grapefruit — you can't feel it yet, but it's expanding rapidly.",
+      "Cervical mucus increases and may be more noticeable — this is normal and protective.",
+      "Blood volume is increasing, which can cause headaches and a feeling of being flushed or warm.",
+    ],
+    symptoms: ["Nausea (often peaks weeks 6–9)", "Vomiting", "Fatigue", "Dizziness", "Mood swings", "Constipation", "Bloating"],
+    tips: [
+      "Avoid your nausea triggers — for many women, cooking smells, raw meat, or coffee are major culprits.",
+      "Stay hydrated — even if you're vomiting, sip water, electrolyte drinks, or ice chips throughout the day.",
+      "Consult your doctor about Unisom + B6 (a safe OTC nausea combination) or prescription options if nausea is severe.",
+      "Ask about a dating ultrasound to confirm gestational age and check for a heartbeat.",
+    ],
+    nutrition: "Calcium (1,000 mg/day from dairy, fortified plant milk, almonds) supports the baby's rapidly forming bone and tooth buds.",
+    weeklyFact: "The embryo has gill-like arches this week that will transform into jaw bones, middle ear bones, and neck structures — a fascinating echo of evolutionary history.",
+  },
+  {
+    week: 7,
+    trimester: 1,
+    title: "Rapid Brain Growth",
+    babySize: "A blueberry",
+    babyLength: "~10 mm",
+    babyWeight: "< 1 g",
+    highlight: "Your baby's brain is generating 100 new neurons every minute — the most rapid brain development of the entire pregnancy.",
+    babyDevelopment: [
+      "The brain is growing at an astonishing rate — 250,000 neurons are produced per minute during this peak phase.",
+      "Tiny hand plates form at the ends of arm buds; finger rays (the precursors to fingers) become visible.",
+      "The face continues developing: eyelid folds cover the eyes, nostrils are forming, and the tongue is budding.",
+      "Kidneys are in place and begin producing urine — the baby will eventually drink its own amniotic fluid.",
+      "The appendix and pancreas are forming, and the intestines are beginning to grow into the umbilical cord.",
+    ],
+    momChanges: [
+      "The uterus is now the size of a small orange — doubled in size since conception.",
+      "Saliva production increases dramatically for some women (ptyalism), which can worsen nausea.",
+      "Skin may change: some women glow while others develop acne from hormonal surges.",
+    ],
+    symptoms: ["Persistent nausea", "Food aversions and cravings", "Excess saliva", "Fatigue", "Tender, growing breasts", "Mild pelvic pressure"],
+    tips: [
+      "Cold or room-temperature foods are often better tolerated than hot meals when nausea is severe.",
+      "Wear a supportive bra — breast tenderness can be eased with proper support day and night.",
+      "Avoid vitamin A supplements (retinoids) in high doses — more than 10,000 IU/day can cause birth defects.",
+      "Begin researching OB vs. midwife care if you haven't already — your birth philosophy matters.",
+    ],
+    nutrition: "Choline (in eggs, beef, soybeans) supports brain development and is often under-consumed — aim for 450 mg/day.",
+    weeklyFact: "Your baby already has fingerprint ridges forming — completely unique patterns that no one else on Earth will ever have.",
+  },
+  {
+    week: 8,
+    trimester: 1,
+    title: "From Embryo to Fetus Soon",
+    babySize: "A kidney bean",
+    babyLength: "~16 mm",
+    babyWeight: "~1 g",
+    highlight: "Tiny fingers are forming and your baby makes its first spontaneous movements — though too small to feel, it's already wriggling!",
+    babyDevelopment: [
+      "The embryo graduates to 'fetus' status at the end of week 8 — all major organ systems are in place.",
+      "Fingers and toes are webbed and beginning to separate; tiny nails will form within weeks.",
+      "The tail that gave the embryo a tadpole-like appearance has fully disappeared.",
+      "Facial features are more defined: eyes have moved to the front of the face, ears are visible externally.",
+      "The baby is making spontaneous, jerky movements detectable on ultrasound — the motor nervous system is active.",
+    ],
+    momChanges: [
+      "First prenatal appointment typically occurs this week — expect a full health review, blood tests, and possibly an ultrasound.",
+      "The corpus luteum in your ovary is still producing progesterone — the placenta hasn't fully taken over yet.",
+      "Clothing may feel tight around the waist as the uterus expands, even though you don't look visibly pregnant.",
+    ],
+    symptoms: ["Nausea often at its peak", "Fatigue", "Frequent urination (uterus pressing on bladder)", "Round ligament aches", "Heightened smell sensitivity", "Constipation"],
+    tips: [
+      "Your first prenatal visit will likely include bloodwork: blood type, Rh factor, CBC, STI screening, rubella immunity, and thyroid levels.",
+      "Ask about genetic screening options — NIPT (non-invasive prenatal testing) is available from week 10.",
+      "Begin researching childbirth education classes — the best ones fill up quickly.",
+      "Discuss any medications you take with your OB — some need to be switched or stopped.",
+    ],
+    nutrition: "Omega-3 DHA (in fatty fish, algae oil) is critical for fetal brain and retina development — aim for 200–300 mg DHA daily.",
+    weeklyFact: "The baby's heart has now developed four chambers and beats 150–170 times per minute — almost twice as fast as an adult's.",
+  },
+  {
+    week: 9,
+    trimester: 1,
+    title: "Distinct Human Features",
+    babySize: "A grape",
+    babyLength: "~23 mm",
+    babyWeight: "~2 g",
+    highlight: "Your baby officially becomes a fetus this week — no longer an embryo. The embryonic tail is gone and tiny muscles are forming.",
+    babyDevelopment: [
+      "The fetus officially earns its name — all basic organ structures are present and growing.",
+      "Eyelids are fully fused shut to protect developing retinas — they won't open until week 26–28.",
+      "Reproductive organs are forming but aren't yet distinguishable on ultrasound.",
+      "Muscles are developing and the baby can move its arms and legs — though all movements are reflexive.",
+      "Taste buds are forming on the tongue, and the baby will eventually taste flavors from the amniotic fluid.",
+    ],
+    momChanges: [
+      "Progesterone slows the digestive system, causing constipation, bloating, and heartburn.",
+      "The areolas around your nipples may darken and small bumps (Montgomery glands) become more prominent.",
+      "Visible veins on breasts and abdomen are normal — increased blood volume makes them more apparent.",
+    ],
+    symptoms: ["Nausea and vomiting", "Heartburn", "Constipation", "Bloating", "Mood swings", "Fatigue", "Mild headaches"],
+    tips: [
+      "Drink 8–10 glasses of water daily and eat high-fiber foods (prunes, flaxseed, beans) to combat constipation.",
+      "Sleep on your side with a pillow between your knees — starting good sleep habits now will pay off later.",
+      "Take a prenatal yoga or gentle stretching class to ease ligament pain and improve sleep quality.",
+      "Announce your pregnancy to close family if you're comfortable — support during the first trimester is valuable.",
+    ],
+    nutrition: "Magnesium (in pumpkin seeds, dark chocolate, spinach) relieves leg cramps and supports healthy blood pressure — aim for 350–400 mg/day.",
+    weeklyFact: "The placenta is nearly ready to take over hormone production — it will fully replace the corpus luteum by week 10–12, often causing nausea to ease.",
+  },
+   {
+    week: 10,
+    trimester: 1,
+    title: "Vital Organs Functional",
+    babySize: "A strawberry",
+    babyLength: "~31 mm",
+    babyWeight: "~4 g",
+    highlight: "All of your baby's vital organs are formed and beginning to function — the placenta is taking over hormone production from your ovaries.",
+    babyDevelopment: [
+      "The liver is producing red blood cells (it will do so until the bone marrow takes over in the third trimester).",
+      "The kidneys are producing urine which is secreted into the amniotic fluid.",
+      "The baby's bones are hardening — the skeleton transitions from cartilage to bone (ossification).",
+      "Fingernails and toenails are forming as tiny, translucent layers.",
+      "The brain is developing rapidly — 250,000 neurons still form every minute at this stage.",
+    ],
+    momChanges: [
+      "The placenta is now largely in charge of producing progesterone and estrogen — nausea may begin to ease.",
+      "Round ligament pain — sharp, brief twinges in the lower abdomen — can begin as the uterus grows.",
+      "You may notice you need to urinate less frequently as the uterus rises out of the pelvic cavity.",
+    ],
+    symptoms: ["Nausea (possibly easing)", "Round ligament pain", "Bloating", "Fatigue", "Increased discharge", "Breast changes"],
+    tips: [
+      "NIPT (non-invasive prenatal testing) can be done from week 10 — it screens for chromosomal conditions using a simple blood draw.",
+      "CVS (chorionic villus sampling) is available weeks 10–13 for diagnostic testing if indicated.",
+      "Review your workplace maternity leave policy early — it affects financial planning significantly.",
+      "Begin researching baby gear if you haven't — the 'must-haves' vs. 'nice-to-haves' list is worth making early.",
+    ],
+    nutrition: "Iodine (in dairy, seafood, iodized salt) is essential for thyroid function and fetal brain development — aim for 220 mcg/day during pregnancy.",
+    weeklyFact: "At week 10, the fetus has working sweat glands, a functioning thyroid, and is producing its own insulin — incredible organ orchestration at just 1 inch long.",
+  },
+  {
+    week: 11,
+    trimester: 1,
+    title: "First Trimester Nearing End",
+    babySize: "A fig",
+    babyLength: "~41 mm",
+    babyWeight: "~7 g",
+    highlight: "Your baby's hands and feet have fully separated fingers and toes — and hiccups may begin as the diaphragm develops.",
+    babyDevelopment: [
+      "Fingers and toes are fully separated — the webbing between them has dissolved completely.",
+      "The diaphragm is developing, and the baby may begin hiccupping — a reflex that exercises breathing muscles.",
+      "Hair follicles are forming across the entire body.",
+      "The baby can open and close its fist and turn its head in response to stimuli.",
+      "External genitalia are beginning to differentiate — though too early for ultrasound detection in most cases.",
+    ],
+    momChanges: [
+      "The uterus can now be felt just above the pubic bone by a skilled examiner.",
+      "Nausea may begin to fade for some women as the placenta becomes fully functional.",
+      "Skin changes like melasma (darkening patches) may begin due to rising estrogen and melanin stimulation.",
+    ],
+    symptoms: ["Decreasing nausea (for some)", "Bloating", "Constipation", "Round ligament pain", "Headaches", "Mild dizziness"],
+    tips: [
+      "Schedule your nuchal translucency (NT) scan for weeks 11–14 — it screens for Down syndrome and other chromosomal differences.",
+      "Begin using a belly band if waistbands become uncomfortable — you don't need full maternity clothes yet.",
+      "Do your pelvic floor exercises (Kegels) daily — 10 reps, 3 times a day — starting now prevents issues later.",
+      "Inform your employer when you're ready — it allows planning for coverage and triggers any legal protections.",
+    ],
+    nutrition: "Vitamin D (in fortified milk, fatty fish, sunshine) is critical for bone development — many pregnant women are deficient; get levels tested.",
+    weeklyFact: "The fetus's skin is completely transparent at week 11 — you could see its organs, blood vessels, and even its tiny beating heart through the skin.",
+  },
+  {
+    week: 12,
+    trimester: 1,
+    title: "The Miscarriage Risk Drops",
+    babySize: "A lime",
+    babyLength: "~53 mm",
+    babyWeight: "~14 g",
+    highlight: "Miscarriage risk drops significantly after week 12 — most couples choose to share their pregnancy news now.",
+    babyDevelopment: [
+      "Reflexes are developing rapidly — the baby will curl its fingers when its palm is touched (grasp reflex).",
+      "The pituitary gland at the base of the brain begins producing hormones that will regulate growth throughout life.",
+      "Bone marrow is forming and beginning to produce white blood cells for immune defense.",
+      "The digestive system practices contractions and the baby ingests amniotic fluid.",
+      "Vocal cords are forming in the larynx — though sound production is months away.",
+    ],
+    momChanges: [
+      "The top of the uterus (fundus) is now at the upper edge of the pubic bone — a midwife can feel it.",
+      "Miscarriage risk falls to under 1% for healthy pregnancies after a confirmed heartbeat at 12 weeks.",
+      "Energy levels may begin to improve as the exhausting first trimester work of placenta-building winds down.",
+    ],
+    symptoms: ["Energy returning (for many)", "Decreased nausea", "Darkening nipples and linea nigra appearing", "Skin changes", "Mild back ache"],
+    tips: [
+      "Many couples announce their pregnancy publicly around week 12 — share in whatever way feels right to you.",
+      "Begin researching childbirth classes, doulas, and birth plans — book popular resources early.",
+      "Ask your doctor about safe exercises — most pregnant women can continue or begin walking, swimming, and prenatal yoga.",
+      "Review your health insurance coverage for prenatal visits, delivery, and newborn care.",
+    ],
+    nutrition: "Protein (75–100 g/day from eggs, legumes, lean meat, Greek yogurt) is essential — fetal cell growth accelerates dramatically in the second trimester.",
+    weeklyFact: "By week 12, the brain sends enough organized signals that the fetus begins making complex facial expressions — it can grimace, squint, and even practice smiling.",
+  },
+  {
+    week: 13,
+    trimester: 1,
+    title: "Welcome to the Second Trimester!",
+    babySize: "A peach",
+    babyLength: "~65 mm",
+    babyWeight: "~23 g",
+    highlight: "You've made it to the second trimester — often called the 'honeymoon phase' of pregnancy as energy returns and nausea fades.",
+    babyDevelopment: [
+      "Intestines that were developing inside the umbilical cord migrate into the abdominal cavity this week.",
+      "The fetus can suck its thumb — an instinct it will use immediately after birth to self-soothe.",
+      "Bone density is increasing as calcium is actively deposited into the skeletal framework.",
+      "The sex organs are differentiating clearly, and an experienced sonographer may be able to guess the sex by end of week 13.",
+      "Fingerprints are permanently etched into the skin — unique forever.",
+    ],
+    momChanges: [
+      "Second trimester begins! Most women experience a notable improvement in energy and a decrease in nausea.",
+      "Appetite often returns — your body needs approximately 300 extra calories per day now.",
+      "The uterus rises into the lower abdomen; a small 'bump' may become visible, especially in women who've been pregnant before.",
+    ],
+    symptoms: ["Returning energy", "Improved appetite", "Round ligament pain", "Mild back pain", "Nasal congestion (pregnancy rhinitis)", "Increased sex drive"],
+    tips: [
+      "Take a 'bump photo' weekly — starting now ensures you capture the full arc of your pregnancy journey.",
+      "Begin moisturizing your abdomen, hips, and breasts with oil or lotion — while stretch marks are mostly genetic, hydration helps.",
+      "Enjoy the second trimester window — energy tends to be at its best between weeks 14–28.",
+      "Begin sleeping on your left side if you haven't already — it optimizes blood flow to the placenta.",
+    ],
+    nutrition: "Complex carbohydrates (oats, sweet potatoes, quinoa) provide steady energy and fiber to prevent the constipation and blood sugar dips of pregnancy.",
+    weeklyFact: "The fetus's bone marrow, liver, and spleen are all producing blood cells at week 13 — a remarkable three-organ collaboration that will be taken over by bone marrow alone by birth.",
+  },
 
-export const pregnancyWeeks: PregnancyWeek[] = Array.from({ length: 40 }, (_, index) => createWeek(index + 1));
+  // ─────────────────────────────────────────────
+  // SECOND TRIMESTER — Weeks 14–27
+  // ─────────────────────────────────────────────
+  {
+    week: 14,
+    trimester: 2,
+    title: "Movements Get Coordinated",
+    babySize: "A lemon",
+    babyLength: "~80–87 mm",
+    babyWeight: "~43 g",
+    highlight: "Your baby can now make facial expressions and is practicing breathing movements — the lungs are 'rehearsing' for life outside the womb.",
+    babyDevelopment: [
+      "The baby is making coordinated movements: stretching, kicking, and rotating within the amniotic fluid.",
+      "Lanugo — a fine, downy hair — is spreading across the baby's body to regulate temperature.",
+      "The prostate gland forms in male fetuses; ovaries descend toward the pelvis in female fetuses.",
+      "The roof of the mouth (palate) is fully fused — incomplete fusion causes cleft palate, which closes by this week.",
+      "Thyroid gland is producing hormones; the fetal thyroid is now independent of the mother's thyroid.",
+    ],
+    momChanges: [
+      "Round ligament pain — sharp shooting pains on one or both sides of the lower abdomen — is common as the uterus grows.",
+      "Nasal congestion and occasional nosebleeds affect up to 30% of pregnant women due to increased blood volume.",
+      "Skin may begin to 'glow' — increased blood flow and oil production give skin a luminous appearance.",
+    ],
+    symptoms: ["Round ligament pain", "Back ache", "Nasal congestion", "Heartburn", "Increased appetite", "Breast growth continuing"],
+    tips: [
+      "Slow down when moving from sitting to standing to avoid sharp round ligament pain.",
+      "Use a pregnancy pillow to support your growing bump while sleeping — full-body pillows are particularly helpful.",
+      "Start gentle prenatal strength training if cleared by your provider — it reduces back pain and prepares for labor.",
+      "Hydrate well — increasing water intake reduces the risk of Braxton Hicks contractions later.",
+    ],
+    nutrition: "Iron (27 mg/day during pregnancy) prevents anemia — pair iron-rich foods with vitamin C (citrus, strawberries) to dramatically increase absorption.",
+    weeklyFact: "The baby's liver is now producing bile, and the pancreas is producing insulin — these digestive organs are active even though the baby isn't eating solid food.",
+  },
+  {
+    week: 15,
+    trimester: 2,
+    title: "Hearing Development Begins",
+    babySize: "An orange",
+    babyLength: "~100 mm",
+    babyWeight: "~70 g",
+    highlight: "Your baby's ears are now positioned correctly and beginning to pick up vibrations — it can hear your voice and heartbeat.",
+    babyDevelopment: [
+      "The baby's ears have moved from the neck to the sides of the head and are nearly in their final position.",
+      "Though the auditory system is still developing, the baby can detect vibrations and may respond to loud sounds.",
+      "Eyebrows and eyelashes are growing in, though the eyes remain fused shut.",
+      "The baby is practicing 'breathing' movements — inhaling and exhaling amniotic fluid to develop lung capacity.",
+      "Bones are getting denser; the skeleton is increasingly visible on ultrasound.",
+    ],
+    momChanges: [
+      "The uterus is now midway between the pubic bone and navel — fundal height measurement begins at prenatal visits.",
+      "Skin darkening may appear on the face (melasma/chloasma) — wear SPF 30+ daily to minimize it.",
+      "Leg cramps at night are common from week 15 onward — often caused by calcium and magnesium changes.",
+    ],
+    symptoms: ["Leg cramps at night", "Back pain", "Heartburn", "Bloating", "Skin darkening (melasma)", "Possible nosebleeds"],
+    tips: [
+      "Talk, read, and sing to your bump — research shows babies can recognize familiar voices before birth.",
+      "Wear sunscreen daily — melasma (pregnancy mask) worsens dramatically with sun exposure.",
+      "Stretch your calves before bed to prevent leg cramps; magnesium glycinate supplement may also help.",
+      "Begin sleeping exclusively on your left side as the uterus grows to reduce pressure on the vena cava.",
+    ],
+    nutrition: "Calcium (1,000 mg/day) and vitamin D work together — without sufficient D, calcium can't be properly absorbed. A prenatal with D3 is ideal.",
+    weeklyFact: "Babies in the womb hiccup regularly from week 11 onward — mothers typically feel them as rhythmic, jerky movements around weeks 22–28.",
+  },
+  {
+    week: 16,
+    trimester: 2,
+    title: "Baby Can Hear You",
+    babySize: "An avocado",
+    babyLength: "~116 mm",
+    babyWeight: "~100 g",
+    highlight: "Your baby can now hear sounds from outside the womb — your voice, music, and your heartbeat are all part of its world.",
+    babyDevelopment: [
+      "The ears are fully functional; the baby can hear low-frequency external sounds and will startle at loud noises.",
+      "The eyes, though still closed, can detect light — if a flashlight is shone at the abdomen, the baby may move away.",
+      "The baby's facial muscles are coordinating — it can squint, grimace, and make frowning expressions.",
+      "All four limbs are fully formed and proportionate; tiny nails are visible on fingers and toes.",
+      "The umbilical cord is growing stronger and thicker to support the increasing nutrient and oxygen demands.",
+    ],
+    momChanges: [
+      "Some women feel 'quickening' — the first fluttery movements — between weeks 16–25. First-time moms typically feel it later.",
+      "Backaches increase as the uterus grows and shifts the center of gravity forward.",
+      "Skin on the abdomen may begin to itch as it stretches — keep it moisturized.",
+    ],
+    symptoms: ["First fetal movements (quickening) — may feel like gas bubbles or flutters", "Back pain", "Itchy skin", "Heartburn", "Headaches", "Constipation"],
+    tips: [
+      "Wear comfortable, low-heeled shoes — as your center of gravity shifts, high heels increase fall risk.",
+      "Schedule your anatomy scan (20-week scan) now if you haven't — appointments book up quickly.",
+      "Try a pregnancy-safe prenatal massage to ease back pain and improve circulation.",
+      "Avoid lying flat on your back for long periods — it can compress the vena cava and reduce blood return to the heart.",
+    ],
+    nutrition: "Fiber (25–35 g/day from fruits, vegetables, whole grains) combats constipation, regulates blood sugar, and reduces hemorrhoid risk.",
+    weeklyFact: "Fetuses show a preference for high-pitched voices from 16 weeks onward — they respond more strongly to their mother's voice than any other.",
+  },
+  {
+    week: 17,
+    trimester: 2,
+    title: "Fat Deposits Begin",
+    babySize: "A pear",
+    babyLength: "~130 mm",
+    babyWeight: "~140 g",
+    highlight: "Your baby begins accumulating fat this week — these deposits will insulate and fuel your newborn in the critical hours after birth.",
+    babyDevelopment: [
+      "Subcutaneous fat is beginning to deposit under the skin for the first time — crucial for heat regulation at birth.",
+      "The baby's skeleton transitions from rubbery cartilage to hardening bone (ossification continues through birth).",
+      "Sweat glands are forming across the entire body surface.",
+      "The umbilical cord is now fully composed of two arteries and one vein — its twisting helps prevent tangling.",
+      "The baby may be sucking its thumb — ultrasounds often capture this adorable self-soothing behavior.",
+    ],
+    momChanges: [
+      "The uterus is now roughly the size of a cantaloupe and is pushing other organs aside.",
+      "Many women experience nasal congestion throughout pregnancy — increased estrogen causes the nasal mucosa to swell.",
+      "Dizziness can occur when standing quickly — blood pooling in the legs is common with progesterone's vasodilating effect.",
+    ],
+    symptoms: ["Dizziness on standing (orthostatic hypotension)", "Nasal congestion", "Back pain", "Round ligament pain", "Shortness of breath beginning", "Vivid dreams"],
+    tips: [
+      "Rise slowly from sitting or lying down to avoid dizziness — take a moment at the edge of the bed before standing.",
+      "A saline nasal spray safely relieves pregnancy-related congestion without medication.",
+      "Begin a birth plan — research your preferences for labor (epidural, natural birth, water birth, delayed cord clamping, etc.).",
+      "Keep track of fetal movements — though not yet daily kick counts, you should start to notice patterns.",
+    ],
+    nutrition: "Healthy fats (avocados, nuts, olive oil, fatty fish) support the fat deposits your baby is now building and fuel your own brain health.",
+    weeklyFact: "The baby's unique fingerprints are completely formed by week 17 and are now permanent — they remain unchanged for life.",
+  },
+  {
+    week: 18,
+    trimester: 2,
+    title: "Yawning and Hiccupping",
+    babySize: "A bell pepper",
+    babyLength: "~143 mm",
+    babyWeight: "~190 g",
+    highlight: "Your baby is now yawning, hiccupping, and even making facial expressions — it's becoming a fully expressive little person.",
+    babyDevelopment: [
+      "The baby yawns, stretches, and hiccups in the amniotic fluid as its diaphragm matures.",
+      "Myelination — the insulating coating around nerve fibers that speeds up nerve signals — begins this week and continues until the child's 20s.",
+      "The baby's eyes are sensitive to light even through closed lids; it can detect the difference between light and dark.",
+      "The genitalia are now fully formed and visible on ultrasound — many parents find out the sex around week 18–20.",
+      "Blood vessel development continues throughout the body; the circulatory system is increasingly complex.",
+    ],
+    momChanges: [
+      "You're likely feeling regular fetal movement now — kicks, rolls, and jabs that will increase in frequency.",
+      "The fundus (top of uterus) is now at or slightly below the navel.",
+      "Varicose veins or spider veins may appear in the legs due to increased blood volume and pressure on pelvic veins.",
+    ],
+    symptoms: ["Regular fetal movement", "Back and hip pain", "Varicose veins", "Swelling in ankles/feet", "Heartburn", "Leg cramps", "Shortness of breath"],
+    tips: [
+      "Wear compression socks or stockings if varicose veins appear — put them on before getting out of bed.",
+      "Sleep on your left side to reduce pressure on the inferior vena cava and improve blood flow to the placenta.",
+      "Take a childbirth preparation class — HypnoBirthing, Lamaze, and Bradley Method are popular options.",
+      "Begin preparing your home — organizing nursery essentials now prevents last-minute stress.",
+    ],
+    nutrition: "Potassium (in bananas, sweet potatoes, white beans) regulates fluid balance and may help prevent leg cramps — aim for 2,900 mg/day.",
+    weeklyFact: "The nerve cells controlling the baby's senses — taste, smell, hearing, sight, and touch — are all developing simultaneously during week 18.",
+  },
+     {
+    week: 19,
+    trimester: 2,
+    title: "Vernix Caseosa Appears",
+    babySize: "A mango",
+    babyLength: "~152 mm",
+    babyWeight: "~240 g",
+    highlight: "A waxy white coating called vernix caseosa now covers your baby's skin, protecting it from the amniotic fluid throughout pregnancy.",
+    babyDevelopment: [
+      "Vernix caseosa — a cheese-like protective coating — covers the baby's skin to prevent it from becoming waterlogged in amniotic fluid.",
+      "The baby's sensory regions of the brain are specializing — distinct zones for taste, smell, hearing, sight, and touch are forming.",
+      "In female fetuses, the uterus and fallopian tubes are completely formed; the ovaries contain all the eggs she'll ever have (~6 million).",
+      "In male fetuses, the testes are beginning to descend from the abdomen toward the scrotum.",
+      "Hair on the scalp is growing and pigmenting — the color won't be truly determined until after birth.",
+    ],
+    momChanges: [
+      "Round ligament pain may flare during sudden movements — the ligaments supporting the uterus are under increasing tension.",
+      "Skin changes are common: the linea nigra (a dark line from navel to pubic area) becomes more visible.",
+      "Heartburn and indigestion worsen as the uterus pushes the stomach upward.",
+    ],
+    symptoms: ["Heartburn", "Back pain", "Round ligament pain", "Linea nigra darkening", "Shortness of breath", "Swelling", "Vivid dreams"],
+    tips: [
+      "Eat small, frequent meals and avoid lying down for 2 hours after eating to minimize heartburn.",
+      "Elevate the head of your bed by 6–8 inches with a wedge to reduce nighttime acid reflux.",
+      "Research newborn care basics — bathing, feeding, diaper changes — through classes or books.",
+      "Have your dental checkup — pregnancy hormones increase gum disease risk, and gum disease is linked to preterm labor.",
+    ],
+    nutrition: "Vitamin C (85 mg/day from citrus, bell peppers, broccoli) boosts iron absorption and supports the collagen formation in your baby's growing skin.",
+    weeklyFact: "Female fetuses have all their eggs (6 million!) in their ovaries by week 19 — this number drops to about 1–2 million at birth and 300,000 by puberty.",
+  },
+  {
+    week: 20,
+    trimester: 2,
+    title: "Halfway There! Anatomy Scan",
+    babySize: "A banana",
+    babyLength: "~160 mm (25 cm head to heel)",
+    babyWeight: "~300 g",
+    highlight: "You've reached the halfway point of pregnancy! The anatomy scan this week gives your first detailed look at all of baby's major organs.",
+    babyDevelopment: [
+      "This is a major milestone — the detailed anatomy scan checks all major organs, limbs, placenta position, and amniotic fluid levels.",
+      "The baby's legs are now measured crown to heel (rather than crown to rump), accounting for the dramatic growth in limb length.",
+      "Movements are increasingly strong — sharp kicks and rolls are now common and may keep you awake at night.",
+      "The baby practices swallowing amniotic fluid and produces meconium (first stool) in the intestines — it won't pass until after birth.",
+      "The baby's sleep-wake cycles are becoming more defined — it has active periods and quiet rest periods.",
+    ],
+    momChanges: [
+      "The uterus is now at navel height — this is called the halfway point of fundal height measurement.",
+      "Braxton Hicks contractions — irregular, painless tightening — may begin as the uterus 'practices' for labor.",
+      "Appetite is strong; many women gain approximately 1 pound per week in the second trimester.",
+    ],
+    symptoms: ["Strong fetal movement", "Braxton Hicks contractions", "Back pain", "Swollen feet and ankles", "Heartburn", "Shortness of breath", "Increased appetite"],
+    tips: [
+      "Schedule and attend your anatomy scan — a thorough 20-week ultrasound takes 30–45 minutes and checks 30+ structures.",
+      "Ask your provider about glucose challenge test scheduling — the 1-hour GCT is typically done between weeks 24–28.",
+      "Begin looking into cord blood banking if you're considering it — it must be arranged before birth.",
+      "Stock your freezer with easy meals now — postpartum you'll be incredibly grateful for pre-made food.",
+    ],
+    nutrition: "At the halfway mark, your calorie needs increase to ~2,200–2,400/day. Focus on nutrient density: every calorie should carry vitamins, minerals, and macronutrients.",
+    weeklyFact: "At 20 weeks, your baby can hear music from outside the womb. Studies show babies remember and prefer music they heard in utero — they show recognition responses after birth.",
+  },
+  {
+    week: 21,
+    trimester: 2,
+    title: "Tasting the World",
+    babySize: "A carrot",
+    babyLength: "~26.7 cm",
+    babyWeight: "~360 g",
+    highlight: "Your baby can now taste the amniotic fluid — and its flavor is influenced by what you eat, shaping early food preferences.",
+    babyDevelopment: [
+      "Taste buds are fully formed and functional — the baby detects sweet, sour, and bitter flavors in the amniotic fluid.",
+      "Research shows babies swallow more amniotic fluid when it's sweet (after the mother eats sugar) and less when it's bitter.",
+      "The baby's bone marrow is now the primary site of blood cell production, having taken over from the liver and spleen.",
+      "Eyelids remain fused but the baby's eyes are fully developed — it will open them around week 26–28.",
+      "REM sleep cycles are establishing — the baby experiences rapid eye movement sleep just like newborns and adults.",
+    ],
+    momChanges: [
+      "The uterus extends about 2 cm above the navel — fundal height (in cm) now roughly equals weeks of pregnancy.",
+      "Braxton Hicks contractions may become more noticeable — they're painless, irregular, and normal.",
+      "Skin stretching increases itching on the abdomen, breasts, and thighs.",
+    ],
+    symptoms: ["Itchy skin on belly/breasts", "Back pain", "Braxton Hicks contractions", "Shortness of breath", "Heartburn", "Leg cramps at night"],
+    tips: [
+      "Eat a varied, flavorful diet — garlic, spices, and diverse vegetables you eat now may help your baby accept those flavors after birth.",
+      "Apply an unscented, fragrance-free moisturizer 2–3 times daily to relieve itching and support skin elasticity.",
+      "Start researching pediatricians — interviews take time and you want your choice locked in before the third trimester.",
+      "Practice relaxation techniques like deep breathing or meditation to prepare mentally for labor.",
+    ],
+    nutrition: "Eat a wide variety of vegetables, herbs, and spices — what you eat flavors the amniotic fluid and shapes your baby's early food preferences.",
+    weeklyFact: "Babies born at 21 weeks are at the cusp of viability — with intensive NICU care, some survive, though 24+ weeks is the current standard threshold of survival.",
+  },
+  {
+    week: 22,
+    trimester: 2,
+    title: "Looking Like a Newborn",
+    babySize: "A papaya",
+    babyLength: "~27.8 cm",
+    babyWeight: "~430 g",
+    highlight: "Your baby now looks remarkably like a miniature newborn — with eyebrows, eyelashes, and lips fully formed, just much smaller.",
+    babyDevelopment: [
+      "The baby's face is fully formed: eyebrows, eyelashes, lips, and tiny fingernails are all present.",
+      "The sense of touch is highly developed — the baby explores its face, umbilical cord, and amniotic sac with its hands.",
+      "The pancreas is producing insulin, and the liver is processing bilirubin — systems that will be tested at birth.",
+      "The baby can hear and recognize voices — studies show newborns prefer their mother's voice above all others.",
+      "Grip strength is developing — the baby can firmly grasp the umbilical cord.",
+    ],
+    momChanges: [
+      "Weight gain averages about 1 pound per week in the second half of pregnancy.",
+      "Stretch marks may begin to appear on the abdomen, breasts, hips, and thighs — genetics largely determines who gets them.",
+      "You may notice your belly button becoming flat or 'popped' as the uterus pushes outward.",
+    ],
+    symptoms: ["Stretch marks appearing", "Belly button flattening", "Back pain", "Swelling in hands/feet", "Heartburn", "Pelvic pressure"],
+    tips: [
+      "Discuss birth preferences with your partner and healthcare provider — start drafting a birth plan.",
+      "Tour your chosen birth facility if you haven't — knowing the layout reduces anxiety on the big day.",
+      "Consider hiring a doula — studies show continuous labor support reduces C-section rates and improves birth satisfaction.",
+      "Wear a pregnancy support belt during long periods of standing or walking to reduce back strain.",
+    ],
+    nutrition: "Zinc (11 mg/day in oysters, pumpkin seeds, beef, chickpeas) supports immune development and DNA synthesis as your baby's systems mature.",
+    weeklyFact: "At 22 weeks, the baby's hearing is sophisticated enough to distinguish its mother's voice from others — a capability it will demonstrate clearly in the first hours after birth.",
+  },
+  {
+    week: 23,
+    trimester: 2,
+    title: "Lungs Producing Surfactant",
+    babySize: "A large mango",
+    babyLength: "~28.9 cm",
+    babyWeight: "~500 g",
+    highlight: "The lungs begin producing surfactant — the substance that prevents the air sacs from collapsing — a critical step toward breathing independently.",
+    babyDevelopment: [
+      "Surfactant production begins in the lungs — this is the key substance that allows air sacs to inflate at birth without collapsing.",
+      "The baby's skin is still red and wrinkled because fat deposits haven't yet filled it out — that comes in the third trimester.",
+      "The vestibular system (balance and spatial orientation) is functioning — the baby can sense when it's upside down.",
+      "Blood vessels in the lungs are developing rapidly to prepare for the first breath at birth.",
+      "The baby weighs about 500g — one pound — a significant psychological milestone for expectant parents.",
+    ],
+    momChanges: [
+      "The uterus reaches several centimeters above the navel — pregnant posture changes are now affecting your gait.",
+      "Linea nigra (the dark midline stripe) is prominent on most women's abdomens.",
+      "Sleeping becomes more challenging — a pregnancy pillow is now almost essential for comfort.",
+    ],
+    symptoms: ["Difficulty sleeping", "Back pain", "Swollen ankles and feet", "Heartburn", "Braxton Hicks", "Shortness of breath worsening", "Frequent urination returning"],
+    tips: [
+      "Invest in a quality full-body pregnancy pillow — sleep quality drops significantly from here and a good pillow helps.",
+      "Elevate your feet for 15–20 minutes several times a day to reduce ankle swelling.",
+      "Avoid standing for long periods without breaks — compression socks are your best friend now.",
+      "Get a glucose challenge test scheduled for between weeks 24–28 if not already booked.",
+    ],
+    nutrition: "Vitamin K (in leafy greens, broccoli, edamame) plays a key role in blood clotting for both you and your baby — and supports your baby's bone mineralization.",
+    weeklyFact: "A baby born at 23 weeks has roughly a 30–50% survival rate with intensive NICU care — compared to over 90% survival at 28 weeks, showing how dramatically outcomes shift week by week.",
+  },
+  {
+    week: 24,
+    trimester: 2,
+    title: "Viability Milestone",
+    babySize: "An ear of corn",
+    babyLength: "~30 cm",
+    babyWeight: "~600 g",
+    highlight: "Week 24 is the viability milestone — babies born now have a 50–70% chance of survival with specialized NICU care.",
+    babyDevelopment: [
+      "Week 24 is medically recognized as the threshold of viability — the point at which a baby can potentially survive outside the womb.",
+      "The baby's brain is developing complex folds and grooves (gyrification), dramatically increasing its surface area.",
+      "Inner ear structures are complete — the baby has full spatial orientation and can sense its position and movement.",
+      "The baby's skin is becoming less translucent as fat deposits begin to fill in.",
+      "Taste and smell receptors are fully functional — the baby responds to changes in amniotic fluid composition.",
+    ],
+    momChanges: [
+      "Glucose challenge test (GCT) is typically scheduled between weeks 24–28 — it screens for gestational diabetes.",
+      "The uterus now compresses the stomach, making large meals uncomfortable — smaller, more frequent meals help.",
+      "Skin over the abdomen may feel tight and occasionally numb from nerve stretching.",
+    ],
+    symptoms: ["Heartburn and indigestion", "Swelling (edema)", "Back pain", "Pelvic girdle pain", "Shortness of breath", "Hemorrhoids may begin"],
+    tips: [
+      "Complete your glucose challenge test this week or schedule it for no later than week 28.",
+      "Take a hospital bag packing list and begin gathering items — even though birth is months away, it's satisfying to be prepared.",
+      "Practice positions for labor comfort: hands-and-knees, side-lying, and squatting all open the pelvis.",
+      "Discuss the Tdap vaccine with your provider — it's recommended between weeks 27–36 to pass immunity to your newborn.",
+    ],
+    nutrition: "Probiotic-rich foods (yogurt, kefir, sauerkraut) support gut microbiome health — your baby will inherit its initial microbiome from you during birth.",
+    weeklyFact: "The baby's brain at 24 weeks is smooth — all the characteristic folds and grooves of the adult brain develop between now and birth through a process called gyrification.",
+  },
+  {
+    week: 25,
+    trimester: 2,
+    title: "Responding to Your Voice",
+    babySize: "A rutabaga",
+    babyLength: "~34.6 cm",
+    babyWeight: "~660 g",
+    highlight: "Your baby now responds to familiar voices with increased heart rate and movement — it knows you before it's born.",
+    babyDevelopment: [
+      "Studies show fetal heart rate increases in response to the mother's voice — a measurable sign of recognition and bonding.",
+      "The baby's nostrils are opening and the baby practices 'nasal breathing' with amniotic fluid.",
+      "Capillaries are forming under the skin, giving it a pinkish hue for the first time.",
+      "The spinal cord is wrapping in a protective myelin sheath — a process that continues through childhood.",
+      "The baby is developing a startle reflex (Moro reflex) that will be present at birth.",
+    ],
+    momChanges: [
+      "Carpal tunnel syndrome (numbness and tingling in hands) affects up to 60% of pregnant women from fluid retention.",
+      "The symphysis pubis joint may ache — the hormone relaxin is loosening pelvic joints in preparation for birth.",
+      "The belly button may be completely flat or protruding outward — it returns to normal after delivery.",
+    ],
+    symptoms: ["Carpal tunnel (hand numbness/tingling)", "Pelvic girdle pain", "Back pain", "Heartburn", "Swelling", "Shortness of breath", "Leg cramps"],
+    tips: [
+      "Wear a wrist brace at night if carpal tunnel is bothersome — it keeps the wrist neutral and reduces nerve compression.",
+      "Start a daily kick count diary if your provider recommends it — typically begins around week 28.",
+      "Pack your hospital bag checklist — labor bag, baby's first outfit, car seat installation.",
+      "Research newborn procedures at your hospital: delayed cord clamping, skin-to-skin, vitamin K injection, eye drops.",
+    ],
+    nutrition: "Selenium (in Brazil nuts, tuna, eggs) supports thyroid health and immune function — one Brazil nut daily provides your entire daily requirement of 60 mcg.",
+    weeklyFact: "Researchers playing music near pregnant bellies found that newborns could recognize and show preference for specific songs heard in the womb — the musical memory begins now.",
+  },
+  {
+    week: 26,
+    trimester: 2,
+    title: "Eyes Open for the First Time",
+    babySize: "A head of lettuce",
+    babyLength: "~35.6 cm",
+    babyWeight: "~760 g",
+    highlight: "Your baby opens its eyes for the very first time this week — it can now blink and see light filtering through the womb.",
+    babyDevelopment: [
+      "The eyelids, fused shut since week 9, finally open — the baby can blink and see dim light inside the womb.",
+      "Irises are forming, though eye color is not fully determined until several months after birth.",
+      "The baby's immune system is maturing — maternal antibodies are beginning to transfer across the placenta.",
+      "Lung development accelerates — surfactant production increases as the lungs prepare for potential early delivery.",
+      "The baby's brain activity now includes detectable patterns of sleeping and waking — its circadian rhythm is forming.",
+    ],
+    momChanges: [
+      "Third trimester begins in just one week — the home stretch of pregnancy is approaching.",
+      "Braxton Hicks contractions may become more frequent — triggered by physical activity, dehydration, or a full bladder.",
+      "Colostrum (early breast milk) may begin to leak from your nipples as prolactin levels rise.",
+    ],
+    symptoms: ["Braxton Hicks contractions", "Colostrum leaking", "Back pain", "Heartburn", "Swelling", "Shortness of breath", "Rib pain as uterus grows"],
+    tips: [
+      "Consider breast pads if colostrum leaking is noticeable — disposable or washable options are available.",
+      "Review your childbirth education class notes and practice breathing techniques regularly.",
+      "Schedule a 3rd trimester appointment review with your provider — visit frequency increases to every 2 weeks from week 28.",
+      "Discuss group B strep (GBS) testing with your provider — it's performed between weeks 35–37.",
+    ],
+    nutrition: "Lutein and zeaxanthin (in kale, spinach, egg yolks) support your baby's eye and brain development during this critical period of visual system formation.",
+    weeklyFact: "Newborns can see clearly only about 8–12 inches away at birth — exactly the distance from a nursing mother's breast to her face, an evolutionary design for mother-infant bonding.",
+  },
+  {
+    week: 27,
+    trimester: 2,
+    title: "End of the Second Trimester",
+    babySize: "A head of cauliflower",
+    babyLength: "~36.6 cm",
+    babyWeight: "~875 g",
+    highlight: "You're at the final week of the second trimester — your baby now has a regular sleep-wake cycle and responds to your movements.",
+    babyDevelopment: [
+      "The baby has established distinct sleep and wake cycles — it sleeps about 90% of the time, usually in 20–40 minute intervals.",
+      "Brain activity is sophisticated enough to process sensory input from multiple senses simultaneously.",
+      "The baby gains about 200 g per week from here onward — fat and muscle accumulation accelerates.",
+      "Hiccups are frequent — you'll feel them as rhythmic jolts lasting several minutes.",
+      "The immune system is strengthening as maternal IgG antibodies transfer through the placenta.",
+    ],
+    momChanges: [
+      "The second trimester ends — many women notice the 'honeymoon phase' energy beginning to fade.",
+      "Sleep becomes increasingly difficult with back pain, frequent urination, and a growing belly.",
+      "The Tdap vaccine is recommended this week — it protects your newborn from whooping cough in early infancy.",
+    ],
+    symptoms: ["Fatigue returning", "Shortness of breath", "Back pain", "Pelvic pressure", "Frequent urination", "Swelling", "Heartburn", "Braxton Hicks"],
+    tips: [
+      "Get the Tdap (whooping cough) vaccine between weeks 27–36 — the timing maximizes antibody transfer to your baby.",
+      "Prepare your workplace for your absence — document processes, train a backup, and notify clients or colleagues.",
+      "Begin or intensify your birth plan — discuss it with your provider and birth support team.",
+      "Take a 'babymoon' trip if you'd like one — this is your last comfortable window for travel.",
+    ],
+    nutrition: "Copper (in shellfish, nuts, seeds, dark chocolate) supports iron metabolism and the development of your baby's nervous system and cardiovascular system.",
+    weeklyFact: "The second trimester — weeks 14–27 — is when 75% of the baby's brain growth occurs. The neural connections made during this period determine cognitive capacity for life.",
+  },
 
-export const pregnancyWeekByNumber: Record<number, PregnancyWeek> = pregnancyWeeks.reduce<Record<number, PregnancyWeek>>((accumulator, weekData) => {
-  accumulator[weekData.week] = weekData;
-  return accumulator;
-}, {});
+  // ─────────────────────────────────────────────
+  // THIRD TRIMESTER — Weeks 28–40
+  // ─────────────────────────────────────────────
+  {
+    week: 28,
+    trimester: 3,
+    title: "Welcome to the Third Trimester",
+    babySize: "A large eggplant",
+    babyLength: "~37.6 cm",
+    babyWeight: "~1 kg",
+    highlight: "The third trimester begins! Your baby's brain is developing at an extraordinary pace and it can now dream during REM sleep.",
+    babyDevelopment: [
+      "The baby has REM (rapid eye movement) sleep — some researchers believe this is when the baby dreams.",
+      "The brain surface is developing complex folds — the cerebral cortex now has distinct regions for thought, memory, and sensory processing.",
+      "Eyelashes are growing; the baby blinks, squints, and tracks light through the uterine wall.",
+      "The baby weighs about 1 kg (2.2 lbs) — it will roughly triple its weight between now and birth.",
+      "Kick counts are recommended from week 28 — 10 movements within 2 hours is reassuring.",
+    ],
+    momChanges: [
+      "Prenatal visits shift to every 2 weeks from week 28–36, then weekly from week 36.",
+      "The uterus is now well above the navel, displacing the stomach and diaphragm significantly.",
+      "Rhesus-negative mothers receive anti-D injection around week 28 to prevent Rh sensitization.",
+    ],
+    symptoms: ["Shortness of breath", "Pelvic pressure", "Frequent urination", "Swelling", "Back pain", "Braxton Hicks contractions", "Fatigue", "Insomnia"],
+    tips: [
+      "Begin daily kick counts — count movements after meals when the baby is most active; 10 in 2 hours is normal.",
+      "Rh-negative moms: schedule your anti-D (RhoGAM) injection at your 28-week appointment.",
+      "Finalize your childcare plan if returning to work — good daycare has long waitlists.",
+      "Set up the nursery and wash all baby clothes, sheets, and blankets in fragrance-free detergent.",
+    ],
+    nutrition: "DHA (200–300 mg/day from algae oil or fatty fish) is critical now — the brain and retina are in their most intensive development phase of the third trimester.",
+    weeklyFact: "Babies born at 28 weeks have a 90%+ survival rate with NICU care and most have no long-term health consequences — a testament to modern neonatal medicine.",
+  },
+   {
+    week: 29,
+    trimester: 3,
+    title: "Bones Hardening Rapidly",
+    babySize: "A butternut squash",
+    babyLength: "~38.6 cm",
+    babyWeight: "~1.15 kg",
+    highlight: "Your baby's skeleton is hardening at full speed — it needs approximately 250 mg of calcium per day drawn from your body.",
+    babyDevelopment: [
+      "Bone ossification is in full swing — the baby needs about 250 mg of calcium daily, extracted from the mother's stores.",
+      "The baby's muscles are strong enough to produce kicks and rolls that are clearly visible through the skin.",
+      "The adrenal glands produce more hormones than at any time in postnatal life — preparing for the stress of birth.",
+      "Brain white matter is increasing rapidly — white matter facilitates the fast neural communication needed for complex behavior.",
+      "The baby's head may be rounding out and hair growing longer — some babies are born with a full head of hair.",
+    ],
+    momChanges: [
+      "Back pain and sciatica (nerve pain radiating down the leg) are common as the baby's weight presses on the sciatic nerve.",
+      "The growing uterus may cause the rib cage to feel bruised, especially on the right side.",
+      "Varicose veins in the vulva (vulvar varicosities) may develop — uncomfortable but usually resolve postpartum.",
+    ],
+    symptoms: ["Sciatica", "Rib pain", "Back pain", "Heartburn", "Swelling", "Fatigue", "Braxton Hicks", "Pelvic pressure"],
+    tips: [
+      "Try a hands-and-knees position to relieve sciatic pain — it takes pressure off the nerve and may also help position the baby optimally.",
+      "Swimming or water aerobics provides full-body relief from back pain and swelling — gravity-free exercise is ideal now.",
+      "Prepare freezer meals in batches — spend a weekend cooking and freezing 10–15 meals for postpartum.",
+      "Research and sign up for a newborn care class covering feeding, sleep, bathing, and safe sleep guidelines.",
+    ],
+    nutrition: "Calcium (1,200–1,300 mg/day in the third trimester) is critical — the baby draws from your bones if dietary intake is insufficient, increasing your osteoporosis risk.",
+    weeklyFact: "The baby's adrenal glands at 29 weeks are proportionally 20 times larger than an adult's — they produce a hormone (DHEA) that triggers maternal estrogen production to prepare for labor.",
+  },
+  {
+    week: 30,
+    trimester: 3,
+    title: "10 Weeks to Go!",
+    babySize: "A large cabbage",
+    babyLength: "~39.9 cm",
+    babyWeight: "~1.3 kg",
+    highlight: "With 10 weeks to go, your baby's brain is now capable of regulating its own body temperature — a critical step toward independence.",
+    babyDevelopment: [
+      "The brain can now regulate the baby's body temperature — previously the amniotic fluid maintained it.",
+      "Lanugo (the fine body hair) begins to shed as the baby develops enough fat to regulate its own warmth.",
+      "The bone marrow is fully responsible for red blood cell production, having completely replaced the liver and spleen.",
+      "The baby's eyes can track moving objects and distinguish between light and dark even through the uterine wall.",
+      "Fat deposits are filling in under the skin — the baby is losing its wrinkled, translucent appearance.",
+    ],
+    momChanges: [
+      "The uterus is now approximately 10 cm above the navel — pressing on the stomach, diaphragm, and bladder simultaneously.",
+      "Braxton Hicks contractions may become more frequent and stronger, especially in the evenings.",
+      "Sleep disruption is nearly universal at this stage — insomnia, leg cramps, and frequent urination combine.",
+    ],
+    symptoms: ["Severe heartburn", "Shortness of breath", "Insomnia", "Pelvic pressure", "Braxton Hicks", "Swelling", "Back pain", "Frequent urination"],
+    tips: [
+      "Keep a glass of water and antacids on your nightstand for nighttime heartburn and leg cramps.",
+      "Consider a 'babymoon' pregnancy photoshoot if you'd like professional maternity photos taken.",
+      "Prepare your car seat — get it inspected at a certified car seat installation station before the birth.",
+      "Review signs of preterm labor: regular contractions before 37 weeks, pelvic pressure, unusual discharge — call your provider if unsure.",
+    ],
+    nutrition: "Folate (from leafy greens, lentils, avocado) continues to matter in the third trimester — it supports the development of neural pathways still forming in the baby's brain.",
+    weeklyFact: "At 30 weeks, your baby can see, hear, taste, smell, feel pain, and has REM sleep with dreams — it has more sensory awareness than most people realize.",
+  },
+  {
+    week: 31,
+    trimester: 3,
+    title: "Rapid Weight Gain",
+    babySize: "A coconut",
+    babyLength: "~41.1 cm",
+    babyWeight: "~1.5 kg",
+    highlight: "Your baby is gaining weight faster than ever — putting on roughly half a pound per week from now until birth.",
+    babyDevelopment: [
+      "The baby gains approximately 200–250 g per week from here onward — mostly fat and muscle.",
+      "All five senses are now fully operational, though vision is limited to light detection in the womb.",
+      "The baby's immune system receives a large influx of maternal antibodies via the placenta — passive immunity for the first months of life.",
+      "Lungs are maturing rapidly — surfactant levels are approaching those sufficient for independent breathing.",
+      "The baby is filling up the uterus — it has less room to move and somersault, though kicks remain strong.",
+    ],
+    momChanges: [
+      "Pelvic floor strain is significant — Kegel exercises daily are essential to prevent incontinence now and postpartum.",
+      "Colostrum leakage may increase — the body is preparing the breasts for milk production.",
+      "Pregnancy brain (forgetfulness, difficulty concentrating) is real — hormonal changes alter memory processing.",
+    ],
+    symptoms: ["Pelvic floor pressure", "Leaking colostrum", "Pregnancy brain", "Heartburn", "Back pain", "Swelling", "Braxton Hicks", "Shortness of breath"],
+    tips: [
+      "Do 3 sets of 10 Kegel exercises daily — squeeze the pelvic floor for 10 seconds, release, repeat.",
+      "Pre-register at your birth hospital to avoid paperwork during labor.",
+      "Pack or finalize your hospital bag — labor bag, baby bag, postpartum recovery essentials.",
+      "Research postpartum support: meal delivery, house help, a postpartum doula, or family support.",
+    ],
+    nutrition: "Protein (80–100 g/day) is critical during this weight-gain phase — chicken, fish, eggs, Greek yogurt, legumes, and tofu all count toward your daily target.",
+    weeklyFact: "Babies born at 31 weeks spend an average of 5–6 weeks in the NICU but typically have excellent long-term outcomes — they're in the 'late preterm' category of strong survivability.",
+  },
+  {
+    week: 32,
+    trimester: 3,
+    title: "Practicing Breathing",
+    babySize: "A jicama",
+    babyLength: "~42.4 cm",
+    babyWeight: "~1.7 kg",
+    highlight: "Your baby practices breathing motions up to 40% of the time — its lungs are rehearsing for the moment of first breath.",
+    babyDevelopment: [
+      "The baby spends up to 40% of the time making breathing motions — inhaling and exhaling amniotic fluid to strengthen respiratory muscles.",
+      "Toenails have grown to the tips of the toes; fingernails may already be long enough to scratch.",
+      "The baby has turned head-down (cephalic position) in most cases — the ideal position for birth.",
+      "If not yet head-down, the baby still has time to rotate — most do by 36 weeks.",
+      "The skeleton is hardening but the skull remains soft and flexible, allowing it to compress during birth.",
+    ],
+    momChanges: [
+      "Your provider will confirm the baby's position at your 32-week appointment.",
+      "False labor (Braxton Hicks) is common and intensifying — true labor contractions are regular, increasing in frequency, and don't stop with movement or hydration.",
+      "Skin over the abdomen may feel extremely tight and sensitive to touch.",
+    ],
+    symptoms: ["Strong Braxton Hicks", "Pelvic pressure", "Back pain", "Heartburn", "Swelling", "Shortness of breath", "Insomnia", "Fatigue"],
+    tips: [
+      "Know the difference between Braxton Hicks and real labor: real contractions are regular, get longer/stronger/closer, and don't stop with rest or water.",
+      "If baby is breech at 32 weeks, ask about external cephalic version (ECV) — it can be performed at 36+ weeks.",
+      "Try a warm bath in the evening to ease aches, relax muscles, and prepare for sleep.",
+      "Set up your postpartum recovery space — a bedside basket with pads, snacks, water, and phone charger.",
+    ],
+    nutrition: "Vitamin E (in sunflower seeds, almonds, avocado, spinach) acts as an antioxidant protecting cell membranes as your baby's organs reach final maturation.",
+    weeklyFact: "The molding of the skull during birth is so significant that babies' heads often appear cone-shaped immediately after delivery — this resolves within days as the flexible plates settle.",
+  },
+  {
+    week: 33,
+    trimester: 3,
+    title: "Immune System Boost",
+    babySize: "A pineapple",
+    babyLength: "~43.7 cm",
+    babyWeight: "~1.9 kg",
+    highlight: "The placenta transfers immunoglobulins to your baby at peak rate this week — giving it a powerful immune head start for the first 6 months of life.",
+    babyDevelopment: [
+      "Maternal antibodies (IgG) cross the placenta at the highest rate during weeks 33–40 — this passive immunity protects the newborn for 3–6 months after birth.",
+      "The skull is formed but the bones are not yet fused — the fontanelles (soft spots) allow the head to compress during delivery.",
+      "The baby's skin is smoothing out as fat fills in under it — it's looking more like the newborn it will soon be.",
+      "Brain development is rapid — the brain is adding billions of neural connections this month.",
+      "The baby can coordinate sucking and swallowing — essential skills for feeding immediately after birth.",
+    ],
+    momChanges: [
+      "The belly feels hard because the uterus muscle is thickening and toning in preparation for labor.",
+      "Sleeping on your side is essential — sleeping on your back compresses the vena cava, reducing blood flow to baby.",
+      "Heartburn may be at its worst as the stomach is severely compressed — small, frequent meals and upright positioning help.",
+    ],
+    symptoms: ["Severe heartburn", "Back pain", "Shortness of breath", "Swelling", "Braxton Hicks", "Pelvic pressure", "Frequent urination", "Insomnia"],
+    tips: [
+      "Sleep elevated — use a wedge pillow or raise the head of your mattress to combat nighttime heartburn.",
+      "Research breastfeeding before birth — attend a class or meet with a lactation consultant prenatally.",
+      "Confirm your pediatrician choice and ensure they accept your insurance.",
+      "Review your maternity leave paperwork and ensure your employer has received all necessary documentation.",
+    ],
+    nutrition: "Prebiotic fiber (in garlic, onion, asparagus, oats) feeds beneficial gut bacteria — your gut microbiome directly influences the baby's immune system development.",
+    weeklyFact: "Babies receive most of their passive immunity in the final 4 weeks of pregnancy — premature babies miss this crucial transfer, which is why breastfeeding (and the colostrum in it) is even more important for them.",
+  },
+  {
+    week: 34,
+    trimester: 3,
+    title: "Rehearsing for Birth",
+    babySize: "A cantaloupe",
+    babyLength: "~45 cm",
+    babyWeight: "~2.1 kg",
+    highlight: "Your baby's fingernails have grown past its fingertips — some babies need their first manicure within days of birth.",
+    babyDevelopment: [
+      "Fingernails have grown past the fingertip — newborns regularly scratch themselves in the first days of life.",
+      "The central nervous system is nearly mature — the baby processes complex sensory information with increasing sophistication.",
+      "Vernix caseosa coating is thickening in preparation for birth, providing both lubrication and protection.",
+      "The baby is practicing all the reflexes it will use at birth: rooting, sucking, grasping, and stepping.",
+      "Most babies are now firmly head-down — the cervix and pelvic floor feel the increasing pressure.",
+    ],
+    momChanges: [
+      "Braxton Hicks contractions may happen several times per hour — your uterus is toning for labor.",
+      "Lightning crotch — sharp, electric shooting pains in the vagina and rectum — is caused by the baby pressing on nerves.",
+      "Some women notice increased pressure as the baby 'drops' lower into the pelvis (lightening).",
+    ],
+    symptoms: ["Lightning crotch", "Pelvic pressure", "Pubic bone pain (SPD)", "Braxton Hicks", "Heartburn", "Back pain", "Swelling", "Fatigue"],
+    tips: [
+      "If you experience more than 4–6 contractions per hour before 37 weeks, call your provider — it could be preterm labor.",
+      "Practice perineal massage daily from week 34 — it reduces tearing during delivery and is recommended by most midwives.",
+      "Discuss pain management options fully with your provider — epidural, nitrous oxide, opioids, hydrotherapy.",
+      "If planning a VBAC (vaginal birth after cesarean), ensure your provider and facility support your birth preference.",
+    ],
+    nutrition: "Magnesium (in pumpkin seeds, dark chocolate, avocado, spinach) supports muscle relaxation, reduces leg cramps, and may help regulate blood pressure in late pregnancy.",
+    weeklyFact: "Perineal massage performed daily for 4–6 weeks before birth reduces the incidence of tearing during delivery by up to 10% in first-time mothers — a simple practice with real evidence behind it.",
+  },
+  {
+    week: 35,
+    trimester: 3,
+    title: "Almost Full Term",
+    babySize: "A honeydew melon",
+    babyLength: "~46.2 cm",
+    babyWeight: "~2.4 kg",
+    highlight: "Your baby's kidneys are fully developed and the liver can process some waste — major organ systems are ready for life outside the womb.",
+    babyDevelopment: [
+      "The kidneys are fully mature and producing urine continuously — the baby urinates approximately 1 pint per day into the amniotic fluid.",
+      "The liver is capable of processing bilirubin, though it still needs support in the first few days after birth.",
+      "Most of the lanugo has shed; the baby is losing its 'fuzzy' appearance.",
+      "Fat deposits are complete — the baby's arms, legs, and face are plump and rounded.",
+      "The baby's grasp reflex is very strong — newborns can grip a finger with surprising force.",
+    ],
+    momChanges: [
+      "Group B Strep (GBS) swab test is performed between weeks 35–37 — a vaginal/rectal swab checking for bacteria that could infect the baby during delivery.",
+      "If GBS-positive, IV antibiotics during labor protect the baby — it does NOT affect birth preferences otherwise.",
+      "Many women feel a burst of 'nesting' energy — the urge to clean, organize, and prepare the home intensifies.",
+    ],
+    symptoms: ["Nesting urge", "Pelvic pressure", "Back pain", "Shortness of breath", "Fatigue", "Braxton Hicks", "Difficulty walking", "Frequent urination"],
+    tips: [
+      "Get your GBS swab at your 35–37 week appointment and ask about your result so you can plan accordingly.",
+      "Channel nesting energy productively — prepare a postpartum meal station, organize the nursery, pre-stock diapers.",
+      "Write out your birth preferences and make 3 copies: one for your hospital bag, one for your provider, one for your support person.",
+      "Practice your breathing and relaxation techniques for labor — even if planning an epidural, controlled breathing helps.",
+    ],
+    nutrition: "Iron (27 mg/day) is especially important now — your body is building up blood reserves for delivery blood loss, which averages 500 ml for vaginal birth and 1,000 ml for cesarean.",
+    weeklyFact: "The baby's circadian rhythm is established — it will arrive already accustomed to a sleep-wake schedule based on your activity patterns. Night owls often have night-owl babies.",
+  },
+  {
+    week: 36,
+    trimester: 3,
+    title: "Head Drops into Pelvis",
+    babySize: "A large papaya",
+    babyLength: "~47.4 cm",
+    babyWeight: "~2.6 kg",
+    highlight: "Your baby may 'drop' this week (lightening) — descending into the pelvis. Breathing becomes easier but pelvic pressure intensifies.",
+    babyDevelopment: [
+      "The baby's head may engage in the pelvis (lightening), reducing shortness of breath but increasing pelvic pressure.",
+      "Skull bones remain separated at the fontanelles — the soft spots allow the head to mold during birth and will close by 18 months.",
+      "The baby is shedding vernix and lanugo — amniotic fluid may appear slightly cloudy or creamy.",
+      "All organ systems are fully functional — a baby born at 36 weeks is 'late preterm' and typically does very well.",
+      "The baby gains about 30 g per day in these final weeks — mostly building the fat reserves it will burn in early newborn life.",
+    ],
+    momChanges: [
+      "Cervical checks may begin at 36 weeks — dilation and effacement (thinning) give some indication of progress, though not timing of labor.",
+      "Increased vaginal discharge and possible passage of the mucus plug are common as the cervix begins to soften.",
+      "Prenatal visits are now weekly until delivery.",
+    ],
+    symptoms: ["Increased pelvic pressure after lightening", "Easier breathing", "Mucus plug discharge", "Pelvic floor pain", "Frequent urination", "Braxton Hicks"],
+    tips: [
+      "Know what to look for as labor approaches: regular contractions, water breaking, bloody show, strong pelvic pressure.",
+      "The mucus plug may come out in pieces over several days — its passing does not mean labor is imminent.",
+      "Prioritize rest — your body needs energy reserves for labor, which can last many hours.",
+      "Finalize all logistics: who will drive you to the hospital, who will watch older children or pets.",
+    ],
+    nutrition: "Dates (3–6 per day from week 36) have been shown in studies to reduce the need for labor induction and shorten the first stage of labor — a simple, evidence-backed third-trimester addition.",
+    weeklyFact: "Research from Jordan University of Science and Technology found women who ate 6 dates daily in the final 4 weeks of pregnancy had significantly shorter first-stage labor and higher rates of spontaneous labor.",
+  },
+   {
+    week: 37,
+    trimester: 3,
+    title: "Full Term!",
+    babySize: "A winter melon",
+    babyLength: "~48.6 cm",
+    babyWeight: "~2.85 kg",
+    highlight: "Congratulations — your baby is officially FULL TERM! Birth can happen any day now, and your baby is ready for the world.",
+    babyDevelopment: [
+      "37 weeks marks full term — the baby is fully developed and ready for birth at any time.",
+      "The baby is still gaining 30 g per day — building the last of its fat reserves for temperature regulation and energy.",
+      "Instincts are in place: rooting, sucking, grasping, Moro (startle), and stepping reflexes are fully developed.",
+      "The lungs have sufficient surfactant for independent breathing — a full-term baby rarely needs respiratory support.",
+      "Meconium (the baby's first stool) fills the intestines — made up of amniotic fluid, vernix, and lanugo it swallowed in the womb.",
+    ],
+    momChanges: [
+      "Cervical dilation and effacement are progressing — your provider may do weekly checks from now.",
+      "Bloody show — a pink or brown-tinged discharge — may appear as the cervix begins to dilate.",
+      "Some women feel a sudden 'rush' of energy or calm before labor begins — a final nesting surge.",
+    ],
+    symptoms: ["Pelvic pressure and fullness", "Bloody show", "Braxton Hicks (may be intense)", "Back ache", "Loose stools (nature's way of clearing for labor)", "Fatigue"],
+    tips: [
+      "Know when to call your provider: contractions 5 minutes apart for 1 hour, water breaking, decreased fetal movement, or bleeding.",
+      "Rest as much as possible — labor is a marathon and energy reserves matter.",
+      "Eat well — nourish yourself with easily digestible foods as labor approaches.",
+      "Trust your body — it knows what to do. The baby knows too.",
+    ],
+    nutrition: "Continue eating dates (6 per day), stay hydrated, and focus on easily digestible foods like smoothies, soups, and whole grains that provide sustained energy for labor.",
+    weeklyFact: "'Early term' (37–38 weeks) babies have slightly higher rates of NICU admission than 39–40 week babies — if you have a choice, waiting until 39 weeks is ideal unless medically indicated.",
+  },
+  {
+    week: 38,
+    trimester: 3,
+    title: "Final Preparations",
+    babySize: "A leek",
+    babyLength: "~49.8 cm",
+    babyWeight: "~3.1 kg",
+    highlight: "Your baby's brain continues rapid development right up to birth — every day inside the womb still matters significantly.",
+    babyDevelopment: [
+      "The brain grows approximately 35% in size during the final 4 weeks — white matter and neural connections are still forming.",
+      "The liver has stored enough iron and glycogen to last through the first days of newborn life.",
+      "The baby's head circumference is now about 34 cm — the same as its abdominal circumference.",
+      "Vernix caseosa has mostly absorbed into the skin, which it will benefit from as a moisturizer.",
+      "Hair growth varies enormously — some babies are born with thick hair, others with almost none.",
+    ],
+    momChanges: [
+      "Lightning (engagement of the baby's head) may or may not have occurred — multiparous women often don't experience it until labor begins.",
+      "Practice contractions may be quite strong and regular but not establish a true pattern.",
+      "Dilation of 1–3 cm is common at week 38 with no other labor signs — cervical dilation alone does not predict when labor will start.",
+    ],
+    symptoms: ["Strong Braxton Hicks or prodromal labor", "Pelvic pressure", "Bloody show", "Back pain", "Nausea returning (a labor sign for some)", "Diarrhea (pre-labor bowel clearing)"],
+    tips: [
+      "Eat lightly and stay hydrated — nausea or loose stools sometimes precede labor by 24–48 hours.",
+      "Take a final bump photo and write a letter to your unborn baby — these become precious keepsakes.",
+      "Ensure your newborn feeding plan is in place: breastfeeding supplies, formula if needed, or a combination plan.",
+      "Double-check car seat installation — many fire stations offer free inspection services.",
+    ],
+    nutrition: "Light, digestible foods work best now — oatmeal, bananas, yogurt, broth, and dates are ideal in these final days when your appetite may be erratic.",
+    weeklyFact: "The baby's skull is designed to overlap at the sutures (fontanelle joints) during delivery — allowing the head to compress by up to 1–2 cm to navigate the birth canal. It's nature's perfect engineering.",
+  },
+  {
+    week: 39,
+    trimester: 3,
+    title: "Baby is Ready to Greet You",
+    babySize: "A small watermelon",
+    babyLength: "~50.7 cm",
+    babyWeight: "~3.3 kg",
+    highlight: "Your baby is now considered 'full-term' in the most optimal sense — its lungs, brain, and immune system are at peak readiness for birth.",
+    babyDevelopment: [
+      "All organ systems are complete and optimally functional — 39 weeks is the ideal gestation for the healthiest birth outcomes.",
+      "The baby continues adding fat at 30 g/day — the rounder and plumper it is, the better insulated it will be after birth.",
+      "Skin is now smooth, pink, and covered in spots of vernix in the skin folds.",
+      "Antibody transfer from mother to baby is in its final phase — immune protection for early infancy is nearly complete.",
+      "The baby's movements may feel different — fewer big kicks and more rolling or squirming as space decreases, but count should remain consistent.",
+    ],
+    momChanges: [
+      "You may feel a deep internal pressure as the baby presses lower into the pelvic outlet.",
+      "Sleep is significantly disrupted — most women average 5–6 broken hours per night in the final weeks.",
+      "Some women notice a sharp increase in Braxton Hicks, backache, and pelvic aching in the 24–48 hours before labor.",
+    ],
+    symptoms: ["Intense Braxton Hicks", "Pelvic floor heaviness", "Back pain", "Diarrhea or loose stools", "Bloody show", "Loss of mucus plug", "Extreme fatigue"],
+    tips: [
+      "Discuss a labor induction plan with your provider — most offer induction by 41 weeks; some by 39–40 weeks.",
+      "Natural labor preparation: long walks, raspberry leaf tea, acupuncture, and sex (prostaglandins in semen may help soften the cervix).",
+      "Stay patient — only 5% of babies are born on their due date; most arrive within 2 weeks before or after.",
+      "Call your provider if fetal movements decrease or you sense something is different — trust your instincts.",
+    ],
+    nutrition: "Hydration is paramount — dehydration can trigger contractions and fatigue. Aim for 10–12 glasses of water and electrolyte-rich fluids daily.",
+    weeklyFact: "Studies show that babies born at 39–40 weeks have better breastfeeding success, higher birth weight, stronger immune systems, and lower NICU rates than those born at 37–38 weeks.",
+  },
+  {
+    week: 40,
+    trimester: 3,
+    title: "Due Date — Baby's First Day",
+    babySize: "A small pumpkin",
+    babyLength: "~51.2 cm",
+    babyWeight: "~3.4 kg",
+    highlight: "Your due date has arrived — and your baby is fully ready to meet you. Every breath you've taken, every meal you've eaten, every night you've rested has led to this moment.",
+    babyDevelopment: [
+      "Your baby is fully developed — from its brain's billions of neural connections to the microscopic villi lining its intestines.",
+      "The lungs are mature and ready to take their first breath — surfactant will allow the air sacs to inflate in a single gasp.",
+      "All reflexes are in place: rooting, sucking, grasping, Moro, tonic neck — survival tools for the first weeks of life.",
+      "The baby's immune system, though immature, is bolstered by months of antibody transfer and ready for a first encounter with the world.",
+      "Your baby knows your voice, your heartbeat, your smell — you are already familiar to each other in the most profound way.",
+    ],
+    momChanges: [
+      "Only 5% of babies arrive on their exact due date — if yours hasn't arrived, you are completely normal.",
+      "Post-dates monitoring typically begins at 40–41 weeks — non-stress tests and amniotic fluid checks ensure baby's wellbeing.",
+      "Most providers recommend induction by 41–42 weeks if labor hasn't begun naturally — discuss your options.",
+    ],
+    symptoms: ["All third trimester symptoms at maximum", "Intense nesting urge", "Anxiety mixed with excitement", "Prodromal labor", "Cervical dilation progressing"],
+    tips: [
+      "If no labor by 40+ weeks, discuss induction with your provider — a gentle membrane sweep may help initiate labor.",
+      "Cherish these last pregnant moments — take one final bump photo, write in your journal, enjoy a quiet evening.",
+      "You are ready for this — trust your body, trust your baby, trust your team.",
+      "When labor begins: breathe, move, rest between contractions, lean on your support people, and know that each wave brings you closer to your baby.",
+    ],
+    nutrition: "In early labor, stay nourished with light, digestible foods: toast, broth, dates, bananas, and smoothies. Many hospitals now allow eating in early labor — fuel your marathon.",
+    weeklyFact: "The average first-time mother gives birth at 40 weeks and 5 days. Second-time mothers average 40 weeks and 3 days. Your baby will come exactly when it's ready — and when it does, everything changes.",
+  },
+];
 
-const hasAllWeeks = pregnancyWeeks.length === 40 && pregnancyWeeks.every((weekData, index) => weekData.week === index + 1);
+// ─────────────────────────────────────────────
+// Helper utilities
+// ─────────────────────────────────────────────
 
-if (!hasAllWeeks) {
-  throw new Error('pregnancyWeeks must include exactly weeks 1 through 40 in order.');
+export function getWeekByNumber(week: number): PregnancyWeek | undefined {
+  return pregnancyWeeks.find((w) => w.week === week);
 }
+
+export function getWeeksByTrimester(trimester: 1 | 2 | 3): PregnancyWeek[] {
+  return pregnancyWeeks.filter((w) => w.trimester === trimester);
+}
+
+export function getTrimesterLabel(trimester: 1 | 2 | 3): string {
+  const labels: Record<1 | 2 | 3, string> = {
+    1: "First Trimester",
+    2: "Second Trimester",
+    3: "Third Trimester",
+  };
+  return labels[trimester];
+}
+
+export function getTrimesterForWeek(week: number): 1 | 2 | 3 {
+  if (week <= 13) return 1;
+  if (week <= 27) return 2;
+  return 3;
+}
+
+// Validation: ensure all 40 weeks are present
+if (pregnancyWeeks.length !== 40) {
+  console.warn(`⚠️ Expected 40 pregnancy weeks, found ${pregnancyWeeks.length}`);
+    }
