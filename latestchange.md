@@ -1,3 +1,9 @@
+## 2026-02-22 (Week detail route parsing hotfix)
+
+- Fixed React Router matching for pregnancy week detail URLs by changing the route from a non-parameterized mixed segment to `/pregnancy-week-by-week/:weekSlug`.
+- Preserved public URL format (`/pregnancy-week-by-week/week-<number>`) and updated detail parsing to accept only `week-1` through `week-40`.
+- Ensured invalid formats and out-of-range values still render the existing in-page not-found fallback.
+
 
 ## 2026-02-22 (Pregnancy week-by-week routes)
 

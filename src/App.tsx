@@ -46,7 +46,7 @@ function App() {
         <Route path="/privacy" element={<PrivacyPage />} />
         <Route path="/pregnancy-weight-gain-calculator" element={<PregnancyWeightGainCalculatorPage />} />
         <Route path="/pregnancy-week-by-week" element={<PregnancyWeekByWeekHubPage />} />
-        <Route path="/pregnancy-week-by-week/week-:weekNumber" element={<PregnancyWeekDetailPage />} />
+        <Route path="/pregnancy-week-by-week/:weekSlug" element={<PregnancyWeekDetailPage />} />
         <Route path="/ovulation-calculator" element={<OvulationCalculatorPage />} />
         <Route path="/similar-tools" element={<SimilarToolsPage />} />
       </Routes>

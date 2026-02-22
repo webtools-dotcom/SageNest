@@ -13,7 +13,10 @@ const getTrimesterLabel = (weekNumber: number) => {
 const parseWeekNumber = (value?: string): number | null => {
   if (!value) return null;
 
-  const parsed = Number(value);
+  const match = /^week-(\d+)$/.exec(value);
+  if (!match) return null;
+
+  const parsed = Number(match[1]);
   if (!Number.isInteger(parsed) || parsed < MIN_WEEK || parsed > MAX_WEEK) {
     return null;
   }
@@ -22,8 +25,8 @@ const parseWeekNumber = (value?: string): number | null => {
 };
 
 export const PregnancyWeekDetailPage = () => {
-  const { weekNumber: weekNumberParam } = useParams();
-  const weekNumber = parseWeekNumber(weekNumberParam);
+  const { weekSlug } = useParams();
+  const weekNumber = parseWeekNumber(weekSlug);
 
   if (!weekNumber) {
     return (
