@@ -327,3 +327,8 @@
 - Ensured every `<loc>` uses `https://sagenest.pages.dev`.
 - Added `/ovulation-calculator` and included all specified `<lastmod>` and `<priority>` values.
 - Kept XML header and sitemap `<urlset>` namespace intact for valid sitemap parsing.
+
+## 2026-02-22 (Similar tools: add Pregnancy Week by Week)
+
+- Added the `Pregnancy Week by Week` entry to `src/data/tools.ts` so it appears in `/similar-tools` with the same card structure as existing tools.
+- Linked the new card to `/pregnancy-week-by-week` and added concise discovery-focused copy for consistency with other tool cards.
