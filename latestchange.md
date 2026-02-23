@@ -1,3 +1,9 @@
+## 2026-02-23 (Cloudflare Pages headers format + deprecated header removal)
+
+- Updated `public/_headers` to a valid Cloudflare Pages route-prefixed block under `/*` with properly indented header lines and no comment wrappers.
+- Removed deprecated `X-XSS-Protection` and added `Strict-Transport-Security: max-age=63072000; includeSubDomains`.
+- Kept CSP `connect-src` restricted to Supabase hosts only (`https://*.supabase.co` and `wss://*.supabase.co`).
+
 ## 2026-02-23 (Tailwind check + frontend2 token mapping)
 
 - Verified the project does not use Tailwind CSS (`tailwindcss` dependency/config is absent), so no `tailwind.config.js` was created or edited.
