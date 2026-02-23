@@ -1,5 +1,10 @@
 import { useEffect, useMemo, useState } from 'react';
-import { ADMIN_EMAIL, supabase } from '../supabase/client';
+import {
+  ADMIN_CONFIGURATION_ERROR_MESSAGE,
+  hasAdminAccessConfigured,
+  isAdminEmail,
+  supabase
+} from '../supabase/client';
 
 interface BlogRow {
   id: string;
@@ -51,7 +56,11 @@ export const assertAdminUser = async () => {
     throw new Error(`Authorization check failed: ${error.message}`);
   }
 
-  if ((data.user?.email ?? '').toLowerCase() !== ADMIN_EMAIL) {
+  if (!hasAdminAccessConfigured) {
+    throw new Error(ADMIN_CONFIGURATION_ERROR_MESSAGE);
+  }
+
+  if (!isAdminEmail(data.user?.email)) {
     throw new Error(UNAUTHORIZED_MESSAGE);
   }
 };
@@ -65,8 +74,11 @@ export const runAdminGuardedAction = async (
     await action();
     return true;
   } catch (error) {
-    const isUnauthorizedError = error instanceof Error && error.message === UNAUTHORIZED_MESSAGE;
-    setMessage(isUnauthorizedError ? UNAUTHORIZED_MESSAGE : ACTION_FAILURE_MESSAGE);
+    const isKnownError =
+      error instanceof Error
+      && (error.message === UNAUTHORIZED_MESSAGE || error.message === ADMIN_CONFIGURATION_ERROR_MESSAGE);
+
+    setMessage(isKnownError && error instanceof Error ? error.message : ACTION_FAILURE_MESSAGE);
     return false;
   }
 };

@@ -5,7 +5,9 @@ const { adminEmail } = vi.hoisted(() => ({
 }));
 
 vi.mock('../src/supabase/client', () => ({
-  ADMIN_EMAIL: adminEmail,
+  ADMIN_CONFIGURATION_ERROR_MESSAGE: 'Admin access is unavailable. Please contact support.',
+  hasAdminAccessConfigured: true,
+  isAdminEmail: (email?: string | null) => (email ?? '').toLowerCase() === adminEmail,
   supabase: {
     auth: {
       getUser: vi.fn(),

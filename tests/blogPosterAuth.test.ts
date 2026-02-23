@@ -5,7 +5,9 @@ const { getUserMock } = vi.hoisted(() => ({
 }));
 
 vi.mock('../src/supabase/client', () => ({
-  ADMIN_EMAIL: 'admin@example.com',
+  ADMIN_CONFIGURATION_ERROR_MESSAGE: 'Admin access is unavailable. Please contact support.',
+  hasAdminAccessConfigured: true,
+  isAdminEmail: (email?: string | null) => (email ?? '').toLowerCase() === 'admin@example.com',
   supabase: {
     auth: {
       getUser: getUserMock

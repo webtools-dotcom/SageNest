@@ -1,7 +1,9 @@
 import { describe, expect, test, vi } from 'vitest';
 
 vi.mock('../src/supabase/client', () => ({
-  ADMIN_EMAIL: 'admin@example.com',
+  ADMIN_CONFIGURATION_ERROR_MESSAGE: 'Admin access is unavailable. Please contact support.',
+  hasAdminAccessConfigured: true,
+  isAdminEmail: () => true,
   supabase: {
     auth: {
       getUser: vi.fn()

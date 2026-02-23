@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ADMIN_EMAIL, supabase } from '../supabase/client';
+import {
+  ADMIN_CONFIGURATION_ERROR_MESSAGE,
+  hasAdminAccessConfigured,
+  isAdminEmail,
+  supabase
+} from '../supabase/client';
 
 export const SESSION_VERIFY_ERROR_MESSAGE = 'Unable to verify session. Please try again.';
 
@@ -22,6 +27,10 @@ type SessionCheckOutcome =
   | { type: 'unauthorized' };
 
 export const getSessionCheckOutcome = ({ data, error }: SessionState): SessionCheckOutcome => {
+  if (!hasAdminAccessConfigured) {
+    return { type: 'error', message: ADMIN_CONFIGURATION_ERROR_MESSAGE };
+  }
+
   if (error) {
     return { type: 'error', message: SESSION_VERIFY_ERROR_MESSAGE };
   }
@@ -30,7 +39,7 @@ export const getSessionCheckOutcome = ({ data, error }: SessionState): SessionCh
     return { type: 'no-user' };
   }
 
-  if ((data.user.email ?? '').toLowerCase() === ADMIN_EMAIL) {
+  if (isAdminEmail(data.user.email)) {
     return { type: 'authorized' };
   }
 
@@ -69,9 +78,15 @@ export const AdminLogin = () => {
     };
 
     const { data: authListener } = supabase.auth.onAuthStateChange((_event, session) => {
-      const email = session?.user?.email?.toLowerCase() ?? '';
+      if (!hasAdminAccessConfigured) {
+        setError(ADMIN_CONFIGURATION_ERROR_MESSAGE);
+        void supabase.auth.signOut();
+        return;
+      }
+
+      const email = session?.user?.email;
       if (!email) return;
-      if (email === ADMIN_EMAIL) {
+      if (isAdminEmail(email)) {
         navigate('/admin/blogposter', { replace: true });
         return;
       }

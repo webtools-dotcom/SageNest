@@ -177,6 +177,9 @@ Add these variables in `.env.local` and Cloudflare Pages environment variables:
 ```bash
 VITE_SUPABASE_URL=your_supabase_project_url
 VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+# Use either a single admin email or a comma-separated allowlist.
+VITE_ADMIN_EMAIL=admin@example.com
+# VITE_ADMIN_EMAILS=admin@example.com,editor@example.com
 ```
 
 Configure Supabase Google OAuth redirect URLs:
@@ -187,7 +190,7 @@ Configure Supabase Google OAuth redirect URLs:
 Security guidance:
 
 - Enable RLS on `blog` table.
-- Add policies so only `testforsavr@gmail.com` can `INSERT`, `UPDATE`, and `DELETE`.
+- Add policies so only emails in your configured admin allowlist can `INSERT`, `UPDATE`, and `DELETE`.
 - Protect `blog` storage bucket so only admin can upload and public can read published assets.
 
 ## Cloudflare Deployment Guardrails
