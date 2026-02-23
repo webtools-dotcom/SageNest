@@ -66,10 +66,10 @@ npm run test
 - Current baseline includes:
   - `X-Content-Type-Options: nosniff`
   - `X-Frame-Options: DENY`
-  - `X-XSS-Protection: 1; mode=block`
   - `Referrer-Policy: strict-origin-when-cross-origin`
   - `Permissions-Policy: geolocation=(), microphone=(), camera=()`
   - `Content-Security-Policy` for self-hosted app assets, Google Fonts, and Supabase (`https://*.supabase.co` and `wss://*.supabase.co`).
+  - `Strict-Transport-Security: max-age=63072000; includeSubDomains`
 
 ## Static Route Strategy
 
