@@ -1,3 +1,9 @@
+## 2026-02-23 (Global app mount background transparency)
+
+- Added a new base-level global CSS rule in `src/styles/global.css` for both `#root` and `#app`.
+- Set `background: transparent;` on the app mount elements so container-level background handling remains consistent.
+- Included `min-height: 100%;` in the same shared rule to preserve full-height layout behavior.
+
 ## 2026-02-22 (Pregnancy week detail accessibility navigation + heading hierarchy)
 
 - Added an accessible breadcrumb (`nav[aria-label="Breadcrumb"]`) on the pregnancy week detail page linking back to the week-by-week hub and marking the current week.

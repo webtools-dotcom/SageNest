@@ -68,6 +68,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+#root,
+#app {
+  background: transparent;
+  min-height: 100%;
+}
+
 /* ============================================================
    TYPOGRAPHY — Editorial Scale
    ============================================================ */
