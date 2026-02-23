@@ -2,7 +2,7 @@
 
 **Version:** 1.0  
 **Last Updated:** February 14, 2026  
-**Project:** SageNest - Privacy-First Pregnancy Calculator  
+**Project:** SageNest 
 **Security Level:** Critical (Handles Sensitive Health Information)
 
 ---
