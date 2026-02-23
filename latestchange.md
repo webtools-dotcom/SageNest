@@ -1,3 +1,9 @@
+## 2026-02-23 (Tailwind check + frontend2 token mapping)
+
+- Verified the project does not use Tailwind CSS (`tailwindcss` dependency/config is absent), so no `tailwind.config.js` was created or edited.
+- Added explicit frontend2 CSS token aliases in `src/styles/global.css` for colors, shadows, and radius values under `:root`.
+- Kept implementation non-breaking by mapping new frontend2 tokens to existing design tokens via `var(...)` references.
+
 ## 2026-02-23 (Global app mount background transparency)
 
 - Added a new base-level global CSS rule in `src/styles/global.css` for both `#root` and `#app`.
