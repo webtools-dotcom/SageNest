@@ -1,3 +1,8 @@
+## 2026-02-23 (Blog list query column selection tightened)
+
+- Updated `loadPosts` in `src/pages/BlogPoster.tsx` to replace wildcard `select('*')` with an explicit column list: `id, title, slug, description, content, image_url, is_published, created_at, updated_at`.
+- Kept existing ordering (`updated_at` descending) and load behavior unchanged while aligning fetched fields with the `BlogRow` interface.
+
 ## 2026-02-23 (Blog authorization hardening for CRUD + storage)
 
 - Hardened `src/pages/BlogPoster.tsx` privileged action handling so Supabase CRUD/storage errors no longer leak raw backend details to admins in UI; privileged failures now resolve to a generic safe message.
