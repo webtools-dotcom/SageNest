@@ -106,7 +106,7 @@ export const BlogPosterPage = () => {
     await runAdminGuardedAction(setMessage, async () => {
       const { data, error } = await supabase
         .from('blog')
-        .select('*')
+        .select('id, title, slug, description, content, image_url, is_published, created_at, updated_at')
         .order('updated_at', { ascending: false });
       throwIfSupabaseError(error);
 
