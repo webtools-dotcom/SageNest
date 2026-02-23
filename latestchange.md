@@ -1,3 +1,9 @@
+## 2026-02-23 (Blog authorization hardening for CRUD + storage)
+
+- Hardened `src/pages/BlogPoster.tsx` privileged action handling so Supabase CRUD/storage errors no longer leak raw backend details to admins in UI; privileged failures now resolve to a generic safe message.
+- Kept existing frontend admin guard behavior as UX gating while documenting that server-side SQL policies are the source of truth for enforcement.
+- Expanded `README.md` Supabase setup with reproducible SQL for `public.blog` RLS and `storage.objects` policies on bucket `blog`, covering admin-only insert/update/delete and public read behavior for published content.
+
 ## 2026-02-23 (Admin identity moved to environment config)
 
 - Replaced hardcoded admin email usage with env-driven admin helpers in `src/supabase/client.ts`, supporting either `VITE_ADMIN_EMAIL` or comma-separated `VITE_ADMIN_EMAILS`.

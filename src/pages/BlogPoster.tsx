@@ -83,6 +83,12 @@ export const runAdminGuardedAction = async (
   }
 };
 
+const throwIfSupabaseError = (error: { message: string } | null) => {
+  if (error) {
+    throw new Error(error.message);
+  }
+};
+
 export const BlogPosterPage = () => {
   const [id, setId] = useState<string | null>(null);
   const [title, setTitle] = useState('');
@@ -102,11 +108,7 @@ export const BlogPosterPage = () => {
         .from('blog')
         .select('*')
         .order('updated_at', { ascending: false });
-
-      if (error) {
-        setMessage(`Failed to load posts: ${error.message}`);
-        return;
-      }
+      throwIfSupabaseError(error);
 
       setPosts((data ?? []) as BlogRow[]);
     });
@@ -137,10 +139,7 @@ export const BlogPosterPage = () => {
       const filePath = `${Date.now()}-${slugify(file.name.replace(/\.[^.]+$/, ''))}.${fileExt}`;
 
       const { error } = await supabase.storage.from('blog').upload(filePath, file, { upsert: false });
-      if (error) {
-        setMessage(`Image upload failed: ${error.message}`);
-        return;
-      }
+      throwIfSupabaseError(error);
 
       const { data } = supabase.storage.from('blog').getPublicUrl(filePath);
       setImageUrl(data.publicUrl);
@@ -173,11 +172,7 @@ export const BlogPosterPage = () => {
         : await supabase.from('blog').insert({ ...payload, created_at: new Date().toISOString() }).select().single();
 
       setLoading(false);
-
-      if (result.error) {
-        setMessage(`Failed to save: ${result.error.message}`);
-        return;
-      }
+      throwIfSupabaseError(result.error);
 
       setMessage(isPublished ? 'Post published successfully.' : 'Draft saved successfully.');
       resetForm();
@@ -201,10 +196,7 @@ export const BlogPosterPage = () => {
       if (!confirmed) return;
 
       const { error } = await supabase.from('blog').delete().eq('id', postId);
-      if (error) {
-        setMessage(`Delete failed: ${error.message}`);
-        return;
-      }
+      throwIfSupabaseError(error);
 
       setMessage('Post deleted.');
       if (id === postId) resetForm();
