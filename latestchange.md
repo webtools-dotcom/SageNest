@@ -1,3 +1,11 @@
+## 2026-02-23 (Admin identity moved to environment config)
+
+- Replaced hardcoded admin email usage with env-driven admin helpers in `src/supabase/client.ts`, supporting either `VITE_ADMIN_EMAIL` or comma-separated `VITE_ADMIN_EMAILS`.
+- Added safe fallback behavior for missing admin env config: admin routes now deny access and show a generic configuration error instead of permitting access.
+- Updated `AdminLogin`, `ProtectedRoute`, and `BlogPoster` to use shared helper checks (`isAdminEmail`, `hasAdminAccessConfigured`) for consistent authorization logic.
+- Added `.env.example` with required Supabase keys plus admin-email env placeholders.
+- Updated README admin setup to document the new admin env configuration and allowlist-based policy guidance.
+
 ## 2026-02-23 (Cloudflare Pages headers format + deprecated header removal)
 
 - Updated `public/_headers` to a valid Cloudflare Pages route-prefixed block under `/*` with properly indented header lines and no comment wrappers.
