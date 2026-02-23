@@ -46,6 +46,33 @@
   --transition-fast: 0.15s ease;
   --transition-base: 0.2s ease;
   --transition-slow: 0.35s ease;
+
+  /* frontend2 token mappings (Tailwind not used in this project) */
+  --frontend2-color-primary: var(--sage-primary);
+  --frontend2-color-primary-dark: var(--sage-dark);
+  --frontend2-color-primary-light: var(--sage-light);
+  --frontend2-color-primary-soft: var(--sage-softest);
+  --frontend2-color-accent: var(--sage-accent);
+  --frontend2-color-surface: var(--off-white);
+  --frontend2-color-surface-muted: var(--sand);
+  --frontend2-color-background: var(--cream);
+  --frontend2-color-text: var(--charcoal);
+  --frontend2-color-text-secondary: var(--text-secondary);
+  --frontend2-color-border: var(--border-hairline);
+  --frontend2-color-border-strong: var(--border-subtle);
+
+  --frontend2-shadow-subtle: var(--shadow-subtle);
+  --frontend2-shadow-soft: var(--shadow-soft);
+  --frontend2-shadow-medium: var(--shadow-medium);
+  --frontend2-shadow-elevated: var(--shadow-elevated);
+  --frontend2-shadow-brand: var(--shadow-sage);
+
+  --frontend2-radius-xs: var(--radius-xs);
+  --frontend2-radius-sm: var(--radius-sm);
+  --frontend2-radius-md: var(--radius-md);
+  --frontend2-radius-lg: var(--radius-lg);
+  --frontend2-radius-xl: var(--radius-xl);
+  --frontend2-radius-pill: var(--radius-pill);
 }
 
 * {
