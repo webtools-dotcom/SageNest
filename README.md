@@ -189,9 +189,101 @@ Configure Supabase Google OAuth redirect URLs:
 
 Security guidance:
 
-- Enable RLS on `blog` table.
-- Add policies so only emails in your configured admin allowlist can `INSERT`, `UPDATE`, and `DELETE`.
-- Protect `blog` storage bucket so only admin can upload and public can read published assets.
+- Apply explicit SQL policies for both the `blog` table and `blog` Storage bucket.
+
+Use this SQL in Supabase SQL Editor (replace admin emails with your own allowlist):
+
+```sql
+-- 1) Blog table RLS
+alter table public.blog enable row level security;
+
+drop policy if exists "public can read published blog" on public.blog;
+create policy "public can read published blog"
+on public.blog
+for select
+to public
+using (is_published = true);
+
+drop policy if exists "admin can read all blog rows" on public.blog;
+create policy "admin can read all blog rows"
+on public.blog
+for select
+to authenticated
+using ((auth.jwt() ->> 'email') = any (array['admin@example.com','editor@example.com']));
+
+drop policy if exists "admin can insert blog" on public.blog;
+create policy "admin can insert blog"
+on public.blog
+for insert
+to authenticated
+with check ((auth.jwt() ->> 'email') = any (array['admin@example.com','editor@example.com']));
+
+drop policy if exists "admin can update blog" on public.blog;
+create policy "admin can update blog"
+on public.blog
+for update
+to authenticated
+using ((auth.jwt() ->> 'email') = any (array['admin@example.com','editor@example.com']))
+with check ((auth.jwt() ->> 'email') = any (array['admin@example.com','editor@example.com']));
+
+drop policy if exists "admin can delete blog" on public.blog;
+create policy "admin can delete blog"
+on public.blog
+for delete
+to authenticated
+using ((auth.jwt() ->> 'email') = any (array['admin@example.com','editor@example.com']));
+
+-- 2) Storage bucket policies for "blog"
+insert into storage.buckets (id, name, public)
+values ('blog', 'blog', true)
+on conflict (id) do update set public = excluded.public;
+
+drop policy if exists "public read blog assets" on storage.objects;
+create policy "public read blog assets"
+on storage.objects
+for select
+to public
+using (bucket_id = 'blog');
+
+drop policy if exists "admin upload blog assets" on storage.objects;
+create policy "admin upload blog assets"
+on storage.objects
+for insert
+to authenticated
+with check (
+  bucket_id = 'blog'
+  and (auth.jwt() ->> 'email') = any (array['admin@example.com','editor@example.com'])
+);
+
+drop policy if exists "admin update blog assets" on storage.objects;
+create policy "admin update blog assets"
+on storage.objects
+for update
+to authenticated
+using (
+  bucket_id = 'blog'
+  and (auth.jwt() ->> 'email') = any (array['admin@example.com','editor@example.com'])
+)
+with check (
+  bucket_id = 'blog'
+  and (auth.jwt() ->> 'email') = any (array['admin@example.com','editor@example.com'])
+);
+
+drop policy if exists "admin delete blog assets" on storage.objects;
+create policy "admin delete blog assets"
+on storage.objects
+for delete
+to authenticated
+using (
+  bucket_id = 'blog'
+  and (auth.jwt() ->> 'email') = any (array['admin@example.com','editor@example.com'])
+);
+```
+
+Notes:
+
+- Frontend admin checks are only for UX and route gating; these SQL policies are the real enforcement layer.
+- Keep SQL allowlist emails and `VITE_ADMIN_EMAIL`/`VITE_ADMIN_EMAILS` values aligned.
 
 ## Cloudflare Deployment Guardrails
 
@@ -203,4 +295,3 @@ npm run check:conflicts
 ```
 
 `npm run build` now runs these checks first via `prebuild`.
-
