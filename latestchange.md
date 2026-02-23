@@ -332,3 +332,7 @@
 
 - Added the `Pregnancy Week by Week` entry to `src/data/tools.ts` so it appears in `/similar-tools` with the same card structure as existing tools.
 - Linked the new card to `/pregnancy-week-by-week` and added concise discovery-focused copy for consistency with other tool cards.
+
+## 2026-02-23 (Global cream token adjustment)
+
+- Updated the global CSS root token `--cream` in `src/styles/global.css` from `#FAF9F6` to `#F3EFE0` as part of the frontend token refresh request.
