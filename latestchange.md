@@ -373,3 +373,9 @@
 ## 2026-02-23 (Global cream token adjustment)
 
 - Updated the global CSS root token `--cream` in `src/styles/global.css` from `#FAF9F6` to `#F3EFE0` as part of the frontend token refresh request.
+
+## 2026-02-26 (Sitemap fetch reliability: removed self-rewrite rules)
+
+- Removed the self-rewrite lines for `/sitemap.xml` and `/robots.txt` from `public/_redirects`.
+- Kept all existing route rewrites intact, including blog/static page rewrites and SPA fallback.
+- This avoids ambiguous edge behavior from rewriting a URL to itself with `200`, which can cause crawler fetch/read failures in some hosting redirect engines.
