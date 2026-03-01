@@ -426,3 +426,9 @@
 - Selected `/pregnancy-due-date-calculator` as the canonical URL for the due date tool and added a permanent redirect from `/` to that path in `public/_redirects` before the SPA catch-all rule.
 - Kept `src/pages/Calculator.tsx` canonical metadata aligned to `/pregnancy-due-date-calculator` (already correct, no code-path change needed).
 - Removed the duplicate root URL (`https://sagenest.pages.dev/`) from `public/sitemap.xml` so only the canonical due date calculator variant is listed.
+
+## 2026-03-01 (Cloudflare redirect-loop hotfix)
+
+- Fixed `ERR_TOO_MANY_REDIRECTS` by cleaning `public/_redirects` rules that were forcing trailing-slash redirects on directory-backed routes (for example `/pregnancy-due-date-calculator/ -> /pregnancy-due-date-calculator`), which can loop on Cloudflare Pages when static folder/index resolution adds slash normalization.
+- Removed the broad `/pregnancy-week-by-week/* -> /pregnancy-week-by-week 301` rule so week detail URLs (`/pregnancy-week-by-week/week-1` ... `/week-40`) are no longer redirected away from their intended pages.
+- Kept legacy 301 mappings from older URLs to their current canonical slugs and retained SPA/static 200 rewrite behavior for current production routes.
