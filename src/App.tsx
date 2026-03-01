@@ -2,6 +2,7 @@ import { Link, NavLink, Route, Routes } from 'react-router-dom';
 import { BlogList } from './components/BlogList';
 import { BlogPost } from './components/BlogPost';
 import { Footer } from './components/Footer';
+import { ScrollToTop } from './components/ScrollToTop';
 import { ProtectedRoute } from './components/ProtectedRoute';
 import { AdminLogin } from './pages/AdminLogin';
 import { BlogPosterPage } from './pages/BlogPoster';
@@ -18,6 +19,7 @@ import { NotFoundPage } from './pages/NotFound';
 function App() {
   return (
     <>
+      <ScrollToTop />
       <a href="#main-content" className="skip-link">Skip to content</a>
       <header className="site-header">
         <Link to="/pregnancy-due-date-calculator" className="brand">
