@@ -1,3 +1,10 @@
+## 2026-03-01 (Sitemap blog source aligned with published runtime data)
+
+- Updated `scripts/sitemap-utils.mjs` to support Supabase-backed published blog slug loading (`blog` table with `is_published = true`) for sitemap generation, with local fallback to `src/data/blogPosts.ts` when Supabase env vars are not available.
+- Added `SITEMAP_BLOG_SOURCE` support (`hybrid` default, `local`, `supabase`) so build/CI can control blog URL source while keeping deterministic validation.
+- Converted sitemap scripts to async (`generate-sitemap.mjs`, `check-sitemap.mjs`) so DB-backed blog URL loading is included in both generation and validation paths.
+- Updated README sitemap docs to reflect optional Supabase blog sourcing.
+
 ## 2026-03-01 (CI lockfile compatibility fix)
 
 - Updated `.github/workflows/ci.yml` to remove npm cache usage in `actions/setup-node` because this repo does not commit a lockfile.

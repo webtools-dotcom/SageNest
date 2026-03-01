@@ -7,7 +7,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const sitemapPath = join(ROOT, 'public', 'sitemap.xml');
 
-const expectedLocs = getSitemapEntries().map((entry) => entry.loc);
+const expectedLocs = (await getSitemapEntries()).map((entry) => entry.loc);
 const actualXml = readFileSync(sitemapPath, 'utf8');
 const actualLocs = extractLocsFromSitemap(actualXml);
 

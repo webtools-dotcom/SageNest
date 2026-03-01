@@ -6,7 +6,7 @@ import { buildSitemapXml, getSitemapEntries } from './sitemap-utils.mjs';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-const entries = getSitemapEntries();
+const entries = await getSitemapEntries();
 const xml = buildSitemapXml(entries);
 const outputPath = join(ROOT, 'public', 'sitemap.xml');
 
