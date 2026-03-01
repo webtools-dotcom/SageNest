@@ -379,3 +379,10 @@
 - Removed the self-rewrite lines for `/sitemap.xml` and `/robots.txt` from `public/_redirects`.
 - Kept all existing route rewrites intact, including blog/static page rewrites and SPA fallback.
 - This avoids ambiguous edge behavior from rewriting a URL to itself with `200`, which can cause crawler fetch/read failures in some hosting redirect engines.
+
+## 2026-03-01 (App-level 404 route with noindex metadata)
+
+- Added `src/pages/NotFound.tsx` as a dedicated not-found page with clear messaging and links to `/pregnancy-due-date-calculator`, `/blog`, and `/similar-tools`.
+- Registered a terminal catch-all route (`<Route path="*" ... />`) in `src/App.tsx` so unknown URLs render app-level 404 content.
+- Extended `src/components/SEOHead.tsx` with optional `noIndex` support and robots meta output (`noindex,follow` when enabled).
+- Kept Cloudflare SPA fallback behavior unchanged (`/* /index.html 200`) and documented that unknown routes are now handled inside React.
