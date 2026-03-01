@@ -149,8 +149,9 @@ Cloudflare still serves `index.html` for hydration (`/* /index.html 200`), and t
 
 ### Sitemap and indexing
 
-- `public/sitemap.xml` includes canonical HTTPS URLs
-- `public/robots.txt` allows all crawlers and references sitemap
+- `public/sitemap.xml` is generated at build time from route sources (`src/data/tools.ts`, fixed routes, week-1..40, plus blog slugs from local data and optionally Supabase published posts).
+- `npm run check:sitemap` fails if `public/sitemap.xml` diverges from the known route list generated from the same sitemap sources.
+- `public/robots.txt` allows all crawlers and references sitemap.
 
 ## Performance Notes
 
@@ -298,4 +299,4 @@ npm run check:package
 npm run check:conflicts
 ```
 
-`npm run build` now runs these checks first via `prebuild`.
+`npm run build` now runs these checks first via `prebuild`, then generates + validates `public/sitemap.xml`.

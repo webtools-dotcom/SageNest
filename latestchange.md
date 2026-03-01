@@ -1,3 +1,24 @@
+## 2026-03-01 (Sitemap blog source aligned with published runtime data)
+
+- Updated `scripts/sitemap-utils.mjs` to support Supabase-backed published blog slug loading (`blog` table with `is_published = true`) for sitemap generation, with local fallback to `src/data/blogPosts.ts` when Supabase env vars are not available.
+- Added `SITEMAP_BLOG_SOURCE` support (`hybrid` default, `local`, `supabase`) so build/CI can control blog URL source while keeping deterministic validation.
+- Converted sitemap scripts to async (`generate-sitemap.mjs`, `check-sitemap.mjs`) so DB-backed blog URL loading is included in both generation and validation paths.
+- Updated README sitemap docs to reflect optional Supabase blog sourcing.
+
+## 2026-03-01 (CI lockfile compatibility fix)
+
+- Updated `.github/workflows/ci.yml` to remove npm cache usage in `actions/setup-node` because this repo does not commit a lockfile.
+- Switched CI dependency installation from `npm ci` to `npm install` so `validate-and-test` runs successfully without `package-lock.json`/`yarn.lock`.
+- Kept the sitemap validation, tests, and build steps unchanged.
+
+## 2026-03-01 (Build-time sitemap generator + CI divergence validation)
+
+- Added `scripts/generate-sitemap.mjs` and shared `scripts/sitemap-utils.mjs` to generate `public/sitemap.xml` from a single route source strategy: tool paths in `src/data/tools.ts`, fixed routes (`/blog`, `/about`, `/privacy`, `/similar-tools`), `/pregnancy-week-by-week/week-1..40`, and blog slugs from `src/data/blogPosts.ts`.
+- Added `scripts/check-sitemap.mjs` plus npm scripts (`generate:sitemap`, `check:sitemap`, `ci:validate`) so route-list and sitemap divergence fails fast in CI.
+- Updated build pipeline (`prebuild`) to generate and validate sitemap automatically before Vite build.
+- Added GitHub Actions workflow `.github/workflows/ci.yml` with an explicit sitemap validation step.
+- Regenerated `public/sitemap.xml` from the new generator and kept `public/robots.txt` unchanged.
+
 ## 2026-02-23 (Blog list query column selection tightened)
 
 - Updated `loadPosts` in `src/pages/BlogPoster.tsx` to replace wildcard `select('*')` with an explicit column list: `id, title, slug, description, content, image_url, is_published, created_at, updated_at`.
