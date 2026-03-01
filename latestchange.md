@@ -1,3 +1,11 @@
+## 2026-03-01 (Build-time sitemap generator + CI divergence validation)
+
+- Added `scripts/generate-sitemap.mjs` and shared `scripts/sitemap-utils.mjs` to generate `public/sitemap.xml` from a single route source strategy: tool paths in `src/data/tools.ts`, fixed routes (`/blog`, `/about`, `/privacy`, `/similar-tools`), `/pregnancy-week-by-week/week-1..40`, and blog slugs from `src/data/blogPosts.ts`.
+- Added `scripts/check-sitemap.mjs` plus npm scripts (`generate:sitemap`, `check:sitemap`, `ci:validate`) so route-list and sitemap divergence fails fast in CI.
+- Updated build pipeline (`prebuild`) to generate and validate sitemap automatically before Vite build.
+- Added GitHub Actions workflow `.github/workflows/ci.yml` with an explicit sitemap validation step.
+- Regenerated `public/sitemap.xml` from the new generator and kept `public/robots.txt` unchanged.
+
 ## 2026-02-23 (Blog list query column selection tightened)
 
 - Updated `loadPosts` in `src/pages/BlogPoster.tsx` to replace wildcard `select('*')` with an explicit column list: `id, title, slug, description, content, image_url, is_published, created_at, updated_at`.
