@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { SEOHead } from '../components/SEOHead';
 import {
   ADMIN_CONFIGURATION_ERROR_MESSAGE,
   hasAdminAccessConfigured,
@@ -118,6 +119,12 @@ export const AdminLogin = () => {
 
   return (
     <main id="main-content" className="container">
+      <SEOHead
+        title="Admin Login"
+        description="Secure SageNest admin login for authorized team members only."
+        canonicalPath="/admin/login"
+        robots="noindex,nofollow,noarchive"
+      />
       <section className="hero-card admin-card">
         <h1>Admin Login</h1>
         <p>Sign in with Google to manage SageNest blog posts.</p>
