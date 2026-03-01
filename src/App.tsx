@@ -13,6 +13,7 @@ import PregnancyWeekByWeekHubPage from './pages/PregnancyWeekByWeekHub';
 import { PregnancyWeekDetailPage } from './pages/PregnancyWeekDetail';
 import { OvulationCalculatorPage } from './pages/OvulationCalculator';
 import SimilarToolsPage from './pages/SimilarTools';
+import { NotFoundPage } from './pages/NotFound';
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
         <Route path="/pregnancy-week-by-week/:weekSlug" element={<PregnancyWeekDetailPage />} />
         <Route path="/ovulation-calculator" element={<OvulationCalculatorPage />} />
         <Route path="/similar-tools" element={<SimilarToolsPage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />
     </>

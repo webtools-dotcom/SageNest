@@ -6,9 +6,10 @@ interface SEOHeadProps {
   canonicalPath: string;
   ogImage?: string;
   jsonLd?: Record<string, unknown> | Array<Record<string, unknown>>;
+  noIndex?: boolean;
 }
 
-export const SEOHead = ({ title, description, canonicalPath, ogImage, jsonLd }: SEOHeadProps): null => {
+export const SEOHead = ({ title, description, canonicalPath, ogImage, jsonLd, noIndex = false }: SEOHeadProps): null => {
   const siteTagline = "SageNest Health \u2013 Smart Tools for Women's Wellness";
 
   useEffect(() => {
@@ -40,6 +41,8 @@ export const SEOHead = ({ title, description, canonicalPath, ogImage, jsonLd }: 
       upsertMetaTag('property', 'og:image', ogImage);
     }
 
+    upsertMetaTag('name', 'robots', noIndex ? 'noindex,follow' : 'index,follow');
+
     upsertMetaTag('name', 'twitter:card', ogImage ? 'summary_large_image' : 'summary');
     upsertMetaTag('name', 'twitter:title', title);
     upsertMetaTag('name', 'twitter:description', description);
@@ -56,6 +59,6 @@ export const SEOHead = ({ title, description, canonicalPath, ogImage, jsonLd }: 
       script.textContent = JSON.stringify(jsonLd);
       document.head.appendChild(script);
     }
-  }, [title, description, canonicalPath, ogImage, jsonLd]);
+  }, [title, description, canonicalPath, ogImage, jsonLd, noIndex]);
   return null;
 };
