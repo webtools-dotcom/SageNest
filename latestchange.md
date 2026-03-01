@@ -386,3 +386,9 @@
 - Registered a terminal catch-all route (`<Route path="*" ... />`) in `src/App.tsx` so unknown URLs render app-level 404 content.
 - Extended `src/components/SEOHead.tsx` with optional `noIndex` support and robots meta output (`noindex,follow` when enabled).
 - Kept Cloudflare SPA fallback behavior unchanged (`/* /index.html 200`) and documented that unknown routes are now handled inside React.
+
+## 2026-03-01 (Canonical consolidation for due date calculator)
+
+- Selected `/pregnancy-due-date-calculator` as the canonical URL for the due date tool and added a permanent redirect from `/` to that path in `public/_redirects` before the SPA catch-all rule.
+- Kept `src/pages/Calculator.tsx` canonical metadata aligned to `/pregnancy-due-date-calculator` (already correct, no code-path change needed).
+- Removed the duplicate root URL (`https://sagenest.pages.dev/`) from `public/sitemap.xml` so only the canonical due date calculator variant is listed.
