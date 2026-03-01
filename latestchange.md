@@ -1,3 +1,9 @@
+## 2026-03-01 (Search Console migration redirect hardening)
+
+- Added explicit legacy-to-current `301` mappings at the top of `public/_redirects` for common old calculator and blog URL patterns (including trailing-slash variants) so migrated URLs resolve to canonical live paths before catch-all rules.
+- Added targeted `301` fallbacks for retired/unknown pregnancy-week detail URLs to route users and crawlers to the active week-by-week hub instead of a generic homepage redirect.
+- Kept intentional content-serving `200` file rewrite rules unchanged and below the new explicit `301` section.
+
 ## 2026-03-01 (Sitemap blog source aligned with published runtime data)
 
 - Updated `scripts/sitemap-utils.mjs` to support Supabase-backed published blog slug loading (`blog` table with `is_published = true`) for sitemap generation, with local fallback to `src/data/blogPosts.ts` when Supabase env vars are not available.
