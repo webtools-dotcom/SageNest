@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { SEOHead } from '../components/SEOHead';
 import {
   ADMIN_CONFIGURATION_ERROR_MESSAGE,
   hasAdminAccessConfigured,
@@ -206,6 +207,12 @@ export const BlogPosterPage = () => {
 
   return (
     <main id="main-content" className="container">
+      <SEOHead
+        title="Admin Blog Poster"
+        description="Protected SageNest admin area for managing blog content."
+        canonicalPath="/admin/blogposter"
+        robots="noindex,nofollow,noarchive"
+      />
       <section className="hero-card admin-card">
         <h1>Admin BlogPoster</h1>
         <p>Create drafts, publish posts, and upload blog images to Supabase Storage.</p>

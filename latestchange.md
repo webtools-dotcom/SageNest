@@ -1,3 +1,10 @@
+## 2026-03-01 (Admin crawl controls: robots disallow + noindex directives)
+
+- Updated `public/robots.txt` to explicitly disallow crawling under `/admin/` while keeping global allow and sitemap declaration unchanged.
+- Extended `src/components/SEOHead.tsx` with an optional `robots` prop so pages can set explicit robots directives beyond the existing boolean `noIndex` switch.
+- Added `SEOHead` metadata on `src/pages/AdminLogin.tsx` and `src/pages/BlogPoster.tsx` with `robots="noindex,nofollow,noarchive"` so both admin entry and protected admin content stay out of indexing.
+- Re-validated sitemap behavior through script checks to confirm admin routes are not present in generated/validated sitemap entries.
+
 ## 2026-03-01 (Search Console migration redirect hardening)
 
 - Added explicit legacy-to-current `301` mappings at the top of `public/_redirects` for common old calculator and blog URL patterns (including trailing-slash variants) so migrated URLs resolve to canonical live paths before catch-all rules.
