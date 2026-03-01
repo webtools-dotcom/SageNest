@@ -432,3 +432,9 @@
 - Fixed `ERR_TOO_MANY_REDIRECTS` by cleaning `public/_redirects` rules that were forcing trailing-slash redirects on directory-backed routes (for example `/pregnancy-due-date-calculator/ -> /pregnancy-due-date-calculator`), which can loop on Cloudflare Pages when static folder/index resolution adds slash normalization.
 - Removed the broad `/pregnancy-week-by-week/* -> /pregnancy-week-by-week 301` rule so week detail URLs (`/pregnancy-week-by-week/week-1` ... `/week-40`) are no longer redirected away from their intended pages.
 - Kept legacy 301 mappings from older URLs to their current canonical slugs and retained SPA/static 200 rewrite behavior for current production routes.
+
+## 2026-03-01 (Removed legacy static tool pages causing old UI duplicates)
+
+- Removed legacy static HTML tool files `public/pregnancy-due-date-calculator/index.html` and `public/pregnancy-weight-gain-calculator/index.html` so Cloudflare Pages cannot serve outdated pre-React versions.
+- Updated `public/_redirects` by deleting direct `200` rewrites for those two tool routes, forcing both paths to resolve through the SPA (`/* /index.html 200`) and render the latest React UI.
+- Kept blog static rewrites and existing legacy `301` mappings unchanged.
