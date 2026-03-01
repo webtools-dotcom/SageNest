@@ -1,3 +1,9 @@
+## 2026-03-01 (CI lockfile compatibility fix)
+
+- Updated `.github/workflows/ci.yml` to remove npm cache usage in `actions/setup-node` because this repo does not commit a lockfile.
+- Switched CI dependency installation from `npm ci` to `npm install` so `validate-and-test` runs successfully without `package-lock.json`/`yarn.lock`.
+- Kept the sitemap validation, tests, and build steps unchanged.
+
 ## 2026-03-01 (Build-time sitemap generator + CI divergence validation)
 
 - Added `scripts/generate-sitemap.mjs` and shared `scripts/sitemap-utils.mjs` to generate `public/sitemap.xml` from a single route source strategy: tool paths in `src/data/tools.ts`, fixed routes (`/blog`, `/about`, `/privacy`, `/similar-tools`), `/pregnancy-week-by-week/week-1..40`, and blog slugs from `src/data/blogPosts.ts`.
