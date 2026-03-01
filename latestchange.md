@@ -1,3 +1,8 @@
+## 2026-03-01 (Route navigation now resets scroll to top)
+
+- Added `src/components/ScrollToTop.tsx` with a pathname-based `useEffect` that calls `window.scrollTo(0, 0)` on every client-side route transition.
+- Mounted `ScrollToTop` at the app shell level in `src/App.tsx` so all internal page navigations open at the top instead of preserving previous scroll position.
+
 ## 2026-03-01 (Admin crawl controls: robots disallow + noindex directives)
 
 - Updated `public/robots.txt` to explicitly disallow crawling under `/admin/` while keeping global allow and sitemap declaration unchanged.
