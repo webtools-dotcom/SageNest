@@ -70,7 +70,7 @@ export const PregnancyWeekDetailPage = () => {
   const nextWeek = weekNumber < MAX_WEEK ? weekNumber + 1 : null;
   const description = `Week ${weekNumber} of pregnancy: ${weekData.highlight}`;
   const canonicalPath = `/pregnancy-week-by-week/week-${weekNumber}`;
-  const url = `https://sagenest.pages.dev${canonicalPath}`;
+  const url = `https://sagenesthealth.com${canonicalPath}`;
 
   const jsonLd = [
     {
@@ -85,7 +85,7 @@ export const PregnancyWeekDetailPage = () => {
       publisher: {
         '@type': 'Organization',
         name: 'SageNest',
-        url: 'https://sagenest.pages.dev',
+        url: 'https://sagenesthealth.com',
       },
     },
   ];

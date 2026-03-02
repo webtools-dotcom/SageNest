@@ -30,14 +30,14 @@ export const SEOHead = ({ title, description, canonicalPath, ogImage, jsonLd, no
 
     const canonical = document.querySelector('link[rel="canonical"]') || document.createElement('link');
     canonical.setAttribute('rel', 'canonical');
-    canonical.setAttribute('href', `https://sagenest.pages.dev${canonicalPath}`);
+    canonical.setAttribute('href', `https://sagenesthealth.com${canonicalPath}`);
     document.head.appendChild(canonical);
 
     upsertMetaTag('property', 'og:type', 'website');
     upsertMetaTag('property', 'og:site_name', 'SageNest');
     upsertMetaTag('property', 'og:title', title);
     upsertMetaTag('property', 'og:description', description);
-    upsertMetaTag('property', 'og:url', `https://sagenest.pages.dev${canonicalPath}`);
+    upsertMetaTag('property', 'og:url', `https://sagenesthealth.com${canonicalPath}`);
     if (ogImage) {
       upsertMetaTag('property', 'og:image', ogImage);
     }

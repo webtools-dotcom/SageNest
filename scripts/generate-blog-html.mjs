@@ -106,11 +106,11 @@ function articleJsonLd(post) {
     '@type': 'Article',
     headline: post.title,
     description: post.description,
-    mainEntityOfPage: `https://sagenest.pages.dev/blog/${post.slug}`,
+    mainEntityOfPage: `https://sagenesthealth.com/blog/${post.slug}`,
     publisher: {
       '@type': 'Organization',
       name: 'SageNest',
-      url: 'https://sagenest.pages.dev',
+      url: 'https://sagenesthealth.com',
     },
   };
   return `<script type="application/ld+json">\n${JSON.stringify(schema, null, 2)}\n</script>`;
@@ -121,7 +121,7 @@ function buildPostHtml(post) {
   const bodyHtml = markdownToHtml(post.content);
   const descEscaped = post.description.replace(/"/g, '&quot;');
   const titleEscaped = post.title.replace(/"/g, '&quot;');
-  const canonicalUrl = `https://sagenest.pages.dev/blog/${post.slug}`;
+  const canonicalUrl = `https://sagenesthealth.com/blog/${post.slug}`;
 
   return `<!doctype html>
 <html lang="en">

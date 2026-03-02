@@ -461,3 +461,10 @@
 - Removed legacy static HTML tool files `public/pregnancy-due-date-calculator/index.html` and `public/pregnancy-weight-gain-calculator/index.html` so Cloudflare Pages cannot serve outdated pre-React versions.
 - Updated `public/_redirects` by deleting direct `200` rewrites for those two tool routes, forcing both paths to resolve through the SPA (`/* /index.html 200`) and render the latest React UI.
 - Kept blog static rewrites and existing legacy `301` mappings unchanged.
+
+## 2026-03-02 (Domain migration SEO canonical + metadata updates)
+
+- Added a default canonical tag in `index.html` pointing to `https://sagenesthealth.com/`.
+- Replaced old `sagenest.pages.dev` hardcoded URLs with `sagenesthealth.com` across runtime SEO/meta components, JSON-LD schema definitions, static blog HTML metadata, robots sitemap reference, sitemap loc entries, and build scripts that generate SEO artifacts.
+- Updated the README domain reference for admin login to the new production domain.
+- Verified no `sagenest.pages.dev` references remain outside changelog history entries.
