@@ -11,10 +11,12 @@
     "check:package": "node scripts/check-package-json.mjs",
     "check:conflicts": "bash scripts/check-conflicts.sh",
     "generate:blog": "node scripts/generate-blog-html.mjs",
-    "prebuild": "npm run check:package && npm run check:conflicts && npm run generate:blog && npm run generate:sitemap && npm run check:sitemap",
+    "generate:redirects": "node scripts/generate-redirects.mjs",
+    "check:redirects": "node scripts/check-redirects.mjs",
+    "prebuild": "npm run check:package && npm run check:conflicts && npm run generate:blog && npm run generate:redirects && npm run check:redirects && npm run generate:sitemap && npm run check:sitemap",
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "check:sitemap": "node scripts/check-sitemap.mjs",
-    "ci:validate": "npm run check:package && npm run check:conflicts && npm run check:sitemap"
+    "ci:validate": "npm run check:package && npm run check:conflicts && npm run check:redirects && npm run check:sitemap"
   },
   "dependencies": {
     "react": "^18.3.1",

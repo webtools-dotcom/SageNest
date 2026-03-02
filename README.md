@@ -92,6 +92,8 @@ The app uses SPA routing with `_redirects` fallback:
 
 Cloudflare still serves `index.html` for hydration (`/* /index.html 200`), and the React catch-all route handles unknown paths so users and crawlers get proper not-found content instead of a soft-404-like calculator page.
 
+Blog redirect/rewrite entries in `public/_redirects` are generated from `src/data/blogPosts.ts` via `npm run generate:redirects` (and validated by `npm run check:redirects`) to prevent manual rule drift as blog volume grows.
+
 ## Programmatic SEO Strategy
 
 ### 30 Long-tail keyword ideas
@@ -152,6 +154,7 @@ Cloudflare still serves `index.html` for hydration (`/* /index.html 200`), and t
 
 - `public/sitemap.xml` is generated at build time from route sources (`src/data/tools.ts`, fixed routes, week-1..40, plus blog slugs from local data and optionally Supabase published posts).
 - `npm run check:sitemap` fails if `public/sitemap.xml` diverges from the known route list generated from the same sitemap sources.
+- `public/_redirects` blog rules are generated and checked in build/CI so static blog rewrites stay in sync with blog slugs.
 - `public/robots.txt` allows all crawlers and references sitemap.
 
 ## Performance Notes
@@ -298,6 +301,7 @@ To prevent deploy failures from malformed `package.json` or unresolved merge mar
 ```bash
 npm run check:package
 npm run check:conflicts
+npm run check:redirects
 ```
 
-`npm run build` now runs these checks first via `prebuild`, then generates + validates `public/sitemap.xml`.
+`npm run build` now runs these checks first via `prebuild`: package JSON check, merge-conflict check, static blog generation, redirects generation + validation, and sitemap generation + validation.

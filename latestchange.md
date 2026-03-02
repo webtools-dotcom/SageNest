@@ -1,3 +1,10 @@
+## 2026-03-02 (Automated blog redirects to prevent Cloudflare rule drift)
+
+- Added redirect automation scripts: `scripts/redirects-utils.mjs`, `scripts/generate-redirects.mjs`, and `scripts/check-redirects.mjs` to build and validate `public/_redirects` blog rules directly from `src/data/blogPosts.ts` slugs.
+- Updated npm scripts in `package.json` to include `generate:redirects` and `check:redirects`, and wired both into `prebuild`/`ci:validate` so redirect mismatches fail fast before deployment.
+- Replaced manual blog-specific entries in `public/_redirects` with generated rules covering every current blog slug, including the new `morning-sickness-remedies-that-actually-work` route.
+- Updated `README.md` route/indexing and deployment guardrail sections to document redirect generation + validation workflow.
+
 ## 2026-03-02 (Removed publish date dependency across blog UI/build)
 
 - Removed `publishDate` from public blog post typing/rendering in `src/components/BlogList.tsx` and `src/components/BlogPost.tsx`, eliminating the TypeScript mismatch with `src/data/blogPosts.ts` and removing date labels from blog cards/details.
