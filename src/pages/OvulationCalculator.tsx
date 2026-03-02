@@ -111,7 +111,7 @@ export const OvulationCalculatorPage = () => {
         '@context': 'https://schema.org',
         '@type': 'WebApplication',
         name: 'Ovulation Calculator',
-        url: 'https://sagenest.pages.dev/ovulation-calculator',
+        url: 'https://sagenesthealth.com/ovulation-calculator',
         applicationCategory: 'HealthApplication',
         operatingSystem: 'Any',
         description:

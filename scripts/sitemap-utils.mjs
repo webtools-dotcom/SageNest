@@ -93,7 +93,7 @@ async function loadPublishedBlogPostsFromSupabase({ timeoutMs = 5000 } = {}) {
 }
 
 export async function getSitemapEntries(options = {}) {
-  const baseUrl = (options.baseUrl || process.env.SITEMAP_BASE_URL || 'https://sagenest.pages.dev').replace(/\/$/, '');
+  const baseUrl = (options.baseUrl || process.env.SITEMAP_BASE_URL || 'https://sagenesthealth.com').replace(/\/$/, '');
   const staticLastmod = toDateString(options.staticLastmod, new Date().toISOString().slice(0, 10));
   const blogSource = options.blogSource || process.env.SITEMAP_BLOG_SOURCE || 'hybrid';
 

@@ -194,7 +194,7 @@ VITE_ADMIN_EMAIL=admin@example.com
 Configure Supabase Google OAuth redirect URLs:
 
 - `http://localhost:5173/admin/login`
-- `https://sagenest.pages.dev/admin/login`
+- `https://sagenesthealth.com/admin/login`
 
 Security guidance:
 
