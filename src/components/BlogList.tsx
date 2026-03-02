@@ -9,7 +9,6 @@ interface PublicBlogPost {
   slug: string;
   title: string;
   description: string;
-  publishDate: string;
   readingTime: string;
   content: string;
   image_url?: string | null;
@@ -35,7 +34,6 @@ export const BlogList = () => {
         description: item.description ?? '',
         content: item.content,
         image_url: item.image_url,
-        publishDate: item.updated_at?.slice(0, 10) ?? new Date().toISOString().slice(0, 10),
         readingTime: `${Math.max(1, Math.ceil((item.content?.split(/\s+/).length ?? 0) / 200))} min read`
       }));
 
@@ -47,7 +45,7 @@ export const BlogList = () => {
 
   const jsonLd = [
     { '@context': 'https://schema.org', '@type': 'Blog', name: 'SageNest Pregnancy Blog', url: 'https://sagenest.pages.dev/blog' },
-    ...posts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, datePublished: post.publishDate, description: post.description, url: `https://sagenest.pages.dev/blog/${post.slug}` }))
+    ...posts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.description, url: `https://sagenest.pages.dev/blog/${post.slug}` }))
   ];
 
   return (
@@ -60,7 +58,7 @@ export const BlogList = () => {
             {post.image_url ? <img src={post.image_url} alt="" className="blog-thumb" loading="lazy" /> : null}
             <h2><Link to={`/blog/${post.slug}`}>{post.title}</Link></h2>
             <p>{post.description}</p>
-            <small>{post.publishDate} · {post.readingTime}</small>
+            <small>{post.readingTime}</small>
           </article>
         ))}
       </div>

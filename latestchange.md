@@ -1,3 +1,17 @@
+## 2026-03-02 (Automated blog redirects to prevent Cloudflare rule drift)
+
+- Added redirect automation scripts: `scripts/redirects-utils.mjs`, `scripts/generate-redirects.mjs`, and `scripts/check-redirects.mjs` to build and validate `public/_redirects` blog rules directly from `src/data/blogPosts.ts` slugs.
+- Updated npm scripts in `package.json` to include `generate:redirects` and `check:redirects`, and wired both into `prebuild`/`ci:validate` so redirect mismatches fail fast before deployment.
+- Replaced manual blog-specific entries in `public/_redirects` with generated rules covering every current blog slug, including the new `morning-sickness-remedies-that-actually-work` route.
+- Updated `README.md` route/indexing and deployment guardrail sections to document redirect generation + validation workflow.
+
+## 2026-03-02 (Removed publish date dependency across blog UI/build)
+
+- Removed `publishDate` from public blog post typing/rendering in `src/components/BlogList.tsx` and `src/components/BlogPost.tsx`, eliminating the TypeScript mismatch with `src/data/blogPosts.ts` and removing date labels from blog cards/details.
+- Updated static blog generation in `scripts/generate-blog-html.mjs` to stop emitting `datePublished`/`dateModified` and to show only reading time in post metadata.
+- Updated `scripts/sitemap-utils.mjs` so local static blog entries no longer expect `publishDate`; sitemap `lastmod` now uses Supabase `updated_at` when available and otherwise falls back to the static last-mod date.
+- Updated `src/components/BlogPoster.tsx` snippet generator to stop outputting `publishDate` in new static post objects.
+
 ## 2026-03-02 (README tool inventory corrected to include week-by-week milestones)
 
 - Updated `README.md` Core Features list to explicitly include the Pregnancy Week by Week milestone tool, so the documented tool inventory now matches the four-tool set shown in Similar Tools.

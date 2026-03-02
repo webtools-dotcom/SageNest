@@ -11,7 +11,6 @@ export const BlogPoster = () => {
   slug: '${slug}',
   title: '${title}',
   description: '${description}',
-  publishDate: '${new Date().toISOString().slice(0, 10)}',
   readingTime: '6 min read',
   content: \`${content.replace(/`/g, '\\`')}\`
 },`;
