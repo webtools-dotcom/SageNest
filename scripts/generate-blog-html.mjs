@@ -106,8 +106,6 @@ function articleJsonLd(post) {
     '@type': 'Article',
     headline: post.title,
     description: post.description,
-    datePublished: post.publishDate,
-    dateModified: post.publishDate,
     mainEntityOfPage: `https://sagenest.pages.dev/blog/${post.slug}`,
     publisher: {
       '@type': 'Organization',
@@ -285,7 +283,7 @@ function buildPostHtml(post) {
     <main>
       <article>
         <h1>${post.title}</h1>
-        <p class="post-meta">${post.publishDate} · ${post.readingTime}</p>
+        <p class="post-meta">${post.readingTime}</p>
         ${bodyHtml}
         <div class="cta-box">
           <h3>Calculate Your Pregnancy Due Date</h3>

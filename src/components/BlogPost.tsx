@@ -10,7 +10,6 @@ interface PublicBlogPost {
   slug: string;
   title: string;
   description: string;
-  publishDate: string;
   readingTime: string;
   content: string;
   image_url?: string | null;
@@ -41,7 +40,6 @@ export const BlogPost = () => {
         description: data.description ?? '',
         content: data.content,
         image_url: data.image_url,
-        publishDate: data.updated_at?.slice(0, 10) ?? new Date().toISOString().slice(0, 10),
         readingTime: `${Math.max(1, Math.ceil((data.content?.split(/\s+/).length ?? 0) / 200))} min read`
       });
     };
@@ -55,7 +53,7 @@ export const BlogPost = () => {
   if (!post) return <main className="container"><h1>Post not found</h1></main>;
 
   const jsonLd = [
-    { '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.description, datePublished: post.publishDate, mainEntityOfPage: `https://sagenest.pages.dev/blog/${post.slug}` },
+    { '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.description, mainEntityOfPage: `https://sagenest.pages.dev/blog/${post.slug}` },
     post.faq ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: post.faq.map((x) => ({ '@type': 'Question', name: x.question, acceptedAnswer: { '@type': 'Answer', text: x.answer } })) } : null
   ].filter(Boolean) as Record<string, unknown>[];
 
@@ -63,7 +61,7 @@ export const BlogPost = () => {
     <main id="main-content" className="container article">
       <SEOHead title={post.title} description={post.description} canonicalPath={`/blog/${post.slug}`} jsonLd={jsonLd} />
       <h1>{post.title}</h1>
-      <p>{post.publishDate} · {post.readingTime}</p>
+      <p>{post.readingTime}</p>
       {post.image_url ? <img src={post.image_url} alt="" className="blog-cover" loading="lazy" /> : null}
       <div dangerouslySetInnerHTML={{ __html: postHtml }} />
       <aside className="cta-inline"><h3>Try our Pregnancy Due Date Calculator</h3><Link to="/pregnancy-due-date-calculator">Open calculator</Link></aside>

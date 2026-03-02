@@ -39,7 +39,7 @@ function loadLocalBlogPosts() {
   if (!Array.isArray(posts)) return [];
   return posts
     .filter((post) => typeof post.slug === 'string')
-    .map((post) => ({ slug: post.slug, publishDate: post.publishDate }));
+    .map((post) => ({ slug: post.slug }));
 }
 
 function toDateString(value, fallback) {
@@ -83,7 +83,7 @@ async function loadPublishedBlogPostsFromSupabase({ timeoutMs = 5000 } = {}) {
 
     return data
       .filter((post) => typeof post.slug === 'string')
-      .map((post) => ({ slug: post.slug, publishDate: post.updated_at }));
+      .map((post) => ({ slug: post.slug, lastmod: post.updated_at }));
   } catch (error) {
     console.warn(`Sitemap: failed to load published blog posts from Supabase, falling back to local data. (${error.message})`);
     return [];
@@ -95,9 +95,7 @@ async function loadPublishedBlogPostsFromSupabase({ timeoutMs = 5000 } = {}) {
 export async function getSitemapEntries(options = {}) {
   const baseUrl = (options.baseUrl || process.env.SITEMAP_BASE_URL || 'https://sagenest.pages.dev').replace(/\/$/, '');
   const staticLastmod = toDateString(options.staticLastmod, new Date().toISOString().slice(0, 10));
-  const includeFutureBlogPosts = options.includeFutureBlogPosts ?? process.env.INCLUDE_FUTURE_BLOG_POSTS === 'true';
   const blogSource = options.blogSource || process.env.SITEMAP_BLOG_SOURCE || 'hybrid';
-  const today = new Date().toISOString().slice(0, 10);
 
   const fixedRoutes = [
     { path: '/blog', priority: '0.8' },
@@ -120,13 +118,11 @@ export async function getSitemapEntries(options = {}) {
     ? supabaseBlogPosts
     : [...localBlogPosts, ...supabaseBlogPosts];
 
-  const blogPosts = combinedBlogPosts
-    .filter((post) => includeFutureBlogPosts || toDateString(post.publishDate, today) <= today)
-    .map((post) => ({
-      path: `/blog/${post.slug}`,
-      priority: '0.7',
-      lastmod: toDateString(post.publishDate, staticLastmod)
-    }));
+  const blogPosts = combinedBlogPosts.map((post) => ({
+    path: `/blog/${post.slug}`,
+    priority: '0.7',
+    lastmod: toDateString(post.lastmod, staticLastmod)
+  }));
 
   const routeMap = new Map();
 
