@@ -6,6 +6,7 @@ SageNest Health – Smart Tools for Women’s Wellness is a fully static, produc
 
 - Pregnancy Due Date Calculator with a guided 3-step LMP flow (date → cycle length → review/calculate)
 - Pregnancy Weight Gain Calculator with BMI category, IOM total gain bands, and week-specific gain guidance
+- Pregnancy Week by Week milestone tool with all 40 weeks of baby-development and body-change guidance
 - Ovulation Calculator with LMP input, cycle-length presets/custom mode, and fertile-window estimate
 - Gestational age output with normalized week/day formatting
 - Trimester status and conception window (±3 days around ovulation estimate)

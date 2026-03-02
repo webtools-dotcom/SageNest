@@ -1,3 +1,7 @@
+## 2026-03-02 (README tool inventory corrected to include week-by-week milestones)
+
+- Updated `README.md` Core Features list to explicitly include the Pregnancy Week by Week milestone tool, so the documented tool inventory now matches the four-tool set shown in Similar Tools.
+
 ## 2026-03-01 (Route navigation now resets scroll to top)
 
 - Added `src/components/ScrollToTop.tsx` with a pathname-based `useEffect` that calls `window.scrollTo(0, 0)` on every client-side route transition.
