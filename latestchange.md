@@ -1,3 +1,8 @@
+## 2026-03-02 (CSP updated for Google Analytics + Tag Manager)
+
+- Updated `public/_headers` Content Security Policy to allow Google Tag Manager and Google Analytics script loading by adding `https://www.googletagmanager.com` and `https://www.google-analytics.com` to `script-src`.
+- Updated `public/_headers` Content Security Policy `connect-src` to allow analytics beacons to `https://www.google-analytics.com` and `https://analytics.google.com` while preserving existing Supabase HTTP/WebSocket endpoints.
+
 ## 2026-03-02 (Automated blog redirects to prevent Cloudflare rule drift)
 
 - Added redirect automation scripts: `scripts/redirects-utils.mjs`, `scripts/generate-redirects.mjs`, and `scripts/check-redirects.mjs` to build and validate `public/_redirects` blog rules directly from `src/data/blogPosts.ts` slugs.
