@@ -468,3 +468,9 @@
 - Replaced old `sagenest.pages.dev` hardcoded URLs with `sagenesthealth.com` across runtime SEO/meta components, JSON-LD schema definitions, static blog HTML metadata, robots sitemap reference, sitemap loc entries, and build scripts that generate SEO artifacts.
 - Updated the README domain reference for admin login to the new production domain.
 - Verified no `sagenest.pages.dev` references remain outside changelog history entries.
+
+
+## 2026-03-02 (SEO hotfix: remove SPA shell root canonical)
+
+- Removed the hardcoded root canonical tag from `index.html` to avoid mis-canonicalizing all SPA-fallback routes for non-JS crawlers and social bots.
+- Kept per-route canonical + `og:url` generation in `SEOHead` as the authoritative source for route-specific metadata.
