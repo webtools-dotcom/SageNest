@@ -1,3 +1,8 @@
+## 2026-03-03 (JSON-LD dedupe: removed component-level WebSite schema)
+
+- Updated `src/pages/Calculator.tsx` JSON-LD array to remove the page-level `WebSite` schema object that could duplicate a site-wide `WebSite` entity.
+- Preserved search schema behavior by attaching `SearchAction` as `potentialAction` on the existing `WebPage` schema object for the calculator page.
+
 ## 2026-03-02 (CSP updated for Google Analytics + Tag Manager)
 
 - Updated `public/_headers` Content Security Policy to allow Google Tag Manager and Google Analytics script loading by adding `https://www.googletagmanager.com` and `https://www.google-analytics.com` to `script-src`.
