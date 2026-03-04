@@ -36,6 +36,7 @@ export const PregnancyWeekDetailPage = () => {
           title="Week Not Found"
           description="The pregnancy week you requested could not be found."
           canonicalPath="/pregnancy-week-by-week"
+          noIndex
         />
         <section className="content-section" aria-labelledby="week-not-found-heading">
           <h1 id="week-not-found-heading">Week not found</h1>
@@ -55,6 +56,7 @@ export const PregnancyWeekDetailPage = () => {
           title="Week Not Found"
           description="The pregnancy week you requested could not be found."
           canonicalPath="/pregnancy-week-by-week"
+          noIndex
         />
         <section className="content-section" aria-labelledby="week-not-found-heading">
           <h1 id="week-not-found-heading">Week not found</h1>

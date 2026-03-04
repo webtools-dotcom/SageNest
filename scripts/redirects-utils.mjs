@@ -1,10 +1,4 @@
-import { readFileSync } from 'node:fs';
-import { join } from 'node:path';
-import { fileURLToPath } from 'node:url';
-import { dirname } from 'node:path';
-
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT = join(__dirname, '..');
+import { loadBlogSlugs } from './blog-data.mjs';
 
 const BASE_REDIRECTS = [
   '/due-date-calculator /pregnancy-due-date-calculator 301',
@@ -16,34 +10,8 @@ const BASE_REDIRECTS = [
   '/fertility-calculator /ovulation-calculator 301'
 ];
 
-function parseBlogPostsTs() {
-  const src = readFileSync(join(ROOT, 'src/data/blogPosts.ts'), 'utf8');
-  const js = src
-    .replace(/export\s+interface\s+BlogPost\s*\{[\s\S]*?\n\}\s*/g, '')
-    .replace(/export\s+const\s+blogPosts\s*:\s*BlogPost\[\]/g, 'const blogPosts')
-    .replace(/export\s+const\s+blogPosts/g, 'const blogPosts')
-    .replace(/faq\?\s*:/g, 'faq:')
-    .replace(/:\s*Array<[^>]+>/g, '')
-    .replace(/:\s*string(\s*[,)]\s*)/g, '$1')
-    .replace(/:\s*string\s*\]/g, ']')
-    .replace(/:\s*string\s*\}/g, '}');
-
-  // eslint-disable-next-line no-new-func
-  const fn = new Function(`${js}\n return blogPosts;`);
-  const posts = fn();
-  if (!Array.isArray(posts)) return [];
-  return posts;
-}
-
-export function loadBlogSlugs() {
-  const posts = parseBlogPostsTs();
-  return [...new Set(posts
-    .map((post) => post?.slug)
-    .filter((slug) => typeof slug === 'string' && slug.length > 0))];
-}
-
-export function buildRedirectsContent() {
-  const slugs = loadBlogSlugs();
+export async function buildRedirectsContent() {
+  const slugs = await loadBlogSlugs();
   const legacyBlogRedirects = slugs.map((slug) => `/${slug} /blog/${slug} 301`);
   const blogStaticRewrites = slugs.map((slug) => `/blog/${slug} /blog/${slug}/index.html 200`);
 

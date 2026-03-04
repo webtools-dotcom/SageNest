@@ -1,25 +1,12 @@
-// scripts/generate-blog-html.mjs
-// Generates static HTML for each blog post so Google can crawl them
-// without JavaScript. Reads from src/data/blogPosts.ts via a compiled
-// intermediary — we extract the data by importing the compiled output
-// or by reading the TS file and stripping types.
-//
-// Because this runs at build time (Node.js, not browser), we parse
-// blogPosts.ts using a regex-safe approach: we eval the data portion
-// after stripping TypeScript syntax.
-
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { loadBlogPosts } from './blog-data.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-// ---------- Minimal Markdown → HTML converter ----------
-// Must match the logic in src/lib/markdown.ts closely enough to render
-// headings, paragraphs, bold, links, and lists correctly.
 function markdownToHtml(markdown) {
-  // Strip any raw HTML for safety
   const clean = markdown
     .replace(/<\s*(script|style)\b[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, '')
     .replace(/\son\w+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/gi, '')
@@ -27,7 +14,7 @@ function markdownToHtml(markdown) {
 
   const escape = (s) =>
     s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-     .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+      .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 
   const inline = (text) => {
     const esc = escape(text);
@@ -47,8 +34,8 @@ function markdownToHtml(markdown) {
       const lines = block.split('\n').map((l) => l.trim());
       if (lines.length === 1) {
         if (lines[0].startsWith('### ')) return `<h3>${inline(lines[0].slice(4))}</h3>`;
-        if (lines[0].startsWith('## '))  return `<h2>${inline(lines[0].slice(3))}</h2>`;
-        if (lines[0].startsWith('# '))   return `<h1>${inline(lines[0].slice(2))}</h1>`;
+        if (lines[0].startsWith('## ')) return `<h2>${inline(lines[0].slice(3))}</h2>`;
+        if (lines[0].startsWith('# ')) return `<h1>${inline(lines[0].slice(2))}</h1>`;
       }
       if (lines.every((l) => /^-\s+/.test(l))) {
         const items = lines.map((l) => `<li>${inline(l.replace(/^-\s+/, ''))}</li>`).join('');
@@ -59,32 +46,139 @@ function markdownToHtml(markdown) {
     .join('\n');
 }
 
-// ---------- Read blogPosts.ts and extract the array ----------
-// We read the TypeScript source, strip the type annotations, and
-// use a Function constructor to evaluate only the pure data array.
-function extractBlogPosts() {
-  const src = readFileSync(join(ROOT, 'src/data/blogPosts.ts'), 'utf8');
-
-  // Remove TypeScript interface/type declarations
-  let js = src
-    .replace(/export\s+interface\s+BlogPost\s*\{[\s\S]*?\n\}\s*/g, '')
-    .replace(/export\s+type\s+\w+[^;]*;/g, '')
-    .replace(/:\s*BlogPost\[\]/g, '')
-    .replace(/:\s*Array<[^>]+>/g, '')
-    .replace(/faq\?\s*:/g, 'faq:')
-    .replace(/:\s*Array<\s*\{[^}]+\}\s*>/g, '')
-    // Remove type annotations on variables and parameters
-    .replace(/:\s*string(\s*[,)\]}\n])/g, '$1')
-    .replace(/:\s*string\[\]/g, '')
-    .replace(/export const blogPosts/, 'const blogPosts');
-
-  // Evaluate in a safe context
-  // eslint-disable-next-line no-new-func
-  const fn = new Function(`${js}\n return blogPosts;`);
-  return fn();
+function loadDesignTokens() {
+  const css = readFileSync(join(ROOT, 'src', 'styles', 'design-tokens.css'), 'utf8');
+  const vars = [...css.matchAll(/--([\w-]+):\s*([^;]+);/g)].map(([, key, value]) => [key, value.trim()]);
+  return Object.fromEntries(vars);
 }
 
-// ---------- Build FAQ JSON-LD from faq array ----------
+function buildRootTokenCss(tokens) {
+  const entries = Object.entries(tokens)
+    .map(([name, value]) => `        --${name}: ${value};`)
+    .join('\n');
+
+  return `      :root {\n${entries}\n      }`;
+}
+
+function buildStaticStyle(tokens) {
+  return `${buildRootTokenCss(tokens)}
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+      body {
+        font-family: var(--font-sans);
+        background: var(--cream);
+        color: var(--charcoal);
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+      }
+      header.site-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        background: rgba(254, 253, 251, 0.95);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border-hairline);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      .brand {
+        font-family: var(--font-serif);
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: var(--charcoal);
+        text-decoration: none;
+      }
+      nav a {
+        margin-left: 0.75rem;
+        color: var(--charcoal);
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 500;
+        padding: 0.5rem 1.25rem;
+        border-radius: var(--radius-pill);
+        background: var(--sand);
+        border: 1px solid var(--border-hairline);
+      }
+      nav a:hover { background: var(--sage-primary); color: #fff; border-color: var(--sage-primary); }
+      main {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 4rem 1.5rem 5rem;
+      }
+      h1 {
+        font-family: var(--font-serif);
+        font-size: clamp(2.5rem, 5vw, 4.5rem);
+        font-weight: 700;
+        line-height: 1.2;
+        letter-spacing: -0.03em;
+        margin-bottom: 1.5rem;
+        color: var(--charcoal);
+      }
+      h2 {
+        font-family: var(--font-serif);
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin: 3.5rem 0 1rem;
+        padding-top: 2.5rem;
+        border-top: 1px solid var(--border-hairline);
+        color: var(--charcoal);
+      }
+      h3 {
+        font-family: var(--font-serif);
+        font-size: clamp(1.5rem, 3vw, 2rem);
+        margin: 2.5rem 0 1rem;
+        color: var(--charcoal);
+      }
+      p { margin: 0 0 1.5rem; color: var(--text-secondary); font-size: 1rem; line-height: 1.8; }
+      ul { margin: 1.5rem 0 2rem 2rem; }
+      li { margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.7; }
+      strong { color: var(--charcoal); font-weight: 600; }
+      a { color: var(--sage-dark); }
+      a:hover { color: var(--charcoal); }
+      .post-meta {
+        font-size: 0.875rem;
+        color: var(--text-tertiary);
+        margin-bottom: 4rem;
+      }
+      .cta-box {
+        background: var(--sage-softest);
+        border: 1px solid var(--sage-light);
+        border-radius: 16px;
+        padding: 1.5rem;
+        margin: 3rem 0;
+        text-align: center;
+      }
+      .cta-box h3 { margin: 0 0 0.75rem; border: none; padding: 0; }
+      .cta-box a {
+        display: inline-block;
+        padding: 0.75rem 2rem;
+        background: var(--sage-primary);
+        color: #fff;
+        border-radius: var(--radius-pill);
+        font-weight: 500;
+        text-decoration: none;
+      }
+      .cta-box a:hover { background: var(--sage-dark); color: #fff; }
+      .disclaimer {
+        font-size: 0.8rem;
+        color: var(--text-tertiary);
+        border-top: 1px solid var(--border-hairline);
+        padding-top: 1.5rem;
+        margin-top: 3rem;
+        font-style: italic;
+      }
+      footer {
+        background: var(--off-white);
+        border-top: 1px solid var(--border-hairline);
+        padding: 2rem;
+        text-align: center;
+        font-size: 0.875rem;
+        color: var(--text-tertiary);
+        margin-top: 4rem;
+      }
+      footer a { color: var(--sage-dark); margin: 0 0.5rem; }`;
+}
+
 function faqJsonLd(faqs) {
   if (!faqs || faqs.length === 0) return '';
   const schema = {
@@ -99,7 +193,6 @@ function faqJsonLd(faqs) {
   return `<script type="application/ld+json">\n${JSON.stringify(schema, null, 2)}\n</script>`;
 }
 
-// ---------- Build Article JSON-LD ----------
 function articleJsonLd(post) {
   const schema = {
     '@context': 'https://schema.org',
@@ -113,15 +206,23 @@ function articleJsonLd(post) {
       url: 'https://sagenesthealth.com',
     },
   };
+
+  if (post.updatedAt) {
+    schema.dateModified = post.updatedAt;
+    schema.datePublished = post.updatedAt;
+  }
+
   return `<script type="application/ld+json">\n${JSON.stringify(schema, null, 2)}\n</script>`;
 }
 
-// ---------- Generate the full HTML for one post ----------
-function buildPostHtml(post) {
+function buildPostHtml(post, styleBlock) {
   const bodyHtml = markdownToHtml(post.content);
   const descEscaped = post.description.replace(/"/g, '&quot;');
   const titleEscaped = post.title.replace(/"/g, '&quot;');
   const canonicalUrl = `https://sagenesthealth.com/blog/${post.slug}`;
+  const ogImage = post.imageUrl
+    ? `<meta property="og:image" content="${post.imageUrl}" />\n    <meta name="twitter:image" content="${post.imageUrl}" />`
+    : '';
 
   return `<!doctype html>
 <html lang="en">
@@ -140,134 +241,12 @@ function buildPostHtml(post) {
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${titleEscaped}" />
     <meta name="twitter:description" content="${descEscaped}" />
+    ${ogImage}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
     <style>
-      :root {
-        --sage: #9AA88D;
-        --sage-dark: #7A8872;
-        --sage-softest: #E8EDE3;
-        --cream: #FAF9F6;
-        --off-white: #FEFDFB;
-        --charcoal: #2D2D2D;
-        --text-secondary: #6B6B6B;
-        --border-hairline: #E5E7EB;
-      }
-      * { box-sizing: border-box; margin: 0; padding: 0; }
-      body {
-        font-family: 'Inter', -apple-system, sans-serif;
-        background: var(--cream);
-        color: var(--charcoal);
-        line-height: 1.7;
-        -webkit-font-smoothing: antialiased;
-      }
-      header.site-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 2rem;
-        background: var(--off-white);
-        border-bottom: 1px solid var(--border-hairline);
-        position: sticky;
-        top: 0;
-        z-index: 100;
-      }
-      .brand {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: var(--charcoal);
-        text-decoration: none;
-      }
-      nav a {
-        margin-left: 1rem;
-        color: var(--charcoal);
-        text-decoration: none;
-        font-size: 0.875rem;
-        font-weight: 500;
-        padding: 0.4rem 1rem;
-        border-radius: 999px;
-        background: #F5F2ED;
-        border: 1px solid var(--border-hairline);
-      }
-      nav a:hover { background: var(--sage); color: #fff; }
-      main {
-        max-width: 780px;
-        margin: 0 auto;
-        padding: 3rem 1.5rem 5rem;
-      }
-      h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: clamp(1.75rem, 4vw, 2.75rem);
-        font-weight: 700;
-        line-height: 1.2;
-        letter-spacing: -0.02em;
-        margin-bottom: 0.75rem;
-        color: var(--charcoal);
-      }
-      h2 {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.5rem;
-        margin: 2.5rem 0 0.75rem;
-        padding-top: 1.5rem;
-        border-top: 1px solid var(--border-hairline);
-        color: var(--charcoal);
-      }
-      h3 {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.2rem;
-        margin: 1.75rem 0 0.5rem;
-        color: var(--charcoal);
-      }
-      p { margin: 0 0 1.25rem; color: var(--text-secondary); font-size: 1rem; }
-      ul { margin: 1rem 0 1.5rem 1.5rem; }
-      li { margin-bottom: 0.5rem; color: var(--text-secondary); line-height: 1.7; }
-      strong { color: var(--charcoal); font-weight: 600; }
-      a { color: var(--sage-dark); }
-      a:hover { color: var(--charcoal); }
-      .post-meta {
-        font-size: 0.875rem;
-        color: #9B9B9B;
-        margin-bottom: 2rem;
-      }
-      .cta-box {
-        background: var(--sage-softest);
-        border: 1px solid #C5D0BA;
-        border-radius: 16px;
-        padding: 1.5rem;
-        margin: 3rem 0;
-        text-align: center;
-      }
-      .cta-box h3 { margin: 0 0 0.75rem; border: none; padding: 0; }
-      .cta-box a {
-        display: inline-block;
-        padding: 0.75rem 2rem;
-        background: var(--sage);
-        color: #fff;
-        border-radius: 999px;
-        font-weight: 500;
-        text-decoration: none;
-      }
-      .cta-box a:hover { background: var(--sage-dark); color: #fff; }
-      .disclaimer {
-        font-size: 0.8rem;
-        color: #9B9B9B;
-        border-top: 1px solid var(--border-hairline);
-        padding-top: 1.5rem;
-        margin-top: 3rem;
-        font-style: italic;
-      }
-      footer {
-        background: var(--off-white);
-        border-top: 1px solid var(--border-hairline);
-        padding: 2rem;
-        text-align: center;
-        font-size: 0.875rem;
-        color: #9B9B9B;
-        margin-top: 4rem;
-      }
-      footer a { color: var(--sage-dark); margin: 0 0.5rem; }
+${styleBlock}
     </style>
     ${articleJsonLd(post)}
     ${faqJsonLd(post.faq)}
@@ -276,7 +255,7 @@ function buildPostHtml(post) {
     <header class="site-header">
       <a href="/" class="brand">🌿 SageNest</a>
       <nav>
-        <a href="/pregnancy-due-date-calculator">Due Date Calculator</a>
+        <a href="/similar-tools">Similar tools</a>
         <a href="/blog">Blog</a>
       </nav>
     </header>
@@ -308,14 +287,16 @@ function buildPostHtml(post) {
 </html>`;
 }
 
-// ---------- Main ----------
-const posts = extractBlogPosts();
+const posts = await loadBlogPosts();
+const tokens = loadDesignTokens();
+const styleBlock = buildStaticStyle(tokens);
+
 console.log(`Generating static HTML for ${posts.length} blog posts...`);
 
 for (const post of posts) {
   const dir = join(ROOT, 'public', 'blog', post.slug);
   mkdirSync(dir, { recursive: true });
-  const html = buildPostHtml(post);
+  const html = buildPostHtml(post, styleBlock);
   writeFileSync(join(dir, 'index.html'), html, 'utf8');
   console.log(`  ✓ public/blog/${post.slug}/index.html`);
 }

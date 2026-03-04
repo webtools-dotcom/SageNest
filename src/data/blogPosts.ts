@@ -3,6 +3,8 @@ export interface BlogPost {
   title: string;
   description: string;
   readingTime: string;
+  updatedAt: string;
+  imageUrl?: string;
   content: string;
   faq?: Array<{ question: string; answer: string }>;
 }
@@ -13,6 +15,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Morning Sickness Remedies: What Actually Works (and What Doesn\'t)',
     description: 'Morning sickness affects up to 80% of pregnant women. Learn which remedies are backed by clinical evidence, which are myths, and when to call your doctor.',
     readingTime: '10 min read',
+    updatedAt: '2026-03-04',
     faq: [
       {
         question: 'Why is it called morning sickness if it happens all day?',
@@ -117,6 +120,7 @@ Morning sickness is not in your head, it is not something you should simply endu
     title: 'Pregnancy Weight Gain Myths vs. Facts: Setting the Record Straight',
     description: 'Debunking the most common pregnancy weight gain myths with evidence-based facts. Learn what the science actually says about eating for two, postpartum weight loss, and healthy gain rates.',
     readingTime: '9 min read',
+    updatedAt: '2026-03-04',
     faq: [
       { question: 'Should I really eat for two during pregnancy?', answer: 'No. Additional calorie needs are approximately zero in the first trimester, 300–350 calories per day in the second trimester, and 400–500 calories per day in the third trimester.' },
       { question: 'How quickly do most women lose pregnancy weight?', answer: 'Most women lose 4.5–5.5 kg immediately after delivery. The remaining pregnancy weight typically normalizes over 6–18 months, not in a matter of weeks.' },
@@ -165,6 +169,7 @@ Use tools like our [pregnancy weight gain calculator](/pregnancy-weight-gain-cal
     title: 'Gestational Diabetes and Pregnancy Weight Gain: What Every Pregnant Woman Needs to Know',
     description: 'Understand the link between gestational diabetes and pregnancy weight gain, how diagnosis is made, dietary management strategies, and what it means for your birth plan and baby.',
     readingTime: '11 min read',
+    updatedAt: '2026-03-04',
     faq: [
       { question: 'Does excessive weight gain cause gestational diabetes?', answer: 'Rapid gestational weight gain — particularly in the first and second trimester — increases the risk of gestational diabetes by amplifying the normal insulin resistance of pregnancy.' },
       { question: 'How is gestational diabetes diagnosed?', answer: 'Most women undergo a one-hour glucose challenge test between 24 and 28 weeks. If elevated, a three-hour oral glucose tolerance test (OGTT) confirms diagnosis.' },
@@ -219,6 +224,7 @@ Understanding gestational diabetes is empowering, not alarming. Most women who a
     title: 'Pregnancy Nutrition Guide: What to Eat in Each Trimester for Optimal Weight Gain',
     description: 'A practical, evidence-based pregnancy nutrition guide covering key nutrients, foods to eat and avoid, meal planning tips, and how nutrition affects healthy weight gain in each trimester.',
     readingTime: '12 min read',
+    updatedAt: '2026-03-04',
     faq: [
       { question: 'Do I need to eat extra calories in the first trimester?', answer: 'No. First-trimester caloric needs are essentially the same as pre-pregnancy. You do not need extra calories until the second trimester, when approximately 300–350 additional calories per day are recommended.' },
       { question: 'What foods should I avoid during pregnancy?', answer: 'Avoid raw or undercooked meat and eggs, unpasteurized dairy, high-mercury fish (shark, swordfish, king mackerel), alcohol, raw sprouts, and limit caffeine to under 200 mg per day.' },
@@ -289,6 +295,7 @@ The emotional dimension of eating during pregnancy is also real. If you notice s
     title: 'Healthy Pregnancy Weight Gain: The Complete Guide for Expectant Mothers',
     description: 'Everything you need to know about healthy pregnancy weight gain by trimester, BMI category, IOM guidelines, and what to expect at prenatal visits.',
     readingTime: '14 min read',
+    updatedAt: '2026-03-04',
     faq: [
       { question: 'How much weight should I gain during pregnancy?', answer: 'It depends on your pre-pregnancy BMI. Underweight women should gain 12.5–18 kg, normal weight 11.5–16 kg, overweight 7–11.5 kg, and women with obesity 5–9 kg total.' },
       { question: 'Is it normal to gain weight in the first trimester?', answer: 'Yes. The IOM recommends gaining 0.5 to 2 kg total in the first trimester. Some women gain very little due to morning sickness, which is generally fine.' },
@@ -365,6 +372,7 @@ The goal of gestational weight gain management is clinical, not aesthetic. Suppo
     title: 'Pregnancy Week-by-Week Milestones to Track with Confidence',
     description: 'A calm framework for understanding trimester milestones and discussing questions with your care team.',
     readingTime: '12 min read',
+    updatedAt: '2026-03-04',
     content: `## Understanding Your Pregnancy Timeline
 
 Pregnancy typically lasts about 40 weeks from the first day of your last menstrual period, though anywhere from 37-42 weeks is considered full-term and healthy. These weeks are divided into three trimesters, each with distinct developmental milestones for your baby and physical changes for you.
@@ -396,6 +404,7 @@ Always contact your provider if you experience vaginal bleeding, severe abdomina
     title: 'IVF Due Date Guide: Transfer Day to Delivery Window',
     description: 'A practical IVF-focused due date guide including embryo age adjustments and trimester planning.',
     readingTime: '8 min read',
+    updatedAt: '2026-03-04',
     content: `## Why IVF Due Date Calculation Is More Precise
 
 If you conceived through in vitro fertilization (IVF), you have one significant advantage when it comes to due date calculations: you know the exact age of your embryo at transfer. This makes IVF due dates generally more accurate than those based on last menstrual period alone.
@@ -431,6 +440,7 @@ IVF due dates are remarkably accurate because fertilization date is known exactl
     title: 'How Pregnancy Due Dates Are Calculated in Clinical Practice',
     description: 'Understand LMP, ultrasound adjustments, and what due dates really mean for care planning.',
     readingTime: '9 min read',
+    updatedAt: '2026-03-04',
     content: `## Why Your Due Date Matters
 
 Your estimated due date (EDD) serves as a crucial reference point throughout your pregnancy journey. While only about 5% of babies arrive on their exact due date, this estimate helps your healthcare provider time important tests, monitor fetal development, and plan for delivery. Understanding how your due date is calculated can help you feel more informed and confident in your prenatal care.
