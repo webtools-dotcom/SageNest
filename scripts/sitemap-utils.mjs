@@ -1,6 +1,7 @@
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { loadBlogPosts } from './blog-data.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -20,26 +21,12 @@ function loadTools() {
   return tools.filter((tool) => typeof tool.path === 'string');
 }
 
-function loadLocalBlogPosts() {
-  const src = readFileSync(join(ROOT, 'src/data/blogPosts.ts'), 'utf8');
-  const js = src
-    .replace(/export\s+interface\s+BlogPost\s*\{[\s\S]*?\n\}\s*/g, '')
-    .replace(/export\s+const\s+blogPosts\s*:\s*BlogPost\[\]/g, 'const blogPosts')
-    .replace(/export\s+const\s+blogPosts/g, 'const blogPosts')
-    .replace(/faq\?\s*:/g, 'faq:')
-    .replace(/:\s*Array<[^>]+>/g, '')
-    .replace(/:\s*string(\s*[,)]\s*)/g, '$1')
-    .replace(/:\s*string\s*\]/g, ']')
-    .replace(/:\s*string\s*\}/g, '}');
+async function loadLocalBlogPosts() {
+  const posts = await loadBlogPosts();
 
-  // eslint-disable-next-line no-new-func
-  const fn = new Function(`${js}\n return blogPosts;`);
-  const posts = fn();
-
-  if (!Array.isArray(posts)) return [];
   return posts
-    .filter((post) => typeof post.slug === 'string')
-    .map((post) => ({ slug: post.slug }));
+    .filter((post) => typeof post.slug === 'string' && post.slug.length > 0)
+    .map((post) => ({ slug: post.slug, lastmod: post.updatedAt }));
 }
 
 function toDateString(value, fallback) {
@@ -111,7 +98,7 @@ export async function getSitemapEntries(options = {}) {
     priority: '0.8'
   }));
 
-  const localBlogPosts = loadLocalBlogPosts();
+  const localBlogPosts = await loadLocalBlogPosts();
   const supabaseBlogPosts = blogSource === 'local' ? [] : await loadPublishedBlogPostsFromSupabase();
 
   const combinedBlogPosts = blogSource === 'supabase'

@@ -8,7 +8,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const redirectsPath = join(ROOT, 'public', '_redirects');
 
-const expected = buildRedirectsContent();
+const expected = await buildRedirectsContent();
 const current = readFileSync(redirectsPath, 'utf8');
 
 if (current !== expected) {
