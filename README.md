@@ -305,3 +305,129 @@ npm run check:redirects
 ```
 
 `npm run build` now runs these checks first via `prebuild`: package JSON check, merge-conflict check, static blog generation, redirects generation + validation, and sitemap generation + validation.
+
+## Exact Repository Worktree Structure
+
+Below is the exact tracked file tree of this repository at the time of this update.
+
+```text
+.
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── public/
+│   ├── blog/
+│   │   ├── gestational-diabetes-pregnancy-weight-gain/
+│   │   │   └── index.html
+│   │   ├── healthy-pregnancy-weight-gain-complete-guide/
+│   │   │   └── index.html
+│   │   ├── how-due-dates-are-calculated/
+│   │   │   └── index.html
+│   │   ├── ivf-due-date-guide/
+│   │   │   └── index.html
+│   │   ├── morning-sickness-remedies-that-actually-work/
+│   │   │   └── index.html
+│   │   ├── pregnancy-nutrition-guide-what-to-eat-each-trimester/
+│   │   │   └── index.html
+│   │   ├── pregnancy-week-by-week-milestones/
+│   │   │   └── index.html
+│   │   └── pregnancy-weight-gain-myths-facts/
+│   │       └── index.html
+│   ├── _headers
+│   ├── _redirects
+│   ├── apple-touch-icon.png
+│   ├── favicon-96x96.png
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── manifest.json
+│   ├── robots.txt
+│   ├── sitemap.xml
+│   ├── web-app-manifest-192x192.png
+│   └── web-app-manifest-512x512.png
+├── scripts/
+│   ├── check-conflicts.sh
+│   ├── check-package-json.mjs
+│   ├── check-redirects.mjs
+│   ├── check-sitemap.mjs
+│   ├── generate-blog-html.mjs
+│   ├── generate-redirects.mjs
+│   ├── generate-sitemap.mjs
+│   ├── redirects-utils.mjs
+│   └── sitemap-utils.mjs
+├── src/
+│   ├── components/
+│   │   ├── BlogList.tsx
+│   │   ├── BlogPost.tsx
+│   │   ├── BlogPoster.tsx
+│   │   ├── CalculatorCard.tsx
+│   │   ├── CalculatorForm.tsx
+│   │   ├── CalculatorSteps.tsx
+│   │   ├── FAQAccordion.tsx
+│   │   ├── FertilityCalendar.tsx
+│   │   ├── FertilityChart.tsx
+│   │   ├── Footer.tsx
+│   │   ├── HeroCard.tsx
+│   │   ├── InfoGrid.tsx
+│   │   ├── PregnancyTimeline.tsx
+│   │   ├── ProgressWheel.tsx
+│   │   ├── ProtectedRoute.tsx
+│   │   ├── ResultCard.tsx
+│   │   ├── ResultsCard.tsx
+│   │   ├── SEOHead.tsx
+│   │   └── ScrollToTop.tsx
+│   ├── data/
+│   │   ├── blogPosts.ts
+│   │   ├── pregnancyWeeks.ts
+│   │   ├── tools.ts
+│   │   └── weekSummaries.ts
+│   ├── lib/
+│   │   ├── calc.ts
+│   │   ├── dateHelpers.ts
+│   │   ├── markdown.ts
+│   │   ├── ovulationCalc.ts
+│   │   └── pregnancyWeightGain.ts
+│   ├── pages/
+│   │   ├── About.tsx
+│   │   ├── AdminLogin.tsx
+│   │   ├── BlogPoster.tsx
+│   │   ├── Calculator.tsx
+│   │   ├── NotFound.tsx
+│   │   ├── OvulationCalculator.tsx
+│   │   ├── PregnancyWeekByWeekHub.tsx
+│   │   ├── PregnancyWeekDetail.tsx
+│   │   ├── PregnancyWeightGainCalculator.tsx
+│   │   ├── Privacy.tsx
+│   │   └── SimilarTools.tsx
+│   ├── styles/
+│   │   └── global.css
+│   ├── supabase/
+│   │   └── client.ts
+│   ├── App.tsx
+│   └── main.tsx
+├── tests/
+│   ├── adminLoginAuth.test.ts
+│   ├── blogPosterAuth.test.ts
+│   ├── blogPosterUploadValidation.test.ts
+│   ├── calc.test.ts
+│   ├── dateHelpers.test.ts
+│   ├── markdown.test.ts
+│   ├── ovulationCalc.test.ts
+│   ├── pregnancyWeightGain.test.ts
+│   └── progressWheel.test.ts
+├── .env.example
+├── .gitignore
+├── Blogrules.md
+├── README.md
+├── SAGENEST BLOG MASTERGUIDE.md
+├── SECURITY.md
+├── SECURITY2.md
+├── codex.md
+├── frontend.md
+├── frontend2.md
+├── index.html
+├── latestchange.md
+├── newtool.md
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+```
