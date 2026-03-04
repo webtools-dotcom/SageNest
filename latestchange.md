@@ -9,6 +9,11 @@
 - Updated `scripts/redirects-utils.mjs` to build redirect output from three clearly named arrays declared once: `baseRedirects`, `legacyBlogRedirects`, and `blogStaticRewrites`.
 - Removed dead/duplicate redirect assembly paths and now construct the `lines` list from those arrays only once.
 - Added an order-preserving exact-line dedupe pass before output join to keep generated redirects deterministic and CI-stable for `check:redirects`.
+## 2026-03-04 (Hotfix 4: blog redirects now generate only loop-safe rewrite trio)
+
+- Updated `scripts/redirects-utils.mjs` `buildRedirectsContent()` to keep only legacy `/<slug> -> /blog/<slug> 301` redirects and remove generated blog canonical `301` variants for `/blog/<slug>/` and `/blog/<slug>/index.html`.
+- Kept exactly one generated rewrite trio per blog slug (`/blog/<slug>`, `/blog/<slug>/`, and `/blog/<slug>/index.html` all rewriting to `/blog/<slug>/index.html` with `200`) above the global SPA catch-all.
+- Regenerated `public/_redirects` and verified there are no duplicate blog source lines mapped to conflicting status codes.
 
 ## 2026-03-04 (Hotfix 3: make redirects generator merge-safe against duplicate declarations)
 
