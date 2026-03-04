@@ -1,3 +1,9 @@
+## 2026-03-04 (Hotfix: removed blog slash canonical redirects causing Cloudflare loop)
+
+- Removed generated blog `301` canonical redirect rules for `/blog/<slug>/` and `/blog/<slug>/index.html` from `scripts/redirects-utils.mjs` because Cloudflare Pages directory slash normalization can bounce back to `/blog/<slug>/`, causing `ERR_TOO_MANY_REDIRECTS`.
+- Kept canonical blog serving on `/blog/<slug> -> /blog/<slug>/index.html 200` so both users and crawlers resolve to the correct static blog file without redirect loops.
+- Updated README indexing notes to reflect the loop-safe redirect strategy and corrected generator documentation to reference the TypeScript loader approach.
+
 ## 2026-03-04 (Unified static blog SEO pipeline + drift guardrails)
 
 - Switched blog data loading in generation scripts to direct TypeScript imports from `src/data/blogPosts.ts` via a TypeScript-to-ESM loader, removing regex/eval parsing drift in blog HTML, redirects, and sitemap utilities.
