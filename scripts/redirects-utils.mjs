@@ -13,10 +13,16 @@ const BASE_REDIRECTS = [
 export async function buildRedirectsContent() {
   const slugs = await loadBlogSlugs();
   const legacyBlogRedirects = slugs.map((slug) => `/${slug} /blog/${slug} 301`);
+  const blogCanonicalRedirects = slugs.flatMap((slug) => [
+    `/blog/${slug}/ /blog/${slug} 301`,
+    `/blog/${slug}/index.html /blog/${slug} 301`
+  ]);
+  const blogStaticRewrites = slugs.map((slug) => `/blog/${slug} /blog/${slug}/index.html 200`);
 
   const lines = [
     ...BASE_REDIRECTS,
     ...legacyBlogRedirects,
+    ...blogCanonicalRedirects,
     '',
     ...slugs.flatMap((slug) => [
       `/blog/${slug} /blog/${slug}/index.html 200`,
