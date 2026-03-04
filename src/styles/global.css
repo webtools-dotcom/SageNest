@@ -1,79 +1,4 @@
-:root {
-  /* Modern Editorial Color Palette */
-  --sage-primary: #9AA88D;
-  --sage-dark: #7A8872;
-  --sage-light: #C5D0BA;
-  --sage-softest: #E8EDE3;
-  --sage-accent: #B8C9AC;
-
-  --cream: #F3EFE0;
-  --sand: #F5F2ED;
-  --off-white: #FEFDFB;
-  --warm-gray: #E8E6E1;
-
-  --charcoal: #2D2D2D;
-  --charcoal-light: #505050;
-  --text-secondary: #6B6B6B;
-  --text-tertiary: #9B9B9B;
-
-  --border-hairline: #E5E7EB;
-  --border-subtle: #D1D5DB;
-
-  /* Shadows - Layered and refined */
-  --shadow-subtle: 0 1px 3px rgba(45, 45, 45, 0.04);
-  --shadow-soft: 0 4px 16px rgba(45, 45, 45, 0.06), 0 1px 4px rgba(45, 45, 45, 0.04);
-  --shadow-medium: 0 8px 32px rgba(45, 45, 45, 0.10), 0 2px 8px rgba(45, 45, 45, 0.06);
-  --shadow-elevated: 0 16px 48px rgba(45, 45, 45, 0.12), 0 4px 12px rgba(45, 45, 45, 0.08);
-  --shadow-sage: 0 4px 16px rgba(154, 168, 141, 0.18);
-
-  /* Spacing - Generous and consistent */
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 1.5rem;
-  --space-lg: 2.5rem;
-  --space-xl: 4rem;
-  --space-2xl: 6rem;
-
-  /* Border Radius - Squircle system */
-  --radius-xs: 8px;
-  --radius-sm: 16px;
-  --radius-md: 24px;
-  --radius-lg: 32px;
-  --radius-xl: 40px;
-  --radius-pill: 999px;
-
-  /* Transitions */
-  --transition-fast: 0.15s ease;
-  --transition-base: 0.2s ease;
-  --transition-slow: 0.35s ease;
-
-  /* frontend2 token mappings (Tailwind not used in this project) */
-  --frontend2-color-primary: var(--sage-primary);
-  --frontend2-color-primary-dark: var(--sage-dark);
-  --frontend2-color-primary-light: var(--sage-light);
-  --frontend2-color-primary-soft: var(--sage-softest);
-  --frontend2-color-accent: var(--sage-accent);
-  --frontend2-color-surface: var(--off-white);
-  --frontend2-color-surface-muted: var(--sand);
-  --frontend2-color-background: var(--cream);
-  --frontend2-color-text: var(--charcoal);
-  --frontend2-color-text-secondary: var(--text-secondary);
-  --frontend2-color-border: var(--border-hairline);
-  --frontend2-color-border-strong: var(--border-subtle);
-
-  --frontend2-shadow-subtle: var(--shadow-subtle);
-  --frontend2-shadow-soft: var(--shadow-soft);
-  --frontend2-shadow-medium: var(--shadow-medium);
-  --frontend2-shadow-elevated: var(--shadow-elevated);
-  --frontend2-shadow-brand: var(--shadow-sage);
-
-  --frontend2-radius-xs: var(--radius-xs);
-  --frontend2-radius-sm: var(--radius-sm);
-  --frontend2-radius-md: var(--radius-md);
-  --frontend2-radius-lg: var(--radius-lg);
-  --frontend2-radius-xl: var(--radius-xl);
-  --frontend2-radius-pill: var(--radius-pill);
-}
+@import "./design-tokens.css";
 
 * {
   box-sizing: border-box;
@@ -89,7 +14,7 @@ body {
   margin: 0;
   background: var(--cream);
   color: var(--charcoal);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: var(--font-sans);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -106,7 +31,7 @@ body {
    ============================================================ */
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: var(--font-serif);
   font-weight: 600;
   line-height: 1.2;
   color: var(--charcoal);
@@ -203,7 +128,7 @@ textarea:focus-visible {
   display: flex;
   align-items: center;
   gap: var(--space-sm);
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-serif);
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--charcoal);
@@ -689,7 +614,7 @@ button:disabled {
 }
 
 .results-date {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-serif);
   font-size: clamp(3rem, 6vw, 5rem);
   font-weight: 700;
   color: var(--charcoal);
@@ -735,7 +660,7 @@ button:disabled {
 }
 
 .meta-value {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-serif);
   font-size: 2rem;
   font-weight: 700;
   color: var(--charcoal);
@@ -780,7 +705,7 @@ button:disabled {
 }
 
 .progress-wheel__value {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-serif);
   font-size: 2rem;
   font-weight: 700;
   color: var(--charcoal);
@@ -1399,7 +1324,7 @@ button:disabled {
 }
 
 .site-footer__brand {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-serif);
   font-size: 1.25rem;
   font-weight: 700;
   margin-bottom: var(--space-sm);

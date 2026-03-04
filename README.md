@@ -152,10 +152,21 @@ Blog redirect/rewrite entries in `public/_redirects` are generated from `src/dat
 
 ### Sitemap and indexing
 
-- `public/sitemap.xml` is generated at build time from route sources (`src/data/tools.ts`, fixed routes, week-1..40, plus blog slugs from local data and optionally Supabase published posts).
-- `npm run check:sitemap` fails if `public/sitemap.xml` diverges from the known route list generated from the same sitemap sources.
-- `public/_redirects` blog rules are generated and checked in build/CI so static blog rewrites stay in sync with blog slugs.
+- `src/data/blogPosts.ts` is the source of truth for blog content and slug metadata (`updatedAt`, optional `imageUrl`).
+- `public/blog/<slug>/index.html` is generated from that source via `npm run generate:blog` (Node runs with `--import tsx` so TypeScript blog data is imported directly).
+- `public/sitemap.xml` is generated from route sources (`src/data/tools.ts`, fixed routes, week-1..40, and blog slugs from `blogPosts.ts`, with optional Supabase merge when enabled).
+- `public/_redirects` blog rules are generated from the same slug source and include canonical redirects from `/blog/<slug>/index.html` and `/blog/<slug>/` to `/blog/<slug>`.
+- `npm run check:sitemap` and `npm run check:blog-sync` fail when sitemap/redirect/static blog outputs diverge from source content.
 - `public/robots.txt` allows all crawlers and references sitemap.
+
+### Blog publishing checklist (for every new post)
+
+1. Add the post object in `src/data/blogPosts.ts` with unique `slug` and `updatedAt` (`YYYY-MM-DD`).
+2. Run `npm run generate:blog`, `npm run generate:redirects`, and `npm run generate:sitemap`.
+3. Run `npm run check:redirects`, `npm run check:sitemap`, and `npm run check:blog-sync`.
+4. Deploy to Cloudflare Pages.
+5. Purge Cloudflare cache for `/blog/*`.
+6. In Google Search Console, submit/refresh sitemap and request indexing for the new blog URL.
 
 ## Performance Notes
 
@@ -304,130 +315,4 @@ npm run check:conflicts
 npm run check:redirects
 ```
 
-`npm run build` now runs these checks first via `prebuild`: package JSON check, merge-conflict check, static blog generation, redirects generation + validation, and sitemap generation + validation.
-
-## Exact Repository Worktree Structure
-
-Below is the exact tracked file tree of this repository at the time of this update.
-
-```text
-.
-├── .github/
-│   └── workflows/
-│       └── ci.yml
-├── public/
-│   ├── blog/
-│   │   ├── gestational-diabetes-pregnancy-weight-gain/
-│   │   │   └── index.html
-│   │   ├── healthy-pregnancy-weight-gain-complete-guide/
-│   │   │   └── index.html
-│   │   ├── how-due-dates-are-calculated/
-│   │   │   └── index.html
-│   │   ├── ivf-due-date-guide/
-│   │   │   └── index.html
-│   │   ├── morning-sickness-remedies-that-actually-work/
-│   │   │   └── index.html
-│   │   ├── pregnancy-nutrition-guide-what-to-eat-each-trimester/
-│   │   │   └── index.html
-│   │   ├── pregnancy-week-by-week-milestones/
-│   │   │   └── index.html
-│   │   └── pregnancy-weight-gain-myths-facts/
-│   │       └── index.html
-│   ├── _headers
-│   ├── _redirects
-│   ├── apple-touch-icon.png
-│   ├── favicon-96x96.png
-│   ├── favicon.ico
-│   ├── favicon.svg
-│   ├── manifest.json
-│   ├── robots.txt
-│   ├── sitemap.xml
-│   ├── web-app-manifest-192x192.png
-│   └── web-app-manifest-512x512.png
-├── scripts/
-│   ├── check-conflicts.sh
-│   ├── check-package-json.mjs
-│   ├── check-redirects.mjs
-│   ├── check-sitemap.mjs
-│   ├── generate-blog-html.mjs
-│   ├── generate-redirects.mjs
-│   ├── generate-sitemap.mjs
-│   ├── redirects-utils.mjs
-│   └── sitemap-utils.mjs
-├── src/
-│   ├── components/
-│   │   ├── BlogList.tsx
-│   │   ├── BlogPost.tsx
-│   │   ├── BlogPoster.tsx
-│   │   ├── CalculatorCard.tsx
-│   │   ├── CalculatorForm.tsx
-│   │   ├── CalculatorSteps.tsx
-│   │   ├── FAQAccordion.tsx
-│   │   ├── FertilityCalendar.tsx
-│   │   ├── FertilityChart.tsx
-│   │   ├── Footer.tsx
-│   │   ├── HeroCard.tsx
-│   │   ├── InfoGrid.tsx
-│   │   ├── PregnancyTimeline.tsx
-│   │   ├── ProgressWheel.tsx
-│   │   ├── ProtectedRoute.tsx
-│   │   ├── ResultCard.tsx
-│   │   ├── ResultsCard.tsx
-│   │   ├── SEOHead.tsx
-│   │   └── ScrollToTop.tsx
-│   ├── data/
-│   │   ├── blogPosts.ts
-│   │   ├── pregnancyWeeks.ts
-│   │   ├── tools.ts
-│   │   └── weekSummaries.ts
-│   ├── lib/
-│   │   ├── calc.ts
-│   │   ├── dateHelpers.ts
-│   │   ├── markdown.ts
-│   │   ├── ovulationCalc.ts
-│   │   └── pregnancyWeightGain.ts
-│   ├── pages/
-│   │   ├── About.tsx
-│   │   ├── AdminLogin.tsx
-│   │   ├── BlogPoster.tsx
-│   │   ├── Calculator.tsx
-│   │   ├── NotFound.tsx
-│   │   ├── OvulationCalculator.tsx
-│   │   ├── PregnancyWeekByWeekHub.tsx
-│   │   ├── PregnancyWeekDetail.tsx
-│   │   ├── PregnancyWeightGainCalculator.tsx
-│   │   ├── Privacy.tsx
-│   │   └── SimilarTools.tsx
-│   ├── styles/
-│   │   └── global.css
-│   ├── supabase/
-│   │   └── client.ts
-│   ├── App.tsx
-│   └── main.tsx
-├── tests/
-│   ├── adminLoginAuth.test.ts
-│   ├── blogPosterAuth.test.ts
-│   ├── blogPosterUploadValidation.test.ts
-│   ├── calc.test.ts
-│   ├── dateHelpers.test.ts
-│   ├── markdown.test.ts
-│   ├── ovulationCalc.test.ts
-│   ├── pregnancyWeightGain.test.ts
-│   └── progressWheel.test.ts
-├── .env.example
-├── .gitignore
-├── Blogrules.md
-├── README.md
-├── SAGENEST BLOG MASTERGUIDE.md
-├── SECURITY.md
-├── SECURITY2.md
-├── codex.md
-├── frontend.md
-├── frontend2.md
-├── index.html
-├── latestchange.md
-├── newtool.md
-├── package.json
-├── tsconfig.json
-└── vite.config.ts
-```
+`npm run build` now runs these checks first via `prebuild`: package JSON check, merge-conflict check, static blog generation, redirects generation + validation, sitemap generation + validation, and blog static-sync validation.

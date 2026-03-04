@@ -1,7 +1,17 @@
-## 2026-03-03 (JSON-LD dedupe: removed component-level WebSite schema)
+## 2026-03-04 (Unified static blog SEO pipeline + drift guardrails)
 
-- Updated `src/pages/Calculator.tsx` JSON-LD array to remove the page-level `WebSite` schema object that could duplicate a site-wide `WebSite` entity.
-- Preserved search schema behavior by attaching `SearchAction` as `potentialAction` on the existing `WebPage` schema object for the calculator page.
+- Switched blog data loading in generation scripts to direct TypeScript imports from `src/data/blogPosts.ts` via a TypeScript-to-ESM loader, removing regex/eval parsing drift in blog HTML, redirects, and sitemap utilities.
+- Extracted root design tokens into `src/styles/design-tokens.css` and updated both `src/styles/global.css` and `scripts/generate-blog-html.mjs` to consume the same token source so static blog pages stay visually aligned with app styling.
+- Updated static blog generator to build its inline `<style>` block programmatically from shared design tokens and to include optional `og:image`/`twitter:image` plus `datePublished`/`dateModified` JSON-LD when `updatedAt` exists.
+- Added `updatedAt` metadata to every `src/data/blogPosts.ts` entry and wired sitemap local blog `lastmod` to that field for fresher crawl signals.
+- Hardened indexing behavior: added `noindex` on blog not-found and invalid pregnancy-week fallback states, switched blog internal links to canonical href navigation, and added canonical redirects for `/blog/<slug>/` + `/blog/<slug>/index.html`.
+- Added `scripts/check-blog-static-sync.mjs` and `npm run check:blog-sync` to fail build/CI when blog source, redirects, sitemap, and static HTML files go out of sync; documented the publish checklist in `README.md`.
+
+## 2026-03-04 (Static blog HTML refreshed to match current cream editorial UI)
+
+- Updated `scripts/generate-blog-html.mjs` style tokens, typography scale, spacing, and nav pill styling so generated `public/blog/*/index.html` pages match the current live React UI (cream background, larger headline text, refined header treatment).
+- Swapped static blog header CTA from `Due Date Calculator` to `Similar tools` to align with the current top-nav experience users see on the SPA routes.
+- Regenerated all static blog files under `public/blog/` so crawlers (Google/social bots) fetch the updated design instead of stale pre-refresh markup.
 
 ## 2026-03-02 (CSP updated for Google Analytics + Tag Manager)
 
