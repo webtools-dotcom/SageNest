@@ -1,6 +1,6 @@
 import { loadBlogSlugs } from './blog-data.mjs';
 
-const BASE_REDIRECTS = [
+const baseRedirects = [
   '/due-date-calculator /pregnancy-due-date-calculator 301',
   '/pregnancy-calculator /pregnancy-due-date-calculator 301',
   '/pregnancy-due-date /pregnancy-due-date-calculator 301',
@@ -13,25 +13,32 @@ const BASE_REDIRECTS = [
 export async function buildRedirectsContent() {
   const slugs = await loadBlogSlugs();
   const legacyBlogRedirects = slugs.map((slug) => `/${slug} /blog/${slug} 301`);
-  const blogCanonicalRedirects = slugs.flatMap((slug) => [
-    `/blog/${slug}/ /blog/${slug} 301`,
-    `/blog/${slug}/index.html /blog/${slug} 301`
+  const blogStaticRewrites = slugs.flatMap((slug) => [
+    `/blog/${slug} /blog/${slug}/index.html 200`,
+    `/blog/${slug}/ /blog/${slug}/index.html 200`,
+    `/blog/${slug}/index.html /blog/${slug}/index.html 200`
   ]);
-  const blogStaticRewrites = slugs.map((slug) => `/blog/${slug} /blog/${slug}/index.html 200`);
 
   const lines = [
-    ...BASE_REDIRECTS,
+    ...baseRedirects,
     ...legacyBlogRedirects,
-    ...blogCanonicalRedirects,
+    ...blogStaticRewrites,
     '',
-    ...slugs.flatMap((slug) => [
-      `/blog/${slug} /blog/${slug}/index.html 200`,
-      `/blog/${slug}/ /blog/${slug}/index.html 200`,
-      `/blog/${slug}/index.html /blog/${slug}/index.html 200`
-    ]),
     '/ /pregnancy-due-date-calculator 301',
     '/* /index.html 200'
   ];
 
-  return `${lines.join('\n')}\n`;
+  const dedupedLines = [];
+  const seenLines = new Set();
+
+  for (const line of lines) {
+    if (seenLines.has(line)) {
+      continue;
+    }
+
+    seenLines.add(line);
+    dedupedLines.push(line);
+  }
+
+  return `${dedupedLines.join('\n')}\n`;
 }
