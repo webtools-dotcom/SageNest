@@ -1,3 +1,20 @@
+## 2026-03-04 (Hotfix 3: make redirects generator merge-safe against duplicate declarations)
+
+- Refactored `scripts/redirects-utils.mjs` to inline blog rewrite expansion directly into the `lines` array instead of using a separate `blogStaticRewrites` variable declaration.
+- This avoids the exact `Identifier 'blogStaticRewrites' has already been declared` failure seen in Cloudflare/CI when merge resolution accidentally duplicated that declaration.
+
+## 2026-03-04 (Hotfix 2: slash + index blog URLs now rewrite directly to static file)
+
+- Updated `scripts/redirects-utils.mjs` to generate loop-proof `200` rewrites for `/blog/<slug>`, `/blog/<slug>/`, and `/blog/<slug>/index.html` so Cloudflare edge normalization cannot bounce between URL forms.
+- Regenerated `public/_redirects` to include the new slash/index rewrites for every blog slug.
+- Updated README indexing docs to explain the three-form rewrite strategy used to prevent `ERR_TOO_MANY_REDIRECTS` on blog URLs.
+
+## 2026-03-04 (Hotfix: removed blog slash canonical redirects causing Cloudflare loop)
+
+- Removed generated blog `301` canonical redirect rules for `/blog/<slug>/` and `/blog/<slug>/index.html` from `scripts/redirects-utils.mjs` because Cloudflare Pages directory slash normalization can bounce back to `/blog/<slug>/`, causing `ERR_TOO_MANY_REDIRECTS`.
+- Kept canonical blog serving on `/blog/<slug> -> /blog/<slug>/index.html 200` so both users and crawlers resolve to the correct static blog file without redirect loops.
+- Updated README indexing notes to reflect the loop-safe redirect strategy and corrected generator documentation to reference the TypeScript loader approach.
+
 ## 2026-03-04 (Unified static blog SEO pipeline + drift guardrails)
 
 - Switched blog data loading in generation scripts to direct TypeScript imports from `src/data/blogPosts.ts` via a TypeScript-to-ESM loader, removing regex/eval parsing drift in blog HTML, redirects, and sitemap utilities.
@@ -494,3 +511,19 @@
 
 - Removed the hardcoded root canonical tag from `index.html` to avoid mis-canonicalizing all SPA-fallback routes for non-JS crawlers and social bots.
 - Kept per-route canonical + `og:url` generation in `SEOHead` as the authoritative source for route-specific metadata.
+
+## 2026-03-04 (README updated with exact repository worktree structure)
+
+- Replaced `README.md` content with an exact, generated tree of all tracked repository files and directories.
+- Ensured the structure is presented in a single `text` code block for copy/paste reference.
+
+## 2026-03-04 (README restoration + appended repo structure section)
+
+- Restored all previous README content that was unintentionally replaced in the prior docs-only update.
+- Added a new `Exact Repository Worktree Structure` section at the end of README without removing existing sections.
+- Listed tracked repository files as absolute-style paths (for example `/src/...`) to match the requested format.
+
+## 2026-03-04 (README repo structure format switched to organized tree view)
+
+- Updated the `Exact Repository Worktree Structure` section in README to use an organized tree layout (├── / └──) instead of flat absolute path lines.
+- Kept all existing README content unchanged and only reformatted the repo-structure section for readability.
