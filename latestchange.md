@@ -1,3 +1,30 @@
+## 2026-03-04 (Hotfix 2: slash + index blog URLs now rewrite directly to static file)
+
+- Updated `scripts/redirects-utils.mjs` to generate loop-proof `200` rewrites for `/blog/<slug>`, `/blog/<slug>/`, and `/blog/<slug>/index.html` so Cloudflare edge normalization cannot bounce between URL forms.
+- Regenerated `public/_redirects` to include the new slash/index rewrites for every blog slug.
+- Updated README indexing docs to explain the three-form rewrite strategy used to prevent `ERR_TOO_MANY_REDIRECTS` on blog URLs.
+
+## 2026-03-04 (Hotfix: removed blog slash canonical redirects causing Cloudflare loop)
+
+- Removed generated blog `301` canonical redirect rules for `/blog/<slug>/` and `/blog/<slug>/index.html` from `scripts/redirects-utils.mjs` because Cloudflare Pages directory slash normalization can bounce back to `/blog/<slug>/`, causing `ERR_TOO_MANY_REDIRECTS`.
+- Kept canonical blog serving on `/blog/<slug> -> /blog/<slug>/index.html 200` so both users and crawlers resolve to the correct static blog file without redirect loops.
+- Updated README indexing notes to reflect the loop-safe redirect strategy and corrected generator documentation to reference the TypeScript loader approach.
+
+## 2026-03-04 (Unified static blog SEO pipeline + drift guardrails)
+
+- Switched blog data loading in generation scripts to direct TypeScript imports from `src/data/blogPosts.ts` via a TypeScript-to-ESM loader, removing regex/eval parsing drift in blog HTML, redirects, and sitemap utilities.
+- Extracted root design tokens into `src/styles/design-tokens.css` and updated both `src/styles/global.css` and `scripts/generate-blog-html.mjs` to consume the same token source so static blog pages stay visually aligned with app styling.
+- Updated static blog generator to build its inline `<style>` block programmatically from shared design tokens and to include optional `og:image`/`twitter:image` plus `datePublished`/`dateModified` JSON-LD when `updatedAt` exists.
+- Added `updatedAt` metadata to every `src/data/blogPosts.ts` entry and wired sitemap local blog `lastmod` to that field for fresher crawl signals.
+- Hardened indexing behavior: added `noindex` on blog not-found and invalid pregnancy-week fallback states, switched blog internal links to canonical href navigation, and added canonical redirects for `/blog/<slug>/` + `/blog/<slug>/index.html`.
+- Added `scripts/check-blog-static-sync.mjs` and `npm run check:blog-sync` to fail build/CI when blog source, redirects, sitemap, and static HTML files go out of sync; documented the publish checklist in `README.md`.
+
+## 2026-03-04 (Static blog HTML refreshed to match current cream editorial UI)
+
+- Updated `scripts/generate-blog-html.mjs` style tokens, typography scale, spacing, and nav pill styling so generated `public/blog/*/index.html` pages match the current live React UI (cream background, larger headline text, refined header treatment).
+- Swapped static blog header CTA from `Due Date Calculator` to `Similar tools` to align with the current top-nav experience users see on the SPA routes.
+- Regenerated all static blog files under `public/blog/` so crawlers (Google/social bots) fetch the updated design instead of stale pre-refresh markup.
+
 ## 2026-03-02 (CSP updated for Google Analytics + Tag Manager)
 
 - Updated `public/_headers` Content Security Policy to allow Google Tag Manager and Google Analytics script loading by adding `https://www.googletagmanager.com` and `https://www.google-analytics.com` to `script-src`.
