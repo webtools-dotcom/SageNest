@@ -1,3 +1,14 @@
+## 2026-03-04 (Hotfix 3: make redirects generator merge-safe against duplicate declarations)
+
+- Refactored `scripts/redirects-utils.mjs` to inline blog rewrite expansion directly into the `lines` array instead of using a separate `blogStaticRewrites` variable declaration.
+- This avoids the exact `Identifier 'blogStaticRewrites' has already been declared` failure seen in Cloudflare/CI when merge resolution accidentally duplicated that declaration.
+
+## 2026-03-04 (Hotfix 2: slash + index blog URLs now rewrite directly to static file)
+
+- Updated `scripts/redirects-utils.mjs` to generate loop-proof `200` rewrites for `/blog/<slug>`, `/blog/<slug>/`, and `/blog/<slug>/index.html` so Cloudflare edge normalization cannot bounce between URL forms.
+- Regenerated `public/_redirects` to include the new slash/index rewrites for every blog slug.
+- Updated README indexing docs to explain the three-form rewrite strategy used to prevent `ERR_TOO_MANY_REDIRECTS` on blog URLs.
+
 ## 2026-03-04 (Hotfix: removed blog slash canonical redirects causing Cloudflare loop)
 
 - Removed generated blog `301` canonical redirect rules for `/blog/<slug>/` and `/blog/<slug>/index.html` from `scripts/redirects-utils.mjs` because Cloudflare Pages directory slash normalization can bounce back to `/blog/<slug>/`, causing `ERR_TOO_MANY_REDIRECTS`.
