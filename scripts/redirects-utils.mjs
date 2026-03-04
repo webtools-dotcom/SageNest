@@ -18,10 +18,16 @@ export async function buildRedirectsContent() {
     `/blog/${slug}/ /blog/${slug}/index.html 200`,
     `/blog/${slug}/index.html /blog/${slug}/index.html 200`
   ]);
+  const blogCanonicalRedirects = slugs.flatMap((slug) => [
+    `/blog/${slug}/ /blog/${slug} 301`,
+    `/blog/${slug}/index.html /blog/${slug} 301`
+  ]);
+  const blogStaticRewrites = slugs.map((slug) => `/blog/${slug} /blog/${slug}/index.html 200`);
 
   const lines = [
     ...BASE_REDIRECTS,
     ...legacyBlogRedirects,
+    ...blogCanonicalRedirects,
     '',
     ...blogStaticRewrites,
     '/ /pregnancy-due-date-calculator 301',

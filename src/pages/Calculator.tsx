@@ -45,10 +45,19 @@ export const CalculatorPage = () => {
   }, []);
 
   const jsonLd = [
-    { '@context': 'https://schema.org', '@type': 'WebPage', name: 'Pregnancy Due Date Calculator', url: 'https://sagenesthealth.com/pregnancy-due-date-calculator' },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      name: 'Pregnancy Due Date Calculator',
+      url: 'https://sagenesthealth.com/pregnancy-due-date-calculator',
+      potentialAction: {
+        '@type': 'SearchAction',
+        target: 'https://sagenesthealth.com/blog?query={search_term_string}',
+        'query-input': 'required name=search_term_string'
+      }
+    },
     { '@context': 'https://schema.org', '@type': 'Blog', name: 'SageNest Blog', url: 'https://sagenesthealth.com/blog' },
-    ...blogPosts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, url: `https://sagenesthealth.com/blog/${post.slug}` })),
-    { '@context': 'https://schema.org', '@type': 'WebSite', name: 'SageNest', potentialAction: { '@type': 'SearchAction', target: 'https://sagenesthealth.com/blog?query={search_term_string}', 'query-input': 'required name=search_term_string' } }
+    ...blogPosts.map((post) => ({ '@context': 'https://schema.org', '@type': 'Article', headline: post.title, url: `https://sagenesthealth.com/blog/${post.slug}` }))
   ];
 
   return (
