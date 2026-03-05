@@ -484,3 +484,25 @@
 
 - Removed the hardcoded root canonical tag from `index.html` to avoid mis-canonicalizing all SPA-fallback routes for non-JS crawlers and social bots.
 - Kept per-route canonical + `og:url` generation in `SEOHead` as the authoritative source for route-specific metadata.
+
+## 2026-03-04 (README updated with exact repository worktree structure)
+
+- Replaced `README.md` content with an exact, generated tree of all tracked repository files and directories.
+- Ensured the structure is presented in a single `text` code block for copy/paste reference.
+
+## 2026-03-04 (README restoration + appended repo structure section)
+
+- Restored all previous README content that was unintentionally replaced in the prior docs-only update.
+- Added a new `Exact Repository Worktree Structure` section at the end of README without removing existing sections.
+- Listed tracked repository files as absolute-style paths (for example `/src/...`) to match the requested format.
+
+## 2026-03-04 (README repo structure format switched to organized tree view)
+
+- Updated the `Exact Repository Worktree Structure` section in README to use an organized tree layout (├── / └──) instead of flat absolute path lines.
+- Kept all existing README content unchanged and only reformatted the repo-structure section for readability.
+
+## 2026-03-05 (README repo-structure visibility clarification)
+
+- Kept the `Exact Repository Worktree Structure` section in `README.md` and added a short note explaining to re-sync the branch from latest `main` if the section appears missing.
+- Why: this prevents accidental manual copy-paste drift when a local branch is behind and does not yet include the merged README structure section.
+
