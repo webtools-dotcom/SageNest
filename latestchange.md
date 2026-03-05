@@ -550,3 +550,9 @@
 
 - Updated the `Exact Repository Worktree Structure` section in README to use an organized tree layout (├── / └──) instead of flat absolute path lines.
 - Kept all existing README content unchanged and only reformatted the repo-structure section for readability.
+
+## 2026-03-05 (README repo-structure visibility clarification)
+
+- Kept the `Exact Repository Worktree Structure` section in `README.md` and added a short note explaining to re-sync the branch from latest `main` if the section appears missing.
+- Why: this prevents accidental manual copy-paste drift when a local branch is behind and does not yet include the merged README structure section.
+
