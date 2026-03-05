@@ -111,7 +111,7 @@ export const blogPosts: BlogPost[] = [
 - Target long-tail phrases where possible (see README keyword list for inspiration)
 
 ### Internal linking (mandatory)
-Every post must link to at least one SageNest tool using natural anchor text:
+Every post must link to SageNest tools using natural anchor text:
 
 | Tool | Path | Natural anchor text examples |
 |------|------|------------------------------|
@@ -120,7 +120,7 @@ Every post must link to at least one SageNest tool using natural anchor text:
 | Ovulation Calculator | `/ovulation-calculator` | "estimate your fertile window", "our ovulation calculator", "track your ovulation" |
 | Pregnancy Week by Week | `/pregnancy-week-by-week` | "see what's happening this week", "explore your current pregnancy week", "our week-by-week pregnancy guide", "track your baby's development week by week" |
 
-Cross-link to related blog posts where genuinely relevant. Never force it.
+- There should be atleast one Cross-link to related blog posts where genuinely relevant. Never force it.
 
 ---
 
