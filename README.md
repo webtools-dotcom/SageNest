@@ -152,10 +152,25 @@ Blog redirect/rewrite entries in `public/_redirects` are generated from `src/dat
 
 ### Sitemap and indexing
 
-- `public/sitemap.xml` is generated at build time from route sources (`src/data/tools.ts`, fixed routes, week-1..40, plus blog slugs from local data and optionally Supabase published posts).
-- `npm run check:sitemap` fails if `public/sitemap.xml` diverges from the known route list generated from the same sitemap sources.
-- `public/_redirects` blog rules are generated and checked in build/CI so static blog rewrites stay in sync with blog slugs.
+- `src/data/blogPosts.ts` is the source of truth for blog content and slug metadata (`updatedAt`, optional `imageUrl`).
+- `public/blog/<slug>/index.html` is generated from that source via `npm run generate:blog` (the generator loads `blogPosts.ts` through the shared TypeScript loader used by build scripts).
+- `public/sitemap.xml` is generated from route sources (`src/data/tools.ts`, fixed routes, week-1..40, and blog slugs from `blogPosts.ts`, with optional Supabase merge when enabled).
+- `public/_redirects` blog rules are generated from the same slug source and map **all three forms** (`/blog/<slug>`, `/blog/<slug>/`, `/blog/<slug>/index.html`) to the same static file using `200` rewrites, which prevents Cloudflare slash-normalization redirect loops.
+- `public/_redirects` blog rules are generated from the same slug source and map canonical `/blog/<slug>` URLs to static files without slash-normalization redirects that can loop on Cloudflare Pages.
+- `public/blog/<slug>/index.html` is generated from that source via `npm run generate:blog` (Node runs with `--import tsx` so TypeScript blog data is imported directly).
+- `public/sitemap.xml` is generated from route sources (`src/data/tools.ts`, fixed routes, week-1..40, and blog slugs from `blogPosts.ts`, with optional Supabase merge when enabled).
+- `public/_redirects` blog rules are generated from the same slug source and include canonical redirects from `/blog/<slug>/index.html` and `/blog/<slug>/` to `/blog/<slug>`.
+- `npm run check:sitemap` and `npm run check:blog-sync` fail when sitemap/redirect/static blog outputs diverge from source content.
 - `public/robots.txt` allows all crawlers and references sitemap.
+
+### Blog publishing checklist (for every new post)
+
+1. Add the post object in `src/data/blogPosts.ts` with unique `slug` and `updatedAt` (`YYYY-MM-DD`).
+2. Run `npm run generate:blog`, `npm run generate:redirects`, and `npm run generate:sitemap`.
+3. Run `npm run check:redirects`, `npm run check:sitemap`, and `npm run check:blog-sync`.
+4. Deploy to Cloudflare Pages.
+5. Purge Cloudflare cache for `/blog/*`.
+6. In Google Search Console, submit/refresh sitemap and request indexing for the new blog URL.
 
 ## Performance Notes
 
@@ -431,3 +446,4 @@ Below is the exact tracked file tree of this repository at the time of this upda
 ├── tsconfig.json
 └── vite.config.ts
 ```
+`npm run build` now runs these checks first via `prebuild`: package JSON check, merge-conflict check, static blog generation, redirects generation + validation, sitemap generation + validation, and blog static-sync validation.

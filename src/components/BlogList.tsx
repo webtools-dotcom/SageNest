@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import { blogPosts as fallbackPosts } from '../data/blogPosts';
 import { supabase } from '../supabase/client';
 import { SEOHead } from './SEOHead';
@@ -56,7 +55,7 @@ export const BlogList = () => {
         {posts.map((post) => (
           <article key={post.id ?? post.slug} className="blog-card">
             {post.image_url ? <img src={post.image_url} alt="" className="blog-thumb" loading="lazy" /> : null}
-            <h2><Link to={`/blog/${post.slug}`}>{post.title}</Link></h2>
+            <h2><a href={`/blog/${post.slug}`}>{post.title}</a></h2>
             <p>{post.description}</p>
             <small>{post.readingTime}</small>
           </article>

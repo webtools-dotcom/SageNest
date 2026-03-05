@@ -50,7 +50,19 @@ export const BlogPost = () => {
   const related = useMemo(() => fallbackPosts.filter((p) => p.slug !== post?.slug).slice(0, 2), [post?.slug]);
   const postHtml = useMemo(() => markdownToHtml(post?.content ?? ''), [post?.content]);
 
-  if (!post) return <main className="container"><h1>Post not found</h1></main>;
+  if (!post) {
+    return (
+      <main id="main-content" className="container">
+        <SEOHead
+          title="Post not found"
+          description="The blog post you requested could not be found. Browse all SageNest blog posts."
+          canonicalPath="/blog"
+          noIndex
+        />
+        <h1>Post not found</h1>
+      </main>
+    );
+  }
 
   const jsonLd = [
     { '@context': 'https://schema.org', '@type': 'Article', headline: post.title, description: post.description, mainEntityOfPage: `https://sagenesthealth.com/blog/${post.slug}` },
@@ -59,7 +71,13 @@ export const BlogPost = () => {
 
   return (
     <main id="main-content" className="container article">
-      <SEOHead title={post.title} description={post.description} canonicalPath={`/blog/${post.slug}`} jsonLd={jsonLd} />
+      <SEOHead
+        title={post.title}
+        description={post.description}
+        canonicalPath={`/blog/${post.slug}`}
+        ogImage={post.image_url ?? undefined}
+        jsonLd={jsonLd}
+      />
       <h1>{post.title}</h1>
       <p>{post.readingTime}</p>
       {post.image_url ? <img src={post.image_url} alt="" className="blog-cover" loading="lazy" /> : null}
@@ -67,7 +85,7 @@ export const BlogPost = () => {
       <aside className="cta-inline"><h3>Try our Pregnancy Due Date Calculator</h3><Link to="/pregnancy-due-date-calculator">Open calculator</Link></aside>
       <section>
         <h2>Related posts</h2>
-        {related.map((item) => <p key={item.slug}><Link to={`/blog/${item.slug}`}>{item.title}</Link></p>)}
+        {related.map((item) => <p key={item.slug}><a href={`/blog/${item.slug}`}>{item.title}</a></p>)}
       </section>
     </main>
   );
