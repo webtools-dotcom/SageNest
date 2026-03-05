@@ -1,3 +1,9 @@
+## 2026-03-05 (Redirect checks hardened with per-slug cycle/conflict assertions)
+
+- Enhanced `scripts/check-redirects.mjs` to parse generated redirect lines (ignoring blank/comment lines), build a source-to-rules map, and validate every blog slug form (`/blog/<slug>`, `/blog/<slug>/`, `/blog/<slug>/index.html`) resolves to `/blog/<slug>/index.html` via loop-safe rewrite behavior.
+- Added actionable failure reporting that prints exact offending rules (with line numbers) for conflicting targets, mixed `301`/`200` statuses, missing rules, and detected redirect cycles.
+- Kept and preserved the existing out-of-sync guard so CI still fails when `public/_redirects` diverges from generated output.
+
 ## 2026-03-04 (Redirect generator follow-up: keep rewrites loop-safe)
 
 - Updated `scripts/redirects-utils.mjs` follow-up logic so `blogStaticRewrites` contains only `200` static rewrite rules for `/blog/<slug>`, `/blog/<slug>/`, and `/blog/<slug>/index.html`.
