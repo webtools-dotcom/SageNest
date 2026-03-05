@@ -1,3 +1,8 @@
+## 2026-03-05 (Added ovulation signs and symptoms blog post)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `ovulation-signs-symptoms`, complete SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and full long-form markdown content.
+- Why: this publishes the newly requested ovulation education article and keeps the newest content first in the blog feed ordering.
+
 ## 2026-03-05 (Redirect checks hardened with per-slug cycle/conflict assertions)
 
 - Enhanced `scripts/check-redirects.mjs` to parse generated redirect lines (ignoring blank/comment lines), build a source-to-rules map, and validate every blog slug form (`/blog/<slug>`, `/blog/<slug>/`, `/blog/<slug>/index.html`) resolves to `/blog/<slug>/index.html` via loop-safe rewrite behavior.
