@@ -1,3 +1,8 @@
+## 2026-03-06 (Added Braxton Hicks vs real contractions blog post)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `braxton-hicks-vs-real-contractions`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and the full long-form markdown content.
+- Why: this publishes the newly requested labor-education article and keeps newest blog content first for feed ordering and discovery.
+
 ## 2026-03-05 (Added ovulation signs and symptoms blog post)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `ovulation-signs-symptoms`, complete SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and full long-form markdown content.

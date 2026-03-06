@@ -11,6 +11,132 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'braxton-hicks-vs-real-contractions',
+    title: 'Braxton Hicks vs Real Contractions: How to Tell the Difference',
+    description: 'Braxton Hicks contractions feel alarming but are harmless. Learn the 6 key differences between practice contractions and true labor — and exactly when to call your provider.',
+    readingTime: '10 min read',
+    updatedAt: '2026-03-06',
+    faq: [
+      {
+        question: 'How do I know if my contractions are real or Braxton Hicks?',
+        answer: 'Real contractions follow a regular pattern that gets closer together, longer, and more intense over time — and they do not stop with rest, hydration, or position changes. Braxton Hicks are irregular, do not intensify progressively, and typically ease when you change position, drink water, or lie down. Timing your contractions for one hour is the most reliable at-home test.'
+      },
+      {
+        question: 'When do Braxton Hicks contractions start?',
+        answer: 'Braxton Hicks contractions can begin as early as the second trimester — sometimes from week 20 onward — but most women first notice them between weeks 28 and 32. They tend to become more frequent and noticeable in the third trimester as the uterus grows larger and more sensitive to activity, dehydration, and a full bladder.'
+      },
+      {
+        question: 'Can Braxton Hicks contractions be painful?',
+        answer: 'For most women, Braxton Hicks feel like a tightening or squeezing pressure — uncomfortable but not painful. However, some women, particularly those who have been pregnant before, do experience Braxton Hicks that are genuinely painful. Pain alone does not distinguish them from true labor — the pattern, timing, and whether they stop with rest are what matters.'
+      },
+      {
+        question: 'What triggers Braxton Hicks contractions?',
+        answer: 'Common triggers include dehydration, a full bladder, physical activity, sexual intercourse, someone touching the abdomen, and stress. Drinking a large glass of water, emptying the bladder, and resting often resolves a Braxton Hicks episode within 30 to 60 minutes. True labor contractions are not triggered by these factors and do not resolve with them.'
+      },
+      {
+        question: 'At what point should I go to the hospital for contractions?',
+        answer: 'If you are 37 weeks or more, go to the hospital or call your provider when contractions follow the 5-1-1 rule: contractions every 5 minutes, lasting at least 1 minute each, for at least 1 hour. If you are before 37 weeks and having regular contractions, do not wait — call your provider immediately as this may indicate preterm labor regardless of how the contractions feel.'
+      }
+    ],
+    content: `You are 32 weeks pregnant and your entire abdomen just went hard as a rock. It lasted about 30 seconds and then released. Now you are sitting very still, waiting to see if it happens again, wondering whether you should be calling someone. This is the moment almost every pregnant woman faces — and the uncertainty it creates is completely understandable. Braxton Hicks contractions and true labor contractions can feel deceptively similar, but they behave very differently. Here is how to read what your body is telling you.
+
+## What Are Braxton Hicks Contractions?
+
+Braxton Hicks contractions are irregular, painless or mildly uncomfortable tightenings of the uterine muscle that occur throughout pregnancy, most noticeably in the second and third trimesters. They are named after the English physician John Braxton Hicks, who first described them in 1872. The uterus — a muscle — periodically contracts throughout pregnancy as part of normal uterine activity. These contractions do not cause cervical dilation and do not progress toward labor. They are sometimes called "practice contractions" because they tone the uterine muscle in preparation for delivery, though there is no clinical evidence that they serve a specific preparatory function beyond that.
+
+Most women begin noticing Braxton Hicks between weeks 28 and 32, though they can occur from as early as week 20. They tend to increase in frequency as pregnancy progresses — many women in the final weeks experience them several times per hour during active periods.
+
+## What Triggers Braxton Hicks Contractions?
+
+Understanding what provokes Braxton Hicks helps explain why they can appear so alarming. The most common triggers are **dehydration** — even mild fluid deficit causes the uterus to become more irritable and contract more readily; a **full bladder**, which puts direct pressure on the uterine muscle; **physical activity**, particularly walking, climbing stairs, or carrying heavy loads; **sexual intercourse** or orgasm, both of which can stimulate uterine activity; **someone touching your abdomen**; and **stress or fatigue**. The uterus in late pregnancy is large, well-vascularized, and highly sensitive — it responds to a broad range of stimuli that were irrelevant earlier in pregnancy.
+
+This sensitivity is why the classic first response to a Braxton Hicks episode is effective: drink a large glass of water, empty your bladder, change your position, and rest for 30 minutes. If the contractions ease or stop, Braxton Hicks is almost certainly the explanation.
+
+## What Are True Labor Contractions?
+
+True labor contractions are coordinated uterine muscle contractions driven by the hormone oxytocin that cause progressive cervical dilation and effacement — the thinning and opening of the cervix required for the baby to descend and be born. Unlike Braxton Hicks, true labor contractions follow a pattern. They become progressively longer, stronger, and closer together over time. ACOG describes this as the defining characteristic of true labor: contractions that increase in frequency and intensity rather than remaining irregular and static.
+
+True labor contractions often begin as a low, dull backache or a cramp-like sensation in the lower abdomen — similar to a menstrual cramp — that builds to a peak and then releases. As labor progresses, they become unmistakably intense, demand your full attention, and are not interrupted by rest, hydration, or position changes.
+
+## The 6 Key Differences Between Braxton Hicks and True Labor
+
+Understanding these distinctions clearly will help you make confident decisions throughout the third trimester.
+
+**1. Pattern and regularity.** Braxton Hicks contractions are irregular — they do not follow a consistent interval. You might have three in 20 minutes and then none for two hours. True labor contractions become progressively more regular over time, eventually settling into a rhythm. The interval between them shortens predictably: every 15 minutes, then every 10, then every 7, then every 5.
+
+**2. Duration.** Braxton Hicks contractions tend to last between 15 and 45 seconds and do not get longer over time. True labor contractions begin at around 30 to 45 seconds and lengthen progressively, reaching 60 to 90 seconds at the height of active labor.
+
+**3. Intensity over time.** Braxton Hicks stay roughly the same strength or may feel more intense for a short period before fading. True labor contractions get progressively stronger — the difference between early and active labor contractions is dramatic and unmistakable in retrospect.
+
+**4. Response to activity changes.** This is the most useful at-home test. Braxton Hicks typically change or stop when you change position, walk, rest, drink water, or empty your bladder. True labor contractions continue regardless of what you do. They may be slightly more manageable in certain positions, but they do not stop.
+
+**5. Location.** Braxton Hicks are typically felt across the front of the abdomen — a diffuse tightening. True labor contractions often begin as low back pain or pressure that radiates around to the front, or as a deep, cramping sensation that starts low in the pelvis and spreads upward.
+
+**6. Associated signs.** True labor may be accompanied by the bloody show — a pink or brownish mucus discharge as the cervical plug releases — or rupture of membranes (water breaking). Braxton Hicks are not associated with either. If you notice either of these alongside contractions, call your provider regardless of how the contractions feel.
+
+## How to Time Your Contractions
+
+Timing contractions is the single most useful thing you can do when you are unsure whether you are in labor. Time from the **start** of one contraction to the **start** of the next — this is the interval. Also time the **duration** of each contraction from start to end.
+
+Write down or use a contraction timer app to record: start time, duration, and intensity on a scale of 1 to 10. After 30 to 60 minutes, review the data. If the intervals are irregular and the intensity is flat or decreasing, Braxton Hicks is the likely explanation. If the intervals are shortening, the duration is lengthening, and the intensity is climbing, you are most likely in early labor.
+
+The **5-1-1 rule** is the widely used guideline for first-time mothers: call your provider or go to the hospital when contractions are **5 minutes apart**, lasting at least **1 minute** each, for at least **1 hour** continuously. Women who have given birth before typically use the **7-1-1 rule** — every 7 minutes, lasting 1 minute, for 1 hour — because second and subsequent labors progress faster and waiting for 5-1-1 may not leave adequate time. Confirm the specific guideline your provider recommends at your 36-week appointment.
+
+## Prodromal Labor: The In-Between That Confuses Everyone
+
+Between Braxton Hicks and established labor lies a phenomenon called **prodromal labor** — sometimes called false labor — that deserves specific attention because it is the most common source of confusing hospital trips. Prodromal labor involves contractions that are regular enough to time, uncomfortable enough to interrupt sleep, and persistent enough to feel like the real thing — but that do not cause progressive cervical dilation over hours.
+
+Prodromal labor can last days or even weeks in some women, particularly those carrying posterior babies (where the baby faces the mother's abdomen rather than her spine). The contractions often follow a predictable pattern: they begin in the evening, intensify through the night, and then fade by morning — leaving the woman exhausted and frustrated.
+
+Prodromal labor is not medically dangerous, but it is emotionally and physically draining. The best management is to rest during it as much as possible, stay hydrated, and resist the urge to time contractions compulsively after the first hour tells you they are not establishing a clear progression. If you are unsure, call your provider — that is what they are there for.
+
+## Preterm Labor: When to Act Immediately
+
+The 5-1-1 and 7-1-1 guidelines apply to **term pregnancy** — 37 weeks or beyond. Before 37 weeks, the threshold for contacting your provider is much lower. ACOG recommends calling your provider immediately if you experience **any regular contractions before 37 weeks**, even if they feel mild. Preterm labor can progress quickly and intervention is most effective when it begins early.
+
+Other signs of preterm labor to watch for before 37 weeks include: pelvic pressure or a feeling that the baby is pushing down; a dull, low backache that comes and goes or does not resolve with rest; menstrual-like cramping; a change in vaginal discharge — particularly an increase in watery, mucus-like, or bloody discharge; and a general sense that something is different. You do not need to be certain. When in doubt before 37 weeks, call.
+
+## Common Questions About Braxton Hicks and Labor
+
+### Can Braxton Hicks contractions cause preterm labor?
+
+No. Braxton Hicks contractions do not cause cervical dilation and do not trigger preterm labor. The distinction between benign uterine activity and preterm labor is one of cervical response — not contraction frequency or discomfort. A cervical length measurement by transvaginal ultrasound or a fetal fibronectin swab can help your provider assess true preterm labor risk if you are presenting with concerning symptoms before 37 weeks.
+
+### Is it possible to be in labor and not know it?
+
+Yes, particularly in early labor. Some women dilate to 3 or 4 centimeters with minimal noticeable contractions — they are technically in early labor without feeling it as such. This is more common in women who have given birth before. The cervical exam at your prenatal appointments gives some indication of whether the cervix is beginning to change, which can provide reassuring context.
+
+### Do Braxton Hicks mean labor is close?
+
+Not necessarily. Increased Braxton Hicks frequency in the third trimester reflects a growing, more sensitive uterus — not an imminent labor timeline. Some women have frequent Braxton Hicks from week 30 and do not go into labor until week 41. Others have very few and labor begins quickly. Braxton Hicks do not reliably predict when labor will start.
+
+## When to Call Your Doctor
+
+Call your provider or go to the hospital without delay if you experience any of the following:
+
+- Regular contractions before 37 weeks regardless of intensity — this is a preterm labor emergency until proven otherwise
+- Contractions following the 5-1-1 rule at term (or 7-1-1 if you have given birth before)
+- Rupture of membranes — a gush or steady trickle of fluid from the vagina
+- Bleeding beyond light pink spotting
+- Decreased fetal movement alongside contractions
+- Contractions accompanied by fever above 38°C (100.4°F)
+- Severe headache, vision changes, or upper abdominal pain alongside contractions — these can indicate preeclampsia
+- Any contraction pattern that genuinely concerns you, at any gestation — your provider would always rather hear from you than have you wait
+
+If you are ever unsure whether what you are feeling is Braxton Hicks or true labor, time the contractions for one hour and call your provider. There is no scenario in which calling your midwife or obstetrician to describe your symptoms is the wrong decision.
+
+## Related Tools on SageNest
+
+Knowing exactly where you are in your pregnancy helps contextualize what you are feeling — Braxton Hicks become more frequent and intense in the final weeks, and what is normal at week 36 is different from week 28. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to understand what is typical for your specific week, including when certain symptoms become more common. If you are approaching your due date and tracking labor signs, our [pregnancy due date calculator](/pregnancy-due-date-calculator) helps you confirm your gestational age and understand your term window. For a deeper understanding of healthy weight changes as you move through the third trimester, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) provides a personalized picture of where you are relative to your target range.
+
+## The Bottom Line
+
+Braxton Hicks contractions are a normal, harmless feature of pregnancy from mid-trimester onward — not a warning sign and not a reason to panic. The key to distinguishing them from true labor is not how they feel in isolation, but how they behave over time: whether they are getting longer, stronger, and closer together. Change your position, drink water, empty your bladder, and time what you feel for 30 to 60 minutes. Before 37 weeks, any regular contractions warrant an immediate call to your provider. At term, follow the 5-1-1 rule — and remember that calling your provider when you are unsure is never the wrong choice.
+
+---
+*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*`
+  },
+  {
     slug: 'ovulation-signs-symptoms',
     title: 'Ovulation Signs: 7 Body Signals That Mean You\'re About to Ovulate',
     description: 'Learn the 7 physical signs of ovulation — from cervical mucus to LH surge — and how to use them together to identify your fertile window accurately.',
