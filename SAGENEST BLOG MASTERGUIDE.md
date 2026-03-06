@@ -403,7 +403,14 @@ Before delivering any post, verify every item:
 > Iron requirements nearly double during pregnancy — from 18 mg per day to 27 mg — because your blood volume expands by 40 to 50 percent and the fetus draws heavily on maternal iron stores for its own development. Iron deficiency anemia, which affects approximately 15 to 20 percent of pregnant women in the US, is associated with preterm birth and low birth weight when left unmanaged. Heme iron from animal sources — red meat, poultry, fish — is absorbed at a rate of 15 to 35 percent, making it significantly more bioavailable than the non-heme iron in plant foods like lentils and spinach. To enhance non-heme iron absorption, pair plant-based iron sources with vitamin C-rich foods: a lentil soup with a squeeze of lemon, or spinach with sliced strawberries.
 
 The second version gives the reader specific numbers, explains the mechanism, names the risk, and gives actionable advice — all in one paragraph.
-
 ---
+
+## 17. DON'T REPEAT ANY BLOG WHICH IS ALREADY POSTED
+
+## 18. BLOGS POSTED TILL NOW ARE - 
+ - gestational-diabetes-pregnancy-weight-gain
+ - how-due-dates-are-calculated
+ - ivf-due-date-guide
+ - 
 
 *Last updated: This guide is the master reference for all SageNest blog content. Update it if site tools change, new calculators are added, or clinical guidelines are revised.*
