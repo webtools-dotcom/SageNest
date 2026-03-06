@@ -44,6 +44,10 @@ export async function buildRedirectsContent() {
       `/blog/${slug}/ ${staticTarget} 200`
     ];
   });
+  const blogStaticRewrites = slugs.flatMap((slug) => [
+    `/blog/${slug} /blog/${slug}/index.html 200`,
+    `/blog/${slug}/ /blog/${slug}/index.html 200`
+  ]);
 
   const lines = [
     ...canonicalHostRedirects,
