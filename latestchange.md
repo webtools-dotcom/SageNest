@@ -1,3 +1,20 @@
+## 2026-03-06 (Permanent blog redirect loop fix v2: moved static blog serving off directory paths)
+
+- Updated `scripts/generate-blog-html.mjs` to emit blog static files at `public/blog-static/<slug>.html` instead of directory-based `public/blog/<slug>/index.html`.
+- Updated generated blog rewrite rules in `scripts/redirects-utils.mjs` so both `/blog/<slug>` and `/blog/<slug>/` rewrite to `/blog-static/<slug>.html`.
+- Updated `scripts/check-redirects.mjs` to validate the new terminal target (`/blog-static/<slug>.html`) and fail if any legacy `/blog/<slug>/index.html` redirect rules are present.
+- Updated `scripts/check-blog-static-sync.mjs` to validate new static output location and corresponding rewrite expectations.
+- Updated README indexing section to document the new loop-safe blog-static strategy.
+- Why: production was still looping between `/blog/<slug>` and `/blog/<slug>/` (308/301) due directory slash normalization interplay; serving blog HTML from non-directory targets removes that class of loop entirely.
+
+## 2026-03-06 (Permanent blog redirect loop fix: removed self-rewrite rules)
+
+- Updated `scripts/redirects-utils.mjs` so generated blog rewrite rules now include only `/blog/<slug>` and `/blog/<slug>/` to `/blog/<slug>/index.html` with `200`, and no longer generate `/blog/<slug>/index.html -> /blog/<slug>/index.html` self-rewrites.
+- Hardened `scripts/check-redirects.mjs` to fail if any rule is generated for `/blog/<slug>/index.html`, preventing future source-equals-target rewrite regressions from being merged.
+- Regenerated `public/_redirects` and confirmed blog rewrite output now has 2 rules per slug (without index self-rewrite).
+- Updated `README.md` indexing/redirect documentation to reflect the loop-safe blog rewrite strategy and remove contradictory duplicate guidance.
+- Why: Cloudflare can re-process self-rewrite rules and create recurring `ERR_TOO_MANY_REDIRECTS` on blog URLs after redirect updates; this change removes that trigger and adds a guardrail check.
+
 ## 2026-03-06 (Centralized canonical redirect generation for host + trailing slash)
 
 - Updated `scripts/redirects-utils.mjs` to centrally generate canonical redirect rules instead of manual one-off edits, including a permanent host redirect from `https://www.sagenesthealth.com/*` to `https://sagenesthealth.com/:splat`.
@@ -579,4 +596,3 @@
 
 - Kept the `Exact Repository Worktree Structure` section in `README.md` and added a short note explaining to re-sync the branch from latest `main` if the section appears missing.
 - Why: this prevents accidental manual copy-paste drift when a local branch is behind and does not yet include the merged README structure section.
-

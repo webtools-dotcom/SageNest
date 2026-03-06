@@ -16,20 +16,20 @@ const sitemapLocs = new Set(extractLocsFromSitemap(sitemapXml));
 const errors = [];
 
 for (const slug of slugs) {
-  const staticPath = join(ROOT, 'public', 'blog', slug, 'index.html');
+  const staticPath = join(ROOT, 'public', 'blog-static', `${slug}.html`);
   const canonicalUrl = `https://sagenesthealth.com/blog/${slug}`;
 
   if (!existsSync(staticPath)) {
-    errors.push(`Missing static file: public/blog/${slug}/index.html`);
+    errors.push(`Missing static file: public/blog-static/${slug}.html`);
     continue;
   }
 
   const html = readFileSync(staticPath, 'utf8');
   if (!html.includes(`<link rel="canonical" href="${canonicalUrl}" />`)) {
-    errors.push(`Canonical tag mismatch in public/blog/${slug}/index.html`);
+    errors.push(`Canonical tag mismatch in public/blog-static/${slug}.html`);
   }
 
-  if (!redirects.includes(`/blog/${slug} /blog/${slug}/index.html 200`)) {
+  if (!redirects.includes(`/blog/${slug} /blog-static/${slug}.html 200`)) {
     errors.push(`Missing static rewrite rule for /blog/${slug} in public/_redirects`);
   }
 
