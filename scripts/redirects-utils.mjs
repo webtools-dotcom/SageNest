@@ -37,11 +37,13 @@ export async function buildRedirectsContent() {
   const slugs = await loadBlogSlugs();
   const legacyBlogRedirects = slugs.map((slug) => `/${slug} /blog/${slug} 301`);
   const trailingSlashRedirects = buildTrailingSlashRedirects();
-  const blogStaticRewrites = slugs.flatMap((slug) => [
-    `/blog/${slug} /blog/${slug}/index.html 200`,
-    `/blog/${slug}/ /blog/${slug}/index.html 200`,
-    `/blog/${slug}/index.html /blog/${slug}/index.html 200`
-  ]);
+  const blogStaticRewrites = slugs.flatMap((slug) => {
+    const staticTarget = `/blog-static/${slug}.html`;
+    return [
+      `/blog/${slug} ${staticTarget} 200`,
+      `/blog/${slug}/ ${staticTarget} 200`
+    ];
+  });
 
   const lines = [
     ...canonicalHostRedirects,

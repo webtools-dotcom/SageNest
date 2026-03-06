@@ -294,11 +294,11 @@ const styleBlock = buildStaticStyle(tokens);
 console.log(`Generating static HTML for ${posts.length} blog posts...`);
 
 for (const post of posts) {
-  const dir = join(ROOT, 'public', 'blog', post.slug);
+  const dir = join(ROOT, 'public', 'blog-static');
   mkdirSync(dir, { recursive: true });
   const html = buildPostHtml(post, styleBlock);
-  writeFileSync(join(dir, 'index.html'), html, 'utf8');
-  console.log(`  ✓ public/blog/${post.slug}/index.html`);
+  writeFileSync(join(dir, `${post.slug}.html`), html, 'utf8');
+  console.log(`  ✓ public/blog-static/${post.slug}.html`);
 }
 
 console.log('Done.');
