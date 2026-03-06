@@ -1,3 +1,11 @@
+## 2026-03-06 (Centralized canonical redirect generation for host + trailing slash)
+
+- Updated `scripts/redirects-utils.mjs` to centrally generate canonical redirect rules instead of manual one-off edits, including a permanent host redirect from `https://www.sagenesthealth.com/*` to `https://sagenesthealth.com/:splat`.
+- Added generated 301 trailing-slash canonicalization rules for non-root app routes (`/path/ -> /path`) while preserving existing blog static `200` rewrite trio behavior for `/blog/<slug>` paths.
+- Regenerated `public/_redirects` via project scripts and kept rule order so canonical redirects remain above the final SPA fallback rewrite.
+- Re-ran `scripts/check-redirects.mjs` and confirmed no conflict/cycle regressions before deploy.
+- Why: this makes canonical normalization deterministic and maintainable in one generator source, while keeping Cloudflare blog rewrite behavior loop-safe.
+
 ## 2026-03-06 (SEOHead metadata added to Pregnancy Week-by-Week hub)
 
 - Updated `src/pages/PregnancyWeekByWeekHub.tsx` to import and render `SEOHead` at the top of the page root with a unique hub-specific title, description, and canonical path (`/pregnancy-week-by-week`).
