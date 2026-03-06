@@ -84,8 +84,8 @@ function validateBlogRedirects(sourceToRules, slugs) {
   const errors = [];
 
   for (const slug of slugs) {
-    const forms = [`/blog/${slug}`, `/blog/${slug}/`, `/blog/${slug}/index.html`];
-    const expectedTerminalTarget = `/blog/${slug}/index.html`;
+    const forms = [`/blog/${slug}`, `/blog/${slug}/`];
+    const expectedTerminalTarget = `/blog-static/${slug}.html`;
 
     for (const source of forms) {
       const sourceRules = sourceToRules.get(source) ?? [];
@@ -163,6 +163,14 @@ function validateBlogRedirects(sourceToRules, slugs) {
       if (!resolved && depth >= 20) {
         errors.push(`Redirect resolution exceeded depth limit for slug "${slug}" from ${source}.`);
       }
+    }
+
+    const legacyIndexPath = `/blog/${slug}/index.html`;
+    const legacyIndexRules = sourceToRules.get(legacyIndexPath) ?? [];
+    if (legacyIndexRules.length > 0) {
+      errors.push(
+        `Unexpected legacy rule for ${legacyIndexPath}. Blog rewrites must target /blog-static/<slug>.html only. Found: ${legacyIndexRules.map(formatRule).join(' | ')}`
+      );
     }
   }
 
