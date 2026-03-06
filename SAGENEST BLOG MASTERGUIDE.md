@@ -407,10 +407,17 @@ The second version gives the reader specific numbers, explains the mechanism, na
 
 ## 17. DON'T REPEAT ANY BLOG WHICH IS ALREADY POSTED
 
+
 ## 18. BLOGS POSTED TILL NOW ARE - 
  - gestational-diabetes-pregnancy-weight-gain
  - how-due-dates-are-calculated
  - ivf-due-date-guide
- - 
+ - morning-sickness-remedies-that-actually-work
+ - pregnancy-weight-gain-myths-facts
+ - pregnancy-nutrition-guide-what-to-eat-each-trimester
+ - healthy-pregnancy-weight-gain-complete-guide
+ - pregnancy-week-by-week-milestones
+ - ovulation-signs-symptoms
+  
 
 *Last updated: This guide is the master reference for all SageNest blog content. Update it if site tools change, new calculators are added, or clinical guidelines are revised.*
