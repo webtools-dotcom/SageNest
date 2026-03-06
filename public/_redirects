@@ -1,3 +1,4 @@
+https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /due-date-calculator /pregnancy-due-date-calculator 301
 /pregnancy-calculator /pregnancy-due-date-calculator 301
 /pregnancy-due-date /pregnancy-due-date-calculator 301
@@ -15,6 +16,16 @@
 /pregnancy-week-by-week-milestones /blog/pregnancy-week-by-week-milestones 301
 /ivf-due-date-guide /blog/ivf-due-date-guide 301
 /how-due-dates-are-calculated /blog/how-due-dates-are-calculated 301
+/pregnancy-due-date-calculator/ /pregnancy-due-date-calculator 301
+/blog/ /blog 301
+/admin/login/ /admin/login 301
+/admin/blogposter/ /admin/blogposter 301
+/about/ /about 301
+/privacy/ /privacy 301
+/pregnancy-weight-gain-calculator/ /pregnancy-weight-gain-calculator 301
+/pregnancy-week-by-week/ /pregnancy-week-by-week 301
+/ovulation-calculator/ /ovulation-calculator 301
+/similar-tools/ /similar-tools 301
 /blog/braxton-hicks-vs-real-contractions /blog/braxton-hicks-vs-real-contractions/index.html 200
 /blog/braxton-hicks-vs-real-contractions/ /blog/braxton-hicks-vs-real-contractions/index.html 200
 /blog/braxton-hicks-vs-real-contractions/index.html /blog/braxton-hicks-vs-real-contractions/index.html 200
