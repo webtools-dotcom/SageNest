@@ -84,7 +84,8 @@ function validateBlogRedirects(sourceToRules, slugs) {
   const errors = [];
 
   for (const slug of slugs) {
-    const forms = [`/blog/${slug}`, `/blog/${slug}/`, `/blog/${slug}/index.html`];
+    const canonicalIndexPath = `/blog/${slug}/index.html`;
+    const forms = [`/blog/${slug}`, `/blog/${slug}/`];
     const expectedTerminalTarget = `/blog/${slug}/index.html`;
 
     for (const source of forms) {
@@ -163,6 +164,13 @@ function validateBlogRedirects(sourceToRules, slugs) {
       if (!resolved && depth >= 20) {
         errors.push(`Redirect resolution exceeded depth limit for slug "${slug}" from ${source}.`);
       }
+    }
+
+    const canonicalIndexRules = sourceToRules.get(canonicalIndexPath) ?? [];
+    if (canonicalIndexRules.length > 0) {
+      errors.push(
+        `Unexpected rule for ${canonicalIndexPath}. Avoid source==target rewrites; let static file serving handle index.html directly. Found: ${canonicalIndexRules.map(formatRule).join(' | ')}`
+      );
     }
   }
 

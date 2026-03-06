@@ -39,8 +39,7 @@ export async function buildRedirectsContent() {
   const trailingSlashRedirects = buildTrailingSlashRedirects();
   const blogStaticRewrites = slugs.flatMap((slug) => [
     `/blog/${slug} /blog/${slug}/index.html 200`,
-    `/blog/${slug}/ /blog/${slug}/index.html 200`,
-    `/blog/${slug}/index.html /blog/${slug}/index.html 200`
+    `/blog/${slug}/ /blog/${slug}/index.html 200`
   ]);
 
   const lines = [
