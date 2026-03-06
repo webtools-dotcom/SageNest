@@ -1,3 +1,9 @@
+## 2026-03-06 (SEOHead metadata added to Pregnancy Week-by-Week hub)
+
+- Updated `src/pages/PregnancyWeekByWeekHub.tsx` to import and render `SEOHead` at the top of the page root with a unique hub-specific title, description, and canonical path (`/pregnancy-week-by-week`).
+- Added hub-specific JSON-LD with a `CollectionPage` node and an `ItemList` node that enumerates weeks 1 through 40 using canonical week-detail URLs.
+- Why: this aligns the hub with existing route-page SEO patterns and strengthens indexing clarity between the hub page and individual week detail pages.
+
 ## 2026-03-06 (Added Braxton Hicks vs real contractions blog post)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `braxton-hicks-vs-real-contractions`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and the full long-form markdown content.

@@ -4,6 +4,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { SEOHead } from "../components/SEOHead";
 import { pregnancyWeeks } from "../data/pregnancyWeeks";
 
 const HUB_STYLES = `
@@ -727,8 +728,42 @@ export default function PregnancyWeekByWeekHub() {
   const trimester2 = pregnancyWeeks.filter((w) => w.trimester === 2);
   const trimester3 = pregnancyWeeks.filter((w) => w.trimester === 3);
 
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Pregnancy Week-by-Week Hub",
+      description:
+        "Explore all 40 weeks of pregnancy with a trimester-organized hub covering baby development, body changes, and key milestones.",
+      url: "https://sagenesthealth.com/pregnancy-week-by-week",
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: "Pregnancy Week Guides",
+      itemListOrder: "https://schema.org/ItemListOrderAscending",
+      numberOfItems: 40,
+      itemListElement: Array.from({ length: 40 }, (_, index) => {
+        const week = index + 1;
+        return {
+          "@type": "ListItem",
+          position: week,
+          name: `Pregnancy Week ${week}`,
+          url: `https://sagenesthealth.com/pregnancy-week-by-week/week-${week}`,
+        };
+      }),
+    },
+  ];
+
   return (
     <div className="pwb-hub">
+      <SEOHead
+        title="Pregnancy Week-by-Week Hub: 40-Week Trimester Guide"
+        description="Browse all 40 pregnancy weeks in one place with trimester breakdowns, milestone check-ins, and direct links to each weekly guide."
+        canonicalPath="/pregnancy-week-by-week"
+        jsonLd={jsonLd}
+      />
+
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="pwb-hero" aria-label="Pregnancy week by week guide">
         <div className="pwb-hero-grain" aria-hidden="true" />
