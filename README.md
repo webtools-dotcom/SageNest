@@ -153,10 +153,10 @@ Blog redirect/rewrite entries in `public/_redirects` are generated from `src/dat
 ### Sitemap and indexing
 
 - `src/data/blogPosts.ts` is the source of truth for blog content and slug metadata (`updatedAt`, optional `imageUrl`).
-- `public/blog/<slug>/index.html` is generated from that source via `npm run generate:blog`.
+- `public/blog-static/<slug>.html` is generated from that source via `npm run generate:blog`.
 - `public/sitemap.xml` is generated from route sources (`src/data/tools.ts`, fixed routes, week-1..40, and blog slugs from `blogPosts.ts`, with optional Supabase merge when enabled).
-- `public/_redirects` blog rules are generated from the same slug source and intentionally include only two `200` rewrites per slug: `/blog/<slug>` and `/blog/<slug>/` to `/blog/<slug>/index.html`.
-- No rewrite rule is generated for `/blog/<slug>/index.html` itself (source equals target) to avoid Cloudflare re-processing loops that can produce `ERR_TOO_MANY_REDIRECTS`.
+- `public/_redirects` blog rules are generated from the same slug source and intentionally include only two `200` rewrites per slug: `/blog/<slug>` and `/blog/<slug>/` to `/blog-static/<slug>.html`.
+- Blog HTML is served from the dedicated `blog-static` path to avoid Cloudflare directory slash normalization loops (`/blog/<slug>` ⇄ `/blog/<slug>/`).
 - `npm run check:sitemap` and `npm run check:blog-sync` fail when sitemap/redirect/static blog outputs diverge from source content.
 - `public/robots.txt` allows all crawlers and references sitemap.
 
