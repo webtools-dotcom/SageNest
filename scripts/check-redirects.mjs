@@ -86,6 +86,9 @@ function validateBlogRedirects(sourceToRules, slugs) {
   for (const slug of slugs) {
     const forms = [`/blog/${slug}`, `/blog/${slug}/`];
     const expectedTerminalTarget = `/blog-static/${slug}.html`;
+    const canonicalIndexPath = `/blog/${slug}/index.html`;
+    const forms = [`/blog/${slug}`, `/blog/${slug}/`];
+    const expectedTerminalTarget = `/blog/${slug}/index.html`;
 
     for (const source of forms) {
       const sourceRules = sourceToRules.get(source) ?? [];
@@ -170,6 +173,10 @@ function validateBlogRedirects(sourceToRules, slugs) {
     if (legacyIndexRules.length > 0) {
       errors.push(
         `Unexpected legacy rule for ${legacyIndexPath}. Blog rewrites must target /blog-static/<slug>.html only. Found: ${legacyIndexRules.map(formatRule).join(' | ')}`
+    const canonicalIndexRules = sourceToRules.get(canonicalIndexPath) ?? [];
+    if (canonicalIndexRules.length > 0) {
+      errors.push(
+        `Unexpected rule for ${canonicalIndexPath}. Avoid source==target rewrites; let static file serving handle index.html directly. Found: ${canonicalIndexRules.map(formatRule).join(' | ')}`
       );
     }
   }

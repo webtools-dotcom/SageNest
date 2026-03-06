@@ -40,6 +40,8 @@ export async function buildRedirectsContent() {
   const blogStaticRewrites = slugs.flatMap((slug) => [
     `/blog/${slug} /blog-static/${slug}.html 200`,
     `/blog/${slug}/ /blog-static/${slug}.html 200`
+    `/blog/${slug} /blog/${slug}/index.html 200`,
+    `/blog/${slug}/ /blog/${slug}/index.html 200`
   ]);
 
   const lines = [
