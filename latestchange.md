@@ -1,3 +1,9 @@
+## 2026-03-07 (Added pregnancy swelling edema warning-sign blog post)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `pregnancy-swelling-edema-normal-vs-warning-sign`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and the full long-form markdown content provided for publication.
+- Regenerated blog publishing artifacts so this post is included in static and indexing outputs: `public/blog-static/pregnancy-swelling-edema-normal-vs-warning-sign.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: this publishes the newly requested pregnancy edema education article and keeps newest content first in feed/index ordering while maintaining static blog, redirect, and sitemap sync guarantees.
+
 ## 2026-03-06 (Merge-safe redirect generator hardening to prevent duplicate declaration CI failures)
 
 - Updated `scripts/redirects-utils.mjs` to inline blog static rewrite generation directly inside the `lines` array instead of declaring a separate `blogStaticRewrites` constant.

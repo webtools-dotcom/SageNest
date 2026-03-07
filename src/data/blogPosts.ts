@@ -11,6 +11,144 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'pregnancy-swelling-edema-normal-vs-warning-sign',
+    title: 'Pregnancy Swelling (Edema): What\'s Normal and What\'s a Warning Sign',
+    description: 'Pregnancy swelling affects 80% of women. Learn which edema is normal, which signals preeclampsia, and practical ways to reduce swelling safely.',
+    readingTime: '10 min read',
+    updatedAt: '2026-03-07',
+    faq: [
+      {
+        question: 'Is swelling in pregnancy normal?',
+        answer: 'Yes — mild to moderate swelling of the feet, ankles, and lower legs is normal in pregnancy and affects approximately 80 percent of women. It is caused by increased blood volume, the growing uterus compressing pelvic veins, and the hormone progesterone relaxing blood vessel walls. Normal swelling is typically symmetrical, worst at the end of the day, and improves with elevation and rest.'
+      },
+      {
+        question: 'What does swelling from preeclampsia feel like vs normal pregnancy swelling?',
+        answer: 'Preeclampsia-related swelling comes on suddenly rather than gradually, affects the face and hands — not just the feet and ankles — and does not improve with rest or elevation. It is accompanied by other signs including high blood pressure, severe headache, vision changes, or upper abdominal pain. Normal pregnancy edema is gradual, confined mainly to the lower extremities, and noticeably better in the morning after sleeping with your legs elevated.'
+      },
+      {
+        question: 'When does pregnancy swelling start and end?',
+        answer: 'Most women begin noticing swelling between weeks 22 and 27 as blood volume and uterine size increase. It typically peaks in the third trimester and worsens in the final weeks. For the majority of women, swelling resolves within the first week after delivery as the body eliminates the excess fluid through increased urination and sweating — a process that can feel dramatic in the first few postpartum days.'
+      },
+      {
+        question: 'What can I do to reduce pregnancy swelling?',
+        answer: 'The most effective strategies are elevating your feet above heart level for 20 to 30 minutes several times a day, wearing compression socks put on before getting out of bed in the morning, avoiding long periods of standing or sitting, staying well hydrated, and reducing sodium intake. Counterintuitively, drinking more water — not less — helps the kidneys flush retained fluid. Swimming or water aerobics provides temporary relief by the hydrostatic pressure of water pushing fluid back into circulation.'
+      },
+      {
+        question: 'Can swelling harm my baby?',
+        answer: 'Normal physiological edema does not harm the baby. It is a direct result of the increased blood volume that supports fetal development. However, swelling that is sudden, severe, or asymmetrical — or that occurs alongside high blood pressure, protein in the urine, or headaches — can indicate preeclampsia, which does affect placental blood flow and fetal growth if untreated. This distinction is why any sudden or severe swelling warrants a prompt call to your provider.'
+      }
+    ],
+    content: `Your feet barely fit into your shoes by 4pm. Your ankles look like they belong to someone twice your size. You push a finger into the skin on your shin and watch the indentation stay for several seconds before slowly filling back in. Pregnancy swelling is one of those symptoms that looks alarming and feels uncomfortable enough to warrant a call to your provider — but is, in the vast majority of cases, a completely normal consequence of the extraordinary physiological changes your body is managing. The critical skill is knowing which swelling is benign and which is your body signalling something that needs immediate attention.
+
+## What Is Pregnancy Edema?
+
+**Edema** is the medical term for fluid retention in the body's tissues. During pregnancy, mild to moderate edema — particularly in the lower legs, ankles, and feet — is a normal physiological finding that affects approximately 80 percent of pregnant women. It is not a disease. It is a predictable consequence of the changes your circulatory system undergoes to support a growing pregnancy.
+
+The fluid that accumulates in the tissues comes from your blood plasma. As blood volume expands by 40 to 50 percent during pregnancy, the pressure inside blood vessel walls increases. This causes more fluid to leak from the capillaries into the surrounding tissues than can be efficiently reabsorbed. Gravity pulls this excess fluid downward — which is why the feet and ankles are affected first and most severely.
+
+## Why Pregnancy Increases Fluid Retention
+
+Several mechanisms contribute simultaneously to pregnancy edema, which is why it tends to worsen as pregnancy progresses.
+
+**Expanded blood volume.** The body produces significantly more blood during pregnancy to supply the placenta, nourish the fetus, and prepare reserves for delivery blood loss. This expanded volume increases hydrostatic pressure in blood vessels throughout the body, driving more fluid into the surrounding tissues.
+
+**Uterine compression of pelvic veins.** As the uterus grows, it presses on the inferior vena cava — the large vein that returns blood from the lower body to the heart — as well as on the pelvic veins draining the legs. This compression slows venous return, causing blood to pool in the lower extremities and increasing the amount of fluid that leaks into tissues. This is why swelling is dramatically worse when standing for long periods, in warm weather, and toward the end of the day.
+
+**Progesterone and relaxin effects.** Both progesterone and relaxin — hormones that rise substantially during pregnancy — relax the smooth muscle in blood vessel walls, making them more permeable and less efficient at maintaining fluid within the vascular system.
+
+**Reduced colloid osmotic pressure.** Plasma albumin — the protein that helps hold fluid inside blood vessels by osmotic pressure — is diluted as blood volume expands. This lower concentration means vessels are less effective at pulling leaked fluid back in from the tissues.
+
+## Normal Pregnancy Swelling: What It Looks Like
+
+Normal physiological edema has recognizable characteristics that distinguish it from swelling that warrants concern. Understanding these helps you assess what you are experiencing without unnecessary alarm.
+
+Normal pregnancy swelling is **gradual in onset** — it builds slowly over days and weeks rather than appearing suddenly overnight. It is **symmetrical** — both feet and ankles swell to a similar degree. It is **worst in the evening** after a day of being upright and improves noticeably overnight after sleeping with your legs elevated. It is **concentrated in the lower extremities** — feet, ankles, and lower legs — with only mild puffiness in the hands for some women. It is **not accompanied by other symptoms** — no headache, no visual disturbance, no pain in the upper abdomen, no shortness of breath beyond what is typical for your stage of pregnancy.
+
+Pitting edema — where pressing a finger into the skin leaves a temporary indentation — is common in normal pregnancy and is not in itself a warning sign. It simply reflects how much fluid is present in the subcutaneous tissues.
+
+## What Worsens Normal Swelling
+
+Recognizing your swelling triggers gives you practical control over the symptom, even if you cannot eliminate it entirely.
+
+**Heat** causes blood vessels to dilate, increasing fluid leakage into tissues. Swelling is reliably worse in summer, in hot climates, and after warm showers or baths. **Prolonged standing or sitting** without movement allows fluid to pool in the lower legs without the pumping action of the calf muscles to push it back upward. **High sodium intake** increases fluid retention by drawing and holding water in the tissues — processed foods, restaurant meals, and salty snacks are the most significant contributors. **Long travel** — particularly flights — combines immobility, low humidity, and reduced circulation in a way that reliably worsens edema.
+
+## Effective Strategies to Reduce Pregnancy Swelling
+
+None of these strategies eliminate normal pregnancy edema entirely — nor should they, since the underlying cause is physiological. But several have meaningful evidence or strong clinical consensus behind them.
+
+**Elevation.** Raising your feet above the level of your heart — lying on your back or side with pillows stacked under your legs — allows gravity to work in reverse, drawing fluid back toward the central circulation. Twenty to thirty minutes of elevation, two to three times a day, produces a noticeable reduction in ankle swelling for most women. This is one of the most effective strategies available.
+
+**Compression socks or stockings.** Medical-grade compression socks — ideally 15 to 20 mmHg — provide external pressure that counteracts the hydrostatic pressure driving fluid into the tissues. The critical technique is to put them on before getting out of bed in the morning, before gravity has drawn fluid back into the lower legs. Once swelling has built up during the day, putting compression socks on is considerably less effective.
+
+**Hydration.** This is the most counterintuitive recommendation, but it is correct: drinking more water — not less — reduces pregnancy edema. When the body is mildly dehydrated, it responds by retaining more fluid as a protective mechanism. Adequate hydration — the WHO recommends at least 2.3 liters of total fluid per day during pregnancy — signals to the kidneys that fluid is plentiful, allowing them to excrete more rather than hoard it.
+
+**Movement.** The calf muscle acts as a venous pump — every time you contract it by walking or flexing your foot, it squeezes blood upward through the veins toward the heart. Even brief walks every 30 to 60 minutes during prolonged sitting or standing measurably reduces lower extremity pooling. Swimming and water aerobics are particularly effective because the hydrostatic pressure of water surrounding the legs temporarily compresses the tissues and pushes fluid back into circulation.
+
+**Sodium reduction.** Reducing high-sodium foods — particularly processed and restaurant food — lowers the osmotic pull that retains fluid in the tissues. This does not mean eliminating sodium, which is an essential mineral, but replacing processed sources with whole foods meaningfully reduces overall intake without special effort.
+
+**Left-side sleeping.** Sleeping on the left side reduces pressure on the inferior vena cava, improving venous return from the lower body and reducing the fluid pooling that worsens overnight if you sleep on your back or right side.
+
+## Swelling That Is a Warning Sign: Preeclampsia
+
+The reason pregnancy swelling receives disproportionate attention in prenatal care is that one of its patterns — sudden, severe, or widespread edema — is associated with **preeclampsia**, a serious pregnancy complication affecting 5 to 8 percent of pregnancies, according to ACOG.
+
+Preeclampsia is a condition characterized by new-onset high blood pressure after 20 weeks of pregnancy, typically accompanied by protein in the urine (proteinuria) or other organ involvement. Left unmanaged, it can progress to eclampsia (seizures), HELLP syndrome (a liver and blood clotting disorder), placental abruption, and severe fetal growth restriction. It is one of the leading causes of maternal and perinatal mortality worldwide.
+
+The swelling associated with preeclampsia is **qualitatively different** from normal pregnancy edema in several key ways. It comes on **suddenly** rather than building gradually. It affects the **face and hands** prominently — particularly puffiness around the eyes in the morning or swollen, ring-tightening fingers — not just the lower legs. It does **not improve with rest and elevation** overnight. And critically, it occurs alongside other symptoms: a persistent, severe headache that does not respond to acetaminophen; visual disturbances including blurred vision, seeing spots or flashing lights, or temporary vision loss; upper abdominal pain or tenderness, particularly on the right side below the ribs; and nausea or vomiting that appears suddenly in the third trimester after a symptom-free second trimester.
+
+Any one of these additional symptoms alongside new swelling is a reason to seek evaluation that day — not tomorrow, and not after seeing if it improves. Blood pressure measurement is the first and most accessible screening step.
+
+## Asymmetrical Swelling: A Separate Concern
+
+**One-sided leg swelling** — where one leg is noticeably more swollen than the other, particularly if it is red, warm, or tender — is a different concern entirely and requires urgent evaluation. These findings suggest **deep vein thrombosis (DVT)**, a blood clot in the deep veins of the leg. Pregnancy increases DVT risk by 4 to 5 times compared to non-pregnant women of the same age, according to the CDC, due to increased clotting factors, decreased mobility, and compression of pelvic veins.
+
+DVT requires immediate medical assessment because a clot can dislodge and travel to the lungs, causing a pulmonary embolism — a life-threatening emergency. Do not take a wait-and-see approach with unilateral leg swelling.
+
+## Common Questions About Pregnancy Swelling
+
+### Can I take diuretics to reduce pregnancy swelling?
+
+Diuretics (water pills) are not recommended for normal pregnancy edema. While they reduce fluid volume, they do so by also contracting the blood plasma volume — which reduces placental blood flow and can compromise fetal nutrition and oxygenation. ACOG does not recommend diuretics for physiological pregnancy edema. If a provider prescribes them, it is for a specific condition such as gestational hypertension or cardiac complications — not for routine swollen ankles.
+
+### Does swelling mean I am retaining too much weight?
+
+Not necessarily. A meaningful portion of the weight gained in the third trimester is fluid — and fluid retained in tissues is temporarily reflected on the scale. It is normal for weight to appear to increase more rapidly in the final weeks due to edema, and much of this resolves rapidly after delivery. Use our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) to understand your overall trajectory, keeping in mind that week-to-week fluctuations of 1 to 2 kg are normal in late pregnancy due to fluid shifts.
+
+### Will swelling get worse right after delivery?
+
+For some women, swelling actually increases in the first 24 to 48 hours after delivery before it begins to resolve. This is because the body mobilizes fluid that was in the tissues back into the circulation during the immediate postpartum period, before the kidneys can excrete it. It is normal to sweat heavily and urinate very frequently in the first week postpartum — this is the body efficiently eliminating the excess fluid it accumulated over nine months.
+
+## When to Call Your Doctor
+
+Contact your provider the same day if you notice:
+
+- Sudden swelling of the face, especially around the eyes in the morning
+- Swelling of the hands severe enough that rings no longer fit or fingers feel numb
+- Any swelling accompanied by a severe persistent headache not relieved by acetaminophen
+- Visual disturbances alongside swelling: blurred vision, flashing lights, or spots
+- Pain in the upper right abdomen or under the ribs alongside swelling
+- Swelling that came on suddenly rather than building gradually over days
+
+Go to emergency evaluation immediately if you experience:
+
+- One leg significantly more swollen than the other, particularly if red, warm, or tender — this is a DVT emergency
+- Sudden severe facial or whole-body swelling with headache and visual changes — this may indicate severe preeclampsia
+- Swelling accompanied by chest pain or shortness of breath beyond what is normal for your stage of pregnancy
+
+If you are in any doubt, call your provider or maternity unit. A blood pressure check and urine dipstick take minutes and can definitively rule out the serious causes of pregnancy swelling. There is no such thing as calling too soon when it comes to sudden or facial swelling in pregnancy.
+
+## Related Tools on SageNest
+
+Swelling tends to peak in the third trimester and is closely connected to where you are in your pregnancy — what is normal at week 36 differs from week 22. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) helps you understand what physical changes are typical for your current week and what symptoms are worth tracking. Since third-trimester fluid retention can cause rapid apparent weight gain, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) can help you interpret your trajectory in the context of your BMI and stage of pregnancy. If you are also navigating early pregnancy symptoms alongside swelling concerns, our post on [morning sickness remedies](/blog/morning-sickness-remedies-that-actually-work) covers the broader picture of first- and early second-trimester symptom management.
+
+## The Bottom Line
+
+Pregnancy swelling is overwhelmingly normal — a direct consequence of the remarkable circulatory expansion your body undergoes to support your baby. The strategies that genuinely help are elevation, compression socks worn from the moment you get up, adequate hydration, movement breaks, and reducing processed sodium. What distinguishes routine edema from something requiring urgent attention is its pattern: sudden onset, facial or hand involvement, lack of improvement with rest, and the presence of any accompanying symptoms — headache, visual changes, upper abdominal pain. If the swelling fits the normal pattern, manage it and rest. If it does not, call your provider the same day. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to stay informed about what your body is doing right now — and to know what to watch for in the weeks ahead.
+
+---
+*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*`
+  },
+  {
     slug: 'braxton-hicks-vs-real-contractions',
     title: 'Braxton Hicks vs Real Contractions: How to Tell the Difference',
     description: 'Braxton Hicks contractions feel alarming but are harmless. Learn the 6 key differences between practice contractions and true labor — and exactly when to call your provider.',
