@@ -418,6 +418,6 @@ The second version gives the reader specific numbers, explains the mechanism, na
  - healthy-pregnancy-weight-gain-complete-guide
  - pregnancy-week-by-week-milestones
  - ovulation-signs-symptoms
-  
+ - braxton-hicks-vs-real-contractions 
 
 *Last updated: This guide is the master reference for all SageNest blog content. Update it if site tools change, new calculators are added, or clinical guidelines are revised.*
