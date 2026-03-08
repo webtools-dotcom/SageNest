@@ -50,7 +50,7 @@ export const BlogList = () => {
   return (
     <main id="main-content" className="container">
       <SEOHead title="Pregnancy & Due Date Guides" description="Evidence-aware pregnancy planning guides from SageNest." canonicalPath="/blog" jsonLd={jsonLd} />
-      <h1>Pregnancy & Due Date Guides — SageNest</h1>
+      <h1>Daily Pregnancy Guides & Women's Health Tips</h1>
       <div className="blog-grid">
         {posts.map((post) => (
           <article key={post.id ?? post.slug} className="blog-card">
