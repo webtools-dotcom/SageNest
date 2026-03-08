@@ -6,6 +6,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /week-by-week-pregnancy /pregnancy-week-by-week 301
 /ovulation /ovulation-calculator 301
 /fertility-calculator /ovulation-calculator 301
+/pregnancy-headaches-causes-safe-relief-red-flags /blog/pregnancy-headaches-causes-safe-relief-red-flags 301
 /pregnancy-swelling-edema-normal-vs-warning-sign /blog/pregnancy-swelling-edema-normal-vs-warning-sign 301
 /braxton-hicks-vs-real-contractions /blog/braxton-hicks-vs-real-contractions 301
 /ovulation-signs-symptoms /blog/ovulation-signs-symptoms 301
@@ -27,6 +28,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /pregnancy-week-by-week/ /pregnancy-week-by-week 301
 /ovulation-calculator/ /ovulation-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/pregnancy-headaches-causes-safe-relief-red-flags /blog-static/pregnancy-headaches-causes-safe-relief-red-flags.html 200
+/blog/pregnancy-headaches-causes-safe-relief-red-flags/ /blog-static/pregnancy-headaches-causes-safe-relief-red-flags.html 200
 /blog/pregnancy-swelling-edema-normal-vs-warning-sign /blog-static/pregnancy-swelling-edema-normal-vs-warning-sign.html 200
 /blog/pregnancy-swelling-edema-normal-vs-warning-sign/ /blog-static/pregnancy-swelling-edema-normal-vs-warning-sign.html 200
 /blog/braxton-hicks-vs-real-contractions /blog-static/braxton-hicks-vs-real-contractions.html 200

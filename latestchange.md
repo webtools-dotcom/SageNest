@@ -1,3 +1,9 @@
+## 2026-03-08 (Added pregnancy headaches causes safe relief red-flags blog post)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `pregnancy-headaches-causes-safe-relief-red-flags`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and the full long-form markdown content provided for publication.
+- Regenerated blog publishing artifacts so this post is included in static and indexing outputs: `public/blog-static/pregnancy-headaches-causes-safe-relief-red-flags.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: this publishes the newly requested pregnancy headache safety guide and keeps newest content first in feed/index ordering while maintaining static blog, redirect, and sitemap sync guarantees.
+
 ## 2026-03-07 (Added pregnancy swelling edema warning-sign blog post)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `pregnancy-swelling-edema-normal-vs-warning-sign`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and the full long-form markdown content provided for publication.

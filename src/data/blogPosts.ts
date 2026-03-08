@@ -11,6 +11,133 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'pregnancy-headaches-causes-safe-relief-red-flags',
+    title: 'Pregnancy Headaches: Causes, Safe Relief, and Red Flags to Know',
+    description: 'Pregnancy headaches are common but not all are harmless. Learn what causes them each trimester, which pain relief is safe, and when a headache is an emergency.',
+    readingTime: '10 min read',
+    updatedAt: '2026-03-08',
+    faq: [
+      {
+        question: 'What can I take for a headache while pregnant?',
+        answer: 'Acetaminophen (paracetamol) at the recommended dose on the packaging is the only over-the-counter pain reliever considered safe throughout pregnancy. Ibuprofen, aspirin, and naproxen (NSAIDs) should be avoided during pregnancy — particularly after 20 weeks, when ACOG links their use to reduced amniotic fluid and potential fetal kidney effects. Always confirm any medication with your provider before taking it.'
+      },
+      {
+        question: 'Why do I keep getting headaches during pregnancy?',
+        answer: 'The most common causes vary by trimester. In the first trimester, surging hormones, increased blood volume, dehydration, caffeine withdrawal, and low blood sugar are the primary drivers. In the second and third trimester, postural strain from a changing center of gravity, tension in the neck and shoulders, disrupted sleep, and nasal congestion from pregnancy rhinitis become more significant. Preeclampsia must also be considered after 20 weeks when headaches are severe, persistent, or accompanied by other symptoms.'
+      },
+      {
+        question: 'When is a headache during pregnancy an emergency?',
+        answer: 'Seek emergency evaluation immediately for a headache that is severe and came on suddenly (described as a "thunderclap" — the worst headache of your life), any headache after 20 weeks accompanied by vision changes, upper abdominal pain, sudden swelling of the face or hands, or a blood pressure reading above 140/90 mmHg. These are potential signs of preeclampsia or another serious neurological condition requiring urgent assessment.'
+      },
+      {
+        question: 'Is it normal to get headaches in the first trimester?',
+        answer: 'Yes — first-trimester headaches are extremely common and are largely driven by the rapid hormonal changes of early pregnancy, particularly the surge in estrogen and hCG. The same women who get hormonal headaches before their period are often most susceptible. They typically improve as the body adapts to its new hormonal baseline, usually by the second trimester, though not universally.'
+      },
+      {
+        question: 'Can dehydration cause headaches in pregnancy?',
+        answer: 'Yes, and dehydration is one of the most correctable causes of pregnancy headaches. Blood volume increases significantly during pregnancy, meaning your fluid needs are higher than before pregnancy. The WHO recommends at least 2.3 liters of total fluid per day during pregnancy. Drinking a large glass of water and resting in a quiet, dark room resolves a dehydration headache within 30 to 60 minutes in most cases — making it a useful first-line test before reaching for medication.'
+      }
+    ],
+    content: `You are fourteen weeks pregnant, the nausea has finally started to ease, and now you have a headache that has been sitting behind your eyes for three days. You cannot take your usual ibuprofen. You are not sure what you can take. And somewhere in the back of your mind is the question you do not want to search for: could this be something serious? Headaches are one of the most common complaints of pregnancy — and one of the most under-addressed, because the guidance on what is safe, what causes them, and what actually warrants concern is scattered and often conflicting. Here is a clear answer.
+
+## What Causes Headaches During Pregnancy?
+
+Pregnancy headaches are not a single condition — they are a symptom with several distinct causes that change in prominence across the trimesters. Understanding which mechanism is driving your headache is the first step toward addressing it effectively.
+
+**Hormonal fluctuation** is the dominant cause in the first trimester. The rapid rise in estrogen and human chorionic gonadotropin (hCG) in early pregnancy triggers headaches in women who are already hormonally sensitive — the same population that experiences menstrual migraines or headaches in the days before their period. As hormone levels stabilize in the second trimester, many of these headaches naturally improve.
+
+**Expanded blood volume** contributes to headaches throughout pregnancy. Blood volume increases by 40 to 50 percent to support the placenta and fetus. This expansion changes vascular pressure throughout the body, including in the blood vessels of the brain, which can trigger vascular headaches similar in mechanism to migraines.
+
+**Dehydration** is one of the most common and most correctable causes at every stage. Because blood volume expands substantially, fluid requirements during pregnancy are higher than before. Even mild dehydration — which can occur before you feel thirsty — triggers headaches in many women. This is particularly relevant in the first trimester when nausea and vomiting reduce fluid intake, and in the third trimester when the physical difficulty of drinking large volumes at once is compounded by a compressed stomach.
+
+**Caffeine withdrawal** causes significant headaches in women who reduce or eliminate caffeine after a positive pregnancy test. Caffeine is a vasodilator and mild analgesic — its absence causes blood vessels to dilate more than usual and removes a pain-modulating effect the brain had adapted to. These headaches typically peak 24 to 48 hours after reduction and resolve within a week. Tapering caffeine rather than stopping abruptly is far more comfortable.
+
+**Postural strain and muscle tension** become increasingly significant from the second trimester onward. As the uterus grows and the center of gravity shifts forward, compensatory posture changes increase tension in the neck, upper back, and shoulder muscles — muscles that directly refer pain into the base of the skull and across the forehead. Women who work at desks or screens for extended periods are particularly susceptible.
+
+**Pregnancy rhinitis** — nasal congestion caused by elevated estrogen stimulating the nasal mucosa — affects up to 30 percent of pregnant women and creates the same sinus pressure headaches that accompany a cold, without any infection present. Unlike a cold, pregnancy rhinitis can last the entire third trimester.
+
+**Low blood sugar** causes headaches in early pregnancy when nausea makes consistent eating difficult, and intermittently throughout pregnancy when meals are skipped or spaced too far apart. The brain is exclusively glucose-dependent and responds quickly to falling blood sugar with a dull, frontal headache often accompanied by shakiness or irritability.
+
+## Why Headache Management Is Different During Pregnancy
+
+The standard approach to headache management changes fundamentally in pregnancy because the most commonly used over-the-counter pain relievers are contraindicated.
+
+**NSAIDs — ibuprofen, aspirin at anti-inflammatory doses, and naproxen — should be avoided during pregnancy**, particularly after 20 weeks. ACOG advises against NSAID use in the second half of pregnancy because these medications are associated with premature closure of the ductus arteriosus (a fetal blood vessel that must remain open until birth), reduced amniotic fluid (oligohydramnios), and potential fetal kidney effects. Even in the first trimester, routine NSAID use is generally discouraged.
+
+**Acetaminophen (paracetamol)** remains the only first-line over-the-counter analgesic considered appropriate during pregnancy when used at the dose stated on the packaging and for the shortest time necessary. While some research has explored associations between prolonged high-dose acetaminophen use and developmental outcomes, ACOG's position is that occasional use at recommended doses for acute headache relief is acceptable. The key phrase is occasional — acetaminophen is for episodic relief, not daily management. If you are reaching for it more than a few times a week, that frequency warrants a conversation with your provider.
+
+**Triptans** — prescription migraine medications such as sumatriptan — are used in some pregnancies for severe migraines when the benefit clearly outweighs risk. This is a decision made between you and your provider, not an over-the-counter choice.
+
+## Non-Medication Strategies That Actually Work
+
+Given the restrictions on pharmacological options, non-medication approaches become essential tools — not a consolation prize. Several have solid evidence or strong clinical consensus behind them.
+
+**Hydration first.** Before anything else, drink 500 to 750 ml of water and rest. If dehydration is the cause — which it frequently is — the headache will noticeably improve within 30 to 60 minutes. This simple test is worth doing before any other intervention.
+
+**Cold or warm compress.** A cold pack applied to the back of the neck and a warm compress across the forehead and sinuses addresses two of the most common headache mechanisms simultaneously. Cold reduces vascular dilation at the base of the skull; warmth eases sinus pressure and muscle tension across the face and temples. Many women find alternating between the two more effective than either alone.
+
+**Dark, quiet rest.** Light sensitivity and sound sensitivity accompany both tension headaches and migraines in pregnancy. Resting in a dark, quiet room for 20 to 30 minutes reduces sensory input that amplifies pain signals. This is not just passive waiting — it actively reduces cortical excitability, which is part of the migraine mechanism.
+
+**Magnesium.** Magnesium deficiency is associated with increased headache frequency, and magnesium requirements rise during pregnancy. The NIH notes that adequate magnesium intake — 350 to 360 mg per day during pregnancy — is linked to reduced migraine frequency in susceptible individuals. Dietary sources include pumpkin seeds, dark chocolate, almonds, spinach, and avocado. Magnesium glycinate supplement use during pregnancy should be discussed with your provider before starting.
+
+**Posture and tension release.** For tension headaches driven by neck and shoulder muscle strain, gentle neck stretches, shoulder rolls, and a brief break from screen use address the source directly. Prenatal massage targeting the upper back, neck, and shoulders — performed by a therapist trained in pregnancy massage — provides more sustained relief for women whose headaches are primarily postural in origin.
+
+**Blood sugar management.** Eating a small, protein-containing snack every two to three hours prevents the glucose dips that trigger low blood sugar headaches. A handful of nuts, a boiled egg, or a small portion of Greek yogurt are sufficient. This is particularly relevant in the first trimester when nausea disrupts normal eating patterns.
+
+**Caffeine tapering.** If you are in the headache period of caffeine reduction, tapering slowly — reducing by roughly 25 mg per day — rather than stopping abruptly is far more comfortable and produces the same eventual outcome. A cup of weak tea contains approximately 20 to 45 mg of caffeine and can smooth the transition significantly.
+
+## Migraines in Pregnancy: What Changes
+
+Women with a history of migraines have a more complex experience during pregnancy. Approximately 50 to 80 percent of women with menstrual migraines — those triggered by estrogen fluctuation — report their migraines **improve** during the second and third trimester as estrogen levels stabilize at a higher, steadier baseline. The first trimester, however, is often worse.
+
+Women with non-hormonal migraines may see no consistent change. For those whose migraines are frequent and debilitating, prophylactic options do exist in pregnancy — certain beta blockers and magnesium supplementation are used in specific circumstances — but these require individualized assessment by your provider or a neurologist with obstetric experience. Do not stop or change migraine medications without guidance.
+
+A migraine with aura — where visual disturbances, numbness, or speech changes precede the headache — requires particularly careful evaluation in pregnancy because these symptoms overlap with neurological warning signs of serious conditions. Report any new-onset migraine with aura to your provider, even if you have had aura migraines before becoming pregnant.
+
+## Common Questions About Pregnancy Headaches
+
+### Can headaches mean something is wrong with my baby?
+
+In the overwhelming majority of cases, no. Headaches caused by hormones, dehydration, tension, low blood sugar, or pregnancy rhinitis have no direct effect on the fetus. The concern is not the headache itself but what it might signal — specifically preeclampsia after 20 weeks, which affects placental blood flow if untreated. The headache is a symptom indicator, not a direct cause of fetal harm. Treating the underlying cause promptly and monitoring for preeclampsia warning signs alongside it is the appropriate response.
+
+### Why do headaches often get better in the second trimester?
+
+The second trimester is characterized by hormonal stabilization — estrogen levels plateau at a higher baseline after the dramatic surges of early pregnancy, and hCG levels begin to fall after peaking around week 10. For women whose headaches are hormonally driven, this stabilization removes the primary trigger. Blood volume expansion also stabilizes in the second trimester, and morning sickness typically eases — both of which reduce dehydration and nutritional deficit as contributing factors.
+
+### Is it safe to use peppermint oil on my temples for headaches?
+
+Topical diluted peppermint oil applied to the temples and forehead has been studied as a headache remedy and shows modest analgesic effect comparable to acetaminophen in some small trials, attributed to menthol's cooling effect and local vasodilation. It is generally considered safe for topical use during pregnancy in small amounts, though ingestion of peppermint essential oil is not recommended. It is a reasonable complementary approach but should not substitute for evaluation of a headache that is severe or persistent.
+
+## When to Call Your Doctor
+
+Contact your provider the same day for:
+
+- Any headache after 20 weeks that is severe and does not respond to acetaminophen and hydration within two hours
+- A headache accompanied by blood pressure readings above 140/90 mmHg if you are monitoring at home
+- Headache alongside sudden swelling of the face or hands, visual disturbances, or upper right abdominal pain — these are potential signs of preeclampsia
+- A new pattern of headaches that is different in character, location, or frequency from anything you have experienced before
+- Headaches occurring daily or near-daily — this frequency requires assessment and a management plan, not ongoing self-treatment
+
+Seek emergency evaluation immediately for:
+
+- A sudden, severe headache — often described as the worst headache of your life — that came on in seconds rather than building gradually. This is a thunderclap headache and requires emergency neurological evaluation to rule out intracranial hemorrhage or hypertensive emergency
+- Any headache accompanied by fever above 38°C (100.4°F), neck stiffness, or confusion
+- A headache with sudden onset of weakness, numbness on one side of the body, difficulty speaking, or facial drooping — these are neurological emergencies regardless of pregnancy
+
+Most pregnancy headaches are benign and manageable. The ones that are not announce themselves clearly — suddenly, severely, and with company.
+
+## Related Tools on SageNest
+
+Headaches vary considerably by trimester, and understanding exactly where you are in your pregnancy helps put them in context — what is a likely hormonal headache at eight weeks is a different clinical picture from a persistent headache at 34 weeks. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to understand what is typical for your current week and track how your symptoms compare to expected changes. If your headaches are accompanied by nausea and you are in the first trimester, our post on [morning sickness remedies](/blog/morning-sickness-remedies-that-actually-work) covers the interplay between nausea, dehydration, and early pregnancy symptoms in detail. If you are managing fluid intake and swelling alongside headaches in the third trimester, our post on [pregnancy swelling](/blog/pregnancy-swelling-edema-normal-vs-warning-sign) explains the overlapping preeclampsia warning signs clearly.
+
+## The Bottom Line
+
+Pregnancy headaches are common, most are benign, and the majority respond to hydration, rest, blood sugar management, and occasional acetaminophen. What makes them worth taking seriously is their potential overlap — after 20 weeks specifically — with preeclampsia, where a persistent headache accompanied by any additional symptom is a reason to call your provider the same day. Know the difference between a tension headache that resolves with water and a dark room, and a severe headache that came on suddenly alongside vision changes or swelling — the first is something to manage, the second is something to act on immediately. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) can help you track your symptoms in the context of your specific stage of pregnancy and know what changes are worth flagging at your next appointment.
+
+
+*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*`
+  },
+  {
     slug: 'pregnancy-swelling-edema-normal-vs-warning-sign',
     title: 'Pregnancy Swelling (Edema): What\'s Normal and What\'s a Warning Sign',
     description: 'Pregnancy swelling affects 80% of women. Learn which edema is normal, which signals preeclampsia, and practical ways to reduce swelling safely.',
