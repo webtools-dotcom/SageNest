@@ -1,3 +1,4 @@
+https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /due-date-calculator /pregnancy-due-date-calculator 301
 /pregnancy-calculator /pregnancy-due-date-calculator 301
 /pregnancy-due-date /pregnancy-due-date-calculator 301
@@ -5,6 +6,7 @@
 /week-by-week-pregnancy /pregnancy-week-by-week 301
 /ovulation /ovulation-calculator 301
 /fertility-calculator /ovulation-calculator 301
+/round-ligament-pain-pregnancy /blog/round-ligament-pain-pregnancy 301
 /pregnancy-headaches-causes-safe-relief-red-flags /blog/pregnancy-headaches-causes-safe-relief-red-flags 301
 /pregnancy-swelling-edema-normal-vs-warning-sign /blog/pregnancy-swelling-edema-normal-vs-warning-sign 301
 /braxton-hicks-vs-real-contractions /blog/braxton-hicks-vs-real-contractions 301
@@ -27,6 +29,8 @@
 /pregnancy-week-by-week/ /pregnancy-week-by-week 301
 /ovulation-calculator/ /ovulation-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/round-ligament-pain-pregnancy /blog-static/round-ligament-pain-pregnancy.html 200
+/blog/round-ligament-pain-pregnancy/ /blog-static/round-ligament-pain-pregnancy.html 200
 /blog/pregnancy-headaches-causes-safe-relief-red-flags /blog-static/pregnancy-headaches-causes-safe-relief-red-flags.html 200
 /blog/pregnancy-headaches-causes-safe-relief-red-flags/ /blog-static/pregnancy-headaches-causes-safe-relief-red-flags.html 200
 /blog/pregnancy-swelling-edema-normal-vs-warning-sign /blog-static/pregnancy-swelling-edema-normal-vs-warning-sign.html 200
