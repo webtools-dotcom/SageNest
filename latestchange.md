@@ -1,3 +1,9 @@
+## 2026-03-10 (Added irregular cycles ovulation conception blog post)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `irregular-cycles-ovulation-conception`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and the full long-form markdown content provided for publication.
+- Regenerated blog publishing artifacts so this post is included in static and indexing outputs: `public/blog-static/irregular-cycles-ovulation-conception.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: this publishes the newly requested irregular-cycle conception timing guide and keeps newest content first in feed/index ordering while maintaining static blog, redirect, and sitemap sync guarantees.
+
 ## 2026-03-09 (Added round ligament pain pregnancy blog post)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `round-ligament-pain-pregnancy`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and the full long-form markdown content provided for publication.
