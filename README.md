@@ -324,30 +324,43 @@ Below is the exact tracked file tree of this repository at the time of this upda
 
 ```text
 .
+├── .env.example
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
+├── .gitignore
+├── Blogpostsrule.md
+├── README.md
+├── SAGENEST BLOG MASTERGUIDE.md
+├── SECURITY.md
+├── SECURITY2.md
+├── codex.md
+├── frontend.md
+├── frontend2.md
+├── index.html
+├── latestchange.md
+├── newtool.md
+├── package.json
 ├── public/
-│   ├── blog/
-│   │   ├── gestational-diabetes-pregnancy-weight-gain/
-│   │   │   └── index.html
-│   │   ├── healthy-pregnancy-weight-gain-complete-guide/
-│   │   │   └── index.html
-│   │   ├── how-due-dates-are-calculated/
-│   │   │   └── index.html
-│   │   ├── ivf-due-date-guide/
-│   │   │   └── index.html
-│   │   ├── morning-sickness-remedies-that-actually-work/
-│   │   │   └── index.html
-│   │   ├── pregnancy-nutrition-guide-what-to-eat-each-trimester/
-│   │   │   └── index.html
-│   │   ├── pregnancy-week-by-week-milestones/
-│   │   │   └── index.html
-│   │   └── pregnancy-weight-gain-myths-facts/
-│   │       └── index.html
 │   ├── _headers
 │   ├── _redirects
 │   ├── apple-touch-icon.png
+│   ├── blog-static/
+│   │   ├── braxton-hicks-vs-real-contractions.html
+│   │   ├── gestational-diabetes-pregnancy-weight-gain.html
+│   │   ├── healthy-pregnancy-weight-gain-complete-guide.html
+│   │   ├── how-due-dates-are-calculated.html
+│   │   ├── irregular-cycles-ovulation-conception.html
+│   │   ├── ivf-due-date-guide.html
+│   │   ├── luteal-phase-explained-after-ovulation.html
+│   │   ├── morning-sickness-remedies-that-actually-work.html
+│   │   ├── ovulation-signs-symptoms.html
+│   │   ├── pregnancy-headaches-causes-safe-relief-red-flags.html
+│   │   ├── pregnancy-nutrition-guide-what-to-eat-each-trimester.html
+│   │   ├── pregnancy-swelling-edema-normal-vs-warning-sign.html
+│   │   ├── pregnancy-week-by-week-milestones.html
+│   │   ├── pregnancy-weight-gain-myths-facts.html
+│   │   └── round-ligament-pain-pregnancy.html
 │   ├── favicon-96x96.png
 │   ├── favicon.ico
 │   ├── favicon.svg
@@ -357,6 +370,8 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   ├── web-app-manifest-192x192.png
 │   └── web-app-manifest-512x512.png
 ├── scripts/
+│   ├── blog-data.mjs
+│   ├── check-blog-static-sync.mjs
 │   ├── check-conflicts.sh
 │   ├── check-package-json.mjs
 │   ├── check-redirects.mjs
@@ -367,6 +382,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   ├── redirects-utils.mjs
 │   └── sitemap-utils.mjs
 ├── src/
+│   ├── App.tsx
 │   ├── components/
 │   │   ├── BlogList.tsx
 │   │   ├── BlogPost.tsx
@@ -398,6 +414,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── markdown.ts
 │   │   ├── ovulationCalc.ts
 │   │   └── pregnancyWeightGain.ts
+│   ├── main.tsx
 │   ├── pages/
 │   │   ├── About.tsx
 │   │   ├── AdminLogin.tsx
@@ -411,11 +428,10 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── Privacy.tsx
 │   │   └── SimilarTools.tsx
 │   ├── styles/
+│   │   ├── design-tokens.css
 │   │   └── global.css
-│   ├── supabase/
-│   │   └── client.ts
-│   ├── App.tsx
-│   └── main.tsx
+│   └── supabase/
+│       └── client.ts
 ├── tests/
 │   ├── adminLoginAuth.test.ts
 │   ├── blogPosterAuth.test.ts
@@ -426,20 +442,6 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   ├── ovulationCalc.test.ts
 │   ├── pregnancyWeightGain.test.ts
 │   └── progressWheel.test.ts
-├── .env.example
-├── .gitignore
-├── Blogrules.md
-├── README.md
-├── SAGENEST BLOG MASTERGUIDE.md
-├── SECURITY.md
-├── SECURITY2.md
-├── codex.md
-├── frontend.md
-├── frontend2.md
-├── index.html
-├── latestchange.md
-├── newtool.md
-├── package.json
 ├── tsconfig.json
 └── vite.config.ts
 ```

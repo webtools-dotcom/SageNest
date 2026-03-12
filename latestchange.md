@@ -1,3 +1,8 @@
+## 2026-03-12 (Updated README repository worktree structure)
+
+- Updated the `## Exact Repository Worktree Structure` section in `README.md` so it now matches the repository’s current tracked tree exactly (including `public/blog-static`, newer script files, `design-tokens.css`, and `Blogpostsrule.md`).
+- Why: the previous tree had stale paths and older filenames, which could mislead contributors during onboarding and maintenance.
+
 ## 2026-03-11 (Added luteal phase explained after ovulation blog post)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `luteal-phase-explained-after-ovulation`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and the full long-form markdown content provided for publication.
