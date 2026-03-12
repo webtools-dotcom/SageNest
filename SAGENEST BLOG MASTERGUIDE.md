@@ -67,7 +67,7 @@ export const blogPosts: BlogPost[] = [
   title: 'Primary Keyword: Benefit-Driven Headline That Speaks to the Mother',
   description: 'Meta description: 140–160 characters. Contains the primary keyword, states the benefit clearly, and creates mild urgency or curiosity. No fluff.',
   readingTime: 'X min read',
- imageUrl: '/images/blog/sagenest-blog-default.jpg', // keep this image path same for all the blogs dont change this 
+  imageUrl: '/images/blog/sagenest-blog-default.jpg', // keep this image path same for all the blogs dont change this 
   faq: [
     {
       question: 'The exact question a mother types into Google',
