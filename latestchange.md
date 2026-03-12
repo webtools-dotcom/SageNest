@@ -1,3 +1,9 @@
+## 2026-03-12 (Added default blog image field to all posts + robots image preview header)
+
+- Updated every existing blog object in `src/data/blogPosts.ts` by adding `imageUrl: '/images/blog/sagenest-blog-default.jpg'` so all posts have a consistent fallback/preview image field.
+- Updated `public/_headers` by adding `X-Robots-Tag: max-image-preview:large` at the top of the global `/*` headers block.
+- Why: this ensures consistent blog card/share imagery across all existing posts and allows large image previews in search/social crawlers for better CTR and visibility.
+
 ## 2026-03-12 (Updated README repository worktree structure)
 
 - Updated the `## Exact Repository Worktree Structure` section in `README.md` so it now matches the repository’s current tracked tree exactly (including `public/blog-static`, newer script files, `design-tokens.css`, and `Blogpostsrule.md`).
