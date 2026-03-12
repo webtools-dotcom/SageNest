@@ -1,3 +1,9 @@
+## 2026-03-13 (Added blog: Pregnancy Insomnia: Why Sleep Gets Harder and What Actually Helps)
+
+- Added a new blog post object at the top of `src/data/blogPosts.ts` with slug `pregnancy-insomnia-causes-safe-relief`, including full long-form content, FAQ, metadata, and default image URL.
+- Regenerated blog publish artifacts so the new post is live in static outputs and indexing files: `public/blog-static/pregnancy-insomnia-causes-safe-relief.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested pregnancy-insomnia educational article and keep static blog pages, redirects, and sitemap fully in sync for SEO/discoverability.
+
 ## 2026-03-12 (Static blog UI now renders hero image under reading time)
 
 - Updated `scripts/generate-blog-html.mjs` so each generated static blog page now injects the post image block immediately after the reading-time line (the exact location highlighted in the report).
