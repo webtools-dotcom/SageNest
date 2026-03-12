@@ -1,3 +1,9 @@
+## 2026-03-11 (Added luteal phase explained after ovulation blog post)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `luteal-phase-explained-after-ovulation`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and the full long-form markdown content provided for publication.
+- Regenerated blog publishing artifacts so this post is included in static and indexing outputs: `public/blog-static/luteal-phase-explained-after-ovulation.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: this publishes the requested luteal phase education guide while keeping newest content first in blog ordering and preserving static blog, redirect, and sitemap consistency checks.
+
 ## 2026-03-10 (Added irregular cycles ovulation conception blog post)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `irregular-cycles-ovulation-conception`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), five FAQ entries, and the full long-form markdown content provided for publication.

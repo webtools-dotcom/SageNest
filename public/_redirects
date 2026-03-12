@@ -6,6 +6,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /week-by-week-pregnancy /pregnancy-week-by-week 301
 /ovulation /ovulation-calculator 301
 /fertility-calculator /ovulation-calculator 301
+/luteal-phase-explained-after-ovulation /blog/luteal-phase-explained-after-ovulation 301
 /irregular-cycles-ovulation-conception /blog/irregular-cycles-ovulation-conception 301
 /round-ligament-pain-pregnancy /blog/round-ligament-pain-pregnancy 301
 /pregnancy-headaches-causes-safe-relief-red-flags /blog/pregnancy-headaches-causes-safe-relief-red-flags 301
@@ -30,6 +31,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /pregnancy-week-by-week/ /pregnancy-week-by-week 301
 /ovulation-calculator/ /ovulation-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/luteal-phase-explained-after-ovulation /blog-static/luteal-phase-explained-after-ovulation.html 200
+/blog/luteal-phase-explained-after-ovulation/ /blog-static/luteal-phase-explained-after-ovulation.html 200
 /blog/irregular-cycles-ovulation-conception /blog-static/irregular-cycles-ovulation-conception.html 200
 /blog/irregular-cycles-ovulation-conception/ /blog-static/irregular-cycles-ovulation-conception.html 200
 /blog/round-ligament-pain-pregnancy /blog-static/round-ligament-pain-pregnancy.html 200
