@@ -1,3 +1,10 @@
+## 2026-03-12 (Static blog UI now renders hero image under reading time)
+
+- Updated `scripts/generate-blog-html.mjs` so each generated static blog page now injects the post image block immediately after the reading-time line (the exact location highlighted in the report).
+- Added `.post-image` styling in the static blog template CSS for consistent responsive rendering (full width, capped height, rounded corners, subtle border).
+- Regenerated static blog outputs in `public/blog-static/*.html` via `npm run generate:blog` so every existing blog page now includes the image element in the published static HTML.
+- Why: older blogs already had `imageUrl` in data, but the static blog template never rendered it in the article body, so users could not see any image under the reading-time section.
+
 ## 2026-03-12 (Added default blog image field to all posts + robots image preview header)
 
 - Updated every existing blog object in `src/data/blogPosts.ts` by adding `imageUrl: '/images/blog/sagenest-blog-default.jpg'` so all posts have a consistent fallback/preview image field.

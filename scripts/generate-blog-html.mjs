@@ -138,7 +138,15 @@ function buildStaticStyle(tokens) {
       .post-meta {
         font-size: 0.875rem;
         color: var(--text-tertiary);
-        margin-bottom: 4rem;
+        margin-bottom: 1.5rem;
+      }
+      .post-image {
+        width: 100%;
+        max-height: 420px;
+        object-fit: cover;
+        border-radius: 18px;
+        border: 1px solid var(--border-hairline);
+        margin: 0 0 3rem;
       }
       .cta-box {
         background: var(--sage-softest);
@@ -263,6 +271,7 @@ ${styleBlock}
       <article>
         <h1>${post.title}</h1>
         <p class="post-meta">${post.readingTime}</p>
+        ${post.imageUrl ? `<img src="${post.imageUrl}" alt="${titleEscaped}" class="post-image" loading="lazy" />` : ''}
         ${bodyHtml}
         <div class="cta-box">
           <h3>Calculate Your Pregnancy Due Date</h3>
