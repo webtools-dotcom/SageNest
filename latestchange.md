@@ -1,3 +1,10 @@
+## 2026-03-13 (Automated unique Cloudinary blog images in generate-blog-html pipeline)
+
+- Updated `scripts/generate-blog-html.mjs` to add an image pipeline before static HTML rendering: derive a prompt from each post title, check Cloudinary Admin API for existing `sagenest-blog/<slug>` assets, generate missing images via Pollinations (`model=flux`, `1200x630`, random seed), upload via Cloudinary upload stream, and inject the resolved Cloudinary URL into generated blog HTML without writing back to `src/data/blogPosts.ts`.
+- Added non-blocking resilience behavior in the same script: handles Pollinations `402` credit exhaustion, retries one time after 3 seconds for other Pollinations failures, enforces a 2-second delay between Pollinations generation calls, continues on per-post failures, and prints an end-of-run error summary.
+- Added `cloudinary` as the only new runtime dependency in `package.json` (and generated `package-lock.json`).
+- Why: make each blog post eligible for Google Discover image requirements with a deterministic, automated, and idempotent generation/upload pipeline that does not break existing static blog publishing.
+
 ## 2026-03-13 (Added blog: Shortness of Breath in Pregnancy: Normal Causes vs Warning Signs)
 
 - Added a new blog post object at the top of `src/data/blogPosts.ts` with slug `shortness-of-breath-pregnancy`, including full long-form content, FAQ, metadata, and default image URL.

@@ -1,10 +1,20 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { v2 as cloudinary } from 'cloudinary';
 import { loadBlogPosts } from './blog-data.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
+const BLOG_IMAGE_FOLDER = 'sagenest-blog';
+const POLLINATIONS_ENDPOINT = 'https://gen.pollinations.ai/image';
+
+const TITLE_STOP_WORDS = new Set([
+  'what', 'how', 'the', 'and', 'to', 'a', 'an', 'of', 'in', 'is', 'are', 'for', 'with', 'your', 'during', 'vs', 'or',
+  'pregnancy', 'pregnant',
+]);
+
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 function markdownToHtml(markdown) {
   const clean = markdown
@@ -364,18 +374,206 @@ ${styleBlock}
 </html>`;
 }
 
+function extractPromptSubject(title) {
+  const tokens = title
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean)
+    .filter((token) => !TITLE_STOP_WORDS.has(token));
+
+  return tokens.length > 0 ? tokens.join(' ') : title.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').trim();
+}
+
+function buildImagePrompt(title) {
+  const subject = extractPromptSubject(title);
+  return `soft editorial photograph, ${subject}, pregnant woman, warm natural lighting, sage green tones, clean minimalist background, no text, no watermark, no logo`;
+}
+
+function getCloudinaryUrl(cloudName, slug) {
+  return `https://res.cloudinary.com/${cloudName}/image/upload/${BLOG_IMAGE_FOLDER}/${slug}.jpg`;
+}
+
+async function cloudinaryResourceExists({ cloudName, apiKey, apiSecret, slug }) {
+  const publicId = encodeURIComponent(`${BLOG_IMAGE_FOLDER}/${slug}`);
+  const url = `https://api.cloudinary.com/v1_1/${cloudName}/resources/image/upload/${publicId}`;
+  const basicAuth = Buffer.from(`${apiKey}:${apiSecret}`).toString('base64');
+  const response = await fetch(url, {
+    method: 'GET',
+    headers: { Authorization: `Basic ${basicAuth}` },
+  });
+
+  if (response.status === 200) return true;
+  if (response.status === 404) return false;
+
+  const body = await response.text();
+  throw new Error(`Cloudinary resource check failed with status ${response.status}: ${body.slice(0, 300)}`);
+}
+
+async function fetchPollinationsImageBuffer(prompt, apiKey) {
+  const buildRequestUrl = () => {
+    const params = new URLSearchParams({
+      model: 'flux',
+      width: '1200',
+      height: '630',
+      seed: String(Math.floor(Math.random() * 1000000)),
+      enhance: 'true',
+      negative_prompt: 'text,watermark,logo,words,letters,signature,nudity',
+      key: apiKey,
+    });
+    return `${POLLINATIONS_ENDPOINT}/${encodeURIComponent(prompt)}?${params.toString()}`;
+  };
+
+  const runOnce = async () => {
+    const response = await fetch(buildRequestUrl());
+
+    if (response.status === 402) {
+      return { status: 402, buffer: null };
+    }
+
+    if (!response.ok) {
+      const body = await response.text();
+      throw new Error(`Pollinations returned ${response.status}: ${body.slice(0, 300)}`);
+    }
+
+    const arrayBuffer = await response.arrayBuffer();
+    return { status: 200, buffer: Buffer.from(arrayBuffer) };
+  };
+
+  try {
+    return await runOnce();
+  } catch (error) {
+    await sleep(3000);
+    return runOnce();
+  }
+}
+
+function uploadBufferToCloudinary(buffer, slug) {
+  return new Promise((resolve, reject) => {
+    const uploadStream = cloudinary.uploader.upload_stream(
+      {
+        folder: BLOG_IMAGE_FOLDER,
+        public_id: slug,
+        resource_type: 'image',
+        overwrite: false,
+      },
+      (error, result) => {
+        if (error) {
+          reject(error);
+          return;
+        }
+        resolve(result);
+      }
+    );
+
+    uploadStream.end(buffer);
+  });
+}
+
+async function resolveImageUrlForPost(post, env, generationState, errors) {
+  if (!env.cloudName || !env.apiKey || !env.apiSecret || !env.pollinationsKey) {
+    if (!generationState.missingEnvWarned) {
+      console.warn('⚠ Missing one or more image pipeline env vars (CLOUDINARY_CLOUD_NAME, CLOUDINARY_API_KEY, CLOUDINARY_API_SECRET, POLLINATIONS_API_KEY). Using existing imageUrl values.');
+      generationState.missingEnvWarned = true;
+    }
+    return post.imageUrl;
+  }
+
+  const cloudinaryUrl = getCloudinaryUrl(env.cloudName, post.slug);
+
+  try {
+    const alreadyExists = await cloudinaryResourceExists({
+      cloudName: env.cloudName,
+      apiKey: env.apiKey,
+      apiSecret: env.apiSecret,
+      slug: post.slug,
+    });
+
+    if (alreadyExists) {
+      console.log(`  ↳ image exists in Cloudinary for ${post.slug}, skipping generation`);
+      return cloudinaryUrl;
+    }
+  } catch (error) {
+    const message = `Cloudinary check failed for ${post.slug}: ${error instanceof Error ? error.message : String(error)}`;
+    console.warn(`  ⚠ ${message}`);
+    errors.push(message);
+    return post.imageUrl;
+  }
+
+  const elapsed = Date.now() - generationState.lastPollinationsCallAt;
+  if (generationState.lastPollinationsCallAt > 0 && elapsed < 2000) {
+    await sleep(2000 - elapsed);
+  }
+
+  const prompt = buildImagePrompt(post.title);
+  generationState.lastPollinationsCallAt = Date.now();
+
+  let generated;
+  try {
+    generated = await fetchPollinationsImageBuffer(prompt, env.pollinationsKey);
+  } catch (error) {
+    const message = `Pollinations failed for ${post.slug}: ${error instanceof Error ? error.message : String(error)}`;
+    console.warn(`  ⚠ ${message}`);
+    errors.push(message);
+    return post.imageUrl;
+  }
+
+  if (generated.status === 402) {
+    const message = `Pollinations credits exhausted (402) for ${post.slug}. Skipping image generation for this post.`;
+    console.warn(`  ⚠ ${message}`);
+    errors.push(message);
+    return post.imageUrl;
+  }
+
+  try {
+    await uploadBufferToCloudinary(generated.buffer, post.slug);
+    console.log(`  ↳ uploaded image to Cloudinary for ${post.slug}`);
+    return cloudinaryUrl;
+  } catch (error) {
+    const message = `Cloudinary upload failed for ${post.slug}: ${error instanceof Error ? error.message : String(error)}`;
+    console.warn(`  ⚠ ${message}`);
+    errors.push(message);
+    return post.imageUrl;
+  }
+}
+
 const posts = await loadBlogPosts();
 const tokens = loadDesignTokens();
 const styleBlock = buildStaticStyle(tokens);
+const env = {
+  cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+  apiKey: process.env.CLOUDINARY_API_KEY,
+  apiSecret: process.env.CLOUDINARY_API_SECRET,
+  pollinationsKey: process.env.POLLINATIONS_API_KEY,
+};
+const generationState = { lastPollinationsCallAt: 0, missingEnvWarned: false };
+const errors = [];
+
+if (env.cloudName && env.apiKey && env.apiSecret) {
+  cloudinary.config({
+    cloud_name: env.cloudName,
+    api_key: env.apiKey,
+    api_secret: env.apiSecret,
+  });
+}
 
 console.log(`Generating static HTML for ${posts.length} blog posts...`);
 
 for (const post of posts) {
+  const resolvedImageUrl = await resolveImageUrlForPost(post, env, generationState, errors);
+  const postWithResolvedImage = { ...post, imageUrl: resolvedImageUrl };
   const dir = join(ROOT, 'public', 'blog-static');
   mkdirSync(dir, { recursive: true });
-  const html = buildPostHtml(post, styleBlock);
+  const html = buildPostHtml(postWithResolvedImage, styleBlock);
   writeFileSync(join(dir, `${post.slug}.html`), html, 'utf8');
   console.log(`  ✓ public/blog-static/${post.slug}.html`);
+}
+
+if (errors.length > 0) {
+  console.warn('\nImage pipeline summary (non-blocking errors):');
+  for (const error of errors) {
+    console.warn(`  - ${error}`);
+  }
 }
 
 console.log('Done.');
