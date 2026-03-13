@@ -79,14 +79,66 @@ export const BlogPost = () => {
         jsonLd={jsonLd}
       />
       <h1>{post.title}</h1>
-      <p style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '-0.25rem' }}>
-        <span>Written by <Link to="/editorial-team" style={{ color: 'var(--sage-dark)', textDecoration: 'underline', textUnderlineOffset: '3px' }}>SageNest Editorial Team</Link></span>
-        <span aria-hidden="true">·</span>
-        <span>{post.readingTime}</span>
+      <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '-0.25rem' }}>
+        {post.readingTime}
       </p>
       {post.image_url ? <img src={post.image_url} alt="" className="blog-cover" loading="lazy" /> : null}
       <div dangerouslySetInnerHTML={{ __html: postHtml }} />
-      <aside className="cta-inline"><h3>Try our Pregnancy Due Date Calculator</h3><Link to="/pregnancy-due-date-calculator">Open calculator</Link></aside>
+
+      {/* Author box */}
+      <Link
+        to="/editorial-team"
+        style={{ textDecoration: 'none', display: 'block', marginTop: 'var(--space-lg)' }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1rem',
+            padding: '1.25rem 1.5rem',
+            background: 'var(--sage-softest)',
+            border: '1px solid var(--sage-light)',
+            borderRadius: 'var(--radius-md)',
+            transition: 'box-shadow var(--transition-base)',
+          }}
+          onMouseEnter={e => (e.currentTarget.style.boxShadow = 'var(--shadow-sage)')}
+          onMouseLeave={e => (e.currentTarget.style.boxShadow = 'none')}
+        >
+          <div style={{
+            flexShrink: 0,
+            width: '48px',
+            height: '48px',
+            borderRadius: '50%',
+            background: 'var(--sage-primary)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '1.25rem',
+          }}>
+            🌿
+          </div>
+          <div>
+            <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
+              Written by
+            </p>
+            <p style={{ margin: '0.1rem 0 0.25rem', fontWeight: 600, color: 'var(--charcoal)', fontSize: '0.95rem' }}>
+              SageNest Editorial Team
+            </p>
+            <p style={{ margin: 0, fontSize: '0.82rem', color: 'var(--text-secondary)', lineHeight: 1.45 }}>
+              Researched from ACOG, WHO, CDC, NIH, and IOM guidelines. Evidence-based, never anecdotal.
+            </p>
+          </div>
+          <div style={{ marginLeft: 'auto', color: 'var(--sage-dark)', fontSize: '1rem', flexShrink: 0 }}>
+            →
+          </div>
+        </div>
+      </Link>
+
+      <aside className="cta-inline" style={{ marginTop: 'var(--space-lg)' }}>
+        <h3>Try our Pregnancy Due Date Calculator</h3>
+        <Link to="/pregnancy-due-date-calculator">Open calculator</Link>
+      </aside>
+
       <section>
         <h2>Related posts</h2>
         {related.map((item) => <p key={item.slug}><a href={`/blog/${item.slug}`}>{item.title}</a></p>)}
