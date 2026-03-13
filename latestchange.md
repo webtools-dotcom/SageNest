@@ -1,3 +1,13 @@
+## 2026-03-13 (Added dotenv package for generate-blog-html .env loading)
+
+- Added `dotenv` to dependencies in `package.json`/`package-lock.json` so `import 'dotenv/config';` in `scripts/generate-blog-html.mjs` resolves correctly at runtime.
+- Why: without the package installed, the script fails with `ERR_MODULE_NOT_FOUND`, so `.env` values cannot be loaded automatically.
+
+## 2026-03-13 (Load .env automatically in blog HTML generator)
+
+- Added `import 'dotenv/config';` as the first line in `scripts/generate-blog-html.mjs` so environment variables from `.env` are loaded before any other imports execute.
+- Why: fixes cases where the blog image pipeline reports missing Cloudinary/Pollinations env vars even when `.env` exists locally.
+
 ## 2026-03-13 (Added blog: Shortness of Breath in Pregnancy: Normal Causes vs Warning Signs)
 
 - Added a new blog post object at the top of `src/data/blogPosts.ts` with slug `shortness-of-breath-pregnancy`, including full long-form content, FAQ, metadata, and default image URL.
