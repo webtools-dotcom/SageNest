@@ -1,3 +1,9 @@
+## 2026-03-13 (Added blog: Shortness of Breath in Pregnancy: Normal Causes vs Warning Signs)
+
+- Added a new blog post object at the top of `src/data/blogPosts.ts` with slug `shortness-of-breath-pregnancy`, including full long-form content, FAQ, metadata, and default image URL.
+- Regenerated blog publish artifacts so the new post is live in static outputs and indexing files: `public/blog-static/shortness-of-breath-pregnancy.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested pregnancy breathlessness educational article and keep static blog pages, redirects, and sitemap fully in sync for SEO/discoverability.
+
 ## 2026-03-13 (README worktree structure resynced to current tracked files)
 
 - Updated the `## Exact Repository Worktree Structure` section in `README.md` to match the current `git ls-files` output exactly.

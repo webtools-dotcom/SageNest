@@ -1,3 +1,4 @@
+https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /due-date-calculator /pregnancy-due-date-calculator 301
 /pregnancy-calculator /pregnancy-due-date-calculator 301
 /pregnancy-due-date /pregnancy-due-date-calculator 301
@@ -5,6 +6,7 @@
 /week-by-week-pregnancy /pregnancy-week-by-week 301
 /ovulation /ovulation-calculator 301
 /fertility-calculator /ovulation-calculator 301
+/shortness-of-breath-pregnancy /blog/shortness-of-breath-pregnancy 301
 /pregnancy-insomnia-causes-safe-relief /blog/pregnancy-insomnia-causes-safe-relief 301
 /luteal-phase-explained-after-ovulation /blog/luteal-phase-explained-after-ovulation 301
 /irregular-cycles-ovulation-conception /blog/irregular-cycles-ovulation-conception 301
@@ -31,6 +33,8 @@
 /pregnancy-week-by-week/ /pregnancy-week-by-week 301
 /ovulation-calculator/ /ovulation-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/shortness-of-breath-pregnancy /blog-static/shortness-of-breath-pregnancy.html 200
+/blog/shortness-of-breath-pregnancy/ /blog-static/shortness-of-breath-pregnancy.html 200
 /blog/pregnancy-insomnia-causes-safe-relief /blog-static/pregnancy-insomnia-causes-safe-relief.html 200
 /blog/pregnancy-insomnia-causes-safe-relief/ /blog-static/pregnancy-insomnia-causes-safe-relief.html 200
 /blog/luteal-phase-explained-after-ovulation /blog-static/luteal-phase-explained-after-ovulation.html 200
@@ -63,6 +67,6 @@
 /blog/ivf-due-date-guide/ /blog-static/ivf-due-date-guide.html 200
 /blog/how-due-dates-are-calculated /blog-static/how-due-dates-are-calculated.html 200
 /blog/how-due-dates-are-calculated/ /blog-static/how-due-dates-are-calculated.html 200
-/editorial-team /index.html 200
+
 / /pregnancy-due-date-calculator 301
 /* /index.html 200
