@@ -1,3 +1,8 @@
+## 2026-03-13 (CI fix: align @vitejs/plugin-react with Vite 8 for npm install)
+
+- Updated `@vitejs/plugin-react` in `package.json` from `^4.3.3` to `^6.0.1` and regenerated `package-lock.json` using plain `npm install`.
+- Why: CI was failing during `npm install` with an `ERESOLVE` peer-dependency conflict because `@vitejs/plugin-react@4.x` only supports Vite up to v7, while this repo uses Vite v8.
+
 ## 2026-03-13 (Added dotenv package for generate-blog-html .env loading)
 
 - Added `dotenv` to dependencies in `package.json`/`package-lock.json` so `import 'dotenv/config';` in `scripts/generate-blog-html.mjs` resolves correctly at runtime.
