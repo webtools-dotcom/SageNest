@@ -8,11 +8,24 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 const BLOG_IMAGE_FOLDER = 'sagenest-blog';
 const POLLINATIONS_ENDPOINT = 'https://gen.pollinations.ai/image';
+const PROMPT_MAP = [
+  { keywords: ['morning sickness', 'nausea'], prompt: 'soft editorial photograph, pregnant woman holding ginger tea by window, warm natural lighting, sage green tones, calm expression, no text' },
+  { keywords: ['weight gain'], prompt: 'soft editorial photograph, pregnant woman standing sideways profile, warm natural lighting, sage green tones, clean background, no text' },
+  { keywords: ['nutrition', 'food', 'eat', 'diet'], prompt: 'soft editorial photograph, fresh healthy vegetables fruits nuts on wooden table, pregnancy nutrition, warm natural lighting, sage green, no text' },
+  { keywords: ['headache'], prompt: 'soft editorial photograph, pregnant woman resting with eyes closed hand on temple, soft diffused light, sage green tones, calm, no text' },
+  { keywords: ['swelling', 'edema'], prompt: 'soft editorial photograph, pregnant woman sitting comfortably feet elevated, warm natural lighting, sage green tones, no text' },
+  { keywords: ['sleep', 'insomnia'], prompt: 'soft editorial photograph, pregnant woman sleeping peacefully on side with pillow, soft warm bedroom lighting, sage green tones, no text' },
+  { keywords: ['ovulation', 'fertile', 'cycle'], prompt: 'soft editorial photograph, woman holding calendar near window, natural light, sage green tones, clean minimal, no text' },
+  { keywords: ['contraction', 'braxton'], prompt: 'soft editorial photograph, pregnant woman breathing calmly hand on belly, warm natural lighting, sage green tones, no text' },
+  { keywords: ['round ligament', 'pelvic', 'pain'], prompt: 'soft editorial photograph, pregnant woman doing gentle stretching yoga pose, warm natural lighting, sage green tones, no text' },
+  { keywords: ['diabetes', 'glucose', 'blood sugar'], prompt: 'soft editorial photograph, healthy balanced meal plate with vegetables and protein, warm natural lighting, sage green tones, no text' },
+  { keywords: ['due date', 'gestational', 'ultrasound'], prompt: 'soft editorial photograph, pregnant woman looking at calendar smiling gently, warm natural lighting, sage green tones, no text' },
+  { keywords: ['vitamin', 'supplement', 'iron', 'folate'], prompt: 'soft editorial photograph, prenatal vitamins supplements on wooden surface with greenery, warm natural lighting, sage green tones, no text' },
+  { keywords: ['postpartum', 'after birth', 'postnatal'], prompt: 'soft editorial photograph, new mother holding newborn baby gently, soft warm lighting, sage green tones, peaceful, no text' },
+  { keywords: ['ivf', 'fertility', 'conception'], prompt: 'soft editorial photograph, woman holding positive pregnancy test gently smiling, warm natural lighting, sage green tones, no text' },
+];
 
-const TITLE_STOP_WORDS = new Set([
-  'what', 'how', 'the', 'and', 'to', 'a', 'an', 'of', 'in', 'is', 'are', 'for', 'with', 'your', 'during', 'vs', 'or',
-  'pregnancy', 'pregnant',
-]);
+const FALLBACK_PROMPT = 'soft editorial photograph, pregnant woman resting hand on belly near window, warm natural lighting, sage green tones, clean minimal background, no text, no watermark';
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -374,20 +387,17 @@ ${styleBlock}
 </html>`;
 }
 
-function extractPromptSubject(title) {
-  const tokens = title
-    .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, ' ')
-    .split(/\s+/)
-    .filter(Boolean)
-    .filter((token) => !TITLE_STOP_WORDS.has(token));
-
-  return tokens.length > 0 ? tokens.join(' ') : title.toLowerCase().replace(/[^a-z0-9\s]/g, ' ').trim();
-}
-
 function buildImagePrompt(title) {
-  const subject = extractPromptSubject(title);
-  return `soft editorial photograph, ${subject}, pregnant woman, warm natural lighting, sage green tones, clean minimalist background, no text, no watermark, no logo`;
+  const normalizedTitle = title.toLowerCase();
+
+  for (const entry of PROMPT_MAP) {
+    const hasMatch = entry.keywords.some((keyword) => normalizedTitle.includes(keyword.toLowerCase()));
+    if (hasMatch) {
+      return entry.prompt;
+    }
+  }
+
+  return FALLBACK_PROMPT;
 }
 
 function getCloudinaryUrl(cloudName, slug) {

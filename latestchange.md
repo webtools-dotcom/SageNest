@@ -1,3 +1,10 @@
+## 2026-03-13 (Topic-based prompt mapping for automated blog hero images)
+
+- Replaced title-token extraction prompt logic in `scripts/generate-blog-html.mjs` with a deterministic keyword-matching `PROMPT_MAP` that maps known blog topics (for example nausea, insomnia, IVF, due date, and postpartum) to curated high-quality prompts.
+- Added `FALLBACK_PROMPT` and updated prompt selection so it now picks the first case-insensitive keyword match from the blog title, then safely falls back when no topic matches.
+- Kept all existing Pollinations request parameters unchanged (`model`, dimensions, `negative_prompt`, seed, enhance, API key), so only the generated prompt text behavior changed.
+- Why: improve image relevance and consistency by using vetted topic prompts instead of variable title keyword extraction while preserving the current generation pipeline and API settings.
+
 ## 2026-03-13 (Automated unique Cloudinary blog images in generate-blog-html pipeline)
 
 - Updated `scripts/generate-blog-html.mjs` to add an image pipeline before static HTML rendering: derive a prompt from each post title, check Cloudinary Admin API for existing `sagenest-blog/<slug>` assets, generate missing images via Pollinations (`model=flux`, `1200x630`, random seed), upload via Cloudinary upload stream, and inject the resolved Cloudinary URL into generated blog HTML without writing back to `src/data/blogPosts.ts`.
