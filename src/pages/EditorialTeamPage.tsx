@@ -38,31 +38,49 @@ export const EditorialTeamPage = () => {
       </p>
       <ul>
         <li>
-          <strong>ACOG</strong> — American College of Obstetricians and Gynecologists. The leading
+          <strong>
+            <a href="https://www.acog.org" target="_blank" rel="noopener noreferrer">ACOG</a>
+          </strong>{' '}
+          — American College of Obstetricians and Gynecologists. The leading
           professional body for obstetric and gynecologic care in the United States, whose practice
           bulletins and committee opinions set the clinical standard for pregnancy management.
         </li>
         <li>
-          <strong>WHO</strong> — World Health Organization. The United Nations agency responsible
+          <strong>
+            <a href="https://www.who.int/health-topics/maternal-health" target="_blank" rel="noopener noreferrer">WHO</a>
+          </strong>{' '}
+          — World Health Organization. The United Nations agency responsible
           for international public health, whose guidelines on maternal and reproductive health are
           used globally.
         </li>
         <li>
-          <strong>CDC</strong> — Centers for Disease Control and Prevention. The US federal agency
+          <strong>
+            <a href="https://www.cdc.gov/reproductivehealth/index.htm" target="_blank" rel="noopener noreferrer">CDC</a>
+          </strong>{' '}
+          — Centers for Disease Control and Prevention. The US federal agency
           providing data-driven guidance on maternal health, pregnancy complications, and
           reproductive outcomes.
         </li>
         <li>
-          <strong>NIH / NCBI</strong> — National Institutes of Health and its National Center for
+          <strong>
+            <a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank" rel="noopener noreferrer">NIH / NCBI</a>
+          </strong>{' '}
+          — National Institutes of Health and its National Center for
           Biotechnology Information, which hosts peer-reviewed clinical research through PubMed.
         </li>
         <li>
-          <strong>IOM / NAM</strong> — Institute of Medicine, now the National Academy of Medicine.
+          <strong>
+            <a href="https://www.nationalacademies.org" target="_blank" rel="noopener noreferrer">IOM / NAM</a>
+          </strong>{' '}
+          — Institute of Medicine, now the National Academy of Medicine.
           The source of the evidence-based gestational weight gain guidelines used by providers
           across the US.
         </li>
         <li>
-          <strong>Mayo Clinic</strong> — Used selectively for general clinical summaries where ACOG
+          <strong>
+            <a href="https://www.mayoclinic.org/healthy-lifestyle/pregnancy-week-by-week/basics/healthy-pregnancy/hlv-20049471" target="_blank" rel="noopener noreferrer">Mayo Clinic</a>
+          </strong>{' '}
+          — Used selectively for general clinical summaries where ACOG
           or NIH guidance is corroborated.
         </li>
       </ul>
