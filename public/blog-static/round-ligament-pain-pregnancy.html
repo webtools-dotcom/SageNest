@@ -169,6 +169,59 @@
         border: 1px solid var(--border-hairline);
         margin: 0 0 3rem;
       }
+      .author-box {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+        background: var(--sage-softest, #f4f8f4);
+        border: 1px solid var(--sage-light, #c8dfc8);
+        border-radius: 16px;
+        margin: 2.5rem 0;
+        text-decoration: none;
+        transition: box-shadow 0.2s ease;
+      }
+      .author-box:hover {
+        box-shadow: 0 4px 16px rgba(90, 140, 90, 0.15);
+        color: inherit;
+      }
+      .author-avatar {
+        flex-shrink: 0;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--sage-primary, #7aab7a);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+      }
+      .author-info { flex: 1; }
+      .author-label {
+        font-size: 0.72rem;
+        color: var(--text-tertiary, #999);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin: 0 0 0.15rem;
+      }
+      .author-name {
+        font-weight: 600;
+        color: var(--charcoal, #1a1a1a);
+        font-size: 0.95rem;
+        margin: 0 0 0.25rem;
+      }
+      .author-bio {
+        font-size: 0.82rem;
+        color: var(--text-secondary, #555);
+        line-height: 1.45;
+        margin: 0;
+      }
+      .author-arrow {
+        flex-shrink: 0;
+        color: var(--sage-dark, #4a7a4a);
+        font-size: 1rem;
+        margin-left: auto;
+      }
       .cta-box {
         background: var(--sage-softest);
         border: 1px solid var(--sage-light);
@@ -214,6 +267,11 @@
   "headline": "Round Ligament Pain in Pregnancy: What It Is and When to Worry",
   "description": "Round ligament pain causes sharp, sudden pain in the lower abdomen during pregnancy. Learn what triggers it, how to get relief, and which pain needs medical attention.",
   "mainEntityOfPage": "https://sagenesthealth.com/blog/round-ligament-pain-pregnancy",
+  "author": {
+    "@type": "Organization",
+    "name": "SageNest Editorial Team",
+    "url": "https://sagenesthealth.com/editorial-team"
+  },
   "publisher": {
     "@type": "Organization",
     "name": "SageNest",
@@ -332,6 +390,15 @@
 <h2>The Bottom Line</h2>
 <p>Round ligament pain is one of the most startling symptoms of pregnancy and one of the most benign — a direct mechanical consequence of the uterus growing rapidly and the ligaments that support it adapting under tension. It is brief, triggered by movement, and relieved by flexing toward the pain and slowing down. Slowing your movements, wearing a support belt during active periods, and stretching your hip flexors regularly are the most practical long-term strategies. What matters most is knowing the difference between the sharp two-second twinge of a stretched ligament and the persistent, progressive, or rhythmic pain that signals something requiring evaluation. When in doubt, call your provider — round ligament pain is always a diagnosis made after ruling out other causes, not before. Use our <a href="/pregnancy-week-by-week">week-by-week pregnancy guide</a> to stay oriented to what is normal at each stage and bring any persistent concerns to your prenatal appointments.</p>
 <p>*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*</p>
+        <a href="/editorial-team" class="author-box">
+          <div class="author-avatar">🌿</div>
+          <div class="author-info">
+            <p class="author-label">Written by</p>
+            <p class="author-name">SageNest Editorial Team</p>
+            <p class="author-bio">Researched from ACOG, WHO, CDC, NIH, and IOM guidelines. Evidence-based, never anecdotal.</p>
+          </div>
+          <span class="author-arrow">→</span>
+        </a>
         <div class="cta-box">
           <h3>Calculate Your Pregnancy Due Date</h3>
           <p>Free, private, and no signup required.</p>
@@ -347,6 +414,7 @@
       <a href="/pregnancy-weight-gain-calculator">Weight Gain Calculator</a>
       <a href="/blog">Blog</a>
       <a href="/about">About</a>
+      <a href="/editorial-team">Editorial Team</a>
       <a href="/privacy">Privacy</a>
       <br /><br />
       © 2026 SageNest. For informational purposes only.

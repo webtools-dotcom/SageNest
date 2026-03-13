@@ -169,6 +169,59 @@
         border: 1px solid var(--border-hairline);
         margin: 0 0 3rem;
       }
+      .author-box {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1.25rem 1.5rem;
+        background: var(--sage-softest, #f4f8f4);
+        border: 1px solid var(--sage-light, #c8dfc8);
+        border-radius: 16px;
+        margin: 2.5rem 0;
+        text-decoration: none;
+        transition: box-shadow 0.2s ease;
+      }
+      .author-box:hover {
+        box-shadow: 0 4px 16px rgba(90, 140, 90, 0.15);
+        color: inherit;
+      }
+      .author-avatar {
+        flex-shrink: 0;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: var(--sage-primary, #7aab7a);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+      }
+      .author-info { flex: 1; }
+      .author-label {
+        font-size: 0.72rem;
+        color: var(--text-tertiary, #999);
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        margin: 0 0 0.15rem;
+      }
+      .author-name {
+        font-weight: 600;
+        color: var(--charcoal, #1a1a1a);
+        font-size: 0.95rem;
+        margin: 0 0 0.25rem;
+      }
+      .author-bio {
+        font-size: 0.82rem;
+        color: var(--text-secondary, #555);
+        line-height: 1.45;
+        margin: 0;
+      }
+      .author-arrow {
+        flex-shrink: 0;
+        color: var(--sage-dark, #4a7a4a);
+        font-size: 1rem;
+        margin-left: auto;
+      }
       .cta-box {
         background: var(--sage-softest);
         border: 1px solid var(--sage-light);
@@ -214,6 +267,11 @@
   "headline": "How Pregnancy Due Dates Are Calculated in Clinical Practice",
   "description": "Understand LMP, ultrasound adjustments, and what due dates really mean for care planning.",
   "mainEntityOfPage": "https://sagenesthealth.com/blog/how-due-dates-are-calculated",
+  "author": {
+    "@type": "Organization",
+    "name": "SageNest Editorial Team",
+    "url": "https://sagenesthealth.com/editorial-team"
+  },
   "publisher": {
     "@type": "Organization",
     "name": "SageNest",
@@ -261,6 +319,15 @@
 <h2>The Reality of Due Dates</h2>
 <p>While your due date provides important guidance for your prenatal care, it&#39;s crucial to understand that it&#39;s an estimate, not a guarantee:</p>
 <ul><li>Only 5% of babies are born on their exact due date</li><li>Most babies arrive within a week before or after the estimated date</li><li>Anywhere from 37-42 weeks is considered a normal, healthy delivery window</li><li>First-time mothers tend to deliver slightly after their due date</li><li>Women who have given birth before often deliver closer to or before their due date</li></ul>
+        <a href="/editorial-team" class="author-box">
+          <div class="author-avatar">🌿</div>
+          <div class="author-info">
+            <p class="author-label">Written by</p>
+            <p class="author-name">SageNest Editorial Team</p>
+            <p class="author-bio">Researched from ACOG, WHO, CDC, NIH, and IOM guidelines. Evidence-based, never anecdotal.</p>
+          </div>
+          <span class="author-arrow">→</span>
+        </a>
         <div class="cta-box">
           <h3>Calculate Your Pregnancy Due Date</h3>
           <p>Free, private, and no signup required.</p>
@@ -276,6 +343,7 @@
       <a href="/pregnancy-weight-gain-calculator">Weight Gain Calculator</a>
       <a href="/blog">Blog</a>
       <a href="/about">About</a>
+      <a href="/editorial-team">Editorial Team</a>
       <a href="/privacy">Privacy</a>
       <br /><br />
       © 2026 SageNest. For informational purposes only.
