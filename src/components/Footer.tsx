@@ -6,7 +6,7 @@ export const Footer = () => (
       <div>
         <p className="site-footer__brand">SageNest</p>
         <p className="site-footer__description">
-          SageNest Health – Smart Tools for Women’s Wellness
+          SageNest Health – Smart Tools for Women's Wellness
         </p>
       </div>
       <div>
@@ -23,6 +23,7 @@ export const Footer = () => (
         <h5>About</h5>
         <div className="site-footer__links">
           <Link to="/about">About Us</Link>
+          <Link to="/editorial-team">Editorial Team</Link>
           <Link to="/privacy">Privacy</Link>
         </div>
       </div>
