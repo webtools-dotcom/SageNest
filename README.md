@@ -356,6 +356,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── morning-sickness-remedies-that-actually-work.html
 │   │   ├── ovulation-signs-symptoms.html
 │   │   ├── pregnancy-headaches-causes-safe-relief-red-flags.html
+│   │   ├── pregnancy-insomnia-causes-safe-relief.html
 │   │   ├── pregnancy-nutrition-guide-what-to-eat-each-trimester.html
 │   │   ├── pregnancy-swelling-edema-normal-vs-warning-sign.html
 │   │   ├── pregnancy-week-by-week-milestones.html
@@ -364,6 +365,9 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   ├── favicon-96x96.png
 │   ├── favicon.ico
 │   ├── favicon.svg
+│   ├── images/
+│   │   └── blog/
+│   │       └── sagenest-blog-default.jpg
 │   ├── manifest.json
 │   ├── robots.txt
 │   ├── sitemap.xml
@@ -420,6 +424,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── AdminLogin.tsx
 │   │   ├── BlogPoster.tsx
 │   │   ├── Calculator.tsx
+│   │   ├── EditorialTeamPage.tsx
 │   │   ├── NotFound.tsx
 │   │   ├── OvulationCalculator.tsx
 │   │   ├── PregnancyWeekByWeekHub.tsx

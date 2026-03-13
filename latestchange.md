@@ -1,3 +1,9 @@
+## 2026-03-13 (README worktree structure resynced to current tracked files)
+
+- Updated the `## Exact Repository Worktree Structure` section in `README.md` to match the current `git ls-files` output exactly.
+- Added missing tracked paths in the documented tree, including `public/images/blog/sagenest-blog-default.jpg`, `public/blog-static/pregnancy-insomnia-causes-safe-relief.html`, and `src/pages/EditorialTeamPage.tsx`.
+- Why: the previously documented tree had drifted from the actual repository state, which can confuse contributors during navigation and onboarding.
+
 ## 2026-03-13 (Added blog: Pregnancy Insomnia: Why Sleep Gets Harder and What Actually Helps)
 
 - Added a new blog post object at the top of `src/data/blogPosts.ts` with slug `pregnancy-insomnia-causes-safe-relief`, including full long-form content, FAQ, metadata, and default image URL.
