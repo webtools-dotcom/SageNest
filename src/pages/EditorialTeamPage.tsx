@@ -153,8 +153,7 @@ export const EditorialTeamPage = () => {
 
       <h2>About SageNest's Tools</h2>
       <p>
-        In addition to editorial content, the SageNest Editorial Team maintains oversight of the
-        clinical accuracy of our interactive tools — including the{' '}
+        In addition to editorial content, The calculation methods used in our tools align with formulas used by healthcare providers — including the{' '}
         <Link to="/pregnancy-due-date-calculator">Pregnancy Due Date Calculator</Link>,{' '}
         <Link to="/pregnancy-weight-gain-calculator">Pregnancy Weight Gain Calculator</Link>, and{' '}
         <Link to="/ovulation-calculator">Ovulation Calculator</Link>. All calculation methods align
