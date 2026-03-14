@@ -1,23 +1,17 @@
-## 2026-03-13 (Permanent deploy fix: generator no longer hard-crashes if cloudinary package is missing)
+## 2026-03-13 (CI fix: align @vitejs/plugin-react with Vite 8 for npm install)
 
-- Refactored `scripts/generate-blog-html.mjs` to load Cloudinary lazily via dynamic import (`loadCloudinaryClient`) instead of top-level static import.
-- Added a safe fallback path: if Cloudinary cannot be resolved in a build environment, the script logs a warning and continues static HTML generation with existing `imageUrl` values (no pipeline crash).
-- Kept all existing image-generation logic intact when Cloudinary is available; only module-loading behavior was hardened.
-- Why: Cloudflare/CI deploys were failing during `prebuild` with `ERR_MODULE_NOT_FOUND: Cannot find package 'cloudinary'`; this makes the blog generator resilient and prevents whole-build failures.
+- Updated `@vitejs/plugin-react` in `package.json` from `^4.3.3` to `^6.0.1` and regenerated `package-lock.json` using plain `npm install`.
+- Why: CI was failing during `npm install` with an `ERESOLVE` peer-dependency conflict because `@vitejs/plugin-react@4.x` only supports Vite up to v7, while this repo uses Vite v8.
 
-## 2026-03-13 (Stabilized blog image pipeline after merge regressions)
+## 2026-03-13 (Added dotenv package for generate-blog-html .env loading)
 
-- Updated `scripts/generate-blog-html.mjs` to auto-load `.env` values before reading image-pipeline credentials, so local and CI runs can reliably pick up `POLLINATIONS_API_KEY` and Cloudinary keys without manual shell exports.
-- Hardened prompt keyword extraction fallback so empty/stop-word-only titles still produce a valid prompt subject (`maternal wellness`) instead of an empty segment.
-- Improved Cloudinary upload handling to treat race-condition "already exists" conflicts as success and continue using the deterministic Cloudinary URL.
-- Why: post-merge edits had destabilized the generation path; these fixes restore seamless, idempotent image + static HTML generation behavior.
+- Added `dotenv` to dependencies in `package.json`/`package-lock.json` so `import 'dotenv/config';` in `scripts/generate-blog-html.mjs` resolves correctly at runtime.
+- Why: without the package installed, the script fails with `ERR_MODULE_NOT_FOUND`, so `.env` values cannot be loaded automatically.
 
-## 2026-03-13 (Automated unique Cloudinary blog images in generate-blog-html pipeline)
+## 2026-03-13 (Load .env automatically in blog HTML generator)
 
-- Updated `scripts/generate-blog-html.mjs` to add an image pipeline before static HTML rendering: derive a prompt from each post title, check Cloudinary Admin API for existing `sagenest-blog/<slug>` assets, generate missing images via Pollinations (`model=flux`, `1200x630`, random seed), upload via Cloudinary upload stream, and inject the resolved Cloudinary URL into generated blog HTML without writing back to `src/data/blogPosts.ts`.
-- Added non-blocking resilience behavior in the same script: handles Pollinations `402` credit exhaustion, retries one time after 3 seconds for other Pollinations failures, enforces a 2-second delay between Pollinations generation calls, continues on per-post failures, and prints an end-of-run error summary.
-- Added `cloudinary` as the only new runtime dependency in `package.json` (and generated `package-lock.json`).
-- Why: make each blog post eligible for Google Discover image requirements with a deterministic, automated, and idempotent generation/upload pipeline that does not break existing static blog publishing.
+- Added `import 'dotenv/config';` as the first line in `scripts/generate-blog-html.mjs` so environment variables from `.env` are loaded before any other imports execute.
+- Why: fixes cases where the blog image pipeline reports missing Cloudinary/Pollinations env vars even when `.env` exists locally.
 
 ## 2026-03-13 (Added blog: Shortness of Breath in Pregnancy: Normal Causes vs Warning Signs)
 
