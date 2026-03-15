@@ -352,7 +352,7 @@ function resolvePromptFromSlug(slug) {
 }
 
 function buildCloudinaryImageUrl(cloudName, slug) {
-  return `https://res.cloudinary.com/${cloudName}/image/upload/sagenest-blog/${slug}.jpg`;
+  return `https://res.cloudinary.com/${cloudName}/image/upload/w_1200,h_630,c_fill/sagenest-blog/${slug}.jpg`;
 }
 
 async function cloudinaryImageExists(cloudName, apiKey, apiSecret, slug) {
