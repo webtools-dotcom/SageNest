@@ -1,3 +1,9 @@
+## 2026-03-15 (Rollback completed: static blog generation only, no auto image pipeline)
+
+- Removed the remaining automation hook from `scripts/generate-blog-html.mjs` by deleting `.env` auto-loading import, so blog generation now depends only on static post data and template rendering.
+- Removed `dotenv` from `package.json` dependencies and regenerated `package-lock.json` to keep install/build state deterministic.
+- Why: fully finalize the rollback to a stable static-only blog generation path and eliminate Cloudinary/Pollinations-era dependency/config drift that could reintroduce CI/Cloudflare deploy fragility.
+
 ## 2026-03-13 (Removed Cloudinary/Pollinations blog image automation stack)
 
 - Reverted `scripts/generate-blog-html.mjs` to the pre-image-automation behavior so blog static generation no longer performs Cloudinary checks, Pollinations generation, `.env` loading, or upload logic.
