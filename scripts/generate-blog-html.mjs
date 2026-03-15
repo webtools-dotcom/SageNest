@@ -1,10 +1,30 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { v2 as cloudinary } from 'cloudinary';
 import { loadBlogPosts } from './blog-data.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
+
+const PROMPT_MAP = [
+  { keywords: ['morning-sickness', 'nausea'], prompt: 'soft editorial photograph, pregnant woman holding ginger tea by window, warm natural lighting, sage green tones, calm expression, no text' },
+  { keywords: ['weight-gain'], prompt: 'soft editorial photograph, pregnant woman standing sideways profile, warm natural lighting, sage green tones, clean background, no text' },
+  { keywords: ['nutrition', 'food', 'eat', 'diet'], prompt: 'soft editorial photograph, fresh healthy vegetables fruits nuts on wooden table, pregnancy nutrition, warm natural lighting, sage green, no text' },
+  { keywords: ['headache'], prompt: 'soft editorial photograph, pregnant woman resting with eyes closed hand on temple, soft diffused light, sage green tones, calm, no text' },
+  { keywords: ['swelling', 'edema'], prompt: 'soft editorial photograph, pregnant woman sitting comfortably feet elevated, warm natural lighting, sage green tones, no text' },
+  { keywords: ['sleep', 'insomnia'], prompt: 'soft editorial photograph, pregnant woman sleeping peacefully on side with pillow, soft warm bedroom lighting, sage green tones, no text' },
+  { keywords: ['ovulation', 'fertile', 'cycle', 'luteal', 'irregular'], prompt: 'soft editorial photograph, woman holding calendar near window, natural light, sage green tones, clean minimal, no text' },
+  { keywords: ['contraction', 'braxton'], prompt: 'soft editorial photograph, pregnant woman breathing calmly hand on belly, warm natural lighting, sage green tones, no text' },
+  { keywords: ['round-ligament', 'pelvic', 'pain'], prompt: 'soft editorial photograph, pregnant woman doing gentle stretching yoga pose, warm natural lighting, sage green tones, no text' },
+  { keywords: ['diabetes', 'glucose', 'blood-sugar'], prompt: 'soft editorial photograph, healthy balanced meal plate with vegetables and protein, warm natural lighting, sage green tones, no text' },
+  { keywords: ['due-date', 'gestational', 'ultrasound', 'ivf'], prompt: 'soft editorial photograph, pregnant woman looking at calendar smiling gently, warm natural lighting, sage green tones, no text' },
+  { keywords: ['vitamin', 'supplement', 'iron', 'folate'], prompt: 'soft editorial photograph, prenatal vitamins supplements on wooden surface with greenery, warm natural lighting, sage green tones, no text' },
+  { keywords: ['postpartum', 'postnatal'], prompt: 'soft editorial photograph, new mother holding newborn baby gently, soft warm lighting, sage green tones, peaceful, no text' },
+  { keywords: ['shortness-of-breath', 'breathing'], prompt: 'soft editorial photograph, pregnant woman sitting calmly by open window breathing fresh air, warm natural lighting, sage green tones, no text' },
+];
+
+const FALLBACK_PROMPT = 'soft editorial photograph, pregnant woman resting hand on belly near window, warm natural lighting, sage green tones, clean minimal background, no text, no watermark';
 
 function markdownToHtml(markdown) {
   const clean = markdown
@@ -281,6 +301,150 @@ function articleJsonLd(post) {
   return `<script type="application/ld+json">\n${JSON.stringify(schema, null, 2)}\n</script>`;
 }
 
+function loadDotEnvFile() {
+  let raw;
+  try {
+    raw = readFileSync(join(ROOT, '.env'), 'utf8');
+  } catch {
+    return;
+  }
+
+  for (const line of raw.split(/\r?\n/)) {
+    const trimmed = line.trim();
+    if (!trimmed || trimmed.startsWith('#')) continue;
+    const equalIndex = trimmed.indexOf('=');
+    if (equalIndex <= 0) continue;
+    const key = trimmed.slice(0, equalIndex).trim();
+    if (!key || process.env[key]) continue;
+    let value = trimmed.slice(equalIndex + 1).trim();
+    if ((value.startsWith('"') && value.endsWith('"')) || (value.startsWith("'") && value.endsWith("'"))) {
+      value = value.slice(1, -1);
+    }
+    process.env[key] = value;
+  }
+}
+
+function wait(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+function resolvePromptFromSlug(slug) {
+  const normalizedSlug = String(slug || '').toLowerCase();
+  const match = PROMPT_MAP.find(({ keywords }) => keywords.some((keyword) => normalizedSlug.includes(keyword.toLowerCase())));
+  return match?.prompt || FALLBACK_PROMPT;
+}
+
+function buildCloudinaryImageUrl(cloudName, slug) {
+  return `https://res.cloudinary.com/${cloudName}/image/upload/sagenest-blog/${slug}.jpg`;
+}
+
+async function cloudinaryImageExists(cloudName, apiKey, apiSecret, slug) {
+  const encodedPublicId = encodeURIComponent(`sagenest-blog/${slug}`);
+  const endpoint = `https://api.cloudinary.com/v1_1/${cloudName}/resources/image/upload/${encodedPublicId}`;
+  const auth = Buffer.from(`${apiKey}:${apiSecret}`).toString('base64');
+  const response = await fetch(endpoint, {
+    method: 'GET',
+    headers: { Authorization: `Basic ${auth}` },
+  });
+
+  if (response.status === 200) return true;
+  if (response.status === 404) return false;
+
+  const body = await response.text();
+  throw new Error(`Cloudinary resource check failed with ${response.status}: ${body.slice(0, 250)}`);
+}
+
+async function fetchPollinationsImage(prompt, apiKey, slug, errors, isRetry = false) {
+  const seed = Math.floor(Math.random() * 1000000);
+  const endpoint = `https://gen.pollinations.ai/image/${encodeURIComponent(prompt)}?model=flux&width=1200&height=630&seed=${seed}&enhance=true&negative_prompt=${encodeURIComponent('text,watermark,logo,words,letters,signature,nudity')}&key=${encodeURIComponent(apiKey)}`;
+  const response = await fetch(endpoint);
+
+  if (response.status === 200) {
+    const arrayBuffer = await response.arrayBuffer();
+    return Buffer.from(arrayBuffer);
+  }
+
+  if (response.status === 402) {
+    const message = `Pollinations credits exhausted for slug "${slug}" (HTTP 402). Skipping generation.`;
+    errors.push(message);
+    console.warn(`⚠ ${message}`);
+    return null;
+  }
+
+  if (!isRetry) {
+    const message = `Pollinations request failed for slug "${slug}" with status ${response.status}. Retrying once in 3 seconds.`;
+    console.warn(`⚠ ${message}`);
+    await wait(3000);
+    return fetchPollinationsImage(prompt, apiKey, slug, errors, true);
+  }
+
+  const body = await response.text();
+  const message = `Pollinations retry failed for slug "${slug}" with status ${response.status}: ${body.slice(0, 250)}`;
+  errors.push(message);
+  console.warn(`⚠ ${message}`);
+  return null;
+}
+
+function uploadImageToCloudinary(imageBuffer, slug) {
+  return new Promise((resolve, reject) => {
+    const stream = cloudinary.uploader.upload_stream(
+      {
+        folder: 'sagenest-blog',
+        public_id: slug,
+        resource_type: 'image',
+        overwrite: false,
+      },
+      (error, result) => {
+        if (error) {
+          reject(error);
+          return;
+        }
+        resolve(result);
+      }
+    );
+    stream.end(imageBuffer);
+  });
+}
+
+async function resolvePostImage(post, config, errors, pollinationsState) {
+  if (!config.isReady) return post.imageUrl;
+
+  const cloudinaryUrl = buildCloudinaryImageUrl(config.cloudName, post.slug);
+
+  try {
+    const exists = await cloudinaryImageExists(config.cloudName, config.cloudinaryApiKey, config.cloudinaryApiSecret, post.slug);
+    if (exists) {
+      console.log(`  ↳ image exists for ${post.slug}, skipping generation`);
+      return cloudinaryUrl;
+    }
+  } catch (error) {
+    const message = `Cloudinary check failed for slug "${post.slug}": ${error.message}`;
+    errors.push(message);
+    console.warn(`⚠ ${message}`);
+    return post.imageUrl;
+  }
+
+  if (pollinationsState.hasCalled) {
+    await wait(2000);
+  }
+  pollinationsState.hasCalled = true;
+
+  const prompt = resolvePromptFromSlug(post.slug);
+  const imageBuffer = await fetchPollinationsImage(prompt, config.pollinationsApiKey, post.slug, errors);
+  if (!imageBuffer) return post.imageUrl;
+
+  try {
+    await uploadImageToCloudinary(imageBuffer, post.slug);
+    console.log(`  ↳ generated and uploaded image for ${post.slug}`);
+    return cloudinaryUrl;
+  } catch (error) {
+    const message = `Cloudinary upload failed for slug "${post.slug}": ${error.message}`;
+    errors.push(message);
+    console.warn(`⚠ ${message}`);
+    return post.imageUrl;
+  }
+}
+
 function buildPostHtml(post, styleBlock) {
   const bodyHtml = markdownToHtml(post.content);
   const descEscaped = post.description.replace(/"/g, '&quot;');
@@ -364,18 +528,51 @@ ${styleBlock}
 </html>`;
 }
 
+loadDotEnvFile();
+
 const posts = await loadBlogPosts();
 const tokens = loadDesignTokens();
 const styleBlock = buildStaticStyle(tokens);
+const imageErrors = [];
+const imageConfig = {
+  pollinationsApiKey: process.env.POLLINATIONS_API_KEY || '',
+  cloudName: process.env.CLOUDINARY_CLOUD_NAME || '',
+  cloudinaryApiKey: process.env.CLOUDINARY_API_KEY || '',
+  cloudinaryApiSecret: process.env.CLOUDINARY_API_SECRET || '',
+};
+imageConfig.isReady = Boolean(
+  imageConfig.pollinationsApiKey && imageConfig.cloudName && imageConfig.cloudinaryApiKey && imageConfig.cloudinaryApiSecret
+);
+
+if (imageConfig.isReady) {
+  cloudinary.config({
+    cloud_name: imageConfig.cloudName,
+    api_key: imageConfig.cloudinaryApiKey,
+    api_secret: imageConfig.cloudinaryApiSecret,
+    secure: true,
+  });
+} else {
+  console.warn('⚠ Image pipeline skipped: missing POLLINATIONS_API_KEY and/or Cloudinary credentials in environment.');
+}
 
 console.log(`Generating static HTML for ${posts.length} blog posts...`);
+
+const pollinationsState = { hasCalled: false };
 
 for (const post of posts) {
   const dir = join(ROOT, 'public', 'blog-static');
   mkdirSync(dir, { recursive: true });
-  const html = buildPostHtml(post, styleBlock);
+  const resolvedImageUrl = await resolvePostImage(post, imageConfig, imageErrors, pollinationsState);
+  const html = buildPostHtml({ ...post, imageUrl: resolvedImageUrl }, styleBlock);
   writeFileSync(join(dir, `${post.slug}.html`), html, 'utf8');
   console.log(`  ✓ public/blog-static/${post.slug}.html`);
+}
+
+if (imageErrors.length > 0) {
+  console.log('\nImage pipeline completed with warnings:');
+  for (const error of imageErrors) {
+    console.log(`  - ${error}`);
+  }
 }
 
 console.log('Done.');

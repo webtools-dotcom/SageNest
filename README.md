@@ -153,7 +153,7 @@ Blog redirect/rewrite entries in `public/_redirects` are generated from `src/dat
 ### Sitemap and indexing
 
 - `src/data/blogPosts.ts` is the source of truth for blog content and slug metadata (`updatedAt`, optional `imageUrl`).
-- `public/blog-static/<slug>.html` is generated from that source via `npm run generate:blog`.
+- `public/blog-static/<slug>.html` is generated from that source via `npm run generate:blog`, and this script now auto-resolves a per-slug Cloudinary image URL before rendering each HTML file.
 - `public/sitemap.xml` is generated from route sources (`src/data/tools.ts`, fixed routes, week-1..40, and blog slugs from `blogPosts.ts`, with optional Supabase merge when enabled).
 - `public/_redirects` blog rules are generated from the same slug source and intentionally include only two `200` rewrites per slug: `/blog/<slug>` and `/blog/<slug>/` to `/blog-static/<slug>.html`.
 - Blog HTML is served from the dedicated `blog-static` path to avoid Cloudflare directory slash normalization loops (`/blog/<slug>` ⇄ `/blog/<slug>/`).
@@ -163,11 +163,12 @@ Blog redirect/rewrite entries in `public/_redirects` are generated from `src/dat
 ### Blog publishing checklist (for every new post)
 
 1. Add the post object in `src/data/blogPosts.ts` with unique `slug` and `updatedAt` (`YYYY-MM-DD`).
-2. Run `npm run generate:blog`, `npm run generate:redirects`, and `npm run generate:sitemap`.
-3. Run `npm run check:redirects`, `npm run check:sitemap`, and `npm run check:blog-sync`.
-4. Deploy to Cloudflare Pages.
-5. Purge Cloudflare cache for `/blog/*`.
-6. In Google Search Console, submit/refresh sitemap and request indexing for the new blog URL.
+2. Ensure `.env` contains `POLLINATIONS_API_KEY`, `CLOUDINARY_CLOUD_NAME`, `CLOUDINARY_API_KEY`, and `CLOUDINARY_API_SECRET` so `npm run generate:blog` can generate/upload missing blog images automatically.
+3. Run `npm run generate:blog`, `npm run generate:redirects`, and `npm run generate:sitemap`.
+4. Run `npm run check:redirects`, `npm run check:sitemap`, and `npm run check:blog-sync`.
+5. Deploy to Cloudflare Pages.
+6. Purge Cloudflare cache for `/blog/*`.
+7. In Google Search Console, submit/refresh sitemap and request indexing for the new blog URL.
 
 ## Performance Notes
 
