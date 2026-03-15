@@ -1,3 +1,9 @@
+## 2026-03-15 (Refreshed blog: how-due-dates-are-calculated)
+
+- Replaced the existing `how-due-dates-are-calculated` post object in `src/data/blogPosts.ts` with the updated title, description, reading time, FAQ set, and full long-form content provided for this refresh.
+- Regenerated blog publishing artifacts and indexes so the updated article is reflected in static output and discovery files: `public/blog-static/how-due-dates-are-calculated.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: refresh this high-intent educational article with clearer clinical explanations and updated UX-facing copy while keeping blog/redirect/sitemap outputs synchronized for SEO and routing integrity.
+
 ## 2026-03-15 (Added pelvic girdle pain in pregnancy blog post)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `pelvic-girdle-pain-pregnancy`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), `imageUrl`, five FAQ entries, and full long-form markdown content exactly as provided.
