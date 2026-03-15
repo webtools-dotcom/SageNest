@@ -1,3 +1,11 @@
+## 2026-03-15 (Reintroduced automated unique blog image pipeline with Cloudinary + Pollinations)
+
+- Updated `scripts/generate-blog-html.mjs` to run a pre-render image pipeline per blog slug: keyword-to-prompt mapping, Cloudinary existence check, Pollinations generation (`flux`, `1200x630`, random seed, enhance + negative prompt), Cloudinary upload stream, and resolved Cloudinary URL injection into generated static HTML.
+- Added resilient pipeline behavior: skip generation when Cloudinary already has the slug image, handle Pollinations 402 credit exhaustion without crashing, retry other Pollinations failures once after 3 seconds, continue on upload failures, enforce 2-second spacing between Pollinations calls, and print an end-of-run warning summary.
+- Added `cloudinary` dependency in `package.json`/`package-lock.json` for official upload SDK support.
+- Updated README blog indexing/publishing guidance to document that `generate:blog` now auto-resolves unique Cloudinary blog images and which environment variables are required for this automation.
+- Why: Google Discover eligibility depends on unique, relevant images per article; this restores fully automated per-slug image generation/upload in the existing static blog build pipeline while staying idempotent for already-uploaded assets.
+
 ## 2026-03-15 (Rollback completed: static blog generation only, no auto image pipeline)
 
 - Removed the remaining automation hook from `scripts/generate-blog-html.mjs` by deleting `.env` auto-loading import, so blog generation now depends only on static post data and template rendering.
