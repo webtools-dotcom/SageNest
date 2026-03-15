@@ -1765,76 +1765,132 @@ IVF due dates are remarkably accurate because fertilization date is known exactl
   },
   {
     slug: 'how-due-dates-are-calculated',
-    title: 'How Pregnancy Due Dates Are Calculated in Clinical Practice',
-    description: 'Understand LMP, ultrasound adjustments, and what due dates really mean for care planning.',
-    readingTime: '9 min read',
-    updatedAt: '2026-03-04',
+    title: 'How Due Dates Are Calculated: What Your Provider Actually Does (and Why the Number Moves)',
+    description: 'Learn how pregnancy due dates are calculated using LMP and ultrasound, why your date may shift, and what the 40-week estimate actually means for your care.',
+    readingTime: '10 min read',
+    updatedAt: '2026-03-15',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
-    content: `## Why Your Due Date Matters
+    faq: [
+      {
+        question: 'How accurate is a pregnancy due date calculated from my last period?',
+        answer: 'LMP-based dating assumes a textbook 28-day cycle with ovulation on day 14 — and for many women, that assumption is wrong. Research indicates that LMP dating can be off by a week or more in a significant proportion of pregnancies, particularly for women with irregular or longer cycles. A first-trimester ultrasound is considered more accurate than LMP alone and will be used to confirm or adjust the date your provider gives you.'
+      },
+      {
+        question: 'Why did my due date change after my ultrasound?',
+        answer: 'Due date adjustments after ultrasound are extremely common and do not signal a problem. According to ACOG guidelines, if a first-trimester ultrasound measurement differs from your LMP-based estimate by more than seven days, your provider should update the due date to match the ultrasound. This happens because early embryo size is a more objective marker of gestational age than self-reported cycle history, which is subject to recall errors and cycle variation.'
+      },
+      {
+        question: 'What does it mean if my due date keeps changing between appointments?',
+        answer: 'After the first trimester, your due date should generally stay fixed. If it was set by a reliable first-trimester ultrasound, subsequent measurements of fetal growth do not change the established gestational age — they are used to track whether your baby is growing appropriately, not to recalculate when you conceived. If your provider keeps revising the date after 14 weeks without a clear explanation, that is a reasonable question to ask at your next visit.'
+      },
+      {
+        question: 'Is it normal to go past my due date?',
+        answer: 'Yes — only about 5% of babies arrive on their exact due date. The full-term delivery window spans from 39 weeks through 40 weeks and 6 days, but births between 37 and 42 weeks are within the normal range. First-time mothers statistically tend to deliver after their due date. Most providers begin discussing induction options around 41 weeks, as the risk of certain complications rises beyond that point.'
+      },
+      {
+        question: 'Can I calculate my own due date if I know my last period?',
+        answer: 'Yes — Naegele\'s Rule gives you a starting estimate. Take the first day of your last menstrual period, add seven days, then count forward nine calendar months. However, this calculation assumes a 28-day cycle. If your cycle is consistently longer or shorter, your ovulation likely happened earlier or later than day 14, and your estimate should be adjusted accordingly. Our due date calculator at SageNest accounts for cycle length to give you a more personalised result before your first appointment.'
+      }
+    ],
+    content: `
+You were handed a date — or told one over the phone — and now it is the centre of everything: your anatomy scan, your maternity leave, your hospital bag, the mental countdown happening in the back of your mind at all times. But almost no one explains *how* that number was actually arrived at, or why it changed at your eight-week appointment. Here is the complete picture.
 
-Your estimated due date (EDD) serves as a crucial reference point throughout your pregnancy journey. While only about 5% of babies arrive on their exact due date, this estimate helps your healthcare provider time important tests, monitor fetal development, and plan for delivery. Understanding how your due date is calculated can help you feel more informed and confident in your prenatal care.
+## What Is a Pregnancy Due Date?
 
-## The Last Menstrual Period (LMP) Method
+A due date — formally called an **estimated due date**, or EDD — is the best clinical prediction of when your pregnancy will reach 40 weeks of gestational age. That 40-week figure is not arbitrary. It comes from the observation, documented across population-level data, that the average time between the first day of the last menstrual period and delivery is approximately 280 days.
 
-The most common starting point for calculating your due date is the first day of your last menstrual period. Using a method called Naegele's Rule, healthcare providers add 280 days (40 weeks) to this date to estimate when your baby will arrive.
+The word *estimated* in estimated due date is doing serious work. Your EDD is a statistical midpoint, not a deadline. It tells your provider when to schedule your anatomy scan, when to start monitoring more closely for post-term risk, and when to discuss induction — but it does not tell you the day your baby will be born. Only about 5 percent of babies arrive on their exact due date.
 
-**How it works:**
-- Take the first day of your last period
-- Add 7 days
-- Subtract 3 months
-- Add 1 year
+## Why It Matters for Your Care
 
-For example, if your last period started on November 1, 2025, your estimated due date would be August 8, 2026.
+Your EDD is the foundation of your entire prenatal care timeline. Nearly every clinical decision in pregnancy is anchored to gestational age — and gestational age is anchored to your due date.
 
-This calculation assumes you have a regular 28-day menstrual cycle and ovulated around day 14. However, research shows that approximately half of women cannot accurately recall their LMP, and many women have cycles that differ from the standard 28 days.
+When the date is off by even a week, the consequences ripple. A misidentified gestational age can mean a genetic screening test is drawn at the wrong time (reducing its accuracy), an anatomy scan is scheduled too early to see everything clearly, or a post-term induction is offered either too early or too late. This is why providers work carefully to establish the most accurate EDD possible in the first trimester rather than leaving the LMP estimate unchallenged.
 
-## Why Cycle Length Affects Your Due Date
+## The LMP Method: Where Every Due Date Starts
 
-If your menstrual cycle is longer or shorter than 28 days, your ovulation likely occurred at a different time. The standard calculation assumes ovulation happens 14 days before your next expected period, regardless of cycle length.
+For the vast majority of pregnancies, the first calculation uses **Naegele's Rule**, based on the first day of your last menstrual period.
 
-**Adjusting for cycle length:**
-- If you have a 32-day cycle, ovulation likely occurred around day 18 (not day 14)
-- This means conception happened 4 days later than the standard calculation assumes
-- Your actual due date would be about 4 days later than the basic LMP calculation
+The formula: take the first day of your LMP, add seven days, then count forward nine calendar months. Alternatively, add 280 days directly. The result is your preliminary EDD.
 
-Our calculator at SageNest accounts for cycle length variations to provide a more personalized estimate for your specific situation.
+**The critical assumption baked into this formula:** your cycle is exactly 28 days long, and you ovulated on day 14. For women with textbook cycles, this is a reasonable approximation. For everyone else — including women with cycles of 32, 35, or 21 days, or cycles that vary month to month — the LMP calculation can be off by days or weeks without any error in the arithmetic.
 
-## When Ultrasound Provides Better Dating
+Here is why: Naegele's Rule estimates conception occurred on day 14. If you actually ovulate on day 19 (common in a 33-day cycle), conception happened five days later than the formula assumes, and your due date should be pushed back five days accordingly. The LMP method cannot know this on its own.
 
-According to the American College of Obstetricians and Gynecologists (ACOG), ultrasound measurement in the first trimester is the most accurate method to establish or confirm gestational age. First-trimester ultrasounds (performed before 13 weeks and 6 days) can predict your due date with an accuracy of ±5-7 days.
+There is also a recall problem. Research suggests a meaningful proportion of women cannot accurately remember the exact date their last period began — and even one or two days' error compounds into a shifted estimate. This is not a failing; it is simply a limitation of memory-based dating that ultrasound is designed to correct.
 
-**Why first-trimester ultrasound is so accurate:**
-- All embryos develop at roughly the same rate in early pregnancy
-- Crown-rump length (measuring from head to bottom) provides a reliable indicator of gestational age
-- Individual variations in growth haven't yet occurred
-- The measurement is less affected by factors like genetics or maternal nutrition
+If you want to run the LMP calculation yourself before your first appointment, use our [due date calculator](/pregnancy-due-date-calculator) — it accounts for your actual cycle length, not just the 28-day default.
 
-In one major study, 40% of women who had first-trimester ultrasounds had their due dates adjusted because the ultrasound differed by more than 5 days from their LMP-based estimate.
+## How Ultrasound Establishes Gestational Age
 
-## When Your Due Date Might Be Adjusted
+According to ACOG, **first-trimester ultrasound is the most accurate method for establishing gestational age**, and it should be used to confirm or replace the LMP-based estimate. When performed before 13 weeks and 6 days, ultrasound can estimate your due date with an accuracy of approximately ±5 to 7 days.
 
-Your healthcare provider may adjust your due date based on ultrasound findings at different stages:
+The measurement used is called **crown-rump length (CRL)** — the distance from the top of the fetal head to the bottom of the torso. In early pregnancy, all embryos develop at essentially the same rate, which makes CRL a reliable proxy for gestational age regardless of individual variation in genetics or maternal nutrition. That uniformity disappears in the second and third trimesters, which is why later ultrasounds are far less useful for dating.
 
-**First Trimester (up to 13 weeks 6 days):**
-- If ultrasound varies from LMP dating by more than 7 days, the due date should be changed to match the ultrasound
+The practical implication: if your eight-week ultrasound shows a crown-rump length corresponding to 7 weeks and 3 days, your provider will move your due date forward accordingly — even if your LMP suggested you were exactly 8 weeks. The ultrasound wins.
 
-**Second Trimester (14-21 weeks 6 days):**
-- Dating should be changed if ultrasound varies by more than 10 days from LMP
-- Most anatomy scans occur around 18-20 weeks
+## When and How Due Dates Get Adjusted
 
-**Third Trimester (22 weeks and beyond):**
-- Ultrasounds become less accurate (±21-30 days)
-- Due dates are rarely changed in this timeframe unless there's a very large discrepancy
-- Later ultrasounds focus more on fetal growth than dating
+ACOG guidelines specify clear thresholds for when a due date should be changed based on ultrasound findings:
 
-## The Reality of Due Dates
+**First trimester (up to 13 weeks 6 days):** If the ultrasound-based estimate differs from the LMP-based estimate by more than **7 days**, the due date is updated to match the ultrasound.
 
-While your due date provides important guidance for your prenatal care, it's crucial to understand that it's an estimate, not a guarantee:
+**Second trimester (14 to 27 weeks 6 days):** The threshold for adjustment widens to **10 to 14 days**, depending on gestational age. By this point, individual variation in fetal size begins to appear, making ultrasound-based dating less precise than in the first trimester.
 
-- Only 5% of babies are born on their exact due date
-- Most babies arrive within a week before or after the estimated date
-- Anywhere from 37-42 weeks is considered a normal, healthy delivery window
-- First-time mothers tend to deliver slightly after their due date
-- Women who have given birth before often deliver closer to or before their due date`
-  },
+**Third trimester (28 weeks and beyond):** Due dates are rarely changed based on late ultrasound measurements. By this stage, fetal size reflects growth patterns and genetics rather than gestational age, and ultrasound accuracy has widened to a margin of ±3 weeks. A late-pregnancy measurement that looks "small" or "large" for dates is interpreted as a growth question, not a dating question.
+
+The takeaway: if you have a well-dated first-trimester ultrasound and your provider confirmed or adjusted your EDD at that time, that date is your anchor for the rest of the pregnancy. Subsequent growth scans do not and should not move it.
+
+## What 40 Weeks Actually Represents
+
+The 40-week framework counts gestational age from the first day of the last menstrual period — not from conception. This means the first two weeks of your "pregnancy" technically occurred before fertilisation. The embryo exists from roughly week 3 onward; the first two weeks are, by convention, counted as part of the gestational timeline.
+
+This convention exists because LMP is a date most women can identify, while the exact date of ovulation or fertilisation usually cannot be confirmed without fertility monitoring. It is a practical compromise, not a biological statement.
+
+**What the delivery window actually looks like:**
+
+- **Early term:** 37 weeks 0 days to 38 weeks 6 days
+- **Full term:** 39 weeks 0 days to 40 weeks 6 days
+- **Late term:** 41 weeks 0 days to 41 weeks 6 days
+- **Post-term:** 42 weeks 0 days and beyond
+
+Most providers begin discussing induction options at 41 weeks, as evidence indicates that the risk of stillbirth and certain complications rises meaningfully after this point. A delivery between 37 and 42 weeks is within the clinically normal range — the EDD is the midpoint of a window, not an expiry date.
+
+## Common Questions About Due Date Calculation
+
+### Does IVF dating work differently?
+Yes. For pregnancies conceived through IVF, the exact date of egg retrieval and fertilisation is known with precision. Gestational age is typically calculated as the embryo transfer date plus the age of the embryo at transfer (usually 3 or 5 days), added to 266 days (the average time from fertilisation to delivery). IVF due dates are generally considered more accurate than LMP-based estimates because they remove the cycle-variation uncertainty entirely. For a detailed walkthrough, see our guide to [IVF due date calculation](/blog/ivf-due-date-guide).
+
+### What if I have an irregular cycle?
+Irregular cycles are one of the strongest arguments for early ultrasound dating. If your cycles vary significantly in length — or if you have a condition like PCOS that affects ovulation timing — the LMP method may be off by two weeks or more. In these cases, a first-trimester ultrasound is especially important for establishing an accurate EDD. Our [due date calculator](/pregnancy-due-date-calculator) allows you to enter a custom cycle length to improve your preliminary estimate.
+
+### Does a "small" baby at the anatomy scan mean my due date is wrong?
+Not necessarily. By the second trimester, fetal size reflects individual growth variation more than gestational age. A baby measuring slightly smaller or larger than average at 20 weeks is more likely a growth pattern than a dating error — especially if a first-trimester ultrasound already confirmed your EDD. Your provider will use growth percentile charts to track whether your baby's growth trajectory is consistent over time.
+
+## When to Call Your Doctor
+
+Your due date itself does not require urgent contact, but there are situations where the timing of your pregnancy warrants prompt communication with your provider:
+
+- You reach **41 weeks** without having discussed a plan for monitoring or induction — this is a conversation that should happen proactively, not reactively
+- You experience **decreased fetal movement** at any point in the third trimester — changes in your baby's movement patterns warrant same-day contact, not a wait-and-see approach
+- You notice **vaginal bleeding** at any stage of pregnancy, particularly before 20 weeks when it may indicate a dating discrepancy related to a subchorionic haematoma or other structural issue
+- You have **no first-trimester ultrasound on record** by 14 weeks — if you are relying solely on LMP dating past this point, request an ultrasound; second-trimester dating is less precise and your window to establish an accurate EDD is narrowing
+- You pass **42 weeks** — this is the clinical threshold for post-term pregnancy, and induction should be actively discussed if not already underway; do not wait for spontaneous labour without medical guidance
+
+## Related Tools on SageNest
+
+If you want to calculate your own EDD before your first appointment — or check whether a date you were given aligns with your cycle — our [pregnancy due date calculator](/pregnancy-due-date-calculator) walks through the full calculation including cycle length adjustment.
+
+Once you have a confirmed due date, our [pregnancy week by week guide](/pregnancy-week-by-week) lets you explore exactly what is developing at your current gestational age — useful context for understanding why each prenatal appointment is scheduled when it is.
+
+If your cycle is irregular and you are unsure whether you are pregnant or simply tracking ovulation, our [ovulation calculator](/ovulation-calculator) can help you identify your likely fertile window based on your own cycle pattern.
+
+## The Bottom Line
+
+Your due date is calculated first from your last menstrual period using Naegele's Rule, then confirmed or adjusted by first-trimester ultrasound — the most accurate method available. A date change after an early scan is not a cause for concern; it is the system working as intended. The resulting EDD anchors your entire care timeline, but it is a statistical estimate, not a precise forecast: the full-term delivery window spans weeks 39 through 41, and most babies arrive somewhere in that range. Use the number as a planning tool, not a countdown to an event that must happen on a specific day. If you want to run your own estimate now, [calculate your due date](/pregnancy-due-date-calculator) using your cycle length for a more personalised result.
+
+
+*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*
+  `
+  }
 ];
