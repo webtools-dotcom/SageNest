@@ -443,6 +443,9 @@ The second version gives the reader specific numbers, explains the mechanism, na
  - round-ligament-pain-pregnancy
  - irregular-cycles-ovulation-conception
  - luteal-phase-explained-after-ovulation
-
+ - pregnancy-insomnia-causes-safe-relief
+ - shortness-of-breath-pregnancy
+ - pelvic-girdle-pain-pregnancy
+   
  
 *Last updated: This guide is the master reference for all SageNest blog content. Update it if site tools change, new calculators are added, or clinical guidelines are revised.*
