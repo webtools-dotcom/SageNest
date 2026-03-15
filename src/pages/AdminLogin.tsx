@@ -87,6 +87,7 @@ export const AdminLogin = () => {
 
       const email = session?.user?.email;
       if (!email) return;
+
       if (isAdminEmail(email)) {
         navigate('/admin/blogposter', { replace: true });
         return;

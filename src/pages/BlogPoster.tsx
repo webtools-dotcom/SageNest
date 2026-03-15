@@ -100,6 +100,7 @@ export const BlogPosterPage = () => {
   const [posts, setPosts] = useState<BlogRow[]>([]);
   const [loading, setLoading] = useState(false);
   const [message, setMessage] = useState('');
+  const [pendingDeleteId, setPendingDeleteId] = useState<string | null>(null);
 
   const resolvedSlug = useMemo(() => (slug.trim() ? slugify(slug) : slugify(title)), [slug, title]);
 
@@ -193,13 +194,18 @@ export const BlogPosterPage = () => {
 
   const deletePost = async (postId: string) => {
     await runAdminGuardedAction(setMessage, async () => {
-      const confirmed = window.confirm('Delete this post? This cannot be undone.');
-      if (!confirmed) return;
+      if (pendingDeleteId !== postId) {
+        setPendingDeleteId(postId);
+        setMessage('Click delete again to confirm permanent deletion.');
+        return;
+      }
+      setPendingDeleteId(null);
 
       const { error } = await supabase.from('blog').delete().eq('id', postId);
       throwIfSupabaseError(error);
 
       setMessage('Post deleted.');
+      setPendingDeleteId(null);
       if (id === postId) resetForm();
       await loadPosts();
     });
@@ -219,23 +225,23 @@ export const BlogPosterPage = () => {
 
         <div className="field-row">
           <label htmlFor="admin-title">Title</label>
-          <input id="admin-title" value={title} onChange={(e) => setTitle(e.target.value)} />
+          <input id="admin-title" value={title} onChange={(e) => setTitle(e.target.value)} autoComplete="off" />
         </div>
 
         <div className="field-row">
           <label htmlFor="admin-slug">Slug (optional, auto-generated from title)</label>
-          <input id="admin-slug" value={slug} onChange={(e) => setSlug(e.target.value)} placeholder={resolvedSlug} />
+          <input id="admin-slug" value={slug} onChange={(e) => setSlug(e.target.value)} placeholder={resolvedSlug} autoComplete="off" />
           <small>Final slug: {resolvedSlug || '—'}</small>
         </div>
 
         <div className="field-row">
           <label htmlFor="admin-description">Description</label>
-          <input id="admin-description" value={description} onChange={(e) => setDescription(e.target.value)} />
+          <input id="admin-description" value={description} onChange={(e) => setDescription(e.target.value)} autoComplete="off" />
         </div>
 
         <div className="field-row">
           <label htmlFor="admin-content">Content (Markdown)</label>
-          <textarea id="admin-content" rows={12} value={content} onChange={(e) => setContent(e.target.value)} />
+          <textarea id="admin-content" rows={12} value={content} onChange={(e) => setContent(e.target.value)} autoComplete="off" />
         </div>
 
         <div className="field-row">
@@ -272,7 +278,12 @@ export const BlogPosterPage = () => {
             </div>
             <div className="cta-row">
               <button onClick={() => editPost(post)}>Edit</button>
-              <button onClick={() => void deletePost(post.id)}>Delete</button>
+              <button
+                onClick={() => void deletePost(post.id)}
+                style={pendingDeleteId === post.id ? { background: 'var(--sage-primary)', color: 'var(--off-white)', borderColor: 'var(--sage-primary)' } : {}}
+              >
+                {pendingDeleteId === post.id ? 'Confirm delete' : 'Delete'}
+              </button>
             </div>
           </article>
         ))}

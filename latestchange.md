@@ -1,3 +1,12 @@
+## 2026-03-15 (Security hardening pass: XSS, CSP, headers, eval removal, admin gating safety)
+
+- Hardened `scripts/generate-blog-html.mjs` against injection by adding `safeJsonStringify()` for JSON-LD script blocks, introducing `fullHtmlEscape()` for title/description meta values, escaping `<title>`, tightening image credential format validation, and sanitizing Pollinations retry error text to avoid leaking sensitive response details in logs.
+- Replaced dynamic `new Function()` execution in `scripts/sitemap-utils.mjs` with TypeScript transpile + `data:` module import loading for `src/data/tools.ts`, and updated sitemap entry generation to await async tool loading.
+- Improved client-side admin exposure posture by documenting allowlist risk, adding hash-based `isAdminEmailAsync()` helper in `src/supabase/client.ts`, and adding hash migration guidance in `.env.example` while keeping deprecated plaintext env examples commented for backward compatibility.
+- Tightened browser security policy by externalizing GA inline bootstrap to new `public/gtag.js`, removing `unsafe-inline` from `script-src`, adding `crossorigin="anonymous"` to Google Fonts stylesheet request, and adding missing hardened headers (`COOP`, `CORP`, `X-Permitted-Cross-Domain-Policies`, `Origin-Agent-Cluster`) plus HSTS preload in `public/_headers`.
+- Replaced destructive `window.confirm()` delete flow in `src/pages/BlogPoster.tsx` with a two-step in-UI confirm state, and disabled autocomplete for admin blog editor title/slug/description/content inputs.
+- Why this changed: these updates close concrete XSS/code-injection/log-secrecy risks, reduce client-side admin identity disclosure, and enforce stricter browser/network security controls without removing or changing existing product features.
+
 ## 2026-03-15 (Reintroduced automated unique blog image pipeline with Cloudinary + Pollinations)
 
 - Updated `scripts/generate-blog-html.mjs` to run a pre-render image pipeline per blog slug: keyword-to-prompt mapping, Cloudinary existence check, Pollinations generation (`flux`, `1200x630`, random seed, enhance + negative prompt), Cloudinary upload stream, and resolved Cloudinary URL injection into generated static HTML.
