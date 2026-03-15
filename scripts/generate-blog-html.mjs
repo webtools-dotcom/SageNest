@@ -4,6 +4,23 @@ import { dirname, join } from 'node:path';
 import { v2 as cloudinary } from 'cloudinary';
 import { loadBlogPosts } from './blog-data.mjs';
 
+function safeJsonStringify(obj, indent) {
+  return JSON.stringify(obj, null, indent)
+    .replace(/</g, '\\u003c')
+    .replace(/>/g, '\\u003e')
+    .replace(/&/g, '\\u0026')
+    .replace(/\//g, '\\u002f');
+}
+
+function fullHtmlEscape(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
@@ -271,7 +288,7 @@ function faqJsonLd(faqs) {
       acceptedAnswer: { '@type': 'Answer', text: answer },
     })),
   };
-  return `<script type="application/ld+json">\n${JSON.stringify(schema, null, 2)}\n</script>`;
+  return `<script type="application/ld+json">\n${safeJsonStringify(schema, 2)}\n</script>`;
 }
 
 function articleJsonLd(post) {
@@ -298,7 +315,7 @@ function articleJsonLd(post) {
     schema.datePublished = post.updatedAt;
   }
 
-  return `<script type="application/ld+json">\n${JSON.stringify(schema, null, 2)}\n</script>`;
+  return `<script type="application/ld+json">\n${safeJsonStringify(schema, 2)}\n</script>`;
 }
 
 function loadDotEnvFile() {
@@ -379,7 +396,7 @@ async function fetchPollinationsImage(prompt, apiKey, slug, errors, isRetry = fa
   }
 
   const body = await response.text();
-  const message = `Pollinations retry failed for slug "${slug}" with status ${response.status}: ${body.slice(0, 250)}`;
+  const message = `Pollinations retry failed for slug "${slug}" with status ${response.status}.`;
   errors.push(message);
   console.warn(`⚠ ${message}`);
   return null;
@@ -447,8 +464,8 @@ async function resolvePostImage(post, config, errors, pollinationsState) {
 
 function buildPostHtml(post, styleBlock) {
   const bodyHtml = markdownToHtml(post.content);
-  const descEscaped = post.description.replace(/"/g, '&quot;');
-  const titleEscaped = post.title.replace(/"/g, '&quot;');
+  const descEscaped = fullHtmlEscape(post.description);
+  const titleEscaped = fullHtmlEscape(post.title);
   const canonicalUrl = `https://sagenesthealth.com/blog/${post.slug}`;
   const ogImage = post.imageUrl
     ? `<meta property="og:image" content="${post.imageUrl}" />\n    <meta name="twitter:image" content="${post.imageUrl}" />`
@@ -459,7 +476,7 @@ function buildPostHtml(post, styleBlock) {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>${post.title} | SageNest Health – Smart Tools for Women's Wellness</title>
+    <title>${titleEscaped} | SageNest Health – Smart Tools for Women's Wellness</title>
     <meta name="description" content="${descEscaped}" />
     <link rel="canonical" href="${canonicalUrl}" />
     <meta name="robots" content="index,follow" />
@@ -540,9 +557,26 @@ const imageConfig = {
   cloudinaryApiKey: process.env.CLOUDINARY_API_KEY || '',
   cloudinaryApiSecret: process.env.CLOUDINARY_API_SECRET || '',
 };
+const CLOUDINARY_NAME_RE = /^[a-zA-Z0-9_-]{3,50}$/;
+const CLOUDINARY_KEY_RE = /^\d{10,20}$/;
+
 imageConfig.isReady = Boolean(
-  imageConfig.pollinationsApiKey && imageConfig.cloudName && imageConfig.cloudinaryApiKey && imageConfig.cloudinaryApiSecret
+  imageConfig.pollinationsApiKey
+  && imageConfig.pollinationsApiKey.length >= 10
+  && imageConfig.cloudName
+  && CLOUDINARY_NAME_RE.test(imageConfig.cloudName)
+  && imageConfig.cloudinaryApiKey
+  && CLOUDINARY_KEY_RE.test(imageConfig.cloudinaryApiKey)
+  && imageConfig.cloudinaryApiSecret
+  && imageConfig.cloudinaryApiSecret.length >= 20
 );
+
+if (
+  (imageConfig.cloudName || imageConfig.cloudinaryApiKey || imageConfig.cloudinaryApiSecret)
+  && !imageConfig.isReady
+) {
+  console.warn('⚠ Cloudinary credentials present but failed format validation. Image pipeline skipped. Check for extra spaces or quotes in .env values.');
+}
 
 if (imageConfig.isReady) {
   cloudinary.config({

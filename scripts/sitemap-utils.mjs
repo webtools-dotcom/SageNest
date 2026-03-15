@@ -1,4 +1,3 @@
-import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { loadBlogPosts } from './blog-data.mjs';
@@ -6,16 +5,25 @@ import { loadBlogPosts } from './blog-data.mjs';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-function loadTools() {
-  const src = readFileSync(join(ROOT, 'src/data/tools.ts'), 'utf8');
-  const js = src
-    .replace(/export\s+type\s+Tool\s*=\s*\{[\s\S]*?\};\s*/g, '')
-    .replace(/const\s+tools\s*:\s*Tool\[\]/g, 'const tools')
-    .replace(/export\s+default\s+tools\s*;?/g, '');
+async function loadTools() {
+  const { readFileSync } = await import('node:fs');
+  const { join, dirname } = await import('node:path');
+  const { fileURLToPath } = await import('node:url');
+  const ts = await import('typescript');
 
-  // eslint-disable-next-line no-new-func
-  const fn = new Function(`${js}\n return tools;`);
-  const tools = fn();
+  const toolsPath = join(dirname(fileURLToPath(import.meta.url)), '..', 'src', 'data', 'tools.ts');
+  const source = readFileSync(toolsPath, 'utf8');
+  const transpiled = ts.default.transpileModule(source, {
+    compilerOptions: {
+      module: ts.default.ModuleKind.ESNext,
+      target: ts.default.ScriptTarget.ES2020
+    },
+    fileName: toolsPath
+  }).outputText;
+
+  const encoded = Buffer.from(transpiled, 'utf8').toString('base64');
+  const mod = await import(`data:text/javascript;base64,${encoded}`);
+  const tools = mod.default;
 
   if (!Array.isArray(tools)) return [];
   return tools.filter((tool) => typeof tool.path === 'string');
@@ -91,7 +99,7 @@ export async function getSitemapEntries(options = {}) {
     { path: '/similar-tools', priority: '0.7' }
   ];
 
-  const tools = loadTools().map((tool) => ({ path: tool.path, priority: tool.path === '/pregnancy-due-date-calculator' ? '1.0' : '0.9' }));
+  const tools = (await loadTools()).map((tool) => ({ path: tool.path, priority: tool.path === '/pregnancy-due-date-calculator' ? '1.0' : '0.9' }));
 
   const weekRoutes = Array.from({ length: 40 }, (_, index) => ({
     path: `/pregnancy-week-by-week/week-${index + 1}`,
