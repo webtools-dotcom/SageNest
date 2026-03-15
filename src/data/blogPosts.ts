@@ -11,6 +11,155 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'pelvic-girdle-pain-pregnancy',
+    title: 'Pelvic Girdle Pain in Pregnancy: Causes, Relief, and When to Get Help',
+    description: 'Pelvic girdle pain affects many pregnant women and can range from mild aching to debilitating. Learn what causes it, which movements make it worse, and what actually helps.',
+    readingTime: '11 min read',
+    updatedAt: '2026-03-15',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    faq: [
+      {
+        question: 'What does pelvic girdle pain feel like in pregnancy?',
+        answer: 'Pelvic girdle pain typically presents as pain, stiffness, or a grinding sensation in the front of the pelvis (pubic symphysis), the back of the pelvis (sacroiliac joints), or both simultaneously. It commonly radiates into the groin, inner thighs, hips, or lower back. Many women describe it as a deep aching or sharp catching pain that worsens with specific movements — walking, climbing stairs, turning over in bed, or standing on one leg. The intensity ranges from a persistent dull ache to pain severe enough to limit mobility significantly.'
+      },
+      {
+        question: 'Is pelvic girdle pain the same as SPD?',
+        answer: 'Symphysis pubis dysfunction (SPD) is a specific type of pelvic girdle pain affecting the pubic symphysis — the joint at the front of the pelvis where the two pubic bones meet. Pelvic girdle pain is the broader term that includes SPD as well as pain at the sacroiliac joints at the back of the pelvis. Many women have pain at both locations simultaneously, which is why clinicians now tend to use the umbrella term pelvic girdle pain rather than SPD alone. The management principles are largely the same regardless of which joint is involved.'
+      },
+      {
+        question: 'When does pelvic girdle pain start in pregnancy?',
+        answer: 'Pelvic girdle pain can begin at any point in pregnancy, but it most commonly starts in the second trimester — typically between 18 and 24 weeks — as relaxin levels rise and the pelvis begins to accommodate the growing uterus. Some women notice it as early as the first trimester, particularly those who have had pelvic pain in a previous pregnancy. Symptoms tend to worsen progressively as pregnancy advances, peaking in the third trimester when the baby is heaviest and pelvic load is greatest.'
+      },
+      {
+        question: 'Does pelvic girdle pain go away after birth?',
+        answer: 'For the majority of women, pelvic girdle pain resolves or improves substantially within a few months of delivery as relaxin levels decline and the pelvic ligaments regain their normal tension. Research suggests that most women experience significant improvement by three to four months postpartum. A smaller proportion — estimated at roughly one in ten in studies indexed by NIH — continue to have symptoms beyond six months postpartum, which warrants physiotherapy assessment. Starting physiotherapy during pregnancy and continuing appropriate rehabilitation postpartum improves recovery outcomes.'
+      },
+      {
+        question: 'Can I still exercise with pelvic girdle pain in pregnancy?',
+        answer: 'Yes, but the type of exercise matters significantly. Asymmetric activities — anything that requires standing on one leg, wide leg movements, or uneven loading of the pelvis — typically worsen pelvic girdle pain and should be avoided or modified. Symmetric, low-impact activities like swimming, aqua aerobics, stationary cycling, and specific pelvic floor and stabilization exercises recommended by a physiotherapist are generally well-tolerated and beneficial. Walking is possible for many women in short intervals with supportive footwear, but long distances or uneven terrain often aggravate symptoms. A women\'s health physiotherapist can assess your specific pattern and prescribe appropriate activity levels.'
+      }
+    ],
+    content: `
+The pain arrives without warning — a sharp catch in your groin as you roll over in bed, or a deep grinding ache in your pubic bone that appears around week 20 and refuses to leave. Pelvic girdle pain is one of the most physically limiting symptoms of pregnancy, and it is also one of the most under-addressed. Many women are told it is normal and they simply have to manage — which is partially true, but incomplete. There is a significant difference between understanding why it happens and knowing what to do about it, and that difference determines whether you are functional or struggling for the remainder of your pregnancy.
+
+## What Is Pelvic Girdle Pain?
+
+**Pelvic girdle pain (PGP)** is a broad term for pain arising from one or more of the three joints that make up the pelvic ring: the two sacroiliac joints at the back of the pelvis, where the spine meets the pelvis, and the pubic symphysis at the front, where the two pubic bones join.
+
+When pain is localized specifically to the pubic symphysis — felt as a sharp or burning pain directly above the pubic bone, often radiating into the groin or inner thighs — it is sometimes called **symphysis pubis dysfunction (SPD)**. This term is still widely used by women searching for information online, though clinicians increasingly use pelvic girdle pain as the umbrella term since many women have involvement at both the front and back of the pelvis simultaneously.
+
+PGP is common. Research reviewed by the European Guidelines on the Diagnosis and Treatment of Pelvic Girdle Pain, which is widely referenced in obstetric physiotherapy practice, estimates that pelvic girdle pain affects roughly one in five pregnant women to a degree that interferes with daily function. A larger proportion experience milder symptoms that are managed without formal intervention.
+
+## Why the Pelvis Becomes Painful During Pregnancy
+
+Understanding the mechanism helps explain both why PGP develops and why certain management strategies work better than others.
+
+**Relaxin is the primary driver.** From early in the first trimester, the body produces relaxin — a hormone that progressively loosens the ligaments supporting the pelvic joints. This is purposeful: a more mobile pelvis can accommodate fetal growth and eventually widen enough to allow vaginal delivery. The problem is that ligamentous laxity reduces joint stability, and the pelvis now has to maintain alignment and load-bearing function with less structural support than normal. When the muscles that would ordinarily compensate for this reduced ligamentous support are unable to do so effectively — whether due to pre-existing weakness, asymmetric loading, or the sheer weight of a growing uterus — the pelvic joints begin to move unevenly, generating pain.
+
+**Asymmetric loading amplifies the problem.** The pelvic joints function best when loaded symmetrically — both legs bearing equal weight, the pelvis level and stable. Pregnancy naturally shifts this balance: the center of gravity moves forward and downward as the uterus grows, the lower back increases its curve (lumbar lordosis), and the hips rotate outward to compensate. Any activity that loads one side of the pelvis more than the other — standing on one leg, crossing legs, wide-legged movements, uneven steps — places abnormal stress on joints that are already less stable than usual.
+
+**Posture and gait changes become self-reinforcing.** As PGP develops, many women unconsciously adopt a waddling gait or shift their weight to avoid painful movements. These compensatory patterns, while protective in the short term, often create secondary tension in the lower back, hips, and inner thighs that extends the pain beyond the pelvis itself.
+
+## How PGP Differs From Lower Back Pain
+
+These two conditions frequently coexist and are often confused, but they have different mechanisms, different pain patterns, and — critically — different management strategies. Treating PGP with the same approaches used for lumbar back pain can actually worsen symptoms.
+
+**Pelvic girdle pain** is characteristically:
+- Located below the waistline, in the buttocks, groin, or directly over the pubic bone
+- Sharp and catching rather than a consistent ache
+- Reliably triggered by specific movements — weight-bearing on one leg, turning in bed, getting in and out of a car, climbing stairs
+- Present at the sacroiliac joints, which can be confirmed by pressing firmly on the dimples on either side of the lower back — tenderness in this specific location points to the sacroiliac joints rather than the lumbar spine
+
+**Lumbar back pain** is characteristically:
+- Located above the waistline in the lower back, often radiating into the buttocks
+- A consistent ache that worsens with prolonged standing or sitting rather than with specific movement triggers
+- Related more to spinal posture and muscle tension than to pelvic joint mobility
+
+Many women have both, but identifying which component is dominant guides the most effective treatment approach. A women's health physiotherapist can formally assess and distinguish the two using validated clinical tests.
+
+## Movements That Make PGP Worse
+
+Knowing exactly which activities to modify is the most immediately useful information for managing day-to-day symptoms. The following movements consistently aggravate pelvic girdle pain because they all involve asymmetric or wide-range pelvic loading:
+
+**Standing on one leg** — putting on shoes and socks, stepping into trousers, or pausing mid-stride. The solution is always to sit down for any activity that would otherwise require single-leg balance.
+
+**Wide leg movements** — getting in and out of a car (the transition from standing to seated with legs apart is particularly high-load), stepping over objects, or any exercise that involves legs moving independently in different directions.
+
+**Turning over in bed** — the rotational movement of rolling from one side to the other shears the sacroiliac joints. The technique that reduces this: keep your knees together and bent, and roll as a single unit, using your arms for leverage rather than swinging a leg.
+
+**Stairs** — particularly leading with the same leg every time, or taking stairs two at a time. Step-to-step gait (both feet meet on each step) distributes load more symmetrically.
+
+**Prolonged walking on uneven surfaces** — cobblestones, grass, slopes, and uneven pavements require constant small pelvic adjustments that cumulatively aggravate unstable joints. Flat, predictable surfaces reduce load significantly.
+
+**Pushing activities with uneven resistance** — heavy shopping trolleys, prams on slopes, or anything requiring sustained pushing against resistance with asymmetric posture.
+
+## Evidence-Based Treatments That Help
+
+### Physiotherapy
+
+This is the single most effective intervention for pelvic girdle pain and should be the first point of call for any woman whose symptoms are affecting daily function. A women's health physiotherapist will assess which joints are involved, how stable the pelvis is, and what combination of exercises, manual therapy, and movement modifications will address your specific pattern.
+
+The exercise component focuses on **pelvic floor and deep abdominal stabilization** — training the muscles that support the pelvic joints from the inside. These are not conventional abdominal exercises; they are specific low-load contractions of the transversus abdominis and pelvic floor muscles that improve joint control without placing compressive load on unstable structures.
+
+ACOG acknowledges the role of physiotherapy in managing musculoskeletal pain in pregnancy, and evidence reviewed in obstetric physiotherapy literature consistently shows that specific stabilization exercise reduces PGP severity and disability compared to general advice alone.
+
+### Pelvic Support Belts
+
+A **pelvic support belt** (also called a pregnancy support belt or SI joint belt) worn low across the pelvis — not across the abdomen — provides external compression that partially substitutes for the reduced ligamentous support. Research indexed by NIH suggests they provide meaningful pain relief and functional improvement for a significant proportion of women with PGP.
+
+The key detail is placement: the belt should sit below the anterior superior iliac spine (the bony prominences you can feel at the front of your hip bones) and compress the sacroiliac joints at the back. A belt worn across the abdomen compresses the wrong structures and provides little benefit. A physiotherapist can confirm correct positioning.
+
+Wearing time matters too — support belts are most useful during high-demand activities like walking and standing, and should generally be removed for rest periods to avoid reducing the muscles' own stabilization effort over time.
+
+### Pain Management
+
+**Paracetamol (acetaminophen)** is the only over-the-counter analgesic consistently considered safe throughout pregnancy by ACOG and WHO for short-term use. It does not address the underlying joint instability but can reduce pain enough to allow movement and sleep, which are important for maintaining function.
+
+**Heat applied to the sacroiliac joints** provides symptomatic relief for many women and is safe during pregnancy when used at moderate temperatures — avoid direct heat on the abdomen, and do not use heat sources that could cause burns when sensation is reduced.
+
+**Water-based exercise** — swimming or aqua aerobics — is particularly valuable because the buoyancy of water partially offloads the pelvis, allowing movement and muscle conditioning without the compressive load of land-based exercise. Many women with moderate-to-severe PGP who cannot walk comfortably find they can exercise in water with minimal pain.
+
+### Sleep Positioning
+
+Sleep disruption from PGP is one of its most demoralizing aspects, and positioning can make a substantial difference. A pillow between the knees when side-lying keeps the pelvis level and reduces sacroiliac joint stress. The roll-as-a-unit technique for turning over — described above — minimizes the pain associated with position changes through the night.
+
+If nighttime pain is severe, a full-length pregnancy pillow that supports both the bump and the top knee simultaneously is worth the investment — it maintains pelvic alignment passively without requiring you to consciously adjust through the night.
+
+## PGP and Delivery Planning
+
+Having pelvic girdle pain does not automatically determine your mode of delivery, and it is important to discuss your specific situation with your provider rather than assuming restrictions in either direction.
+
+For vaginal delivery, the main consideration is avoiding positions that require wide leg separation — specifically lithotomy position (lying on your back with legs in stirrups) — which can severely strain the pubic symphysis during delivery. Many women with PGP give birth successfully in alternative positions that keep the hips closer together: semi-recumbent, side-lying, on all fours, or upright. Informing your midwife or OB about your PGP before delivery so that your birth plan includes position preferences is one of the most practical things you can do.
+
+Your provider should be aware of your PGP status so that if instrumental delivery is needed, the team is careful about how far your legs are abducted and for how long.
+
+## When to Call Your Doctor
+
+Most pelvic girdle pain, while significantly uncomfortable, does not indicate anything dangerous to you or your baby. Contact your provider if you experience:
+
+- **Sudden severe increase in pubic pain** after a fall, trauma, or unusual exertion — this can indicate symphysis pubis separation, a rare but genuine injury requiring specific management
+- **Numbness, tingling, or weakness in the legs** accompanying pelvic pain — this raises concern for nerve involvement that needs assessment
+- **Inability to bear weight at all** on one or both legs — PGP severe enough to prevent weight-bearing warrants prompt physiotherapy referral and possibly imaging
+- **Pelvic pain accompanied by fever** — pain with fever can indicate a pelvic infection or other condition unrelated to musculoskeletal PGP
+- **Symptoms that develop or worsen acutely in the third trimester alongside pelvic pressure** — significant pelvic pressure in the third trimester can sometimes relate to fetal positioning or cervical changes that your provider should assess
+
+For ongoing severe pain affecting mobility, ask for a referral to a women's health physiotherapist specifically — not all general physiotherapists have the specific training to manage pregnancy-related pelvic instability.
+
+## Related Tools on SageNest
+
+If pelvic pain is making the later weeks of pregnancy feel particularly difficult, our [week-by-week pregnancy guide](/pregnancy-week-by-week) can help you understand what physical changes are happening at each stage and what to expect as you approach delivery. If you want to know exactly how far along you are, use our [due date calculator](/pregnancy-due-date-calculator) for a precise timeline.
+
+For context on how symptoms like round ligament pain and pelvic girdle pain overlap, our post on [round ligament pain](/blog/round-ligament-pain-pregnancy) explains the key differences between the two.
+
+## The Bottom Line
+
+Pelvic girdle pain is caused by hormonally driven ligamentous laxity combined with the asymmetric mechanical demands of a growing pregnancy — it is not something you caused and not something you simply have to endure without strategy. The most effective approach is early physiotherapy referral for stabilization exercises specific to your pattern, combined with systematic movement modifications that eliminate the activities most likely to aggravate unstable joints. A pelvic support belt worn correctly adds meaningful relief during demanding activities. For most women, symptoms resolve substantially within a few months of delivery — but starting the right management now, rather than waiting it out, makes the remainder of pregnancy significantly more manageable.
+
+
+*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*
+`
+  },
+  {
     slug: 'shortness-of-breath-pregnancy',
     title: 'Shortness of Breath in Pregnancy: Normal Causes vs Warning Signs',
     description: 'Breathlessness affects most pregnant women, but not all causes are harmless. Learn what drives it each trimester and which symptoms need urgent care.',
