@@ -1,3 +1,9 @@
+## 2026-03-15 (Added pelvic girdle pain in pregnancy blog post)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `pelvic-girdle-pain-pregnancy`, including SEO metadata (`title`, `description`, `readingTime`, `updatedAt`), `imageUrl`, five FAQ entries, and full long-form markdown content exactly as provided.
+- Regenerated static blog publishing artifacts so the new post is fully published: `public/blog-static/pelvic-girdle-pain-pregnancy.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the newly requested pelvic girdle pain educational article and keep blog indexing, redirects, and sitemap fully in sync with the source-of-truth blog data.
+
 ## 2026-03-15 (Security hardening pass: XSS, CSP, headers, eval removal, admin gating safety)
 
 - Hardened `scripts/generate-blog-html.mjs` against injection by adding `safeJsonStringify()` for JSON-LD script blocks, introducing `fullHtmlEscape()` for title/description meta values, escaping `<title>`, tightening image credential format validation, and sanitizing Pollinations retry error text to avoid leaking sensitive response details in logs.
