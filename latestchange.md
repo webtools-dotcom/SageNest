@@ -1,3 +1,9 @@
+## 2026-03-16 (Navbar brand logo update: use public image asset)
+
+- Replaced the header brand icon emoji in `src/App.tsx` with an `<img>` pointing to `/sagenest-main-logo.png` from the public assets directory, while keeping the existing `.brand-icon` wrapper so layout/spacing behavior remains stable.
+- Added `aria-hidden="true"` on the icon wrapper and used decorative-image semantics (`alt=""`) to avoid duplicate screen-reader announcement next to the visible `SageNest` text label.
+- Why: apply the requested real brand logo in the navbar without changing routing, navigation behavior, or header structure.
+
 ## 2026-03-16 (New blog post: cervical-mucus-ovulation-guide)
 
 - Added a new blog object for `cervical-mucus-ovulation-guide` at the top of `blogPosts` in `src/data/blogPosts.ts` with the provided title, description, reading time, FAQ, image, and long-form content (plus `updatedAt: '2026-03-16'` to satisfy the project blog schema).

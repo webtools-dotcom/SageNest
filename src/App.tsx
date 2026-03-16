@@ -24,7 +24,15 @@ function App() {
       <a href="#main-content" className="skip-link">Skip to content</a>
       <header className="site-header">
         <Link to="/pregnancy-due-date-calculator" className="brand">
-          <div className="brand-icon">🌿</div>
+          <div className="brand-icon" aria-hidden="true">
+            <img
+              src="/sagenest-main-logo.png"
+              alt=""
+              width="28"
+              height="28"
+              style={{ borderRadius: '6px' }}
+            />
+          </div>
           SageNest
         </Link>
         <nav aria-label="Primary">
