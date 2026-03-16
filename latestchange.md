@@ -1,3 +1,9 @@
+## 2026-03-16 (Refreshed blog: pregnancy-week-by-week-milestones)
+
+- Replaced the existing `pregnancy-week-by-week-milestones` post object in `src/data/blogPosts.ts` with the new long-form version, including updated title/description/reading time, refreshed FAQ items, and expanded trimester-by-trimester guidance while keeping the same slug and schema.
+- Regenerated blog publishing artifacts and indexing outputs so source and generated assets stay in sync: `public/blog-static/pregnancy-week-by-week-milestones.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the latest requested rewrite for this article and keep routing/SEO artifacts consistent with canonical blog data.
+
 ## 2026-03-16 (Fix blog refresh scope: restore pregnancy nutrition guide slug)
 
 - Restored the existing `pregnancy-nutrition-guide-what-to-eat-each-trimester` post object in `src/data/blogPosts.ts`, which was unintentionally removed during the previous `gestational-diabetes-pregnancy-weight-gain` refresh.
