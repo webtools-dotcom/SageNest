@@ -28,8 +28,8 @@ function App() {
             <img
               src="/sagenest-main-logo.png"
               alt=""
-              width="40"
-              height="40"
+              width="48"
+              height="48"
               style={{ borderRadius: '6px' }}
             />
           </div>
