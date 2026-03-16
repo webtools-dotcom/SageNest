@@ -11,6 +11,152 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'cervical-mucus-ovulation-guide',
+    title: 'Cervical Mucus and Ovulation: What Changes Mean You Are Fertile',
+    description: 'Cervical mucus changes predictably across your cycle and gives clear signals about ovulation. Learn to read each type and identify your most fertile days.',
+    readingTime: '11 min read',
+    updatedAt: '2026-03-16',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    faq: [
+      {
+        question: 'What does cervical mucus look like when you are most fertile?',
+        answer: 'At peak fertility — the one to two days immediately before ovulation — cervical mucus becomes clear, slippery, and highly stretchy, closely resembling raw egg white. It should stretch at least 2 to 3 centimetres between your fingers without breaking. This texture is specifically designed to help sperm survive and move through the cervix efficiently. If your mucus is cloudy, sticky, or breaks immediately when stretched, you are likely not yet at peak fertility, even if the quantity has increased.'
+      },
+      {
+        question: 'How do I check my cervical mucus correctly?',
+        answer: 'Check internally by inserting one clean finger into the vagina to collect mucus from near the cervix, or externally by wiping with clean toilet paper before urinating and observing what is on the tissue. Internal checking gives a more accurate picture of cervical mucus quality, since vaginal secretions near the opening can differ from true cervical mucus. Check at the same time each day, ideally mid-morning when you are least likely to confuse arousal fluid with cervical mucus. Note the color, consistency, and whether it stretches between your fingers.'
+      },
+      {
+        question: 'Can you get pregnant without egg white cervical mucus?',
+        answer: 'Yes, though egg white cervical mucus marks your highest-fertility window. Conception is possible with wetter, more abundant mucus even if it does not reach the classic egg white texture — what matters is that mucus is not dry or sticky. Some women never observe textbook egg white mucus and still conceive normally. However, if you consistently have little to no wet mucus near expected ovulation, it is worth mentioning to your provider, as poor cervical mucus quality can sometimes reduce sperm transport and is addressable.'
+      },
+      {
+        question: 'Does cervical mucus change after ovulation?',
+        answer: 'Yes, and this change is reliable enough to help confirm that ovulation has occurred. After ovulation, progesterone rises sharply and causes cervical mucus to become thick, sticky, and opaque — forming what is called a cervical mucus plug that blocks sperm entry. This shift from wet to dry or sticky mucus, when it occurs after a clear egg white peak, is one of the key markers used in fertility awareness methods to confirm the end of the fertile window. The dry or sticky mucus pattern typically persists until menstruation begins.'
+      },
+      {
+        question: 'Why do I have no cervical mucus before ovulation?',
+        answer: 'Several factors can reduce or suppress cervical mucus production: antihistamines (which dry all mucous membranes, including cervical tissue), hormonal contraceptives taken previously, clomiphene citrate used for ovulation induction, low estrogen levels, cervical procedures such as LEEP or cone biopsy that remove mucus-producing tissue, and chronic dehydration. If you are actively trying to conceive and consistently observe very little wet mucus near ovulation, discuss this with your provider — it is a treatable issue in many cases.'
+      }
+    ],
+    content: `
+Most women were never taught that their body produces a built-in, daily record of where they are in their cycle — one that reliably signals fertility days before ovulation occurs. Cervical mucus is not a random discharge to be ignored or managed. It is hormonally driven, changes in a predictable pattern across the cycle, and is specific enough in its peak-fertility form that fertility specialists use it as a clinical marker. Learning to read it takes two to four cycles of consistent observation. What you get in return is a real-time window into your reproductive cycle that no app can replicate from period dates alone.
+
+## What Is Cervical Mucus and Where Does It Come From?
+
+**Cervical mucus** is a fluid produced by glands in the cervix — the narrow lower portion of the uterus that opens into the vagina. Unlike vaginal secretions, which are produced along the vaginal walls, cervical mucus originates specifically from cervical crypts (small glands within the cervical canal) and reflects the hormonal state of your cycle with remarkable precision.
+
+Its primary biological function is to regulate sperm access to the uterus. For most of the menstrual cycle, cervical mucus forms a thick, impenetrable plug that blocks sperm from entering. Around ovulation, rising estrogen transforms this plug into a fluid, sperm-friendly medium that actively supports sperm survival and transport. This shift — from barrier to gateway — is what makes cervical mucus such a reliable fertility indicator.
+
+The changes you observe externally are a direct reflection of this internal hormonal shift. Estrogen drives mucus toward the wet, slippery, fertile end of the spectrum. Progesterone, which dominates after ovulation, drives it toward the thick, dry, infertile end.
+
+## The Cervical Mucus Pattern Across Your Cycle
+
+The mucus pattern follows the same general sequence in every cycle, though the timing and duration of each phase varies between women and between cycles in the same woman.
+
+### Menstruation (Days 1–5, approximate)
+
+During your period, menstrual blood masks any cervical mucus observations. This phase is simply recorded as menstruation in fertility charting and does not contribute to mucus pattern interpretation.
+
+### Dry Phase (Immediately After Menstruation)
+
+In the days immediately following your period, many women notice little to no mucus — the vaginal sensation is dry and nothing is visible on tissue paper. This reflects low estrogen levels in the early follicular phase, when the cervix is producing thick, scant mucus that does not reach the vaginal opening. This is an infertile phase. Sperm deposited during the dry phase cannot survive in the hostile, thick mucus environment of the cervix.
+
+The length of this dry phase varies considerably. Women with shorter cycles — say, 24 to 26 days — may transition to wet mucus relatively quickly. Women with longer cycles may spend more time in this dry phase before estrogen begins its pre-ovulatory rise.
+
+### Transitional Mucus (Sticky or Creamy)
+
+As estrogen begins to rise in the days before ovulation, mucus production increases and its character shifts. This transitional mucus is typically described as sticky (breaks immediately when stretched, like paste or rubber cement), creamy (white or yellowish, lotion-like texture), or cloudy. It is more abundant than the dry phase but not yet the slippery, clear mucus of peak fertility.
+
+This phase represents potentially fertile territory — it is not the peak, but sperm can begin to survive for longer in creamy mucus than in the dry or sticky phases. Women using fertility awareness methods typically consider sticky mucus as potentially fertile, especially in cycles where the transition to egg white mucus happens quickly.
+
+### Peak Fertile Mucus (Egg White Cervical Mucus)
+
+The clearest fertility signal the body produces is **egg white cervical mucus (EWCM)** — clear, slippery, highly stretchy mucus that closely resembles raw egg white in appearance and texture. When you stretch it between your thumb and index finger, it should extend several centimetres without breaking. The vaginal sensation is noticeably wet or lubricative, even without touching.
+
+This mucus appears in response to the estrogen surge that precedes the LH surge and ovulation. Its physical properties are not accidental: the long, parallel molecular chains in fertile mucus create channels that guide sperm toward the uterus, filter out damaged sperm, and provide nutrients that extend sperm lifespan. Research in reproductive biology has documented that sperm can survive in egg white cervical mucus for up to five days, compared to hours in hostile post-ovulatory mucus.
+
+**The day of most abundant, most stretchy egg white mucus is called the peak day.** Ovulation typically occurs on the peak day or the day after. This is your highest-fertility window. Use our [ovulation calculator](/ovulation-calculator) alongside mucus tracking to cross-reference your fertile window with your cycle length — combining both methods gives you a more accurate picture than either approach alone.
+
+### Post-Ovulatory Mucus (Return to Dry or Sticky)
+
+Within 24 to 48 hours of ovulation, the progesterone surge from the newly formed corpus luteum causes a rapid and unmistakable shift in cervical mucus. It returns to thick, sticky, or dry — the same infertile pattern as the early cycle. This shift, when observed after a clear egg white peak, is one of the most reliable indicators that ovulation has occurred.
+
+The post-ovulatory infertile phase lasts until menstruation. There is no fertile mucus during this phase in a normal cycle, regardless of what any calculator might suggest based on cycle length alone.
+
+## How to Check Cervical Mucus Accurately
+
+The technique matters. Checking inconsistently or at the wrong time produces confusing results that are hard to interpret.
+
+**Timing:** Check once daily, ideally mid-morning. Checking immediately after sex introduces semen and arousal fluid that make mucus impossible to assess accurately. Checking after exercise, when you are sweaty and more internally wet, can also confuse observations.
+
+**Method — external check:** Before urinating, wipe the vaginal opening with clean, unscented toilet tissue and observe what is on it. Note color, consistency, and what happens when you stretch it between two fingers.
+
+**Method — internal check:** Insert one clean finger to the second knuckle and collect mucus from near the cervix. This gives a more accurate sample of true cervical mucus rather than the mixture of secretions found near the vaginal opening. The difference matters especially during transitional phases when external observations might show dry while internal mucus is already becoming creamy.
+
+**Recording:** Write down your observation each day using a consistent notation — for example: dry (D), sticky (S), creamy (C), egg white (EW), or menstruation (M). After two to three cycles, your personal pattern becomes clear and the fertile window predictable.
+
+## Factors That Affect Cervical Mucus
+
+Several things can alter mucus observations in ways that affect interpretation:
+
+**Antihistamines** — used for allergies or as sleep aids — dry all mucous membranes including cervical tissue and can significantly reduce or eliminate wet mucus observations. If you are trying to conceive and regularly taking antihistamines around ovulation, this is worth discussing with your provider.
+
+**Hormonal contraceptives** — the cervical mucus suppression caused by progestogen-containing contraceptives can persist for several cycles after stopping, particularly with injectable contraceptives. Give your mucus pattern time to re-establish before relying on it for conception timing.
+
+**Infections** — bacterial vaginosis, yeast infections, and sexually transmitted infections change vaginal and cervical secretions in ways that make mucus observations unreliable. Unusual color (grey, green, strongly yellow), odor, or irritation alongside mucus changes warrants medical evaluation rather than fertility interpretation.
+
+**Clomiphene citrate (Clomid)** — a commonly prescribed ovulation induction medication — has an anti-estrogenic effect on cervical mucus that can paradoxically reduce fertile-quality mucus even as it induces ovulation. If you are taking clomiphene and notice poor mucus quality around ovulation, let your provider know.
+
+**Hydration** — while not a primary driver of mucus quality, chronic dehydration reduces all bodily secretions including cervical mucus. Adequate daily fluid intake supports normal mucus production.
+
+## Using Cervical Mucus Alongside Other Fertility Signs
+
+Cervical mucus is most powerful as a fertility indicator when used alongside other observations — what fertility awareness practitioners call the **sympto-thermal method**.
+
+The three primary signs are: cervical mucus (covered in this post), **basal body temperature (BBT)** — which rises by roughly 0.2°C after ovulation due to progesterone — and **cervical position**, which rises, softens, and opens near ovulation and returns to low, firm, and closed after. Tracking all three simultaneously gives cross-confirmation: the fertile window identified by mucus matches the fertile window suggested by cervical position, and ovulation is confirmed retrospectively by the temperature rise.
+
+For women with irregular cycles — where ovulation timing is unpredictable — mucus charting is particularly valuable because it responds to the actual hormonal events of each cycle rather than predicting from average cycle length. Our post on [irregular cycles and ovulation](/blog/irregular-cycles-ovulation-conception) covers how to approach fertile window identification when your cycle does not follow a predictable pattern.
+
+## Common Questions About Cervical Mucus
+
+### Why do I see more mucus some cycles than others?
+
+Mucus quantity and quality vary between cycles in the same woman, influenced by stress levels, illness, travel, significant changes in weight or exercise, and overall hormonal status in that particular cycle. A cycle with less abundant or shorter-duration egg white mucus is not necessarily an anovulatory cycle — ovulation may still have occurred, just with less exuberant mucus production. Conversely, abundant egg white mucus does not guarantee ovulation occurred; it confirms an estrogen surge, which usually (but not always) precedes ovulation.
+
+### Is it possible to have two patches of egg white mucus in one cycle?
+
+Yes. Some women experience a wave of fertile-quality mucus that subsides and then peaks again before ovulation. This typically reflects a delayed LH surge after an initial incomplete estrogen peak — the follicle grows, almost triggers ovulation, pauses, and then completes the process. Only one ovulation occurs per cycle (the release of the mature follicle), but the mucus pattern may have two apparent peaks. Confirming which peak corresponds to actual ovulation requires cross-referencing with BBT or an LH test.
+
+### What if I never see egg white mucus?
+
+Some women with normal ovulatory cycles simply produce less egg white mucus than others, and observe creamy or wet mucus as their peak rather than classic stretchy clear mucus. This does not necessarily indicate a fertility problem. What matters is whether any wet, slippery mucus appears before ovulation. Consistently absent wet mucus — nothing beyond sticky or dry throughout the cycle, particularly if accompanied by irregular cycles or other symptoms — is worth discussing with a reproductive endocrinologist.
+
+## When to See Your Doctor
+
+Cervical mucus is a fertility observation tool, not a diagnostic one. Seek medical input if:
+
+- You have been tracking mucus for three or more cycles and **consistently observe no wet or egg white mucus** around the time ovulation would be expected
+- You are trying to conceive and have been doing so for **12 months without success** (or 6 months if you are over 35), even with consistent mucus tracking
+- You notice **unusual discharge** — grey, green, strongly yellow, foul-smelling, or accompanied by itching, burning, or pelvic pain — which suggests infection rather than normal cervical mucus variation
+- You have had **cervical procedures** such as LEEP, cone biopsy, or cryotherapy, which can damage mucus-producing cervical tissue, and you notice persistently dry or absent mucus near ovulation
+- You are taking **medications** that may be affecting mucus quality — particularly clomiphene, antihistamines, or hormonal medications — and want to discuss alternatives or management
+
+## Related Tools on SageNest
+
+Once you have identified your fertile window through mucus tracking, use our [ovulation calculator](/ovulation-calculator) to cross-reference with your cycle length and get an estimated fertile window range. If conception occurs, our [due date calculator](/pregnancy-due-date-calculator) will help you estimate your due date from your last period or known ovulation date.
+
+For the full picture of the fertility signs that surround ovulation, our post on [ovulation signs and symptoms](/blog/ovulation-signs-symptoms) covers all seven physical signals — mucus being the most reliable among them.
+
+## The Bottom Line
+
+Cervical mucus changes in a predictable, hormone-driven pattern every cycle: dry and infertile after menstruation, transitioning through sticky and creamy as estrogen rises, peaking at clear and egg white immediately before ovulation, then returning to thick and dry once progesterone takes over. Learning to identify egg white cervical mucus — and specifically the peak day of most abundant, most stretchy mucus — gives you a real-time fertility signal that is more precise than any calendar calculation. Use our [ovulation calculator](/ovulation-calculator) alongside mucus observations to triangulate your fertile window, and give yourself two to three cycles to learn your personal pattern before drawing conclusions.
+
+
+*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your fertility or reproductive health.*
+`
+  },
+  {
     slug: 'pelvic-girdle-pain-pregnancy',
     title: 'Pelvic Girdle Pain in Pregnancy: Causes, Relief, and When to Get Help',
     description: 'Pelvic girdle pain affects many pregnant women and can range from mild aching to debilitating. Learn what causes it, which movements make it worse, and what actually helps.',

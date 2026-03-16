@@ -1,3 +1,9 @@
+## 2026-03-16 (New blog post: cervical-mucus-ovulation-guide)
+
+- Added a new blog object for `cervical-mucus-ovulation-guide` at the top of `blogPosts` in `src/data/blogPosts.ts` with the provided title, description, reading time, FAQ, image, and long-form content (plus `updatedAt: '2026-03-16'` to satisfy the project blog schema).
+- Regenerated blog publishing/indexing artifacts so source data and generated outputs stay aligned: `public/blog-static/cervical-mucus-ovulation-guide.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the newly requested cervical mucus + ovulation educational article and keep blog, redirects, and sitemap validations passing in CI/deploy workflows.
+
 ## 2026-03-16 (Refresh blog: pregnancy-nutrition-guide-what-to-eat-each-trimester)
 
 - Replaced the existing `pregnancy-nutrition-guide-what-to-eat-each-trimester` post object in `src/data/blogPosts.ts` with the newly provided evidence-based rewrite (updated title, description, reading time, FAQ, and full content) while preserving the slug and blog schema.
