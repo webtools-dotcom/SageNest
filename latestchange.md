@@ -1,3 +1,9 @@
+## 2026-03-16 (Blog author logo aligned with new SageNest brand logo)
+
+- Updated the blog post author card icon in `src/components/BlogPost.tsx` to use the same `/sagenest-main-logo.png` image asset now used in the main header, replacing the old leaf emoji avatar.
+- Kept the existing author card layout and interaction behavior unchanged while making the icon container circular with `overflow: hidden` so the image fits cleanly without shifting spacing.
+- Why: the homepage already used the updated logo, but blog pages still showed the old leaf symbol; this makes branding consistent across the site without affecting blog loading, routing, or Supabase content fetch behavior.
+
 ## 2026-03-16 (Navbar brand logo update: use public image asset)
 
 - Replaced the header brand icon emoji in `src/App.tsx` with an `<img>` pointing to `/sagenest-main-logo.png` from the public assets directory, while keeping the existing `.brand-icon` wrapper so layout/spacing behavior remains stable.

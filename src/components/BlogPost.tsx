@@ -109,13 +109,19 @@ export const BlogPost = () => {
             width: '48px',
             height: '48px',
             borderRadius: '50%',
-            background: 'var(--sage-primary)',
+            overflow: 'hidden',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            fontSize: '1.25rem',
           }}>
-            🌿
+            <img
+              src="/sagenest-main-logo.png"
+              alt=""
+              width="48"
+              height="48"
+              loading="lazy"
+              style={{ display: 'block', width: '100%', height: '100%', objectFit: 'cover' }}
+            />
           </div>
           <div>
             <p style={{ margin: 0, fontSize: '0.75rem', color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
