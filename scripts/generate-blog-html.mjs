@@ -120,11 +120,21 @@ function buildStaticStyle(tokens) {
         z-index: 100;
       }
       .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
         font-family: var(--font-serif);
         font-size: 1.4rem;
         font-weight: 700;
         color: var(--charcoal);
         text-decoration: none;
+      }
+      .brand-logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
       }
       nav a {
         margin-left: 0.75rem;
@@ -206,11 +216,16 @@ function buildStaticStyle(tokens) {
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background: var(--sage-primary, #7aab7a);
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.25rem;
+      }
+      .author-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
       .author-info { flex: 1; }
       .author-label {
@@ -500,7 +515,7 @@ ${styleBlock}
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="brand">🌿 SageNest</a>
+      <a href="/" class="brand"><img src="/sagenest-main-logo.png" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
       <nav>
         <a href="/similar-tools">Similar tools</a>
         <a href="/blog">Blog</a>
@@ -513,7 +528,7 @@ ${styleBlock}
         ${post.imageUrl ? `<img src="${post.imageUrl}" alt="${titleEscaped}" class="post-image" loading="lazy" />` : ''}
         ${bodyHtml}
         <a href="/editorial-team" class="author-box">
-          <div class="author-avatar">🌿</div>
+          <div class="author-avatar"><img src="/sagenest-main-logo.png" alt="" loading="lazy" width="48" height="48" /></div>
           <div class="author-info">
             <p class="author-label">Written by</p>
             <p class="author-name">SageNest Editorial Team</p>

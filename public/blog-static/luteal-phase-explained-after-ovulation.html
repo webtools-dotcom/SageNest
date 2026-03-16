@@ -104,11 +104,21 @@
         z-index: 100;
       }
       .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
         font-family: var(--font-serif);
         font-size: 1.4rem;
         font-weight: 700;
         color: var(--charcoal);
         text-decoration: none;
+      }
+      .brand-logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
       }
       nav a {
         margin-left: 0.75rem;
@@ -190,11 +200,16 @@
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background: var(--sage-primary, #7aab7a);
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.25rem;
+      }
+      .author-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
       .author-info { flex: 1; }
       .author-label {
@@ -332,7 +347,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="brand">🌿 SageNest</a>
+      <a href="/" class="brand"><img src="/sagenest-main-logo.png" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
       <nav>
         <a href="/similar-tools">Similar tools</a>
         <a href="/blog">Blog</a>
@@ -385,7 +400,7 @@
 <p>The luteal phase is not passive waiting — it is the hormonally driven window during which the uterine lining prepares for implantation, a fertilized embryo either successfully embeds or does not, and the corpus luteum either receives the signal to keep producing progesterone or begins its shutdown sequence. Its symptoms are caused by progesterone, not pregnancy, which is why the two-week wait cannot be interpreted by symptoms alone. A luteal phase of 10 to 16 days with adequate mid-luteal progesterone is what supports successful implantation; a consistently short luteal phase is a medically evaluable and treatable finding. Track your luteal phase length across three or more cycles using BBT, use our <a href="/ovulation-calculator">ovulation calculator</a> to anchor your ovulation date each cycle, and bring any pattern of phases under 10 days or recurrent early losses to your provider — it is exactly the kind of information that changes the clinical conversation.</p>
 <p>*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your cycle, fertility, or pregnancy.*</p>
         <a href="/editorial-team" class="author-box">
-          <div class="author-avatar">🌿</div>
+          <div class="author-avatar"><img src="/sagenest-main-logo.png" alt="" loading="lazy" width="48" height="48" /></div>
           <div class="author-info">
             <p class="author-label">Written by</p>
             <p class="author-name">SageNest Editorial Team</p>

@@ -104,11 +104,21 @@
         z-index: 100;
       }
       .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
         font-family: var(--font-serif);
         font-size: 1.4rem;
         font-weight: 700;
         color: var(--charcoal);
         text-decoration: none;
+      }
+      .brand-logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
       }
       nav a {
         margin-left: 0.75rem;
@@ -190,11 +200,16 @@
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background: var(--sage-primary, #7aab7a);
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.25rem;
+      }
+      .author-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
       .author-info { flex: 1; }
       .author-label {
@@ -332,7 +347,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="brand">🌿 SageNest</a>
+      <a href="/" class="brand"><img src="/sagenest-main-logo.png" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
       <nav>
         <a href="/similar-tools">Similar tools</a>
         <a href="/blog">Blog</a>
@@ -394,7 +409,7 @@
 <p>Healthy pregnancy weight gain is not about achieving a particular number — it is about supporting fetal development, managing complication risk, and preserving your own health for labor, recovery, and feeding. The IOM guidelines give you a clinically grounded framework, your pre-pregnancy BMI gives you a starting point, and your provider&#39;s monitoring gives you the feedback loop. Most of the weight you gain is functional: blood, fluid, the baby, the placenta — not fat accumulation to be minimized. Focus on nutrient quality over calorie counting, stay active within your provider&#39;s guidance, and bring your questions to every prenatal appointment. Use our <a href="/pregnancy-weight-gain-calculator">pregnancy weight gain calculator</a> to find your personalized target range, and let the evidence — rather than anxiety — guide you.</p>
 <p>*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*</p>
         <a href="/editorial-team" class="author-box">
-          <div class="author-avatar">🌿</div>
+          <div class="author-avatar"><img src="/sagenest-main-logo.png" alt="" loading="lazy" width="48" height="48" /></div>
           <div class="author-info">
             <p class="author-label">Written by</p>
             <p class="author-name">SageNest Editorial Team</p>

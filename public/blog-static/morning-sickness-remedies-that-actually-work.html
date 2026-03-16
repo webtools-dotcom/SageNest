@@ -104,11 +104,21 @@
         z-index: 100;
       }
       .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
         font-family: var(--font-serif);
         font-size: 1.4rem;
         font-weight: 700;
         color: var(--charcoal);
         text-decoration: none;
+      }
+      .brand-logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
       }
       nav a {
         margin-left: 0.75rem;
@@ -190,11 +200,16 @@
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background: var(--sage-primary, #7aab7a);
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.25rem;
+      }
+      .author-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
       .author-info { flex: 1; }
       .author-label {
@@ -332,7 +347,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="brand">🌿 SageNest</a>
+      <a href="/" class="brand"><img src="/sagenest-main-logo.png" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
       <nav>
         <a href="/similar-tools">Similar tools</a>
         <a href="/blog">Blog</a>
@@ -379,7 +394,7 @@
 <p>Morning sickness is not in your head, it is not something you should simply endure without support, and it is not a sign that something is wrong with your pregnancy. The remedies with the strongest evidence — ginger, vitamin B6, frequent small meals, and consistent hydration — are accessible, safe, and meaningfully effective for most women with typical NVP. When they are not enough, evidence-based prescription options exist and are appropriate to use. The most important thing is to ask for help before you reach the point of dehydration and exhaustion — your provider would far rather hear from you at week seven than treat you for severe dehydration at week ten.</p>
 <p>---<br />*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*</p>
         <a href="/editorial-team" class="author-box">
-          <div class="author-avatar">🌿</div>
+          <div class="author-avatar"><img src="/sagenest-main-logo.png" alt="" loading="lazy" width="48" height="48" /></div>
           <div class="author-info">
             <p class="author-label">Written by</p>
             <p class="author-name">SageNest Editorial Team</p>
