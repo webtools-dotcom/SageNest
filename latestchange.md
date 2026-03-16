@@ -1,3 +1,8 @@
+## 2026-03-16 (README worktree structure refreshed to match current tracked files)
+
+- Updated the `## Exact Repository Worktree Structure` section in `README.md` to mirror the current `git ls-files` output so it now includes all tracked files/directories (including recently added assets and generated blog pages) and removes outdated omissions.
+- Why: the previous tree snapshot was stale and could mislead contributors about what is actually in the repository right now.
+
 
 ## 2026-03-16 (Fix static blog pages still showing old leaf logo)
 
