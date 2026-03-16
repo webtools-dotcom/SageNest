@@ -1,3 +1,11 @@
+
+## 2026-03-16 (Fix static blog pages still showing old leaf logo)
+
+- Updated the static blog HTML generator in `scripts/generate-blog-html.mjs` so blog pages render the new `/sagenest-main-logo.png` in both places that were still hardcoded to the old leaf emoji: the top brand link and the author avatar card.
+- Added matching generator CSS for `.brand-logo` and the avatar image so the new logo remains circular, aligned, and does not change existing layout behavior.
+- Regenerated all static blog files in `public/blog-static/*.html` via `npm run generate:blog` so deployed blog-static pages now actually include the updated logo markup.
+- Why: the React `BlogPost.tsx` was updated, but production blog routes are served from generated static HTML (`public/blog-static`), which still had old emoji hardcoded by the generator.
+
 ## 2026-03-16 (Blog author logo aligned with new SageNest brand logo)
 
 - Updated the blog post author card icon in `src/components/BlogPost.tsx` to use the same `/sagenest-main-logo.png` image asset now used in the main header, replacing the old leaf emoji avatar.

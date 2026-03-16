@@ -104,11 +104,21 @@
         z-index: 100;
       }
       .brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
         font-family: var(--font-serif);
         font-size: 1.4rem;
         font-weight: 700;
         color: var(--charcoal);
         text-decoration: none;
+      }
+      .brand-logo {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
       }
       nav a {
         margin-left: 0.75rem;
@@ -190,11 +200,16 @@
         width: 48px;
         height: 48px;
         border-radius: 50%;
-        background: var(--sage-primary, #7aab7a);
+        overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.25rem;
+      }
+      .author-avatar img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
       }
       .author-info { flex: 1; }
       .author-label {
@@ -332,7 +347,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="brand">🌿 SageNest</a>
+      <a href="/" class="brand"><img src="/sagenest-main-logo.png" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
       <nav>
         <a href="/similar-tools">Similar tools</a>
         <a href="/blog">Blog</a>
@@ -395,7 +410,7 @@
 <p>Pregnancy swelling is overwhelmingly normal — a direct consequence of the remarkable circulatory expansion your body undergoes to support your baby. The strategies that genuinely help are elevation, compression socks worn from the moment you get up, adequate hydration, movement breaks, and reducing processed sodium. What distinguishes routine edema from something requiring urgent attention is its pattern: sudden onset, facial or hand involvement, lack of improvement with rest, and the presence of any accompanying symptoms — headache, visual changes, upper abdominal pain. If the swelling fits the normal pattern, manage it and rest. If it does not, call your provider the same day. Use our <a href="/pregnancy-week-by-week">week-by-week pregnancy guide</a> to stay informed about what your body is doing right now — and to know what to watch for in the weeks ahead.</p>
 <p>---<br />*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*</p>
         <a href="/editorial-team" class="author-box">
-          <div class="author-avatar">🌿</div>
+          <div class="author-avatar"><img src="/sagenest-main-logo.png" alt="" loading="lazy" width="48" height="48" /></div>
           <div class="author-info">
             <p class="author-label">Written by</p>
             <p class="author-name">SageNest Editorial Team</p>
