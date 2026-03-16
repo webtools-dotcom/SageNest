@@ -101,11 +101,11 @@ This is the single most effective intervention for pelvic girdle pain and should
 
 The exercise component focuses on **pelvic floor and deep abdominal stabilization** — training the muscles that support the pelvic joints from the inside. These are not conventional abdominal exercises; they are specific low-load contractions of the transversus abdominis and pelvic floor muscles that improve joint control without placing compressive load on unstable structures.
 
-ACOG acknowledges the role of physiotherapy in managing musculoskeletal pain in pregnancy, and evidence reviewed in obstetric physiotherapy literature consistently shows that specific stabilization exercise reduces PGP severity and disability compared to general advice alone.
+[ACOG](https://www.acog.org) acknowledges the role of physiotherapy in managing musculoskeletal pain in pregnancy, and evidence reviewed in obstetric physiotherapy literature consistently shows that specific stabilization exercise reduces PGP severity and disability compared to general advice alone.
 
 ### Pelvic Support Belts
 
-A **pelvic support belt** (also called a pregnancy support belt or SI joint belt) worn low across the pelvis — not across the abdomen — provides external compression that partially substitutes for the reduced ligamentous support. Research indexed by NIH suggests they provide meaningful pain relief and functional improvement for a significant proportion of women with PGP.
+A **pelvic support belt** (also called a pregnancy support belt or SI joint belt) worn low across the pelvis — not across the abdomen — provides external compression that partially substitutes for the reduced ligamentous support. Research indexed by [NIH](https://pubmed.ncbi.nlm.nih.gov) suggests they provide meaningful pain relief and functional improvement for a significant proportion of women with PGP.
 
 The key detail is placement: the belt should sit below the anterior superior iliac spine (the bony prominences you can feel at the front of your hip bones) and compress the sacroiliac joints at the back. A belt worn across the abdomen compresses the wrong structures and provides little benefit. A physiotherapist can confirm correct positioning.
 
@@ -113,7 +113,7 @@ Wearing time matters too — support belts are most useful during high-demand ac
 
 ### Pain Management
 
-**Paracetamol (acetaminophen)** is the only over-the-counter analgesic consistently considered safe throughout pregnancy by ACOG and WHO for short-term use. It does not address the underlying joint instability but can reduce pain enough to allow movement and sleep, which are important for maintaining function.
+**Paracetamol (acetaminophen)** is the only over-the-counter analgesic consistently considered safe throughout pregnancy by ACOG and [WHO](https://www.who.int/health-topics/maternal-health) for short-term use. It does not address the underlying joint instability but can reduce pain enough to allow movement and sleep, which are important for maintaining function.
 
 **Heat applied to the sacroiliac joints** provides symptomatic relief for many women and is safe during pregnancy when used at moderate temperatures — avoid direct heat on the abdomen, and do not use heat sources that could cause burns when sensation is reduced.
 
@@ -246,7 +246,7 @@ Sleeping position matters significantly in the third trimester: lying flat compr
 
 A small but important minority of pregnancy-related breathlessness has an underlying cause that requires diagnosis and treatment. These are not the same as the physiological changes described above — they are pathological processes that happen to occur during pregnancy and need to be distinguished.
 
-**Anemia** is the most common correctable cause. When hemoglobin levels fall below a threshold that limits oxygen delivery, the body compensates by breathing faster and harder. Iron deficiency is the most common cause of pregnancy anemia, and it is worth emphasizing that a normal hemoglobin level does not rule out iron deficiency — ferritin (iron stores) can be depleted before hemoglobin drops. ACOG recommends screening for anemia at the first prenatal visit and again around 28 weeks.
+**Anemia** is the most common correctable cause. When hemoglobin levels fall below a threshold that limits oxygen delivery, the body compensates by breathing faster and harder. Iron deficiency is the most common cause of pregnancy anemia, and it is worth emphasizing that a normal hemoglobin level does not rule out iron deficiency — ferritin (iron stores) can be depleted before hemoglobin drops. [ACOG](https://www.acog.org) recommends screening for anemia at the first prenatal visit and again around 28 weeks.
 
 **Asthma** affects a meaningful proportion of pregnant women, and pregnancy can either improve or worsen asthma control unpredictably. Poorly controlled asthma during pregnancy is associated with increased risk of preterm birth and low birth weight, according to ACOG. If you have pre-existing asthma and your symptoms are worsening, your medications may need adjustment — do not reduce or stop asthma treatment during pregnancy without provider guidance.
 
@@ -329,9 +329,9 @@ Most pregnant women expect the exhaustion. What they do not expect is lying awak
 
 Pregnancy insomnia refers to persistent difficulty falling asleep, staying asleep, or achieving restorative sleep during pregnancy. It is not a single condition but a cluster of sleep disruptions that can include frequent waking, inability to fall back asleep, restless legs, vivid dreams, and early-morning waking.
 
-Research published in journals indexed by the NIH estimates that **75 to 80 percent of pregnant women** experience meaningful sleep disruption at some point across the three trimesters. By the third trimester, true insomnia — defined as difficulty sleeping at least three nights per week — is reported by roughly half of all pregnant women.
+Research published in journals indexed by the [NIH](https://pubmed.ncbi.nlm.nih.gov) estimates that **75 to 80 percent of pregnant women** experience meaningful sleep disruption at some point across the three trimesters. By the third trimester, true insomnia — defined as difficulty sleeping at least three nights per week — is reported by roughly half of all pregnant women.
 
-This matters beyond comfort. The CDC and NIH have both documented associations between chronic pregnancy sleep disruption and increased risk of prolonged labor, higher rates of cesarean delivery, and elevated depression and anxiety scores postpartum. This does not mean insomnia causes these outcomes, but it does mean sleep deserves to be taken seriously as a health concern, not dismissed as something you just have to push through.
+This matters beyond comfort. The [CDC](https://www.cdc.gov/reproductivehealth/index.htm) and NIH have both documented associations between chronic pregnancy sleep disruption and increased risk of prolonged labor, higher rates of cesarean delivery, and elevated depression and anxiety scores postpartum. This does not mean insomnia causes these outcomes, but it does mean sleep deserves to be taken seriously as a health concern, not dismissed as something you just have to push through.
 
 ## Why Sleep Gets Harder in Each Trimester
 
@@ -369,7 +369,7 @@ The guidance on sleep positioning during pregnancy has evolved in recent years, 
 
 **Left-side sleeping** is consistently recommended from the second trimester onward. This position prevents the uterus from compressing the inferior vena cava, a large vein running along the right side of the spine that returns blood from the lower body to the heart. Compression of this vessel can temporarily reduce blood flow to the placenta. **Right-side sleeping** is considered a reasonable alternative — the compression concern is less pronounced, and restricting women to only one sleep position can itself become a source of anxiety and sleep disruption.
 
-**Back sleeping after 20 weeks** is generally discouraged for prolonged periods. A 2019 study published in EClinicalMedicine and discussed by ACOG found associations between late-pregnancy back sleeping and increased stillbirth risk, though absolute risk remained low and the research has limitations. The practical guidance from most providers: do not panic if you wake up on your back, but try to start the night on your side. Your body will typically shift discomfort before any harm occurs.
+**Back sleeping after 20 weeks** is generally discouraged for prolonged periods. A 2019 study published in EClinicalMedicine and discussed by [ACOG](https://www.acog.org) found associations between late-pregnancy back sleeping and increased stillbirth risk, though absolute risk remained low and the research has limitations. The practical guidance from most providers: do not panic if you wake up on your back, but try to start the night on your side. Your body will typically shift discomfort before any harm occurs.
 
 A **pregnancy pillow** — a full-length or C-shaped pillow that supports the belly, back, and knees simultaneously — is one of the most effective and lowest-risk interventions for third-trimester sleep. It maintains side-lying position, reduces the discomfort of hip pressure on the mattress, and addresses the lower back ache that comes from side sleeping without adequate support.
 
@@ -592,7 +592,7 @@ The distinction matters because the entire challenge of irregular cycles for con
 
 Irregular cycles are a symptom, not a diagnosis. Several different underlying mechanisms produce cycle irregularity, and identifying which one applies to you matters both for conception planning and for your longer-term health.
 
-**Polycystic ovary syndrome (PCOS)** is the most common hormonal cause of irregular cycles in women of reproductive age, affecting approximately 8 to 13 percent of women according to the WHO. In PCOS, elevated androgen levels and insulin resistance disrupt the normal pattern of follicle development and LH surge, causing cycles to be long, irregular, or absent. Some women with PCOS ovulate — just unpredictably and infrequently. Others have anovulatory cycles (cycles without ovulation) for stretches at a time. PCOS is the most important condition to rule in or out when irregular cycles are persistent.
+**Polycystic ovary syndrome (PCOS)** is the most common hormonal cause of irregular cycles in women of reproductive age, affecting approximately 8 to 13 percent of women according to the [WHO](https://www.who.int/health-topics/maternal-health). In PCOS, elevated androgen levels and insulin resistance disrupt the normal pattern of follicle development and LH surge, causing cycles to be long, irregular, or absent. Some women with PCOS ovulate — just unpredictably and infrequently. Others have anovulatory cycles (cycles without ovulation) for stretches at a time. PCOS is the most important condition to rule in or out when irregular cycles are persistent.
 
 **Thyroid dysfunction** — both hypothyroidism (underactive thyroid) and hyperthyroidism (overactive thyroid) — directly disrupts the hormonal axis that regulates the menstrual cycle. The thyroid produces hormones that govern overall metabolic rate, and the hypothalamic-pituitary-ovarian axis that controls ovulation is sensitive to thyroid status. A simple blood test measuring TSH (thyroid-stimulating hormone) and free T4 identifies thyroid dysfunction and it is one of the first investigations a provider orders for irregular cycles.
 
@@ -862,7 +862,7 @@ Pregnancy headaches are not a single condition — they are a symptom with sever
 
 The standard approach to headache management changes fundamentally in pregnancy because the most commonly used over-the-counter pain relievers are contraindicated.
 
-**NSAIDs — ibuprofen, aspirin at anti-inflammatory doses, and naproxen — should be avoided during pregnancy**, particularly after 20 weeks. ACOG advises against NSAID use in the second half of pregnancy because these medications are associated with premature closure of the ductus arteriosus (a fetal blood vessel that must remain open until birth), reduced amniotic fluid (oligohydramnios), and potential fetal kidney effects. Even in the first trimester, routine NSAID use is generally discouraged.
+**NSAIDs — ibuprofen, aspirin at anti-inflammatory doses, and naproxen — should be avoided during pregnancy**, particularly after 20 weeks. [ACOG](https://www.acog.org) advises against NSAID use in the second half of pregnancy because these medications are associated with premature closure of the ductus arteriosus (a fetal blood vessel that must remain open until birth), reduced amniotic fluid (oligohydramnios), and potential fetal kidney effects. Even in the first trimester, routine NSAID use is generally discouraged.
 
 **Acetaminophen (paracetamol)** remains the only first-line over-the-counter analgesic considered appropriate during pregnancy when used at the dose stated on the packaging and for the shortest time necessary. While some research has explored associations between prolonged high-dose acetaminophen use and developmental outcomes, ACOG's position is that occasional use at recommended doses for acute headache relief is acceptable. The key phrase is occasional — acetaminophen is for episodic relief, not daily management. If you are reaching for it more than a few times a week, that frequency warrants a conversation with your provider.
 
@@ -878,7 +878,7 @@ Given the restrictions on pharmacological options, non-medication approaches bec
 
 **Dark, quiet rest.** Light sensitivity and sound sensitivity accompany both tension headaches and migraines in pregnancy. Resting in a dark, quiet room for 20 to 30 minutes reduces sensory input that amplifies pain signals. This is not just passive waiting — it actively reduces cortical excitability, which is part of the migraine mechanism.
 
-**Magnesium.** Magnesium deficiency is associated with increased headache frequency, and magnesium requirements rise during pregnancy. The NIH notes that adequate magnesium intake — 350 to 360 mg per day during pregnancy — is linked to reduced migraine frequency in susceptible individuals. Dietary sources include pumpkin seeds, dark chocolate, almonds, spinach, and avocado. Magnesium glycinate supplement use during pregnancy should be discussed with your provider before starting.
+**Magnesium.** Magnesium deficiency is associated with increased headache frequency, and magnesium requirements rise during pregnancy. The [NIH](https://pubmed.ncbi.nlm.nih.gov) notes that adequate magnesium intake — 350 to 360 mg per day during pregnancy — is linked to reduced migraine frequency in susceptible individuals. Dietary sources include pumpkin seeds, dark chocolate, almonds, spinach, and avocado. Magnesium glycinate supplement use during pregnancy should be discussed with your provider before starting.
 
 **Posture and tension release.** For tension headaches driven by neck and shoulder muscle strain, gentle neck stretches, shoulder rolls, and a brief break from screen use address the source directly. Prenatal massage targeting the upper back, neck, and shoulders — performed by a therapist trained in pregnancy massage — provides more sustained relief for women whose headaches are primarily postural in origin.
 
@@ -1008,7 +1008,7 @@ None of these strategies eliminate normal pregnancy edema entirely — nor shoul
 
 **Compression socks or stockings.** Medical-grade compression socks — ideally 15 to 20 mmHg — provide external pressure that counteracts the hydrostatic pressure driving fluid into the tissues. The critical technique is to put them on before getting out of bed in the morning, before gravity has drawn fluid back into the lower legs. Once swelling has built up during the day, putting compression socks on is considerably less effective.
 
-**Hydration.** This is the most counterintuitive recommendation, but it is correct: drinking more water — not less — reduces pregnancy edema. When the body is mildly dehydrated, it responds by retaining more fluid as a protective mechanism. Adequate hydration — the WHO recommends at least 2.3 liters of total fluid per day during pregnancy — signals to the kidneys that fluid is plentiful, allowing them to excrete more rather than hoard it.
+**Hydration.** This is the most counterintuitive recommendation, but it is correct: drinking more water — not less — reduces pregnancy edema. When the body is mildly dehydrated, it responds by retaining more fluid as a protective mechanism. Adequate hydration — the [WHO](https://www.who.int/health-topics/maternal-health) recommends at least 2.3 liters of total fluid per day during pregnancy — signals to the kidneys that fluid is plentiful, allowing them to excrete more rather than hoard it.
 
 **Movement.** The calf muscle acts as a venous pump — every time you contract it by walking or flexing your foot, it squeezes blood upward through the veins toward the heart. Even brief walks every 30 to 60 minutes during prolonged sitting or standing measurably reduces lower extremity pooling. Swimming and water aerobics are particularly effective because the hydrostatic pressure of water surrounding the legs temporarily compresses the tissues and pushes fluid back into circulation.
 
@@ -1018,7 +1018,7 @@ None of these strategies eliminate normal pregnancy edema entirely — nor shoul
 
 ## Swelling That Is a Warning Sign: Preeclampsia
 
-The reason pregnancy swelling receives disproportionate attention in prenatal care is that one of its patterns — sudden, severe, or widespread edema — is associated with **preeclampsia**, a serious pregnancy complication affecting 5 to 8 percent of pregnancies, according to ACOG.
+The reason pregnancy swelling receives disproportionate attention in prenatal care is that one of its patterns — sudden, severe, or widespread edema — is associated with **preeclampsia**, a serious pregnancy complication affecting 5 to 8 percent of pregnancies, according to [ACOG](https://www.acog.org).
 
 Preeclampsia is a condition characterized by new-onset high blood pressure after 20 weeks of pregnancy, typically accompanied by protein in the urine (proteinuria) or other organ involvement. Left unmanaged, it can progress to eclampsia (seizures), HELLP syndrome (a liver and blood clotting disorder), placental abruption, and severe fetal growth restriction. It is one of the leading causes of maternal and perinatal mortality worldwide.
 
@@ -1028,7 +1028,7 @@ Any one of these additional symptoms alongside new swelling is a reason to seek 
 
 ## Asymmetrical Swelling: A Separate Concern
 
-**One-sided leg swelling** — where one leg is noticeably more swollen than the other, particularly if it is red, warm, or tender — is a different concern entirely and requires urgent evaluation. These findings suggest **deep vein thrombosis (DVT)**, a blood clot in the deep veins of the leg. Pregnancy increases DVT risk by 4 to 5 times compared to non-pregnant women of the same age, according to the CDC, due to increased clotting factors, decreased mobility, and compression of pelvic veins.
+**One-sided leg swelling** — where one leg is noticeably more swollen than the other, particularly if it is red, warm, or tender — is a different concern entirely and requires urgent evaluation. These findings suggest **deep vein thrombosis (DVT)**, a blood clot in the deep veins of the leg. Pregnancy increases DVT risk by 4 to 5 times compared to non-pregnant women of the same age, according to the [CDC](https://www.cdc.gov/reproductivehealth/index.htm), due to increased clotting factors, decreased mobility, and compression of pelvic veins.
 
 DVT requires immediate medical assessment because a clot can dislodge and travel to the lungs, causing a pulmonary embolism — a life-threatening emergency. Do not take a wait-and-see approach with unilateral leg swelling.
 
@@ -1121,7 +1121,7 @@ This sensitivity is why the classic first response to a Braxton Hicks episode is
 
 ## What Are True Labor Contractions?
 
-True labor contractions are coordinated uterine muscle contractions driven by the hormone oxytocin that cause progressive cervical dilation and effacement — the thinning and opening of the cervix required for the baby to descend and be born. Unlike Braxton Hicks, true labor contractions follow a pattern. They become progressively longer, stronger, and closer together over time. ACOG describes this as the defining characteristic of true labor: contractions that increase in frequency and intensity rather than remaining irregular and static.
+True labor contractions are coordinated uterine muscle contractions driven by the hormone oxytocin that cause progressive cervical dilation and effacement — the thinning and opening of the cervix required for the baby to descend and be born. Unlike Braxton Hicks, true labor contractions follow a pattern. They become progressively longer, stronger, and closer together over time. [ACOG](https://www.acog.org) describes this as the defining characteristic of true labor: contractions that increase in frequency and intensity rather than remaining irregular and static.
 
 True labor contractions often begin as a low, dull backache or a cramp-like sensation in the lower abdomen — similar to a menstrual cramp — that builds to a peak and then releases. As labor progresses, they become unmistakably intense, demand your full attention, and are not interrupted by rest, hydration, or position changes.
 
@@ -1364,7 +1364,7 @@ Your body provides a detailed, real-time picture of where you are in your cycle 
 
 ## What Is Morning Sickness?
 
-Morning sickness is the common term for nausea and vomiting of pregnancy (NVP) — a condition affecting approximately 70 to 80 percent of pregnant women, according to the American College of Obstetricians and Gynecologists (ACOG). Despite its name, nausea in pregnancy is not limited to mornings. Most women experience symptoms throughout the day, and for many, evenings can be the worst.
+Morning sickness is the common term for nausea and vomiting of pregnancy (NVP) — a condition affecting approximately 70 to 80 percent of pregnant women, according to the American College of Obstetricians and Gynecologists ([ACOG](https://www.acog.org)). Despite its name, nausea in pregnancy is not limited to mornings. Most women experience symptoms throughout the day, and for many, evenings can be the worst.
 
 The cause is not fully established, but the most widely supported explanation involves the rapid rise in human chorionic gonadotropin (hCG) — the hormone produced by the developing placenta — that occurs in the first trimester. Estrogen levels also rise sharply during this period and are thought to contribute. Both hormones peak around weeks 8 to 10, which aligns with when most women report symptoms at their most intense.
 
@@ -1473,7 +1473,7 @@ Every pregnancy brings a flood of opinions about how much you should eat, how fa
 
 Gestational weight gain refers to the total increase in body weight across the full duration of pregnancy. It is not simply the accumulation of fat — it reflects growth distributed across multiple tissues and fluid compartments, most of which serve a direct physiological function.
 
-The **Institute of Medicine (IOM)**, now the National Academy of Medicine, published the most widely used clinical guidelines on gestational weight gain in 2009. These guidelines remain the standard referenced by ACOG and form the basis of what your provider tracks at each prenatal appointment. They are organized by pre-pregnancy BMI because your body's starting point changes what is physiologically appropriate throughout pregnancy — and because both too little and too much gestational weight gain carry clinical risks that differ depending on where you started.
+The **Institute of Medicine ([IOM](https://www.nationalacademies.org))**, now the National Academy of Medicine, published the most widely used clinical guidelines on gestational weight gain in 2009. These guidelines remain the standard referenced by [ACOG](https://www.acog.org) and form the basis of what your provider tracks at each prenatal appointment. They are organized by pre-pregnancy BMI because your body's starting point changes what is physiologically appropriate throughout pregnancy — and because both too little and too much gestational weight gain carry clinical risks that differ depending on where you started.
 
 If you want to see your personalized target range based on your own pre-pregnancy weight and height, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) calculates it for you immediately.
 
@@ -1515,7 +1515,7 @@ This is one of the more dangerous myths, and it needs to be addressed directly: 
 
 Women with obesity do have lower gain targets — as little as 5 to 9 kg total. But this is still a gain. The relevant distinction is between tracking carefully to stay within a lower target versus deliberately creating a caloric deficit to reduce body weight.
 
-Significant caloric restriction during pregnancy risks putting the body into ketosis — a state where fat stores are metabolized for energy and ketone bodies are produced. Ketones cross the placenta, and research indexed by NIH has raised concerns about the impact of ketone exposure on fetal neurodevelopment. Additionally, severe restriction can impair intake of folate, iron, protein, and omega-3 fatty acids that fetal organ development depends on during specific developmental windows.
+Significant caloric restriction during pregnancy risks putting the body into ketosis — a state where fat stores are metabolized for energy and ketone bodies are produced. Ketones cross the placenta, and research indexed by [NIH](https://pubmed.ncbi.nlm.nih.gov) has raised concerns about the impact of ketone exposure on fetal neurodevelopment. Additionally, severe restriction can impair intake of folate, iron, protein, and omega-3 fatty acids that fetal organ development depends on during specific developmental windows.
 
 If your provider has recommended careful attention to weight gain because of elevated pre-pregnancy BMI, the appropriate clinical response is working with a registered dietitian to optimize nutritional quality — not to eat as little as possible. There is a meaningful difference between eating well and eating as little as you can manage.
 
@@ -1625,7 +1625,7 @@ Gestational diabetes mellitus — GDM — is a form of diabetes that develops du
 
 During the second and third trimesters, the placenta produces hormones — including human placental lactogen, progesterone, cortisol, and human placental growth hormone — that have anti-insulin effects. This is intentional: mild insulin resistance ensures a steady supply of glucose to the fetus. In most pregnant women, the pancreas compensates by producing more insulin. In women who develop GDM, the pancreas cannot compensate adequately, and blood glucose rises above normal thresholds.
 
-According to the CDC, gestational diabetes affects approximately 2 to 10 percent of pregnancies in the United States each year, with rates rising alongside increasing rates of pre-pregnancy obesity and advancing maternal age. It is the most common metabolic complication of pregnancy.
+According to the [CDC](https://www.cdc.gov/reproductivehealth/index.htm), gestational diabetes affects approximately 2 to 10 percent of pregnancies in the United States each year, with rates rising alongside increasing rates of pre-pregnancy obesity and advancing maternal age. It is the most common metabolic complication of pregnancy.
 
 ## Why Gestational Diabetes Matters for You and Your Baby
 
@@ -1641,7 +1641,7 @@ The word that belongs in this section, and that is often missing from GDM conver
 
 The relationship between gestational weight gain and GDM runs in both directions, and understanding it helps you make sense of why weight management is part of your care plan.
 
-**Weight gain contributes to GDM risk.** Excess gestational weight gain, particularly in the first and second trimesters, increases insulin resistance on top of the physiological insulin resistance pregnancy already produces. Women who gain weight rapidly early in pregnancy — especially those who were overweight before conception — face a meaningfully higher GDM risk. This is why the IOM's weight gain guidelines exist: they reflect the range of gain associated with the best outcomes for both mother and baby across different pre-pregnancy BMI categories.
+**Weight gain contributes to GDM risk.** Excess gestational weight gain, particularly in the first and second trimesters, increases insulin resistance on top of the physiological insulin resistance pregnancy already produces. Women who gain weight rapidly early in pregnancy — especially those who were overweight before conception — face a meaningfully higher GDM risk. This is why the [IOM](https://www.nationalacademies.org)'s weight gain guidelines exist: they reflect the range of gain associated with the best outcomes for both mother and baby across different pre-pregnancy BMI categories.
 
 **GDM changes your weight gain targets.** After diagnosis, weight gain guidance typically becomes more individualized. Your provider or a registered dietitian will work with you to design a nutrition plan that manages blood glucose while still supporting adequate fetal growth. This does not mean you should try to lose weight during pregnancy — the fetus needs consistent nutrition. It means the composition and timing of your eating matters more than the number on the scale alone.
 
@@ -1651,7 +1651,7 @@ If you want to understand whether your current weight gain is on track, our [pre
 
 ## How Gestational Diabetes Is Diagnosed
 
-ACOG recommends universal GDM screening between 24 and 28 weeks of pregnancy. The timing is intentional: this is when the placental hormones that drive insulin resistance are at their peak, making GDM most likely to be detectable.
+[ACOG](https://www.acog.org) recommends universal GDM screening between 24 and 28 weeks of pregnancy. The timing is intentional: this is when the placental hormones that drive insulin resistance are at their peak, making GDM most likely to be detectable.
 
 **The two-step approach** is the most common protocol in the United States:
 
@@ -1789,9 +1789,9 @@ Understanding this phased picture changes how you think about eating through pre
 
 The first trimester is the most nutritionally consequential period of pregnancy relative to caloric need. You are not eating more — you are eating more strategically.
 
-**Folate** is the nutrient with the most direct, well-established impact on early pregnancy outcomes. The neural tube closes between weeks 3 and 6. ACOG recommends 400 to 800 micrograms of folic acid per day, ideally starting before conception and continuing through at least the first trimester. Dietary folate sources — dark leafy greens, lentils, black beans, asparagus, and fortified cereals — contribute meaningfully but are rarely sufficient alone, which is why supplementation is standard.
+**Folate** is the nutrient with the most direct, well-established impact on early pregnancy outcomes. The neural tube closes between weeks 3 and 6. [ACOG](https://www.acog.org) recommends 400 to 800 micrograms of folic acid per day, ideally starting before conception and continuing through at least the first trimester. Dietary folate sources — dark leafy greens, lentils, black beans, asparagus, and fortified cereals — contribute meaningfully but are rarely sufficient alone, which is why supplementation is standard.
 
-**Iodine** is less discussed but equally critical in early pregnancy. Thyroid hormones depend on iodine, and thyroid function directly regulates fetal brain development from the earliest weeks. The WHO and ACOG recommend 220 mcg of iodine per day during pregnancy. Many prenatal vitamins include it, but checking your supplement label is worthwhile since not all do. Dairy products, seafood, eggs, and iodized salt are the primary dietary sources.
+**Iodine** is less discussed but equally critical in early pregnancy. Thyroid hormones depend on iodine, and thyroid function directly regulates fetal brain development from the earliest weeks. The [WHO](https://www.who.int/health-topics/maternal-health) and ACOG recommend 220 mcg of iodine per day during pregnancy. Many prenatal vitamins include it, but checking your supplement label is worthwhile since not all do. Dairy products, seafood, eggs, and iodized salt are the primary dietary sources.
 
 **Vitamin B6** plays a specific role in the first trimester that goes beyond general nutrition: it is one of the few evidence-backed treatments for nausea and vomiting of pregnancy. At doses of 10 to 25 mg three times daily, B6 supplementation is a first-line recommendation from ACOG for managing morning sickness. Natural sources include poultry, fish, potatoes, and bananas — though therapeutic doses require a supplement.
 
@@ -1799,7 +1799,7 @@ The first trimester is the most nutritionally consequential period of pregnancy 
 
 ## Second Trimester Nutrition: Fueling Growth (Weeks 14–27)
 
-The second trimester is when caloric needs genuinely increase. The IOM recommends approximately 340 additional calories per day above pre-pregnancy maintenance during this period — roughly one substantial snack, not a second dinner. Most women also feel significantly better in the second trimester than the first, which makes eating intentionally more practical.
+The second trimester is when caloric needs genuinely increase. The [IOM](https://www.nationalacademies.org) recommends approximately 340 additional calories per day above pre-pregnancy maintenance during this period — roughly one substantial snack, not a second dinner. Most women also feel significantly better in the second trimester than the first, which makes eating intentionally more practical.
 
 **Iron** becomes the defining second-trimester nutrient because your blood volume is expanding by 40 to 50 percent across pregnancy, and the fetus is drawing heavily on maternal iron stores. The IOM sets the iron requirement at 27 mg per day during pregnancy. Heme iron from animal sources — red meat, poultry, fish — is absorbed at meaningfully higher rates than non-heme iron from plant foods. To enhance non-heme iron absorption from sources like lentils, spinach, and fortified cereals, pair them with vitamin C-rich foods: a squeeze of lemon on lentil soup, or bell peppers alongside leafy greens.
 
@@ -1829,7 +1829,7 @@ The third trimester brings the greatest absolute fetal weight gain. The IOM reco
 
 **High-mercury fish:** Shark, swordfish, king mackerel, orange roughy, bigeye tuna, and tilefish accumulate methylmercury at levels that can impair fetal neurological development. The FDA and EPA advise pregnant women to avoid these fish entirely. Light canned tuna is lower in mercury and can be consumed in limited quantities — up to two servings per week per ACOG guidance.
 
-**Alcohol:** No safe level of alcohol consumption during pregnancy has been established. The CDC and ACOG both recommend complete abstinence throughout pregnancy, as alcohol can affect fetal brain development at any stage and in unpredictable amounts.
+**Alcohol:** No safe level of alcohol consumption during pregnancy has been established. The [CDC](https://www.cdc.gov/reproductivehealth/index.htm) and ACOG both recommend complete abstinence throughout pregnancy, as alcohol can affect fetal brain development at any stage and in unpredictable amounts.
 
 **Excess caffeine:** ACOG recommends limiting caffeine to under 200 mg per day — approximately one standard 240 ml cup of brewed coffee. Caffeine crosses the placenta, and the fetus metabolizes it far more slowly than adults do.
 
@@ -1925,7 +1925,7 @@ You stepped off the scale at your prenatal appointment and your provider noted t
 
 ## What Is Healthy Pregnancy Weight Gain?
 
-Healthy pregnancy weight gain is not a single target — it is a range, and that range is determined primarily by your pre-pregnancy body mass index (BMI). The Institute of Medicine (IOM), now the National Academy of Medicine, established the guidelines most providers use as their reference point. These guidelines set recommended total gain ranges for each BMI category, with the rationale that supporting fetal growth and maternal reserves while minimizing complication risk looks different depending on a woman's starting nutritional and metabolic status.
+Healthy pregnancy weight gain is not a single target — it is a range, and that range is determined primarily by your pre-pregnancy body mass index (BMI). The Institute of Medicine ([IOM](https://www.nationalacademies.org)), now the National Academy of Medicine, established the guidelines most providers use as their reference point. These guidelines set recommended total gain ranges for each BMI category, with the rationale that supporting fetal growth and maternal reserves while minimizing complication risk looks different depending on a woman's starting nutritional and metabolic status.
 
 According to IOM recommendations, the ranges are as follows. **Underweight women (BMI below 18.5)** should gain 12.5 to 18 kg total. **Normal weight women (BMI 18.5 to 24.9)** should gain 11.5 to 16 kg total. **Overweight women (BMI 25.0 to 29.9)** should gain 7 to 11.5 kg total. **Women with obesity (BMI 30 and above)** should gain 5 to 9 kg total. Women carrying twins have higher recommended ranges — the IOM recommends 17 to 25 kg for normal-weight women carrying twins, with adjusted ranges across all other BMI categories.
 
@@ -1971,13 +1971,13 @@ Neither scenario is a foregone conclusion. Women who gain modestly outside the r
 
 The additional calorie requirement during pregnancy is considerably smaller than most people expect. According to IOM estimates, extra calorie needs are approximately zero in the first trimester, roughly 300 to 350 additional calories per day in the second trimester, and approximately 400 to 500 additional calories per day in the third trimester.
 
-What matters far more than total calories is what those calories deliver. **Folate** — 400 to 800 micrograms daily per CDC recommendations — is critical in the first trimester for neural tube closure. **Iron** requirements increase from 18 mg to 27 mg per day according to the IOM, as blood volume expands and the fetus draws on maternal stores; iron deficiency anemia in pregnancy is associated with preterm birth and low birth weight when left unmanaged. **Calcium and vitamin D** support fetal skeletal development throughout pregnancy. **Omega-3 fatty acids (DHA)** support fetal brain and retinal development, particularly from mid-pregnancy onward. **Protein** requirements rise by approximately 25 grams per day above baseline to support uterine, placental, breast, and fetal tissue growth.
+What matters far more than total calories is what those calories deliver. **Folate** — 400 to 800 micrograms daily per [CDC](https://www.cdc.gov/reproductivehealth/index.htm) recommendations — is critical in the first trimester for neural tube closure. **Iron** requirements increase from 18 mg to 27 mg per day according to the IOM, as blood volume expands and the fetus draws on maternal stores; iron deficiency anemia in pregnancy is associated with preterm birth and low birth weight when left unmanaged. **Calcium and vitamin D** support fetal skeletal development throughout pregnancy. **Omega-3 fatty acids (DHA)** support fetal brain and retinal development, particularly from mid-pregnancy onward. **Protein** requirements rise by approximately 25 grams per day above baseline to support uterine, placental, breast, and fetal tissue growth.
 
 A quality prenatal vitamin covers many of these gaps, but it is a safety net for nutrients your diet might miss on a given day — not a substitute for food quality. The foundation is still a varied, nutrient-dense diet built around whole foods.
 
 ## Exercise and Healthy Weight Gain
 
-Physical activity does not work against healthy weight gain — it supports it. ACOG recommends that women with uncomplicated pregnancies engage in at least 150 minutes of moderate-intensity aerobic activity per week throughout pregnancy. Regular exercise reduces the risk of gestational diabetes, supports appropriate weight gain patterns, improves mood and sleep quality, and may ease both labor and postpartum recovery.
+Physical activity does not work against healthy weight gain — it supports it. [ACOG](https://www.acog.org) recommends that women with uncomplicated pregnancies engage in at least 150 minutes of moderate-intensity aerobic activity per week throughout pregnancy. Regular exercise reduces the risk of gestational diabetes, supports appropriate weight gain patterns, improves mood and sleep quality, and may ease both labor and postpartum recovery.
 
 Safe options include walking, swimming, prenatal yoga, stationary cycling, and low-impact aerobics. If you exercised regularly before pregnancy, continuing at a modified intensity is generally appropriate with provider guidance. If you were largely sedentary before becoming pregnant, starting with 15 to 20 minutes of walking three or four days per week and building gradually is a sensible approach your provider can help you calibrate.
 
@@ -2063,7 +2063,7 @@ You already know the due date. What you may not have is a real picture of what i
 
 Pregnancy is measured in weeks from the **first day of your last menstrual period (LMP)** — not from conception. This means that by the time you get a positive pregnancy test, you are typically already four to five weeks pregnant by clinical counting, even though conception occurred only two to three weeks earlier. It is a convention, not a biological inaccuracy, and it is the system every provider, every ultrasound, and every app uses, so it is worth understanding from the start.
 
-A full-term pregnancy spans **40 weeks**, divided into three trimesters. The first trimester covers weeks 1 through 13. The second runs from week 14 through week 27. The third begins at week 28 and continues to delivery — ideally at 39 to 40 weeks by ACOG's definition of full term.
+A full-term pregnancy spans **40 weeks**, divided into three trimesters. The first trimester covers weeks 1 through 13. The second runs from week 14 through week 27. The third begins at week 28 and continues to delivery — ideally at 39 to 40 weeks by [ACOG](https://www.acog.org)'s definition of full term.
 
 If you want to confirm exactly how far along you are right now and see a precise due date based on your LMP or ultrasound, use our [due date calculator](/pregnancy-due-date-calculator) for an instant timeline.
 
@@ -2075,7 +2075,7 @@ Understanding developmental milestones is not just emotionally satisfying — it
 
 The first trimester is the period of **organogenesis** — the formation of every major organ system your baby will ever have. This is the most biologically active period of the entire pregnancy in terms of structural development, and it is the window during which the embryo is most vulnerable to disruptions from nutrient deficiencies, infections, certain medications, and alcohol.
 
-**Weeks 1–4** are occupied by fertilization, implantation, and the very earliest cell division. Most women do not yet know they are pregnant. The neural tube — which will become the brain and spinal cord — begins forming around day 21 to 28, which is why adequate **folate before conception and in early pregnancy** is so critical. The CDC recommends 400 micrograms of folic acid daily beginning at least one month before pregnancy and continuing through the first trimester.
+**Weeks 1–4** are occupied by fertilization, implantation, and the very earliest cell division. Most women do not yet know they are pregnant. The neural tube — which will become the brain and spinal cord — begins forming around day 21 to 28, which is why adequate **folate before conception and in early pregnancy** is so critical. The [CDC](https://www.cdc.gov/reproductivehealth/index.htm) recommends 400 micrograms of folic acid daily beginning at least one month before pregnancy and continuing through the first trimester.
 
 **Weeks 5–8** bring the most dramatic early changes. A primitive heartbeat is detectable by ultrasound as early as six weeks. By week 8, arm and leg buds are visible, fingers are beginning to separate, and the face is recognizably human in outline. The embryo is approximately the size of a raspberry — about 1.6 centimeters. This is also when nausea peaks for most women, driven by the steep rise in human chorionic gonadotropin (hCG). If you are struggling with nausea, our post on [morning sickness remedies](/blog/morning-sickness-remedies-that-actually-work) covers what the evidence actually supports.
 
@@ -2142,7 +2142,7 @@ Understanding where you are in your pregnancy is the starting point for making s
 
 For a detailed view of what is happening with your baby week by week — including size comparisons, organ development specifics, and what to expect at each stage — our [week-by-week pregnancy guide](/pregnancy-week-by-week) goes deeper than any summary can.
 
-If you are also tracking weight gain and wondering whether you are within the recommended range for your trimester, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalized target based on your pre-pregnancy BMI and the IOM guidelines.
+If you are also tracking weight gain and wondering whether you are within the recommended range for your trimester, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalized target based on your pre-pregnancy BMI and the [IOM](https://www.nationalacademies.org) guidelines.
 
 ## The Bottom Line
 
@@ -2232,7 +2232,7 @@ Your equivalent LMP is the anchor point. For IVF pregnancies, calculate it as fo
 
 Key gestational age milestones relevant to IVF pregnancies:
 
-**4–5 weeks:** First beta hCG test. The number itself matters less than whether it is doubling appropriately — serial betas every 48 hours are the standard way to assess early pregnancy viability, with ACOG noting that hCG levels are expected to roughly double every 48 to 72 hours in a healthy early pregnancy.
+**4–5 weeks:** First beta hCG test. The number itself matters less than whether it is doubling appropriately — serial betas every 48 hours are the standard way to assess early pregnancy viability, with [ACOG](https://www.acog.org) noting that hCG levels are expected to roughly double every 48 to 72 hours in a healthy early pregnancy.
 
 **6–7 weeks:** First ultrasound in many IVF programs. This scan looks for a gestational sac, yolk sac, and fetal pole, and can usually detect cardiac activity by 6 weeks. The crown-rump length (CRL) measurement at this scan provides an independent assessment of fetal age that will be compared against your transfer-based gestational age.
 
@@ -2357,7 +2357,7 @@ If you want to run the LMP calculation yourself before your first appointment, u
 
 ## How Ultrasound Establishes Gestational Age
 
-According to ACOG, **first-trimester ultrasound is the most accurate method for establishing gestational age**, and it should be used to confirm or replace the LMP-based estimate. When performed before 13 weeks and 6 days, ultrasound can estimate your due date with an accuracy of approximately ±5 to 7 days.
+According to [ACOG](https://www.acog.org), **first-trimester ultrasound is the most accurate method for establishing gestational age**, and it should be used to confirm or replace the LMP-based estimate. When performed before 13 weeks and 6 days, ultrasound can estimate your due date with an accuracy of approximately ±5 to 7 days.
 
 The measurement used is called **crown-rump length (CRL)** — the distance from the top of the fetal head to the bottom of the torso. In early pregnancy, all embryos develop at essentially the same rate, which makes CRL a reliable proxy for gestational age regardless of individual variation in genetics or maternal nutrition. That uniformity disappears in the second and third trimesters, which is why later ultrasounds are far less useful for dating.
 
