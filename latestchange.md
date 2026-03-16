@@ -1,3 +1,10 @@
+## 2026-03-16 (Refresh blog: pregnancy-nutrition-guide-what-to-eat-each-trimester)
+
+- Replaced the existing `pregnancy-nutrition-guide-what-to-eat-each-trimester` post object in `src/data/blogPosts.ts` with the newly provided evidence-based rewrite (updated title, description, reading time, FAQ, and full content) while preserving the slug and blog schema.
+- Updated `updatedAt` to `2026-03-16` so the refreshed post remains compliant with blog sync validation.
+- Regenerated derived publishing/indexing artifacts: `public/blog-static/pregnancy-nutrition-guide-what-to-eat-each-trimester.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested refreshed version of this article and keep generated blog, redirect, and sitemap outputs in sync with source data.
+
 ## 2026-03-16 (Refreshed blog: pregnancy-weight-gain-myths-facts)
 
 - Replaced the existing `pregnancy-weight-gain-myths-facts` post object in `src/data/blogPosts.ts` with the newly provided long-form, evidence-based rewrite (updated title/description/reading time/FAQ/content) while preserving the same slug and blog schema.

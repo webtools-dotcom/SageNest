@@ -1735,75 +1735,161 @@ Use our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) to
   },
   {
     slug: 'pregnancy-nutrition-guide-what-to-eat-each-trimester',
-    title: 'Pregnancy Nutrition Guide: What to Eat in Each Trimester for Optimal Weight Gain',
-    description: 'A practical, evidence-based pregnancy nutrition guide covering key nutrients, foods to eat and avoid, meal planning tips, and how nutrition affects healthy weight gain in each trimester.',
-    readingTime: '12 min read',
-    updatedAt: '2026-03-04',
+    title: 'Pregnancy Nutrition Guide: What to Eat Each Trimester (Evidence-Based)',
+    description: 'Trimester-by-trimester pregnancy nutrition guide covering key nutrients, what to avoid, prenatal vitamins, and how food choices affect healthy weight gain.',
+    readingTime: '13 min read',
+    updatedAt: '2026-03-16',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
-      { question: 'Do I need to eat extra calories in the first trimester?', answer: 'No. First-trimester caloric needs are essentially the same as pre-pregnancy. You do not need extra calories until the second trimester, when approximately 300–350 additional calories per day are recommended.' },
-      { question: 'What foods should I avoid during pregnancy?', answer: 'Avoid raw or undercooked meat and eggs, unpasteurized dairy, high-mercury fish (shark, swordfish, king mackerel), alcohol, raw sprouts, and limit caffeine to under 200 mg per day.' },
-      { question: 'What vitamins are most important in early pregnancy?', answer: 'Folate (400–800 mcg daily) is most critical for neural tube development. Iron, iodine, DHA, calcium, and choline are also essential throughout pregnancy.' }
+      {
+        question: 'Do I need to eat for two during pregnancy?',
+        answer: 'No — "eating for two" is one of the most persistent myths in pregnancy nutrition. Your caloric needs do not increase at all in the first trimester. The IOM recommends approximately 340 additional calories per day in the second trimester and around 450 extra per day in the third. That is the equivalent of a small snack and a piece of fruit — not a second full meal. Focusing on food quality matters far more than quantity throughout pregnancy.'
+      },
+      {
+        question: 'What are the most important nutrients in the first trimester?',
+        answer: 'Folate is the most critical first-trimester nutrient. The neural tube — which becomes the brain and spinal cord — closes between weeks 3 and 6, before many women even know they are pregnant. ACOG recommends 400 to 800 micrograms of folic acid daily starting before conception and continuing through the first trimester. Iodine is also essential from early pregnancy for fetal thyroid and brain development. Iron, vitamin B6, and choline round out the priority list for the first trimester, though all remain important throughout.'
+      },
+      {
+        question: 'What foods should I absolutely avoid during pregnancy?',
+        answer: 'The CDC and ACOG identify the highest-risk foods as: raw or undercooked meat, poultry, and seafood (listeria and toxoplasmosis risk); unpasteurized dairy and soft cheeses like brie, camembert, and queso fresco; raw sprouts; deli meats and hot dogs unless heated to steaming; high-mercury fish including shark, swordfish, king mackerel, and bigeye tuna; and alcohol, for which no safe level has been established in pregnancy. Caffeine should be limited to under 200 mg per day — roughly one 240 ml cup of brewed coffee — per ACOG guidance.'
+      },
+      {
+        question: 'Do prenatal vitamins cover everything I need during pregnancy?',
+        answer: 'Prenatal vitamins fill important gaps — particularly folate, iron, iodine, and vitamin D — but they do not replace a nutritious diet, and they commonly under-deliver on certain key nutrients. Most prenatal vitamins contain little to no choline, despite the National Academy of Medicine recommending 450 mg per day during pregnancy for fetal brain development. Many also provide insufficient DHA unless it is explicitly added. Calcium is rarely present in adequate amounts in a single pill. These nutrients require intentional food sourcing alongside your supplement.'
+      },
+      {
+        question: 'How much protein do I need during pregnancy?',
+        answer: 'Protein requirements increase during pregnancy to approximately 71 grams per day, up from the standard 46 grams recommended for non-pregnant women — a figure from the IOM based on supporting fetal tissue growth, expanding maternal blood volume, and building placental tissue. Animal sources including poultry, fish, eggs, and dairy provide complete protein with all essential amino acids. Plant-based protein sources like legumes, tofu, tempeh, and quinoa can meet requirements fully when varied and consumed in adequate amounts across the day.'
+      }
     ],
-    content: `## Why Pregnancy Nutrition Directly Affects Weight Gain Outcomes
+    content: `
+You already know pregnancy changes everything — but you may not realize how specifically what you eat each week shapes what is happening inside your body at that moment. Not generally, not eventually, but right now: the folate you consumed three weeks before you got a positive test affected your baby's neural tube. The iron you eat this trimester is building a blood supply that did not exist six months ago. Pregnancy nutrition is not about being perfect. It is about understanding what your body is actually doing so you can feed it accordingly.
 
-Pregnancy nutrition is arguably the single most modifiable factor in gestational weight gain outcomes. What you eat every day directly shapes how much weight you gain, where it is distributed, and whether that gain supports healthy fetal development or creates complications later in pregnancy.
+## What Is Pregnancy Nutrition?
 
-Understanding trimester-specific nutrition needs helps you eat intentionally rather than reactively — choosing foods that nourish both you and your baby without excessive caloric surplus that drives weight gain above recommended ranges.
+Pregnancy nutrition refers to the specific pattern of eating that supports the physiological demands of gestation — not just for the growing fetus, but for the profound changes happening in your own body simultaneously.
 
-## First Trimester Nutrition: Laying the Foundation (Weeks 1 to 13)
+During pregnancy, your blood volume increases substantially, your kidneys work harder, your cardiovascular system adapts, and your metabolism shifts in ways that affect how you absorb and utilize almost every nutrient. These changes mean that the nutritional requirements of pregnancy are genuinely distinct from baseline adult needs — not just "more of the same," but different in composition and timing as well as quantity.
 
-The first trimester is paradoxical nutritionally. Your caloric needs have barely increased — most guidelines suggest zero to 100 additional calories above pre-pregnancy maintenance — yet the nutritional stakes are extraordinarily high. The neural tube closes between weeks 3 and 6, cardiac structures form by week 8, and all major organ systems are established by week 10.
+The goal of pregnancy nutrition is not a number on a scale. It is providing the raw materials your body needs, trimester by trimester, to support fetal development at each specific stage while maintaining your own health and setting up a healthy gestational weight gain trajectory.
 
-**Folate (vitamin B9):** The most evidence-supported prenatal nutrient. Adequate folate before conception and through the first trimester reduces neural tube defect risk by up to 70 percent. The recommended intake is 400 to 800 micrograms of folic acid per day, in addition to folate-rich foods including dark leafy greens, legumes, asparagus, avocado, and fortified cereals.
+## Why Nutrition Matters Differently in Each Trimester
 
-**Iodine:** Thyroid hormone production depends on iodine, and thyroid hormones regulate early fetal brain development. Dietary sources include dairy products, eggs, seafood, and iodized salt.
+Most pregnancy nutrition advice treats all 40 weeks as a single block, but the nutritional stakes shift dramatically across trimesters because fetal development is not linear.
 
-**Vitamin B6:** Recommended intake rises slightly during pregnancy, and notably, vitamin B6 supplementation at doses of 10 to 25 mg three times daily is one of the first-line medical treatments for morning sickness. Natural sources include poultry, fish, potatoes, and bananas.
+In the **first trimester**, the most critical structures — the neural tube, the heart, the brain — are forming during a period when many women do not yet know they are pregnant and caloric needs have barely changed. The priority here is micronutrients, not calories.
 
-**Managing first-trimester nausea:** Eating small, frequent meals every two to three hours, keeping plain crackers at the bedside, avoiding strong food odors, and using ginger in any form are practical strategies. If you cannot keep fluids down for more than 24 hours, contact your provider.
+In the **second trimester**, fetal growth accelerates meaningfully, your blood volume is expanding, and caloric needs begin to increase. This is when energy balance and macronutrient quality start to matter more practically.
 
-## Second Trimester Nutrition: Growth and Energy (Weeks 14 to 27)
+In the **third trimester**, the fetus is gaining the most weight, bone mineralization intensifies, and brain development continues at a rapid pace. Energy needs are at their peak, and nutrients like choline and DHA — often under-consumed — become especially critical.
 
-The second trimester adds approximately 300 to 350 extra calories per day to your needs. This is when intentional eating matters most for weight gain trajectory. The goal is nutrient-dense food choices that fuel fetal growth, support your expanding blood volume, and begin building fat reserves for breastfeeding.
+Understanding this phased picture changes how you think about eating through pregnancy. It is not one sustained effort — it is three distinct nutritional chapters.
 
-**Iron:** Your blood volume increases by 40 to 50 percent during pregnancy. Meeting the recommended 27 mg of iron per day requires intentional choices. Heme iron from animal sources is most bioavailable. Plant-based iron from lentils, spinach, and fortified cereals is enhanced by pairing with vitamin C-rich foods.
+## First Trimester Nutrition: Micronutrients Before Calories (Weeks 1–13)
 
-**Calcium:** Fetal skeletal development accelerates in the second trimester. The recommended intake is 1,000 mg per day. Dairy products, fortified plant milks, sardines with bones, and tofu made with calcium sulfate are good sources.
+The first trimester is the most nutritionally consequential period of pregnancy relative to caloric need. You are not eating more — you are eating more strategically.
 
-**DHA (docosahexaenoic acid):** Fetal brain and retinal tissue require DHA, with needs rising substantially from around week 20. Fatty fish low in mercury — salmon, sardines, herring, trout — are the best dietary sources. Women who do not eat fish can use algae-based DHA supplements.
+**Folate** is the nutrient with the most direct, well-established impact on early pregnancy outcomes. The neural tube closes between weeks 3 and 6. ACOG recommends 400 to 800 micrograms of folic acid per day, ideally starting before conception and continuing through at least the first trimester. Dietary folate sources — dark leafy greens, lentils, black beans, asparagus, and fortified cereals — contribute meaningfully but are rarely sufficient alone, which is why supplementation is standard.
 
-**Protein:** Requirements rise to approximately 71 grams per day during pregnancy. Distributing protein across all meals optimizes absorption and helps maintain satiety.
+**Iodine** is less discussed but equally critical in early pregnancy. Thyroid hormones depend on iodine, and thyroid function directly regulates fetal brain development from the earliest weeks. The WHO and ACOG recommend 220 mcg of iodine per day during pregnancy. Many prenatal vitamins include it, but checking your supplement label is worthwhile since not all do. Dairy products, seafood, eggs, and iodized salt are the primary dietary sources.
 
-## Third Trimester Nutrition: Final Growth Sprint (Weeks 28 to 40)
+**Vitamin B6** plays a specific role in the first trimester that goes beyond general nutrition: it is one of the few evidence-backed treatments for nausea and vomiting of pregnancy. At doses of 10 to 25 mg three times daily, B6 supplementation is a first-line recommendation from ACOG for managing morning sickness. Natural sources include poultry, fish, potatoes, and bananas — though therapeutic doses require a supplement.
 
-The third trimester brings the greatest fetal weight gain. Babies typically grow from about 1 kg at 28 weeks to 3 to 3.5 kg at term. Additional caloric needs are approximately 400 to 500 calories above pre-pregnancy baseline.
+**Managing first-trimester nausea nutritionally** is its own challenge. Eating small amounts every two to three hours prevents the empty stomach that worsens nausea. Keeping plain crackers at the bedside before rising helps. Cold foods have fewer odors than hot foods, which matters when smell sensitivity is high. Ginger in any form — fresh, powdered, tea, capsules — has the strongest evidence base of any food-based nausea remedy. If you cannot hold down fluids for more than 24 hours or are losing weight, contact your provider — this moves beyond normal morning sickness into a condition called hyperemesis gravidarum that requires medical management.
 
-**Vitamin K:** Green leafy vegetables — kale, spinach, broccoli — support the baby's developing clotting factor stores.
+## Second Trimester Nutrition: Fueling Growth (Weeks 14–27)
 
-**Choline:** Critical for fetal brain development. The recommended intake is 450 mg per day during pregnancy. Eggs are the most concentrated source — one large egg provides approximately 147 mg. Many prenatal vitamins contain little to no choline, so dietary sources are essential.
+The second trimester is when caloric needs genuinely increase. The IOM recommends approximately 340 additional calories per day above pre-pregnancy maintenance during this period — roughly one substantial snack, not a second dinner. Most women also feel significantly better in the second trimester than the first, which makes eating intentionally more practical.
 
-**Managing heartburn:** Heartburn affects up to 80 percent of pregnant women in the third trimester. Eating smaller, more frequent meals, avoiding lying down after eating, and limiting spicy or acidic trigger foods all help.
+**Iron** becomes the defining second-trimester nutrient because your blood volume is expanding by 40 to 50 percent across pregnancy, and the fetus is drawing heavily on maternal iron stores. The IOM sets the iron requirement at 27 mg per day during pregnancy. Heme iron from animal sources — red meat, poultry, fish — is absorbed at meaningfully higher rates than non-heme iron from plant foods. To enhance non-heme iron absorption from sources like lentils, spinach, and fortified cereals, pair them with vitamin C-rich foods: a squeeze of lemon on lentil soup, or bell peppers alongside leafy greens.
 
-## Foods to Avoid During Pregnancy
+**Calcium** supports the accelerating skeletal development of the second trimester. The recommended intake is 1,000 mg per day for pregnant adults, per the IOM. Dairy products, fortified plant milks, tinned sardines or salmon with bones, calcium-set tofu, and almonds are practical sources. It is worth knowing that calcium and iron compete for absorption when consumed together at high doses — if you take both as supplements, spacing them apart by a few hours improves uptake of each.
 
-**Listeria risk foods:** Raw or undercooked meat and seafood, unpasteurized dairy, and deli meats unless heated to steaming. Listeria causes pregnancy loss, stillbirth, and severe neonatal illness.
+**DHA** — docosahexaenoic acid, an omega-3 fatty acid — becomes particularly important from around mid-pregnancy onward as the fetal brain and retina develop. The richest dietary sources are fatty fish low in mercury: salmon, sardines, herring, and Atlantic mackerel. ACOG supports consuming two to three servings of low-mercury fish per week during pregnancy. Women who do not eat fish can use algae-based DHA supplements, which provide the same form of DHA without the mercury concern.
 
-**High-mercury fish:** Shark, swordfish, king mackerel, tilefish, and bigeye tuna. Light canned tuna is limited to two servings per week.
+**Protein** requirements rise to approximately 71 grams per day during pregnancy, an increase of roughly 25 grams above standard adult recommendations, per IOM data. Distributing protein across all three meals rather than loading it into one sitting optimizes synthesis and helps manage blood sugar and hunger across the day.
 
-**Alcohol:** No safe level has been established in pregnancy. Any amount may affect fetal brain development.
+## Third Trimester Nutrition: The Final Growth Sprint (Weeks 28–40)
 
-**Excess caffeine:** Limit to under 200 mg per day (approximately one 240 ml cup of brewed coffee).
+The third trimester brings the greatest absolute fetal weight gain. The IOM recommends approximately 450 additional calories per day above pre-pregnancy baseline during this period. The challenge is that as the uterus compresses the stomach and digestive organs, many women find large meals physically uncomfortable. Shifting to five or six smaller meals rather than three large ones is both more comfortable and metabolically appropriate.
 
-## Prenatal Vitamins: What They Cover and What They Do Not
+**Choline** is arguably the most under-appreciated nutrient of late pregnancy. The National Academy of Medicine recommends 450 mg of choline per day during pregnancy to support fetal brain development and placental function. The critical problem: most prenatal vitamins contain little to no choline, and population studies consistently show the majority of pregnant women fall short of recommended intake. Eggs are the most concentrated dietary source — one large egg provides approximately 147 mg. Other sources include beef liver, salmon, chicken, and soybeans.
 
-A quality prenatal vitamin fills most common nutritional gaps but does not replace a nutritious diet. Most provide folic acid, iron, iodine, and vitamin D. What many do not provide adequately: DHA (unless explicitly added), choline (often 0–55 mg vs. the 450 mg recommendation), and adequate calcium. These nutrients require dietary sourcing or separate supplementation.
+**Vitamin K** from green leafy vegetables — kale, spinach, broccoli, Brussels sprouts — supports the development of the baby's clotting factor stores, which are low at birth in all newborns. This is also a reason neonates receive a vitamin K injection at delivery.
 
-## Practical Meal Planning for Healthy Gestational Weight Gain
+**Magnesium** supports muscle function and sleep, both increasingly relevant as the third trimester progresses. Nuts, seeds, legumes, and whole grains are reliable sources.
 
-Rather than counting calories precisely, focus on food quality patterns. Eat three moderate meals and two to three planned snacks daily to stabilize blood sugar. Make vegetables non-negotiable at every lunch and dinner. Choose whole food protein sources over processed options. Use healthy fats liberally. Hydrate consistently — the recommended fluid intake during pregnancy is at least 2.3 liters per day.
+**Managing third-trimester heartburn** through nutrition is practical and effective for most women. Eating smaller, more frequent meals reduces gastric pressure. Avoiding eating within two to three hours of lying down limits acid reflux. Common trigger foods — spicy dishes, citrus, carbonated drinks, fried foods — are worth identifying individually, as triggers vary between women.
 
-The emotional dimension of eating during pregnancy is also real. If you notice significant anxiety about eating, extreme restriction, or distress about pregnancy weight changes, speak with your obstetric provider. Perinatal nutrition counseling and mental health support are available and effective.`
+## Foods and Substances to Avoid During Pregnancy
+
+**Raw or undercooked animal products:** Raw meat, raw poultry, raw seafood, and raw eggs all carry risk of listeria, salmonella, and toxoplasmosis — pathogens that cause far more severe illness in pregnancy than outside of it and can cross the placenta. Cook all animal proteins to safe internal temperatures.
+
+**Unpasteurized dairy and soft cheeses:** Listeria can survive and multiply in unpasteurized dairy products and soft cheeses including brie, camembert, feta, and queso fresco made with unpasteurized milk. Hard cheeses, cream cheese, and cottage cheese from pasteurized sources are safe.
+
+**High-mercury fish:** Shark, swordfish, king mackerel, orange roughy, bigeye tuna, and tilefish accumulate methylmercury at levels that can impair fetal neurological development. The FDA and EPA advise pregnant women to avoid these fish entirely. Light canned tuna is lower in mercury and can be consumed in limited quantities — up to two servings per week per ACOG guidance.
+
+**Alcohol:** No safe level of alcohol consumption during pregnancy has been established. The CDC and ACOG both recommend complete abstinence throughout pregnancy, as alcohol can affect fetal brain development at any stage and in unpredictable amounts.
+
+**Excess caffeine:** ACOG recommends limiting caffeine to under 200 mg per day — approximately one standard 240 ml cup of brewed coffee. Caffeine crosses the placenta, and the fetus metabolizes it far more slowly than adults do.
+
+## Prenatal Vitamins: What They Cover and What They Miss
+
+A quality prenatal vitamin is not optional — it provides a reliable baseline of folate, iron, iodine, and vitamin D that diet alone rarely guarantees consistently. But understanding the gaps matters.
+
+**What most prenatal vitamins include adequately:** Folic acid (400–800 mcg), iron (27 mg), iodine, vitamin D, and a range of B vitamins.
+
+**What many under-deliver:** Choline is the most significant gap — the 450 mg recommendation is rarely met by prenatal vitamins, most of which provide under 55 mg. DHA is absent from many standard prenatal vitamins unless specifically formulated as prenatal-plus-DHA. Calcium is rarely present in a single-pill prenatal at therapeutic amounts because it would make the pill too large. These nutrients require intentional dietary sourcing or separate supplementation.
+
+Check your prenatal vitamin label specifically for choline content. If it is low or absent — which is common — prioritize eggs and the other choline-rich foods listed above.
+
+## Common Questions About Pregnancy Nutrition
+
+**Can I follow a vegetarian or vegan diet during pregnancy?**
+
+Yes, with careful planning. Plant-based pregnancies can be fully nutritionally adequate, but several nutrients require deliberate attention: vitamin B12 (found almost exclusively in animal products — supplementation is essential for vegans), iron (pair plant sources with vitamin C consistently), DHA (algae-based supplements replace fish as the source), iodine (seaweed is variable — supplementation is more reliable), and calcium (fortified plant milks and calcium-set tofu are the main sources). Working with a registered dietitian familiar with plant-based pregnancy is worth the investment if you are navigating this without prior experience.
+
+**Is it safe to eat fish during pregnancy?**
+
+Yes — and ACOG actively encourages it. Low-mercury fish are among the most nutrient-dense foods available during pregnancy, providing DHA, protein, iodine, and vitamin D simultaneously. The guidance is not to avoid fish but to choose low-mercury options: salmon, sardines, herring, trout, tilapia, cod, and light canned tuna. Aim for two to three servings per week and avoid the high-mercury species listed above.
+
+**What should I eat if I have gestational diabetes?**
+
+Gestational diabetes management is nutritionally complex and highly individual — it requires guidance from your obstetric team and ideally a registered dietitian with perinatal experience. The general principles are distributing carbohydrates evenly across meals and snacks rather than eating large carbohydrate loads at once, pairing carbohydrates with protein and fat to blunt blood sugar response, and monitoring which foods specifically raise your glucose readings, since individual responses vary. For a broader overview of how nutrition intersects with pregnancy weight gain, see our post on [gestational diabetes and pregnancy weight gain](/blog/gestational-diabetes-pregnancy-weight-gain).
+
+**How much water do I need during pregnancy?**
+
+The IOM recommends at least 2.3 liters of total fluid per day during pregnancy, with most coming from water and beverages. Adequate hydration supports amniotic fluid levels, kidney function, and digestion — constipation, a common pregnancy complaint, is substantially worsened by insufficient fluid intake. Thirst is a reasonable guide in pregnancy, but aim for urine that is pale yellow rather than deep amber as a practical check.
+
+**I am craving things that are not food — is that normal?**
+
+Cravings for non-food substances — ice, soil, clay, chalk, starch — is a condition called pica, and it is associated with iron or zinc deficiency in some cases, though the cause is not fully understood. Pica can be harmful depending on what is being consumed, and it warrants a conversation with your provider. If you have unusual non-food cravings at any point in pregnancy, mention them at your next appointment rather than dismissing them.
+
+## When to Call Your Doctor
+
+Nutrition-related symptoms during pregnancy that are worth raising with your provider include:
+
+- **Inability to keep any food or fluids down for more than 24 hours** — this is hyperemesis gravidarum territory and may require IV fluids and medication
+- **Weight loss in the first trimester exceeding 2 kg** — more than mild weight loss from nausea warrants medical evaluation
+- **Significant weight gain that is very rapid** — sudden rapid gain, particularly in the second or third trimester, can be a sign of fluid retention related to preeclampsia rather than fat or muscle gain and should be assessed
+- **Persistent dark or very infrequent urination** — a sign of dehydration that can affect amniotic fluid levels and kidney function
+- **Strong, persistent cravings for non-food items** — pica should be evaluated for underlying deficiency and assessed for safety
+- **Numbness or tingling in the hands and feet alongside dietary restriction** — can indicate B12 deficiency in women following plant-based diets without adequate supplementation
+- **Swelling that is sudden, severe, or accompanied by headache and visual changes** — this is a preeclampsia warning sign requiring urgent assessment, regardless of dietary context
+
+## Related Tools on SageNest
+
+How you eat throughout pregnancy is closely linked to your gestational weight gain trajectory. Use our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) to find your personalized target range based on your pre-pregnancy BMI — it gives you the specific IOM-recommended numbers for your starting point rather than a generic range. If you want to understand exactly where you are in your pregnancy and what your baby is developing right now, our [week-by-week pregnancy guide](/pregnancy-week-by-week) breaks down fetal development and physical changes at each stage.
+
+For context on how nutrition and weight gain intersect with gestational diabetes risk, our post on [gestational diabetes and pregnancy weight gain](/blog/gestational-diabetes-pregnancy-weight-gain) covers the relationship in detail.
+
+## The Bottom Line
+
+Pregnancy nutrition is not about restriction or perfection — it is about matching what you eat to what your body is actually building at each stage. In the first trimester, folate and micronutrients matter more than calories. In the second and third, caloric needs rise modestly while protein, iron, DHA, and choline become the headline nutrients. Avoiding high-risk foods — raw animal products, high-mercury fish, alcohol, excess caffeine — removes the most preventable nutritional risks. And understanding what your prenatal vitamin does and does not cover, particularly around choline and DHA, helps you close the gaps deliberately rather than assuming one supplement handles everything. Use our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) to track whether your gain is on a healthy trajectory — because eating well and gaining appropriately are two goals that work together, not in opposition.
+
+
+*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*
+`
   },
   {
     slug: 'healthy-pregnancy-weight-gain-complete-guide',
