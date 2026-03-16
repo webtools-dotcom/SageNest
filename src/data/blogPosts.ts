@@ -1785,36 +1785,128 @@ The goal of gestational weight gain management is clinical, not aesthetic. Suppo
   },
   {
     slug: 'pregnancy-week-by-week-milestones',
-    title: 'Pregnancy Week-by-Week Milestones to Track with Confidence',
-    description: 'A calm framework for understanding trimester milestones and discussing questions with your care team.',
-    readingTime: '12 min read',
-    updatedAt: '2026-03-04',
+    title: 'Pregnancy Week by Week: Milestones, Changes, and What to Expect',
+    description: 'Track your pregnancy week by week with confidence. Learn what your baby is doing each trimester, what your body is experiencing, and which appointments matter most.',
+    readingTime: '11 min read',
+    updatedAt: '2026-03-16',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
-    content: `## Understanding Your Pregnancy Timeline
+    faq: [
+      {
+        question: 'What is the most important week of pregnancy for fetal development?',
+        answer: 'Every week contributes something critical, but the first eight weeks are arguably the most foundational — this is when all major organ systems, limb structures, facial features, and the neural tube form. Disruptions during this window, whether from nutrient deficiencies, infections, or certain medications, carry the highest risk of structural developmental impact. That said, brain development continues actively through the third trimester and beyond, which is why adequate nutrition and avoiding alcohol and smoking matter throughout the entire pregnancy, not just in the first trimester.'
+      },
+      {
+        question: 'When does a baby start moving and when should I feel it?',
+        answer: 'The fetus begins making small spontaneous movements as early as seven to eight weeks, long before you can feel them. Most first-time mothers notice fetal movement — often described as fluttering or bubbles — somewhere between 18 and 22 weeks. Women who have been pregnant before typically feel movement earlier, around 16 to 18 weeks, because they recognize the sensation. By 28 weeks, ACOG recommends being aware of your baby\'s movement pattern. Decreased movement after 28 weeks — fewer than 10 movements in two hours during an active period — warrants a call to your provider.'
+      },
+      {
+        question: 'When does morning sickness peak and when does it usually end?',
+        answer: 'Morning sickness typically begins around week 6, peaks between weeks 8 and 10, and resolves for most women by the end of the first trimester — around week 12 to 14. The hormone primarily responsible is human chorionic gonadotropin (hCG), which rises steeply in early pregnancy and then plateaus. A smaller proportion of women experience nausea into the second trimester, and a very small group develop hyperemesis gravidarum — severe, persistent vomiting requiring medical management — which can last longer and needs clinical attention.'
+      },
+      {
+        question: 'Is it normal for the baby to be very active some days and quiet others?',
+        answer: 'Yes, in the second trimester it is completely normal for fetal movement to be inconsistent — your baby has sleep cycles and active periods, and many movements are too small or angled away from your abdominal wall to feel. By 28 weeks, movement tends to become more established and predictable. A consistent reduction in your baby\'s normal movement pattern after 28 weeks — not just a quiet hour, but a prolonged absence from their usual level of activity — is something to report to your provider the same day, not something to wait and see on.'
+      },
+      {
+        question: 'What does "full term" actually mean — is 37 weeks as safe as 40 weeks?',
+        answer: 'ACOG redefined the terminology in 2013 to distinguish between early term (37–38 weeks), full term (39–40 weeks), late term (41 weeks), and post-term (42 weeks and beyond). This matters because research shows that babies born at 37 or 38 weeks have higher rates of NICU admission, respiratory difficulties, and feeding challenges than those born at 39 to 40 weeks. The final weeks involve critical lung maturation, brain growth, and fat deposition. Unless there is a medical reason, ACOG recommends against elective delivery before 39 completed weeks.'
+      }
+    ],
+    content: `
+You already know the due date. What you may not have is a real picture of what is happening inside your body each week — and why certain weeks carry more clinical weight than others. Pregnancy is not a uniform 40-week stretch where things develop steadily and predictably. It has distinct periods of intense activity, identifiable milestones that shift what your provider is watching for, and specific turning points that change what your symptoms mean. This is that guide.
 
-Pregnancy typically lasts about 40 weeks from the first day of your last menstrual period, though anywhere from 37-42 weeks is considered full-term and healthy. These weeks are divided into three trimesters, each with distinct developmental milestones for your baby and physical changes for you.
+## What Is the Pregnancy Timeline?
 
-## First Trimester: Weeks 1-13
+Pregnancy is measured in weeks from the **first day of your last menstrual period (LMP)** — not from conception. This means that by the time you get a positive pregnancy test, you are typically already four to five weeks pregnant by clinical counting, even though conception occurred only two to three weeks earlier. It is a convention, not a biological inaccuracy, and it is the system every provider, every ultrasound, and every app uses, so it is worth understanding from the start.
 
-The first trimester is a time of rapid, foundational development. Week 5: The embryo is about the size of a sesame seed and a primitive heart begins to form. Week 6: Heart begins beating, detectable on ultrasound, arm and leg buds appear. Week 8: Fingers and toes are forming. Week 9: Baby officially graduates from embryo to fetus. Week 12: Fingernails and toenails begin forming. By week 13, risk of miscarriage drops significantly.
+A full-term pregnancy spans **40 weeks**, divided into three trimesters. The first trimester covers weeks 1 through 13. The second runs from week 14 through week 27. The third begins at week 28 and continues to delivery — ideally at 39 to 40 weeks by ACOG's definition of full term.
 
-**Important first trimester appointments:** First prenatal visit (typically week 8-10), dating ultrasound, genetic screening blood tests, nuchal translucency scan (weeks 11-13).
+If you want to confirm exactly how far along you are right now and see a precise due date based on your LMP or ultrasound, use our [due date calculator](/pregnancy-due-date-calculator) for an instant timeline.
 
-## Second Trimester: Weeks 14-27
+## Why Tracking Milestones Matters Beyond Curiosity
 
-Many women consider this the "golden period" of pregnancy. Morning sickness often fades, energy returns. Week 16: Baby can hear your voice and heartbeat. Week 20: Anatomy scan — you're halfway there! Week 24: Viability milestone — baby could potentially survive with intensive medical care if born now.
+Understanding developmental milestones is not just emotionally satisfying — it has practical value. It tells you which prenatal tests are time-sensitive and why, it helps you interpret symptoms in context (nausea peaking at week 9 is expected; starting at week 22 is not), and it gives you a framework for conversations with your provider. Women who understand what is happening at each stage ask better questions and catch more of what matters.
 
-**Important second trimester appointments:** Anatomy scan (18-22 weeks), glucose screening test for gestational diabetes (24-28 weeks).
+## First Trimester: Weeks 1–13
 
-## Third Trimester: Weeks 28-40
+The first trimester is the period of **organogenesis** — the formation of every major organ system your baby will ever have. This is the most biologically active period of the entire pregnancy in terms of structural development, and it is the window during which the embryo is most vulnerable to disruptions from nutrient deficiencies, infections, certain medications, and alcohol.
 
-Week 28: Eyes can open and close, blink, and sense light changes. Week 32: Baby is about 4 pounds. Week 37: Baby is full-term. Week 39: Brain development equivalent to 2/3 of adult brain weight.
+**Weeks 1–4** are occupied by fertilization, implantation, and the very earliest cell division. Most women do not yet know they are pregnant. The neural tube — which will become the brain and spinal cord — begins forming around day 21 to 28, which is why adequate **folate before conception and in early pregnancy** is so critical. The CDC recommends 400 micrograms of folic acid daily beginning at least one month before pregnancy and continuing through the first trimester.
 
-**Important third trimester appointments:** More frequent check-ups (every 2 weeks starting around week 28, then weekly from week 36), Group B strep test (35-37 weeks).
+**Weeks 5–8** bring the most dramatic early changes. A primitive heartbeat is detectable by ultrasound as early as six weeks. By week 8, arm and leg buds are visible, fingers are beginning to separate, and the face is recognizably human in outline. The embryo is approximately the size of a raspberry — about 1.6 centimeters. This is also when nausea peaks for most women, driven by the steep rise in human chorionic gonadotropin (hCG). If you are struggling with nausea, our post on [morning sickness remedies](/blog/morning-sickness-remedies-that-actually-work) covers what the evidence actually supports.
 
-## When to Contact Your Healthcare Provider
+**Weeks 9–13** see the embryo graduate to fetus — a designation that reflects the shift from organ formation to organ refinement. Fingernails and toenails begin forming. The fetus can make small spontaneous movements, though you will not feel them yet. By week 12, the risk of miscarriage drops substantially as the placenta assumes full hormonal support. The **nuchal translucency scan**, offered between weeks 11 and 13, screens for chromosomal conditions including Down syndrome by measuring fluid at the back of the fetal neck.
 
-Always contact your provider if you experience vaginal bleeding, severe abdominal pain, severe or persistent headaches, vision changes, decreased fetal movement, signs of preterm labor before 37 weeks, fluid leaking from vagina, or severe swelling of face or hands.`
+**Key first trimester appointments:** Your first prenatal visit typically occurs between weeks 8 and 10 and includes a full medical history, blood work to check blood type, Rh factor, iron levels, immunity to rubella and chickenpox, and screening for sexually transmitted infections. A dating ultrasound confirms gestational age.
+
+## Second Trimester: Weeks 14–27
+
+For many women, the second trimester brings genuine relief — nausea recedes, energy returns, and the pregnancy becomes visible. Clinically, it is also when fetal anatomy becomes assessable by ultrasound and when the risk of miscarriage is at its lowest.
+
+**Weeks 14–19** mark rapid growth. The fetus develops a fine hair covering called lanugo, which helps regulate temperature and will mostly disappear before birth. By week 16, the ears are developed enough to detect sound — your voice, your heartbeat, and external sounds. **Quickening** — the first felt fetal movements — typically occurs between weeks 16 and 22. First-time mothers tend to feel it later in this range; those who have been pregnant before recognize the sensation earlier and often feel it from week 16 onward.
+
+**Week 20** is a landmark: the **anatomy scan** (also called the anomaly scan or level II ultrasound) examines all major fetal structures — the brain, heart, spine, kidneys, limbs, and face — and confirms placental position. It is the most detailed look at your baby's development offered in pregnancy. This is also the midpoint of the 40-week timeline. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) shows exactly what is happening with your baby at each stage, including the weeks around the anatomy scan.
+
+**Weeks 24–27** bring an important clinical threshold: **viability**. At 24 weeks, a baby born extremely prematurely has a meaningful chance of survival with intensive neonatal care, though outcomes at this gestational age remain serious. This is not a safety milestone — it is a medical boundary that changes how a potential premature labor is managed. Between weeks 24 and 28, the **glucose challenge test** screens for gestational diabetes, a condition affecting approximately 6 to 9 percent of pregnancies according to the CDC, and one with meaningful consequences for both maternal and fetal health if unmanaged.
+
+## Third Trimester: Weeks 28–40+
+
+The third trimester is defined by growth, lung maturation, and preparation for birth. Your baby gains roughly half its total birth weight between week 28 and delivery.
+
+**Weeks 28–32** — the fetus's eyes can open and close and respond to light. Lung development accelerates, though the lungs are not fully mature until around 36 weeks. Surfactant — the substance that prevents the air sacs from collapsing at birth — is produced in increasing quantities from week 28 onward. If premature delivery appears likely, providers may administer corticosteroids to accelerate fetal lung maturity.
+
+**Week 28** also marks the point where ACOG recommends women become attentive to **fetal movement patterns**. You should feel your baby moving regularly each day. If you are ever unsure whether movement has decreased, lie on your side in a quiet environment and count — 10 movements within two hours is the general reassurance threshold.
+
+**Weeks 33–36** bring intense fetal brain development. The brain at 35 weeks weighs approximately two-thirds of what it will weigh at 39 weeks — those final weeks represent substantial neurological growth, not merely size. This is one of the core reasons ACOG advises against elective delivery before 39 completed weeks unless medically indicated.
+
+**The Group B streptococcus (GBS) test** is performed between weeks 35 and 37. GBS is a bacterium carried vaginally or rectally by approximately 25 percent of healthy adults, according to the CDC, with no symptoms in the carrier. If positive, antibiotics during labor prevent transmission to the newborn, which can otherwise cause serious infection.
+
+**Weeks 37–40+** — ACOG's terminology distinguishes early term (37–38 weeks), full term (39–40 weeks), late term (41 weeks), and post-term (42 weeks and beyond). A baby born at 37 weeks is not developmentally equivalent to one born at 40 weeks, and the evidence supporting this distinction led to updated guidelines discouraging elective inductions before 39 weeks without a medical indication.
+
+Prenatal visits increase to every two weeks from approximately week 28, then weekly from week 36 onward. Your provider will track cervical changes, fetal position, and blood pressure, and will discuss your birth preferences.
+
+## Common Questions About Pregnancy Milestones
+
+### Does a missed kick mean something is wrong?
+
+Not necessarily, but a significant change in your baby's established movement pattern after 28 weeks — not just a quiet hour, but an extended absence from what is normal for your baby — warrants same-day contact with your provider. Fetal movement monitoring is one of the simplest and most effective ways to detect potential issues early. Trust your instincts about what is different from your baby's normal.
+
+### Why do prenatal appointments become more frequent in the third trimester?
+
+Because the conditions most likely to require clinical management — pre-eclampsia, growth restriction, gestational hypertension, and changes in fetal position — emerge or evolve most rapidly in the final weeks. Weekly checks from week 36 allow your provider to catch these developments early enough to act before they become emergencies.
+
+### What is the difference between the dating scan and the anatomy scan?
+
+The dating ultrasound, typically done in the first trimester between weeks 8 and 12, establishes gestational age using fetal crown-rump length — it is the most accurate method of confirming how far along you are. The anatomy scan at weeks 18 to 22 is a detailed structural examination of the fetus; it is not primarily a dating tool, though it can adjust the estimated due date if the first trimester scan was not performed. If your due date has been adjusted by an ultrasound, our [due date calculator](/pregnancy-due-date-calculator) can help you recalculate your timeline from the corrected date.
+
+## When to Call Your Doctor
+
+Most pregnancy milestones pass without incident, but certain symptoms at any stage require prompt contact with your provider — do not wait for your next scheduled appointment:
+
+- **Vaginal bleeding** at any point in pregnancy — even light spotting in the third trimester should be assessed the same day
+- **Severe or sudden abdominal pain** that does not resolve — not round ligament discomfort, but a persistent or worsening pain
+- **Severe headache with visual disturbances or upper abdominal pain** — this combination can indicate pre-eclampsia, which is a medical emergency
+- **Significant swelling of the face, hands, or feet that develops suddenly** — gradual ankle swelling is common; sudden or severe swelling is not
+- **Decreased fetal movement after 28 weeks** — fewer than 10 movements in two hours during an active period warrants a call, not observation
+- **Signs of preterm labor before 37 weeks**: regular uterine contractions occurring more than four times per hour, pelvic pressure, low back pain that comes and goes in a pattern, or a change in vaginal discharge
+- **Fluid leaking from the vagina** — this may indicate premature rupture of membranes, which requires immediate assessment regardless of gestational age
+- **Fever above 38°C (100.4°F)** — fever in pregnancy is not benign and should be evaluated
+
+## Related Tools on SageNest
+
+Understanding where you are in your pregnancy is the starting point for making sense of every milestone and symptom. Use our [pregnancy due date calculator](/pregnancy-due-date-calculator) to confirm your exact gestational age and see your personalized timeline at a glance.
+
+For a detailed view of what is happening with your baby week by week — including size comparisons, organ development specifics, and what to expect at each stage — our [week-by-week pregnancy guide](/pregnancy-week-by-week) goes deeper than any summary can.
+
+If you are also tracking weight gain and wondering whether you are within the recommended range for your trimester, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalized target based on your pre-pregnancy BMI and the IOM guidelines.
+
+## The Bottom Line
+
+Pregnancy unfolds in distinct phases, each with its own developmental logic, clinical thresholds, and symptom profile. The first trimester builds the architecture. The second refines it and makes it visible. The third completes it — particularly the brain, the lungs, and the fat stores that will sustain your baby after birth. Knowing which week you are in and what is happening at that stage helps you interpret your symptoms with more accuracy, make the most of your prenatal appointments, and understand what your providers are watching for at each visit. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to follow your baby's development in real time and stay informed at every stage.
+
+
+*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*
+  `
   },
   {
     slug: 'ivf-due-date-guide',
@@ -1962,7 +2054,7 @@ Not necessarily. By the second trimester, fetal size reflects individual growth 
 Your due date itself does not require urgent contact, but there are situations where the timing of your pregnancy warrants prompt communication with your provider:
 
 - You reach **41 weeks** without having discussed a plan for monitoring or induction — this is a conversation that should happen proactively, not reactively
-- You experience **decreased fetal movement** at any point in the third trimester — changes in your baby's movement patterns warrant same-day contact, not a wait-and-see approach
+- You experience **decreased fetal movement** at any point in the third trimester — changes in your baby\'s movement patterns warrant same-day contact, not a wait-and-see approach
 - You notice **vaginal bleeding** at any stage of pregnancy, particularly before 20 weeks when it may indicate a dating discrepancy related to a subchorionic haematoma or other structural issue
 - You have **no first-trimester ultrasound on record** by 14 weeks — if you are relying solely on LMP dating past this point, request an ultrasound; second-trimester dating is less precise and your window to establish an accurate EDD is narrowing
 - You pass **42 weeks** — this is the clinical threshold for post-term pregnancy, and induction should be actively discussed if not already underway; do not wait for spontaneous labour without medical guidance
