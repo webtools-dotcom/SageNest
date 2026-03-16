@@ -1,3 +1,15 @@
+## 2026-03-16 (Fix blog refresh scope: restore pregnancy nutrition guide slug)
+
+- Restored the existing `pregnancy-nutrition-guide-what-to-eat-each-trimester` post object in `src/data/blogPosts.ts`, which was unintentionally removed during the previous `gestational-diabetes-pregnancy-weight-gain` refresh.
+- Regenerated blog artifacts and indexes so the restored post is back in static output and discovery files: `public/blog-static/pregnancy-nutrition-guide-what-to-eat-each-trimester.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: keep the change strictly scoped to the requested blog refresh and avoid unrelated content regressions.
+
+## 2026-03-16 (Refreshed blog: gestational-diabetes-pregnancy-weight-gain)
+
+- Replaced the existing `gestational-diabetes-pregnancy-weight-gain` post object in `src/data/blogPosts.ts` with the newly provided version, including updated description text, `updatedAt`, expanded FAQ entries, and revised long-form content while preserving the same slug and schema.
+- Regenerated blog publishing artifacts and index files to keep source and static outputs aligned: `public/blog-static/gestational-diabetes-pregnancy-weight-gain.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the latest medically-focused rewrite for this article and ensure SEO/routing artifacts remain synchronized with the canonical blog data.
+
 ## 2026-03-15 (Refreshed blog: how-due-dates-are-calculated)
 
 - Replaced the existing `how-due-dates-are-calculated` post object in `src/data/blogPosts.ts` with the updated title, description, reading time, FAQ set, and full long-form content provided for this refresh.
