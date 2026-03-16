@@ -325,29 +325,13 @@ Below is the exact tracked file tree of this repository at the time of this upda
 
 ```text
 .
-├── .env.example
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
-├── .gitignore
-├── Blogpostsrule.md
-├── README.md
-├── SAGENEST BLOG MASTERGUIDE.md
-├── SECURITY.md
-├── SECURITY2.md
-├── codex.md
-├── frontend.md
-├── frontend2.md
-├── index.html
-├── latestchange.md
-├── newtool.md
-├── package.json
 ├── public/
-│   ├── _headers
-│   ├── _redirects
-│   ├── apple-touch-icon.png
 │   ├── blog-static/
 │   │   ├── braxton-hicks-vs-real-contractions.html
+│   │   ├── cervical-mucus-ovulation-guide.html
 │   │   ├── gestational-diabetes-pregnancy-weight-gain.html
 │   │   ├── healthy-pregnancy-weight-gain-complete-guide.html
 │   │   ├── how-due-dates-are-calculated.html
@@ -356,21 +340,28 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── luteal-phase-explained-after-ovulation.html
 │   │   ├── morning-sickness-remedies-that-actually-work.html
 │   │   ├── ovulation-signs-symptoms.html
+│   │   ├── pelvic-girdle-pain-pregnancy.html
 │   │   ├── pregnancy-headaches-causes-safe-relief-red-flags.html
 │   │   ├── pregnancy-insomnia-causes-safe-relief.html
 │   │   ├── pregnancy-nutrition-guide-what-to-eat-each-trimester.html
 │   │   ├── pregnancy-swelling-edema-normal-vs-warning-sign.html
 │   │   ├── pregnancy-week-by-week-milestones.html
 │   │   ├── pregnancy-weight-gain-myths-facts.html
-│   │   └── round-ligament-pain-pregnancy.html
-│   ├── favicon-96x96.png
-│   ├── favicon.ico
-│   ├── favicon.svg
+│   │   ├── round-ligament-pain-pregnancy.html
+│   │   └── shortness-of-breath-pregnancy.html
 │   ├── images/
 │   │   └── blog/
 │   │       └── sagenest-blog-default.jpg
+│   ├── _headers
+│   ├── _redirects
+│   ├── apple-touch-icon.png
+│   ├── favicon-96x96.png
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── gtag.js
 │   ├── manifest.json
 │   ├── robots.txt
+│   ├── sagenest-main-logo.png
 │   ├── sitemap.xml
 │   ├── web-app-manifest-192x192.png
 │   └── web-app-manifest-512x512.png
@@ -387,7 +378,6 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   ├── redirects-utils.mjs
 │   └── sitemap-utils.mjs
 ├── src/
-│   ├── App.tsx
 │   ├── components/
 │   │   ├── BlogList.tsx
 │   │   ├── BlogPost.tsx
@@ -419,7 +409,6 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── markdown.ts
 │   │   ├── ovulationCalc.ts
 │   │   └── pregnancyWeightGain.ts
-│   ├── main.tsx
 │   ├── pages/
 │   │   ├── About.tsx
 │   │   ├── AdminLogin.tsx
@@ -436,8 +425,10 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   ├── styles/
 │   │   ├── design-tokens.css
 │   │   └── global.css
-│   └── supabase/
-│       └── client.ts
+│   ├── supabase/
+│   │   └── client.ts
+│   ├── App.tsx
+│   └── main.tsx
 ├── tests/
 │   ├── adminLoginAuth.test.ts
 │   ├── blogPosterAuth.test.ts
@@ -448,7 +439,23 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   ├── ovulationCalc.test.ts
 │   ├── pregnancyWeightGain.test.ts
 │   └── progressWheel.test.ts
+├── .env.example
+├── .gitignore
+├── Blogpostsrule.md
+├── README.md
+├── SAGENEST BLOG MASTERGUIDE.md
+├── SECURITY.md
+├── SECURITY2.md
+├── codex.md
+├── frontend.md
+├── frontend2.md
+├── index.html
+├── latestchange.md
+├── newtool.md
+├── package-lock.json
+├── package.json
 ├── tsconfig.json
+├── tsconfig.tsbuildinfo
 └── vite.config.ts
 ```
 `npm run build` now runs these checks first via `prebuild`: package JSON check, merge-conflict check, static blog generation, redirects generation + validation, sitemap generation + validation, and blog static-sync validation.
