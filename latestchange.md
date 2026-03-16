@@ -1,3 +1,9 @@
+## 2026-03-16 (Refreshed blog: ivf-due-date-guide)
+
+- Replaced the existing `ivf-due-date-guide` post object in `src/data/blogPosts.ts` with the newly provided long-form version, including updated title/description/reading time, expanded FAQ content, and a full educational rewrite while preserving the same slug and schema.
+- Regenerated blog publishing and indexing artifacts for consistency with source data: `public/blog-static/ivf-due-date-guide.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the latest requested IVF due-date guide update and keep static SEO/routing outputs synchronized with the canonical blog data.
+
 ## 2026-03-16 (Refreshed blog: pregnancy-week-by-week-milestones)
 
 - Replaced the existing `pregnancy-week-by-week-milestones` post object in `src/data/blogPosts.ts` with the new long-form version, including updated title/description/reading time, refreshed FAQ items, and expanded trimester-by-trimester guidance while keeping the same slug and schema.

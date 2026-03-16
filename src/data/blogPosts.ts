@@ -1910,40 +1910,148 @@ Pregnancy unfolds in distinct phases, each with its own developmental logic, cli
   },
   {
     slug: 'ivf-due-date-guide',
-    title: 'IVF Due Date Guide: Transfer Day to Delivery Window',
-    description: 'A practical IVF-focused due date guide including embryo age adjustments and trimester planning.',
-    readingTime: '8 min read',
-    updatedAt: '2026-03-04',
+    title: 'IVF Due Date Calculator: How to Calculate Your Due Date After Transfer',
+    description: 'IVF due dates work differently than natural conception. Learn the exact formulas for Day 3 and Day 5 transfers, what gestational age means for your pregnancy timeline, and how accurate your estimate really is.',
+    readingTime: '11 min read',
+    updatedAt: '2026-03-16',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
-    content: `## Why IVF Due Date Calculation Is More Precise
+    faq: [
+      {
+        question: 'How do I calculate my due date after a Day 5 IVF transfer?',
+        answer: 'Add 261 days to your transfer date. Because a Day 5 blastocyst has already been developing for five days since fertilization, you subtract those five days from the standard 266-day gestation period (266 − 5 = 261). On the day of a Day 5 transfer, you are considered 2 weeks and 5 days pregnant in gestational age terms — which is why your due date lands earlier than it would if you added a full 266 days from transfer.'
+      },
+      {
+        question: 'How do I calculate my due date after a Day 3 IVF transfer?',
+        answer: 'Add 263 days to your transfer date (266 − 3 = 263). A Day 3 embryo is typically at the 6–8 cell stage at the time of transfer. On transfer day, you are considered 2 weeks and 3 days pregnant by gestational age. The principle is the same as for Day 5: you account for how many days of development already happened in the lab before the embryo entered your uterus.'
+      },
+      {
+        question: 'Does a frozen embryo transfer change how my due date is calculated?',
+        answer: 'No. The calculation is identical to a fresh transfer. What matters is the developmental age of the embryo at transfer — not whether it was fresh or thawed. A frozen Day 5 blastocyst is still a Day 5 blastocyst regardless of how long it was stored, because the freeze-thaw process suspends development entirely. Use the same formula: transfer date + 261 days for Day 5, or transfer date + 263 days for Day 3.'
+      },
+      {
+        question: 'Why is my IVF due date different from what my OB calculated using my last period?',
+        answer: 'Your OB may have calculated your due date using your last menstrual period (LMP) before IVF, which assumes ovulation occurred on day 14 of a 28-day cycle — an assumption that does not apply to IVF cycles. The embryo transfer date with the correct embryo age adjustment is always more accurate for IVF pregnancies than LMP-based calculation. If the two dates differ, the transfer-based date is the one to use. Your first ultrasound may also provide a measurement-based estimate, which will be compared against the transfer date by your provider.'
+      },
+      {
+        question: 'How accurate is an IVF due date?',
+        answer: 'IVF due dates are among the most accurate available because fertilization date is known precisely, embryo development is tracked daily in the laboratory, and there is no uncertainty about cycle length or ovulation timing. However, every due date — IVF or otherwise — is still an estimate. Only about 4–5% of babies are born on their exact due date, according to data reviewed by ACOG. The due date defines the center of a window: full term is considered 39 to 40 weeks, and delivery between 37 and 42 weeks is normal. Your provider will monitor your pregnancy with ultrasound and may adjust your expected delivery window based on fetal growth measurements.'
+      }
+    ],
+    content: `
+You have the exact date fertilization happened, the exact age of your embryo at transfer, and a lab record that most pregnancies simply do not have — and yet calculating your due date still feels more confusing than it should. IVF due date math is not complicated, but it does require understanding why the formula is different from natural conception, what gestational age actually means in the context of your transfer, and what your due date can and cannot tell you about when your baby will actually arrive. Here is everything you need to know.
 
-If you conceived through in vitro fertilization (IVF), you have one significant advantage when it comes to due date calculations: you know the exact age of your embryo at transfer. This makes IVF due dates generally more accurate than those based on last menstrual period alone.
+## What Is Different About IVF Due Date Calculation?
 
-## The Basic IVF Due Date Formula
+In a naturally conceived pregnancy, due dates are calculated by adding 280 days to the first day of the last menstrual period (LMP). This formula assumes ovulation occurred on approximately day 14 of a 28-day cycle — meaning fertilization happened about two weeks after the LMP. The 280-day figure is the same as 40 weeks of gestational age, or approximately 266 days from actual fertilization.
 
-The standard formula for calculating your IVF due date is:
+With IVF, the guesswork is gone. You know the exact date eggs were retrieved and fertilized, you know how many days the embryo developed in the laboratory before transfer, and you have a documented transfer date. This means you can calculate backward from actual fertilization rather than estimating it from a period date. The result is a due date that is, in most cases, more precise than one derived from LMP — particularly for women who have irregular cycles, who were not tracking their periods carefully, or whose natural cycle length differs significantly from 28 days.
 
-**Transfer Date + (266 days - Embryo Age at Transfer) = Estimated Due Date**
+The formula at the center of all IVF due date calculations is:
 
-Since human gestation is approximately 266 days from fertilization to birth, you subtract the number of days your embryo developed before transfer, then add the result to your transfer date.
+**Transfer Date + (266 − Embryo Age at Transfer in Days) = Estimated Due Date**
 
-## Day 3 and Day 5 Transfer Calculations
+The 266 comes from the average length of human gestation measured from fertilization. You subtract the number of days the embryo already developed before entering your body, because those days count toward the total whether they happened in your uterus or in the lab.
 
-**Day 3 Transfers:** Transfer Date + 263 days = Due Date. Day 3 embryos are typically at the 6-8 cell stage. On transfer day, you are considered 2 weeks and 3 days pregnant.
+## Day 5 Blastocyst Transfer: The Calculation
 
-**Day 5 Blastocyst Transfers:** Transfer Date + 261 days = Due Date. Day 5 transfers are now the gold standard at most fertility clinics. On transfer day, you are considered 2 weeks and 5 days pregnant. Day 5 transfers typically have higher implantation rates.
+Day 5 blastocyst transfers are the current standard at most fertility clinics. At Day 5, the embryo has reached the blastocyst stage — a fluid-filled structure of approximately 70–100 cells — which is associated with higher implantation rates than Day 3 embryos.
 
-## Frozen Embryo Transfer (FET) Considerations
+**Formula: Transfer Date + 261 days = Estimated Due Date** (266 − 5 = 261)
 
-If you're using a frozen embryo, the calculation remains the same. The age of the embryo when it was frozen — not when it's thawed — determines the formula you use. The freeze-thaw process doesn't affect the embryo's developmental age.
+On the day of a Day 5 transfer, you are considered **2 weeks and 5 days pregnant** in standard gestational age terms. This might feel counterintuitive — you are not yet pregnant at the moment of transfer, and yet the pregnancy is already nearly three weeks along by the calendar your provider will use. The reason is that gestational age is always counted from the equivalent of the LMP, which is set two weeks before fertilization by convention. For a Day 5 blastocyst, your equivalent LMP is 19 days before your transfer date (14 days + 5 days of embryo age).
 
-## Understanding Gestational Age in IVF Pregnancy
+**Example:** Transfer date of June 10 + 261 days = Estimated due date of February 26.
 
-The standard pregnancy weeks used in medical care are based on gestational age (from LMP), not embryonic age. All pregnancy milestones and testing schedules use gestational age, not embryonic age. Your beta hCG blood test typically occurs about 10-14 days after transfer, at which point you're about 4-5 weeks pregnant by gestational age.
+## Day 3 Embryo Transfer: The Calculation
 
-## Accuracy of IVF Due Dates
+Day 3 embryos are typically at the cleavage stage — 6 to 8 cells — and while Day 5 transfers have become more common as laboratory culture conditions have improved, Day 3 transfers remain appropriate in certain clinical situations.
 
-IVF due dates are remarkably accurate because fertilization date is known exactly, embryo age is tracked daily in the lab, there are no assumptions about cycle length or ovulation timing, no uncertainty about LMP recall, and the transfer date is documented. However, even with IVF, your due date is still an estimate. Use our calculator to estimate your IVF due date, but always consult with your fertility specialist and OB/GYN for personalized guidance.`
+**Formula: Transfer Date + 263 days = Estimated Due Date** (266 − 3 = 263)
+
+On the day of a Day 3 transfer, you are considered **2 weeks and 3 days pregnant** by gestational age. Your equivalent LMP is 17 days before your transfer date (14 days + 3 days of embryo age).
+
+**Example:** Transfer date of June 10 + 263 days = Estimated due date of February 28.
+
+## Frozen Embryo Transfer: Does It Change Anything?
+
+No. The freeze-thaw process suspends embryo development entirely — a frozen Day 5 blastocyst is still developmentally a Day 5 blastocyst regardless of how long it was stored in liquid nitrogen. The calculation is identical to a fresh transfer of the same embryo age.
+
+Use the same formula: FET Day 5 is transfer date + 261 days, and FET Day 3 is transfer date + 263 days.
+
+One thing that does differ with frozen transfers is the cycle protocol. In a natural FET cycle, your provider may track ovulation and transfer the embryo at a hormonally appropriate time. In a medicated FET cycle, estrogen and progesterone are administered to prepare the uterine lining, and the transfer is scheduled without relying on natural ovulation. Either way, the embryo's developmental age at transfer is what governs the due date formula — not the type of cycle used to prepare your uterus.
+
+## Understanding Gestational Age in Your IVF Pregnancy
+
+Every milestone, test, and appointment in your pregnancy will be scheduled based on **gestational age** — the weeks-and-days system counted from your equivalent LMP, not from your transfer date or from fertilization. Understanding how to calculate your gestational age at any given moment is useful for interpreting everything from beta hCG expectations to anatomy scan timing.
+
+Your equivalent LMP is the anchor point. For IVF pregnancies, calculate it as follows: for a Day 5 transfer, your LMP equivalent is your transfer date minus 19 days; for a Day 3 transfer, it is your transfer date minus 17 days. From that date, every week of pregnancy is counted exactly as in a natural pregnancy.
+
+Key gestational age milestones relevant to IVF pregnancies:
+
+**4–5 weeks:** First beta hCG test. The number itself matters less than whether it is doubling appropriately — serial betas every 48 hours are the standard way to assess early pregnancy viability, with ACOG noting that hCG levels are expected to roughly double every 48 to 72 hours in a healthy early pregnancy.
+
+**6–7 weeks:** First ultrasound in many IVF programs. This scan looks for a gestational sac, yolk sac, and fetal pole, and can usually detect cardiac activity by 6 weeks. The crown-rump length (CRL) measurement at this scan provides an independent assessment of fetal age that will be compared against your transfer-based gestational age.
+
+**10–13 weeks:** First trimester screening, including the nuchal translucency scan and associated blood tests if recommended. These have fixed gestational age windows and are scheduled based on your IVF-derived due date.
+
+**18–20 weeks:** Anatomy scan. This is the detailed structural survey of fetal organs and one of the most important appointments in any pregnancy. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to explore what is happening developmentally at each of these stages.
+
+## How Accurate Is Your IVF Due Date?
+
+IVF due dates are among the most precise available for any pregnancy. The advantages are real: fertilization date is known exactly, embryo age is tracked daily in laboratory culture, cycle length assumptions are unnecessary, and the transfer date is documented with precision. For women with irregular cycles, polycystic ovary syndrome (PCOS), or other conditions that make natural ovulation difficult to date, IVF removes the largest source of due date uncertainty entirely.
+
+That said, your due date is still an estimate of a biological window, not a prediction of a specific day. According to data reviewed by ACOG, only approximately 4 to 5 percent of babies are born on their exact due date. Full term is defined as 39 weeks 0 days through 40 weeks 6 days, and delivery between 37 and 42 weeks is within the normal range.
+
+Your provider will also obtain ultrasound measurements at the first trimester scan — typically the crown-rump length between 8 and 14 weeks — and compare them against your transfer-based gestational age. If fetal size falls significantly above or below expected for gestational age, your provider may adjust your due date to reflect the measurements. A discrepancy of less than five to seven days is typically not enough to change the date; a larger difference may prompt revision, and in those cases the ultrasound-derived estimate generally takes precedence because first trimester CRL measurement is highly accurate for assessing gestational age.
+
+## Common Questions About IVF Due Dates
+
+**What if my clinic gave me a different due date?**
+
+In most cases this reflects a rounding difference or a slightly different convention for equivalent LMP calculation. If the discrepancy is a day or two, it is clinically insignificant. If it is more than a week, ask your fertility clinic to confirm exactly which formula they used and what gestational age they assigned you on transfer day — this clarifies the source of the difference. The transfer-date-based calculation using the formulas above is consistent with standard obstetric practice.
+
+**Does egg donor or sperm donor IVF change the formula?**
+
+No. The formula depends on the developmental age of the embryo at transfer, not on the source of the egg or sperm. Whether you used your own eggs, donor eggs, your partner's sperm, or donor sperm, the Day 3 and Day 5 formulas apply identically.
+
+**What if I transferred two embryos?**
+
+Your due date is calculated in the same way regardless of how many embryos were transferred. If both embryos implant, you have a twin pregnancy, but the gestational age — and therefore the due date — is the same as for a singleton transfer from the same date. Twin pregnancies have a shorter average gestational length than singletons, so your provider will discuss specific monitoring and delivery planning that reflects this, but the baseline due date calculation does not change.
+
+**Will my due date be adjusted after my ultrasound?**
+
+It may be, particularly if your first trimester crown-rump length measurement differs significantly from what would be expected for your gestational age. A discrepancy of less than five to seven days is typically not enough to change the due date. A larger difference may prompt your provider to revise the dating — in which case, the ultrasound-derived date generally takes precedence because fetal size measurement in the first trimester is highly accurate.
+
+**Why does gestational age start two weeks before fertilization?**
+
+This is a convention established long before IVF existed, when the only reliable date most women knew was the first day of their last menstrual period — not the date of ovulation or fertilization. Adding 280 days from LMP rather than 266 from fertilization accounts for the approximately 14-day interval between menstruation and ovulation in the idealized 28-day cycle. IVF due date calculations reverse-engineer this convention to produce a comparable gestational age by establishing an equivalent LMP date. The underlying biology is the same; the math just works backward from a known fertilization date rather than forward from an assumed period date.
+
+## When to Call Your Doctor
+
+IVF pregnancies are monitored closely, but there are specific symptoms that warrant prompt contact with your provider regardless of where you are in your monitoring schedule:
+
+- **Heavy vaginal bleeding at any point in early pregnancy** — light spotting can occur around the time of the first beta hCG test and is common in IVF pregnancies, but soaking a pad or passing clots requires same-day assessment
+- **Significant one-sided pelvic pain combined with any bleeding** — this combination raises concern for ectopic pregnancy, which can occur in IVF pregnancies even with uterine transfer; an ectopic is a medical emergency requiring immediate evaluation
+- **Bloating, rapid weight gain, reduced urination, or shortness of breath in the days following egg retrieval** — these can be signs of ovarian hyperstimulation syndrome (OHSS), which ranges from mild to severe and occasionally requires hospitalization
+- **Beta hCG levels that are not rising as expected** — if your clinic reports that your beta is not doubling appropriately, this warrants close follow-up and honest conversation with your reproductive endocrinologist about next steps
+- **No cardiac activity detected at the 6–7 week ultrasound** — your provider will guide you through what this finding means and whether a repeat scan at a slightly later gestational age is appropriate before drawing conclusions
+- **Fever above 38°C (100.4°F) combined with pelvic pain in the weeks following retrieval** — this combination can indicate infection related to the egg retrieval procedure and requires prompt evaluation
+
+## Related Tools on SageNest
+
+Now that you know your estimated due date, our [week-by-week pregnancy guide](/pregnancy-week-by-week) lets you explore exactly what is happening with your baby's development at each gestational age — from the first cell divisions through to the final weeks before delivery.
+
+If you are not sure how your IVF due date compares to what standard LMP-based dating would produce, our post on [how due dates are calculated](/blog/how-due-dates-are-calculated) explains the natural conception formulas and when ultrasound dating takes precedence over period-based estimates.
+
+For women with irregular cycles who underwent IVF specifically because natural ovulation was difficult to track, our [ovulation calculator](/ovulation-calculator) can be a useful reference tool if you are monitoring a subsequent natural cycle or planning a sibling pregnancy.
+
+## The Bottom Line
+
+IVF gives you something most pregnancies lack: precision. The exact date of fertilization, the documented developmental age of your embryo on transfer day, and a confirmed transfer date together produce a due date that is more accurate than any LMP-based estimate. The formula is straightforward — add 261 days to a Day 5 transfer date, or 263 days to a Day 3 transfer date — and the result gives you a gestational age timeline that aligns with every milestone and appointment in your pregnancy. Your due date is the center of a window, not a deadline: full term spans from 37 to 42 weeks, and your provider will guide you toward the delivery timing that is right for your specific pregnancy. Use our [pregnancy due date calculator](/pregnancy-due-date-calculator) to get your estimated due date and current gestational age in one step.
+
+
+*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*
+  `
   },
   {
     slug: 'how-due-dates-are-calculated',
