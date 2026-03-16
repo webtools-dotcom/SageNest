@@ -6,6 +6,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /week-by-week-pregnancy /pregnancy-week-by-week 301
 /ovulation /ovulation-calculator 301
 /fertility-calculator /ovulation-calculator 301
+/cervical-mucus-ovulation-guide /blog/cervical-mucus-ovulation-guide 301
 /pelvic-girdle-pain-pregnancy /blog/pelvic-girdle-pain-pregnancy 301
 /shortness-of-breath-pregnancy /blog/shortness-of-breath-pregnancy 301
 /pregnancy-insomnia-causes-safe-relief /blog/pregnancy-insomnia-causes-safe-relief 301
@@ -34,6 +35,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /pregnancy-week-by-week/ /pregnancy-week-by-week 301
 /ovulation-calculator/ /ovulation-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/cervical-mucus-ovulation-guide /blog-static/cervical-mucus-ovulation-guide.html 200
+/blog/cervical-mucus-ovulation-guide/ /blog-static/cervical-mucus-ovulation-guide.html 200
 /blog/pelvic-girdle-pain-pregnancy /blog-static/pelvic-girdle-pain-pregnancy.html 200
 /blog/pelvic-girdle-pain-pregnancy/ /blog-static/pelvic-girdle-pain-pregnancy.html 200
 /blog/shortness-of-breath-pregnancy /blog-static/shortness-of-breath-pregnancy.html 200
