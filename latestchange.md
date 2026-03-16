@@ -1,3 +1,9 @@
+## 2026-03-16 (Refreshed blog: healthy-pregnancy-weight-gain-complete-guide)
+
+- Replaced the existing `healthy-pregnancy-weight-gain-complete-guide` post object in `src/data/blogPosts.ts` with the newly provided evidence-based rewrite, including updated title/description/reading time, expanded FAQ coverage, and full long-form content while preserving the same slug/schema.
+- Regenerated blog publishing/indexing outputs so source and generated artifacts remain synchronized: `public/blog-static/healthy-pregnancy-weight-gain-complete-guide.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested refreshed version of this guide and keep SEO/routing artifacts aligned with canonical blog source data.
+
 ## 2026-03-16 (Refreshed blog: ivf-due-date-guide)
 
 - Replaced the existing `ivf-due-date-guide` post object in `src/data/blogPosts.ts` with the newly provided long-form version, including updated title/description/reading time, expanded FAQ content, and a full educational rewrite while preserving the same slug and schema.
