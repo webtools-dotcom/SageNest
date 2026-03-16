@@ -1,3 +1,10 @@
+## 2026-03-16 (Refreshed blog: pregnancy-weight-gain-myths-facts)
+
+- Replaced the existing `pregnancy-weight-gain-myths-facts` post object in `src/data/blogPosts.ts` with the newly provided long-form, evidence-based rewrite (updated title/description/reading time/FAQ/content) while preserving the same slug and blog schema.
+- Added `updatedAt: '2026-03-16'` to keep the refreshed post compliant with the repository's blog sync validation requirements.
+- Regenerated derived publishing/indexing outputs so source and generated artifacts stay aligned: `public/blog-static/pregnancy-weight-gain-myths-facts.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested refreshed version of this article and ensure all generated blog, redirect, and sitemap artifacts remain valid and in sync.
+
 ## 2026-03-16 (Refreshed blog: healthy-pregnancy-weight-gain-complete-guide)
 
 - Replaced the existing `healthy-pregnancy-weight-gain-complete-guide` post object in `src/data/blogPosts.ts` with the newly provided evidence-based rewrite, including updated title/description/reading time, expanded FAQ coverage, and full long-form content while preserving the same slug/schema.
