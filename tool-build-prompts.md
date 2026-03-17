@@ -315,7 +315,7 @@ FAQ_ITEMS:
 
 Source citation:
 Source: ACOG Committee Opinion #746 — Air Travel During Pregnancy (2018)
-Link to: https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/09/air-travel-during-pregnancy
+Link to: https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/08/air-travel-during-pregnancy
 
 ---
 
