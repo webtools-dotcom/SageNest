@@ -11,7 +11,9 @@ const baseRedirects = [
   '/pregnancy-weight-gain /pregnancy-weight-gain-calculator 301',
   '/week-by-week-pregnancy /pregnancy-week-by-week 301',
   '/ovulation /ovulation-calculator 301',
-  '/fertility-calculator /ovulation-calculator 301'
+  '/fertility-calculator /ovulation-calculator 301',
+  '/morning-sickness /morning-sickness-end-date-estimator 301',
+  '/nausea-calculator /morning-sickness-end-date-estimator 301'
 ];
 
 const canonicalNoTrailingSlashRoutes = [
@@ -24,6 +26,7 @@ const canonicalNoTrailingSlashRoutes = [
   '/pregnancy-weight-gain-calculator',
   '/pregnancy-week-by-week',
   '/ovulation-calculator',
+  '/morning-sickness-end-date-estimator',
   '/similar-tools'
 ];
 

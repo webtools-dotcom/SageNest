@@ -14,6 +14,7 @@ import { PregnancyWeightGainCalculatorPage } from './pages/PregnancyWeightGainCa
 import PregnancyWeekByWeekHubPage from './pages/PregnancyWeekByWeekHub';
 import { PregnancyWeekDetailPage } from './pages/PregnancyWeekDetail';
 import { OvulationCalculatorPage } from './pages/OvulationCalculator';
+import { MorningSicknessEstimatorPage } from './pages/MorningSicknessEstimator';
 import SimilarToolsPage from './pages/SimilarTools';
 import { NotFoundPage } from './pages/NotFound';
 
@@ -61,6 +62,7 @@ function App() {
         <Route path="/pregnancy-week-by-week" element={<PregnancyWeekByWeekHubPage />} />
         <Route path="/pregnancy-week-by-week/:weekSlug" element={<PregnancyWeekDetailPage />} />
         <Route path="/ovulation-calculator" element={<OvulationCalculatorPage />} />
+        <Route path="/morning-sickness-end-date-estimator" element={<MorningSicknessEstimatorPage />} />
         <Route path="/similar-tools" element={<SimilarToolsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
