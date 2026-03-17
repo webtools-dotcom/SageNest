@@ -1,5 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { SEOHead } from '../components/SEOHead';
+import { DisclaimerBox } from '../components/DisclaimerBox';
 import { getWeekByNumber } from '../data/pregnancyWeeks';
 
 const MIN_WEEK = 1;
@@ -43,6 +44,7 @@ export const PregnancyWeekDetailPage = () => {
           <p>Please enter a week between 1 and 40.</p>
           <p><Link to="/pregnancy-week-by-week">Go back to the week-by-week hub</Link></p>
         </section>
+        <DisclaimerBox />
       </main>
     );
   }
@@ -63,6 +65,7 @@ export const PregnancyWeekDetailPage = () => {
           <p>Data for this week is unavailable.</p>
           <p><Link to="/pregnancy-week-by-week">Go back to the week-by-week hub</Link></p>
         </section>
+        <DisclaimerBox />
       </main>
     );
   }
@@ -256,10 +259,7 @@ export const PregnancyWeekDetailPage = () => {
           <Link to="/pregnancy-week-by-week">← Back to all weeks</Link>
         </p>
       </section>
-
-      <p className="disclaimer">
-        For informational purposes only. Not medical advice. Consult your healthcare provider with any concerns about your pregnancy.
-      </p>
+      <DisclaimerBox />
     </main>
   );
 };

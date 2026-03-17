@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../components/SEOHead';
+import { DisclaimerBox } from '../components/DisclaimerBox';
 
 export const AboutPage = () => {
   return (
@@ -14,6 +15,9 @@ export const AboutPage = () => {
 
       <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', marginBottom: 'var(--space-xl)' }}>
         We believe pregnancy planning should be informed, private, and empowering.
+      </p>
+      <p style={{ fontSize: '0.875rem', color: 'var(--text-tertiary)', marginBottom: 'var(--space-lg)' }}>
+        Last reviewed: March 2026
       </p>
 
       <h2>Our Mission</h2>
@@ -263,14 +267,7 @@ export const AboutPage = () => {
         <h3>Ready to Calculate Your Due Date?</h3>
         <Link to="/pregnancy-due-date-calculator">Open Calculator</Link>
       </div>
-
-      <p className="disclaimer" style={{ marginTop: 'var(--space-2xl)' }}>
-        <strong>Medical Disclaimer:</strong> SageNest provides educational tools for informational
-        purposes only. This site does not provide medical advice, diagnosis, or treatment. Always
-        consult with a qualified healthcare provider for personalized medical guidance during
-        pregnancy. Your healthcare provider is the best source for information about your specific
-        situation.
-      </p>
+      <DisclaimerBox />
     </main>
   );
 };

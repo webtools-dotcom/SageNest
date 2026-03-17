@@ -5,6 +5,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { SEOHead } from "../components/SEOHead";
+import { DisclaimerBox } from "../components/DisclaimerBox";
 import { pregnancyWeeks } from "../data/pregnancyWeeks";
 
 const HUB_STYLES = `
@@ -868,6 +869,8 @@ export default function PregnancyWeekByWeekHub() {
           <span aria-hidden="true">→</span>
         </button>
       </section>
+
+      <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 24px 48px" }}><DisclaimerBox /></div>
     </div>
   );
 }

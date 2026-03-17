@@ -4,6 +4,7 @@ import { CalculatorCard } from '../components/CalculatorCard';
 import { FAQAccordion, FAQItem, getFAQJsonLD } from '../components/FAQAccordion';
 import { InfoGrid } from '../components/InfoGrid';
 import { SEOHead } from '../components/SEOHead';
+import { DisclaimerBox } from '../components/DisclaimerBox';
 import { blogPosts } from '../data/blogPosts';
 
 type CalculatorNavState = {
@@ -106,6 +107,7 @@ export const CalculatorPage = () => {
           </button>
         </div>
       </section>
+      <DisclaimerBox />
     </main>
   );
 };

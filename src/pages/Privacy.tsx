@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../components/SEOHead';
+import { DisclaimerBox } from '../components/DisclaimerBox';
 
 export const PrivacyPage = () => {
   return (
@@ -340,11 +341,7 @@ export const PrivacyPage = () => {
         </p>
         <Link to="/pregnancy-due-date-calculator">Open Calculator</Link>
       </div>
-
-      <p className="disclaimer" style={{ marginTop: 'var(--space-2xl)' }}>
-        This privacy policy applies to SageNest (sagenest.app). If you have concerns about privacy 
-        practices of other websites or services, please review their respective privacy policies.
-      </p>
+      <DisclaimerBox />
     </main>
   );
 };

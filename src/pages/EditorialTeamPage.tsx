@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { SEOHead } from '../components/SEOHead';
+import { DisclaimerBox } from '../components/DisclaimerBox';
 
 export const EditorialTeamPage = () => {
   return (
@@ -15,6 +16,9 @@ export const EditorialTeamPage = () => {
       <p style={{ fontSize: '1.125rem', color: 'var(--text-secondary)', marginBottom: 'var(--space-xl)' }}>
         Every article on SageNest is researched and written to a single standard: accurate enough
         that you can bring it to your provider's appointment and not be embarrassed by it.
+      </p>
+      <p style={{ fontSize: '0.875rem', color: 'var(--text-tertiary)', marginBottom: 'var(--space-lg)' }}>
+        Last reviewed: March 2026
       </p>
 
       <h2>Who We Are</h2>
@@ -165,13 +169,7 @@ export const EditorialTeamPage = () => {
         <h3>Explore Our Content</h3>
         <Link to="/blog">Browse all articles</Link>
       </div>
-
-      <p className="disclaimer" style={{ marginTop: 'var(--space-2xl)' }}>
-        <strong>Medical Disclaimer:</strong> SageNest content is produced for informational and
-        educational purposes only. Nothing on this site constitutes medical advice, diagnosis, or
-        treatment. Always consult a qualified healthcare provider for guidance specific to your
-        pregnancy or health situation.
-      </p>
+      <DisclaimerBox />
     </main>
   );
 };

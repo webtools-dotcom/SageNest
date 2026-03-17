@@ -524,7 +524,7 @@ ${styleBlock}
     <main>
       <article>
         <h1>${post.title}</h1>
-        <p class="post-meta">${post.readingTime}</p>
+        <p class="post-meta">${post.readingTime}${post.lastReviewed ? ` · <span>Last reviewed: ${post.lastReviewed}</span>` : ""}</p>
         ${post.imageUrl ? `<img src="${post.imageUrl}" alt="${titleEscaped}" class="post-image" loading="lazy" />` : ''}
         ${bodyHtml}
         <a href="/editorial-team" class="author-box">

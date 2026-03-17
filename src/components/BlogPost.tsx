@@ -4,6 +4,7 @@ import { blogPosts as fallbackPosts } from '../data/blogPosts';
 import { markdownToHtml } from '../lib/markdown';
 import { supabase } from '../supabase/client';
 import { SEOHead } from './SEOHead';
+import { DisclaimerBox } from './DisclaimerBox';
 
 interface PublicBlogPost {
   id?: string;
@@ -11,6 +12,7 @@ interface PublicBlogPost {
   title: string;
   description: string;
   readingTime: string;
+  lastReviewed?: string;
   content: string;
   image_url?: string | null;
   faq?: Array<{ question: string; answer: string }>;
@@ -81,6 +83,9 @@ export const BlogPost = () => {
       <h1>{post.title}</h1>
       <p style={{ color: 'var(--text-secondary)', fontSize: '0.9rem', marginTop: '-0.25rem' }}>
         {post.readingTime}
+        {post.lastReviewed && (
+          <> · <span>Last reviewed: {post.lastReviewed}</span></>
+        )}
       </p>
       {post.image_url ? <img src={post.image_url} alt="" className="blog-cover" loading="lazy" /> : null}
       <div dangerouslySetInnerHTML={{ __html: postHtml }} />
@@ -139,6 +144,8 @@ export const BlogPost = () => {
           </div>
         </div>
       </Link>
+
+      <DisclaimerBox variant="full" />
 
       <aside className="cta-inline" style={{ marginTop: 'var(--space-lg)' }}>
         <h3>Try our Pregnancy Due Date Calculator</h3>
