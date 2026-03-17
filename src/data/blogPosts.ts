@@ -2720,13 +2720,13 @@ Most providers begin discussing induction options at 41 weeks, as evidence indic
 
 ## Common Questions About Due Date Calculation
 
-### Does IVF dating work differently?
+**Does IVF dating work differently?**
 Yes. For pregnancies conceived through IVF, the exact date of egg retrieval and fertilisation is known with precision. Gestational age is typically calculated as the embryo transfer date plus the age of the embryo at transfer (usually 3 or 5 days), added to 266 days (the average time from fertilisation to delivery). IVF due dates are generally considered more accurate than LMP-based estimates because they remove the cycle-variation uncertainty entirely. For a detailed walkthrough, see our guide to [IVF due date calculation](/blog/ivf-due-date-guide).
 
-### What if I have an irregular cycle?
+**What if I have an irregular cycle?**
 Irregular cycles are one of the strongest arguments for early ultrasound dating. If your cycles vary significantly in length — or if you have a condition like PCOS that affects ovulation timing — the LMP method may be off by two weeks or more. In these cases, a first-trimester ultrasound is especially important for establishing an accurate EDD. Our [due date calculator](/pregnancy-due-date-calculator) allows you to enter a custom cycle length to improve your preliminary estimate.
 
-### Does a "small" baby at the anatomy scan mean my due date is wrong?
+**Does a "small" baby at the anatomy scan mean my due date is wrong?**
 Not necessarily. By the second trimester, fetal size reflects individual growth variation more than gestational age. A baby measuring slightly smaller or larger than average at 20 weeks is more likely a growth pattern than a dating error — especially if a first-trimester ultrasound already confirmed your EDD. Your provider will use growth percentile charts to track whether your baby's growth trajectory is consistent over time.
 
 ## When to Call Your Doctor
