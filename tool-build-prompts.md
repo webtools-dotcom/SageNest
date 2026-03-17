@@ -654,9 +654,11 @@ FAQ_ITEMS:
 
 ---
 
-Source citation:
-Source: NHS — Antenatal expressing of colostrum
-Link to: https://www.nhs.uk/pregnancy/keeping-well/expressing-and-storing-colostrum/
+Source citation: This has Two source citation
+1. Source: NHS — Antenatal expressing of colostrum
+Link to: https://www.nth.nhs.uk/resources/colostrum-harvesting/
+2. Source: NHS - Expressing colostrum during pregnancy
+Link to: https://www.southtees.nhs.uk/resources/expressing-colostrum-during-pregnancy-2/
 
 ---
 
