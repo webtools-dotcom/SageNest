@@ -16,6 +16,7 @@ import { PregnancyWeekDetailPage } from './pages/PregnancyWeekDetail';
 import { OvulationCalculatorPage } from './pages/OvulationCalculator';
 import { MorningSicknessEstimatorPage } from './pages/MorningSicknessEstimator';
 import { ColostrumHarvestingCalculatorPage } from './pages/ColostrumHarvestingCalculator';
+import { PregnancyFlightCalculatorPage } from './pages/PregnancyFlightCalculator';
 import SimilarToolsPage from './pages/SimilarTools';
 import { NotFoundPage } from './pages/NotFound';
 
@@ -65,6 +66,7 @@ function App() {
         <Route path="/ovulation-calculator" element={<OvulationCalculatorPage />} />
         <Route path="/morning-sickness-end-date-estimator" element={<MorningSicknessEstimatorPage />} />
         <Route path="/colostrum-harvesting-calculator" element={<ColostrumHarvestingCalculatorPage />} />
+        <Route path="/pregnancy-flight-calculator" element={<PregnancyFlightCalculatorPage />} />
         <Route path="/similar-tools" element={<SimilarToolsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

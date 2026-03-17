@@ -9,6 +9,7 @@ SageNest Health – Smart Tools for Women’s Wellness is a fully static, produc
 - Pregnancy Week by Week milestone tool with all 40 weeks of baby-development and body-change guidance
 - Ovulation Calculator with LMP input, cycle-length presets/custom mode, and fertile-window estimate
 - Colostrum Harvesting Start Date Calculator with 36-week NHS-aligned start guidance
+- Pregnancy Flight Safety Calculator with gestational-age travel verdicts and airline policy table
 - Gestational age output with normalized week/day formatting
 - Trimester status and conception window (±3 days around ovulation estimate)
 - Local timezone date formatting
@@ -20,6 +21,7 @@ SageNest Health – Smart Tools for Women’s Wellness is a fully static, produc
 - `/pregnancy-weight-gain-calculator` interactive page
 - `/ovulation-calculator` interactive page
 - `/colostrum-harvesting-calculator` interactive page
+- `/pregnancy-flight-calculator` interactive page
 - JSON-LD SEO schema for WebPage, FAQPage, Blog, Article, and SearchAction
 - Accessibility baseline (skip link, htmlFor labels, keyboard focus styles, aria-live)
 - Vitest unit tests covering calculator math, date helper formatting, and progress-wheel mapping
@@ -88,6 +90,7 @@ The app uses SPA routing with `_redirects` fallback:
 - `/pregnancy-weight-gain-calculator`
 - `/ovulation-calculator`
 - `/colostrum-harvesting-calculator`
+- `/pregnancy-flight-calculator`
 - `/pregnancy-week-by-week`
 - `/pregnancy-week-by-week/:weekSlug`
 - `/similar-tools`
