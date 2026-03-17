@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { FertilityCalendar } from '../components/FertilityCalendar';
 import { FertilityChart } from '../components/FertilityChart';
 import { SEOHead } from '../components/SEOHead';
+import { DisclaimerBox } from '../components/DisclaimerBox';
 import { normalizeDate } from '../lib/calc';
 import { calculateOvulation, validateOvulationInputs } from '../lib/ovulationCalc';
 
@@ -329,10 +330,6 @@ export const OvulationCalculatorPage = () => {
         </ul>
       </section>
 
-      <p className="disclaimer" style={{ textAlign: 'left', marginTop: 'var(--space-lg)', maxWidth: 'unset' }}>
-        <strong>Medical disclaimer:</strong> This tool is for educational use only and does not diagnose fertility conditions or replace professional medical care.
-      </p>
-
       <section
         aria-label="Privacy"
         style={{ marginTop: 'var(--space-lg)', background: 'var(--sage-softest)', border: '1px solid var(--sage-light)', borderRadius: 'var(--radius-sm)', padding: 'var(--space-md)' }}
@@ -351,6 +348,7 @@ export const OvulationCalculatorPage = () => {
           </article>
         ))}
       </section>
+      <DisclaimerBox />
     </main>
   );
 };

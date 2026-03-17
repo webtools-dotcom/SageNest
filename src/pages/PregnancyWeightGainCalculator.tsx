@@ -1,5 +1,6 @@
 import { ChangeEvent, useMemo, useState } from 'react';
 import { SEOHead } from '../components/SEOHead';
+import { DisclaimerBox } from '../components/DisclaimerBox';
 import { calculatePregnancyWeightGain, formatKg, Trimester, weekRanges } from '../lib/pregnancyWeightGain';
 
 // BMI band color map for visual gauge
@@ -457,9 +458,6 @@ export const PregnancyWeightGainCalculatorPage = () => {
                 </div>
               )}
 
-              <p className="disclaimer" style={{ textAlign: 'left', margin: 'var(--space-lg) 0 0 0', maxWidth: 'unset' }}>
-                <strong>Clinical caveat:</strong> These are IOM population guidelines, not personalized prescriptions. Your obstetrician or midwife may adjust your target based on your individual health history.
-              </p>
             </>
           ) : (
             <div style={{ textAlign: 'center', padding: 'var(--space-lg) 0' }}>
@@ -561,6 +559,7 @@ export const PregnancyWeightGainCalculatorPage = () => {
           </div>
         )}
       </section>
+      <DisclaimerBox />
     </main>
   );
 };

@@ -1,3 +1,14 @@
+
+## 2026-03-17 (Added reviewed-date metadata + reusable medical disclaimer component across core pages)
+
+- Extended blog post schema in `src/data/blogPosts.ts` with optional `lastReviewed` and populated `lastReviewed: 'March 2026'` on every existing post object (placed directly after `readingTime`) so the reviewed date is consistently available in app and generated outputs.
+- Updated `src/components/BlogPost.tsx` to include `lastReviewed?: string` in `PublicBlogPost`, render `· Last reviewed: ...` inline next to reading time, and add the new full-variant disclaimer box after the author card and before related-post/CTA flow.
+- Updated static blog rendering in `scripts/generate-blog-html.mjs` and regenerated `public/blog-static/*.html` so direct static blog URLs now also show the same reviewed-date metadata string for crawler and no-JS paths.
+- Added new shared component `src/components/DisclaimerBox.tsx` with `full` and `compact` variants, then integrated it into all requested pages (`About`, `EditorialTeamPage`, `Calculator`, `OvulationCalculator`, `PregnancyWeightGainCalculator`, `PregnancyWeekByWeekHub`, `PregnancyWeekDetail`, `Privacy`, and `BlogPost`).
+- Added explicit `Last reviewed: March 2026` subtitle metadata line beneath page intro text on `About` and `EditorialTeamPage`.
+- Removed/avoided duplicate page-level mini disclaimer paragraphs where the new standardized disclaimer box now serves as the canonical disclosure pattern.
+- Why: unify trust/disclosure UX across pages, expose content review recency in both React and static blog routes, and keep SEO/crawler paths consistent with client-rendered experience.
+
 ## 2026-03-17 (Added new BBT charting ovulation blog post)
 
 - Added a new blog entry with slug `bbt-charting-ovulation` at the top of `src/data/blogPosts.ts`, including full long-form content and FAQ metadata.

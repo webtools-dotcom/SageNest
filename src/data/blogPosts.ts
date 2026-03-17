@@ -3,6 +3,7 @@ export interface BlogPost {
   title: string;
   description: string;
   readingTime: string;
+  lastReviewed?: string;  // format: 'Month YYYY' e.g. 'March 2026'
   updatedAt: string;
   imageUrl?: string;
   content: string;
@@ -15,6 +16,7 @@ export const blogPosts: BlogPost[] = [
     title: 'BBT Charting for Ovulation: How to Do It and Read Your Chart',
     description: 'Basal body temperature charting confirms ovulation after it happens and reveals your cycle pattern over time. Learn the exact method, what your chart means, and its limits.',
     readingTime: '11 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-17',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -176,6 +178,7 @@ BBT charting is a powerful tool for understanding your cycle — but only when y
     title: 'Cervical Mucus and Ovulation: What Changes Mean You Are Fertile',
     description: 'Cervical mucus changes predictably across your cycle and gives clear signals about ovulation. Learn to read each type and identify your most fertile days.',
     readingTime: '11 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-16',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -322,6 +325,7 @@ Cervical mucus changes in a predictable, hormone-driven pattern every cycle: dry
     title: 'Pelvic Girdle Pain in Pregnancy: Causes, Relief, and When to Get Help',
     description: 'Pelvic girdle pain affects many pregnant women and can range from mild aching to debilitating. Learn what causes it, which movements make it worse, and what actually helps.',
     readingTime: '11 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-15',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -471,6 +475,7 @@ Pelvic girdle pain is caused by hormonally driven ligamentous laxity combined wi
     title: 'Shortness of Breath in Pregnancy: Normal Causes vs Warning Signs',
     description: 'Breathlessness affects most pregnant women, but not all causes are harmless. Learn what drives it each trimester and which symptoms need urgent care.',
     readingTime: '10 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-13',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -605,6 +610,7 @@ Shortness of breath is a near-universal feature of pregnancy, driven by a combin
     title: 'Pregnancy Insomnia: Why Sleep Gets Harder and What Actually Helps',
     description: 'Pregnancy insomnia affects most women by the third trimester. Learn what causes it each trimester, which sleep aids are safe, and evidence-based strategies that work.',
     readingTime: '11 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-13',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -746,6 +752,7 @@ Pregnancy insomnia is real, it is common, and it is not something you simply hav
     title: 'Luteal Phase Explained: What Happens After Ovulation',
     description: 'The luteal phase is the 10–16 days between ovulation and your period — or a positive test. Learn what drives it, what symptoms are normal, and what a short luteal phase means.',
     readingTime: '11 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-11',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -863,6 +870,7 @@ The luteal phase is not passive waiting — it is the hormonally driven window d
     title: 'Irregular Cycles and Ovulation: What It Means for Conception Timing',
     description: 'Irregular cycles make ovulation timing unpredictable — but not impossible. Learn what causes cycle irregularity, when you still ovulate, and how to time conception accurately.',
     readingTime: '11 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-10',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -990,6 +998,7 @@ Irregular cycles complicate conception timing but do not prevent it. The key shi
     title: 'Round Ligament Pain in Pregnancy: What It Is and When to Worry',
     description: 'Round ligament pain causes sharp, sudden pain in the lower abdomen during pregnancy. Learn what triggers it, how to get relief, and which pain needs medical attention.',
     readingTime: '9 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-09',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -1121,6 +1130,7 @@ Round ligament pain is one of the most startling symptoms of pregnancy and one o
     title: 'Pregnancy Headaches: Causes, Safe Relief, and Red Flags to Know',
     description: 'Pregnancy headaches are common but not all are harmless. Learn what causes them each trimester, which pain relief is safe, and when a headache is an emergency.',
     readingTime: '10 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-08',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -1249,6 +1259,7 @@ Pregnancy headaches are common, most are benign, and the majority respond to hyd
     title: 'Pregnancy Swelling (Edema): What\'s Normal and What\'s a Warning Sign',
     description: 'Pregnancy swelling affects 80% of women. Learn which edema is normal, which signals preeclampsia, and practical ways to reduce swelling safely.',
     readingTime: '10 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-07',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -1388,6 +1399,7 @@ Pregnancy swelling is overwhelmingly normal — a direct consequence of the rema
     title: 'Braxton Hicks vs Real Contractions: How to Tell the Difference',
     description: 'Braxton Hicks contractions feel alarming but are harmless. Learn the 6 key differences between practice contractions and true labor — and exactly when to call your provider.',
     readingTime: '10 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-06',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -1515,6 +1527,7 @@ Braxton Hicks contractions are a normal, harmless feature of pregnancy from mid-
     title: 'Ovulation Signs: 7 Body Signals That Mean You\'re About to Ovulate',
     description: 'Learn the 7 physical signs of ovulation — from cervical mucus to LH surge — and how to use them together to identify your fertile window accurately.',
     readingTime: '10 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-05',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -1643,6 +1656,7 @@ Your body provides a detailed, real-time picture of where you are in your cycle 
     title: 'Morning Sickness Remedies: What Actually Works (and What Doesn\'t)',
     description: 'Morning sickness affects up to 80% of pregnant women. Learn which remedies are backed by clinical evidence, which are myths, and when to call your doctor.',
     readingTime: '10 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-04',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -1749,6 +1763,7 @@ Morning sickness is not in your head, it is not something you should simply endu
     title: 'Pregnancy Weight Gain Myths vs. Facts: What the Evidence Actually Says',
     description: 'Pregnancy weight gain myths drive real harm. Learn what IOM and ACOG guidelines actually say about how much to gain, when, and what postpartum recovery really looks like.',
     readingTime: '10 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-16',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -1899,6 +1914,7 @@ Pregnancy weight gain is not a simple target to hit — it is a clinical measure
     title: 'Gestational Diabetes and Pregnancy Weight Gain: What Every Pregnant Woman Needs to Know',
     description: "Understand how gestational diabetes affects pregnancy weight gain, how it's diagnosed, how to manage it through diet and exercise, and what it means for your baby's health.",
     readingTime: '11 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-16',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -2045,6 +2061,7 @@ Use our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) to
     title: 'Pregnancy Nutrition Guide: What to Eat Each Trimester (Evidence-Based)',
     description: 'Trimester-by-trimester pregnancy nutrition guide covering key nutrients, what to avoid, prenatal vitamins, and how food choices affect healthy weight gain.',
     readingTime: '13 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-16',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -2203,6 +2220,7 @@ Pregnancy nutrition is not about restriction or perfection — it is about match
     title: 'Pregnancy Weight Gain: The Complete, Evidence-Based Guide',
     description: 'How much weight should you gain during pregnancy? Learn IOM guidelines by BMI, trimester-by-trimester expectations, what the weight actually is, and red flags to watch.',
     readingTime: '10 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-16',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -2339,6 +2357,7 @@ Healthy pregnancy weight gain is not about achieving a particular number — it 
     title: 'Pregnancy Week by Week: Milestones, Changes, and What to Expect',
     description: 'Track your pregnancy week by week with confidence. Learn what your baby is doing each trimester, what your body is experiencing, and which appointments matter most.',
     readingTime: '11 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-16',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -2464,6 +2483,7 @@ Pregnancy unfolds in distinct phases, each with its own developmental logic, cli
     title: 'IVF Due Date Calculator: How to Calculate Your Due Date After Transfer',
     description: 'IVF due dates work differently than natural conception. Learn the exact formulas for Day 3 and Day 5 transfers, what gestational age means for your pregnancy timeline, and how accurate your estimate really is.',
     readingTime: '11 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-16',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
@@ -2609,6 +2629,7 @@ IVF gives you something most pregnancies lack: precision. The exact date of fert
     title: 'How Due Dates Are Calculated: What Your Provider Actually Does (and Why the Number Moves)',
     description: 'Learn how pregnancy due dates are calculated using LMP and ultrasound, why your date may shift, and what the 40-week estimate actually means for your care.',
     readingTime: '10 min read',
+    lastReviewed: 'March 2026',
     updatedAt: '2026-03-15',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
     faq: [
