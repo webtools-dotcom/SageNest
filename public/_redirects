@@ -8,6 +8,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /fertility-calculator /ovulation-calculator 301
 /morning-sickness /morning-sickness-end-date-estimator 301
 /nausea-calculator /morning-sickness-end-date-estimator 301
+/colostrum-harvesting /colostrum-harvesting-calculator 301
+/antenatal-colostrum /colostrum-harvesting-calculator 301
 /bbt-charting-ovulation /blog/bbt-charting-ovulation 301
 /cervical-mucus-ovulation-guide /blog/cervical-mucus-ovulation-guide 301
 /pelvic-girdle-pain-pregnancy /blog/pelvic-girdle-pain-pregnancy 301
@@ -38,6 +40,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /pregnancy-week-by-week/ /pregnancy-week-by-week 301
 /ovulation-calculator/ /ovulation-calculator 301
 /morning-sickness-end-date-estimator/ /morning-sickness-end-date-estimator 301
+/colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /similar-tools/ /similar-tools 301
 /blog/bbt-charting-ovulation /blog-static/bbt-charting-ovulation.html 200
 /blog/bbt-charting-ovulation/ /blog-static/bbt-charting-ovulation.html 200
