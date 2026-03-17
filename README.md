@@ -333,6 +333,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │       └── ci.yml
 ├── public/
 │   ├── blog-static/
+│   │   ├── bbt-charting-ovulation.html
 │   │   ├── braxton-hicks-vs-real-contractions.html
 │   │   ├── cervical-mucus-ovulation-guide.html
 │   │   ├── gestational-diabetes-pregnancy-weight-gain.html
@@ -388,6 +389,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── CalculatorCard.tsx
 │   │   ├── CalculatorForm.tsx
 │   │   ├── CalculatorSteps.tsx
+│   │   ├── DisclaimerBox.tsx
 │   │   ├── FAQAccordion.tsx
 │   │   ├── FertilityCalendar.tsx
 │   │   ├── FertilityChart.tsx
@@ -408,19 +410,21 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   └── weekSummaries.ts
 │   ├── lib/
 │   │   ├── calc.ts
+│   │   ├── colostrumHarvestingCalc.ts
 │   │   ├── dateHelpers.ts
 │   │   ├── markdown.ts
+│   │   ├── morningSicknessCalc.ts
 │   │   ├── ovulationCalc.ts
-│   │   ├── colostrumHarvestingCalc.ts
 │   │   └── pregnancyWeightGain.ts
 │   ├── pages/
 │   │   ├── About.tsx
 │   │   ├── AdminLogin.tsx
 │   │   ├── BlogPoster.tsx
 │   │   ├── Calculator.tsx
-│   │   ├── EditorialTeamPage.tsx
-│   │   ├── NotFound.tsx
 │   │   ├── ColostrumHarvestingCalculator.tsx
+│   │   ├── EditorialTeamPage.tsx
+│   │   ├── MorningSicknessEstimator.tsx
+│   │   ├── NotFound.tsx
 │   │   ├── OvulationCalculator.tsx
 │   │   ├── PregnancyWeekByWeekHub.tsx
 │   │   ├── PregnancyWeekDetail.tsx
@@ -456,9 +460,10 @@ Below is the exact tracked file tree of this repository at the time of this upda
 ├── frontend2.md
 ├── index.html
 ├── latestchange.md
-├── newtool.md
+├── newtoolMAIN.md
 ├── package-lock.json
 ├── package.json
+├── tool-build-prompts.md
 ├── tsconfig.json
 ├── tsconfig.tsbuildinfo
 └── vite.config.ts

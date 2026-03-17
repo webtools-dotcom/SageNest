@@ -1,4 +1,9 @@
 
+## 2026-03-17 (README worktree structure re-synced with latest tracked repository files)
+
+- Refreshed the `## Exact Repository Worktree Structure` block in `README.md` using the current `git ls-files` output so it now reflects newly tracked files like `newtoolMAIN.md`, `tool-build-prompts.md`, `src/components/DisclaimerBox.tsx`, `src/lib/morningSicknessCalc.ts`, `src/pages/MorningSicknessEstimator.tsx`, and `public/blog-static/bbt-charting-ovulation.html`.
+- Why: keep contributor-facing repository documentation accurate so onboarding and file discovery match the actual state of the codebase.
+
 ## 2026-03-17 (Added Colostrum Harvesting Start Date Calculator tool)
 
 - Added a new pure calculation module at `src/lib/colostrumHarvestingCalc.ts` with due-date validation and date outputs for recommended start (36 weeks), earliest start (34 weeks), collection window end, and days-until-start messaging support.
