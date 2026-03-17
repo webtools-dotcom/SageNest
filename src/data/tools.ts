@@ -32,6 +32,13 @@ const tools: Tool[] = [
     path: '/pregnancy-week-by-week'
   },
   {
+    id: 'morning-sickness-estimator',
+    title: 'Morning Sickness End Date Estimator',
+    slug: 'morning-sickness-end-date-estimator',
+    description: 'Estimate when morning sickness may peak and improve based on your LMP.',
+    path: '/morning-sickness-end-date-estimator'
+  },
+  {
     id: 'ovulation-calculator',
     title: 'Ovulation Calculator',
     slug: 'ovulation-calculator',

@@ -825,3 +825,12 @@
 
 - Kept the `Exact Repository Worktree Structure` section in `README.md` and added a short note explaining to re-sync the branch from latest `main` if the section appears missing.
 - Why: this prevents accidental manual copy-paste drift when a local branch is behind and does not yet include the merged README structure section.
+
+
+## 2026-03-17 (New tool: Morning Sickness End Date Estimator)
+
+- Added `src/lib/morningSicknessCalc.ts` with pure LMP-based calculation and validation logic for nausea start (week 6), peak (week 9), likely end (week 12), expected end (week 14), and outer bound (week 20) milestones.
+- Added `src/pages/MorningSicknessEstimator.tsx` with the full tool UI, SEO metadata, ACOG source citation, required internal links, timeline-style results, and all required FAQ entries.
+- Registered the tool in `src/data/tools.ts` and added the route in `src/App.tsx` at `/morning-sickness-end-date-estimator`.
+- Added redirect rules in `public/_redirects` for `/morning-sickness`, `/nausea-calculator`, and trailing slash canonicalization.
+- Why: to launch a dedicated, keyword-targeted morning sickness end date calculator with evidence-based guidance and consistent SageNest tool architecture.
