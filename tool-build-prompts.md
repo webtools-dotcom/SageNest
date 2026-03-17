@@ -113,7 +113,7 @@ _redirects entries to add:
 ## PROMPT 2 — Postpartum Hair Loss Timeline Calculator
 
 ```
-You are adding a new tool to SageNest Health. Read newtool.md fully before writing any code. Follow every instruction in it exactly.
+You are adding a new tool to SageNest Health. Read newtoolMAIN.md fully before writing any code. Follow every instruction in it exactly.
 
 ---
 
@@ -219,7 +219,7 @@ _redirects entries to add:
 ## PROMPT 3 — Pregnancy Flight Safety Calculator
 
 ```
-You are adding a new tool to SageNest Health. Read newtool.md fully before writing any code. Follow every instruction in it exactly.
+You are adding a new tool to SageNest Health. Read newtoolMAIN.md fully before writing any code. Follow every instruction in it exactly.
 
 ---
 
@@ -338,7 +338,7 @@ _redirects entries to add:
 ## PROMPT 4 — Fundal Height Calculator
 
 ```
-You are adding a new tool to SageNest Health. Read newtool.md fully before writing any code. Follow every instruction in it exactly.
+You are adding a new tool to SageNest Health. Read newtoolMAIN.md fully before writing any code. Follow every instruction in it exactly.
 
 ---
 
@@ -451,7 +451,7 @@ _redirects entries to add:
 ## PROMPT 5 — C-Section Recovery Timeline Calculator
 
 ```
-You are adding a new tool to SageNest Health. Read newtool.md fully before writing any code. Follow every instruction in it exactly.
+You are adding a new tool to SageNest Health. Read newtoolMAIN.md fully before writing any code. Follow every instruction in it exactly.
 
 ---
 
@@ -563,7 +563,7 @@ _redirects entries to add:
 ## PROMPT 6 — Colostrum Harvesting Start Date Calculator
 
 ```
-You are adding a new tool to SageNest Health. Read newtool.md fully before writing any code. Follow every instruction in it exactly.
+You are adding a new tool to SageNest Health. Read newtoolMAIN.md fully before writing any code. Follow every instruction in it exactly.
 
 ---
 
@@ -679,8 +679,8 @@ _redirects entries to add:
 ## HOW TO USE THESE PROMPTS
 
 1. Open a new chat (separate from this one)
-2. Upload your `newtool.md` file as a document attachment
+2. Upload your `newtoolMAIN.md` file as a document attachment
 3. Paste the entire prompt block for the tool you want to build
 4. The AI has everything it needs — tool spec, calc logic, SEO spec, FAQ content, source citations, redirects
 
-Each prompt is fully self-contained. The AI does not need to ask you questions — all decisions are already made in the prompt. If it asks something, point it back to the relevant section of `newtool.md`.
+Each prompt is fully self-contained. The AI does not need to ask you questions — all decisions are already made in the prompt. If it asks something, point it back to the relevant section of `newtoolMAIN.md`.
