@@ -39,6 +39,13 @@ const tools: Tool[] = [
     path: '/morning-sickness-end-date-estimator'
   },
   {
+    id: 'colostrum-harvesting-calculator',
+    title: 'Colostrum Harvesting Start Date Calculator',
+    slug: 'colostrum-harvesting-calculator',
+    description: 'Calculate when to start antenatal colostrum harvesting based on your due date.',
+    path: '/colostrum-harvesting-calculator'
+  },
+  {
     id: 'ovulation-calculator',
     title: 'Ovulation Calculator',
     slug: 'ovulation-calculator',

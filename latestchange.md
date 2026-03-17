@@ -1,4 +1,12 @@
 
+## 2026-03-17 (Added Colostrum Harvesting Start Date Calculator tool)
+
+- Added a new pure calculation module at `src/lib/colostrumHarvestingCalc.ts` with due-date validation and date outputs for recommended start (36 weeks), earliest start (34 weeks), collection window end, and days-until-start messaging support.
+- Added new page `src/pages/ColostrumHarvestingCalculator.tsx` with full calculator UI, prominent pre-results safety warning, SEO metadata/schema, FAQ section, storage guidance, required internal links, NHS source citations, privacy/disclaimer blocks, and the standardized `DisclaimerBox` at the very bottom.
+- Registered the new tool in routing and discovery surfaces: updated `src/App.tsx` with import + route, updated `src/data/tools.ts` with the new tool entry, and added requested aliases + trailing-slash canonical redirect in `public/_redirects`.
+- Why: launch the requested NHS-aligned antenatal colostrum start-date tool while keeping SageNest’s no-backend, browser-only calculator architecture and SEO conventions consistent.
+
+
 ## 2026-03-17 (Added reviewed-date metadata + reusable medical disclaimer component across core pages)
 
 - Extended blog post schema in `src/data/blogPosts.ts` with optional `lastReviewed` and populated `lastReviewed: 'March 2026'` on every existing post object (placed directly after `readingTime`) so the reviewed date is consistently available in app and generated outputs.

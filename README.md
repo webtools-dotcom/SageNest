@@ -8,6 +8,7 @@ SageNest Health – Smart Tools for Women’s Wellness is a fully static, produc
 - Pregnancy Weight Gain Calculator with BMI category, IOM total gain bands, and week-specific gain guidance
 - Pregnancy Week by Week milestone tool with all 40 weeks of baby-development and body-change guidance
 - Ovulation Calculator with LMP input, cycle-length presets/custom mode, and fertile-window estimate
+- Colostrum Harvesting Start Date Calculator with 36-week NHS-aligned start guidance
 - Gestational age output with normalized week/day formatting
 - Trimester status and conception window (±3 days around ovulation estimate)
 - Local timezone date formatting
@@ -18,6 +19,7 @@ SageNest Health – Smart Tools for Women’s Wellness is a fully static, produc
   - `/admin/blogposter` static publishing helper
 - `/pregnancy-weight-gain-calculator` interactive page
 - `/ovulation-calculator` interactive page
+- `/colostrum-harvesting-calculator` interactive page
 - JSON-LD SEO schema for WebPage, FAQPage, Blog, Article, and SearchAction
 - Accessibility baseline (skip link, htmlFor labels, keyboard focus styles, aria-live)
 - Vitest unit tests covering calculator math, date helper formatting, and progress-wheel mapping
@@ -85,6 +87,7 @@ The app uses SPA routing with `_redirects` fallback:
 - `/privacy`
 - `/pregnancy-weight-gain-calculator`
 - `/ovulation-calculator`
+- `/colostrum-harvesting-calculator`
 - `/pregnancy-week-by-week`
 - `/pregnancy-week-by-week/:weekSlug`
 - `/similar-tools`
@@ -408,6 +411,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── dateHelpers.ts
 │   │   ├── markdown.ts
 │   │   ├── ovulationCalc.ts
+│   │   ├── colostrumHarvestingCalc.ts
 │   │   └── pregnancyWeightGain.ts
 │   ├── pages/
 │   │   ├── About.tsx
@@ -416,6 +420,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── Calculator.tsx
 │   │   ├── EditorialTeamPage.tsx
 │   │   ├── NotFound.tsx
+│   │   ├── ColostrumHarvestingCalculator.tsx
 │   │   ├── OvulationCalculator.tsx
 │   │   ├── PregnancyWeekByWeekHub.tsx
 │   │   ├── PregnancyWeekDetail.tsx
