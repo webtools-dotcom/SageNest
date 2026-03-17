@@ -858,3 +858,13 @@
 - Registered the tool in `src/data/tools.ts` and added the route in `src/App.tsx` at `/morning-sickness-end-date-estimator`.
 - Added redirect rules in `public/_redirects` for `/morning-sickness`, `/nausea-calculator`, and trailing slash canonicalization.
 - Why: to launch a dedicated, keyword-targeted morning sickness end date calculator with evidence-based guidance and consistent SageNest tool architecture.
+
+## 2026-03-17 (New tool: Pregnancy Flight Safety Calculator)
+
+- Added `src/lib/pregnancyFlightCalc.ts` with pure gestational-week-at-flight logic, verdict bands (`safe`/`caution`/`restricted`), and input validation for LMP and future flight constraints.
+- Added `src/pages/PregnancyFlightCalculator.tsx` with full calculator UI, SEO metadata, FAQ schema, ACOG source citation, internal links, and a static major-airline policy reference table.
+- Registered the new tool in `src/data/tools.ts` and wired the route in `src/App.tsx` at `/pregnancy-flight-calculator`.
+- Added `_redirects` rules for `/flying-while-pregnant`, `/pregnant-flying`, and trailing-slash canonicalization.
+- Added unit coverage in `tests/pregnancyFlightCalc.test.ts` for verdict thresholds and validation edge cases.
+- Updated `README.md` tool/route lists to reflect the new calculator.
+- Why: to launch a high-intent SEO tool that answers “can I fly while pregnant” with week-based guidance aligned with ACOG recommendations and common airline restrictions.

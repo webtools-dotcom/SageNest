@@ -46,6 +46,13 @@ const tools: Tool[] = [
     path: '/colostrum-harvesting-calculator'
   },
   {
+    id: 'pregnancy-flight-calculator',
+    title: 'Pregnancy Flight Safety Calculator',
+    slug: 'pregnancy-flight-calculator',
+    description: 'Check if your planned flight timing is safe based on gestational week and airline policies.',
+    path: '/pregnancy-flight-calculator'
+  },
+  {
     id: 'ovulation-calculator',
     title: 'Ovulation Calculator',
     slug: 'ovulation-calculator',

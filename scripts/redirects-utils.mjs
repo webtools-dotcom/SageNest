@@ -15,7 +15,9 @@ const baseRedirects = [
   '/morning-sickness /morning-sickness-end-date-estimator 301',
   '/nausea-calculator /morning-sickness-end-date-estimator 301',
   '/colostrum-harvesting /colostrum-harvesting-calculator 301',
-  '/antenatal-colostrum /colostrum-harvesting-calculator 301'
+  '/antenatal-colostrum /colostrum-harvesting-calculator 301',
+  '/flying-while-pregnant /pregnancy-flight-calculator 301',
+  '/pregnant-flying /pregnancy-flight-calculator 301'
 ];
 
 const canonicalNoTrailingSlashRoutes = [
@@ -30,6 +32,7 @@ const canonicalNoTrailingSlashRoutes = [
   '/ovulation-calculator',
   '/morning-sickness-end-date-estimator',
   '/colostrum-harvesting-calculator',
+  '/pregnancy-flight-calculator',
   '/similar-tools'
 ];
 
