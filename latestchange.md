@@ -1,3 +1,10 @@
+## 2026-03-17 (Added new BBT charting ovulation blog post)
+
+- Added a new blog entry with slug `bbt-charting-ovulation` at the top of `src/data/blogPosts.ts`, including full long-form content and FAQ metadata.
+- Regenerated blog artifacts and SEO routing outputs via blog/sitemap/redirect scripts so the new post is published in static output and index files.
+- Why: publish the requested educational fertility article and keep generated blog + routing artifacts synchronized with source content.
+
+
 ## 2026-03-16 (README worktree structure refreshed to match current tracked files)
 
 - Updated the `## Exact Repository Worktree Structure` section in `README.md` to mirror the current `git ls-files` output so it now includes all tracked files/directories (including recently added assets and generated blog pages) and removes outdated omissions.
