@@ -1,3 +1,9 @@
+## 2026-03-18 (Added new blog post: anovulation-what-it-is-causes-treatment)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `anovulation-what-it-is-causes-treatment`, including the provided title, description, reading time, FAQ entries, default image, and full long-form content, plus the required `lastReviewed` and `updatedAt` metadata used by the existing blog schema.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/anovulation-what-it-is-causes-treatment.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested anovulation education article while keeping SageNest's generated blog, routing, and sitemap files synchronized with the canonical blog source data.
+
 
 ## 2026-03-17 (README worktree structure re-synced with latest tracked repository files)
 
