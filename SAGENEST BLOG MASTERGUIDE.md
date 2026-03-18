@@ -560,21 +560,20 @@ Every post must end with a Sources section formatted exactly as follows. This se
 
 This post draws on guidance from the following primary sources:
 
-- **ACOG** — [Page title](full URL)
-- **CDC** — [Page title](full URL)
-- **NIH** — [Page title](full URL)
-- **IOM** — [Page title](full URL)
+- **ACOG** — [Page title](In acog.org search: [search term])
+- **CDC** — [Page title](In cdc.gov search: [search term])
+- **NIH MedlinePlus** — [Page title](In medlineplus.gov search: [search term])
+- **IOM** — [Page title](In nationalacademies.org search: [search term])
 
 *Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.*
 ```
+so that after using this method i can manually sesrch those terms and paste those links in the round bracket to get link under the text format for that page
 
 Rules for the Sources section:
 
 List only sources that directly support a specific claim made in the post. Do not list sources consulted for background orientation that did not contribute a specific cited claim.
 
 If the post draws on multiple pages from the same organisation, list each page separately with its individual title and URL. Do not collapse multiple ACOG pages into a single entry.
-
-If a URL cannot be confirmed with high confidence, format the entry as: **ACOG** — [Page title] — acog.org (search: [page title]) — so the reader can locate it manually. Never fabricate a URL that looks plausible but has not been confirmed.
 
 Do not cite PubMed study entries unless the study abstract has been verified to contain the specific claim the post attributes to it. A PubMed URL without verified content behind it is not a citation — it is a liability.
 
