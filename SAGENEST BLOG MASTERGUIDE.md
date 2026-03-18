@@ -459,6 +459,149 @@ If a specific number, threshold, or range does not appear verbatim on the ACOG, 
  - cervical-mucus-ovulation-guide
 
 
-   
+## Section 20: Source Verification, Citation, and the Self-Check Protocol
+
+This section governs how every claim in every SageNest post gets sourced, verified, and cited. These are not optional steps. They are part of the writing process itself. No post is complete until every step in this section has been executed and the sources section is attached to the final output.
+
+---
+
+### 20.1 The Core Principle
+
+Every factual claim in a SageNest post must be traceable to a specific page on a primary source website. Not a general health website. Not a secondary article that summarises the original. The original document itself — a guideline, a fact sheet, a recommendation page, or a clinical resource published directly by ACOG, WHO, CDC, NIH, FDA, or IOM.
+
+Before writing any claim, ask: can I identify the specific primary source page that contains this figure or recommendation? If the answer is no, do not write the claim as a specific figure. Write it in qualified language instead. A directionally correct approximation attributed to a named organisation is always safer and more honest than a precise-sounding number that cannot be traced.
+
+---
+
+### 20.2 The Approved Primary Source List
+
+Only these sources qualify as primary citations in SageNest posts. No other source — including Mayo Clinic, WebMD, Healthline, BabyCenter, or any other health publisher — may be cited as a source, even if they are useful for general orientation.
+
+**ACOG — American College of Obstetricians and Gynecologists**
+Domain: acog.org
+Use: Practice Bulletins, Committee Opinions, Patient FAQs, and the womens-health resource library. The patient-facing pages at acog.org/womens-health are the most consistently useful because they reflect current ACOG positions in accessible language.
+How to locate: Use acog.org site search or construct a Google query as site:acog.org [topic]
+
+**CDC — Centers for Disease Control and Prevention**
+Domain: cdc.gov
+Use: The Reproductive Health section, the Pregnancy hub, and specific condition pages. CDC pages carry direct government authority and are updated on a defined schedule.
+How to locate: cdc.gov/pregnancy is the main hub. Use site:cdc.gov [topic] pregnancy to find specific pages.
+
+**NIH — National Institutes of Health and sub-institutes**
+Domain: nih.gov, medlineplus.gov, ods.od.nih.gov, nichd.nih.gov
+Use: MedlinePlus for general health topics. The Office of Dietary Supplements fact sheets at ods.od.nih.gov/factsheets for any nutrient-specific claim — these pages list exact recommended intake figures by life stage including pregnancy and are the authoritative source for all nutrient quantities. NICHD for pregnancy and fetal development topics.
+How to locate: ods.od.nih.gov/factsheets lists individual fact sheets for every major vitamin and mineral. medlineplus.gov has a full A-Z health topics index.
+
+**WHO — World Health Organization**
+Domain: who.int
+Use: WHO recommendations pages, the Reproductive Health library, and specific guideline documents. Most useful for global prevalence figures and for recommendations that apply across populations rather than US-specific guidance.
+How to locate: who.int/health-topics has an A-Z index.
+
+**IOM / NAM — Institute of Medicine / National Academy of Medicine**
+Domain: nationalacademies.org
+Use: Dietary Reference Intakes for all nutrient quantity claims during pregnancy. This is the definitive source for how much of any vitamin, mineral, or nutrient is recommended. Any nutrient figure written in a SageNest post must be checked against the IOM DRI tables before being included.
+How to locate: nationalacademies.org/our-work/dietary-reference-intakes
+
+**FDA — US Food and Drug Administration**
+Domain: fda.gov
+Use: Food safety in pregnancy — mercury in fish, listeria risk, safe food handling. The specific page fda.gov/food/consumers/advice-about-eating-fish is the authoritative source for fish consumption guidance during pregnancy.
+
+---
+
+### 20.3 Before Writing: Identify the Source Pages First
+
+Before drafting any post, identify the three to five core factual claims the post will make. For each claim, identify the specific primary source page that contains the supporting figure or recommendation. This must happen before writing begins, not after.
+
+For a post on iron deficiency in pregnancy, the core claims would be: the recommended daily iron intake during pregnancy, the prevalence of iron deficiency anemia in pregnant women, the difference in absorption rates between heme and non-heme iron, and the effect of vitamin C on non-heme iron absorption. Each of these requires a specific source page to be identified before a single sentence is written.
+
+If a core claim cannot be matched to a specific primary source page, it must be written in qualified language — naming the organisation and the general recommendation without a specific figure — or removed from the post entirely.
+
+---
+
+### 20.4 During Writing: How to Handle Claims and Numbers
+
+Every specific number, percentage, threshold, or clinical recommendation written in the post must be accompanied mentally by the source page it came from. When writing a sentence that contains a figure, the source page must already have been identified in the pre-writing step.
+
+Do not extrapolate. If the source says "associated with increased risk" write "associated with increased risk." Do not write "causes." If the source says "may reduce" write "may reduce." Do not write "prevents." Overstated certainty is the most common way health content crosses from informative to harmful, and it is not permitted in any SageNest post.
+
+Do not upgrade approximations to precise figures. If the exact number is not confirmed against the source page, use qualified language: "roughly one in five," "approximately," "estimates suggest." These are not weaknesses — they are accurate representations of what is actually known.
+
+---
+
+### 20.5 The Self-Check Protocol — Execute Before Producing Final Output
+
+After drafting the full post and before producing the final output, execute this self-check sequence in order. Do not skip any step. The post is not complete until all steps have been passed.
+
+**Self-Check 1: Claims audit**
+Read through the entire draft. Identify every sentence that contains a specific number, percentage, clinical threshold, named guideline, or prevalence figure. For each one, confirm the source page that supports it. If any claim cannot be matched to a specific source page, apply the correction options from Section 20.7 before proceeding.
+
+**Self-Check 2: Overstatement audit**
+Re-read every sentence that describes a risk, outcome, or causal relationship. Check that the language used matches the strength of the evidence the source actually presents. Replace any causal language with associative language where the source uses association. Replace any absolute language with qualified language where the source uses probability.
+
+**Self-Check 3: Personal advice audit**
+Re-read every sentence that mentions a supplement, medication, OTC product, dietary approach for a medical condition, or self-monitoring protocol. Apply the Section 19 test to each one: could a reader follow this sentence as an instruction without contacting their provider? If yes, rewrite the sentence so it describes what a provider or dietitian would discuss, not what the reader should do.
+
+**Self-Check 4: Nutrient figure audit**
+If the post mentions any recommended intake for any vitamin, mineral, or nutrient during pregnancy, confirm each figure against the IOM DRI tables or the relevant NIH Office of Dietary Supplements fact sheet. If a figure cannot be confirmed against one of these two sources specifically, replace it with qualified language.
+
+**Self-Check 5: Sources section completeness**
+Confirm that every source listed in the Sources section resolves to a real, specific page on the correct primary source domain. Do not list a source if the URL is uncertain or if the page title does not match a known document on that domain. If a URL cannot be confirmed with confidence, list the organisation name and the page title without a URL rather than listing a potentially incorrect URL.
+
+---
+
+### 20.6 The Required Sources Section Format
+
+Every post must end with a Sources section formatted exactly as follows. This section is part of the post content and must appear in the final TypeScript object inside the content field, after the medical disclaimer.
+
+```
+---
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Page title](full URL)
+- **CDC** — [Page title](full URL)
+- **NIH** — [Page title](full URL)
+- **IOM** — [Page title](full URL)
+
+*Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.*
+```
+
+Rules for the Sources section:
+
+List only sources that directly support a specific claim made in the post. Do not list sources consulted for background orientation that did not contribute a specific cited claim.
+
+If the post draws on multiple pages from the same organisation, list each page separately with its individual title and URL. Do not collapse multiple ACOG pages into a single entry.
+
+If a URL cannot be confirmed with high confidence, format the entry as: **ACOG** — [Page title] — acog.org (search: [page title]) — so the reader can locate it manually. Never fabricate a URL that looks plausible but has not been confirmed.
+
+Do not cite PubMed study entries unless the study abstract has been verified to contain the specific claim the post attributes to it. A PubMed URL without verified content behind it is not a citation — it is a liability.
+
+---
+
+### 20.7 When a Claim Cannot Be Sourced
+
+If the self-check process identifies a claim that cannot be matched to a specific primary source page, apply one of these three options in order of preference:
+
+**Option 1: Replace with qualified language.**
+Remove the specific figure and replace with an attributed approximation. "The IOM recommends substantially more iron during pregnancy than the standard adult intake" instead of a specific milligram figure that cannot be verified. This is always acceptable and never reduces the quality of the post.
+
+**Option 2: Remove the claim.**
+If the claim is supplementary and the post is complete without it, cut it entirely. A post with fewer claims that are all verified is a stronger post than one with more claims where some are uncertain.
+
+**Option 3: Hold the post.**
+If the claim is central to the post's argument and cannot be verified or replaced with qualified language, note in the output that this specific claim requires verification against [named source] before the post is ready to publish. Do not silently include an unverified central claim.
+
+What must never happen: an unverified specific figure reaching the final output with no flag and no qualification. In a pregnancy health context this is not an acceptable outcome under any circumstances.
+
+Remember sources should only be given in the end of the blog like at the very last, not in any line, links should be only given at last 
+---
+
+### 20.8 Evergreen Maintenance Note
+
+The `lastReviewed` field in the BlogPost object exists to signal when content was last checked against current guidelines. When writing a new post, set this field to the current month and year. When a major guideline update from any primary source affects the topic of an existing post, that post's content and citations must be updated and the `lastReviewed` field revised accordingly. Guidelines from ACOG, CDC, and WHO are updated periodically and content that was accurate at time of writing can become outdated. The sources section and the lastReviewed field together create the audit trail that demonstrates the content is actively maintained.
+
+---   
  
 *Last updated: This guide is the master reference for all SageNest blog content. Update it if site tools change, new calculators are added, or clinical guidelines are revised.*
