@@ -2512,8 +2512,6 @@ Healthy pregnancy weight gain is not about achieving a particular number — it 
 
 This post draws on guidance from the following primary sources:
  
-- **IOM / National Academies** — [Weight Gain During Pregnancy: Reexamining the Guidelines](In nationalacademies.org search: weight gain during pregnancy reexamining guidelines)
-- **National Academies** — [Report: Updates Guidelines On How Much Weight Women Should Gain During Pregnancy](In nationalacademies.org search: report updates guidelines weight women should gain pregnancy)
 - **ACOG** — [Weight Gain During Pregnancy — Committee Opinion No. 548](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/01/weight-gain-during-pregnancy)
 - **ACOG** — [Physical Activity and Exercise During Pregnancy and the Postpartum Period](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period)
 - **CDC** — [About Folic Acid](https://www.cdc.gov/folic-acid/about/index.html)
