@@ -1,3 +1,11 @@
+## 2026-03-18 (Automated README worktree sync + refreshed repository tree)
+
+- Updated the `## Exact Repository Worktree Structure` section in `README.md` so it now matches the current tracked worktree exactly, including recently added tracked files such as the anovulation static blog page and the pregnancy flight calculator source/test files.
+- Added `scripts/sync-readme-worktree.mjs` to regenerate that README tree directly from `git ls-files`, so the documented repository structure stays aligned with the actual tracked worktree with one command.
+- Added `scripts/setup-git-hooks.mjs`, `.githooks/pre-commit`, and matching `package.json` scripts so local installs automatically point Git at the repo hook folder and each commit re-syncs/stages `README.md` only when the tracked file tree changed.
+- Why: the README tree kept drifting out of date, so this makes the update process repeatable and automatic for future file additions without changing README when no worktree change happened.
+
+
 ## 2026-03-18 (Added new blog post: anovulation-what-it-is-causes-treatment)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `anovulation-what-it-is-causes-treatment`, including the provided title, description, reading time, FAQ entries, default image, and full long-form content, plus the required `lastReviewed` and `updatedAt` metadata used by the existing blog schema.

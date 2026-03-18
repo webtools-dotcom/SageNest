@@ -325,17 +325,27 @@ npm run check:redirects
 
 `npm run build` now runs these checks first via `prebuild`: package JSON check, merge-conflict check, static blog generation, redirects generation + validation, and sitemap generation + validation.
 
+## Automated README Worktree Sync
+
+- `npm run sync:readme-worktree` regenerates the `## Exact Repository Worktree Structure` block from the current `git ls-files` output.
+- `npm run setup:hooks` configures Git to use the repository's `.githooks/` folder.
+- `postinstall` runs that setup automatically, and `.githooks/pre-commit` runs the sync script before each commit, then re-stages `README.md` only if the tracked file tree actually changed.
+- Git does not provide a native `post-add` hook, so the closest reliable automation point is `pre-commit` after you have staged files with `git add`. If no tracked files were added or removed, the script leaves `README.md` untouched.
+
 ## Exact Repository Worktree Structure
 
 Below is the exact tracked file tree of this repository at the time of this update. If this section is missing on another branch, re-sync that branch from the latest `main` before editing manually.
 
 ```text
 .
+├── .githooks/
+│   └── pre-commit
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
 ├── public/
 │   ├── blog-static/
+│   │   ├── anovulation-what-it-is-causes-treatment.html
 │   │   ├── bbt-charting-ovulation.html
 │   │   ├── braxton-hicks-vs-real-contractions.html
 │   │   ├── cervical-mucus-ovulation-guide.html
@@ -383,7 +393,9 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   ├── generate-redirects.mjs
 │   ├── generate-sitemap.mjs
 │   ├── redirects-utils.mjs
-│   └── sitemap-utils.mjs
+│   ├── setup-git-hooks.mjs
+│   ├── sitemap-utils.mjs
+│   └── sync-readme-worktree.mjs
 ├── src/
 │   ├── components/
 │   │   ├── BlogList.tsx
@@ -404,8 +416,8 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── ProtectedRoute.tsx
 │   │   ├── ResultCard.tsx
 │   │   ├── ResultsCard.tsx
-│   │   ├── SEOHead.tsx
-│   │   └── ScrollToTop.tsx
+│   │   ├── ScrollToTop.tsx
+│   │   └── SEOHead.tsx
 │   ├── data/
 │   │   ├── blogPosts.ts
 │   │   ├── pregnancyWeeks.ts
@@ -418,6 +430,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── markdown.ts
 │   │   ├── morningSicknessCalc.ts
 │   │   ├── ovulationCalc.ts
+│   │   ├── pregnancyFlightCalc.ts
 │   │   └── pregnancyWeightGain.ts
 │   ├── pages/
 │   │   ├── About.tsx
@@ -429,6 +442,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── MorningSicknessEstimator.tsx
 │   │   ├── NotFound.tsx
 │   │   ├── OvulationCalculator.tsx
+│   │   ├── PregnancyFlightCalculator.tsx
 │   │   ├── PregnancyWeekByWeekHub.tsx
 │   │   ├── PregnancyWeekDetail.tsx
 │   │   ├── PregnancyWeightGainCalculator.tsx
@@ -449,15 +463,12 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   ├── dateHelpers.test.ts
 │   ├── markdown.test.ts
 │   ├── ovulationCalc.test.ts
+│   ├── pregnancyFlightCalc.test.ts
 │   ├── pregnancyWeightGain.test.ts
 │   └── progressWheel.test.ts
 ├── .env.example
 ├── .gitignore
 ├── Blogpostsrule.md
-├── README.md
-├── SAGENEST BLOG MASTERGUIDE.md
-├── SECURITY.md
-├── SECURITY2.md
 ├── codex.md
 ├── frontend.md
 ├── frontend2.md
@@ -466,6 +477,10 @@ Below is the exact tracked file tree of this repository at the time of this upda
 ├── newtoolMAIN.md
 ├── package-lock.json
 ├── package.json
+├── README.md
+├── SAGENEST BLOG MASTERGUIDE.md
+├── SECURITY.md
+├── SECURITY2.md
 ├── tool-build-prompts.md
 ├── tsconfig.json
 ├── tsconfig.tsbuildinfo
