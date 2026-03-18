@@ -17,7 +17,10 @@
     "generate:sitemap": "node scripts/generate-sitemap.mjs",
     "check:sitemap": "node scripts/check-sitemap.mjs",
     "ci:validate": "npm run check:package && npm run check:conflicts && npm run check:redirects && npm run check:sitemap && npm run check:blog-sync",
-    "check:blog-sync": "node scripts/check-blog-static-sync.mjs"
+    "check:blog-sync": "node scripts/check-blog-static-sync.mjs",
+    "sync:readme-worktree": "node scripts/sync-readme-worktree.mjs",
+    "setup:hooks": "node scripts/setup-git-hooks.mjs",
+    "postinstall": "node scripts/setup-git-hooks.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",
