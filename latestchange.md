@@ -1,3 +1,10 @@
+## 2026-03-18 (Refreshed blog: healthy-pregnancy-weight-gain-complete-guide)
+
+- Replaced the existing `healthy-pregnancy-weight-gain-complete-guide` post object in `src/data/blogPosts.ts` with the newly provided pregnancy weight gain guide rewrite, including the updated title, description, FAQ answers, reviewed date, and full long-form content while preserving the same slug and schema.
+- Regenerated the derived blog publishing/indexing artifacts so the refreshed article stays synchronized across `public/blog-static/healthy-pregnancy-weight-gain-complete-guide.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the latest requested evidence-based pregnancy weight gain guide update and keep SageNest's generated static blog, redirect, and sitemap outputs aligned with the canonical blog source data.
+
+
 ## 2026-03-18 (Refreshed blog: ivf-due-date-guide)
 
 - Replaced the existing `ivf-due-date-guide` post object in `src/data/blogPosts.ts` with the newly provided IVF transfer dating rewrite, including the updated description, FAQ answers, reviewed date, and full long-form content while preserving the same slug and schema.
