@@ -567,7 +567,7 @@ This post draws on guidance from the following primary sources:
 
 *Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.*
 ```
-so that after using this method i can manually sesrch those terms and paste those links in the round bracket to get link under the text format for that page
+so that after using this method i can manually search those terms and paste those links in the round bracket to get link under the text format for that page
 
 Rules for the Sources section:
 
