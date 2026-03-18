@@ -595,7 +595,7 @@ If the claim is central to the post's argument and cannot be verified or replace
 
 What must never happen: an unverified specific figure reaching the final output with no flag and no qualification. In a pregnancy health context this is not an acceptable outcome under any circumstances.
 
-Remember sources should only be given in the end of the blog like at the very last, not in any line, links should be only given at last 
+- Remember sources should only be given in the end of the blog like at the very last, not in any line, links should be only given at last 
 ---
 
 ### 20.8 Evergreen Maintenance Note
