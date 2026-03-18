@@ -12,6 +12,156 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'anovulation-what-it-is-causes-treatment',
+    title: 'Anovulation: What It Is, Why It Happens, and What to Do',
+    description: 'Anovulation means your cycle came without an egg — and it is more common than most women know. Learn the causes, how to identify it, and what treatment looks like.',
+    readingTime: '12 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-18',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    faq: [
+      {
+        question: 'Can you have a period without ovulating?',
+        answer: 'Yes — and this is one of the most important things to understand about anovulation. What appears to be a period during an anovulatory cycle is technically called a withdrawal bleed or anovulatory bleed. It occurs because the uterine lining still builds up under the influence of estrogen and eventually sheds, but without the progesterone surge that follows true ovulation. This bleed can look and feel like a normal period, which is why anovulation can go undetected for months or years in women who are not actively tracking ovulation.'
+      },
+      {
+        question: 'How do I know if I am ovulating?',
+        answer: 'The most accessible at-home methods for confirming ovulation are basal body temperature (BBT) charting — which shows a sustained temperature rise of roughly 0.2°C after ovulation due to progesterone — and LH test strips, which detect the hormonal surge that triggers ovulation approximately 24 to 36 hours before egg release. Cervical mucus changes, specifically the appearance of clear, stretchy egg white mucus in the days before ovulation, provide an additional indicator. A blood test measuring progesterone levels approximately 7 days after expected ovulation is the most reliable clinical confirmation — this is something to arrange with your provider if you suspect anovulation.'
+      },
+      {
+        question: 'What causes anovulation?',
+        answer: 'The most common causes include polycystic ovary syndrome (PCOS), which is identified by ACOG as a leading cause of ovulatory dysfunction; hypothalamic amenorrhea driven by excessive exercise, significant caloric restriction, or psychological stress; thyroid disorders including both hypothyroidism and hyperthyroidism; elevated prolactin levels (hyperprolactinemia), often from a benign pituitary growth; and premature ovarian insufficiency. Occasional anovulatory cycles also occur in otherwise healthy women during periods of significant physical or emotional stress and are not inherently abnormal when they happen infrequently.'
+      },
+      {
+        question: 'Is anovulation the same as infertility?',
+        answer: 'Anovulation is a cause of infertility — specifically, it accounts for a substantial proportion of female-factor infertility cases according to ACOG — but the two terms are not interchangeable. Anovulation describes the absence of egg release in a given cycle, while infertility is defined as the inability to conceive after a defined period of trying. Many causes of anovulation are treatable, and many women with anovulatory cycles conceive successfully once the underlying cause is identified and addressed with appropriate medical care.'
+      },
+      {
+        question: 'Can anovulation resolve on its own?',
+        answer: 'It depends entirely on the cause. Anovulatory cycles triggered by temporary stress, rapid weight changes, illness, or intense exercise often resolve once the underlying stressor is removed or the body restabilises — these are not the same as chronic anovulation. PCOS-related anovulation typically does not resolve without intervention, though lifestyle factors can influence ovulation frequency in some cases. Anovulation caused by thyroid disorders or hyperprolactinemia generally responds well to targeted treatment of the underlying condition. Premature ovarian insufficiency involves a fundamentally different mechanism and requires specialist management. The cause determines the path forward, which is why diagnosis rather than watchful waiting is the appropriate first step.'
+      }
+    ],
+    content: `
+You have had a period every month for as long as you can remember. You assumed that meant you were ovulating. It is a reasonable assumption — and for many women it is correct. But a period and ovulation are not the same event, and the gap between them is where anovulation hides. Understanding what anovulation actually is, what drives it, and what can be done about it is the difference between months of unexplained difficulty conceiving and a clear path to diagnosis and treatment.
+
+## What Is Anovulation?
+
+**Anovulation** is the absence of ovulation in a menstrual cycle — specifically, the failure of a mature follicle to release an egg from the ovary. In a normal ovulatory cycle, a surge in luteinising hormone (LH) triggers the dominant follicle to rupture and release the egg, which then travels down the fallopian tube where fertilisation can occur. In an anovulatory cycle, this release does not happen — the follicle may develop partially or not at all, but no egg is released.
+
+What makes anovulation particularly easy to miss is that it does not always stop bleeding. The uterine lining builds up under estrogen stimulation regardless of whether ovulation occurs. Without the progesterone surge that follows ovulation, the lining eventually becomes unstable and sheds — producing a bleed that can resemble a normal period in timing, volume, and duration. This bleed is sometimes called an **anovulatory bleed** or withdrawal bleed, and it is clinically distinct from a true menstrual period, which follows ovulation and a complete luteal phase.
+
+Occasional anovulatory cycles are a normal part of reproductive life. They occur more frequently at the extremes of reproductive age — in adolescence, when cycles are still establishing, and in the years approaching menopause, when ovarian reserve declines. A single anovulatory cycle in an otherwise regular woman is not inherently concerning. Chronic anovulation — where ovulation is consistently absent or severely infrequent across multiple cycles — is a different matter and is one of the most common causes of difficulty conceiving.
+
+## Why Ovulation Fails: The Main Causes
+
+Ovulation depends on a precisely timed hormonal sequence involving the hypothalamus, pituitary gland, and ovaries — a system sometimes called the **hypothalamic-pituitary-ovarian (HPO) axis**. Disruption at any point in this axis can prevent ovulation. The causes of chronic anovulation fall into several distinct categories, each with its own mechanism and treatment approach.
+
+### Polycystic Ovary Syndrome (PCOS)
+
+ACOG identifies polycystic ovary syndrome as one of the most common causes of ovulatory dysfunction and a leading cause of female-factor infertility. In PCOS, elevated androgen levels (male hormones produced in excess by the ovaries) and often insulin resistance disrupt the normal hormonal signalling that drives follicle maturation and LH surge. The result is that follicles begin developing but do not complete the maturation process — they stall and accumulate within the ovary rather than rupturing and releasing an egg.
+
+Women with PCOS may have infrequent ovulation rather than complete absence, meaning some cycles are ovulatory and some are not. This unpredictability is part of what makes conception timing so challenging without active fertility tracking. A dedicated post on [PCOS and ovulation](/blog/pcos-ovulation-guide) covers the specific fertility implications of PCOS in more detail.
+
+### Hypothalamic Amenorrhea
+
+The hypothalamus — the region of the brain that initiates the hormonal cascade leading to ovulation — is exquisitely sensitive to energy balance, psychological stress, and body composition. When the body perceives insufficient energy availability — whether from intense athletic training, severe caloric restriction, or a combination of both — the hypothalamus reduces or stops its pulsatile release of gonadotropin-releasing hormone (GnRH). Without GnRH signalling, the pituitary does not release FSH and LH, and the ovaries receive no instruction to develop follicles. Ovulation stops.
+
+This is a protective mechanism — the body effectively determines that conditions are not safe for reproduction — but it can be mistaken for normal cycle disruption or dismissed as stress-related irregularity. NIH notes that hypothalamic amenorrhea is common among athletes, women with eating disorders, and women under significant psychological stress. The important clinical point is that addressing the underlying energy deficit or stressor — a conversation to have with your provider and potentially a registered dietitian — typically restores ovulation once the body's energy balance is re-established, though the timeline varies.
+
+### Thyroid Disorders
+
+The thyroid gland's hormones influence virtually every metabolic process in the body, including the reproductive hormonal axis. Both **hypothyroidism** (underactive thyroid) and **hyperthyroidism** (overactive thyroid) can disrupt ovulation, though through different mechanisms.
+
+In hypothyroidism, low thyroid hormone levels can elevate prolactin (a hormone produced by the pituitary) and alter the sensitivity of the HPO axis to hormonal signals, leading to irregular or absent ovulation. In hyperthyroidism, excess thyroid hormone accelerates metabolism in ways that interfere with estrogen metabolism and ovarian function. Both conditions are diagnosable through standard blood tests and, when treated appropriately under provider guidance, often restore normal ovulation. The NIH MedlinePlus resource on thyroid disease in pregnancy provides accessible guidance on the relationship between thyroid function and reproductive health.
+
+### Hyperprolactinemia
+
+**Prolactin** is a hormone produced by the pituitary gland that stimulates milk production after delivery. Elevated prolactin outside of pregnancy and breastfeeding — a condition called hyperprolactinemia — suppresses the GnRH signalling that drives ovulation, often leading to irregular cycles or complete absence of ovulation.
+
+Hyperprolactinemia has several causes: a benign pituitary growth called a prolactinoma is the most common, but certain medications (including some antipsychotics and antidepressants), hypothyroidism, and kidney disease can also elevate prolactin. The condition is diagnosed with a simple blood test. Treatment depends on the cause — your provider will determine the appropriate approach, which may include medication to reduce prolactin levels or address the underlying condition.
+
+### Premature Ovarian Insufficiency
+
+**Premature ovarian insufficiency (POI)** — sometimes called premature menopause, though the two are not identical — occurs when the ovaries stop functioning normally before age 40. Unlike natural menopause, POI does not mean ovulation has permanently ceased in all cases; some women with POI have intermittent ovulatory cycles. However, fertility is significantly affected, and the condition requires specialist evaluation.
+
+POI is associated with chromosomal abnormalities, autoimmune conditions, and prior treatments such as chemotherapy or radiation to the pelvic area. It is diagnosed through blood tests measuring FSH and estrogen levels. Women with suspected POI should be referred to a reproductive endocrinologist for comprehensive assessment.
+
+## How Anovulation Is Identified
+
+Identifying anovulation requires moving beyond calendar tracking and period observation. There are several approaches your provider may use, and some that you can begin gathering information about at home to bring to an appointment.
+
+**Progesterone blood test:** The most direct clinical confirmation of ovulation is a blood test measuring progesterone levels approximately 7 days after the expected ovulation date — typically around day 21 in a 28-day cycle, though the timing should be adjusted based on your cycle length. A progesterone level above a threshold that your provider will interpret in context confirms that ovulation occurred in that cycle. A low or undetectable level raises concern for anovulation. This is information to bring to your provider, not to act on independently.
+
+**BBT charting:** As covered in our post on [BBT charting for ovulation](/blog/bbt-charting-ovulation), a chart with no biphasic temperature shift across multiple cycles suggests anovulation. Three or more cycles of flat, monophasic charting is meaningful data to bring to a provider appointment.
+
+**LH test strips:** An LH surge that never clearly appears on test strips across multiple cycles, or strips that peak but are not followed by the expected temperature rise on a BBT chart, can support suspicion of anovulatory cycles.
+
+**Pelvic ultrasound and blood hormone panel:** Once you see a provider, the workup typically includes ultrasound to assess ovarian appearance and follicle development, and blood tests measuring FSH, LH, estrogen, prolactin, thyroid hormones, and androgens. This panel identifies which component of the HPO axis is disrupted and guides the diagnosis.
+
+## Treatment: What a Provider Would Discuss
+
+Treatment for anovulation is cause-specific — there is no single intervention that applies across all causes. What follows describes the approaches that a provider or reproductive endocrinologist would typically consider, not steps to take independently.
+
+**Addressing underlying conditions first:** When anovulation is caused by a thyroid disorder, hyperprolactinemia, or significant energy deficit, treating or correcting the underlying condition is the first step. Ovulation often resumes once the root cause is managed. Your provider will determine which investigations and treatments are appropriate based on your specific results.
+
+**Ovulation induction medications:** For women with PCOS or other forms of ovulatory dysfunction where the underlying cause has been addressed or cannot be fully corrected, ACOG recognises ovulation induction as an established treatment approach. The medications used — including clomiphene citrate and letrozole — work by influencing estrogen signalling to stimulate follicle development and trigger ovulation. These are prescription medications requiring provider supervision, monitoring, and appropriate timing guidance. They are not appropriate to source or use without medical oversight.
+
+**Lifestyle factors in PCOS:** For women with PCOS and associated insulin resistance or excess weight, ACOG acknowledges that modest changes in body weight and physical activity can improve ovulation frequency in some cases. What constitutes appropriate lifestyle targets for a woman with PCOS is a conversation to have with her provider and ideally a registered dietitian — specific caloric targets, carbohydrate thresholds, and exercise prescriptions for a medical condition are not appropriate to apply from general guidance.
+
+**Assisted reproductive technologies:** When ovulation induction is unsuccessful or additional fertility factors are present, reproductive endocrinologists may discuss IUI or IVF. These are specialist-led decisions based on a full fertility workup.
+
+## Common Questions About Anovulation
+
+### Can stress cause anovulation?
+
+Yes — significant psychological or physical stress can suppress the hypothalamic signalling that initiates the ovulation cascade, leading to delayed, absent, or irregular ovulation. This is the mechanism behind hypothalamic amenorrhea and also behind the more common experience of a missed or late ovulation during an unusually stressful period. A single delayed cycle during a stressful month is not the same as chronic anovulation, but persistent cycle disruption alongside significant stress warrants a provider conversation rather than watchful waiting.
+
+### Does anovulation always cause irregular periods?
+
+Not always, and this is the feature that makes anovulation most likely to be missed. As described earlier, anovulatory cycles can produce a bleed that closely resembles a normal period. Women with PCOS in particular may have regular-appearing cycles that are anovulatory. Regular periods confirm that the uterine lining is cycling — they do not confirm that ovulation is occurring.
+
+### Can I get pregnant during an anovulatory cycle?
+
+No. Conception requires a released egg. An anovulatory cycle, by definition, does not produce an egg available for fertilisation. This is why anovulation is a direct cause of infertility rather than a risk factor — there is no egg to fertilise during that cycle. Addressing anovulation is therefore a prerequisite for natural conception, not simply an optimisation.
+
+## When to See Your Doctor
+
+Do not wait to seek evaluation if any of the following apply to you:
+
+- **You have been trying to conceive for 12 months without success** — or 6 months if you are over 35. ACOG defines this as the standard threshold for initiating a fertility evaluation, which includes investigation of ovulation.
+- **Your cycles are consistently longer than 35 days or shorter than 21 days**, or they vary by more than a week from cycle to cycle — this pattern is consistent with irregular ovulation and warrants investigation.
+- **Your BBT charts show no biphasic shift across three or more cycles**, or LH test strips consistently show no surge near expected ovulation.
+- **You have absent periods** — amenorrhea (no period for three or more months in a woman who previously cycled regularly) is a more severe form of ovulatory dysfunction requiring prompt evaluation.
+- **You have symptoms consistent with PCOS** — irregular cycles alongside excess facial or body hair, acne, scalp hair thinning, or difficulty managing weight — as early diagnosis and management of PCOS has implications beyond fertility.
+- **You have symptoms of thyroid dysfunction** — persistent fatigue, unexplained weight changes, temperature sensitivity, or mood disturbance alongside cycle irregularity should prompt thyroid function testing.
+
+## Related Tools on SageNest
+
+If you are tracking your cycle to identify whether ovulation is occurring, use our [ovulation calculator](/ovulation-calculator) to estimate your expected fertile window based on your cycle length — and compare this against what your BBT chart and LH strips are showing. If you do conceive, our [due date calculator](/pregnancy-due-date-calculator) can calculate your due date from your known ovulation date, which is more accurate than calculating from your last period in cycles that have been irregular.
+
+## The Bottom Line
+
+Anovulation — the absence of egg release in a menstrual cycle — is common, often invisible, and directly responsible for a significant proportion of difficulty conceiving. The fact that periods can occur without ovulation means many women are unaware the problem exists until they begin actively trying to conceive. The causes are specific and largely treatable: PCOS, hypothalamic suppression from energy deficit or stress, thyroid disorders, and hyperprolactinemia each have distinct diagnostic pathways and management approaches that a provider can navigate with you. If you suspect your cycles may be anovulatory — based on BBT charting, LH strip patterns, or simply cycles that feel irregular — bring that information to your provider rather than waiting for a defined period of unsuccessful conception attempts.
+
+---
+*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your fertility or reproductive health.*
+
+---
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Polycystic Ovary Syndrome](https://www.acog.org/womens-health/videos/polycystic-ovary-syndrome)
+- **ACOG** — [Evaluating Infertility](https://www.acog.org/womens-health/faqs/evaluating-infertility)
+- **NIH MedlinePlus** — [Ovarian Disorders](https://medlineplus.gov/ovariandisorders.html)
+- **NIH MedlinePlus** — [Prolactinoma](https://medlineplus.gov/ency/article/000336.htm)
+- **CDC** — [Infertility FAQs](https://www.cdc.gov/reproductive-health/infertility-faq/index.html)
+
+*Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.*
+`
+  },
+  {
     slug: 'bbt-charting-ovulation',
     title: 'BBT Charting for Ovulation: How to Do It and Read Your Chart',
     description: 'Basal body temperature charting confirms ovulation after it happens and reveals your cycle pattern over time. Learn the exact method, what your chart means, and its limits.',
