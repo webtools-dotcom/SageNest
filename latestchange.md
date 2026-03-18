@@ -1,3 +1,10 @@
+## 2026-03-18 (Refreshed blog: braxton-hicks-vs-real-contractions)
+
+- Replaced the existing `braxton-hicks-vs-real-contractions` post object in `src/data/blogPosts.ts` with the newly provided evidence-based rewrite, including the updated description, expanded FAQ set, reviewed date, and full long-form content while preserving the same slug and schema.
+- Regenerated the derived blog publishing/indexing artifacts so the refreshed article stays synchronized across `public/blog-static/braxton-hicks-vs-real-contractions.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the latest requested Braxton Hicks vs labor guide update and keep SageNest's generated static blog, redirect, and sitemap outputs aligned with the canonical blog source data.
+
+
 ## 2026-03-18 (Refreshed blog: healthy-pregnancy-weight-gain-complete-guide)
 
 - Replaced the existing `healthy-pregnancy-weight-gain-complete-guide` post object in `src/data/blogPosts.ts` with the newly provided pregnancy weight gain guide rewrite, including the updated title, description, FAQ answers, reviewed date, and full long-form content while preserving the same slug and schema.
