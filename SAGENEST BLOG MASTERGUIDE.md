@@ -424,8 +424,8 @@ The second version gives the reader specific numbers, explains the mechanism, na
 
 ---
 
-## Section 19: The Hard Line on Personal Advice
-Never write content that functions as a personal recommendation, even if it is framed as general information. The test is simple: could a reader follow this content as instructions without calling their provider? If yes, rewrite it.
+## 17. The Hard Line on Personal Advice
+- Never write content that functions as a personal recommendation, even if it is framed as general information. The test is simple: could a reader follow this content as instructions without calling their provider? If yes, rewrite it.
 Specific rules:
 Any dietary threshold, carbohydrate target, calorie range, or macronutrient percentage for a medical condition (GDM, anemia, preeclampsia, thyroid) must be described as "the approach a dietitian or provider would discuss with you" — never stated as something the reader should implement on their own.
 Any supplement or medication — including over-the-counter options like doxylamine, B6, or iron — must be framed as requiring a provider conversation before use. The phrase "generally safe" or "considered acceptable" is not sufficient on its own. Always follow it with "confirm with your provider before taking anything during pregnancy."
@@ -433,10 +433,10 @@ Any self-monitoring guidance (BBT charts, kick counts, blood glucose patterns) t
 If a specific number, threshold, or range does not appear verbatim on the ACOG, WHO, CDC, NIH, or IOM website, do not use it. Qualitative language is always safer than a precise figure you cannot directly trace to a primary source URL.
 ---
 
-## 17. DON'T REPEAT ANY BLOG WHICH IS ALREADY POSTED
+## 18. DON'T REPEAT ANY BLOG WHICH IS ALREADY POSTED
 
 
-## 18. BLOGS POSTED TILL NOW ARE - 
+## 19. BLOGS POSTED TILL NOW ARE - 
  - gestational-diabetes-pregnancy-weight-gain
  - how-due-dates-are-calculated
  - ivf-due-date-guide
@@ -457,5 +457,8 @@ If a specific number, threshold, or range does not appear verbatim on the ACOG, 
  - pelvic-girdle-pain-pregnancy
  - bbt-charting-ovulation
  - cervical-mucus-ovulation-guide
+
+
+   
  
 *Last updated: This guide is the master reference for all SageNest blog content. Update it if site tools change, new calculators are added, or clinical guidelines are revised.*
