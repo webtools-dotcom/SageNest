@@ -143,22 +143,21 @@ If you are tracking your cycle to identify whether ovulation is occurring, use o
 
 Anovulation — the absence of egg release in a menstrual cycle — is common, often invisible, and directly responsible for a significant proportion of difficulty conceiving. The fact that periods can occur without ovulation means many women are unaware the problem exists until they begin actively trying to conceive. The causes are specific and largely treatable: PCOS, hypothalamic suppression from energy deficit or stress, thyroid disorders, and hyperprolactinemia each have distinct diagnostic pathways and management approaches that a provider can navigate with you. If you suspect your cycles may be anovulatory — based on BBT charting, LH strip patterns, or simply cycles that feel irregular — bring that information to your provider rather than waiting for a defined period of unsuccessful conception attempts.
 
----
-*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your fertility or reproductive health.*
-
----
-
 **Sources**
 
 This post draws on guidance from the following primary sources:
 
-- **ACOG** — [Polycystic Ovary Syndrome](https://www.acog.org/womens-health/videos/polycystic-ovary-syndrome)
+- **ACOG** — [Polycystic Ovary Syndrome (PCOS)](https://www.acog.org/womens-health/faqs/polycystic-ovary-syndrome-pcos)
 - **ACOG** — [Evaluating Infertility](https://www.acog.org/womens-health/faqs/evaluating-infertility)
-- **NIH MedlinePlus** — [Ovarian Disorders](https://medlineplus.gov/ovariandisorders.html)
+- **ACOG** — [Treating Infertility](https://www.acog.org/womens-health/faqs/treating-infertility)
+- **NICHD** — [What Causes Amenorrhea?](https://www.nichd.nih.gov/health/topics/amenorrhea/conditioninfo/causes)
+- **NICHD** — [Polycystic Ovary Syndrome](https://www.nichd.nih.gov/health/topics/factsheets/pcos)
+- **NICHD** — [Primary Ovarian Insufficiency](https://www.nichd.nih.gov/health/topics/poi/conditioninfo)
 - **NIH MedlinePlus** — [Prolactinoma](https://medlineplus.gov/ency/article/000336.htm)
+- **NIH MedlinePlus** — [Prolactin Levels](https://medlineplus.gov/lab-tests/prolactin-levels/)
 - **CDC** — [Infertility FAQs](https://www.cdc.gov/reproductive-health/infertility-faq/index.html)
 
-*Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.*
+**Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.**
 `
   },
   {
