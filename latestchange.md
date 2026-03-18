@@ -1,3 +1,10 @@
+## 2026-03-18 (Refreshed blog: ivf-due-date-guide)
+
+- Replaced the existing `ivf-due-date-guide` post object in `src/data/blogPosts.ts` with the newly provided IVF transfer dating rewrite, including the updated description, FAQ answers, reviewed date, and full long-form content while preserving the same slug and schema.
+- Regenerated the derived blog publishing/indexing artifacts so the refreshed article stays synchronized across `public/blog-static/ivf-due-date-guide.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the latest requested IVF due-date guide update and keep SageNest's generated static blog, redirect, and sitemap outputs aligned with the canonical blog source data.
+
+
 ## 2026-03-18 (Automated README worktree sync + refreshed repository tree)
 
 - Updated the `## Exact Repository Worktree Structure` section in `README.md` so it now matches the current tracked worktree exactly, including recently added tracked files such as the anovulation static blog page and the pregnancy flight calculator source/test files.
