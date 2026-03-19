@@ -1,3 +1,10 @@
+## 2026-03-19 (Added new blog post: pcos-ovulation-tracking-irregular-cycles)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `pcos-ovulation-tracking-irregular-cycles`, including the provided title, description, reading time, FAQ entries, default image, and full long-form content, plus the required `lastReviewed` and `updatedAt` metadata used by the existing blog schema.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/pcos-ovulation-tracking-irregular-cycles.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested PCOS ovulation tracking article while keeping SageNest's generated blog, routing, and sitemap files synchronized with the canonical blog source data.
+
+
 ## 2026-03-18 (Pruned changelog history before 2026-03-05)
 
 - Removed all `latestchange.md` entries dated before `2026-03-05` and kept the entries on or after that cutoff date.
