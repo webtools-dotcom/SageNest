@@ -485,7 +485,7 @@ The tool should solve a problem the reader just encountered in the article. The 
 
 ## 13. Topic Ideas by Category
 
-Use these to pick the next post. Rotate through categories to build topical authority across the full site.
+Use these to pick the next post. Rotate through categories to build topical authority across the full site. dont build posts on the exact title given below, these are just topics to take an idea from, make the blogposts related to these topics not exactly these topics, try to get some niche specific so that we can get rank for those niche specific keywords where others are not making blogs for.
 
 ### Category A: Pregnancy Symptoms & What They Mean
 - Morning sickness: what actually helps vs what is myth
