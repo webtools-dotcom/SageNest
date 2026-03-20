@@ -34,7 +34,7 @@ export const SEOHead = ({ title, description, canonicalPath, ogImage, jsonLd, no
     document.head.appendChild(canonical);
 
     upsertMetaTag('property', 'og:type', 'website');
-    upsertMetaTag('property', 'og:site_name', 'SageNest');
+    upsertMetaTag('property', 'og:site_name', 'SageNest Health');
     upsertMetaTag('property', 'og:title', title);
     upsertMetaTag('property', 'og:description', description);
     upsertMetaTag('property', 'og:url', `https://sagenesthealth.com${canonicalPath}`);
