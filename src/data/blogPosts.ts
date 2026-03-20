@@ -134,10 +134,6 @@ While you are tracking your cycle, use our [ovulation calculator](/ovulation-cal
 
 Standard ovulation tracking tools were not designed for the hormonal environment of PCOS. Calendar apps have no predictive value when cycles are irregular. LH strips give false positives when LH is chronically elevated. BBT charting works but requires more data and a different interpretation framework than regular cycles. The most reliable at-home approach is the sympto-thermal method — combining cervical mucus observation with BBT charting — used to confirm ovulation retrospectively and build a picture of your cycle over time, brought to a provider alongside a progesterone blood test for clinical confirmation. If ovulation is infrequent or absent, medical ovulation induction under specialist supervision is an established and effective pathway — and given the known diagnosis, earlier rather than later evaluation is the right call.
 
----
-*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your fertility or reproductive health.*
-
----
 
 **Sources**
 
@@ -459,7 +455,7 @@ Once your BBT chart confirms ovulation and you know your typical cycle length, u
 BBT charting is a powerful tool for understanding your cycle — but only when you are clear on what it actually measures. It confirms ovulation retrospectively through a sustained temperature rise of roughly 0.2°C, reveals your luteal phase length, and builds a cycle map over time that makes future fertile windows predictable. It does not warn you that ovulation is approaching in real time, which means it should always be paired with cervical mucus observation for conception timing rather than used alone. Two to three cycles of consistent, same-time daily measurement is the minimum needed before your chart becomes genuinely readable — commit to the method long enough to see your own pattern emerge.
 
 
-*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your fertility or reproductive health.*
+**This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your fertility or reproductive health.**
 `
   },
   {
@@ -606,7 +602,7 @@ For the full picture of the fertility signs that surround ovulation, our post on
 Cervical mucus changes in a predictable, hormone-driven pattern every cycle: dry and infertile after menstruation, transitioning through sticky and creamy as estrogen rises, peaking at clear and egg white immediately before ovulation, then returning to thick and dry once progesterone takes over. Learning to identify egg white cervical mucus — and specifically the peak day of most abundant, most stretchy mucus — gives you a real-time fertility signal that is more precise than any calendar calculation. Use our [ovulation calculator](/ovulation-calculator) alongside mucus observations to triangulate your fertile window, and give yourself two to three cycles to learn your personal pattern before drawing conclusions.
 
 
-*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your fertility or reproductive health.*
+**This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your fertility or reproductive health.**
 `
   },
   {
@@ -756,7 +752,7 @@ For context on how symptoms like round ligament pain and pelvic girdle pain over
 Pelvic girdle pain is caused by hormonally driven ligamentous laxity combined with the asymmetric mechanical demands of a growing pregnancy — it is not something you caused and not something you simply have to endure without strategy. The most effective approach is early physiotherapy referral for stabilization exercises specific to your pattern, combined with systematic movement modifications that eliminate the activities most likely to aggravate unstable joints. A pelvic support belt worn correctly adds meaningful relief during demanding activities. For most women, symptoms resolve substantially within a few months of delivery — but starting the right management now, rather than waiting it out, makes the remainder of pregnancy significantly more manageable.
 
 
-*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*
+**This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
 `
   },
   {
@@ -891,7 +887,7 @@ If third-trimester breathlessness has you thinking about your final weeks and wh
 Shortness of breath is a near-universal feature of pregnancy, driven by a combination of progesterone effects on your respiratory drive, expanding blood volume, and eventually the mechanical pressure of your growing uterus on your diaphragm. In the vast majority of cases it is uncomfortable but completely harmless. The version you need to act on is the one that arrives suddenly, is accompanied by chest pain or palpitations, or is meaningfully different from your established baseline — those symptoms require prompt evaluation to rule out blood clots, cardiac issues, or severe anemia. For everything else, posture, pacing, and treating any underlying anemia are your most effective tools.
 
 
-*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*
+**This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
 `
   },
   {
@@ -1033,7 +1029,7 @@ If sleep disruption is making it hard to keep track of where you are in your pre
 Pregnancy insomnia is real, it is common, and it is not something you simply have to endure without a strategy. The hormonal disruptions of the first trimester, the positional challenges of the third, and the anxiety that threads through all of it are distinct problems that respond to different approaches. CBT-I techniques, positional support, targeted sleep hygiene adjustments, and honest conversations with your provider about the few genuinely safe pharmaceutical options can meaningfully improve sleep quality — even when perfect sleep is no longer possible. Start with the lowest-risk interventions and work with your provider before reaching for any supplement or medication.
 
 
-*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*
+**This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
 `
   },
   {
