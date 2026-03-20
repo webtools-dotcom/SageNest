@@ -1,3 +1,9 @@
+## 2026-03-20 (Added new blog post: iron-supplements-pregnancy-side-effects)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `iron-supplements-pregnancy-side-effects`, including the provided title, description, reading time, FAQ entries, default image, full long-form content, and the required `lastReviewed` / `updatedAt` metadata used by the existing blog schema.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/iron-supplements-pregnancy-side-effects.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested iron supplement side-effects pregnancy article while keeping SageNest's canonical blog source, static blog output, redirects, and sitemap synchronized.
+
 ## 2026-03-19 (Added new blog post: pcos-ovulation-tracking-irregular-cycles)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `pcos-ovulation-tracking-irregular-cycles`, including the provided title, description, reading time, FAQ entries, default image, and full long-form content, plus the required `lastReviewed` and `updatedAt` metadata used by the existing blog schema.
