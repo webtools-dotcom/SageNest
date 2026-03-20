@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/iron-supplements-pregnancy-side-effects /blog/iron-supplements-pregnancy-side-effects 301
 /pcos-ovulation-tracking-irregular-cycles /blog/pcos-ovulation-tracking-irregular-cycles 301
 /anovulation-what-it-is-causes-treatment /blog/anovulation-what-it-is-causes-treatment 301
 /bbt-charting-ovulation /blog/bbt-charting-ovulation 301
@@ -47,6 +48,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/iron-supplements-pregnancy-side-effects /blog-static/iron-supplements-pregnancy-side-effects.html 200
+/blog/iron-supplements-pregnancy-side-effects/ /blog-static/iron-supplements-pregnancy-side-effects.html 200
 /blog/pcos-ovulation-tracking-irregular-cycles /blog-static/pcos-ovulation-tracking-irregular-cycles.html 200
 /blog/pcos-ovulation-tracking-irregular-cycles/ /blog-static/pcos-ovulation-tracking-irregular-cycles.html 200
 /blog/anovulation-what-it-is-causes-treatment /blog-static/anovulation-what-it-is-causes-treatment.html 200
