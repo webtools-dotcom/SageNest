@@ -624,6 +624,8 @@ If a specific number, threshold, or range does not appear verbatim on the ACOG, 
  - pelvic-girdle-pain-pregnancy
  - bbt-charting-ovulation
  - cervical-mucus-ovulation-guide
+ - anovulation-what-it-is-causes-treatment
+ - pcos-ovulation-tracking-irregular-cycles
 
 
 ## Section 20: Source Verification, Citation, and the Self-Check Protocol
