@@ -1,3 +1,9 @@
+## 2026-03-21 (Refined copy in morning-sickness-remedies-that-actually-work)
+
+- Updated the `morning-sickness-remedies-that-actually-work` post text in `src/data/blogPosts.ts` to soften the prevalence phrasing, remove the specific second-trimester percentage claim, align the ginger dosing wording with the requested ACOG reference, and replace the prescription-medication paragraph with more provider-directed language.
+- Replaced the old article-ending block with the requested primary-sources section followed by the informational disclaimer, then regenerated the matching static blog HTML for this slug so published content stays synchronized with the source data.
+- Why: reflect the requested evidence-language and sourcing adjustments for this existing morning sickness article without changing unrelated blog content.
+
 ## 2026-03-20 (Added new blog post: iron-supplements-pregnancy-side-effects)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `iron-supplements-pregnancy-side-effects`, including the provided title, description, reading time, FAQ entries, default image, full long-form content, and the required `lastReviewed` / `updatedAt` metadata used by the existing blog schema.

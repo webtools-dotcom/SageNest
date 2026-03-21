@@ -2103,7 +2103,7 @@ Your body provides a detailed, real-time picture of where you are in your cycle 
   {
     slug: 'morning-sickness-remedies-that-actually-work',
     title: 'Morning Sickness Remedies: What Actually Works (and What Doesn\'t)',
-    description: 'Morning sickness affects up to 80% of pregnant women. Learn which remedies are backed by clinical evidence, which are myths, and when to call your doctor.',
+    description: 'Morning sickness affects a large majority of pregnant women — research suggests up to 80 percent. Learn which remedies are backed by clinical evidence, which are myths, and when to call your doctor.',
     readingTime: '10 min read',
     lastReviewed: 'March 2026',
     updatedAt: '2026-03-04',
@@ -2115,7 +2115,7 @@ Your body provides a detailed, real-time picture of where you are in your cycle 
       },
       {
         question: 'When does morning sickness usually start and end?',
-        answer: 'Nausea typically begins between weeks 4 and 6 of pregnancy, peaks around weeks 8 to 10, and resolves for most women by the end of the first trimester — around week 12 to 14. Approximately 10 to 15 percent of women experience nausea that persists into the second trimester, and a small percentage have symptoms throughout the entire pregnancy.'
+        answer: 'Nausea typically begins between weeks 4 and 6 of pregnancy, peaks around weeks 8 to 10, and resolves for most women by the end of the first trimester — around week 12 to 14. A smaller proportion of women experience nausea that persists into the second trimester, and a small percentage have symptoms throughout the entire pregnancy.'
       },
       {
         question: 'Is morning sickness a sign of a healthy pregnancy?',
@@ -2134,7 +2134,7 @@ Your body provides a detailed, real-time picture of where you are in your cycle 
 
 ## What Is Morning Sickness?
 
-Morning sickness is the common term for nausea and vomiting of pregnancy (NVP) — a condition affecting approximately 70 to 80 percent of pregnant women, according to the American College of Obstetricians and Gynecologists ([ACOG](https://www.acog.org)). Despite its name, nausea in pregnancy is not limited to mornings. Most women experience symptoms throughout the day, and for many, evenings can be the worst.
+Morning sickness is the common term for nausea and vomiting of pregnancy (NVP) — a condition affecting a large majority of pregnant women — research suggests up to 80 percent, according to the American College of Obstetricians and Gynecologists ([ACOG](https://www.acog.org)). Despite its name, nausea in pregnancy is not limited to mornings. Most women experience symptoms throughout the day, and for many, evenings can be the worst.
 
 The cause is not fully established, but the most widely supported explanation involves the rapid rise in human chorionic gonadotropin (hCG) — the hormone produced by the developing placenta — that occurs in the first trimester. Estrogen levels also rise sharply during this period and are thought to contribute. Both hormones peak around weeks 8 to 10, which aligns with when most women report symptoms at their most intense.
 
@@ -2148,7 +2148,7 @@ Nutritional status at the time of conception may also play a role. Some research
 
 ### Ginger
 
-Ginger has more clinical evidence supporting its use for pregnancy nausea than any other non-pharmacological remedy. Multiple randomized controlled trials have found ginger supplementation — typically 250 mg capsules taken four times daily — significantly reduces nausea severity compared to placebo. The mechanism is not completely understood, but ginger appears to accelerate gastric emptying and may have a direct effect on serotonin receptors in the gut. Ginger in any form — capsules, ginger tea, ginger chews, crystallized ginger — appears to provide some benefit. There is no established upper limit for culinary ginger use, but ginger supplements above 1 gram per day should be discussed with your provider.
+Ginger has more clinical evidence supporting its use for pregnancy nausea than any other non-pharmacological remedy. Multiple randomized controlled trials have found ginger supplementation — typically at doses of around 1 gram per day divided across multiple doses (per ACOG Practice Bulletin No. 189) — significantly reduces nausea severity compared to placebo. The mechanism is not completely understood, but ginger appears to accelerate gastric emptying and may have a direct effect on serotonin receptors in the gut. Ginger in any form — capsules, ginger tea, ginger chews, crystallized ginger — appears to provide some benefit. There is no established upper limit for culinary ginger use, but ginger supplements above 1 gram per day should be discussed with your provider.
 
 ### Vitamin B6 (Pyridoxine)
 
@@ -2180,7 +2180,7 @@ Dehydration significantly worsens nausea, creating a difficult cycle — nausea 
 
 ## Prescription Options When Non-Pharmacological Approaches Are Not Enough
 
-If dietary strategies and B6 are not providing adequate relief, prescription options are available and safe. ACOG recommends a stepwise approach: B6 alone or B6 plus doxylamine first, then adding other antihistamines or phenothiazines if needed, with ondansetron reserved for more severe cases. Metoclopramide and promethazine are also used. None of these medications should be started without guidance from your provider — not because they are necessarily dangerous, but because your provider needs to assess your specific situation and rule out hyperemesis gravidarum, which requires a different management approach entirely.
+If dietary strategies and B6 are not providing adequate relief, prescription options are available and safe. ACOG's clinical guidance recommends a stepwise approach starting with B6 alone or in combination with doxylamine; other antiemetic medications may be added under provider supervision for more severe symptoms. The specific medications used are determined in consultation with your provider. None of these medications should be started without guidance from your provider — not because they are necessarily dangerous, but because your provider needs to assess your specific situation and rule out hyperemesis gravidarum, which requires a different management approach entirely.
 
 ## When to Call Your Doctor
 
@@ -2204,8 +2204,21 @@ Understanding where you are in your pregnancy can help contextualize your sympto
 
 Morning sickness is not in your head, it is not something you should simply endure without support, and it is not a sign that something is wrong with your pregnancy. The remedies with the strongest evidence — ginger, vitamin B6, frequent small meals, and consistent hydration — are accessible, safe, and meaningfully effective for most women with typical NVP. When they are not enough, evidence-based prescription options exist and are appropriate to use. The most important thing is to ask for help before you reach the point of dehydration and exhaustion — your provider would far rather hear from you at week seven than treat you for severe dehydration at week ten.
 
----
-*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*`
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Morning Sickness: Nausea and Vomiting of Pregnancy](https://www.acog.org/womens-health/faqs/morning-sickness-nausea-and-vomiting-of-pregnancy)
+- **ACOG** — [Nausea and Vomiting of Pregnancy — Practice Bulletin No. 189](https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/01/nausea-and-vomiting-of-pregnancy) *(members-only; referenced for stepwise treatment algorithm and dosing)*
+- **NIH Office of Dietary Supplements** — [Vitamin B6 — Consumer Fact Sheet](https://ods.od.nih.gov/factsheets/VitaminB6-Consumer/)
+- **NIH MedlinePlus** — [Morning Sickness](https://medlineplus.gov/ency/patientinstructions/000604.htm)
+- **NIH MedlinePlus** — [Hyperemesis Gravidarum](https://medlineplus.gov/ency/article/001499.htm)
+- **NIH MedlinePlus** — [Doxylamine and Pyridoxine](https://medlineplus.gov/druginfo/meds/a613045.html)
+
+**Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.**
+
+
+**This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
   },
   {
     slug: 'pregnancy-weight-gain-myths-facts',
