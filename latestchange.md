@@ -1,3 +1,9 @@
+## 2026-03-21 (Expanded pregnancy flight calculator airline coverage + educational copy)
+
+- Updated `src/pages/PregnancyFlightCalculator.tsx` SEO metadata, hero copy, FAQ schema, FAQ content, airline reference data, airline summary messaging, airline table copy/columns/sources, and the full educational content section to match the new multi-region airline-policy requirements without changing the calculator logic, form behavior, validation, results rendering, or helper-function behavior.
+- Added the requested `HowTo` JSON-LD entry and expanded the static airline policy table to cover US, UK, Australia, Canada, Europe, and Middle Eastern carriers.
+- Why: improve search intent alignment and make the pregnancy flight tool more useful as a week-by-week airline policy checker while preserving the existing calculator behavior exactly as-is.
+
 ## 2026-03-21 (Refined morning sickness estimator SEO + education copy)
 
 - Updated `src/pages/MorningSicknessEstimator.tsx` SEO metadata, hero copy, structured data, and the full educational content section to match the new ACOG-aligned messaging and internal-link requirements without changing calculator logic, FAQ items, or milestone calculations.
