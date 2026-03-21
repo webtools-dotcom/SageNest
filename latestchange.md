@@ -1,3 +1,9 @@
+## 2026-03-21 (Added new blog post: choline-pregnancy-prenatal-vitamins-miss)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `choline-pregnancy-prenatal-vitamins-miss`, including the provided title, description, reading time, FAQ entries, default image, and full long-form content, plus the required `lastReviewed` and `updatedAt` metadata used by the existing blog schema.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/choline-pregnancy-prenatal-vitamins-miss.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested choline-in-pregnancy educational article while keeping SageNest's canonical blog source, generated blog output, redirects, and sitemap synchronized.
+
 ## 2026-03-21 (Expanded colostrum harvesting calculator guide content)
 
 - Updated `src/pages/ColostrumHarvestingCalculator.tsx` SEO metadata, hero copy, FAQ content, structured data, and the entire educational section with the requested expanded colostrum harvesting guidance while keeping all calculator logic, validation, result rendering, checklist logic, helper functions, and disclaimer/privacy/FAQ structure unchanged.
