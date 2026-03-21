@@ -1,3 +1,9 @@
+## 2026-03-21 (Refined morning sickness estimator SEO + education copy)
+
+- Updated `src/pages/MorningSicknessEstimator.tsx` SEO metadata, hero copy, structured data, and the full educational content section to match the new ACOG-aligned messaging and internal-link requirements without changing calculator logic, FAQ items, or milestone calculations.
+- Removed the old internal blog-link paragraph from the educational section and replaced it with the requested calculator + week-by-week internal links.
+- Why: improve search intent alignment and on-page educational depth for the morning sickness estimator while preserving the existing interactive behavior exactly as-is.
+
 ## 2026-03-21 (Refined copy in morning-sickness-remedies-that-actually-work)
 
 - Updated the `morning-sickness-remedies-that-actually-work` post text in `src/data/blogPosts.ts` to soften the prevalence phrasing, remove the specific second-trimester percentage claim, align the ginger dosing wording with the requested ACOG reference, and replace the prescription-medication paragraph with more provider-directed language.

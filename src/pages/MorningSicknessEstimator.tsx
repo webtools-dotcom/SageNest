@@ -194,6 +194,30 @@ export const MorningSicknessEstimatorPage = () => {
           acceptedAnswer: { '@type': 'Answer', text: item.answer },
         })),
       },
+      {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: 'How to estimate when your morning sickness will end',
+        description:
+          'Use your LMP date to calculate your personalised nausea timeline including start, peak, and likely end date.',
+        step: [
+          {
+            '@type': 'HowToStep',
+            name: 'Enter your LMP date',
+            text: 'Find the first day of your last menstrual period and enter it into the date field.',
+          },
+          {
+            '@type': 'HowToStep',
+            name: 'Submit the form',
+            text: 'Click the estimate button to generate your personalised morning sickness timeline.',
+          },
+          {
+            '@type': 'HowToStep',
+            name: 'Review your timeline',
+            text: 'See your personalised nausea start date, peak week, likely end date, and progress through the nausea window.',
+          },
+        ],
+      },
     ],
     [],
   );
@@ -229,8 +253,8 @@ export const MorningSicknessEstimatorPage = () => {
   return (
     <main id="main-content" className="container">
       <SEOHead
-        title="When Does Morning Sickness End Calculator — Free Pregnancy Estimator"
-        description="Find out when your morning sickness will likely end. Enter your LMP to get your personalized nausea peak date and expected end date, based on ACOG guidelines. Free, no signup required."
+        title="When Does Morning Sickness End? — Free Estimator by Week"
+        description="Find out exactly when your morning sickness will likely end. Enter your LMP date to get your nausea peak week, likely end date, and week-by-week breakdown. Based on ACOG guidelines."
         canonicalPath="/morning-sickness-end-date-estimator"
         jsonLd={jsonLd}
       />
@@ -241,11 +265,12 @@ export const MorningSicknessEstimatorPage = () => {
           <div className="trust-badge">Free morning sickness end date estimate</div>
         </div>
         <h1 className="hero-title">
-          Morning Sickness <span>End Date Estimator</span>
+          When Does <span>Morning Sickness End?</span>
         </h1>
         <p className="hero-description">
-          When does morning sickness end? Use your LMP date to estimate when nausea may start,
-          peak, and improve based on ACOG-aligned gestational timing.
+          Enter your last menstrual period (LMP) date to estimate exactly when your nausea will
+          start, peak, and end — with a personalised week-by-week timeline based on ACOG
+          gestational guidelines.
         </p>
       </section>
 
@@ -765,40 +790,140 @@ export const MorningSicknessEstimatorPage = () => {
         style={{ marginTop: 'var(--space-xl)' }}
         aria-labelledby="edu-heading"
       >
-        <h2 id="edu-heading">How does this morning sickness estimator work?</h2>
+        <h2 id="edu-heading">When does morning sickness end?</h2>
         <p>
-          This tool estimates key nausea milestones from your LMP date using standard gestational
-          age timing. It maps a likely nausea start, peak nausea week, and a resolution window
-          based on obstetric guidance from ACOG.
+          For most women, morning sickness ends between weeks 12 and 14 of pregnancy. Around 50%
+          of pregnant women find their nausea improves significantly by the end of week 12, and
+          about 90% feel better by week 14. A small percentage — roughly 1 in 10 — continue to
+          have symptoms past 14 weeks, and a rare few experience nausea throughout their entire
+          pregnancy.
+        </p>
+        <p>
+          The tool above calculates these milestones from your personal LMP date, giving you real
+          calendar dates rather than vague ranges.
         </p>
 
-        <h2>When does morning sickness typically end in pregnancy?</h2>
+        <h2>How long does morning sickness typically last?</h2>
         <p>
-          Many women begin to improve around week 12, and most feel better by week 14. A smaller
-          group can have symptoms that continue to week 20 or, rarely, throughout pregnancy. The
-          decline in hCG levels after week 10 is the main driver of improvement for most women.
+          Morning sickness usually begins around week 6 and lasts approximately 6 to 8 weeks for
+          most women. That puts the typical duration between week 6 and week 12–14. In total, most
+          pregnancies involve about 6 to 10 weeks of nausea.
+        </p>
+        <p>
+          If your symptoms began earlier (some women notice nausea as early as week 4–5) or
+          started later, the duration is roughly the same — the window just shifts slightly.
+        </p>
+
+        <h2>Morning sickness by week</h2>
+
+        <h3>Weeks 4–5: Before nausea begins</h3>
+        <p>
+          Most women do not experience nausea this early, though some notice food aversions or
+          mild queasiness. hCG levels are rising but not yet high enough to trigger significant
+          symptoms in most pregnancies.
+        </p>
+
+        <h3>Week 6: Nausea usually starts</h3>
+        <p>
+          Week 6 is when morning sickness typically kicks in. Nausea may come in waves, often
+          triggered by specific smells, an empty stomach, or fatigue. This coincides with a rapid
+          rise in hCG (human chorionic gonadotropin).
+        </p>
+
+        <h3>Weeks 7–8: Symptoms intensify</h3>
+        <p>
+          Nausea often worsens through weeks 7 and 8 as hCG continues to rise. Many women find
+          they need to eat small amounts frequently to avoid the empty-stomach nausea that
+          intensifies symptoms.
+        </p>
+
+        <h3>Week 9: The peak of morning sickness</h3>
+        <p>
+          Week 9 is widely recognised as the worst week for morning sickness. hCG levels reach
+          their highest point around weeks 9–10, which correlates with peak nausea severity. If
+          you are struggling at week 9, you are likely at or near the worst of it.
+        </p>
+
+        <h3>Weeks 10–11: Plateau phase</h3>
+        <p>
+          hCG begins to level off and then gradually decline after week 10. Many women notice that
+          while nausea is still present, it may not be getting significantly worse. This is a
+          promising sign.
+        </p>
+
+        <h3>Week 12: Likely relief for most women</h3>
+        <p>
+          This is the milestone that most pregnancy resources point to — and for good reason.
+          Approximately 50% of women see major improvement by the end of week 12. If you pass week
+          12 and still feel unwell, that is entirely normal and does not indicate a problem.
+        </p>
+
+        <h3>Weeks 13–14: Relief for 90% of women</h3>
+        <p>
+          By week 14, roughly 9 in 10 women have seen their nausea resolve or reduce to a
+          manageable level. The second trimester typically brings a noticeable shift in energy and
+          appetite.
+        </p>
+
+        <h3>Week 20 and beyond</h3>
+        <p>
+          A small percentage of women have nausea that extends into the second half of pregnancy.
+          If this applies to you, speak to your midwife or OB — there are safe medical options
+          available, including vitamin B6 and certain antiemetics.
+        </p>
+
+        <h2>What are the signs that morning sickness is ending?</h2>
+        <p>
+          Common signs that nausea is improving include: waking up less nauseated in the morning,
+          being able to eat a larger variety of foods, noticing that certain smell triggers no
+          longer bother you, and having longer stretches of the day where you feel relatively
+          normal. These improvements often come gradually rather than all at once.
+        </p>
+
+        <h2>Why is morning sickness worse in the morning?</h2>
+        <p>
+          Despite the name, morning sickness can strike at any time of day — and for many women it
+          is worst in the evenings. The reason it is called "morning sickness" is that nausea is
+          often most intense on an empty stomach, which for many people means right after waking.
+          Keeping a small snack (like crackers) by the bed to eat before getting up can help
+          reduce that first wave of nausea.
+        </p>
+
+        <h2>How does this morning sickness estimator work?</h2>
+        <p>
+          This tool estimates key nausea milestones from your LMP date using standard gestational
+          age timing aligned with ACOG guidelines. It calculates the number of gestational days
+          from your LMP to today, then maps your current position against the typical nausea
+          timeline — showing you where you are relative to the start, peak, likely end, and outer
+          bound of morning sickness.
+        </p>
+        <p>
+          All calculations run entirely in your browser. Nothing you enter is stored or
+          transmitted.
         </p>
 
         <h2>When should you talk to your doctor about nausea in pregnancy?</h2>
         <p>
           Reach out if you cannot keep fluids down, feel dizzy or lightheaded, notice weight loss,
           or vomit multiple times throughout the day. These can be signs of hyperemesis gravidarum,
-          which requires medical support. Do not wait for week 12 if symptoms are severe.
+          a more serious condition that affects approximately 0.3–3% of pregnancies and requires
+          medical support. Do not wait for week 12 if symptoms are severe.
         </p>
 
-        {/* Internal link 2 — related blog post */}
+        {/* Internal links */}
         <p>
-          Learn more in our guide to{' '}
-          <a
-            href="/blog/morning-sickness-remedies-that-actually-work"
-            style={{ color: 'var(--sage-primary)' }}
-          >
-            morning sickness remedies that actually work
-          </a>
+          Track your full pregnancy journey with our{' '}
+          <Link to="/pregnancy-due-date-calculator" style={{ color: 'var(--sage-primary)' }}>
+            pregnancy due date calculator
+          </Link>
+          , or explore what is happening with your baby in our{' '}
+          <Link to="/week-by-week" style={{ color: 'var(--sage-primary)' }}>
+            week-by-week pregnancy guide
+          </Link>
           .
         </p>
 
-        {/* Source citation in educational section */}
+        {/* Source citation */}
         <p
           style={{
             fontSize: '0.8125rem',
