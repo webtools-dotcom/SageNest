@@ -120,6 +120,9 @@ Every post must link to SageNest tools using natural anchor text:
 | Pregnancy Weight Gain Calculator | `/pregnancy-weight-gain-calculator` | "find your target weight gain range", "our pregnancy weight gain calculator", "check your recommended gain" |
 | Ovulation Calculator | `/ovulation-calculator` | "estimate your fertile window", "our ovulation calculator", "track your ovulation" |
 | Pregnancy Week by Week | `/pregnancy-week-by-week` | "see what's happening this week", "explore your current pregnancy week", "our week-by-week pregnancy guide", "track your baby's development week by week" |
+| Morning Sickness End Date Estimator | `/morning-sickness-end-date-estimator` | "estimate when morning sickness may end", "our morning sickness estimator", "see when nausea may improve" |
+| Colostrum Harvesting Start Date Calculator | `/colostrum-harvesting-calculator` | "calculate when to start colostrum harvesting", "our colostrum harvesting calculator", "find your antenatal expressing start date" |
+| Pregnancy Flight Safety Calculator | `/pregnancy-flight-calculator` | "check if your flight timing is safe", "our pregnancy flight calculator", "see if it is safe to fly during pregnancy" |
 
 - There should be atleast one Cross-link to related blog posts where genuinely relevant. Never force it.
 
