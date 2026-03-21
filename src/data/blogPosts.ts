@@ -12,6 +12,143 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'choline-pregnancy-prenatal-vitamins-miss',
+    title: 'Choline in Pregnancy: The Nutrient Your Prenatal Vitamin Probably Skips',
+    description: 'ACOG confirms choline is missing from most prenatal vitamins. Learn what it does for your baby\'s brain development and which foods actually supply enough.',
+    readingTime: '10 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-21',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    faq: [
+      {
+        question: 'Does my prenatal vitamin have choline?',
+        answer: 'Probably not — or not enough. According to the NIH Office of Dietary Supplements, fewer than half of prenatal supplements on the US market contain choline at all, and those that do typically provide amounts well below the recommended intake. ACOG\'s nutrition during pregnancy FAQ states directly that choline "is not found in most prenatal vitamins," and advises getting it from food. This makes choline one of the few pregnancy nutrients that your prenatal vitamin is genuinely unlikely to cover, which is why dietary sources matter specifically for this nutrient.'
+      },
+      {
+        question: 'How much choline do you need during pregnancy?',
+        answer: 'The adequate intake (AI) for choline during pregnancy is 450 mg per day, according to the NIH Office of Dietary Supplements. This is higher than the non-pregnant adult AI of 425 mg per day. The upper tolerable intake level during pregnancy is 3,500 mg per day for women aged 19 to 50, meaning there is a wide margin between the recommended amount and the level at which harm occurs. Most pregnant women in the United States consume significantly less than the 450 mg daily target from food alone, and prenatal vitamins rarely bridge this gap.'
+      },
+      {
+        question: 'What happens if you don\'t get enough choline during pregnancy?',
+        answer: 'Choline plays a critical role in fetal brain development and the formation of cell membranes throughout the body. The NIH Office of Dietary Supplements notes that some evidence associates low choline intake during pregnancy with an increased risk of neural tube defects — though the research on this specific relationship is still developing and not as conclusive as the evidence for folate. Choline also supports placental function and has been studied in relation to fetal memory and cognitive development. While severe clinical deficiency is uncommon, most pregnant women fall meaningfully short of the recommended intake without actively trying to include high-choline foods.'
+      },
+      {
+        question: 'What foods are highest in choline during pregnancy?',
+        answer: 'Eggs are by far the most practical high-choline food — a single large cooked egg contains roughly 147 mg of choline, making it one of the most efficient sources relative to serving size. Beef liver is extremely high in choline but should be eaten only in limited amounts during pregnancy due to very high vitamin A content, which can be harmful in excess — discuss this with your provider. Other meaningful sources confirmed by ACOG include chicken, beef, milk, soy products, and peanuts. Cruciferous vegetables such as broccoli and Brussels sprouts contain choline in smaller amounts. Building choline intake across the day from several of these sources is more practical than relying on any single food.'
+      },
+      {
+        question: 'Is choline the same as folic acid?',
+        answer: 'No — choline and folic acid are distinct nutrients that work through overlapping but different biological pathways. Both are involved in a biochemical process called one-carbon metabolism, which supports cell division and is critical in early fetal development. The NIH Office of Dietary Supplements notes that higher intakes of choline and other nutrients involved in this pathway, alongside folic acid, may further reduce the risk of neural tube defects beyond folic acid alone. This means choline does not replace the need for folic acid, and folic acid does not replace the need for choline. They work together, which is why both need to be present in adequate amounts — and why the gap in prenatal vitamin coverage of choline matters.'
+      }
+    ],
+    content: `
+You are taking your prenatal vitamin every day without fail. You have been told it covers what you need. And that is largely true — for iron, folate, calcium, and most B vitamins. But there is one nutrient that ACOG specifically singles out as important for fetal development and then notes, in the same breath, that it is not found in most prenatal vitamins. That nutrient is choline. Most pregnant women have never been told to think about it, which is exactly why most pregnant women are not getting enough of it.
+
+## What Is Choline and Why Does It Matter in Pregnancy?
+
+**Choline** is an essential nutrient — meaning the body cannot produce enough of it on its own and must obtain the remainder from food. It is not a vitamin or a mineral in the classical sense but belongs to the B-vitamin family and shares metabolic pathways with folate and vitamin B12.
+
+During pregnancy, choline serves three functions that are directly relevant to fetal development. First, it is required for the synthesis of **phosphatidylcholine and sphingomyelin** — two phospholipids that form the structural basis of every cell membrane in the body, including the billions of cells forming in the developing fetus. Second, it plays a critical role in the development of the fetal brain and central nervous system, particularly in the formation and organisation of neural circuits involved in memory and cognitive function. Third, it is involved in the same one-carbon metabolic pathway as folate — the pathway that supports DNA synthesis and is essential for proper neural tube closure.
+
+According to ACOG's nutrition during pregnancy guidance, the body produces some choline on its own but does not make enough to meet all needs during pregnancy. Dietary intake is therefore essential — and the NIH Office of Dietary Supplements' Pregnancy Health Professional Fact Sheet confirms that most pregnant women in the United States do not consume the recommended amount.
+
+## The Prenatal Vitamin Gap
+
+This is the part most women are not told at their first prenatal appointment.
+
+The NIH Office of Dietary Supplements reports that fewer than half of prenatal supplements on the US market contain choline, and those that do often provide only small amounts well below what pregnancy requires. ACOG's patient-facing nutrition FAQ states the problem plainly: it is important to get choline from your diet specifically because it is not found in most prenatal vitamins.
+
+The contrast with other pregnancy nutrients is stark. Iron, folate, calcium, and most B vitamins are reliably covered by standard prenatal vitamins because they have long been recognised as nutritional priorities in obstetric care, are easy to formulate into a tablet, and are consistently included in clinical guidance. Choline has a shorter history of recognition as a distinct priority nutrient — the Institute of Medicine only established the first formal adequate intake values for choline in 1998 — and it remains absent from most supplement formulas as a result.
+
+The practical consequence is that a pregnant woman who takes her prenatal vitamin every day and eats a reasonably varied diet may still be significantly under-consuming choline without knowing it. Checking the label of your current prenatal vitamin for choline content is a useful first step — and discussing whether your overall intake is adequate is a conversation worth having with your provider or a registered dietitian.
+
+## How Much Choline Pregnancy Requires
+
+The **adequate intake (AI) for choline during pregnancy is 450 mg per day**, according to the NIH Office of Dietary Supplements. This is set as an AI rather than a recommended dietary allowance (RDA) because the evidence base, while strong enough to establish a target, is not yet sufficient to calculate an exact requirement with the same precision as nutrients like iron or folate.
+
+The upper tolerable intake level during pregnancy for women aged 19 to 50 is 3,500 mg per day — meaning the margin between the target intake and the level at which harm could occur is very wide. Getting too much choline from diet alone is essentially impossible; the concern is almost entirely on the side of not getting enough.
+
+Most pregnant women fall well short of 450 mg daily from food, particularly in the first trimester when nausea significantly limits dietary variety. Since prenatal vitamins typically do not supply meaningful choline, the burden falls entirely on dietary choices — which is why understanding which foods actually contain it matters more for choline than for most other pregnancy nutrients.
+
+## The Best Food Sources of Choline in Pregnancy
+
+Building choline intake to 450 mg daily from food is achievable — but it requires a degree of intentionality that most pregnancy nutrition advice does not prompt. The key is understanding which foods are genuinely high in choline rather than nominally present in it.
+
+**Eggs** are the most practical high-choline food available. A single large cooked egg provides approximately 147 mg of choline — almost a third of the daily pregnancy target in one food. Two eggs at breakfast covers roughly 60 percent of the daily requirement before the rest of the day begins. Eggs are also safe during pregnancy when fully cooked, require no preparation skill, and are typically well-tolerated even during first-trimester nausea.
+
+**Beef** is a meaningful choline source, with lean cuts providing a substantial contribution per serving. ACOG's nutrition guidance specifically names beef alongside chicken as a recommended choline food source during pregnancy.
+
+**Chicken** is both a significant choline source and a practical everyday protein — included in ACOG's listed choline food sources alongside beef.
+
+**Dairy products** — including milk and yoghurt — contribute choline in moderate amounts per serving, and because many pregnant women already consume dairy regularly, they represent a consistent background source.
+
+**Soy products** — including tofu, edamame, and soy milk — provide meaningful choline and are particularly relevant for women following plant-based or vegetarian diets, where egg and meat sources are absent. ACOG names soy products specifically as a choline source in its pregnancy nutrition guidance.
+
+**Peanuts and peanut butter** also contribute choline and are typically well-tolerated in pregnancy, including during nausea-prone periods when appetite for protein-rich foods is limited.
+
+**Cruciferous vegetables** — broccoli, Brussels sprouts, cauliflower — contain choline in smaller amounts per serving but contribute meaningfully when eaten regularly and in reasonable portions.
+
+A practical approach across a day: two eggs at breakfast, chicken or beef at a main meal, dairy at one or two points in the day, and a serving of a cruciferous vegetable — this pattern gets most pregnant women close to or at the 450 mg daily target without requiring specific supplementation in most cases. Whether your individual dietary pattern is achieving adequate choline intake is a question your provider or a registered dietitian can help you assess, particularly if your diet is restricted by nausea, food aversions, or dietary preferences.
+
+## Choline and Neural Tube Development: What the Evidence Shows
+
+The connection between choline and neural tube defects requires careful framing — because the evidence is meaningful but is still evolving, and overstating it would misrepresent what is actually known.
+
+The NIH Office of Dietary Supplements Pregnancy Health Professional Fact Sheet notes that some evidence suggests low choline intake during pregnancy may increase the risk of neural tube defects, and that higher intakes of choline alongside folic acid may further reduce neural tube defect risk beyond folic acid alone. This is because choline and folate operate in the same one-carbon metabolic pathway — both act as methyl group donors in the processes that support proper DNA synthesis and neural tube closure in the first 28 days after conception.
+
+This does not mean choline replaces folic acid. Folic acid remains the primary, most strongly evidenced nutrient for neural tube defect prevention, and ACOG's guidance on periconceptional folic acid supplementation is unchanged. What the evidence suggests is that choline works alongside folate in the same pathway, and that ensuring adequate choline intake during the periconceptional period and first trimester is a worthwhile complement to — not a substitute for — the established folic acid recommendation.
+
+For this reason, choline adequacy matters most in the weeks immediately before conception and during the first trimester — the same critical window as folic acid. Women planning a pregnancy are in a better position to optimise choline intake if they are aware of it before conception rather than discovering the gap at the first prenatal appointment.
+
+## Choline on a Vegetarian or Vegan Diet in Pregnancy
+
+Women following plant-based diets during pregnancy face a specific challenge with choline because the highest-concentration sources — eggs, beef, chicken — are either reduced or absent. This does not make adequate choline intake impossible, but it requires more active attention.
+
+Eggs, if consumed, remain the most efficient plant-tolerant source of choline and can anchor choline intake even for flexitarian or ovo-vegetarian diets. For women who do not eat eggs, soy products become the most important choline source — edamame, tofu, and soy milk all contribute meaningfully. Cruciferous vegetables and peanuts provide supporting contributions. Choline-containing supplements or prenatal vitamins that include choline can help close the gap — discuss specific products and amounts with your provider before adding any supplement.
+
+Our post on [pregnancy nutrition across all trimesters](/blog/pregnancy-nutrition-guide-what-to-eat-each-trimester) covers the broader dietary picture alongside which nutrients require specific attention at each stage. If you want to review your overall weight and nutrition trajectory, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised range based on your pre-pregnancy BMI.
+
+## What to Do With This Information
+
+This post is not a recommendation to self-supplement with choline — specific supplement decisions during pregnancy require a provider conversation. What it is intended to do is make you aware that:
+
+The prenatal vitamin you are taking almost certainly does not cover choline. ACOG and the NIH are explicit about this. Awareness of the gap is the starting point for addressing it.
+
+The gap is addressable primarily through food — specifically eggs, chicken, beef, dairy, and soy — without requiring supplements in most cases. Building these foods into your daily pattern in reasonable amounts is a practical and accessible strategy.
+
+The conversation is worth having with your provider. At your next prenatal appointment, asking specifically about your choline intake — particularly if you have a restricted diet, significant food aversions, or are following a vegetarian or vegan approach — puts you in a better position than waiting to be told about it.
+
+## When to See Your Doctor
+
+Choline insufficiency does not typically cause acute, identifiable symptoms the way iron deficiency anaemia does. This is partly why the gap goes unaddressed — there is no obvious clinical signal in routine prenatal care. Seek a specific conversation with your provider or a registered dietitian if:
+
+- **You are following a vegetarian or vegan diet** and have not specifically reviewed your choline intake, since plant-based diets are most likely to fall short
+- **First-trimester nausea has severely restricted your diet** for multiple weeks, limiting variety and your ability to consume egg or protein-rich sources
+- **You are considering adding a choline supplement** on top of your prenatal vitamin — dosing, product choice, and whether supplementation is necessary for your specific situation are questions for your provider, not for general guidance
+- **You are planning a pregnancy** and want to review your nutritional status before conception, when choline is most critical
+
+## Related Tools on SageNest
+
+As you plan your nutrition across pregnancy, use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to track what is happening developmentally at each stage — the first trimester period when choline is most critical for neural tube closure corresponds to weeks when most fetal organ systems are forming. For a clear sense of your overall nutritional trajectory and weight pattern, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) provides a personalised target range.
+
+## The Bottom Line
+
+Choline is an essential nutrient for fetal brain development and neural tube formation that most prenatal vitamins do not contain — ACOG's own nutrition guidance makes this explicit. The recommended intake during pregnancy is 450 mg per day, and most pregnant women fall short of this target from diet alone. Eggs are the most practical single food source, providing roughly 147 mg each, with chicken, beef, dairy, and soy products as meaningful supporting sources. This is not a cause for alarm — it is an actionable gap. Understanding which foods supply choline, checking whether your prenatal vitamin includes it, and discussing your individual intake with your provider are the three steps that close the distance between where most pregnant women are and where they need to be.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Nutrition During Pregnancy](https://www.acog.org/womens-health/faqs/nutrition-during-pregnancy)
+- **NIH Office of Dietary Supplements** — [Choline — Health Professional Fact Sheet](https://ods.od.nih.gov/factsheets/Choline-HealthProfessional/)
+- **NIH Office of Dietary Supplements** — [Dietary Supplements and Life Stages: Pregnancy](https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional/)
+- **NIH Office of Dietary Supplements** — [Choline — Consumer Fact Sheet](https://ods.od.nih.gov/factsheets/Choline-Consumer/)
+
+**Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.**
+`,
+  },
+  {
     slug: 'iron-supplements-pregnancy-side-effects',
     title: 'Iron Supplements in Pregnancy: Why They Make You Sick and What to Do',
     description: 'Iron supplements are essential in pregnancy but notorious for nausea, constipation, and stomach cramps. Learn why they cause side effects and how to take them so you can actually tolerate them.',
