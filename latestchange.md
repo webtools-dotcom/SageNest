@@ -1,3 +1,9 @@
+## 2026-03-21 (Expanded colostrum harvesting calculator guide content)
+
+- Updated `src/pages/ColostrumHarvestingCalculator.tsx` SEO metadata, hero copy, FAQ content, structured data, and the entire educational section with the requested expanded colostrum harvesting guidance while keeping all calculator logic, validation, result rendering, checklist logic, helper functions, and disclaimer/privacy/FAQ structure unchanged.
+- Removed the old standalone source citation block because the new educational section now includes the requested in-section citation list.
+- Why: align this calculator page with the new search-intent-focused educational brief while preserving the existing interactive calculator behavior exactly as-is.
+
 ## 2026-03-21 (Expanded pregnancy flight calculator airline coverage + educational copy)
 
 - Updated `src/pages/PregnancyFlightCalculator.tsx` SEO metadata, hero copy, FAQ schema, FAQ content, airline reference data, airline summary messaging, airline table copy/columns/sources, and the full educational content section to match the new multi-region airline-policy requirements without changing the calculator logic, form behavior, validation, results rendering, or helper-function behavior.
