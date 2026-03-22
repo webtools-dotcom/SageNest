@@ -629,6 +629,8 @@ If a specific number, threshold, or range does not appear verbatim on the ACOG, 
  - cervical-mucus-ovulation-guide
  - anovulation-what-it-is-causes-treatment
  - pcos-ovulation-tracking-irregular-cycles
+ - iron-supplements-pregnancy-side-effects
+ - choline-pregnancy-prenatal-vitamins-miss
 
 
 ## Section 20: Source Verification, Citation, and the Self-Check Protocol
