@@ -405,24 +405,8 @@ Apply these rules strictly whenever a specific number, percentage, or threshold 
 
 4. **The Section 16 "strong version" example is a writing style model, not pre-verified data.** The specific figures in that example — such as prevalence rates and absorption percentages — illustrate how to write with specificity and authority. They must be independently verified against a named source before being used in any published post. Do not copy them as if they are confirmed facts.
 
-### How to reference without quoting (copyright safe)
-Always paraphrase. Never reproduce sentences from source material. Correct approach:
-
-> ACOG recommends that women with uncomplicated pregnancies engage in at least 150 minutes of moderate-intensity aerobic activity per week.
-
-Not:
-
-> According to ACOG's 2020 Practice Bulletin, "Regular physical activity during pregnancy has been shown to improve or maintain physical fitness..."
-
-### Claims that require a source name
-Any specific statistic, recommendation, or clinical threshold must be attributed. Example:
-- ✅ "The IOM recommends women with a normal pre-pregnancy BMI gain 11.5 to 16 kg total."
-- ❌ "Studies show you should gain between 11 and 16 kg."
-
-### Claims that do not need attribution
-Well-established physiological facts that any clinician would confirm:
-- "Folate is essential for neural tube development."
-- "Blood volume increases significantly during pregnancy."
+### Sourcing and Citation Protocol
+For the full sourcing rules — how to find confirmed URLs, how to handle unverifiable claims, and the required Sources section format — follow Section 19 exactly. Section 19 is the authoritative reference for all citation work. The rules in this section are the principle; Section 19 is the process.
 
 ### Legal disclaimer
 Every post ends with the disclaimer line (already built into the structure template). This is non-negotiable.
@@ -490,6 +474,31 @@ The tool should solve a problem the reader just encountered in the article. The 
 
 Use these to pick the next post. Rotate through categories to build topical authority across the full site. dont build posts on the exact title given below, these are just topics to take an idea from, make the blogposts related to these topics not exactly these topics, try to get some niche specific so that we can get rank for those niche specific keywords where others are not making blogs for.
 
+### 21. Keyword & Topic Selection Rules
+
+Before picking any topic from the categories below, apply these three filters in order. A topic that fails any filter must be reworked before writing begins.
+
+**Rule 1 — Competition Check**
+Ask: is this keyword's first page of Google results dominated by sites with Domain Authority 70 or above — Healthline, Verywell Health, Mayo Clinic, WebMD, BabyCenter? If yes, do not target the keyword as-is. Find the niche angle within it — a specific scenario, trimester, condition, or population that the big sites have not written a dedicated post for. A new site cannot outrank DA 80 competitors on broad terms. It can outrank them on terms they have not bothered to target specifically.
+
+**Rule 2 — Scenario Specificity Test for Titles**
+Every post title must target a specific scenario or condition, not a general topic. The test: could this title appear as a chapter heading in a generic pregnancy textbook? If yes, it is too broad. Rework it to name a specific situation the reader is actually in.
+
+- ❌ Too broad: "PCOS and Ovulation"
+- ✅ Specific enough: "PCOS Ovulation Tracking When Your Cycles Are Longer Than 35 Days"
+- ❌ Too broad: "Pregnancy Headaches"
+- ✅ Specific enough: "Pregnancy Headaches Behind the Eyes: Causes and When to Worry"
+- ❌ Too broad: "Iron in Pregnancy"
+- ✅ Specific enough: "Iron Deficiency in the Third Trimester: Why It Spikes and What to Do"
+
+The specific version targets a reader who is in that exact situation. The broad version targets no one in particular.
+
+**Rule 3 — Slug Specificity Test**
+Before finalising any slug, apply this test: could this slug plausibly appear on WebMD, Healthline, or Verywell Health as one of their standard articles? If yes, the slug is not niche enough. Add the specific qualifier — the trimester, the condition, the cycle length, the symptom variant — that makes it a term only someone in that exact situation would search for.
+
+- ❌ Fails the test: `pregnancy-headaches`, `pcos-ovulation`, `iron-pregnancy`
+- ✅ Passes the test: `pregnancy-headaches-behind-eyes-third-trimester`, `pcos-ovulation-cycles-over-35-days`, `iron-deficiency-third-trimester-symptoms`
+
 ### Category A: Pregnancy Symptoms & What They Mean
 - Morning sickness: what actually helps vs what is myth
 - Round ligament pain: what it is and when to worry
@@ -543,16 +552,6 @@ Use these to pick the next post. Rotate through categories to build topical auth
 
 ---
 
-## 14. Reading Time Calculation
-
-Use this formula: **word count ÷ 200 = minutes**. Round to nearest whole number.
-
-- 1,200 words → `6 min read`
-- 1,800 words → `9 min read`
-- 2,400 words → `12 min read`
-
----
-
 ## 15. Final Pre-Publish Checklist
 
 Before delivering any post, verify every item:
@@ -570,9 +569,9 @@ Before delivering any post, verify every item:
 - [ ] 3–5 FAQ items, written as real search queries with complete answers
 - [ ] "Related Tools" section links to relevant calculators
 - [ ] Medical disclaimer present at the end
-- [ ] Sources section present with real confirmed URLs — not search terms (see Section 20)
+- [ ] Sources section present with real confirmed URLs — not search terms (see Section 19)
 - [ ] Full TypeScript object format ready to paste into `blogPosts.ts`
-- [ ] Reading time is accurate to word count
+- [ ] Reading time is accurate to word count — calculated as word count ÷ 200, rounded to nearest whole number (1,200 words = 6 min read, 1,800 = 9 min read, 2,400 = 12 min read)
 - [ ] **Post is placed at the TOP of the `blogPosts` array when pasting into `blogPosts.ts`**
 
 ---
@@ -603,10 +602,7 @@ If a specific number, threshold, or range does not appear verbatim on the ACOG, 
 
 ---
 
-## 18. DON'T REPEAT ANY BLOG WHICH IS ALREADY POSTED
-
-
-## 19. BLOGS POSTED TILL NOW ARE - 
+## 18. Already Published — Do Not Repeat Any of These
  - gestational-diabetes-pregnancy-weight-gain
  - how-due-dates-are-calculated
  - ivf-due-date-guide
@@ -633,13 +629,13 @@ If a specific number, threshold, or range does not appear verbatim on the ACOG, 
  - choline-pregnancy-prenatal-vitamins-miss
 
 
-## Section 20: Source Verification, Citation, and the Self-Check Protocol
+## Section 19: Source Verification, Citation, and the Self-Check Protocol
 
 This section governs how every claim in every SageNest post gets sourced, verified, and cited. These are not optional steps. They are part of the writing process itself. **No post is complete until the Sources section contains real, confirmed URLs — found and verified by the AI itself through active web search. Outputting search terms for the user to look up manually is not acceptable.**
 
 ---
 
-### 20.1 The Core Principle
+### 19.1 The Core Principle
 
 Every factual claim in a SageNest post must be traceable to a specific page on a primary source website. Not a general health website. Not a secondary article that summarises the original. The original document itself — a guideline, a fact sheet, a recommendation page, or a clinical resource published directly by ACOG, WHO, CDC, NIH, FDA, or IOM.
 
@@ -647,7 +643,7 @@ Before writing any claim, ask: can I identify the specific primary source page t
 
 ---
 
-### 20.2 The Approved Primary Source List
+### 19.2 The Approved Primary Source List
 
 Only these sources qualify as primary citations in SageNest posts. No other source — including Mayo Clinic, WebMD, Healthline, BabyCenter, or any other health publisher — may be cited as a source, even if they are useful for general orientation.
 
@@ -682,7 +678,7 @@ Use: Food safety in pregnancy — mercury in fish, listeria risk, safe food hand
 
 ---
 
-### 20.3 Before Writing: Identify the Source Pages First
+### 19.3 Before Writing: Identify the Source Pages First
 
 Before drafting any post, identify the three to five core factual claims the post will make. For each claim, identify the specific primary source page that contains the supporting figure or recommendation. This must happen before writing begins, not after.
 
@@ -692,7 +688,7 @@ If a core claim cannot be matched to a specific primary source page, it must be 
 
 ---
 
-### 20.4 During Writing: How to Handle Claims and Numbers
+### 19.4 During Writing: How to Handle Claims and Numbers
 
 Every specific number, percentage, threshold, or clinical recommendation written in the post must be accompanied mentally by the source page it came from. When writing a sentence that contains a figure, the source page must already have been identified in the pre-writing step.
 
@@ -702,12 +698,12 @@ Do not upgrade approximations to precise figures. If the exact number is not con
 
 ---
 
-### 20.5 The Self-Check Protocol — Execute Before Producing Final Output
+### 19.5 The Self-Check Protocol — Execute Before Producing Final Output
 
 After drafting the full post and before producing the final output, execute this self-check sequence in order. Do not skip any step. The post is not complete until all steps have been passed.
 
 **Self-Check 1: Claims audit**
-Read through the entire draft. Identify every sentence that contains a specific number, percentage, clinical threshold, named guideline, or prevalence figure. For each one, confirm the source page that supports it. If any claim cannot be matched to a specific source page, apply the correction options from Section 20.7 before proceeding.
+Read through the entire draft. Identify every sentence that contains a specific number, percentage, clinical threshold, named guideline, or prevalence figure. For each one, confirm the source page that supports it. If any claim cannot be matched to a specific source page, apply the correction options from Section 19.7 before proceeding.
 
 **Self-Check 2: Overstatement audit**
 Re-read every sentence that describes a risk, outcome, or causal relationship. Check that the language used matches the strength of the evidence the source actually presents. Replace any causal language with associative language where the source uses association. Replace any absolute language with qualified language where the source uses probability.
@@ -719,11 +715,11 @@ Re-read every sentence that mentions a supplement, medication, OTC product, diet
 If the post mentions any recommended intake for any vitamin, mineral, or nutrient during pregnancy, confirm each figure against the IOM DRI tables or the relevant NIH Office of Dietary Supplements fact sheet. If a figure cannot be confirmed against one of these two sources specifically, replace it with qualified language.
 
 **Self-Check 5: Live URL verification — mandatory, replaces the old search-term method**
-For every source that will appear in the Sources section, perform an active web search to confirm the URL. Do not construct a URL that looks plausible without searching. Do not output search terms for the user to look up — that workflow is retired. Search for each page, confirm it resolves to a real, specific page on the correct primary source domain that actually contains the relevant claim, and record the full confirmed URL and exact page title. If a URL cannot be confirmed as real and specific through an active search, do not include it — apply Section 20.7 options instead.
+For every source that will appear in the Sources section, perform an active web search to confirm the URL. Do not construct a URL that looks plausible without searching. Do not output search terms for the user to look up — that workflow is retired. Search for each page, confirm it resolves to a real, specific page on the correct primary source domain that actually contains the relevant claim, and record the full confirmed URL and exact page title. If a URL cannot be confirmed as real and specific through an active search, do not include it — apply Section 19.7 options instead.
 
 ---
 
-### 20.6 Source Verification Process — How to Find and Confirm Real URLs
+### 19.6 Source Verification Process — How to Find and Confirm Real URLs
 
 This is the process that replaced the old search-term handoff. The AI writing the post is responsible for actively searching and confirming every URL before the post is delivered. The user receives a finished Sources section with real working links — not a list of terms to search manually.
 
@@ -750,11 +746,11 @@ This is the process that replaced the old search-term handoff. The AI writing th
 - Any URL on a non-approved domain
 - A URL that was not actively searched and confirmed
 
-If a search returns no specific page for a given claim, the claim must be qualified or removed per Section 20.7. Under no circumstances should a URL appear in the Sources section that was not found through an active search.
+If a search returns no specific page for a given claim, the claim must be qualified or removed per Section 19.7. Under no circumstances should a URL appear in the Sources section that was not found through an active search.
 
 ---
 
-### 20.7 The Required Sources Section Format
+### 19.7 The Required Sources Section Format
 
 Every post must end with a Sources section formatted exactly as follows. This section is part of the post content and must appear in the final TypeScript object inside the content field, after the medical disclaimer. Every URL in this section must be a real, confirmed link found during Self-Check 5 — not a search term, not a guessed path.
 
@@ -785,7 +781,7 @@ Sources appear only at the very end of the post — after the medical disclaimer
 
 ---
 
-### 20.8 When a Claim Cannot Be Sourced
+### 19.8 When a Claim Cannot Be Sourced
 
 If the self-check process identifies a claim that cannot be matched to a specific primary source page, apply one of these three options in order of preference:
 
@@ -802,7 +798,7 @@ What must never happen: an unverified specific figure reaching the final output 
 
 ---
 
-### 20.9 Evergreen Maintenance Note
+### 19.9 Evergreen Maintenance Note
 
 The `lastReviewed` field in the BlogPost object exists to signal when content was last checked against current guidelines. When writing a new post, set this field to the current month and year. When a major guideline update from any primary source affects the topic of an existing post, that post's content and citations must be updated and the `lastReviewed` field revised accordingly. Guidelines from ACOG, CDC, and WHO are updated periodically and content that was accurate at time of writing can become outdated. The sources section and the lastReviewed field together create the audit trail that demonstrates the content is actively maintained.
 
