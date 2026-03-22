@@ -12,6 +12,141 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'iodine-pregnancy-sea-salt-prenatal-gap',
+    title: 'Iodine in Pregnancy: The Silent Gap Sea Salt and Prenatal Vitamins Create',
+    description: 'Nearly half of pregnant women have insufficient iodine — and the switch to sea salt plus prenatal vitamins without iodine is why. Learn what iodine does and how to close the gap.',
+    readingTime: '11 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-22',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    faq: [
+      {
+        question: 'Does my prenatal vitamin contain iodine?',
+        answer: 'Possibly not. The NIH Office of Dietary Supplements reports that only about half of prenatal multivitamins sold in the United States contain iodine. This means taking a prenatal vitamin is not a reliable guarantee of adequate iodine intake. Check the label of your specific brand — iodine will be listed in the supplement facts panel if it is present, along with the amount per serving. If yours does not contain iodine, or contains very little, discuss your dietary iodine sources with your provider to determine whether additional supplementation is appropriate.'
+      },
+      {
+        question: 'Is sea salt or Himalayan salt as good as iodized table salt for iodine?',
+        answer: 'No. The NIH Office of Dietary Supplements consumer guidance specifically notes that salt that is not iodized — including many sea salts — is widely available, and that this type of salt does not contribute to iodine intake. Himalayan salt, kosher salt, and most specialty sea salts are not iodized unless the label explicitly states otherwise. If you have switched away from iodized table salt — a common choice for taste, texture, or health reasons — and your prenatal vitamin does not contain iodine, you have removed two traditional iodine sources simultaneously without a replacement.'
+      },
+      {
+        question: 'How much iodine do you need during pregnancy?',
+        answer: 'The recommended dietary allowance (RDA) for iodine during pregnancy is 220 mcg per day, according to the NIH Office of Dietary Supplements. This is substantially higher than the non-pregnant adult RDA of 150 mcg per day, reflecting the increased demand for thyroid hormone production during fetal development. Many professional organisations recommend that pregnant women take an iodine-containing supplement providing 150 mcg per day on top of dietary sources. Whether supplementation is appropriate for your specific situation is a conversation to have with your provider, who can assess your dietary intake and overall nutritional picture.'
+      },
+      {
+        question: 'What happens if you don\'t get enough iodine during pregnancy?',
+        answer: 'According to the NIH Office of Dietary Supplements, severe iodine deficiency during pregnancy can permanently harm the fetus, causing stunted growth, intellectual disability, and delayed development. Less severe deficiency — which is more common in the United States than outright severe deficiency — is associated with lower IQ scores in infants and children. The NIH ODS also notes that iodine deficiency is the most common cause of preventable intellectual disability in the world. Mild-to-moderate insufficiency during pregnancy, documented in US populations by NHANES surveys, may subtly affect fetal brain development even without producing the dramatic signs of severe deficiency.'
+      },
+      {
+        question: 'What foods are highest in iodine during pregnancy?',
+        answer: 'The most reliable dietary iodine sources are dairy products (milk, yoghurt, cheese), seafood (particularly cod, tuna, and shrimp), eggs, and iodized salt. Dairy products are particularly notable — the NIH Office of Dietary Supplements identifies pregnant women who do not consume dairy as being at particular risk of iodine insufficiency. Seaweed contains iodine but in highly variable amounts that make it unreliable for meeting consistent daily targets, and excessive seaweed intake can deliver iodine levels that are too high. If dairy and seafood are limited or absent from your diet, the gap between what you are eating and what pregnancy requires is likely meaningful.'
+      }
+    ],
+    content: `
+You made the switch to sea salt or Himalayan salt months ago — it tastes better, feels less processed, looks better on the counter. And your prenatal vitamin covers everything important anyway. Both of these assumptions feel reasonable. But the NIH Office of Dietary Supplements has tracked a consistent finding across multiple US population surveys: a substantial proportion of pregnant women in the United States have insufficient iodine levels. The combination of non-iodized specialty salts and prenatal vitamins that often do not contain iodine at all is creating a quiet nutritional gap at exactly the stage of development when iodine matters most.
+
+## What Iodine Does and Why Pregnancy Demands So Much of It
+
+**Iodine** is a trace mineral with one specific and irreplaceable function: it is the raw material from which the thyroid gland manufactures thyroid hormones — thyroxine (T4) and triiodothyronine (T3). Without adequate iodine, the thyroid cannot produce these hormones in sufficient quantities, and thyroid hormone production falls regardless of how otherwise healthy a person is.
+
+During pregnancy, the consequences of this are direct and serious. According to the NIH Office of Dietary Supplements, thyroid hormones are required for proper skeletal and central nervous system development in fetuses and infants. The fetal brain depends on maternal thyroid hormones — which depend on maternal iodine intake — for the formation and organisation of neural circuits during the first trimester, before the fetal thyroid is even functional. After the fetal thyroid begins operating, it too requires a continuous supply of iodine from the mother's circulation to produce its own hormones.
+
+The practical result is that iodine demand increases substantially during pregnancy. According to the NIH Office of Dietary Supplements consumer fact sheet, women need approximately 50 percent more iodine when pregnant than at other times in their lives — because they are, in effect, supplying iodine for two thyroid glands simultaneously.
+
+The RDA for iodine during pregnancy is **220 mcg per day**, as confirmed by the NIH Office of Dietary Supplements Pregnancy Health Professional Fact Sheet. This is meaningfully higher than the non-pregnant adult RDA of 150 mcg per day, and most pregnant women do not consistently reach it.
+
+## The Iodine Gap: Why It Exists Now More Than Before
+
+Iodine deficiency in wealthy countries sounds like a problem that was solved decades ago. The iodization of table salt, introduced as a public health measure in the early 20th century, did dramatically reduce severe iodine deficiency disorders in the United States. But the picture is more complicated than this history suggests, and two specific changes in how people eat and supplement have quietly reopened the gap.
+
+**Change 1: The specialty salt shift.** Over the past decade, sea salt, Himalayan pink salt, and kosher salt have moved from specialty use to mainstream kitchen staples, driven by genuine differences in texture and flavour as well as a perception that they are more natural or less processed than iodized table salt. These salts are not iodized unless the label specifically states otherwise. The NIH Office of Dietary Supplements consumer iodine fact sheet notes this directly: salt that is not iodized, including many sea salts, is widely available and provides no iodine. If you have replaced iodized table salt with a specialty alternative and are cooking with it daily, you have removed a traditional background iodine source from your diet without replacing it.
+
+**Change 2: The prenatal vitamin coverage assumption.** Most pregnant women reasonably assume that their prenatal vitamin covers the nutritional bases they cannot meet from food. For many nutrients this assumption is correct — iron, folate, calcium, and most B vitamins are reliably present in standard prenatal formulations. But the NIH Office of Dietary Supplements has documented that only about half of prenatal multivitamins sold in the United States contain iodine at all. According to NIH ODS iodine initiative data, while 72 percent of pregnant women used a dietary supplement of some kind, only about 18 percent used one that contained iodine. This means that for most pregnant women taking a prenatal vitamin, iodine is not being covered.
+
+The result of both changes operating together: a woman who uses a specialty salt and a prenatal vitamin without iodine may be relying entirely on the variable iodine content of her food — dairy, seafood, eggs — to meet a requirement that has increased by 50 percent compared to her non-pregnant baseline.
+
+## What the Population Data Actually Shows
+
+The NIH has tracked US population iodine status through the National Health and Nutrition Examination Survey (NHANES). The findings for pregnant women are consistently concerning.
+
+According to the NIH ODS Iodine Health Professional Fact Sheet, median urinary iodine concentrations — the standard measure of iodine status — for pregnant women in NHANES surveys fell below the WHO sufficiency threshold of 150 mcg/L in multiple survey periods between 2001 and 2014. The WHO defines a median urinary iodine concentration below 150 mcg/L as insufficient for pregnancy.
+
+A 2023 analysis, referenced in the NIH ODS Director's March 2024 message, examined 750 pregnant women in the United States and found that 41 percent had total iodine intake from diet and supplements below the estimated average requirement — and 48 percent had urinary iodine concentrations below the sufficient threshold. These are not small proportions. Nearly half of pregnant women in a well-designed recent study were below the level the WHO considers adequate for pregnancy.
+
+This is not a crisis-level deficiency of the kind that causes cretinism. Severe iodine deficiency disorders are uncommon in the United States. But mild-to-moderate iodine insufficiency — the kind most US pregnant women are experiencing — is associated with subtler effects on fetal neurodevelopment that are harder to observe but no less real. The NIH ODS notes that research has found lower verbal IQ scores in children of mothers with lower iodine status in their first trimester, and other studies have found associations with language development. These are not hypothetical risks. They are the documented consequences of the intake levels that current US survey data suggests many pregnant women have.
+
+## The Highest-Risk Groups
+
+While inadequate iodine affects a broad range of pregnant women, the NIH Office of Dietary Supplements identifies specific groups whose risk is meaningfully higher:
+
+**Women who do not consume dairy products.** The NIH ODS Health Professional Iodine Fact Sheet specifically identifies pregnant women who do not consume dairy as being at particular risk of iodine insufficiency. Dairy products — milk, yoghurt, cheese — are one of the most consistent dietary iodine sources in the US food supply, and their absence significantly reduces background iodine intake.
+
+**Women following vegetarian or vegan diets.** Plant foods are generally poor iodine sources. The NIH ODS Pregnancy Fact Sheet notes that people following vegetarian or vegan diets are at higher risk of having insufficient dietary iodine intake. Without dairy, seafood, or eggs — the three most reliable food sources — plant-based diets require either iodine-containing supplementation or careful use of iodized salt to approach adequacy.
+
+**Women who have replaced iodized salt with non-iodized alternatives.** As described above, this removes one of the most historically consistent background contributors to iodine intake.
+
+**Women who take prenatal vitamins without iodine.** Given that approximately half of prenatal formulations contain no iodine, this group is larger than most women realise.
+
+A woman who fits more than one of these categories — for example, a vegan who uses Himalayan salt and takes a prenatal vitamin without iodine — may be getting very little iodine at all during pregnancy. Bringing this specific question to your provider is worth doing.
+
+## Reliable Food Sources of Iodine in Pregnancy
+
+The NIH Office of Dietary Supplements Iodine Consumer Fact Sheet identifies the following as the most reliable dietary sources:
+
+**Seafood** — fish and shellfish, particularly cod and tuna, are among the highest iodine food sources. Seafood safety during pregnancy is a separate conversation (see our post on [safe fish choices during pregnancy](/blog/pregnancy-nutrition-guide-what-to-eat-each-trimester) for guidance on mercury considerations), but within safe options, regular fish consumption contributes substantially to iodine intake.
+
+**Dairy products** — milk, yoghurt, and cheese are practical, consistent iodine sources and among the most important for women who eat them regularly. A single cup of milk provides a meaningful contribution toward the 220 mcg daily target.
+
+**Eggs** — contain iodine in moderate amounts and are broadly tolerated in pregnancy, including during nausea-prone periods.
+
+**Iodized table salt** — if you use it consistently in home cooking, it contributes to iodine intake. This is worth being explicit about: if you have switched entirely to sea salt or Himalayan salt, you are not getting iodine from your salt, and this matters if your other dietary sources are also limited.
+
+**Seaweed** is technically a high-iodine food but is not recommended as a reliable iodine source during pregnancy. The NIH ODS notes that iodine concentrations in commercially available seaweed vary enormously — from very low to extremely high — making it impossible to use as a consistent source, and excessive iodine intake from seaweed can itself cause thyroid dysfunction. Seaweed-derived kelp supplements carry the same risk. Do not use seaweed or kelp as your primary iodine strategy without discussing it with your provider.
+
+## What Many Professional Organisations Recommend
+
+The NIH Office of Dietary Supplements Pregnancy Health Professional Fact Sheet notes that many professional organisations recommend taking iodine supplements before and during pregnancy, typically at a daily dose of 150 mcg. This supplementation dose is intended to sit alongside dietary iodine intake to ensure that the total reaches the 220 mcg RDA.
+
+Whether this applies to you specifically — whether you need supplemental iodine on top of your prenatal vitamin and diet — depends on what your prenatal vitamin contains, what your regular dietary intake looks like, and your individual circumstances. This is a conversation to have with your provider, not a decision to make from general guidance. What this post can do is ensure you know the question is worth asking, and that the answer is not automatically covered by whatever prenatal you are currently taking.
+
+## The Upper Limit: Why More Is Not Better
+
+Iodine is not a nutrient where taking more is harmless. The NIH ODS Consumer Iodine Fact Sheet notes that getting too much iodine can cause the same symptoms as too little — including goitre (enlarged thyroid gland) — and that high iodine intakes can cause thyroid inflammation. The tolerable upper intake level for iodine during pregnancy is 1,100 mcg per day for women aged 19 and older, according to the NIH ODS Pregnancy Health Professional Fact Sheet. This is considerably higher than the recommended intake, but it does mean that supplementing with iodine requires attention to your total intake across diet and all supplements — not just adding an arbitrary high dose.
+
+This is why the question of supplementation is one for your provider. The goal is reaching the 220 mcg RDA, not exceeding it substantially, and achieving that goal through an informed combination of dietary sources and supplementation where needed.
+
+## When to See Your Doctor
+
+Iodine insufficiency does not produce obvious, identifiable symptoms in its mild-to-moderate form. This is precisely why it goes unaddressed. Seek a specific conversation with your provider if:
+
+- **Your prenatal vitamin does not contain iodine** — check the label and raise this if it is absent, particularly if your dietary iodine sources are limited
+- **You follow a vegetarian or vegan diet** and have not specifically reviewed your iodine intake
+- **You do not eat dairy or seafood regularly** and rely on non-iodized salt — this combination creates a meaningful risk of sustained iodine insufficiency
+- **You are considering adding a separate iodine supplement** — the form, dose, and whether it is needed are questions for your provider, as supplementing without knowing your total intake could push you above appropriate levels
+- **You have a thyroid condition** — iodine metabolism intersects directly with thyroid function, and the appropriate iodine intake in the context of thyroid disease requires specific medical guidance
+
+## Related Tools on SageNest
+
+Iodine intake matters most in the first trimester, when fetal brain structures are forming. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) walks through what is developing at each stage so you have a clear picture of the developmental timeline. For a full view of your nutritional and weight trajectory across pregnancy, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) provides a personalised range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+Iodine is essential for fetal thyroid hormone production and brain development, and pregnancy increases the requirement substantially — to 220 mcg per day. Two common choices that feel unrelated to nutrition — switching to sea salt and taking a prenatal vitamin — are quietly undermining iodine intake for a large proportion of pregnant women, because sea salts are typically not iodized and only about half of prenatal vitamins contain iodine. NIH data from a 2023 analysis found that roughly 41 to 48 percent of pregnant women fall below adequate iodine thresholds. Check your prenatal vitamin label, consider whether your dietary sources — dairy, seafood, eggs, iodized salt — are genuinely covering the gap, and raise the question explicitly at your next provider appointment.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **NIH Office of Dietary Supplements** — [Iodine — Health Professional Fact Sheet](https://ods.od.nih.gov/factsheets/Iodine-HealthProfessional/)
+- **NIH Office of Dietary Supplements** — [Iodine — Consumer Fact Sheet](https://ods.od.nih.gov/factsheets/Iodine-Consumer/)
+- **NIH Office of Dietary Supplements** — [Dietary Supplements and Life Stages: Pregnancy — Health Professional Fact Sheet](https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional/)
+- **NIH Office of Dietary Supplements** — [ODS Director's Message: Iodine Initiative](https://ods.od.nih.gov/About/DirectorsMessageMar2024.aspx)
+- **ACOG** — [Nutrition During Pregnancy](https://www.acog.org/womens-health/faqs/healthy-eating-during-pregnancy)
+
+**Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.**
+`,
+  },
+  {
     slug: 'choline-pregnancy-prenatal-vitamins-miss',
     title: 'Choline in Pregnancy: The Nutrient Your Prenatal Vitamin Probably Skips',
     description: 'ACOG confirms choline is missing from most prenatal vitamins. Learn what it does for your baby\'s brain development and which foods actually supply enough.',
