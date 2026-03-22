@@ -627,6 +627,7 @@ If a specific number, threshold, or range does not appear verbatim on the ACOG, 
  - pcos-ovulation-tracking-irregular-cycles
  - iron-supplements-pregnancy-side-effects
  - choline-pregnancy-prenatal-vitamins-miss
+ - iodine-pregnancy-sea-salt-prenatal-gap
 
 
 ## Section 19: Source Verification, Citation, and the Self-Check Protocol
