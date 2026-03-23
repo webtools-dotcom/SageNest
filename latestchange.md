@@ -1,3 +1,9 @@
+## 2026-03-23 (Added new blog post: fish-pregnancy-what-to-eat-avoid-mercury)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `fish-pregnancy-what-to-eat-avoid-mercury`, including the provided title, description, reading time, FAQ entries, default image, full long-form content, and the required `lastReviewed` / `updatedAt` metadata used by the existing blog schema.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/fish-pregnancy-what-to-eat-avoid-mercury.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested fish-in-pregnancy educational article while keeping SageNest's canonical blog source, static blog output, redirects, and sitemap synchronized.
+
 ## 2026-03-22 (Added new blog post: iodine-pregnancy-sea-salt-prenatal-gap)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `iodine-pregnancy-sea-salt-prenatal-gap`, including the provided title, description, reading time, FAQ entries, default image, and full long-form content, plus the required `lastReviewed` and `updatedAt` metadata used by the existing blog schema.

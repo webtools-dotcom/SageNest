@@ -12,6 +12,148 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'fish-pregnancy-what-to-eat-avoid-mercury',
+    title: 'Fish in Pregnancy: The FDA Guide Most Pregnant Women Get Wrong',
+    description: 'Most pregnant women avoid fish out of fear. FDA data shows half eat under 2 oz weekly when 8–12 oz is recommended. Learn what is safe, what to avoid, and why.',
+    readingTime: '10 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-23',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    faq: [
+      {
+        question: 'Which fish are completely safe to eat during pregnancy?',
+        answer: 'The FDA and EPA categorise dozens of fish as "Best Choices" — the safest options for pregnant women. These include salmon, sardines, shrimp, tilapia, cod, anchovies, catfish, clams, crab, crawfish, flounder, haddock, pollock, scallops, sole, squid, and trout, among others. Pregnant women can eat 2 to 3 servings (8 to 12 oz total) from this list per week. ACOG is explicit: you do not have to avoid all fish during pregnancy, and eating at least 8 to 12 oz of low-mercury fish weekly is actively encouraged for fetal development.'
+      },
+      {
+        question: 'Which fish should you never eat during pregnancy?',
+        answer: 'ACOG and the FDA are consistent: avoid bigeye tuna, king mackerel, marlin, orange roughy, shark, swordfish, and tilefish entirely during pregnancy. These fish have the highest mercury concentrations and have no safe serving level during pregnancy. Albacore (white) tuna is not on the avoid list but must be limited to 6 oz per week. Canned light tuna is a separate product with lower mercury and falls in the "Best Choices" category. Raw or undercooked fish — including raw sushi — should also be avoided, though cooked sushi is fine according to ACOG.'
+      },
+      {
+        question: 'Is canned tuna safe during pregnancy?',
+        answer: 'It depends on the type. Canned light tuna — which typically contains skipjack tuna — is on the FDA\'s "Best Choices" list and can be eaten as part of the 8 to 12 oz weekly allowance. Canned white tuna, also labelled albacore, has higher mercury than canned light and is limited to 6 oz per week. Canned bigeye tuna is in the "Choices to Avoid" category and should not be eaten during pregnancy. Check the label: "light" versus "white" or "albacore" is the key distinction that determines which category applies.'
+      },
+      {
+        question: 'Can eating too little fish during pregnancy harm your baby?',
+        answer: 'The FDA notes that moderate evidence shows fish intake during pregnancy can help a baby\'s cognitive development. Fish provides omega-3 fatty acids, protein, iodine, choline, iron, and zinc — nutrients that support fetal brain and immune system development that are harder to obtain from plant sources alone. The FDA analysed consumption data and found that 50 percent of pregnant women surveyed ate fewer than 2 oz of fish per week, far below the 8 to 12 oz recommendation. Avoiding fish entirely out of mercury fear — particularly when the fish being avoided are low-mercury varieties — deprives the fetus of these developmental nutrients unnecessarily.'
+      },
+      {
+        question: 'Is sushi safe during pregnancy?',
+        answer: 'Cooked sushi is safe during pregnancy according to ACOG. Raw fish sushi carries risks of bacterial and parasitic infection that are unrelated to mercury, and ACOG advises avoiding raw fish during pregnancy for this reason. Many sushi options — including cooked prawn, crab, scallop, and eel — are fully cooked and fall within the safe fish categories. Salmon sushi made with properly cooked salmon is fine. Spicy tuna rolls using raw tuna are the combination most likely to be problematic — both raw and using a species with higher mercury potential depending on the tuna type. When in doubt at a restaurant, ask whether fish is cooked.'
+      }
+    ],
+    content: `
+You stopped eating salmon the week you found out you were pregnant. Canned tuna went in the same mental category — fish means mercury means danger. You have been careful. And you have almost certainly been more careful than necessary, avoiding fish that the FDA and ACOG actively want you to be eating. An FDA analysis found that half of pregnant women surveyed ate fewer than 2 oz of fish per week — when the official recommendation is 8 to 12 oz. The fear of mercury is real but has been applied far too broadly, and the result is that many pregnant women are missing out on nutrients that directly support fetal brain development.
+
+## Why Fish Matters During Pregnancy
+
+Fish is one of the most nutritionally complete foods available during pregnancy, providing a combination of nutrients that are difficult to replace from plant sources alone.
+
+According to the FDA, fish provides key nutrients that support fetal brain development: **omega-3 and omega-6 fatty acids** for neural circuit formation, **iron and zinc** to support the developing immune system, **iodine** for thyroid hormone production and brain organisation, **choline** for spinal cord development, **vitamin B12**, **vitamin D**, and **protein**. The FDA states that moderate evidence shows fish intake during pregnancy can help a baby\'s cognitive development — and that taking omega-3 supplements does not replicate the full nutritional profile that eating fish provides, because supplements do not contain the protein, vitamins, and minerals that fish delivers alongside its fatty acids.
+
+ACOG is unambiguous: you do not have to avoid all fish during pregnancy, and you should be eating at least 8 to 12 oz of low-mercury fish per week. This is not a maximum — it is a minimum target that most pregnant women are not reaching.
+
+The mercury concern is real but species-specific. The risk comes from methylmercury accumulating in large, long-lived predatory fish that consume smaller fish over years. The dozens of smaller, shorter-lived species that make up the majority of commonly available fish do not accumulate mercury in meaningful amounts. The guidance from both the FDA and ACOG is not "avoid fish" — it is "avoid these specific high-mercury species and eat the rest."
+
+## The Three Categories: Best Choices, Good Choices, Choices to Avoid
+
+The FDA and EPA chart sorts more than 60 types of fish into three categories based on mercury levels. Understanding which category your usual fish falls into is the most practical outcome of reading this post.
+
+### Best Choices — Eat 2 to 3 Servings Per Week
+
+These are the lowest-mercury options. A serving is 4 oz for pregnant women, making the weekly target 8 to 12 oz total. Fish in this category includes: salmon, sardines, shrimp, tilapia, cod, anchovies, catfish, clams, crab, crawfish, flounder, haddock, mullet, oysters (cooked), pollock, scallops, sole, squid, trout, and whiting — among others on the full FDA list.
+
+Salmon and sardines deserve specific mention because they are both high in omega-3 fatty acids and among the lowest-mercury options on the entire list. Tinned sardines, eaten with bones, also provide a meaningful calcium contribution. For women who find fresh fish expensive or difficult to prepare, canned salmon and canned light tuna are practical, widely available, affordable options that fall in this category.
+
+**A note on oysters:** Raw oysters carry a risk of bacterial infection unrelated to mercury and should be avoided during pregnancy. Cooked oysters are in the Best Choices category.
+
+### Good Choices — Eat 1 Serving Per Week
+
+These fish have higher mercury than the Best Choices list but are still considered safe in smaller amounts — one 4-oz serving per week, rather than two to three. This category includes albacore (white) tuna, halibut, mahi-mahi, snapper, grouper, carp, and yellowfin tuna, among others.
+
+**Albacore tuna specifically:** This is where the canned tuna confusion originates. Canned light tuna (typically skipjack) is in the Best Choices category. Canned white tuna — labelled albacore — is a different product with higher mercury, limited to 6 oz per week. ACOG's nutrition guidance specifies this limit explicitly. The distinction matters when reading labels at the supermarket: "light" means Best Choices; "white" or "albacore" means 6 oz limit.
+
+### Choices to Avoid — Do Not Eat During Pregnancy
+
+This is the list that should drive all avoidance during pregnancy. ACOG names these explicitly: **bigeye tuna, king mackerel, marlin, orange roughy, shark, swordfish, and tilefish**. These fish have the highest mercury concentrations of any commonly consumed species and have no safe serving level during pregnancy.
+
+Bigeye tuna is important to name separately because it appears in some sushi and is sometimes mislabelled or unlabelled at restaurants. It is distinct from the yellowfin tuna used in many tuna steaks (which is in the Good Choices category) and from skipjack (canned light). If you are ordering tuna sushi, asking which species is used is a reasonable question.
+
+King mackerel is also worth emphasising — it is not the same as Atlantic mackerel, which is a small, oily fish in the Best Choices category and an excellent source of omega-3s. The distinction matters at fishmongers and when reading menus.
+
+## Raw Fish and Food Safety: A Separate Concern From Mercury
+
+Raw fish carries bacterial and parasitic risks that are unrelated to mercury and are a second, independent reason for guidance during pregnancy.
+
+ACOG advises avoiding all raw and undercooked seafood during pregnancy. The risks include infection from bacteria such as Listeria and parasites that can survive in raw fish and pose harm to the fetus that they would not in a non-pregnant adult. This applies to raw oysters, rare or seared fish, and most traditional sushi involving raw fish.
+
+**Cooked sushi is safe during pregnancy**, according to ACOG. Many sushi menus include options that are fully cooked — shrimp tempura, crab (often surimi/imitation crab which is cooked pollock), scallop, eel (unagi), and fully cooked salmon. These fall within the safe fish categories as long as the species itself is not on the avoid list. Vegetable rolls and California rolls made with cooked crab or imitation crab are typically fine. The concern is specifically raw fish, not sushi as a category.
+
+## How to Reach 8 to 12 Oz Per Week in Practice
+
+For women who have been largely avoiding fish during pregnancy, reaching 8 to 12 oz per week may feel like a significant shift. These practical approaches make it achievable without requiring daily cooking:
+
+A single tin of canned light tuna (typically around 5 oz drained) covers roughly half the weekly minimum in one meal. Two tins across the week satisfies the 8 oz floor. Combined with one serving of salmon — whether fresh, canned, or smoked and cooked — the weekly target is reached with three simple meals or additions to existing meals.
+
+Frozen fish fillets (salmon, cod, tilapia, pollock) are typically cheaper than fresh and cook in under 15 minutes. They are nutritionally equivalent to fresh for the nutrients that matter in pregnancy.
+
+Sardines on toast or crackers is a practical, nutrient-dense, zero-preparation option that many women overlook. A tin of sardines provides omega-3s, calcium (from the bones), iodine, and protein in a single serving.
+
+Shellfish — shrimp, scallops, clams — are all in the Best Choices category and are broadly available fresh or frozen. Cooked shrimp can be added to pasta, rice, or salads with no additional preparation.
+
+If first-trimester nausea makes fish difficult to tolerate, cold preparations — chilled salmon, tuna salad with light mayo, tinned sardines — are often better tolerated than hot fish, which has a stronger smell. Many women find nausea tolerance for fish improves significantly after the first trimester, which is also when the second-trimester appetite return makes eating more variety easier. Our [morning sickness end date estimator](/morning-sickness-end-date-estimator) can give you a sense of when nausea is likely to ease so you can plan when to reintroduce foods you are currently avoiding.
+
+## Fish Caught Locally: A Different Consideration
+
+The FDA guidance specifically addresses fish caught by family or friends from local rivers, lakes, and coastal areas. Unlike commercially sold fish, locally caught fish may contain contaminants from local industrial sources — not just mercury — that commercial fisheries are tested for but local waterways are not.
+
+The FDA and ACOG both advise checking local advisories for fish caught in local waters. If no advisory exists, the recommendation is to limit locally caught fish to one serving per week and not eat any other fish that week. This is a precautionary approach for unknowns, not a statement that locally caught fish is dangerous — it is simply a separate category that requires a different check than commercial fish.
+
+## Common Questions About Fish in Pregnancy
+
+### Can I eat smoked salmon during pregnancy?
+
+Cold-smoked salmon — the kind used in lox and on bagels — is not fully cooked. The smoking process does not eliminate Listeria in the way that heat cooking does, which is why ACOG's guidance on raw and undercooked seafood applies to cold-smoked fish as well. Hot-smoked salmon, which reaches temperatures that fully cook the fish, is safe. The label or preparation method is the relevant detail: if it is sold from the refrigerated section as a ready-to-eat product that has not been heat-cooked, treat it as raw for food safety purposes.
+
+### Is fish oil supplement a substitute for eating fish?
+
+The FDA states explicitly that omega-3 supplements do not replicate the full nutritional profile of fish. Fish provides protein, omega-6 fatty acids, vitamins, minerals, iodine, and choline alongside omega-3s — and a supplement captures only one component. The research on the specific benefits of omega-3 supplements (as opposed to eating fish) is still underway. This does not mean supplements are harmful — it means eating fish provides a more complete nutritional package than supplementing alone, and the two are not equivalent substitutes.
+
+### What if I genuinely dislike fish?
+
+The nutritional case for fish during pregnancy is strong, but it is not the only path to the nutrients it provides. Discuss alternatives with your provider or a registered dietitian — specifically what to prioritise if fish is off the table. Algae-based DHA/omega-3 supplements, eggs, dairy, and fortified foods can partially address specific gaps. A provider or dietitian who knows your full dietary picture can help you identify where the significant shortfalls are and how to address them.
+
+## When to Seek Provider Guidance
+
+Fish consumption during pregnancy rarely requires urgent medical attention, but speak with your provider if:
+
+- **You have eaten a fish on the Choices to Avoid list** — particularly on multiple occasions — and want to understand any implications for your specific situation
+- **You rely on locally caught fish as a significant dietary protein source** and are unsure whether local advisories exist for your area
+- **You have thyroid disease** — iodine and certain compounds in fish interact with thyroid function, and your provider may have specific guidance for your situation
+- **You are following a diet with no animal products** and are concerned about omega-3 and iodine gaps — a registered dietitian can assess your intake and recommend an appropriate supplementation approach
+
+## Related Tools on SageNest
+
+Fish intake is one component of overall pregnancy nutrition that shifts across trimesters. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks what is developing at each stage so you can understand why particular nutrients — including those fish provides — matter more at specific points in fetal development. For your overall weight and nutritional trajectory, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives a personalised target range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+The guidance on fish in pregnancy is not "avoid fish" — it is "avoid seven high-mercury species and eat 8 to 12 oz of everything else per week." An FDA analysis found that half of pregnant women ate fewer than 2 oz of fish weekly, meaning most are significantly under the recommended floor, not over it. Salmon, sardines, shrimp, cod, tilapia, and canned light tuna are among dozens of species the FDA categorises as Best Choices. Bigeye tuna, shark, swordfish, king mackerel, marlin, orange roughy, and tilefish are the species to avoid entirely. Everything else — consumed cooked, in reasonable weekly quantities — supports fetal development rather than threatening it.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **FDA** — [Advice About Eating Fish](https://www.fda.gov/food/consumers/advice-about-eating-fish)
+- **FDA** — [Questions & Answers: FDA/EPA Advice About Eating Fish](https://www.fda.gov/food/consumers/questions-answers-fdaepa-advice-about-eating-fish-those-who-might-become-or-are-pregnant-or)
+- **NIH** — [Nutrition During Pregnancy](https://pubmed.ncbi.nlm.nih.gov/7904962/)
+- **ACOG** — [Reducing Risks of Birth Defects](https://www.acog.org/womens-health/faqs/reducing-risks-of-birth-defects)
+- **ACOG** — [Healthy Eating During Pregnancy](https://www.acog.org/womens-health/faqs/healthy-eating-during-pregnancy)
+
+**Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.**
+`,
+  },
+  {
     slug: 'iodine-pregnancy-sea-salt-prenatal-gap',
     title: 'Iodine in Pregnancy: The Silent Gap Sea Salt and Prenatal Vitamins Create',
     description: 'Nearly half of pregnant women have insufficient iodine — and the switch to sea salt plus prenatal vitamins without iodine is why. Learn what iodine does and how to close the gap.',
