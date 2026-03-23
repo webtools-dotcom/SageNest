@@ -482,8 +482,9 @@ function buildPostHtml(post, styleBlock) {
   const descEscaped = fullHtmlEscape(post.description);
   const titleEscaped = fullHtmlEscape(post.title);
   const canonicalUrl = `https://sagenesthealth.com/blog/${post.slug}`;
-  const ogImage = post.imageUrl
-    ? `<meta property="og:image" content="${post.imageUrl}" />\n    <meta name="twitter:image" content="${post.imageUrl}" />`
+  const ogImageSrc = post.ogImageUrl || post.imageUrl;
+  const ogImage = ogImageSrc
+    ? `<meta property="og:image" content="${ogImageSrc}" />\n    <meta name="twitter:image" content="${ogImageSrc}" />`
     : '';
 
   return `<!doctype html>
@@ -612,7 +613,12 @@ for (const post of posts) {
   const dir = join(ROOT, 'public', 'blog-static');
   mkdirSync(dir, { recursive: true });
   const resolvedImageUrl = await resolvePostImage(post, imageConfig, imageErrors, pollinationsState);
-  const html = buildPostHtml({ ...post, imageUrl: resolvedImageUrl }, styleBlock);
+  // Always use Cloudinary URL for og:image if cloudName is available.
+  // Falls back to resolvedImageUrl only if cloudName is missing entirely.
+  const ogImageUrl = imageConfig.cloudName
+    ? buildCloudinaryImageUrl(imageConfig.cloudName, post.slug)
+    : resolvedImageUrl;
+  const html = buildPostHtml({ ...post, imageUrl: resolvedImageUrl, ogImageUrl }, styleBlock);
   writeFileSync(join(dir, `${post.slug}.html`), html, 'utf8');
   console.log(`  ✓ public/blog-static/${post.slug}.html`);
 }
