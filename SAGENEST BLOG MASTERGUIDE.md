@@ -8,11 +8,11 @@
 
 Every SageNest blog post exists to do three things simultaneously:
 
-1. **Rank on Google** by targeting real questions mothers search for
+1. **Stop the scroll on Google Discover** by leading with titles and hooks that speak directly to the emotional state of a pregnant woman in that exact moment
 2. **Build trust** by being more accurate, thorough, and honest than competitor articles
 3. **Drive tool usage** by naturally connecting information to SageNest's calculators
 
-A post that ranks but doesn't convert is wasted. A post that converts but doesn't rank is invisible. Both goals must be served in every piece.
+SageNest has shifted from a search-ranking model to a Google Discover model. Discover is a feed — not a search results page. A woman does not type a query to find our content. She is scrolling and our title and image must make her stop within one second. A post that does not stop the scroll will never be read, regardless of how good the content is. A post that stops the scroll but does not deliver on its promise will be closed in ten seconds and will be penalised by Discover's engagement signals. Both the scroll-stop and the delivery must be present in every piece.
 
 ---
 
@@ -91,13 +91,11 @@ export const blogPosts: BlogPost[] = [
 - Examples: `morning-sickness-remedies-first-trimester`, `ovulation-signs-irregular-cycle`
 
 ### Title
-- Format: `[Primary Keyword]: [Benefit or Promise]`
-- 55–65 characters ideal for Google display
-- Must answer "why should I click this?" in the headline itself
-- Examples of strong titles:
-  - `Morning Sickness Remedies: What Actually Works (and What Doesn't)`
-  - `Ovulation Symptoms: The 7 Signs Your Body Is About to Release an Egg`
-  - `Prenatal Vitamins: What Every Pregnant Woman Needs and What's Overhyped`
+- **Do not use the `[Keyword]: [Benefit]` format.** That is an SEO search-results format. On Google Discover, it reads like a textbook chapter heading and does not stop a scroll.
+- Titles are written for a woman scrolling a feed on her phone, not for a crawler reading a page. The title must create an immediate emotional reaction — recognition, curiosity, or a mild surprise — in under two seconds.
+- Keep the core emotional hook within the first 60 characters. The Discover feed on most Android screens truncates titles around 70 characters. Front-load the hook.
+- Total title length: up to 90 characters is acceptable if the first 60 carry the hook.
+- See **Section 20 — Discover Title Strategy** for the full formula, templates, and examples. That section is now the primary title rule. The slug and description rules in this section remain unchanged.
 
 ### Description (meta)
 - 140–160 characters
@@ -106,10 +104,9 @@ export const blogPosts: BlogPost[] = [
 - Example: `Learn which morning sickness remedies are backed by clinical evidence, which are myths, and when symptoms warrant a call to your provider.`
 
 ### Keyword targeting
-- One primary keyword per post (the main search term)
-- 3–5 secondary keywords woven naturally into headings and body
-- Do not stuff — write for the reader, not the crawler
-- Target long-tail phrases where possible (see README keyword list for inspiration)
+- Write for the reader, not the crawler. Discover does not surface content based on keyword density in headings — it surfaces content based on topic relevance and user engagement signals.
+- Choose one core topic per post and cover it completely and honestly. Natural language that fully addresses the topic will surface correctly without keyword engineering.
+- Do not write headings to contain keywords. Write headings to tell the reader exactly what the next section answers for her.
 
 ### Internal linking (mandatory)
 Every post must link to SageNest tools using natural anchor text:
@@ -135,7 +132,7 @@ Use this structure in order. Do not skip sections. Heading text will vary per po
 ```
 [HOOK — 2–3 sentences, no heading]
 
-## What Is [Topic]?
+## Why This Happens (or: What's Actually Going On)
 
 ## Why It Matters During Pregnancy (or: Why [Topic] Affects Your Baby/Body)
 
@@ -164,6 +161,9 @@ Use this structure in order. Do not skip sections. Heading text will vary per po
 ---
 *This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*
 ```
+
+### First Heading Rule for Discover
+The first heading after the hook must not be a definition. A reader who clicked from the Discover feed already knows what the topic is — she clicked because the title spoke to her experience. Opening with "What Is Round Ligament Pain?" after a hook that just described the exact sharp shooting pain she felt is a trust-breaking mismatch. The first heading should orient her inside the experience — why it is happening, what her body is doing, what this means for her — not define the term she already searched for. The heading text will vary per post. The rule is: never define first, always explain or orient first.
 
 ### Minimum length
 - 1,200 words minimum. Most posts should be 1,500–2,500 words.
@@ -295,6 +295,26 @@ Example of the formula applied:
 What this structure does: the reader who came in believing BBT charting helps her time conception is immediately in a state of needing to understand what she should be doing instead. That need drives the entire rest of the article.
 
 ---
+
+### 7.3b Title-Hook Continuity Rule
+
+The title makes an emotional promise. The hook must keep that promise in its first sentence. This is not optional — it is the structural rule that prevents bounces from Discover traffic.
+
+When a reader taps a post in the Discover feed, she arrives having been sold on a specific emotional experience by the title. If the hook opens with a different energy, a definition, or a scene that does not match what the title implied, her brain registers a mismatch and she closes the tab. This bounce is logged as a negative engagement signal and reduces how often Discover surfaces that post.
+
+The continuity test: read the title, then read the first sentence of the hook. Does the first sentence feel like the natural next line after the title — like the conversation the title started is continuing? If yes, the continuity is intact. If the first sentence could belong to a different article on the same topic, rewrite it.
+
+**Examples:**
+
+Title: *"Why You Can't Sleep at 32 Weeks (And What Actually Helps)"*
+✅ Continuous hook opening: *"It is 2am and you are more exhausted than you have ever been in your life, and yet here you are — completely awake, unable to find a position, waiting for a baby who has decided this is the hour to practise gymnastics."*
+❌ Broken continuity: *"Sleep disturbances are extremely common in the third trimester of pregnancy, affecting a significant proportion of women."*
+
+Title: *"The Real Reason Your BBT Chart Looks Flat"*
+✅ Continuous hook opening: *"You have been measuring your temperature every morning before you move, before you speak, before you even open your eyes — and the chart still shows no rise."*
+❌ Broken continuity: *"Basal body temperature charting is a method of tracking ovulation by measuring your resting body temperature each morning."*
+
+The failure mode is always the same: the writer switches from the reader's emotional experience (which the title addressed) to a clinical explanation (which no title promised). Write the hook in the same register as the title. Stay in the reader's experience until she has been fully placed in it — then explain.
 
 ### 7.4 What Every Hook Must Accomplish in Three Sentences or Fewer
 
@@ -478,8 +498,10 @@ Use these to pick the next post. Rotate through categories to build topical auth
 
 Before picking any topic from the categories below, apply these three filters in order. A topic that fails any filter must be reworked before writing begins.
 
-**Rule 1 — Competition Check**
-Ask: is this keyword's first page of Google results dominated by sites with Domain Authority 70 or above — Healthline, Verywell Health, Mayo Clinic, WebMD, BabyCenter? If yes, do not target the keyword as-is. Find the niche angle within it — a specific scenario, trimester, condition, or population that the big sites have not written a dedicated post for. A new site cannot outrank DA 80 competitors on broad terms. It can outrank them on terms they have not bothered to target specifically.
+**Rule 1 — Discover Relevance Check**
+Ask: would a pregnant woman stop scrolling if she saw this title in her Discover feed right now? Discover does not surface content based on domain authority — it surfaces content based on how relevant and engaging it is for a specific user. This means a new site with strong engagement signals can reach the same feed as Healthline. The filter is not "can we outrank them?" — it is "does this topic create an immediate emotional reaction in the reader we are writing for?"
+
+Apply the specificity test second: is there a specific scenario, trimester, symptom variant, or emotional moment within this topic that is more vivid and more stoppable than the generic version? That specific version is always the better Discover topic. Not because it avoids competition, but because it speaks to a more precise emotional state — and precision is what stops a scroll.
 
 **Rule 2 — Scenario Specificity Test for Titles**
 Every post title must target a specific scenario or condition, not a general topic. The test: could this title appear as a chapter heading in a generic pregnancy textbook? If yes, it is too broad. Rework it to name a specific situation the reader is actually in.
@@ -493,11 +515,13 @@ Every post title must target a specific scenario or condition, not a general top
 
 The specific version targets a reader who is in that exact situation. The broad version targets no one in particular.
 
-**Rule 3 — Slug Specificity Test**
-Before finalising any slug, apply this test: could this slug plausibly appear on WebMD, Healthline, or Verywell Health as one of their standard articles? If yes, the slug is not niche enough. Add the specific qualifier — the trimester, the condition, the cycle length, the symptom variant — that makes it a term only someone in that exact situation would search for.
+**Rule 3 — Slug Clarity Rule**
+The slug is invisible to readers arriving from Google Discover — nobody sees it in a feed card. Its only function is a clean, readable URL and basic topical signal for Google's indexing system.
 
-- ❌ Fails the test: `pregnancy-headaches`, `pcos-ovulation`, `iron-pregnancy`
-- ✅ Passes the test: `pregnancy-headaches-behind-eyes-third-trimester`, `pcos-ovulation-cycles-over-35-days`, `iron-deficiency-third-trimester-symptoms`
+Keep slugs lowercase, hyphenated, and descriptive of the post's core topic. Add a qualifier (trimester, symptom variant, condition) when it makes the URL more accurate — not to game a niche keyword, but because accurate URLs are cleaner. Do not spend time engineering slugs for search positioning. That effort now belongs in the title.
+
+- ✅ Acceptable: `pregnancy-headaches-third-trimester`, `pcos-ovulation-irregular-cycles`
+- ❌ Avoid: `pregnancy-headaches` (too vague to be a useful URL), anything over 7 words
 
 ### Category A: Pregnancy Symptoms & What They Mean
 - Morning sickness: what actually helps vs what is myth
@@ -805,4 +829,131 @@ The `lastReviewed` field in the BlogPost object exists to signal when content wa
 
 ---   
  
+---
+
+## Section 20: Discover Title Strategy
+
+This section replaces the `[Keyword]: [Benefit]` title format from Section 5. These rules govern every blog post title written for SageNest from this point forward.
+
+---
+
+### 20.1 Why Titles Changed
+
+SageNest content is now optimised for Google Discover, not Google Search. On a search results page, a keyword-first title signals relevance to a query. On the Discover feed, a keyword-first title signals generic health content — and a woman scrolling on her phone skips it in under a second.
+
+Discover is a scroll. The title competes against posts from every category the reader follows — not just pregnancy content. The title must win that competition in one second or it loses. Winning means creating an immediate emotional reaction: recognition ("that's exactly what I'm experiencing"), curiosity ("I need to know what that means"), or mild surprise ("I didn't know that").
+
+Google's February 2026 Discover core update also explicitly penalises sensationalism and "withholding crucial information required to understand what the content is about." The old-style curiosity gap — titles that tease without delivering — now actively hurts distribution. The new formula is honest specificity with emotional framing.
+
+---
+
+### 20.2 The Formula
+
+**[Specific detail or number] + [Emotionally resonant situation or feeling] + [Promise of a real answer]**
+
+The three elements do not need to appear in that exact order, and not every title needs all three explicitly. But every title must contain the emotional resonance and the promise. The specific detail is what makes it credible.
+
+---
+
+### 20.3 The Title Rules
+
+**Rule 1 — Specificity over vagueness. Always.**
+Include a week number, trimester, specific symptom, named condition, or concrete detail whenever one exists. A specific title speaks to one reader precisely. A vague title speaks to everyone loosely and stops no one.
+- ✅ `"Why You Can't Sleep at 32 Weeks (And What Actually Helps)"`
+- ❌ `"Pregnancy Sleep Problems and Solutions"`
+
+**Rule 2 — Speak to her current moment.**
+The reader is pregnant right now, or trying to conceive right now, or postpartum right now. Use "you", "your baby", "this week", "right now" to make the title feel like it was written for her specific situation, not for a general audience.
+- ✅ `"Your Baby's Brain Is Developing Fastest Right Now — What Week 24 Actually Looks Like"`
+- ❌ `"Fetal Brain Development at 24 Weeks"`
+
+**Rule 3 — Curiosity gaps are allowed, but you must fully deliver.**
+Creating a curiosity gap in the title is effective — but the article must completely answer whatever the title implies. Google's 2026 update now detects mismatch between title promise and content delivery, and reduces distribution when it finds one. Never promise something the article does not fully give.
+- ✅ `"The One Third Trimester Symptom Most Doctors Don't Warn You About"` — acceptable if the article names and fully explains that symptom
+- ❌ Same title if the article just lists five generic symptoms without a specific reveal
+
+**Rule 4 — Numbers stop the scroll.**
+Use specific, honest numbers wherever they exist in the content.
+- ✅ `"7 Signs Your Third Trimester Fatigue Is Normal (And 3 That Aren't)"`
+- ✅ `"Week 20: Your Baby Is Now the Size of a Banana — Here's What Changed"`
+- ❌ `"Signs of Fatigue in Late Pregnancy"`
+
+**Rule 5 — These phrases are banned from titles.**
+They were effective in 2022. They are flagged by the 2026 Discover algorithm and they have been overused to the point of producing no emotional reaction:
+- "You Won't Believe..."
+- "This One Trick..."
+- "Doctors Hate This..."
+- "What Nobody Tells You..." (unless the article genuinely reveals something unexpected and specific — then it must be phrased to signal the specific reveal, not just the withholding)
+- Any phrasing that implies medical authority is hiding something from the reader
+
+**Rule 6 — Front-load the emotional hook.**
+The Discover feed on most Android screens shows approximately 60–70 characters of a title before truncating. Put the most emotionally resonant part of the title in the first 60 characters. Additional context can follow up to 90 characters total.
+
+**Rule 7 — Emotional verbs that work on Discover.**
+These verbs produce engagement on Discover health content: reveals, warns, changes, confirms, explains, happens, means, causes, affects, feels like, looks like, actually does. Use them.
+
+---
+
+### 20.4 Discover Title Templates for Pregnancy Content
+
+Use these as starting frameworks. Do not copy them verbatim — adapt to the specific topic and emotional state of the reader.
+
+- `"What's Actually Happening to Your [Body Part] at Week [X]"`
+- `"[X] Signs of [Symptom] in Pregnancy That Are Completely Normal"`
+- `"Why [Common Worry] at [Trimester / Week] Isn't What You Think"`
+- `"Your Baby at Week [X]: [Specific Milestone] — And What Comes Next"`
+- `"The Real Reason You're [Feeling X] in the [Trimester]"`
+- `"[Number] Things That Change After [Milestone] That No One Prepares You For"`
+- `"Why [Symptom] Gets Worse at Night in the [Trimester] (And What Helps)"`
+- `"What [Symptom] in Week [X] Actually Means — And When to Call Your Doctor"`
+- `"Is [Symptom] Normal at [Week / Trimester]? Here's How to Tell"`
+
+---
+
+### 20.5 Weak vs Strong Title Examples
+
+| Topic | Weak (SEO format) | Strong (Discover format) |
+|---|---|---|
+| Pregnancy insomnia | `Pregnancy Insomnia: Causes and Safe Management` | `Why You're Wide Awake at 3am in the Third Trimester (And What Actually Helps)` |
+| Round ligament pain | `Round Ligament Pain: What It Is and When to Worry` | `That Sharp Shooting Pain at 20 Weeks — What Your Body Is Actually Doing` |
+| BBT charting | `BBT Charting for Ovulation: How to Do It` | `Your BBT Chart Looks Flat — Here's What That Actually Means` |
+| Iron in pregnancy | `Iron Deficiency in the Third Trimester` | `Why Iron Deficiency Spikes in the Third Trimester (And the Signs Most Women Miss)` |
+| Anovulation | `Anovulation: What It Is, Causes and Treatment` | `You're Getting a Period Every Month — But You Might Not Be Ovulating` |
+
+---
+
+## Section 21: Image Brief Standard
+
+Every blog post generated through the Pollinations + Cloudinary pipeline must include a one-line image brief that directs what the generated image should show. This brief is not published — it is for the image generation step in the pipeline.
+
+### Why This Matters
+The image is 50% of the decision to tap a Discover card. Google's own research confirms that images featuring human faces with visible emotion produce significantly higher CTR than object-only or abstract images. A generic "pregnant woman" prompt produces generic output. A specific brief produces an image that matches the emotional tone of the title.
+
+### Image Brief Rules
+
+1. **Always include a person, not an object.** A pregnant woman, a woman looking at a chart, a woman in bed — not a pill, not a vegetable, not an abstract graphic.
+2. **The person's emotional state should match the title's emotional tone.** A post about 3am insomnia needs a woman who looks exhausted and awake, not serene and glowing. A post about baby movement at Week 20 can be warm and wondering.
+3. **If the post topic involves an internal or invisible process** (ovulation, fetal development, iron absorption), show the woman's external experience of it — her reaction, her physical state — not a diagram.
+4. **Avoid stock-photo perfection.** Overly polished, perfectly lit images read as advertisements. Real-feeling moments perform better on Discover.
+5. **Dimensions must be 1200×630px** — this is already the pipeline standard, do not change it.
+
+### Image Brief Format
+When a blog post is written, include the following at the bottom of the output (outside the TypeScript object, as a note to the pipeline):
+
+```
+IMAGE BRIEF: [One sentence describing the scene, the person, and their emotional state. Example: "A visibly tired pregnant woman lying awake in a dark bedroom at night, eyes open, one hand on her belly, looking exhausted but calm."]
+```
+
+---
+
+## Section 22: Discover Consistency Rule
+
+Google Discover trains its crawl frequency and topical relevance model on publishing cadence. A site that publishes daily signals to the Discover system that it is an active, maintained source of content in its topic area — and the system crawls it more frequently, which means new posts enter the recommendation pool faster.
+
+This is why SageNest's daily publishing cadence is not just a "more content = more chances" strategy. It is a direct input into how quickly any individual post gets picked up by the Discover feed. A post published on a site that publishes daily can appear in feeds within hours of indexing. A post published on a site that publishes twice a month may wait days or weeks.
+
+**The rule:** maintain daily or near-daily publishing. If publishing falls below three posts per week for more than two weeks, Discover crawl frequency will drop and recovery time will increase. Consistency compounds. Gaps compound too.
+
+This rule is documented here so it is never treated as a "nice to have." The cadence is infrastructure, not hustle.
+
 *Last updated: This guide is the master reference for all SageNest blog content. Update it if site tools change, new calculators are added, or clinical guidelines are revised.*
