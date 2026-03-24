@@ -1,3 +1,9 @@
+## 2026-03-24 (Aligned caffeine blog metadata with provided image prompt)
+
+- Confirmed the requested blog slug `caffeine-200mg-limit-pregnancy-what-counts` is present at the top of `src/data/blogPosts.ts`, then added `imagePrompt` support to the `BlogPost` interface and attached the provided prompt text to that blog object.
+- Re-ran the full blog publish pipeline and validations (`generate:blog`, `generate:redirects`, `generate:sitemap`, `check:blog-sync`, `check:redirects`, `check:sitemap`) to ensure generated artifacts remain synchronized and checks pass.
+- Why: the post content was already published, so this update ensures the remaining user-provided metadata is preserved in the canonical blog source without altering unrelated posts.
+
 ## 2026-03-24 (Added new blog post: caffeine-200mg-limit-pregnancy-what-counts)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `caffeine-200mg-limit-pregnancy-what-counts`, including the provided title, description, reading time, FAQ entries, default image, and full long-form content, plus the required `lastReviewed` and `updatedAt` metadata used by the existing blog schema.

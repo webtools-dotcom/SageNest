@@ -6,6 +6,7 @@ export interface BlogPost {
   lastReviewed?: string;  // format: 'Month YYYY' e.g. 'March 2026'
   updatedAt: string;
   imageUrl?: string;
+  imagePrompt?: string;
   content: string;
   faq?: Array<{ question: string; answer: string }>;
 }
@@ -19,6 +20,7 @@ export const blogPosts: BlogPost[] = [
     lastReviewed: 'March 2026',
     updatedAt: '2026-03-24',
     imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman sitting at a kitchen table in the morning, holding a large coffee cup and looking at it with a slightly uncertain thoughtful expression, soft natural morning light through a window, candid and real, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
     faq: [
       {
         question: 'How much caffeine is safe during pregnancy?',
