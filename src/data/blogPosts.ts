@@ -12,6 +12,136 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'caffeine-200mg-limit-pregnancy-what-counts',
+    title: "That 'One Cup of Coffee' Rule in Pregnancy? It Depends Entirely on the Cup",
+    description: "ACOG's 200mg caffeine limit sounds simple — but one large coffeehouse coffee can hit it entirely. Learn what actually counts and how to track it without guessing.",
+    readingTime: '10 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-24',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    faq: [
+      {
+        question: 'How much caffeine is safe during pregnancy?',
+        answer: "ACOG recommends limiting caffeine intake to less than 200 milligrams per day during pregnancy. This is based on the available evidence that moderate caffeine consumption below this threshold does not appear to be a major contributing factor to miscarriage or preterm birth. The limit applies to total caffeine from all sources combined — coffee, tea, chocolate, soft drinks, and any medications containing caffeine — not just coffee alone. ACOG also notes that caffeine can worsen nausea and disturb sleep, which are practical reasons to keep intake low independent of the safety question."
+      },
+      {
+        question: 'Is one cup of coffee a day safe during pregnancy?',
+        answer: `The honest answer is: it depends on the size of the cup and the strength of the brew. ACOG's guidance states that the 200mg limit is roughly equivalent to one 12-oz cup of coffee — but the FDA notes that caffeine content in coffee varies greatly between brands and brewing methods. A standard 8-oz drip coffee typically contains 80 to 100mg. A 16-oz coffeehouse coffee can easily reach 200mg or more on its own. "One cup" is not a safe shorthand without knowing the actual caffeine content of the specific product you are drinking.`
+      },
+      {
+        question: 'Does tea count toward the 200mg caffeine limit in pregnancy?',
+        answer: 'Yes — all caffeine from all sources counts toward the 200mg daily total. Black tea typically contains 40 to 70mg per 8-oz cup, green tea 20 to 45mg, and even some herbal teas contain small amounts. Matcha is significantly higher than regular green tea per serving. ACOG specifically names tea, chocolate, and soft drinks as caffeine sources to account for alongside coffee when calculating your daily intake. If you drink two or three cups of black tea in addition to a morning coffee, you may already be close to or over the 200mg limit before adding any other sources.'
+      },
+      {
+        question: 'What about chocolate and caffeine during pregnancy?',
+        answer: "Chocolate contains caffeine in amounts that vary significantly by type. Dark chocolate contains substantially more caffeine per ounce than milk chocolate, and white chocolate contains none. The FDA's caffeine content data shows that a standard 1.5-oz bar of dark chocolate can contain roughly 30mg of caffeine, while the same amount of milk chocolate contains around 9mg. These amounts are individually modest, but if you are also drinking coffee and tea, chocolate can push your total intake closer to or over the 200mg limit. Tracking total daily caffeine — not just coffee — is what the 200mg guideline actually requires."
+      },
+      {
+        question: 'Can caffeine during pregnancy cause miscarriage?',
+        answer: "The evidence on this specific question is genuinely mixed and worth being honest about. ACOG's Committee Opinion on moderate caffeine consumption states that two large studies reached contradictory conclusions — one found no association between caffeine consumption and miscarriage at any intake level, while another found an increased risk above 200mg per day. ACOG's conclusion is that moderate consumption below 200mg does not appear to be a major contributing factor to miscarriage or preterm birth, while acknowledging that the relationship between higher caffeine intake and pregnancy outcomes remains undetermined. This uncertainty is why the 200mg limit exists as a precautionary threshold, not a guarantee."
+      }
+    ],
+    content: `
+You drink one coffee a day. You looked up the rule — 200mg, roughly one cup — and you have been telling yourself you are within it. But did you check the size of your cup? Did you account for the green tea you had at lunch? The piece of dark chocolate after dinner? The 200mg limit in pregnancy is real, confirmed by ACOG, and widely cited. What is rarely explained is that "one cup of coffee" can mean anything from 80mg to well over 300mg depending on where you buy it and how it is brewed — and that caffeine hides in a surprising number of places most pregnant women are not tracking.
+
+## Why Caffeine Has a Limit in Pregnancy at All
+
+Caffeine crosses the placenta. Unlike an adult, the fetus does not have the metabolic enzymes needed to process caffeine efficiently, so it accumulates in fetal tissue at higher concentrations and for longer periods than it does in the mother's body.
+
+The clinical concern is primarily about what this prolonged fetal caffeine exposure might do to developing systems — particularly cardiovascular development and fetal growth. ACOG's Committee Opinion on moderate caffeine consumption reviewed the available research and reached a carefully worded conclusion: moderate caffeine intake below 200mg per day does not appear to be a major contributing factor to miscarriage or preterm birth. The word "appear" is deliberate — two large studies reviewed by ACOG reached directly contradictory conclusions about caffeine and miscarriage risk, which is why the guidance uses precautionary language rather than a clean clearance.
+
+ACOG also notes practical reasons to limit caffeine during pregnancy that are separate from fetal safety concerns: caffeine can worsen pregnancy nausea, interfere with sleep, and increase urination and dehydration — all of which are already challenges in pregnancy and are compounded by additional stimulant intake. For many pregnant women, these side effects provide their own motivation to reduce caffeine independent of the developmental question.
+
+The 200mg limit is therefore both a precautionary safety threshold based on the available evidence and a pragmatic one based on what caffeine does to the pregnant body.
+
+## Why "One Cup" Is Not a Reliable Measurement
+
+The ACOG guidance states that 200mg is roughly the amount in one 12-oz cup of coffee. This is accurate for a standard 12-oz cup of drip-brewed coffee at average strength. It is not accurate for most of what people actually drink when they say "one coffee."
+
+The FDA's caffeine content data shows how dramatically caffeine varies by brewing method, roast, and serving size. A standard 8-oz drip coffee at home typically contains around 80 to 100mg — meaning you could have two of those and remain under 200mg. An 8-oz espresso-based drink made with one shot contains roughly 63mg per shot, so a double espresso is around 125mg in a small volume. These are the numbers most people vaguely assume apply to all coffee.
+
+They do not. The same FDA resource notes that the amount of caffeine in specific products can vary, and recommends checking with the manufacturer if you have questions about a specific product. This variability matters most when you are drinking coffeehouse drinks in large sizes. A 16-oz dark roast coffee from a major chain can contain 300mg or more in a single serving — exceeding the entire 200mg daily limit before you have had anything else. Even a 16-oz medium roast typically lands around 200mg, right at the threshold, leaving no room for any other caffeine source that day.
+
+**The practical implication:** the size and source of your coffee matters far more than the number of coffees you drink. One large coffeehouse dark roast can exceed the limit on its own. Two standard home-brewed 8-oz cups may leave room for other sources. "How many coffees" is the wrong question. "How many milligrams total today" is the right one.
+
+## The Caffeine Sources Most Pregnant Women Are Not Counting
+
+Coffee is the source most women focus on, but ACOG's guidance specifically names tea, chocolate, and soft drinks as caffeine sources to account for alongside coffee. The FDA's caffeine overview also confirms that caffeine appears in products many consumers do not expect.
+
+**Tea** is the most commonly underestimated source. Black tea — the base of most standard tea bags, including breakfast tea, English breakfast, and chai — typically contains 40 to 70mg per 8-oz cup, depending on steeping time and brand. Green tea contains roughly 20 to 45mg per cup. Matcha deserves specific mention: because matcha uses the whole ground tea leaf rather than an infusion, it is significantly higher in caffeine than regular green tea — a standard matcha preparation can contain 60 to 80mg or more per serving. Two cups of black tea in the afternoon, combined with a morning coffee, can add 80 to 140mg to your daily total before you have had any other sources.
+
+**Dark chocolate** contains caffeine in amounts that are individually modest but meaningful when combined with other sources. The FDA's data shows a standard 1.5-oz serving of dark chocolate contains roughly 30mg of caffeine. A larger portion, or a high-percentage dark chocolate, will be proportionally higher. Milk chocolate is considerably lower — around 9mg per 1.5-oz serving. A small piece of dark chocolate is not a problem in isolation, but if your morning involves a large coffee, your afternoon involves a cup of tea, and your evening involves dark chocolate, your cumulative intake may be at or above 200mg without any of those choices individually seeming excessive.
+
+**Soft drinks** vary widely. Cola-type drinks typically contain 30 to 40mg per 12-oz can, making them a minor contributor unless consumed in large quantities. Some energy drinks contain 150mg or more per serving — and these are not safe to use as a caffeine source during pregnancy regardless of the total amount. ACOG does not explicitly set a separate rule for energy drinks, but the caffeine content combined with other ingredients (such as high doses of B vitamins, herbal compounds, and ginseng) makes them a category to avoid during pregnancy rather than to count and manage.
+
+**Medications** are the most overlooked source. Some over-the-counter headache medications — including certain formulations of acetaminophen — contain caffeine as an active ingredient. ACOG's headache guidance explicitly states that if you take acetaminophen with caffeine during pregnancy, your total caffeine from all sources including coffee must not go beyond 200mg per day. This means checking medication labels is part of managing your daily caffeine total, not just monitoring what you drink.
+
+## How to Practically Track Your Daily Total
+
+The goal is not obsessive measurement — it is awareness of approximately where you are in relation to the 200mg threshold on a typical day.
+
+**Start with your coffee.** If you buy from a coffeehouse, look up the caffeine content for the specific drink and size you order — most major chains publish this. If you make coffee at home, an 8-oz drip cup at typical strength is around 80 to 100mg; a pod coffee machine varies by brand but is generally 75 to 150mg per pod depending on the pod type. Two standard home pods likely land around 150 to 200mg combined — close to or at the limit before other sources.
+
+**Then account for everything else.** If you have one cup of black tea in addition to your coffee, add 40 to 70mg. If you have dark chocolate, add approximately 20 to 30mg for a modest portion. If you take any OTC medication, check whether it contains caffeine.
+
+**Apply the qualitative check.** Once you have a rough sense of your typical day, ask: am I consistently over 200mg, around 200mg, or well under? If you are consistently around or over, the most effective single adjustment is reducing the size or strength of your coffee — specifically switching from a large to a small or medium, or from dark roast to medium roast — rather than cutting caffeine entirely or switching all coffee to decaf.
+
+Decaffeinated coffee does still contain small amounts of caffeine — the FDA notes decaf typically has 2 to 15mg per 8-oz cup. This is negligible for most people, but it means "decaf" is not entirely caffeine-free. For women who are tracking carefully due to nausea sensitivity or provider guidance to minimise caffeine, it is worth knowing the number is not zero.
+
+## What the Evidence Does and Does Not Say
+
+It is worth being honest about the limits of what is known here, because pregnancy caffeine guidance often presents more certainty than the underlying evidence actually supports.
+
+ACOG's Committee Opinion reviewed multiple major studies and found directly contradictory results. One large study found no association between caffeine and miscarriage at any consumption level. Another large study found an adjusted hazard ratio of 2.23 for miscarriage at intakes of 200mg or more per day. ACOG's conclusion from these two conflicting studies is measured: moderate consumption below 200mg does not appear to be a major contributing factor, while the relationship between caffeine and fetal growth restriction remains undetermined.
+
+This is honest uncertainty, not a hidden danger. It means the 200mg threshold is a well-reasoned precautionary guideline — not a confirmed cliff edge where harm begins at exactly 201mg. Women who have occasionally exceeded 200mg before realising their coffee was stronger than expected should not alarm themselves. The concern is consistent intake above the threshold over time, not individual days.
+
+What ACOG is clear about: there is no evidence that some caffeine is harmful, and there is no requirement to eliminate caffeine entirely. The goal is a consistent daily intake below 200mg total from all sources.
+
+## Common Questions About Caffeine in Pregnancy
+
+### Is it safe to have caffeine in the first trimester?
+
+The 200mg limit applies across all trimesters — it is not lower in the first trimester based on ACOG's guidance. However, many women naturally reduce caffeine in the first trimester because coffee triggers or worsens nausea. If your nausea is making coffee unappealing, that natural reduction is actually working in your favour for both comfort and caffeine management.
+
+### Does switching to half-caff help?
+
+Yes — half-caff is a practical middle step for women who find the flavour and ritual of coffee important but want to reduce caffeine without eliminating it. A half-caff blend is typically around 50% of the caffeine content of a regular brew, which means a 16-oz half-caff covers roughly the same amount as a full 8-oz regular. It is a worthwhile strategy for managing a large-format coffee habit.
+
+### What about matcha or green tea as a "healthier" alternative to coffee?
+
+This is one of the more common substitutions that inadvertently maintains or sometimes increases caffeine intake. A matcha latte from a coffeehouse can contain 80 to 100mg per serving. If you switch from a small home coffee to a large matcha latte thinking you have reduced your caffeine intake, you may have changed it very little. Matcha is not a caffeine-free alternative — it is a different caffeine source with a different extraction profile.
+
+## When to Speak With Your Provider
+
+Caffeine management during pregnancy rarely requires urgent medical input, but discuss it with your provider if:
+
+- **You are having significant difficulty reducing caffeine** and experiencing symptoms of caffeine dependence — severe headaches when you miss your usual intake, irritability, or inability to function without it. Caffeine withdrawal symptoms can be meaningful and your provider may have specific guidance for your situation
+- **You take any OTC medications regularly** that you have not checked for caffeine content — including headache medications or cold/flu preparations
+- **Your nausea is severe** and your only tolerable food or drink is caffeine-containing — your provider needs to know about your overall intake in the context of hyperemesis or persistent nausea to manage nutrition appropriately
+- **You have been told to minimise caffeine** for a specific pregnancy-related reason, such as elevated blood pressure, sleep problems, or fetal growth concerns — in these cases 200mg is not the target, and your provider's specific guidance takes precedence
+
+## Related Tools on SageNest
+
+If nausea has been making it hard to manage your diet and you are wondering how much longer you will be navigating it, use our [morning sickness end date estimator](/morning-sickness-end-date-estimator) to get a sense of when symptoms are likely to ease. For a full picture of your nutritional trajectory across pregnancy, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) provides a personalised range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+The 200mg daily caffeine limit during pregnancy, confirmed by ACOG, sounds straightforward — but "one cup of coffee" is not a reliable unit of measurement when a single large coffeehouse order can equal or exceed the entire daily threshold. Managing caffeine during pregnancy means knowing the actual milligram content of what you drink, accounting for tea, chocolate, and medications alongside coffee, and tracking total daily intake rather than just counting cups. There is no evidence that some caffeine causes harm, and no requirement to eliminate it entirely. The goal is a consistent daily total below 200mg from all sources — and achieving that requires knowing where the caffeine in your day is actually coming from.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [How much coffee can I drink while I'm pregnant?](https://www.acog.org/womens-health/experts-and-stories/ask-acog/how-much-coffee-can-i-drink-while-pregnant)
+- **ACOG** — [Moderate Caffeine Consumption During Pregnancy — Committee Opinion](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2010/08/moderate-caffeine-consumption-during-pregnancy)
+- **ACOG** — [Headaches and Pregnancy](https://www.acog.org/womens-health/faqs/headaches-and-pregnancy)
+- **FDA** — [Spilling the Beans: How Much Caffeine is Too Much?](https://www.fda.gov/consumers/consumer-updates/spilling-beans-how-much-caffeine-too-much)
+
+**Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.**
+`,
+  },
+  {
     slug: 'fish-pregnancy-what-to-eat-avoid-mercury',
     title: 'Fish in Pregnancy: The FDA Guide Most Pregnant Women Get Wrong',
     description: 'Most pregnant women avoid fish out of fear. FDA data shows half eat under 2 oz weekly when 8–12 oz is recommended. Learn what is safe, what to avoid, and why.',
