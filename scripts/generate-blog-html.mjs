@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { v2 as cloudinary } from 'cloudinary';
 import { loadBlogPosts } from './blog-data.mjs';
+import { existsSync } from 'node:fs';
 
 function safeJsonStringify(obj, indent) {
   return JSON.stringify(obj, null, indent)
@@ -583,9 +584,10 @@ const posts = await loadBlogPosts();
 const tokens = loadDesignTokens();
 const styleBlock = buildStaticStyle(tokens);
 const imageErrors = [];
+const HARDCODED_CLOUD_NAME = 'dtplyecgd';  // your cloud name — not a secret, already in every public URL
 const imageConfig = {
   pollinationsApiKey: process.env.POLLINATIONS_API_KEY || '',
-  cloudName: process.env.CLOUDINARY_CLOUD_NAME || '',
+  cloudName: process.env.CLOUDINARY_CLOUD_NAME || HARDCODED_CLOUD_NAME,
   cloudinaryApiKey: process.env.CLOUDINARY_API_KEY || '',
   cloudinaryApiSecret: process.env.CLOUDINARY_API_SECRET || '',
 };
@@ -628,6 +630,11 @@ const pollinationsState = { hasCalled: false };
 for (const post of posts) {
   const dir = join(ROOT, 'public', 'blog-static');
   mkdirSync(dir, { recursive: true });
+  const staticFilePath = join(dir, `${post.slug}.html`);
+  if (!imageConfig.isReady && existsSync(staticFilePath)) {
+    console.log(`  ↳ skipping ${post.slug}.html (no credentials, file already exists)`);
+    continue;
+  }
   const resolvedImageUrl = await resolvePostImage(post, imageConfig, imageErrors, pollinationsState);
   // Always use Cloudinary URL for og:image if cloudName is available.
   // Falls back to resolvedImageUrl only if cloudName is missing entirely.
