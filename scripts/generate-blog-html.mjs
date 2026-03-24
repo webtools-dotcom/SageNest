@@ -344,41 +344,6 @@ function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-async function addTextOverlay(imageBuffer, title) {
-  const words = String(title || '').trim().split(/\s+/);
-  const overlayText = words.slice(0, 6).join(' ');
-
-  const safeText = overlayText
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;');
-
-  const svgOverlay = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
-<rect x="0" y="0" width="1200" height="140" fill="rgba(0,0,0,0.52)" rx="0"/>
-<text x="60" y="90" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="bold" fill="white" dominant-baseline="middle" text-anchor="start">${safeText}</text>
-</svg>`;
-
-  try {
-    const result = await sharp(imageBuffer)
-      .resize(1200, 630, { fit: 'cover' })
-      .composite([
-        {
-          input: Buffer.from(svgOverlay),
-          top: 0,
-          left: 0,
-        },
-      ])
-      .jpeg({ quality: 90 })
-      .toBuffer();
-    return result;
-  } catch (error) {
-    console.warn(`⚠ Text overlay failed, using clean image: ${error.message}`);
-    return imageBuffer;
-  }
-}
-
 function buildCloudinaryImageUrl(cloudName, slug) {
   return `https://res.cloudinary.com/${cloudName}/image/upload/w_1200,h_630,c_fill/sagenest-blog/${slug}.jpg`;
 }
@@ -478,9 +443,8 @@ async function resolvePostImage(post, config, errors, pollinationsState) {
   const prompt = (post.imagePrompt && post.imagePrompt.trim().length > 10)
     ? post.imagePrompt.trim()
     : FALLBACK_PROMPT;
-  const rawImageBuffer = await fetchPollinationsImage(prompt, config.pollinationsApiKey, post.slug, errors);
-  if (!rawImageBuffer) return post.imageUrl;
-  const imageBuffer = await addTextOverlay(rawImageBuffer, post.title);
+  const imageBuffer = await fetchPollinationsImage(prompt, config.pollinationsApiKey, post.slug, errors);
+  if (!imageBuffer) return post.imageUrl;
 
   try {
     await uploadImageToCloudinary(imageBuffer, post.slug);
