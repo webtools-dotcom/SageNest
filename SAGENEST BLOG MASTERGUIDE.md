@@ -64,10 +64,11 @@ export const blogPosts: BlogPost[] = [
 ```typescript
 {
   slug: 'keyword-focused-url-slug',
-  title: 'Primary Keyword: Benefit-Driven Headline That Speaks to the Mother',
+  title: 'Your Discover-optimised title following Section 20 rules',
   description: 'Meta description: 140–160 characters. Contains the primary keyword, states the benefit clearly, and creates mild urgency or curiosity. No fluff.',
   readingTime: 'X min read',
-  imageUrl: '/images/blog/sagenest-blog-default.jpg', // keep this image path same for all the blogs dont change this 
+  imageUrl: '/images/blog/sagenest-blog-default.jpg', // keep this image path same for all the blogs dont change this
+  imagePrompt: 'Detailed scene description for Pollinations image generation — see Section 21 for the rules on how to write this prompt.',
   faq: [
     {
       question: 'The exact question a mother types into Google',
@@ -581,7 +582,8 @@ Keep slugs lowercase, hyphenated, and descriptive of the post's core topic. Add 
 Before delivering any post, verify every item:
 
 - [ ] Slug is lowercase, hyphenated, keyword-focused
-- [ ] Title follows `[Keyword]: [Benefit]` format
+- [ ] Title follows Discover format — emotional hook front-loaded in first 60 characters, no `[Keyword]: [Benefit]` structure (see Section 20)
+- [ ] imagePrompt field is present in the TypeScript object and follows the rules in Section 21
 - [ ] Description is 140–160 characters and contains the primary keyword
 - [ ] No `publishDate` field included
 - [ ] Hook opens without a heading and speaks directly to the reader's concern
@@ -922,27 +924,78 @@ Use these as starting frameworks. Do not copy them verbatim — adapt to the spe
 
 ---
 
-## Section 21: Image Brief Standard
+## Section 21: Image Prompt Standard
 
-Every blog post generated through the Pollinations + Cloudinary pipeline must include a one-line image brief that directs what the generated image should show. This brief is not published — it is for the image generation step in the pipeline.
+Every blog post TypeScript object must include an `imagePrompt` field. This field is the prompt that the `generate-blog-html.mjs` script sends directly to the Pollinations API to generate the post's image. Claude writes this field as part of every post output — it is a required field in the TypeScript object, not a separate note.
 
-### Why This Matters
-The image is 50% of the decision to tap a Discover card. Google's own research confirms that images featuring human faces with visible emotion produce significantly higher CTR than object-only or abstract images. A generic "pregnant woman" prompt produces generic output. A specific brief produces an image that matches the emotional tone of the title.
+The script reads `post.imagePrompt` at build time, sends it to Pollinations to generate a clean photorealistic image, then programmatically adds a short text overlay on top before uploading to Cloudinary. Claude's job is to write the scene — the script handles the text overlay automatically from the post title.
 
-### Image Brief Rules
+### 21.1 Why imagePrompt Exists
 
-1. **Always include a person, not an object.** A pregnant woman, a woman looking at a chart, a woman in bed — not a pill, not a vegetable, not an abstract graphic.
-2. **The person's emotional state should match the title's emotional tone.** A post about 3am insomnia needs a woman who looks exhausted and awake, not serene and glowing. A post about baby movement at Week 20 can be warm and wondering.
-3. **If the post topic involves an internal or invisible process** (ovulation, fetal development, iron absorption), show the woman's external experience of it — her reaction, her physical state — not a diagram.
-4. **Avoid stock-photo perfection.** Overly polished, perfectly lit images read as advertisements. Real-feeling moments perform better on Discover.
-5. **Dimensions must be 1200×630px** — this is already the pipeline standard, do not change it.
+The old pipeline used a keyword-matching map to pick a fixed generic prompt based on the post slug. This produced the same few images repeatedly across many posts. A post about pregnancy insomnia and a post about postpartum insomnia would get the same image because both slugs contained "sleep."
 
-### Image Brief Format
-When a blog post is written, include the following at the bottom of the output (outside the TypeScript object, as a note to the pipeline):
+The new approach: Claude knows exactly what each post is about, what emotional state the reader is in, and what scene would resonate with the title. Claude writes a precise, post-specific prompt. The result is a unique image for every post that matches the emotional tone of the title.
 
+### 21.2 The imagePrompt Rules
+
+**Rule 1 — Always describe a real human scene.**
+The prompt must describe a person in a specific physical situation. Never describe objects alone (a pill bottle, a vegetable, a calendar with no person). Never describe diagrams or medical illustrations.
+✅ `a visibly exhausted pregnant woman lying awake in a dark bedroom at 3am, eyes open, one hand resting on her belly, soft moonlight through curtains, warm and real, photorealistic`
+❌ `a calendar and a clock on a bedside table with soft lighting`
+
+**Rule 2 — The person's emotional state must match the title's emotional tone.**
+Read the title. Identify the emotional state of the reader it targets. The person in the image should be in that same emotional state.
+- Post about 3am insomnia → woman looks exhausted, awake, quiet
+- Post about baby movement at Week 20 → woman looks wondering, gently amazed, hand on belly
+- Post about BBT chart showing no rise → woman looking at her phone or chart with a slight frown, uncertain but calm
+- Post about round ligament pain → woman pausing mid-movement, hand on lower abdomen, surprised expression
+
+**Rule 3 — For invisible internal processes, show the external experience.**
+If the post is about something the reader cannot see — ovulation, fetal development, iron absorption, hormonal changes — show how the woman experiences it from the outside. Her posture, her expression, her environment.
+- Post about iron deficiency → woman sitting on sofa looking pale and fatigued, hand on forehead, warm indoor light
+- Post about fetal brain development at Week 24 → woman lying on her side with headphones on her belly, gentle smile, soft light
+
+**Rule 4 — Avoid stock-photo perfection.**
+Do not describe perfectly lit, perfectly styled scenes. Real-feeling, slightly candid images perform better on Discover than polished advertisement-style images.
+✅ `soft candid feel, natural indoor light, not overly styled`
+❌ `professional studio photography, perfect lighting, flawless`
+
+**Rule 5 — Always end the prompt with these exact words:**
+`photorealistic, warm tones, sage green palette, no text, no watermark, no logo`
+
+This ensures the image is clean — the script adds the text overlay separately.
+
+**Rule 6 — Keep the prompt to one or two sentences maximum.**
+Pollinations performs best with focused, specific prompts. Do not write long multi-clause descriptions.
+
+### 21.3 imagePrompt Format in the TypeScript Object
+
+The field sits between `readingTime` and `faq` in the object:
+
+```typescript
+{
+  slug: 'why-you-cant-sleep-32-weeks',
+  title: 'Why You Can't Sleep at 32 Weeks (And What Actually Helps)',
+  description: '...',
+  readingTime: '8 min read',
+  imageUrl: '/images/blog/sagenest-blog-default.jpg',
+  imagePrompt: 'a visibly exhausted pregnant woman lying awake in a dark bedroom at 3am, eyes open, one hand resting on her belly, soft moonlight through curtains, candid and real, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+  faq: [ ... ],
+  content: `...`
+}
 ```
-IMAGE BRIEF: [One sentence describing the scene, the person, and their emotional state. Example: "A visibly tired pregnant woman lying awake in a dark bedroom at night, eyes open, one hand on her belly, looking exhausted but calm."]
-```
+
+### 21.4 What the Script Does With imagePrompt
+
+Claude does not need to think about this — it is documented here for transparency. After Claude delivers the TypeScript object:
+- The `generate-blog-html.mjs` script reads `post.imagePrompt`
+- Sends it to Pollinations to generate a clean 1200×630 image with no text
+- Downloads the image buffer
+- Uses the `sharp` library to add a text overlay — the first 5–6 words of `post.title`, white bold font, semi-transparent dark strip, positioned in the upper third of the image
+- Uploads the final composite to Cloudinary under `sagenest-blog/{slug}.jpg`
+- Uses the Cloudinary URL in the HTML file
+
+Claude's only responsibility is writing a good `imagePrompt`. The overlay, upload, and URL resolution are fully automated.
 
 ---
 
