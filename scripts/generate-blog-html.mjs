@@ -1,4 +1,5 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
+import sharp from 'sharp';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
 import { v2 as cloudinary } from 'cloudinary';
@@ -24,24 +25,6 @@ function fullHtmlEscape(str) {
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
-const PROMPT_MAP = [
-  { keywords: ['morning-sickness', 'nausea'], prompt: 'soft editorial photograph, pregnant woman holding ginger tea by window, warm natural lighting, sage green tones, calm expression, no text' },
-  { keywords: ['weight-gain'], prompt: 'soft editorial photograph, pregnant woman standing sideways profile, warm natural lighting, sage green tones, clean background, no text' },
-  { keywords: ['nutrition', 'food', 'eat', 'diet'], prompt: 'soft editorial photograph, fresh healthy vegetables fruits nuts on wooden table, pregnancy nutrition, warm natural lighting, sage green, no text' },
-  { keywords: ['headache'], prompt: 'soft editorial photograph, pregnant woman resting with eyes closed hand on temple, soft diffused light, sage green tones, calm, no text' },
-  { keywords: ['swelling', 'edema'], prompt: 'soft editorial photograph, pregnant woman sitting comfortably feet elevated, warm natural lighting, sage green tones, no text' },
-  { keywords: ['sleep', 'insomnia'], prompt: 'soft editorial photograph, pregnant woman sleeping peacefully on side with pillow, soft warm bedroom lighting, sage green tones, no text' },
-  { keywords: ['ovulation', 'fertile', 'cycle', 'luteal', 'irregular'], prompt: 'soft editorial photograph, woman holding calendar near window, natural light, sage green tones, clean minimal, no text' },
-  { keywords: ['contraction', 'braxton'], prompt: 'soft editorial photograph, pregnant woman breathing calmly hand on belly, warm natural lighting, sage green tones, no text' },
-  { keywords: ['round-ligament', 'pelvic', 'pain'], prompt: 'soft editorial photograph, pregnant woman doing gentle stretching yoga pose, warm natural lighting, sage green tones, no text' },
-  { keywords: ['diabetes', 'glucose', 'blood-sugar'], prompt: 'soft editorial photograph, healthy balanced meal plate with vegetables and protein, warm natural lighting, sage green tones, no text' },
-  { keywords: ['due-date', 'gestational', 'ultrasound', 'ivf'], prompt: 'soft editorial photograph, pregnant woman looking at calendar smiling gently, warm natural lighting, sage green tones, no text' },
-  { keywords: ['vitamin', 'supplement', 'iron', 'folate'], prompt: 'soft editorial photograph, prenatal vitamins supplements on wooden surface with greenery, warm natural lighting, sage green tones, no text' },
-  { keywords: ['postpartum', 'postnatal'], prompt: 'soft editorial photograph, new mother holding newborn baby gently, soft warm lighting, sage green tones, peaceful, no text' },
-  { keywords: ['shortness-of-breath', 'breathing'], prompt: 'soft editorial photograph, pregnant woman sitting calmly by open window breathing fresh air, warm natural lighting, sage green tones, no text' },
-];
-
-const FALLBACK_PROMPT = 'soft editorial photograph, pregnant woman resting hand on belly near window, warm natural lighting, sage green tones, clean minimal background, no text, no watermark';
 
 function markdownToHtml(markdown) {
   const clean = markdown
@@ -360,10 +343,39 @@ function wait(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-function resolvePromptFromSlug(slug) {
-  const normalizedSlug = String(slug || '').toLowerCase();
-  const match = PROMPT_MAP.find(({ keywords }) => keywords.some((keyword) => normalizedSlug.includes(keyword.toLowerCase())));
-  return match?.prompt || FALLBACK_PROMPT;
+async function addTextOverlay(imageBuffer, title) {
+  const words = String(title || '').trim().split(/\s+/);
+  const overlayText = words.slice(0, 6).join(' ');
+
+  const safeText = overlayText
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+
+  const svgOverlay = `<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+<rect x="0" y="0" width="1200" height="140" fill="rgba(0,0,0,0.52)" rx="0"/>
+<text x="60" y="90" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="bold" fill="white" dominant-baseline="middle" text-anchor="start">${safeText}</text>
+</svg>`;
+
+  try {
+    const result = await sharp(imageBuffer)
+      .resize(1200, 630, { fit: 'cover' })
+      .composite([
+        {
+          input: Buffer.from(svgOverlay),
+          top: 0,
+          left: 0,
+        },
+      ])
+      .jpeg({ quality: 90 })
+      .toBuffer();
+    return result;
+  } catch (error) {
+    console.warn(`⚠ Text overlay failed, using clean image: ${error.message}`);
+    return imageBuffer;
+  }
 }
 
 function buildCloudinaryImageUrl(cloudName, slug) {
@@ -461,9 +473,13 @@ async function resolvePostImage(post, config, errors, pollinationsState) {
   }
   pollinationsState.hasCalled = true;
 
-  const prompt = resolvePromptFromSlug(post.slug);
-  const imageBuffer = await fetchPollinationsImage(prompt, config.pollinationsApiKey, post.slug, errors);
-  if (!imageBuffer) return post.imageUrl;
+  const FALLBACK_PROMPT = 'soft editorial photograph, pregnant woman resting hand on belly near window, warm natural lighting, sage green tones, clean minimal background, no text, no watermark';
+  const prompt = (post.imagePrompt && post.imagePrompt.trim().length > 10)
+    ? post.imagePrompt.trim()
+    : FALLBACK_PROMPT;
+  const rawImageBuffer = await fetchPollinationsImage(prompt, config.pollinationsApiKey, post.slug, errors);
+  if (!rawImageBuffer) return post.imageUrl;
+  const imageBuffer = await addTextOverlay(rawImageBuffer, post.title);
 
   try {
     await uploadImageToCloudinary(imageBuffer, post.slug);
