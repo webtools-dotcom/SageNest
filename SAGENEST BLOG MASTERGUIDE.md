@@ -654,6 +654,7 @@ If a specific number, threshold, or range does not appear verbatim on the ACOG, 
  - iron-supplements-pregnancy-side-effects
  - choline-pregnancy-prenatal-vitamins-miss
  - iodine-pregnancy-sea-salt-prenatal-gap
+ - fish-pregnancy-what-to-eat-avoid-mercury
 
 
 ## Section 19: Source Verification, Citation, and the Self-Check Protocol
