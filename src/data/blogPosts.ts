@@ -13,6 +13,147 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'pregnancy-ice-craving-pagophagia-iron-deficiency',
+    title: "Craving Ice All Day While Pregnant? That's Not Just a Weird Habit",
+    description: "Craving ice constantly during pregnancy has a name — and it's often a sign of iron deficiency. Here's what pagophagia means and what to do about it.",
+    readingTime: '12 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-25',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman sitting at a kitchen table holding a large cup of ice, chewing it with a slightly puzzled expression, soft warm indoor light, candid and real, not overly styled, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Is it normal to crave ice during pregnancy?',
+        answer: 'Craving ice during pregnancy is not uncommon, but it is not simply a harmless quirk either. The compulsive craving and chewing of ice has a clinical name — pagophagia — and is recognised as a form of pica, the persistent craving for non-food substances. MedlinePlus notes that pica can occur during pregnancy and may be linked to a lack of certain nutrients, particularly iron and zinc. If you find yourself chewing through cups of ice every day, it is worth mentioning to your provider so they can check your iron levels.'
+      },
+      {
+        question: 'Does craving ice mean I am iron deficient?',
+        answer: 'Not definitively, but the association is strong enough to warrant checking. MedlinePlus specifically notes that pica during pregnancy may be caused by too little iron in the blood, which leads to anemia. Clinical research has found that ice craving is frequently associated with iron deficiency, and that the craving often resolves once iron status is corrected. It is a signal your provider should know about so they can test your iron and hemoglobin levels rather than something to monitor and wait out on your own.'
+      },
+      {
+        question: 'What is pagophagia?',
+        answer: 'Pagophagia is the compulsive craving for and chewing of ice. It is classified as a form of pica — the persistent craving for non-food substances. MedlinePlus notes that the pattern must last at least one month to meet the clinical definition. It is one of the most commonly reported forms of pica during pregnancy. Unlike cravings for dirt or clay, ice itself is not directly harmful — but the underlying condition it frequently signals, most commonly iron deficiency, does require attention during pregnancy.'
+      },
+      {
+        question: 'What are the dangerous types of pica in pregnancy?',
+        answer: 'While ice itself is not toxic, some forms of pica carry direct physical risks. Geophagia — eating dirt or clay — can introduce harmful bacteria, heavy metals, and parasites. Eating chalk, laundry starch, or similar substances can interfere with nutrient absorption and in some cases cause gastrointestinal blockages. MedlinePlus notes that pica can be associated with other health problems including intestinal issues. Any non-food craving should be disclosed to your provider regardless of how harmless the substance seems — the craving is a clinical signal, not just a preference.'
+      },
+      {
+        question: 'Will iron supplements stop my ice cravings?',
+        answer: 'If the ice craving is driven by iron deficiency, iron supplementation often leads to resolution of the craving — sometimes relatively quickly. Research has found that pagophagia frequently resolves with iron therapy, in some cases before hemoglobin levels have fully recovered. However, you should not self-prescribe iron supplements: your provider needs to confirm deficiency through a blood test first and determine the appropriate form and dose for your situation. Supplementation during pregnancy requires monitoring, not guesswork.'
+      }
+    ],
+    content: `
+You have been chewing through cups of ice without quite being able to explain why. It started a few weeks ago — a craving that does not feel like thirst, that is not about cooling down, that is just... there. You have not mentioned it to anyone because it seems too strange to bring up, and you have vaguely assumed it is one of those inexplicable pregnancy things that will pass on its own. It might. But there is a reasonable chance it is trying to tell you something specific about your iron levels — and that is worth knowing now, not later when the gap has had months to widen.
+
+## What Pagophagia Is and Why It Has a Name
+
+The compulsive craving for ice has a clinical name: pagophagia. It is classified as a form of pica — the persistent craving for and consumption of non-food substances. According to MedlinePlus, pica can occur during pregnancy and may be related to a lack of certain nutrients, particularly iron and zinc. To meet the clinical definition, the pattern of craving must last at least one month.
+
+Pica is a broader term covering cravings for many substances: dirt or clay (geophagia), raw starch (amylophagia), chalk, paper, and others. But pagophagia — ice specifically — is among the most commonly reported forms during pregnancy, in part because ice is so accessible, and in part because many women do not think of it as a pica behaviour at all. It looks like a preference, not a clinical signal. That is exactly why it tends to go unmentioned at prenatal appointments.
+
+The word pica comes from the Latin name for magpie, a bird famed for eating almost anything. The association between pregnancy, iron deficiency, and unusual cravings for non-food substances has been observed in medical literature for a very long time. One of the earliest recorded descriptions of pica specifically involved a pregnant woman. This is not a fringe phenomenon — it is a well-documented pattern that primary care providers and ob-gyns are trained to interpret.
+
+## The Iron Connection — and Why It Matters Right Now
+
+MedlinePlus's guidance on eating during pregnancy puts it plainly: pica during pregnancy may be caused by too little iron in the blood, which can lead to anemia. This is what makes pagophagia clinically significant rather than just nutritionally puzzling.
+
+The current leading hypothesis for why iron-deficient individuals specifically crave ice involves what happens neurologically when ice is chewed. Research has found that chewing ice may trigger a physiological response that briefly increases blood flow to the brain. For a person whose red blood cell count and oxygen delivery are already reduced by iron deficiency anemia, this temporary boost in alertness and processing speed may be what makes the craving feel compulsive rather than casual. The ice is not replacing iron. It is providing a momentary functional workaround for the cognitive sluggishness that iron deficiency causes — which is why willpower tends not to resolve it, and why it tends to intensify as iron levels drop further.
+
+Studies have found that pagophagia resolves in many patients following iron supplementation, often before hemoglobin levels have fully recovered, which supports iron status as the primary driver rather than an ingrained habit.
+
+## Why Iron Deficiency Is So Common in Pregnancy
+
+The iron requirement during pregnancy is substantially higher than at any other non-pregnant point in life. ACOG's nutrition guidance confirms that a non-pregnant woman needs 18 mg of iron per day, while a pregnant woman needs 27 mg per day. This increase exists because iron is essential for producing the additional blood volume that pregnancy demands — both for the expanded maternal circulation and for the fetus's own developing red blood cells.
+
+According to NIH ODS, blood volume increases substantially during pregnancy, which means the amount of iron women need rises accordingly. Getting insufficient iron during pregnancy is associated with an increased risk of iron deficiency anemia and is linked to a greater risk of premature birth and low birthweight for the infant.
+
+Despite this higher requirement, research from the NIH into dietary supplement use during pregnancy has found that the majority of pregnant women in the United States have dietary iron intakes that fall below what is estimated to be adequate. Prenatal vitamins help close this gap — but they do not always close it completely, particularly for women who started pregnancy with already-depleted iron stores, who have difficulty absorbing iron, or who experience significant blood loss. Gummy prenatal vitamins are one specific case worth knowing about: ACOG notes that gummy vitamins cannot hold the same amount of iron as regular prenatal vitamins, so women taking gummies may be getting considerably less iron from their supplement than they assume.
+
+The third trimester is when the gap tends to be most acute. Iron demands peak in late pregnancy as the fetus draws heavily on maternal stores to build reserves for its first months of independent life. This is also when pagophagia is most commonly reported. If you are in your third trimester and craving ice, the timing is not coincidental.
+
+## Other Types of Pica in Pregnancy — and Which Ones Are Dangerous
+
+Ice craving is the most common form of pica during pregnancy partly because ice is, as a substance, benign. The craving signals something worth investigating, but consuming ice itself does not introduce toxins or pathogens the way that other pica substances can.
+
+Other forms of pica carry direct physical risks that change the urgency of telling your provider.
+
+**Geophagia** — the craving for and eating of dirt or clay — can introduce lead, heavy metals, harmful bacteria, and parasites into the body. These are not trace concerns. They represent real risks to fetal neurological development and to the mother's own health. In some cultural contexts, geophagia is normalised or even encouraged during pregnancy as a traditional practice, which means some women do not think to mention it to a provider who has not specifically asked.
+
+**Amylophagia** — craving raw starch or cornstarch, sometimes consumed straight from the box — is associated with iron and zinc deficiency and is not intrinsically toxic in small amounts, but high starch consumption can significantly interfere with nutrient absorption and adds empty calories at a time when nutritional quality matters considerably for fetal development.
+
+MedlinePlus notes that pica is related to other health problems, including the potential for abdominal pain, nausea, bloating, and intestinal blockage depending on what is being consumed. Any non-food craving — regardless of how harmless the substance seems — should be disclosed to your provider. The substance matters less than the craving. The craving is the signal.
+
+## Talking to Your Provider: What to Expect
+
+Many women do not bring up ice cravings at prenatal appointments because the craving seems too minor or too strange. Clinical literature on pagophagia has found that many providers are not routinely aware of the pica-iron connection — which makes your disclosure more important, not less, because it may be the prompt that leads to an iron check that would otherwise not happen until routine screening catches a more advanced deficiency later.
+
+When you mention an ice craving to your provider, expect them to order a blood test to check your iron status and look for anemia. MedlinePlus notes that there is no single diagnostic test for pica itself, but because pica is frequently associated with nutritional deficiencies, providers will typically check blood levels of iron and zinc and screen for anemia. Depending on their approach, they may check hemoglobin, hematocrit, serum ferritin, and other markers of iron status rather than relying on hemoglobin alone — since hemoglobin can remain within range while ferritin, which reflects stored iron, is already low.
+
+If iron deficiency anemia is confirmed, your provider may recommend iron supplementation above and beyond what your prenatal vitamin provides. ACOG notes that if anemia develops during pregnancy, your ob-gyn may recommend extra iron supplements. For a fuller picture of what managing iron supplementation during pregnancy involves — including the side effects many women encounter and how to reduce them — our earlier post on [iron supplements in pregnancy](/blog/iron-supplements-pregnancy-side-effects) covers the practical detail.
+
+Do not self-prescribe additional iron based on an ice craving alone. A blood test first establishes whether deficiency is actually present and at what level, which determines the appropriate response.
+
+## Practical Notes on Iron in Your Diet
+
+Alongside any supplementation your provider recommends, dietary iron is worth paying attention to. ACOG's nutrition guidance lists iron-rich foods that are appropriate during pregnancy: beans, lentils, enriched breakfast cereals, beef, turkey, liver, and shrimp.
+
+ACOG also specifies that certain foods help the body absorb iron — particularly those rich in vitamin C: oranges, grapefruit, strawberries, broccoli, and peppers. Pairing a plant-based iron source with a vitamin C-rich food at the same meal increases absorption of the non-heme iron it contains. A lentil dish with a squeeze of lemon, or iron-fortified cereal eaten with strawberries, applies this practically. The combination matters because non-heme iron from plant sources is absorbed at a considerably lower rate than heme iron from animal sources when eaten alone.
+
+Calcium can reduce iron absorption when taken simultaneously, which is worth knowing if your prenatal vitamin contains calcium or if you take a separate calcium supplement. Some providers advise spacing iron supplementation away from calcium-rich meals for this reason. Tea and coffee also contain compounds that can inhibit non-heme iron absorption — another reason to avoid drinking them immediately around iron-rich meals when iron status is a concern.
+
+## Common Questions About Ice Cravings and Pica in Pregnancy
+
+### Can the ice craving itself harm the baby?
+
+Consuming ice does not directly harm the fetus. The clinical concern is what the craving signals — iron deficiency — not the ice itself. Iron deficiency anemia in pregnancy is associated with increased risks of preterm birth and low birthweight, according to NIH ODS. Managing the underlying iron status is what protects the baby, not avoiding the ice.
+
+### I only crave ice occasionally — does that count?
+
+The clinical definition requires the pattern to last at least one month, but an occasional, unexplained, and compulsive-feeling craving for ice is still worth mentioning to your provider — particularly if it is new in pregnancy and feels different from a simple preference. The question your provider needs to answer is whether your iron levels are adequate, and a blood test settles that definitively regardless of craving frequency.
+
+### I take a prenatal vitamin with iron. Could I still be deficient?
+
+Yes. Most prenatal vitamins contain iron, but dietary intake varies, absorption differs between individuals, and the third trimester specifically sees iron demands that can outpace what a standard prenatal supplement provides. If you take a gummy prenatal vitamin, ACOG specifically notes these cannot hold the same iron quantity as regular tablets, so your actual iron intake from the supplement may be lower than you think. Blood test results are the only reliable indicator of your actual iron status.
+
+### What if my provider says my iron is fine but I still crave ice?
+
+If iron and zinc levels come back within normal range, your provider may explore other contributing factors. MedlinePlus notes that pica may also occur in adults who crave a specific texture in the mouth, and that it can be associated with other conditions in some presentations. A normal iron result ends one line of investigation — it does not end the conversation.
+
+## When to Call Your Doctor
+
+Contact your provider rather than waiting for your next scheduled appointment if:
+
+- **You are regularly craving or consuming any non-food substance** — ice, dirt, clay, starch, chalk, or anything else. Whatever the substance, this warrants a blood test
+- **Your ice craving is significant in volume** — multiple cups per day, or with a compulsive quality that feels distinct from a normal food preference
+- **You have symptoms that may suggest iron deficiency anemia:** unusual fatigue beyond typical pregnancy tiredness, pale skin, feeling consistently cold, shortness of breath on minimal exertion, or difficulty concentrating
+- **You have been eating soil, clay, or any substance that could introduce contamination** — this is urgent, not a wait-and-see situation, due to the risk of heavy metal or bacterial exposure
+- **You have not had your iron levels checked this trimester** and you are beyond 20 weeks — this is the period of increasing iron demand, and anemia screening is standard prenatal care that should not be missed
+
+## Related Tools on SageNest
+
+Iron deficiency often brings significant fatigue alongside it, and staying on top of nutrition becomes harder when energy is low. For a picture of what is developing in your pregnancy right now — and which nutritional milestones are most relevant to your current stage — our [week-by-week pregnancy guide](/pregnancy-week-by-week) walks through each stage in detail. If your weight gain has been slower than expected, which can sometimes accompany periods of nutritional deficiency, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+Craving ice during pregnancy has a name — pagophagia — and it is classified as a form of pica, the persistent craving for non-food substances. MedlinePlus confirms that pica during pregnancy may be caused by insufficient iron or zinc, and the association between ice craving specifically and iron deficiency is well documented in clinical research. Iron requirements during pregnancy are substantially higher than at other life stages — ACOG confirms the daily requirement increases from 18 mg to 27 mg — and the majority of pregnant women in the United States have dietary iron intakes below adequate levels. If you are chewing through cups of ice and cannot explain why, tell your provider at your next appointment. A blood test determines whether iron deficiency is the driver, and if it is, appropriate supplementation addresses the deficiency and, in many cases, resolves the craving along with it.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Nutrition During Pregnancy](https://www.acog.org/store/products/patient-education/pamphlets/pregnancy/nutrition-during-pregnancy)
+- **ACOG** — [Healthy Eating During Pregnancy](https://www.acog.org/womens-health/faqs/healthy-eating-during-pregnancy)
+- **NIH Office of Dietary Supplements** — [Iron — Consumer Fact Sheet](https://ods.od.nih.gov/factsheets/iron-consumer/)
+- **NIH Office of Dietary Supplements** — [Dietary Supplements and Life Stages: Pregnancy — Health Professional Fact Sheet](https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional/)
+- **MedlinePlus** — [Pica](https://medlineplus.gov/ency/article/001538.htm)
+- **MedlinePlus** — [Eating Right During Pregnancy](https://medlineplus.gov/ency/patientinstructions/000584.htm)
+
+**Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.**
+`,
+  },
+  {
     slug: 'pregnancy-dehydration-third-trimester-thirst',
     title: "Why You're Constantly Thirsty in the Third Trimester (And What Dehydration Actually Triggers)",
     description: 'Constant thirst in the third trimester is real — and dehydration does more than tire you out. ACOG confirms it can trigger Braxton Hicks. Here\'s how much you actually need.',
