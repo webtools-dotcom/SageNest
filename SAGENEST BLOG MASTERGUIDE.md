@@ -655,6 +655,8 @@ If a specific number, threshold, or range does not appear verbatim on the ACOG, 
  - choline-pregnancy-prenatal-vitamins-miss
  - iodine-pregnancy-sea-salt-prenatal-gap
  - fish-pregnancy-what-to-eat-avoid-mercury
+ - caffeine-200mg-limit-pregnancy-what-counts
+ - pregnancy-dehydration-third-trimester-thirst
 
 
 ## Section 19: Source Verification, Citation, and the Self-Check Protocol
