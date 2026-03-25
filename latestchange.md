@@ -1,3 +1,9 @@
+## 2026-03-25 (Added new blog post: pregnancy-dehydration-third-trimester-thirst)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `pregnancy-dehydration-third-trimester-thirst`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/pregnancy-dehydration-third-trimester-thirst.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested third-trimester hydration article while keeping SageNest's canonical blog source and generated blog/redirect/sitemap artifacts synchronized.
+
 ## 2026-03-24 (Aligned caffeine blog metadata with provided image prompt)
 
 - Confirmed the requested blog slug `caffeine-200mg-limit-pregnancy-what-counts` is present at the top of `src/data/blogPosts.ts`, then added `imagePrompt` support to the `BlogPost` interface and attached the provided prompt text to that blog object.

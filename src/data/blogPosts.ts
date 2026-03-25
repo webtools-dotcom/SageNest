@@ -13,6 +13,142 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'pregnancy-dehydration-third-trimester-thirst',
+    title: "Why You're Constantly Thirsty in the Third Trimester (And What Dehydration Actually Triggers)",
+    description: 'Constant thirst in the third trimester is real — and dehydration does more than tire you out. ACOG confirms it can trigger Braxton Hicks. Here\'s how much you actually need.',
+    readingTime: '9 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-25',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a visibly tired pregnant woman sitting on a sofa in the third trimester, holding a large glass of water and looking at it with a slightly puzzled expression, hand resting on her rounded belly, soft warm afternoon light, candid and real, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'How much water should you drink when pregnant?',
+        answer: 'ACOG recommends drinking 8 to 12 cups — 64 to 96 ounces — of water every day during pregnancy. Crucially, ACOG also specifies that you should drink throughout the day, not just when you are thirsty, because thirst is a late indicator of dehydration and pregnancy makes the baseline fluid requirement substantially higher than usual. This target covers water from all sources, including beverages and water-rich foods, but plain water is the most efficient way to reach it.'
+      },
+      {
+        question: 'Can dehydration cause Braxton Hicks contractions?',
+        answer: 'Yes — ACOG confirms this directly. If you are experiencing Braxton Hicks contractions, ACOG recommends resting and drinking water, and states that if rest and hydration make the contractions stop, they are not true labor contractions. The uterus is a muscle, and like other muscles it can become irritable when the body is dehydrated. Drinking water when Braxton Hicks begin is both a management strategy and a diagnostic test — if they ease within 30 minutes of hydrating and resting, dehydration was almost certainly a contributing factor.'
+      },
+      {
+        question: 'What are the signs of dehydration during pregnancy?',
+        answer: 'ACOG identifies the following as signs of dehydration during pregnancy: dark yellow urine, urinating only small amounts or less frequently than usual, dizziness, and a racing or pounding heart. Pale yellow or straw-coloured urine is the target — it is the most accessible daily indicator of adequate hydration. Headache and fatigue are also associated with dehydration, though they have many causes in pregnancy. If you notice several of these signs together and cannot resolve them with increased fluid intake, contact your provider.'
+      },
+      {
+        question: 'Why am I so much thirstier in the third trimester than earlier in pregnancy?',
+        answer: 'Several factors converge in the third trimester to drive up fluid needs significantly. Blood volume has reached its peak expansion — increasing by roughly 40 to 50 percent above pre-pregnancy levels by this point — and maintaining that expanded volume requires more fluid. Amniotic fluid, which ACOG notes is partially sustained by maternal hydration, is at or near its maximum volume. The baby is largest and most metabolically active, placing maximum demands on the circulatory system. Body temperature runs slightly higher due to fetal heat production. And if the weather is warm or you are exercising, these demands compound further. Thirst in the third trimester is not a malfunction — it is an accurate signal.'
+      },
+      {
+        question: 'Does drinking more water help with pregnancy swelling?',
+        answer: 'Counterintuitively, yes — staying well-hydrated generally helps with swelling rather than worsening it. When the body is dehydrated, it retains water as a protective response, which can contribute to puffiness. Adequate hydration supports normal fluid circulation and kidney function, which in turn helps the body manage fluid distribution more efficiently. However, swelling in pregnancy has multiple causes — including normal physiological changes, heat, prolonged standing, and in some cases preeclampsia — and hydration alone will not resolve swelling that has a more significant underlying cause. If swelling is sudden, severe, or includes your face and hands, contact your provider regardless of how much you have been drinking.'
+      }
+    ],
+    content: `
+You are drinking more water than you ever have in your life. You refilled your bottle twice before lunch. And yet you are still thirsty, still checking your urine colour, still wondering whether you are somehow getting this wrong. The third trimester thirst is real, it has a specific physiological explanation, and it is telling you something important — because what most pregnancy hydration advice skips is that dehydration in pregnancy does not just make you tired. According to ACOG, it can trigger the uterine contractions you have been trying to figure out all afternoon.
+
+## Why Your Body Is Demanding So Much More Fluid Right Now
+
+Pregnancy changes your fluid requirement from the first trimester onward, but the third trimester is when multiple demands converge simultaneously to make adequate hydration genuinely difficult to maintain without active attention.
+
+**Blood volume expansion peaks in the third trimester.** From early pregnancy, your body progressively increases blood volume to supply the placenta, support fetal circulation, and prepare for the blood loss of delivery. By the third trimester, blood volume has increased substantially above pre-pregnancy levels — and maintaining this expanded volume requires proportionally more fluid intake. The kidneys filter significantly more blood per hour than before pregnancy, which increases urine output and fluid losses.
+
+**Amniotic fluid is at or near its maximum.** According to ACOG, water aids in forming amniotic fluid — the fluid that cushions and protects the baby throughout pregnancy. Amniotic fluid volume is dynamic: it is continuously produced and reabsorbed, and maternal hydration plays a role in maintaining it. In the third trimester, when amniotic fluid volume is highest, this ongoing demand on fluid resources is at its peak.
+
+**The baby is generating more heat.** Fetal metabolism produces heat, and maternal core temperature runs slightly higher in pregnancy as a result. Your body uses fluid to regulate this heat through perspiration and respiration, adding another invisible drain on daily fluid balance that increases as the baby grows.
+
+**Physical demands are higher.** Carrying the additional weight of a late pregnancy means your body works harder during every movement. Even ordinary walking and the effort of daily activity generate more heat and sweat than the same activities did pre-pregnancy or in the first trimester.
+
+All of these factors operating together explain why the 8 to 12 cups recommended by ACOG for pregnancy is higher than standard adult fluid recommendations — and why the third trimester, specifically, tends to produce constant thirst even in women who are actively trying to stay hydrated.
+
+## The Braxton Hicks Connection ACOG Is Clear About
+
+This is the piece of hydration information that most pregnancy articles do not lead with, and it is arguably the most immediately useful.
+
+If you experience Braxton Hicks contractions — those tightening sensations across the abdomen that come and go without the regularity of true labor — ACOG's guidance on distinguishing true labor from false labor specifically instructs you to rest and drink water. ACOG states that if rest and hydration make the contractions go away, they are not true labor contractions.
+
+The uterus is a large, involuntary muscle. Like other muscles in the body, it becomes more irritable and prone to cramping when the surrounding tissues are under-hydrated. Dehydration does not cause true labor, but it reliably lowers the threshold at which Braxton Hicks contractions occur — meaning a woman who is mildly dehydrated in the afternoon may experience more frequent and more noticeable tightening than she would if she had met her fluid target for the day.
+
+The practical value of this connection is immediate: the next time you notice Braxton Hicks, before you start timing them or working out whether they are coming in a pattern, sit down, drink two or three full glasses of water, and rest for thirty minutes. ACOG's guidance is explicit that if hydration and rest resolve them, they were not true labor contractions. This is a far more useful and less alarming first step than the anxiety spiral of wondering whether you should call your provider immediately.
+
+If contractions continue despite rest and adequate hydration, become regular, or are accompanied by lower back pain that moves to the front, that is a different situation — and one that warrants calling your provider regardless of hydration status.
+
+## How Much You Actually Need and Why "When Thirsty" Is Not Enough
+
+ACOG recommends 8 to 12 cups — 64 to 96 ounces — of water every day during pregnancy. ACOG also makes a specific point that is not always included in general hydration advice: drink throughout the day, not just when you are thirsty.
+
+This is not a minor caveat. Thirst is a relatively late physiological signal. By the time you feel noticeably thirsty, you are already in mild dehydration — your blood has become slightly more concentrated, your kidneys have begun conserving water, and the cascade of symptoms (darker urine, reduced output, increased uterine irritability) is already beginning. Relying on thirst as your primary hydration cue during pregnancy means you are spending much of the day in a mild fluid deficit that you only notice after the fact.
+
+The practical approach ACOG implies — drinking throughout the day proactively — means distributing your fluid intake across waking hours rather than drinking large amounts reactively. A glass of water with every meal and snack, a bottle carried throughout the day and refilled consistently, and fluids alongside any medication or supplement timing are the framework that keeps you ahead of the curve rather than catching up to it.
+
+## Reading Your Urine: The Most Accessible Daily Check
+
+Urine colour is the most practical daily indicator of hydration status, and it requires no tracking tools or measurement.
+
+**What you are aiming for:** pale yellow or straw-coloured urine. This indicates adequate hydration and normal kidney function in the context of pregnancy.
+
+**What ACOG flags as a dehydration sign:** dark yellow urine, or urinating only small amounts and infrequently. ACOG specifically identifies these alongside dizziness and a racing heart as signs of dehydration during pregnancy.
+
+**A note on prenatal vitamins:** B vitamins — particularly riboflavin (B2), which is present in most prenatal vitamins — cause bright or neon yellow urine that is unrelated to hydration status. If you take your prenatal vitamin and your urine is intensely yellow for the following few hours, this is the B2 being excreted and is normal. The relevant check is your urine colour in the morning before your prenatal vitamin, or several hours after taking it, when the B2 effect has cleared.
+
+## Practical Strategies for the Third Trimester Specifically
+
+General hydration advice — drink eight glasses a day — does not account for the specific challenges of the third trimester. These are the adjustments that matter most in the final weeks.
+
+**Nocturia makes nighttime hydration a real tradeoff.** By the third trimester, many women are waking multiple times per night to urinate, and the natural instinct is to reduce evening fluid intake to minimise disruptions. The practical middle ground ACOG's guidance suggests: front-load your fluid intake toward the morning and early afternoon, tapering moderately in the two hours before bed. This is not about restricting total intake — it is about timing it to reduce nighttime disruption while still meeting the daily target.
+
+**Heat significantly increases requirement.** If you are in a warm climate, it is summer, or you have been physically active, ACOG's guidance on exercise in pregnancy is explicit that hydration needs increase further — drink plenty of water before, during, and after any physical activity. In hot weather, the 8 to 12 cup baseline may not be sufficient, and increased thirst in these conditions is a reliable signal to drink more.
+
+**Water-rich foods count.** A significant proportion of daily fluid intake comes from food, particularly fruits and vegetables with high water content — cucumber, watermelon, strawberries, oranges, and cooked vegetables all contribute. This is not a reason to reduce water intake, but it is worth knowing that a diet rich in these foods provides a partial hydration buffer that pure fluid tracking would underestimate.
+
+**Flying significantly increases fluid loss.** ACOG's guidance on air travel in pregnancy specifically notes that low cabin humidity increases fluid losses and that maintaining adequate hydration is a key preventive measure during flights. If you are flying in the third trimester — and have confirmed it is within your provider's recommended window using our [pregnancy flight calculator](/pregnancy-flight-calculator) — increase your fluid intake both before the flight and during it.
+
+## Common Questions About Hydration in Pregnancy
+
+### Does sparkling water count the same as still water?
+
+Yes — sparkling water, whether naturally or artificially carbonated, hydrates equivalently to still water. Some women find carbonated water more palatable when plain water feels nauseating, particularly in the first trimester. The only caveat: carbonated beverages can worsen heartburn and acid reflux, which are already more common in late pregnancy. If sparkling water triggers reflux, the discomfort of reflux does not change the hydration equation, but it is a practical reason some women switch to still water in the third trimester.
+
+### Do I count herbal tea toward my fluid intake?
+
+Yes — herbal teas without caffeine contribute to daily fluid intake. Be aware that some herbal teas have specific concerns during pregnancy — raspberry leaf tea, for example, is sometimes avoided until later in pregnancy due to traditional claims about uterine stimulation, though the evidence is limited. If you are regularly drinking herbal teas, it is worth mentioning to your provider which ones and in what quantities, particularly for teas consumed in large amounts.
+
+### What about sports drinks or electrolytes?
+
+Plain water meets the hydration requirement for most pregnant women in ordinary circumstances. Sports drinks contain electrolytes and carbohydrates that can be useful during or after intense exercise or if you have been significantly dehydrated from vomiting. However, they also contain added sugars that are not necessary when you are meeting your fluid needs through water and a varied diet. Whether electrolyte supplementation is appropriate for your specific situation — particularly if you have gestational diabetes or other nutritional considerations — is a conversation to have with your provider rather than a self-directed decision.
+
+## When to Call Your Doctor
+
+Hydration issues can escalate quickly in pregnancy. Contact your provider if:
+
+- **You cannot keep fluids down for more than 8 hours** — whether from nausea, vomiting, or illness. ACOG identifies this as a warning sign requiring prompt attention, not a wait-and-see situation
+- **You have signs of significant dehydration that do not resolve with increased fluid intake:** dizziness, heart racing or pounding, noticeably reduced urine output, or dark urine that persists after several hours of active drinking
+- **Braxton Hicks contractions do not stop after rest and adequate hydration** — if they continue, become more frequent, or develop into a regular pattern, do not wait to see if they settle on their own
+- **You notice a significant decrease in your baby's movements** alongside feeling unwell and dehydrated — while movement changes have many causes, dehydration alongside reduced movement warrants same-day contact with your provider
+- **You are in a hot environment, have been unwell, or have had significant vomiting or diarrhoea** and are unsure whether you have been able to compensate adequately
+
+## Related Tools on SageNest
+
+Hydration needs are higher during physical activity and in warm weather — if you are planning to fly in the third trimester and want to confirm whether your timing is within the safe window, our [pregnancy flight calculator](/pregnancy-flight-calculator) can help you check before you book. For a view of where you are in the pregnancy and what comes next, our [week-by-week pregnancy guide](/pregnancy-week-by-week) walks through what is developing at each stage.
+
+## The Bottom Line
+
+Constant thirst in the third trimester is not a sign that you are doing something wrong — it reflects the convergence of peak blood volume, peak amniotic fluid demand, and peak fetal metabolic activity all pulling on your fluid reserves simultaneously. ACOG's target of 8 to 12 cups daily, distributed throughout the day without waiting for thirst, is the evidence-based response to this demand. The connection worth knowing: ACOG confirms that dehydration can trigger Braxton Hicks contractions, and that rest and hydration resolving them is the key test that distinguishes false labour from true. Keep your fluid intake consistent, use urine colour as your daily guide, and drink ahead of thirst rather than in response to it.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [How much water should I drink during pregnancy?](https://www.acog.org/womens-health/experts-and-stories/ask-acog/how-much-water-should-i-drink-during-pregnancy)
+- **ACOG** — [Nutrition During Pregnancy](https://www.acog.org/store/products/patient-education/pamphlets/pregnancy/nutrition-during-pregnancy)
+- **ACOG** — [How to Tell When Labor Begins](https://www.acog.org/womens-health/faqs/how-to-tell-when-labor-begins)
+- **ACOG** — [Exercise During Pregnancy](https://www.acog.org/womens-health/faqs/exercise-during-pregnancy)
+- **ACOG** — [Air Travel During Pregnancy](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2018/08/air-travel-during-pregnancy)
+
+**Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.**
+`,
+  },
+  {
     slug: 'caffeine-200mg-limit-pregnancy-what-counts',
     title: "That 'One Cup of Coffee' Rule in Pregnancy? It Depends Entirely on the Cup",
     description: "ACOG's 200mg caffeine limit sounds simple — but one large coffeehouse coffee can hit it entirely. Learn what actually counts and how to track it without guessing.",
