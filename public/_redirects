@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/pregnancy-ice-craving-pagophagia-iron-deficiency /blog/pregnancy-ice-craving-pagophagia-iron-deficiency 301
 /pregnancy-dehydration-third-trimester-thirst /blog/pregnancy-dehydration-third-trimester-thirst 301
 /caffeine-200mg-limit-pregnancy-what-counts /blog/caffeine-200mg-limit-pregnancy-what-counts 301
 /fish-pregnancy-what-to-eat-avoid-mercury /blog/fish-pregnancy-what-to-eat-avoid-mercury 301
@@ -53,6 +54,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/pregnancy-ice-craving-pagophagia-iron-deficiency /blog-static/pregnancy-ice-craving-pagophagia-iron-deficiency.html 200
+/blog/pregnancy-ice-craving-pagophagia-iron-deficiency/ /blog-static/pregnancy-ice-craving-pagophagia-iron-deficiency.html 200
 /blog/pregnancy-dehydration-third-trimester-thirst /blog-static/pregnancy-dehydration-third-trimester-thirst.html 200
 /blog/pregnancy-dehydration-third-trimester-thirst/ /blog-static/pregnancy-dehydration-third-trimester-thirst.html 200
 /blog/caffeine-200mg-limit-pregnancy-what-counts /blog-static/caffeine-200mg-limit-pregnancy-what-counts.html 200
