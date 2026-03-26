@@ -159,15 +159,13 @@ Use this structure in order. Do not skip sections. Heading text will vary per po
 ## The Bottom Line
 [3–5 sentence summary + one natural CTA to a tool]
 
----
-*This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.*
 ```
 
 ### First Heading Rule for Discover
 The first heading after the hook must not be a definition. A reader who clicked from the Discover feed already knows what the topic is — she clicked because the title spoke to her experience. Opening with "What Is Round Ligament Pain?" after a hook that just described the exact sharp shooting pain she felt is a trust-breaking mismatch. The first heading should orient her inside the experience — why it is happening, what her body is doing, what this means for her — not define the term she already searched for. The heading text will vary per post. The rule is: never define first, always explain or orient first.
 
 ### Minimum length
-- 1,200 words minimum. Most posts should be 1,500–2,500 words.
+- Target 1,400–1,800 words. This produces a 7–9 min read, which is the Discover sweet spot — substantive enough to build trust, short enough to hold attention to the end. Go longer only if a topic genuinely requires it and every extra word earns its place. Never pad.
 - Longer is better only if the content is genuinely useful — no padding.
 
 ---
@@ -297,7 +295,7 @@ What this structure does: the reader who came in believing BBT charting helps he
 
 ---
 
-### 7.3b Title-Hook Continuity Rule
+### 7.3 Title-Hook Continuity Rule
 
 The title makes an emotional promise. The hook must keep that promise in its first sentence. This is not optional — it is the structural rule that prevents bounces from Discover traffic.
 
@@ -597,7 +595,7 @@ Before delivering any post, verify every item:
 - [ ] Medical disclaimer present at the end
 - [ ] Sources section present with real confirmed URLs — not search terms (see Section 19)
 - [ ] Full TypeScript object format ready to paste into `blogPosts.ts`
-- [ ] Reading time is accurate to word count — calculated as word count ÷ 200, rounded to nearest whole number (1,200 words = 6 min read, 1,800 = 9 min read, 2,400 = 12 min read)
+- [ ] Reading time is accurate to word count — calculated as word count ÷ 200, rounded to nearest whole number. Target is 7–9 min read (1,400–1,800 words). If the reading time exceeds 9 min, trim before delivering — remove transitional summaries, repetitive reinforcement sentences, and any section that doesn't directly answer something the reader would actively wonder about.
 - [ ] **Post is placed at the TOP of the `blogPosts` array when pasting into `blogPosts.ts`**
 
 ---
@@ -785,7 +783,7 @@ If a search returns no specific page for a given claim, the claim must be qualif
 Every post must end with a Sources section formatted exactly as follows. This section is part of the post content and must appear in the final TypeScript object inside the content field, after the medical disclaimer. Every URL in this section must be a real, confirmed link found during Self-Check 5 — not a search term, not a guessed path.
 
 ```
----
+
 
 **Sources**
 
@@ -796,7 +794,7 @@ This post draws on guidance from the following primary sources:
 - **NIH Office of Dietary Supplements** — [Exact Page Title](https://ods.od.nih.gov/confirmed-url)
 - **IOM / National Academies** — [Exact Page Title](https://www.nationalacademies.org/confirmed-url)
 
-*Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.*
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
 ```
 
 Rules for the Sources section:
