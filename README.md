@@ -373,7 +373,8 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── pregnancy-week-by-week-milestones.html
 │   │   ├── pregnancy-weight-gain-myths-facts.html
 │   │   ├── round-ligament-pain-pregnancy.html
-│   │   └── shortness-of-breath-pregnancy.html
+│   │   ├── shortness-of-breath-pregnancy.html
+│   │   └── vegetarian-pregnancy-dha-nutrient-gaps.html
 │   ├── images/
 │   │   └── blog/
 │   │       └── sagenest-blog-default.jpg
