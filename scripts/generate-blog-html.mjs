@@ -178,6 +178,7 @@ function buildStaticStyle(tokens) {
         border-radius: 18px;
         border: 1px solid var(--border-hairline);
         margin: 0 0 3rem;
+        aspect-ratio: 1200 / 630;
       }
       .author-box {
         display: flex;
@@ -488,7 +489,9 @@ function buildPostHtml(post, styleBlock) {
     ${ogImage}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" /></noscript>
     <style>
 ${styleBlock}
     </style>
@@ -497,7 +500,7 @@ ${styleBlock}
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="brand"><img src="/sagenest-main-logo.png" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
+      <a href="/" class="brand"><img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_68,h_68,c_fill,f_auto,q_auto/sagenest-main-logo" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
       <nav>
         <a href="/similar-tools">Similar tools</a>
         <a href="/blog">Blog</a>
@@ -507,10 +510,20 @@ ${styleBlock}
       <article>
         <h1>${post.title}</h1>
         <p class="post-meta">${post.readingTime}${post.lastReviewed ? ` · <span>Last reviewed: ${post.lastReviewed}</span>` : ""}</p>
-        ${post.imageUrl ? `<img src="${post.imageUrl}" alt="${titleEscaped}" class="post-image" loading="lazy" />` : ''}
+        ${post.imageUrl ? (() => {
+          const isCloudinary = post.imageUrl.includes('res.cloudinary.com');
+          if (isCloudinary) {
+            const base = post.imageUrl.replace(/\/w_\d+,h_\d+,c_fill/, '');
+            const src400 = base.replace('/image/upload/', '/image/upload/w_400,h_210,c_fill,f_auto,q_auto/');
+            const src634 = base.replace('/image/upload/', '/image/upload/w_634,h_333,c_fill,f_auto,q_auto/');
+            const src1200 = base.replace('/image/upload/', '/image/upload/w_1200,h_630,c_fill,f_auto,q_auto/');
+            return `<img src="${src634}" srcset="${src400} 400w, ${src634} 634w, ${src1200} 1200w" sizes="(max-width: 640px) 400px, (max-width: 1000px) 634px, 1200px" alt="${titleEscaped}" class="post-image" loading="lazy" width="1200" height="630" />`;
+          }
+          return `<img src="${post.imageUrl}" alt="${titleEscaped}" class="post-image" loading="lazy" width="1200" height="630" />`;
+        })() : ''}
         ${bodyHtml}
         <a href="/editorial-team" class="author-box">
-          <div class="author-avatar"><img src="/sagenest-main-logo.png" alt="" loading="lazy" width="48" height="48" /></div>
+          <div class="author-avatar"><img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_96,h_96,c_fill,f_auto,q_auto/sagenest-main-logo" alt="" loading="lazy" width="48" height="48" /></div>
           <div class="author-info">
             <p class="author-label">Written by</p>
             <p class="author-name">SageNest Editorial Team</p>

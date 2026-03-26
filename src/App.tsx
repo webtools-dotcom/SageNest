@@ -29,7 +29,7 @@ function App() {
         <Link to="/pregnancy-due-date-calculator" className="brand">
           <div className="brand-icon" aria-hidden="true">
             <img
-              src="/sagenest-main-logo.png"
+              src="https://res.cloudinary.com/dtplyecgd/image/upload/w_88,h_88,c_fill,f_auto,q_auto/sagenest-main-logo"
               alt=""
               width="44"
               height="44"
