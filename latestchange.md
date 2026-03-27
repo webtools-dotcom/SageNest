@@ -1,3 +1,9 @@
+## 2026-03-27 (Added new blog post: magnesium-deficiency-pregnancy-leg-cramps)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `magnesium-deficiency-pregnancy-leg-cramps`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/magnesium-deficiency-pregnancy-leg-cramps.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested magnesium-and-pregnancy leg-cramps article while keeping SageNest's canonical blog source and generated blog/redirect/sitemap artifacts synchronized.
+
 ## 2026-03-26 (Added new blog post: vegetarian-pregnancy-dha-nutrient-gaps)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `vegetarian-pregnancy-dha-nutrient-gaps`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
