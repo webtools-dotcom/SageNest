@@ -339,7 +339,11 @@ Below is the exact tracked file tree of this repository at the time of this upda
 ```text
 .
 ├── .githooks/
-│   └── pre-commit
+│   ├── post-checkout
+│   ├── post-commit
+│   ├── post-merge
+│   ├── pre-commit
+│   └── pre-push
 ├── .github/
 │   └── workflows/
 │       └── ci.yml
