@@ -168,7 +168,7 @@ function buildStaticStyle(tokens) {
       a:hover { color: var(--charcoal); }
       .post-meta {
         font-size: 0.875rem;
-        color: var(--text-tertiary);
+        color: var(--text-secondary);
         margin-bottom: 1.5rem;
       }
       .post-image {
@@ -274,7 +274,7 @@ function buildStaticStyle(tokens) {
         color: var(--text-tertiary);
         margin-top: 4rem;
       }
-      footer a { color: var(--sage-dark); margin: 0 0.5rem; }`;
+      footer a { color: var(--sage-dark); margin: 0 0.25rem; display: inline-block; padding: 0.375rem 0.5rem; }`;
 }
 
 function faqJsonLd(faqs) {
