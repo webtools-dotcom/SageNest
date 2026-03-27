@@ -13,6 +13,129 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'folic-acid-vs-methylfolate-pregnancy-mthfr',
+    title: "Your Prenatal Says 'Methylfolate' — Is That Actually Better Than Folic Acid?",
+    description: "Many women switch prenatal vitamins over MTHFR concerns — but the NTD prevention evidence was built on folic acid specifically. Here's what CDC and NIH actually say.",
+    readingTime: '8 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-27',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman sitting at a kitchen table holding two different prenatal vitamin bottles, looking between them with a slightly puzzled and uncertain expression, soft natural morning light, candid feel, not overly styled, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Is methylfolate better than folic acid during pregnancy?',
+        answer: "This is the question driving a lot of prenatal vitamin switching — and the honest answer is: for preventing neural tube defects specifically, folic acid is what the evidence is built on, not methylfolate. According to the CDC, folic acid is the only type of folate shown to help prevent neural tube defects. The NIH ODS consumer folate fact sheet confirms that while 5-MTHF may be more usable for people with MTHFR variants, all women capable of becoming pregnant should still get 400 mcg of folic acid daily — even if they have MTHFR C677T. There are no current clinical recommendations to substitute methylfolate for folic acid in pregnancy."
+      },
+      {
+        question: 'What is MTHFR and does it affect how I process folic acid?',
+        answer: "MTHFR is a gene that helps your body process folate. The most common variant — MTHFR C677T — affects how efficiently the MTHFR protein works. However, the CDC's dedicated MTHFR page states clearly: people with MTHFR gene variants can process all types of folate, including folic acid. The practical impact is more modest than most online sources suggest — the CDC confirms that people with the MTHFR TT genotype have blood folate levels that are only about 16% lower than those without the variant when consuming the same amount of folic acid. More importantly, the CDC states that 400 mcg of folic acid daily can increase blood folate levels regardless of MTHFR genotype."
+      },
+      {
+        question: 'Should I get tested for MTHFR before pregnancy?',
+        answer: "Current clinical guidance does not recommend routine MTHFR testing for pregnant women or those trying to conceive. The CDC's clinical guidance states there are no clinical recommendations at this time to test for MTHFR status or to take a different amount of folate or folic acid based on MTHFR genotype. Whether routine testing is appropriate for your specific situation — particularly if you have had a previous NTD-affected pregnancy or certain other health conditions — is a conversation with your provider. But based on current guidance from CDC and NIH, a positive MTHFR test result would not change the recommendation to take 400 mcg of folic acid daily."
+      },
+      {
+        question: 'When do you need to start taking folic acid before pregnancy?',
+        answer: "The standard recommendation is at least one month before trying to conceive — but the CDC notes that because about half of all pregnancies in the US are unplanned, all women capable of becoming pregnant should take 400 mcg of folic acid daily regardless of whether they are actively trying. Neural tube defects form in the first few weeks of pregnancy, often before a woman knows she is pregnant — which means folic acid needs to be on board before conception, not after the positive test. The RDA during pregnancy itself rises to 600 mcg of dietary folate equivalents, which a standard prenatal vitamin containing folic acid is designed to meet."
+      },
+      {
+        question: 'Do I need folic acid from food too, or does my prenatal cover it?',
+        answer: "Both matter. The NIH ODS pregnancy fact sheet reports that about 35.8% of pregnant women in the US have dietary folate intakes from food that fall below the estimated average requirement — meaning diet alone is not reliable. However, when prenatal supplements are included in the total intake calculation, the proportion falling below the EAR drops substantially. A standard prenatal vitamin containing 400 to 600 mcg of folic acid, combined with a diet that includes folate-rich foods like leafy greens, legumes, and fortified cereals and grains, is the approach the evidence supports. Neither the supplement alone nor diet alone is the complete answer."
+      }
+    ],
+    content: `
+You have been taking your prenatal vitamin faithfully. Then you read something about MTHFR — a gene variant that affects how your body processes folate — and suddenly the prenatal vitamin aisle looks different. There are bottles that say "methylfolate" and "active folate" and "5-MTHF" instead of "folic acid," and the marketing implies these are superior. You are now holding two different bottles in a pharmacy wondering if you have been taking the wrong one. Here is what both the CDC and NIH actually say — including the part that most of the MTHFR content circulating online leaves out.
+
+## Why Folic Acid and Folate Are Not the Same Thing
+
+The confusion begins with terminology. Folate is an umbrella term for all forms of vitamin B9, including the naturally occurring folates found in leafy greens, legumes, and other foods. Folic acid is a specific, synthetic form of folate used in dietary supplements and fortified foods — the form added to enriched flour, bread, pasta, and cereals in the United States since mandatory fortification began in 1998.
+
+According to the CDC, folic acid is more stable than the folates found naturally in food, which is why it is used in supplements. The NIH Office of Dietary Supplements adds an important measurement note: because the body absorbs folic acid from supplements more efficiently than natural food folate, the two are measured differently. The unit of measurement, mcg DFE (dietary folate equivalents), accounts for this difference. This is why the pregnancy RDA is 600 mcg DFE — a figure that a standard prenatal vitamin containing folic acid is specifically formulated to meet.
+
+Methylfolate — sold as 5-MTHF — is a different synthetic form of folate that some supplement manufacturers market as superior, particularly for people with MTHFR gene variants. Whether that claim holds up in the context of pregnancy is where the evidence matters.
+
+## What the NTD Prevention Research Was Actually Built On
+
+This is the central fact the methylfolate conversation frequently skips. The clinical evidence establishing that daily folate supplementation prevents neural tube defects — the randomised controlled trials, the decades of public health data, the mandatory fortification programme that the CDC credits with averting approximately 1,300 NTD-affected pregnancies annually — was built on folic acid specifically, not methylfolate.
+
+The CDC states this directly: folic acid is the only type of folate that has been shown to help prevent neural tube defects. The reason methylfolate has not replaced this recommendation is not because researchers are unaware of it — it is because 5-MTHF has not been tested in the kind of clinical trials that established the NTD prevention evidence in the first place. The NIH ODS pregnancy health professional fact sheet makes this explicit: the CDC continues to recommend folic acid rather than 5-MTHF because 5-MTHF has not been tested in clinical trials for reducing the risk of NTDs.
+
+Neural tube defects — including spina bifida and anencephaly — form in the first few weeks of pregnancy, according to the CDC, often before a woman knows she is pregnant. The timing means that adequate folic acid needs to be present before conception, not introduced after a positive pregnancy test. This is why the CDC recommends that all women capable of becoming pregnant take 400 mcg of folic acid daily — not just those who are actively trying.
+
+## What MTHFR Actually Does — and What CDC Says About It
+
+The MTHFR gene provides instructions for making a protein that helps the body process folate. The most common variant — known as MTHFR C677T — reduces the efficiency of this process for some people. Online, this is frequently described in alarming terms, often accompanied by claims that people with the variant cannot process folic acid and must take methylfolate instead.
+
+The CDC's dedicated MTHFR page addresses this directly and the answer is considerably more measured than most online sources suggest. People with MTHFR gene variants can process all types of folate, including folic acid. The practical difference in blood folate levels is real but modest: people with the most significant MTHFR TT genotype have blood folate levels that are only about 16% lower than those without the variant when consuming the same amount of folic acid, according to the CDC. More importantly, the CDC confirms that getting 400 mcg of folic acid daily can increase blood folate levels regardless of MTHFR genotype.
+
+The CDC also states something that often gets buried in the online MTHFR discourse: more people in the United States have one or two copies of the MTHFR C677T variant than do not. This is a common genetic variant, not a rare abnormality — and it does not change the recommended approach to folate supplementation in pregnancy. The CDC's clinical guidance for providers states plainly: there are no clinical recommendations to test for MTHFR status or to take a different amount of folic acid based on MTHFR genotype.
+
+## What a Methylfolate Prenatal Actually Changes — and What It Does Not
+
+If you have switched to a methylfolate-containing prenatal vitamin, or are considering it, here is what the current evidence supports saying:
+
+The NIH ODS consumer folate fact sheet acknowledges that dietary supplements containing 5-MTHF may be better than folic acid for some individuals with MTHFR C677T because their bodies can use this form more easily. This is a real difference at the level of absorption. However, the same fact sheet immediately follows this with the current guidance: all women and teen girls who could become pregnant should still get 400 mcg of folic acid daily — not 5-MTHF — even if they have an MTHFR C677T variant.
+
+In practice, what this means is: if your prenatal vitamin contains methylfolate and meets the dose requirements, it is not harmful — but switching to it specifically because of MTHFR concerns is not supported by current clinical recommendations. The NTD prevention benefit has been established for folic acid. Whether methylfolate confers an equivalent benefit has not been established by the same standard of evidence.
+
+If you have a specific reason to be concerned about folate metabolism — a personal or family history of NTD-affected pregnancy, a confirmed MTHFR diagnosis from a prior genetic test, or a provider who has recommended testing — the right conversation to have is with your provider, who can assess your situation against current guidelines rather than marketing claims.
+
+## The Timing Window That Matters More Than the Form
+
+Both the CDC and NIH ODS make a point that is more practically important than the folic acid versus methylfolate question: the timing of folate supplementation matters enormously, and most women start too late.
+
+NTDs form in the first three to four weeks of pregnancy — a period when most women do not yet know they are pregnant. The CDC notes that about half of all pregnancies in the United States are unplanned, which is precisely why the recommendation is for all women capable of becoming pregnant to take 400 mcg of folic acid daily, not just those who are actively trying to conceive. Waiting until after a positive pregnancy test to start folic acid means the critical window for neural tube closure has likely already passed.
+
+The NIH ODS pregnancy fact sheet reports that when prenatal supplements are not included, about 35.8% of pregnant women in the US have dietary folate intakes from food that fall below the estimated average requirement. Food sources of folate — leafy greens, lentils, beans, asparagus, fortified cereals — matter and should be part of the picture, but diet alone is not a reliable route to meeting pregnancy folate requirements. A prenatal vitamin that contains folic acid, taken consistently starting before conception, is the primary intervention the evidence supports.
+
+For a view of what's developing at each stage of pregnancy and which nutritional milestones matter most right now, our [week-by-week pregnancy guide](/pregnancy-week-by-week) walks through each stage in detail.
+
+## Common Questions About Folic Acid in Pregnancy
+
+### My prenatal has both folic acid and methylfolate listed. Is that a problem?
+
+No. Some prenatal vitamins include both forms as part of their formulation. The key check is whether the total folate content meets the pregnancy requirement — look for at least 600 mcg DFE on the label, which is the RDA for folate during pregnancy per the NIH ODS. Having both forms present does not mean they cancel each other out or create a problem.
+
+### I did not take folic acid before I found out I was pregnant. Is it too late?
+
+It is not too late to start — folic acid continues to be important throughout pregnancy for cell division, DNA synthesis, and fetal development well beyond the neural tube closure window. Start taking it as soon as you know you are pregnant if you have not been already, and continue throughout. The early window is the highest-stakes period for NTD prevention specifically, but folic acid remains a required nutrient for the entire pregnancy.
+
+### Are there food sources of folic acid as well as supplements?
+
+The US mandatory fortification programme means folic acid is present in enriched flour, bread, pasta, rice, and cornmeal. The CDC notes this fortification programme is credited with a meaningful reduction in NTD prevalence since 1998. Folate — the natural form — is found in leafy greens, lentils, beans, asparagus, and avocado. Both contribute to overall folate status, but supplementation remains the reliable way to consistently meet the increased pregnancy requirement.
+
+## When to Call Your Doctor
+
+Contact your provider if:
+
+- **You have had a previous pregnancy affected by a neural tube defect** — the recommendation for women in this situation is a substantially higher folic acid dose, and this needs to be managed with provider guidance well before conception
+- **You have a confirmed MTHFR diagnosis** from prior genetic testing and are uncertain how this affects your prenatal supplement choices — bring the specific test result, not just the general question
+- **You have been taking a prenatal vitamin that contains no folic acid or methylfolate** — check the label, and if folate in any form is absent, raise this at your next appointment
+- **You are more than 6 weeks into a pregnancy and have not yet started folic acid supplementation** — while the neural tube closure window has likely passed, folate remains important throughout and your provider needs to know your supplementation history
+
+## Related Tools on SageNest
+
+Getting the foundation right before and during pregnancy matters most in the early weeks. If you are trying to estimate your due date or confirm your timeline, our [pregnancy due date calculator](/pregnancy-due-date-calculator) gives you a clear picture based on your last menstrual period or conception date. For a week-by-week view of what is developing right now and which nutrients are most critical at your current stage, our [week-by-week pregnancy guide](/pregnancy-week-by-week) has the detail you need.
+
+## The Bottom Line
+
+The folic acid versus methylfolate debate is real, but the conclusion most online sources omit is the one that matters most: the entire body of clinical evidence for neural tube defect prevention was built on folic acid specifically, and both the CDC and NIH ODS continue to recommend 400 mcg of folic acid daily for all women capable of becoming pregnant — including those with MTHFR variants. The MTHFR C677T gene variant is common, the blood folate difference it creates is modest at about 16% according to CDC, and 400 mcg of folic acid daily raises folate levels regardless of genotype. There are no current clinical recommendations to test for MTHFR routinely or to switch from folic acid to methylfolate based on MTHFR status. Start folic acid before you try to conceive if possible — the neural tube closes in the first few weeks, often before a pregnancy is known — and confirm with your provider that your prenatal vitamin meets the pregnancy RDA of 600 mcg DFE.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **CDC** — [About Folic Acid](https://www.cdc.gov/folic-acid/about/index.html)
+- **CDC** — [MTHFR Gene Variant and Folic Acid Facts](https://www.cdc.gov/folic-acid/data-research/mthfr/index.html)
+- **CDC** — [Folic Acid: Facts for Clinicians](https://www.cdc.gov/folic-acid/hcp/clinical-overview/index.html)
+- **NIH Office of Dietary Supplements** — [Folate — Consumer Fact Sheet](https://ods.od.nih.gov/factsheets/Folate-Consumer/)
+- **NIH Office of Dietary Supplements** — [Dietary Supplements and Life Stages: Pregnancy — Health Professional Fact Sheet](https://ods.od.nih.gov/factsheets/Pregnancy-HealthProfessional/)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+  `,
+  },
+  {
     slug: 'magnesium-deficiency-pregnancy-leg-cramps',
     title: "Those Waking-You-Up Leg Cramps at Night? Magnesium May Be Why",
     description: "Over half of pregnant women have magnesium intakes below recommended levels — and most prenatal vitamins barely cover it. Here's what magnesium actually does and how to get more.",
