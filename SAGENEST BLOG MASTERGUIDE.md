@@ -627,34 +627,7 @@ If a specific number, threshold, or range does not appear verbatim on the ACOG, 
 ---
 
 ## 18. Already Published — Do Not Repeat Any of These
- - gestational-diabetes-pregnancy-weight-gain
- - how-due-dates-are-calculated
- - ivf-due-date-guide
- - morning-sickness-remedies-that-actually-work
- - pregnancy-weight-gain-myths-facts
- - pregnancy-nutrition-guide-what-to-eat-each-trimester
- - healthy-pregnancy-weight-gain-complete-guide
- - pregnancy-week-by-week-milestones
- - ovulation-signs-symptoms
- - braxton-hicks-vs-real-contractions 
- - pregnancy-swelling-edema-normal-vs-warning-sign
- - pregnancy-headaches-causes-safe-relief-red-flags
- - round-ligament-pain-pregnancy
- - irregular-cycles-ovulation-conception
- - luteal-phase-explained-after-ovulation
- - pregnancy-insomnia-causes-safe-relief
- - shortness-of-breath-pregnancy
- - pelvic-girdle-pain-pregnancy
- - bbt-charting-ovulation
- - cervical-mucus-ovulation-guide
- - anovulation-what-it-is-causes-treatment
- - pcos-ovulation-tracking-irregular-cycles
- - iron-supplements-pregnancy-side-effects
- - choline-pregnancy-prenatal-vitamins-miss
- - iodine-pregnancy-sea-salt-prenatal-gap
- - fish-pregnancy-what-to-eat-avoid-mercury
- - caffeine-200mg-limit-pregnancy-what-counts
- - pregnancy-dehydration-third-trimester-thirst
+ - gestational-diabetes-pregnancy-weight-gain, - how-due-dates-are-calculated, - ivf-due-date-guide, - morning-sickness-remedies-that-actually-work, - pregnancy-weight-gain-myths-facts, - pregnancy-nutrition-guide-what-to-eat-each-trimester, - healthy-pregnancy-weight-gain-complete-guide, - pregnancy-week-by-week-milestones, - ovulation-signs-symptoms, - braxton-hicks-vs-real-contractions, - pregnancy-swelling-edema-normal-vs-warning-sign, - pregnancy-headaches-causes-safe-relief-red-flags, - round-ligament-pain-pregnancy, - irregular-cycles-ovulation-conception, - luteal-phase-explained-after-ovulation,         - pregnancy-insomnia-causes-safe-relief, - shortness-of-breath-pregnancy, - pelvic-girdle-pain-pregnancy, - bbt-charting-ovulation, - cervical-mucus-ovulation-guide, - anovulation-what-it-is-causes-treatment, - pcos-ovulation-tracking-irregular-cycles, - iron-supplements-pregnancy-side-effects, - choline-pregnancy-prenatal-vitamins-miss, - iodine-pregnancy-sea-salt-prenatal-gap, - fish-pregnancy-what-to-eat-avoid-mercury, - caffeine-200mg-limit-pregnancy-what-counts, - pregnancy-dehydration-third-trimester-thirst,         - pregnancy-ice-craving-pagophagia-iron-deficiency, - vegetarian-pregnancy-dha-nutrient-gaps
 
 
 ## Section 19: Source Verification, Citation, and the Self-Check Protocol
