@@ -367,7 +367,7 @@ async function cloudinaryImageExists(cloudName, apiKey, apiSecret, slug) {
 
 async function fetchPollinationsImage(prompt, apiKey, slug, errors, isRetry = false) {
   const seed = Math.floor(Math.random() * 1000000);
-  const endpoint = `https://gen.pollinations.ai/image/${encodeURIComponent(prompt)}?model=klein&width=1200&height=630&seed=${seed}&enhance=true&negative_prompt=${encodeURIComponent('text,watermark,logo,words,letters,signature,nudity')}&key=${encodeURIComponent(apiKey)}`;
+  const endpoint = `https://gen.pollinations.ai/image/${encodeURIComponent(prompt)}?model=zimage&width=1200&height=630&seed=${seed}&enhance=true&negative_prompt=${encodeURIComponent('text,watermark,logo,words,letters,signature,nudity')}&key=${encodeURIComponent(apiKey)}`;
   const response = await fetch(endpoint);
 
   if (response.status === 200) {
