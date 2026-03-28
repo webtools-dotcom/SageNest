@@ -167,6 +167,8 @@ nav a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
+  line-height: 1.2;
 }
 
 .nav-pill:hover,
@@ -1698,7 +1700,7 @@ button:disabled {
   }
 
   .site-header {
-    padding: var(--space-md) var(--space-lg);
+    padding: var(--space-sm) var(--space-md);
   }
 
   .brand {
@@ -1706,13 +1708,13 @@ button:disabled {
   }
 
   nav {
-    gap: var(--space-sm);
+    gap: 0.5rem;
   }
 
   .nav-pill,
   nav a {
-    font-size: 0.8125rem;
-    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+    padding: 0.4rem 0.75rem;
   }
 
   .tool-header {
@@ -1778,6 +1780,20 @@ button:disabled {
 
   button {
     width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .site-header {
+    flex-wrap: wrap;
+    row-gap: 0.625rem;
+    align-items: center;
+  }
+
+  .site-header > nav[aria-label='Primary'] {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
   }
 }
 
