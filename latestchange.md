@@ -1,3 +1,9 @@
+## 2026-03-28 (Added new blog post: short-luteal-phase-10-days-what-it-means)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `short-luteal-phase-10-days-what-it-means`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/short-luteal-phase-10-days-what-it-means.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested short luteal phase article while keeping SageNest's canonical blog source and generated blog/redirect/sitemap artifacts synchronized.
+
 ## 2026-03-27 (Added new blog post: mid-cycle-spotting-ovulation-what-it-means)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `mid-cycle-spotting-ovulation-what-it-means`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
