@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/two-week-wait-symptoms-progesterone-not-pregnancy /blog/two-week-wait-symptoms-progesterone-not-pregnancy 301
 /short-luteal-phase-10-days-what-it-means /blog/short-luteal-phase-10-days-what-it-means 301
 /stress-delayed-ovulation-late-period /blog/stress-delayed-ovulation-late-period 301
 /mid-cycle-spotting-ovulation-what-it-means /blog/mid-cycle-spotting-ovulation-what-it-means 301
@@ -60,6 +61,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/two-week-wait-symptoms-progesterone-not-pregnancy /blog-static/two-week-wait-symptoms-progesterone-not-pregnancy.html 200
+/blog/two-week-wait-symptoms-progesterone-not-pregnancy/ /blog-static/two-week-wait-symptoms-progesterone-not-pregnancy.html 200
 /blog/short-luteal-phase-10-days-what-it-means /blog-static/short-luteal-phase-10-days-what-it-means.html 200
 /blog/short-luteal-phase-10-days-what-it-means/ /blog-static/short-luteal-phase-10-days-what-it-means.html 200
 /blog/stress-delayed-ovulation-late-period /blog-static/stress-delayed-ovulation-late-period.html 200
