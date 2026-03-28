@@ -1,3 +1,10 @@
+## 2026-03-28 (Fixed mobile header nav pill wrapping/overlap without impacting desktop layout)
+
+- Updated `src/styles/global.css` mobile header rules to reduce horizontal padding and tighten primary-nav spacing/font/pill padding at `max-width: 768px`, so the brand + nav items fit reliably on common phone widths without compressing into awkward shapes.
+- Added no-wrap behavior for nav pills so labels like `Similar tools` remain on a single line instead of breaking into two lines inside the rounded button.
+- Added a narrow-screen fallback breakpoint at `max-width: 420px` that allows the header to wrap and lets the primary nav move to a second row when required, preventing overlap/collision while preserving desktop/tablet layout behavior.
+- Why: users were seeing mobile header pills distort/wrap due to constrained width and large spacing; this keeps the UI stable on small devices without changing navigation functionality.
+
 ## 2026-03-28 (Added new blog post: short-luteal-phase-10-days-what-it-means)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `short-luteal-phase-10-days-what-it-means`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
