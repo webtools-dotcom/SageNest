@@ -1,3 +1,9 @@
+## 2026-03-28 (Improved global text readability with larger default copy and darker body text)
+
+- Updated typography tokens in `src/styles/design-tokens.css` to darken the default long-form/body text palette (`--text-secondary` and `--text-tertiary`) so paragraph and supporting copy has stronger contrast against the existing cream/off-white backgrounds.
+- Increased default content sizing in `src/styles/global.css` by raising base body text and paragraph sizing, plus scaling article paragraph/list text for easier mobile reading without changing layout structure, routing, or feature behavior.
+- Why: users reported that site text felt too light and hard to read on normal/mobile viewing, so this improves readability and accessibility across the website with a minimal global CSS-only change.
+
 ## 2026-03-28 (Fixed mobile header nav pill wrapping/overlap without impacting desktop layout)
 
 - Updated `src/styles/global.css` mobile header rules to reduce horizontal padding and tighten primary-nav spacing/font/pill padding at `max-width: 768px`, so the brand + nav items fit reliably on common phone widths without compressing into awkward shapes.
