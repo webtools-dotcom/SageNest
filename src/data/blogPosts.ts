@@ -13,6 +13,129 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'pregnancy-rhinitis-stuffy-nose-not-a-cold',
+    title: "That Stuffy Nose You've Had Since Week 8? It's Not a Cold. It's Pregnancy.",
+    description: "Pregnancy rhinitis affects many pregnant women from the first trimester onward. It's not contagious, not a cold, and safe remedies exist — here's the mechanism and what helps.",
+    readingTime: '7 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-29',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman sitting on a couch blowing her nose with a slightly frustrated expression, a box of tissues beside her, soft warm daylight through a window, candid and real feel, not overly styled, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Why do you get a stuffy nose during pregnancy?',
+        answer: 'Pregnancy is a named cause of nasal congestion, listed by MedlinePlus alongside allergies and other conditions that cause nasal stuffiness. The mechanism is that the tissues lining the nose become swollen due to inflamed blood vessels — the same basic process that causes nasal congestion during a cold, but in this case driven by the hormonal changes of pregnancy rather than infection. Elevated estrogen and progesterone cause blood vessels throughout the body to dilate and the mucosal tissues to swell, including those lining the nasal passages. The result is congestion that has no immune or infectious cause and does not respond the way a cold would.'
+      },
+      {
+        question: 'How long does pregnancy rhinitis last?',
+        answer: 'Pregnancy rhinitis can start as early as the first trimester — often around week 6 to 8 when estrogen rises sharply — and for many women persists throughout pregnancy. Unlike a cold, which MedlinePlus notes typically goes away within a week, pregnancy rhinitis does not resolve on a cold timeline. It tends to improve after birth, as hormonal levels normalise in the postpartum period. During pregnancy, the congestion fluctuates — typically worse at night and in the morning, and sometimes worsening in the third trimester as blood volume peaks.'
+      },
+      {
+        question: 'Is it safe to take decongestants for a stuffy nose during pregnancy?',
+        answer: "Not without checking with your provider first — and one specific decongestant carries a clear warning. ACOG states that pseudoephedrine, one of the most common OTC decongestants, has been linked to a small risk of abdominal wall birth defects and should not be used during the first three months of pregnancy. ACOG's guidance on allergy medications in pregnancy also recommends checking with your ob-gyn before taking any over-the-counter allergy or cold medication. Non-medication approaches — saline sprays, steam, humidifiers, and nasal strips — are the safest first-line options for pregnancy rhinitis."
+      },
+      {
+        question: 'Does pregnancy rhinitis affect my baby?',
+        answer: 'Pregnancy rhinitis itself — the hormonal nasal congestion — is not associated with fetal harm. It is a maternal symptom driven by normal pregnancy hormones, not an illness or infection. The practical concern is when significant nasal congestion causes a woman to breathe predominantly through her mouth during sleep, which can worsen snoring and reduce sleep quality in an already sleep-disrupted trimester. Severe nasal obstruction that significantly disrupts sleep is worth mentioning to your provider, who can advise on safe management options for your specific situation.'
+      },
+      {
+        question: 'What actually helps with pregnancy rhinitis?',
+        answer: 'The safest first-line options are all non-medication approaches. MedlinePlus confirms that saline nasal sprays or rinses, steam inhalation, and humidifiers can help thin mucus and relieve congestion — all of these are safe during pregnancy. Elevating the head of the bed slightly reduces overnight nasal pooling. Nasal strips that widen the nostrils mechanically (not medicated) are also safe. ACOG confirms that there is a corticosteroid nasal spray that is safe to use during pregnancy for more significant symptoms — but this requires a provider conversation to confirm the appropriate product and use.'
+      }
+    ],
+    content: `
+You have been congested since around week eight. It started mildly — you assumed you were getting a cold, drank extra fluids, waited for it to pass. It did not pass. Since then you have been blowing your nose every morning, breathing through your mouth at night, waking your partner with snoring you did not have before pregnancy. You have been through this cycle so many times that you have stopped telling people you have a cold. But you also cannot explain what this actually is. Here it is: pregnancy is a named, documented cause of nasal congestion — listed by MedlinePlus alongside allergies and infections as a distinct category of its own. The stuffy nose has not been a cold since week eight. It has been estrogen.
+
+## Why Your Nose Has Been Congested Since the First Trimester
+
+MedlinePlus describes the mechanism of nasal congestion directly: a stuffy or congested nose occurs when the tissues lining the nose become swollen due to inflamed blood vessels. This is the same basic process whether the cause is a cold virus, an allergen, or pregnancy — the distinction is what is driving the vascular response.
+
+During pregnancy, elevated estrogen and progesterone cause significant changes in vascular tone throughout the body. Blood volume increases substantially, blood vessels dilate to accommodate it, and the mucous membranes — including those lining the nasal passages — respond to hormonal signals by becoming engorged and swollen. This is pregnancy rhinitis: nasal congestion caused by hormonal vascular changes, with no virus, no allergen, and no infection involved.
+
+The first trimester is when estrogen rises most rapidly, which is why many women notice the congestion beginning around week 6 to 8 — well before they have been exposed to any seasonal allergen or illness that could explain it. And because the hormonal driver remains present throughout pregnancy, the congestion does not follow the trajectory of a cold. MedlinePlus notes that a cold-related stuffiness typically resolves within a week. Pregnancy rhinitis does not resolve on this timeline. It fluctuates with blood volume, time of day, and sleeping position — often worst in the morning and at night — but it does not clear the way an infection would.
+
+## The Night Breathing Problem — and Why It Gets Worse Later
+
+Pregnancy rhinitis often announces itself most loudly at night. Lying down shifts fluid distribution toward the head, increasing vascular pressure in the nasal tissues. Combined with the fact that the nasal passages are already swollen from hormonal changes, this frequently results in significant overnight congestion, mouth breathing, and snoring that did not exist before pregnancy.
+
+For some women this is merely uncomfortable. For others, particularly in the second and third trimesters when uterine pressure affects breathing mechanics and blood volume is at its peak, persistent nasal obstruction can meaningfully disrupt sleep — which is already compromised by frequent waking, positional discomfort, and the bathroom trips that increase as the pregnancy progresses.
+
+Sleeping with the head elevated reduces the overnight pooling effect. Many women find even a modest elevation — a wedge pillow under the head and upper torso, or propping the head of the mattress — makes a noticeable difference by morning. Staying on your side rather than your back also helps, both because it reduces nasal obstruction and because ACOG recommends side-sleeping in the third trimester for circulatory reasons independent of the rhinitis question.
+
+Nasal strips — the adhesive strips placed across the outside of the nose that physically widen the nostrils — are another safe option. They contain no medication and work purely mechanically, reducing airflow resistance. They will not resolve the underlying mucosal swelling, but they make it meaningfully easier to breathe through the nose while sleeping and reduce the mouth breathing and snoring that often disrupt both the pregnant woman and anyone sleeping beside her.
+
+For a picture of what else is happening in your current pregnancy week alongside these physical changes, our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers what to expect at each stage — including the blood volume and circulatory changes that peak in the third trimester and compound symptoms like rhinitis.
+
+## What Is and Is Not Safe for Pregnancy Rhinitis
+
+This is where it matters to know specifically what you are dealing with, because the usual cold aisle approach does not straightforwardly apply.
+
+**Saline nasal sprays and rinses** are the safest and most consistently effective option. MedlinePlus confirms that saline nasal washes help remove mucus and relieve congestion — they work by moistening dry inflamed nasal tissues, thinning mucus so it drains more easily, and temporarily reducing the sensation of blockage. They can be used as frequently as needed during pregnancy and have no fetal safety concerns. Saline sprays are available without prescription at any pharmacy, or can be made at home with the formulation MedlinePlus provides: one cup of warm water, half a teaspoon of salt, and a pinch of baking soda.
+
+**Steam and humidification** are equally safe and address the same mechanism. Inhaling steam — from a shower, a bowl of hot water, or a cool-mist humidifier — moistens the nasal passages and temporarily reduces congestion. MedlinePlus lists steam inhalation and humidifiers alongside saline as practical first-line approaches to nasal congestion. A humidifier in the bedroom is particularly useful for overnight symptoms, as indoor air tends to dry out during sleep and worsens mucosal swelling.
+
+**OTC decongestants require specific care.** ACOG's guidance on allergy medications in pregnancy draws a clear line: pseudoephedrine — one of the most common active ingredients in OTC decongestants — has been linked to a small risk of abdominal wall birth defects and should not be used during the first three months of pregnancy. ACOG also advises checking with your ob-gyn before taking any over-the-counter allergy or cold medication. This applies to all combination products that may contain decongestants alongside other active ingredients — read labels carefully, and do not assume that a product is safe during pregnancy simply because it was safe before.
+
+**OTC nasal spray decongestants** carry an additional concern beyond the pregnancy safety question: MedlinePlus specifically notes that using these for more than three days can make nasal stuffiness worse, as the nasal passages become dependent on the medication and rebound more severely when it wears off. This rebound effect — rhinitis medicamentosa — is something to avoid at any point, and particularly during pregnancy.
+
+**Corticosteroid nasal sprays** are a different category. ACOG confirms directly that there is a corticosteroid nasal spray that is safe to use during pregnancy. These are prescription products that reduce nasal inflammation at the tissue level rather than constricting blood vessels temporarily. If your pregnancy rhinitis is severe enough to significantly disrupt sleep or function, this is a conversation to have with your provider — they can advise on whether a corticosteroid spray is appropriate for your situation and which specific formulation to use.
+
+## Distinguishing Pregnancy Rhinitis from Other Causes
+
+The congestion you have had since week eight is most likely pregnancy rhinitis — but nasal symptoms during pregnancy can also reflect allergies, a genuine cold or upper respiratory infection, or sinus infection. The pattern helps distinguish them.
+
+**Pregnancy rhinitis** is consistent and hormonal: it has been there since early pregnancy, worsens at night and in the morning, fluctuates but does not escalate dramatically, and comes with no fever, sore throat, or coloured discharge. The congestion is typically clear.
+
+**A genuine cold or upper respiratory infection** follows a shorter, more acute timeline — it arrives with more pronounced symptoms including sore throat, fever, or muscle aches, and resolves within approximately a week. MedlinePlus confirms this one-week resolution pattern for typical cold congestion.
+
+**Allergic rhinitis** tends to come with itching in the nose and eyes, sneezing, and a clear connection to specific environmental triggers — pollen seasons, pet exposure, dust. It may be worsened by pregnancy but has a different pattern from pure pregnancy rhinitis.
+
+**Sinus infection** should be suspected if the nasal discharge becomes thick and coloured, if there is significant facial pressure or pain around the cheeks or above the eyes, or if you develop a fever. This warrants provider evaluation rather than self-management, as sinus infections sometimes require antibiotic treatment during pregnancy.
+
+## Common Questions About Pregnancy Rhinitis
+
+### Why does the congestion feel worse some days than others?
+
+Because the underlying driver — hormonal vascular changes — varies with overall fluid status, activity level, environmental conditions, and how well-hydrated you are. Days with higher salt intake, more sedentary activity, or less sleep tend to produce more pronounced nasal swelling, as fluid retention is higher. Days with more movement, adequate hydration, and better sleep tend to feel clearer. The fluctuation does not mean the rhinitis is coming and going — the baseline hormonal cause is constant, but its expression varies.
+
+### Can pregnancy rhinitis cause a nosebleed?
+
+Yes. The same engorged, swollen nasal blood vessels that produce congestion are also more fragile than usual, making nosebleeds more common during pregnancy than at other times. The nasal mucosa is more easily irritated by dry air, nose blowing, or minor trauma. Using a saline spray to keep the nasal tissues moist, running a humidifier in dry indoor conditions, and blowing the nose gently rather than forcefully all reduce the likelihood of nosebleeds. Occasional small nosebleeds that stop quickly with pressure are common during pregnancy. Nosebleeds that are heavy, prolonged, or recurring warrant provider attention.
+
+### I have been using a nasal decongestant spray every night for two weeks — should I stop?
+
+Yes — and this is worth raising with your provider. MedlinePlus is specific that OTC nasal spray decongestants should not be used for more than three days, as use beyond that can make congestion worse through the rebound effect. If you have been using one consistently, stopping it abruptly may temporarily worsen your congestion as the rebound resolves. Your provider can advise on how to manage the transition and whether a safe pregnancy-appropriate alternative is appropriate for your situation.
+
+## When to Call Your Doctor
+
+Contact your provider about nasal symptoms if:
+
+- **You have significant coloured nasal discharge, facial pressure or pain, or a fever** — these may indicate a sinus infection requiring evaluation and potentially antibiotic treatment
+- **You have been using an OTC decongestant, particularly pseudoephedrine**, during the first trimester — ACOG specifically identifies this as a medication to avoid in the first three months of pregnancy due to the small risk of abdominal wall birth defects
+- **Your congestion is severely disrupting sleep** to the point where you are not getting adequate rest — significant sleep disruption during pregnancy has effects beyond discomfort, and your provider may be able to recommend a safe prescription option
+- **You develop a significant nosebleed** that does not stop with ten minutes of continuous pressure, or nosebleeds that are recurring and substantial in volume
+
+## Related Tools on SageNest
+
+Pregnancy rhinitis is one of several symptoms that compound in the third trimester when blood volume peaks and sleep becomes more difficult from multiple directions simultaneously. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) walks through what is happening each week and which symptoms typically peak at which stages. If sleep disruption from rhinitis is significantly affecting your rest, the context of where you are in pregnancy is useful — knowing how many weeks remain before postpartum resolution can sometimes reframe what feels endless.
+
+## The Bottom Line
+
+Pregnancy rhinitis is nasal congestion caused by the hormonal vascular changes of pregnancy, not by infection, allergy, or any external pathogen. MedlinePlus lists pregnancy as a named cause of nasal stuffiness — the same mechanism as a cold (inflamed blood vessels causing swollen nasal tissue) but driven by estrogen rather than a virus. It can begin in the first trimester, persists throughout pregnancy, and typically resolves postpartum. Saline sprays, steam inhalation, and humidifiers are the safest first-line relief options and are confirmed by MedlinePlus as effective for congestion management. OTC decongestants — particularly pseudoephedrine — carry specific pregnancy safety concerns, with ACOG noting a linked small risk of birth defects in the first trimester and recommending provider consultation before any OTC allergy or cold medication during pregnancy. If your congestion is severe, ACOG confirms that a corticosteroid nasal spray safe for use in pregnancy exists — a conversation to have with your ob-gyn rather than a decision to make independently.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **MedlinePlus** — [Stuffy or runny nose – adult](https://medlineplus.gov/ency/article/003049.htm)
+- **MedlinePlus** — [Nonallergic rhinopathy](https://medlineplus.gov/ency/article/001648.htm)
+- **ACOG** — [What medicine can I take for allergies while I'm pregnant?](https://www.acog.org/womens-health/experts-and-stories/ask-acog/what-medicine-can-i-take-for-allergies-while-im-pregnant)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+  `
+  },
+  {
     slug: 'rib-pain-pregnancy-third-trimester',
     title: "That Pain Under Your Ribs in the Third Trimester — Most of It Is the Baby. Some of It Isn't.",
     description: "Rib pain is common in late pregnancy and usually mechanical. But right-sided pain below the ribs is a preeclampsia warning sign — here's how to tell the difference.",
