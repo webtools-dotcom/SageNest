@@ -1,3 +1,9 @@
+## 2026-03-29 (Added new blog post: rib-pain-pregnancy-third-trimester)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `rib-pain-pregnancy-third-trimester`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/rib-pain-pregnancy-third-trimester.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested third-trimester rib pain article while keeping SageNest's canonical blog source and generated blog/redirect/sitemap artifacts synchronized.
+
 ## 2026-03-28 (Improved global text readability with larger default copy and darker body text)
 
 - Updated typography tokens in `src/styles/design-tokens.css` to darken the default long-form/body text palette (`--text-secondary` and `--text-tertiary`) so paragraph and supporting copy has stronger contrast against the existing cream/off-white backgrounds.

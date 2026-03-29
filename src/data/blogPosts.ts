@@ -13,6 +13,130 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'rib-pain-pregnancy-third-trimester',
+    title: "That Pain Under Your Ribs in the Third Trimester — Most of It Is the Baby. Some of It Isn't.",
+    description: "Rib pain is common in late pregnancy and usually mechanical. But right-sided pain below the ribs is a preeclampsia warning sign — here's how to tell the difference.",
+    readingTime: '8 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-29',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman sitting on a sofa pressing her hand against the right side of her ribcage with a pained and uncertain expression, third trimester belly visible, soft natural daylight, candid and real feel, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Is rib pain normal in the third trimester?',
+        answer: "Yes — rib discomfort in the third trimester is common and usually mechanical. As the uterus expands upward toward the end of pregnancy, it presses on the lower ribs and the diaphragm, and the baby's movements can press directly into the ribcage from inside. ACOG confirms that the growing uterus and expanding abdomen are a major source of pregnancy-related aches and pains, and MedlinePlus lists rib and upper abdominal pressure as a known consequence of the uterus pressing upward in late pregnancy. Positional discomfort, particularly when sitting for extended periods or after a large meal, is the most common presentation."
+      },
+      {
+        question: 'What does preeclampsia rib pain feel like?',
+        answer: "The MedlinePlus medical encyclopedia on preeclampsia describes it as belly pain on the right side, below the ribs — and specifically notes that this pain can be confused with heartburn, gallbladder pain, a stomach virus, or even kicking by the baby. The critical distinctions from normal rib discomfort are: it is specifically on the right side, it is persistent rather than intermittent or positional, it does not resolve when you change position or move away from the baby's pressure, and it may be accompanied by other warning signs such as severe headache, visual disturbances, or sudden swelling in the face and hands. Persistent right-sided rib or upper abdominal pain warrants same-day contact with your provider regardless of other symptoms."
+      },
+      {
+        question: 'Can baby kicks cause pain under the ribs?',
+        answer: "Yes — particularly in the third trimester when the baby is large enough to press directly into the lower ribs with kicks and stretches. This is bilateral and positional: it typically occurs when the baby is in a position where a foot or knee is lodged under a specific rib, and moving positions or gently shifting the baby often provides relief. The key difference between kick-related rib discomfort and the rib pain associated with preeclampsia is that kick pain changes with position and baby movement, while preeclampsia-related right-sided pain is persistent and does not resolve with repositioning. If you are unsure whether pain under your right ribs is from baby movement, the safest approach is to contact your provider rather than wait."
+      },
+      {
+        question: 'How do I relieve rib pain from pregnancy?',
+        answer: "For mechanical rib discomfort caused by the baby's position and uterine expansion, ACOG's guidance on back pain and body positioning during pregnancy suggests that changing positions, particularly avoiding prolonged sitting and switching between sitting and supported side-lying, can help relieve pressure. Swimming and gentle exercise can reduce the compressive effect of gravity on the ribcage. A pregnancy support pillow or sleeping on your side with a pillow between your knees reduces ribcage pressure when lying down. These measures address the mechanical discomfort. They do not address rib pain that is persistent, right-sided, and potentially associated with preeclampsia — for that, provider evaluation is needed."
+      },
+      {
+        question: 'When should I worry about rib pain during pregnancy?',
+        answer: "Contact your provider about rib pain the same day if it is: specifically on the right side below the ribs and does not change with position; accompanied by a persistent severe headache; accompanied by sudden swelling in your face, hands, or feet; accompanied by visual disturbances like flashing lights or blurry vision; or accompanied by nausea that feels different from earlier pregnancy nausea. MedlinePlus and ACOG both identify right upper abdominal pain as a warning sign of preeclampsia requiring prompt attention. ACOG specifically notes that pain in the upper-right abdomen, where your liver is, should be reported to your ob-gyn right away."
+      }
+    ],
+    content: `
+You are thirty-four weeks pregnant and something feels bruised under your right ribs. It has been there for two days. You have been attributing it to the baby — you can feel movement on that side, and you have read that babies can get a foot stuck under a rib. But this is different from the sharp kicks you usually feel. It does not shift when you change position. It is just there, dull and persistent, and you are not entirely sure what to do with it. The answer depends on one specific distinction that most pregnancy symptom content either misses or buries: the vast majority of rib discomfort in the third trimester is mechanical and benign. But persistent right-sided pain below the ribs is listed by both ACOG and MedlinePlus as a warning sign of preeclampsia — and MedlinePlus specifically notes that this pain is frequently mistaken for baby movement.
+
+## Why the Third Trimester Compresses Everything Upward
+
+To understand rib pain in pregnancy, it helps to understand what has happened to your internal anatomy by week 30 or later. The uterus, which began below your pelvis, has expanded progressively upward through the abdomen and by the third trimester occupies most of the abdominal cavity. The organs that were in that space — the stomach, intestines, diaphragm, and lower lungs — have been displaced upward or compressed sideways.
+
+ACOG's guidance on back pain and body changes during pregnancy confirms that the expanding uterus changes posture, shifts the centre of gravity, and compresses the structures around it. MedlinePlus's common symptoms page describes how the uterus pressing upward affects breathing by reducing the space the lungs have to expand — and the same upward displacement affects the ribcage. The lower ribs expand outward slightly to accommodate the enlarged uterus, and the diaphragm is pushed up. This structural shift is normal and expected, but it produces physical sensations — a tightness, achiness, or bruised feeling around the lower ribcage — that many women find surprising if they have not been told to expect it.
+
+On top of this structural pressure, the baby itself is large enough in the third trimester to directly contact the lower ribs. When a foot or knee is positioned against a rib and the baby stretches or kicks, the impact is felt at the rib itself rather than in the middle of the abdomen. This is the familiar feeling of a body part lodged under a specific rib — and it changes when the baby moves. Shifting your position, gently pressing on the outside of your abdomen near where the pressure is felt, or changing from sitting to side-lying can all encourage the baby to reposition and relieve the discomfort. That responsiveness to repositioning is the hallmark of mechanical rib discomfort.
+
+## The Specific Pain Pattern That Is Not Mechanical
+
+Here is where the clinical distinction matters, and it is one that MedlinePlus states explicitly in its medical encyclopedia entry on preeclampsia. Preeclampsia — the serious high blood pressure disorder that ACOG notes affects multiple organ systems and requires prompt medical attention — can cause belly pain on the right side, below the ribs. MedlinePlus's description is unusually specific: it notes that this pain may also be felt in the right shoulder, and that it can be confused with heartburn, gallbladder pain, a stomach virus, or **kicking by the baby**.
+
+The fact that preeclampsia-related right-sided pain appears in the same location where women feel baby movement is what makes it clinically dangerous. A woman who feels persistent right-sided pressure in her third trimester has a plausible, innocent explanation to reach for — the baby's position — and may wait days before realising the pain is not resolving and does not respond to movement or repositioning the way baby pressure normally does.
+
+The mechanism behind this pain is liver involvement. ACOG explains that preeclampsia affects multiple organ systems, and when it affects the liver, it causes liver swelling that is experienced as upper right abdominal pain. The liver sits directly under the right ribcage, which is why ACOG's expert guidance specifically directs patients to be aware of pain in the upper-right abdomen, where your liver is, and to tell their ob-gyn right away if this develops.
+
+Preeclampsia usually develops after 20 weeks of pregnancy, most commonly in the third trimester according to ACOG. The warning signs — high blood pressure, pain in the upper abdomen, severe headache, visual disturbances, and sudden significant swelling — do not all have to be present simultaneously. Right-sided upper abdominal pain can appear before blood pressure rises to the level that would flag on a home cuff, which is why waiting for another symptom before calling your provider is not a reliable approach.
+
+## How to Read Your Own Rib Pain
+
+Most rib discomfort in the third trimester is genuinely mechanical and not a sign of preeclampsia. The features that suggest the discomfort is mechanical — positional, responsive to movement, clearly tied to the baby's position — are reassuring. These practical questions help distinguish them:
+
+**Does the pain shift when you change position or when the baby moves?** Mechanical pressure from the baby or the uterus against the ribs tends to be dynamic — it changes when you lie on your side, when you walk, or when the baby repositions. Pain that stays exactly the same regardless of movement is less likely to be purely mechanical.
+
+**Is it specifically on the right side?** Bilateral discomfort or discomfort that moves around with baby activity is more consistent with positional pressure. Unilateral persistent pain — specifically under the right ribs — is the pattern associated with liver involvement and preeclampsia. Left-sided rib discomfort is far more commonly mechanical (spleen and stomach pressure, kicks from a baby in a head-down position) than right-sided persistent pain.
+
+**How long has it been there?** Mechanical rib discomfort typically varies across a day as the baby moves and you change positions. Pain that has been consistent for more than a few hours without responding to repositioning warrants provider contact rather than continued monitoring.
+
+**Are any other symptoms present?** ACOG identifies the warning signs of preeclampsia that should prompt immediate provider contact: pain in the upper right abdomen, severe headache that does not go away, visual changes including flashing lights or blurry vision, sudden swelling in the face and hands, and nausea at this stage of pregnancy that feels qualitatively different from earlier nausea. Any one of these alongside right-sided rib pain changes the picture from "probably mechanical" to "call today."
+
+For a full picture of what is developing this week and which physical changes are expected at your current stage, our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers third-trimester changes in detail — including the upward pressure and ribcage expansion that peaks in the final weeks.
+
+## Practical Management for Mechanical Rib Discomfort
+
+For rib discomfort that is positional and responsive to movement, there are several practical approaches that reduce the compressive effect of the growing uterus.
+
+**Positioning** is the most effective intervention. Avoiding prolonged sitting, particularly in a position that rounds the lower back, reduces the degree to which the uterus presses upward against the diaphragm and ribs. Sitting tall with supported lumbar posture gives the ribcage slightly more vertical room. Side-lying — particularly on the left side as recommended for third-trimester sleep — distributes the weight of the uterus away from the ribcage. ACOG's guidance on back pain during pregnancy specifically supports positional changes and avoiding prolonged static positions.
+
+**Gentle movement** helps in two ways: it encourages the baby to shift position, which can relieve direct rib pressure from a limb, and it reduces the accumulation of fluid retention and compression that worsens with long periods of inactivity. Walking and gentle swimming are both appropriate in uncomplicated third-trimester pregnancy and can meaningfully reduce musculoskeletal discomfort including rib pain.
+
+**Sleeping position support** matters as rib discomfort often intensifies at night when you are lying flat. A pregnancy body pillow or a pillow positioned between the knees and under the abdomen when side-lying reduces the degree to which the uterus rotates toward the ribs.
+
+Clothing also contributes more than most women expect. A tight waistband or underwire support that sits at the level of the lower ribs adds external compressive pressure on top of internal uterine pressure. Switching to high-waisted support wear or soft banded maternity clothing that sits above or below the rib area removes this.
+
+## Common Questions About Rib Pain in Pregnancy
+
+### Can rib pain in pregnancy cause a rib to actually break?
+
+It is very rare, but ACOG acknowledges that significant uterine pressure on the lower ribs in late pregnancy can occasionally cause stress fractures in the lower ribs. This is uncommon and most women with rib discomfort are not experiencing this. The presentation of a stress fracture would be significantly sharper and more localised than general ribcage pressure, worsened with breathing and touch rather than being a dull background ache. If you have pain that is extremely sharp, worsens when you take a breath, and is pinpoint-tender when you press on a specific rib, mention it to your provider — it warrants assessment.
+
+### I have rib pain on the left side specifically — should I be worried?
+
+Left-sided rib discomfort is almost always mechanical in origin. The stomach and spleen are under the left ribs, and as the uterus expands upward, stomach pressure contributes to left-sided discomfort that can feel similar to indigestion or rib pressure simultaneously. A baby in a head-down position with its back on your left side may position a foot or knee against the lower left ribs. Left-sided discomfort that changes with position and baby movement is reassuringly mechanical. The specific preeclampsia warning is right-sided — the liver is under the right ribs, and that is where liver involvement in preeclampsia manifests.
+
+### My rib pain is there when I breathe deeply — what does that mean?
+
+Pain that intensifies with a deep breath has a different differential than the constant dull pressure of mechanical rib compression. It can reflect intercostal muscle strain, which occurs as the ribcage expands during pregnancy and the muscles between the ribs are stretched. It can also, in rare cases, suggest pulmonary embolism, which ACOG lists among the serious conditions that can produce chest and rib-adjacent pain in pregnancy. Deep breathing pain that is new, significant, and accompanied by any shortness of breath, racing heart, or leg pain warrants urgent evaluation rather than monitoring at home.
+
+## When to Call Your Doctor
+
+Contact your provider the same day if:
+
+- **You have persistent pain specifically under your right ribs** that does not change when you reposition or when the baby moves — this matches the preeclampsia warning pattern ACOG and MedlinePlus identify
+- **The right-sided rib or upper abdominal pain is accompanied by any of**: severe headache that does not resolve, flashing lights or blurry vision, sudden swelling in your face or hands, or nausea that feels different from earlier in your pregnancy
+- **The pain intensifies with breathing** alongside any shortness of breath, rapid heart rate, or leg swelling or pain — this combination warrants urgent evaluation for pulmonary embolism
+- **Rib pain is severe, constant, and accompanied by fever** — this presentation can indicate conditions unrelated to the pregnancy that require assessment
+- **You are unsure** — given that persistent right-sided rib pain can be a warning sign of a serious condition, uncertainty about its origin is itself a reason to call rather than wait
+
+## Related Tools on SageNest
+
+The third trimester brings a concentration of physical changes that are both expected and sometimes alarming. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers what is happening at each stage — including the ribcage expansion, diaphragm pressure, and positional discomfort that peak in the final weeks. If you want to understand your overall weight gain trajectory alongside these physical changes, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+Rib discomfort in the third trimester is almost always mechanical — caused by the uterus expanding upward against the diaphragm and lower ribs, the baby's position pressing directly against the ribcage, and the structural adaptations a body makes to accommodate a near-term pregnancy. It changes with position, responds to baby movement, and is bilateral or variable in location. But MedlinePlus's medical encyclopedia entry on preeclampsia states directly that belly pain on the right side, below the ribs, is a warning sign of preeclampsia — and specifically notes that this pain is frequently confused with kicking by the baby. ACOG further confirms that pain in the upper-right abdomen, where the liver is, should be reported to your ob-gyn right away. Persistent right-sided rib or upper abdominal pain that does not shift with position, particularly alongside headache, visual changes, or sudden facial or hand swelling, is not a symptom to monitor. It is a symptom to call about today.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Preeclampsia and High Blood Pressure During Pregnancy](https://www.acog.org/womens-health/faqs/preeclampsia-and-high-blood-pressure-during-pregnancy)
+- **ACOG** — [What's the Concern About High Blood Pressure During Pregnancy? An Ob-Gyn Explains.](https://www.acog.org/womens-health/experts-and-stories/the-latest/whats-the-concern-about-high-blood-pressure-during-pregnancy-an-ob-gyn-explains)
+- **ACOG** — [Back Pain During Pregnancy](https://www.acog.org/womens-health/faqs/back-pain-during-pregnancy)
+- **MedlinePlus** — [Preeclampsia](https://medlineplus.gov/ency/article/000898.htm)
+- **MedlinePlus** — [Aches and pains during pregnancy](https://medlineplus.gov/ency/patientinstructions/000580.htm)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+  `,
+  },
+  {
     slug: 'pregnancy-carpal-tunnel-numb-fingers-night',
     title: "Fingers Numb When You Wake Up During Pregnancy? Here's What's Happening",
     description: "Up to 45% of pregnant women develop carpal tunnel — but most don't expect it. Here's why fluid retention is numbing your fingers at night and what actually helps.",
