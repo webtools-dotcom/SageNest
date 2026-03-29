@@ -13,6 +13,121 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'pregnancy-carpal-tunnel-numb-fingers-night',
+    title: "Fingers Numb When You Wake Up During Pregnancy? Here's What's Happening",
+    description: "Up to 45% of pregnant women develop carpal tunnel — but most don't expect it. Here's why fluid retention is numbing your fingers at night and what actually helps.",
+    readingTime: '7 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-29',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman sitting up in bed in the early morning holding one hand with the other and shaking it out with a pained and puzzled expression, soft morning light, rumpled bedding, candid real feel, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Is it normal for your fingers to go numb during pregnancy?',
+        answer: 'Yes — and it is more common than most people realise. According to the MedlinePlus genetics resource on carpal tunnel syndrome, the condition occurs in 20 to 45 percent of pregnant women, likely due to fluid accumulation (edema) or hormonal changes. Numbness and tingling in the fingers — particularly in the thumb, index finger, and middle finger — is the hallmark symptom. The MedlinePlus medical encyclopedia on carpal tunnel confirms that these signs and symptoms often develop during sleep and are noticeable upon waking. If your fingers are numb or tingling when you wake up in the third trimester, pregnancy carpal tunnel is the most likely explanation.'
+      },
+      {
+        question: 'Why does pregnancy cause carpal tunnel syndrome?',
+        answer: 'The carpal tunnel is a narrow passage in the wrist through which the median nerve passes. During pregnancy, the body retains substantially more fluid. The MedlinePlus topic page on carpal tunnel syndrome lists pregnancy among the conditions that cause swelling from extra fluid in the body, noting that changes in certain hormones are part of this mechanism. When fluid accumulates in the tissues of the wrist, it increases the pressure inside the carpal tunnel. That pressure compresses the median nerve — which is what causes the numbness, tingling, and weakness in the hand. The same fluid retention causing ankle swelling is often contributing to wrist nerve compression at the same time.'
+      },
+      {
+        question: 'Will pregnancy carpal tunnel go away after birth?',
+        answer: 'For most women, yes. The MedlinePlus genetics page on carpal tunnel syndrome specifically states that the condition often goes away at the end of pregnancy, reflecting the fact that the underlying cause — fluid accumulation and hormonal changes — resolves after birth. As postpartum fluid levels normalise, the pressure inside the carpal tunnel decreases and the median nerve function typically recovers. The timeline varies — some women notice improvement within weeks of birth, others take a few months — but full resolution is the most common outcome for pregnancy-related carpal tunnel.'
+      },
+      {
+        question: 'What actually helps pregnancy carpal tunnel at night?',
+        answer: 'Wrist splints worn at night are the primary non-surgical management approach, as listed by the MedlinePlus medical encyclopedia on carpal tunnel syndrome. The splints hold the wrist in a neutral position, which keeps the carpal tunnel as open as possible and reduces nerve compression during the hours when symptoms tend to peak. Many women notice significant improvement in overnight symptoms within a few days of consistent splint use. Your provider can advise on the appropriate splint fit and whether any additional management is warranted for your specific situation — including whether daytime use is needed if symptoms become persistent.'
+      },
+      {
+        question: 'My whole hand feels numb, not just my fingers — is that still carpal tunnel?',
+        answer: 'The median nerve — the nerve compressed in carpal tunnel syndrome — supplies feeling to the thumb, index finger, middle finger, and part of the ring finger, plus much of the palm. MedlinePlus describes numbness in the palm, thumb, index finger, middle finger, and thumb side of the ring finger as the typical pattern. If your numbness extends into these palm areas, it is still consistent with median nerve involvement. Numbness or symptoms affecting the little finger predominantly, or numbness extending up into the forearm and arm, can involve different nerves and is worth mentioning specifically to your provider, as it has a different differential diagnosis from carpal tunnel.'
+      }
+    ],
+    content: `
+You woke up and your hand was asleep — but not the faint pins-and-needles of lying on it wrong. It was properly numb. Your thumb and first two fingers felt like they belonged to someone else. You shook your hand the way you instinctively do, waited for it to resolve, and started wondering at 4am whether something was wrong with your circulation, your spine, or something more concerning. The answer is most likely none of those things. Up to 45% of pregnant women develop carpal tunnel syndrome in the third trimester — and the mechanism is the same fluid retention that is swelling your ankles.
+
+## Why Your Wrist Is Compressing a Nerve Right Now
+
+The carpal tunnel is a narrow passage on the palm side of your wrist. It is formed by wrist bones on three sides and a thick ligament across the top. Running through it is the median nerve — the nerve that supplies feeling to your thumb, index finger, middle finger, and part of your ring finger — along with several tendons that control finger movement.
+
+The critical word is narrow. There is not much room inside the carpal tunnel. When the surrounding tissue swells even slightly, the space available for the median nerve decreases, and the compressed nerve stops transmitting signals correctly. The result is the numbness, tingling, and burning sensation that wakes you up at night.
+
+During pregnancy, fluid retention is happening throughout the body — and the MedlinePlus main topic page on carpal tunnel syndrome explicitly lists pregnancy among the conditions that cause the condition through swelling from extra fluid in the body, alongside hormonal changes that occur during pregnancy. The same physiological process that causes ankles to swell by the end of the day is causing fluid to accumulate in the tissues of the wrist, narrowing the carpal tunnel and pressing on the median nerve inside it.
+
+According to the MedlinePlus genetics resource on carpal tunnel syndrome, the condition occurs in 20 to 45 percent of pregnant women, likely due to edema or hormonal changes. That range — up to nearly half of all pregnant women — makes it one of the most common musculoskeletal symptoms of pregnancy. It is also one of the most commonly misunderstood, because most people associate carpal tunnel with keyboard workers, not pregnancy.
+
+## Why Symptoms Peak at Night and in the Morning
+
+You are not imagining that the numbness is worse when you wake up than it was during the day. The MedlinePlus genetics page on carpal tunnel confirms that symptoms often develop during sleep and are noticeable upon waking. It also describes what many women find themselves doing automatically: shaking the hand to get rid of the pain and numbness, which it identifies as a characteristic response known as the flick sign.
+
+Two things make nighttime the peak period for symptoms. First, when you sleep, your hands are not moving — and without the pumping action of regular hand and wrist movement, fluid accumulates in the soft tissues of the wrist more than it does during the day. Second, most people naturally flex their wrists when sleeping, which narrows the carpal tunnel further. A wrist bent toward the palm or away from it reduces the diameter of the tunnel enough to meaningfully increase nerve compression.
+
+This is also why the symptom pattern of pregnancy carpal tunnel often has a specific trigger point: lying down to sleep, or waking up. Women who notice no symptoms during their waking hours may be surprised to find that the condition that was invisible during the day has become disruptive enough by 3am to wake them. This is not an escalation of severity — it is the expected pattern of how carpal tunnel presents during pregnancy.
+
+## Which Fingers It Affects — and What That Tells You
+
+The pattern of numbness in carpal tunnel syndrome is specific and follows the distribution of the median nerve. The MedlinePlus medical encyclopedia on carpal tunnel syndrome describes the typical symptom location as numbness in the palm, thumb, index finger, middle finger, and thumb side of the ring finger.
+
+This means pregnancy carpal tunnel most often produces numbness in the first three fingers plus part of the fourth — not in the little finger, and typically not spreading up the forearm significantly. If your little finger is the primary location of numbness, or if you have numbness radiating up your arm toward your shoulder, the nerve involved is different and the assessment changes — mention this specifically to your provider.
+
+MedlinePlus also confirms that symptoms often affect both hands simultaneously. This surprises many women who expect a nerve compression issue to be one-sided. Because pregnancy-related carpal tunnel is caused by systemic fluid retention rather than a mechanical injury to one wrist, both carpal tunnels are typically affected by the same underlying mechanism — though the severity can differ between hands.
+
+## What Actually Helps During Pregnancy
+
+The most practical first-line management option is a wrist splint worn at night. The MedlinePlus medical encyclopedia lists wrist splints — usually worn at night — as the primary non-surgical treatment for carpal tunnel syndrome. The splints work by holding the wrist in a neutral position, which keeps the carpal tunnel at its maximum possible diameter and prevents the unconscious flexion that worsens compression during sleep.
+
+For many women, consistent nightly splint use produces noticeable improvement in overnight symptoms within days. The splints available in pharmacies or medical supply stores are adjustable and do not require a prescription. Your provider can advise on the fit and whether your specific symptom pattern suggests that daytime use would be beneficial as well, particularly if symptoms have begun occurring during waking hours.
+
+MedlinePlus also notes that placing warm and cold compresses on the affected area can help ease symptoms, and recommends avoiding sleeping on your wrists — a straightforward adjustment that reduces the mechanical compression from body weight on the wrist during sleep. Elevating your hands slightly when lying down can reduce overnight fluid accumulation in the wrist, as can limiting sodium intake to the degree your provider recommends, since sodium drives fluid retention more broadly.
+
+The reassurance that matters most: the MedlinePlus genetics page explicitly states that pregnancy-related carpal tunnel often goes away at the end of the pregnancy, as fluid levels normalise and hormonal drivers of tissue swelling resolve postpartum. For most women this is a temporary symptom managed through the remainder of pregnancy rather than a condition requiring ongoing treatment.
+
+For context on where you are in the pregnancy and what other physical changes are happening in your current week, our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers what to expect at each stage — including third-trimester symptoms that emerge alongside carpal tunnel as fluid retention increases in the final weeks.
+
+## Common Questions About Pregnancy Carpal Tunnel
+
+### Does dropping things mean my carpal tunnel is getting worse?
+
+The MedlinePlus medical encyclopedia on carpal tunnel syndrome lists weakness of the hand that causes you to drop things or have difficulty grasping objects as a symptom of the condition. This happens because the median nerve also has a motor function — it controls the small muscles at the base of the thumb that are involved in gripping and pinching. When nerve compression is significant enough, grip weakness develops alongside the sensory symptoms. Dropping things intermittently is not an emergency, but it is a reason to mention it to your provider so they can assess whether current management is adequate.
+
+### Can I do anything during the day to reduce nighttime symptoms?
+
+Avoiding positions that flex the wrist significantly throughout the day can help — for example, keeping the wrist in a neutral position when typing or using a phone, and avoiding prolonged pressure on the wrist. Taking breaks from activities that involve repetitive hand and wrist movements gives the median nerve recovery time. Some women find that avoiding salty foods helps reduce the fluid retention component, though this should be done in the context of your overall dietary guidance from your provider rather than as an independent intervention.
+
+### My carpal tunnel symptoms started in the second trimester — is that unusual?
+
+Carpal tunnel can emerge earlier than the third trimester in some women, particularly if they have occupations that involve repetitive hand and wrist activity, or if fluid retention has been significant earlier in the pregnancy. The MedlinePlus Genetics page notes that repeated use of tools requiring forceful movements can add risk on top of pregnancy-related fluid accumulation. If symptoms started early and are already disrupting sleep, mentioning them at your next antenatal appointment rather than waiting until a routine review gives your provider the opportunity to advise on management sooner.
+
+## When to Call Your Doctor
+
+Contact your provider about hand and wrist symptoms if:
+
+- **Numbness is not primarily in the first three fingers** — if your little finger is mainly affected, or if symptoms extend significantly up the forearm, a different nerve is likely involved and the assessment is different
+- **Weakness is significant** — difficulty gripping, buttoning clothing, or opening containers warrants provider evaluation rather than home management alone
+- **Symptoms are affecting both hands significantly and daytime function is impaired** — your provider can confirm the diagnosis and assess whether any additional intervention is appropriate for your specific situation
+- **You have swelling that is sudden, significant, or accompanied by a headache or visual changes** — sudden worsening of swelling during pregnancy has a different set of possible causes that need to be evaluated promptly, independently of the carpal tunnel question
+
+## Related Tools on SageNest
+
+Third-trimester symptoms including carpal tunnel, swelling, and sleep disruption tend to peak together in the final weeks of pregnancy. If you want to track where you are in that timeline and what to expect in the weeks ahead, our [week-by-week pregnancy guide](/pregnancy-week-by-week) walks through each stage in detail. If you are managing weight gain alongside third-trimester fluid retention, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) can help you understand where your total gain sits relative to your personalised recommended range.
+
+## The Bottom Line
+
+Pregnancy carpal tunnel syndrome is one of the most common and least expected third-trimester symptoms, affecting between 20 and 45 percent of pregnant women according to the MedlinePlus genetics resource on the condition. It is caused by fluid accumulation and hormonal changes that compress the median nerve inside the narrow carpal tunnel of the wrist — the same fluid retention that swells ankles. The symptoms are specific to the median nerve distribution: numbness and tingling in the thumb, index finger, middle finger, and part of the ring finger, typically worse on waking. A wrist splint worn at night is the primary management tool and works by holding the wrist in the neutral position that reduces nerve compression during sleep. For most women, the condition resolves after birth as pregnancy-related fluid retention normalises.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **MedlinePlus** — [Carpal Tunnel Syndrome](https://medlineplus.gov/carpaltunnelsyndrome.html)
+- **MedlinePlus** — [Carpal tunnel syndrome — Medical Encyclopedia](https://medlineplus.gov/ency/article/000433.htm)
+- **MedlinePlus** — [Carpal tunnel syndrome — Genetics](https://medlineplus.gov/genetics/condition/carpal-tunnel-syndrome/)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+  `,
+  },
+  {
     slug: 'opk-positive-multiple-days-what-it-means',
     title: "Your OPK Has Been Positive for 3 Days — Here's What That Actually Means",
     description: "A multi-day OPK positive is common and often normal — but it can also mean the test isn't detecting what you think. Here's the LH surge explained clearly.",
