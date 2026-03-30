@@ -13,6 +13,124 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'itchy-palms-feet-pregnancy-cholestasis',
+    title: "Itchy Palms and Feet at Night During Pregnancy — This One Needs a Call Today",
+    description: "Itchy belly skin is normal. But itchy palms and soles at night is a different symptom — ACOG says it warrants prompt evaluation for cholestasis of pregnancy.",
+    readingTime: '8 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-30',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman sitting up in bed at night scratching the palm of her hand with a puzzled and slightly anxious expression, dark bedroom with soft lamp light, candid and real feel, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Is it normal to have itchy skin during pregnancy?',
+        answer: 'General skin itching is common during pregnancy and most causes are benign — ACOG confirms that skin changes including itching are among the normal physiological changes of pregnancy, typically resulting from stretching skin on the abdomen and hormonal changes affecting skin sensitivity. However, ACOG specifically distinguishes this from itching of the palms of the hands and soles of the feet, which can be a sign of intrahepatic cholestasis of pregnancy — a liver condition that requires medical evaluation. The location and pattern of itching is what determines whether it is a routine pregnancy symptom or one that warrants prompt provider contact.'
+      },
+      {
+        question: 'What is intrahepatic cholestasis of pregnancy?',
+        answer: 'Intrahepatic cholestasis of pregnancy (ICP) is a liver condition in which bile flow is impaired during pregnancy, causing bile acids to accumulate in the blood. MedlinePlus confirms that cholestasis of pregnancy causes intense itching without a rash, typically on the hands and feet, and that it most often begins in the third trimester. ACOG identifies it as a condition associated with increased risks to the baby and states that it requires prompt evaluation when suspected. The condition is diagnosed through a blood test measuring bile acid levels, and it is managed and monitored by a provider — it is not something to watch and wait on at home.'
+      },
+      {
+        question: 'What does cholestasis itching feel like?',
+        answer: 'ACOG describes the itch of intrahepatic cholestasis as intense itching on the palms of the hands and soles of the feet, and notes it is often worse at night. MedlinePlus adds that the itching typically has no accompanying rash — the skin looks normal even when the itching is severe. This distinguishes it from the itching of eczema, allergic reactions, or pruritic urticarial papules and plaques of pregnancy (PUPPP), which all involve visible skin changes. The combination of itchy palms and feet, no visible rash, worsening at night, and onset in the third trimester is the pattern ACOG specifically identifies as warranting same-day evaluation.'
+      },
+      {
+        question: 'Does pregnancy cholestasis affect the baby?',
+        answer: 'Yes — this is why ACOG emphasises prompt evaluation rather than monitoring. ACOG states that intrahepatic cholestasis of pregnancy is associated with increased risks including preterm birth and, in severe cases, an increased risk of stillbirth. The exact mechanism through which elevated bile acids affect the baby is not fully established, but the fetal risk is recognised and is the clinical basis for why management of ICP involves monitoring, possible early delivery, and provider oversight rather than watchful waiting at home. This risk profile is what distinguishes cholestasis-related itching from the benign skin itching of pregnancy.'
+      },
+      {
+        question: 'Can itchy palms in pregnancy be something other than cholestasis?',
+        answer: 'Yes — not every case of itchy palms in pregnancy indicates cholestasis, and blood tests are needed to confirm or rule it out. ACOG notes that mild itching over the abdomen and elsewhere is a common pregnancy skin change unrelated to cholestasis. Contact dermatitis, eczema, dry skin, and other skin conditions can also produce palm itching without liver involvement. The features that specifically prompt evaluation for cholestasis are: itching concentrated on the palms and soles, absence of a rash, onset in the third trimester, and worsening at night. Even if these features are present, only a blood test measuring bile acid levels can confirm the diagnosis — which is why provider evaluation is the necessary next step, not self-diagnosis.'
+      }
+    ],
+    content: `
+It is 2am and your palms are itching. Not your belly — your belly skin stretching is something you have already read about. This is your palms and the soles of your feet, and it is intense enough to have woken you up, and now you are scratching your hands against the sheet trying to make it stop, and you cannot figure out what would cause this. You are about to search "itchy hands pregnancy" and find a reassuring list of benign causes, apply some lotion, and go back to sleep. Before you do: itching of the palms of the hands and soles of the feet in the third trimester is the specific symptom pattern that ACOG says warrants prompt evaluation — because it can signal a liver condition with direct risks to the baby. This is not a symptom to wait out.
+
+## Why This Specific Location Makes All the Difference
+
+Itching during pregnancy is common and usually benign. ACOG confirms that skin changes including itching are among the normal physiological changes of pregnancy — the belly skin stretching, hormonal changes affecting skin sensitivity, and increased blood flow to the skin surface all contribute to the generalised itchiness that many women experience. This kind of itching can appear on the abdomen, breasts, thighs, or generally across the body. It fluctuates, it is manageable, and it resolves after birth.
+
+Itching of the **palms of the hands and soles of the feet** is a different pattern. ACOG's guidance on skin conditions in pregnancy specifically identifies this location as a sign of intrahepatic cholestasis of pregnancy — a liver condition that requires prompt evaluation. The same source notes it typically appears without any visible rash: the skin looks completely normal. No hives. No redness. No visible irritation. Just an intense itch that is often worst at night, on areas of skin that are not experiencing any mechanical stretching or external contact.
+
+This combination — palms and soles, no rash, night-time intensity, third trimester onset — is the clinical fingerprint ACOG uses to distinguish a symptom that needs a blood test from a symptom that needs moisturiser.
+
+## What Is Happening in the Liver
+
+Intrahepatic cholestasis of pregnancy occurs when bile flow through the liver becomes impaired during pregnancy. MedlinePlus explains the mechanism: bile — a digestive fluid made in the liver — normally flows to the small intestine to help digest fats. When this flow is disrupted, bile acids accumulate in the bloodstream rather than being processed normally. These elevated bile acids then deposit in the tissues of the body, including the skin, where they trigger the intense itching response.
+
+MedlinePlus confirms that cholestasis of pregnancy causes intense itching without a rash, typically affecting the hands and feet, and that it most commonly begins in the third trimester — the same period when hormonal changes and the physical demands of supporting a near-term pregnancy place the most stress on liver function. The condition is more likely in women who have a family history of cholestasis, who have had it in a previous pregnancy, or who are carrying multiple babies, though it can occur without any of these risk factors.
+
+The itch itself is not a skin problem. It is a systemic response to elevated bile acids — which is why no amount of lotion, antihistamine cream, or anti-itch topical treatment resolves it. Addressing the itch without addressing the underlying bile acid elevation would mean managing a symptom while leaving the cause untreated.
+
+## Why This Warrants Same-Day Contact — Not Monitoring
+
+The clinical reason ACOG emphasises prompt evaluation rather than a "watch and see" approach is the fetal risk associated with intrahepatic cholestasis of pregnancy.
+
+ACOG states directly that ICP is associated with increased risks including preterm birth and, in severe cases, an increased risk of stillbirth. This is what separates cholestasis from the large category of benign pregnancy discomforts where waiting and monitoring is a reasonable first step. The risk profile of untreated or unmonitored ICP means the appropriate response to the characteristic symptom pattern is a provider contact that day — not over the coming days or at the next scheduled appointment.
+
+Diagnosis requires a blood test measuring serum bile acid levels, alongside liver function tests. ACOG identifies both as the relevant investigations. These are routine blood tests that can be ordered at a provider visit or by telephone direction to a lab. If bile acid levels are elevated, management typically involves medication to reduce bile acid levels and increase monitoring of fetal wellbeing, with consideration of timing of delivery depending on the severity. All of these are decisions that require provider oversight — they are not conditions managed with home remedies.
+
+For context on where you are in the pregnancy and what weeks are involved in typical ICP management decisions, our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers third-trimester milestones in detail, including the monitoring that becomes relevant in the final weeks.
+
+## Distinguishing Cholestasis From the Other Pregnancy Itches
+
+Not every itch in the third trimester is cholestasis, and the distinguishing features are specific enough that you can assess your own pattern before calling your provider.
+
+**PUPPP** — pruritic urticarial papules and plaques of pregnancy — is the most common rash of pregnancy and is visually unmistakable. ACOG describes it as itchy red bumps and hives that often start in the stretch marks of the abdomen and can spread to the thighs and arms. PUPPP has a very visible rash. Cholestasis does not.
+
+**Eczema in pregnancy** produces dry, red, scaling, or weeping skin with visible changes. The itch is localised to the affected skin rather than to the palms and soles specifically.
+
+**Contact dermatitis** follows clear exposure — a new detergent, lotion, or material that touched the skin. It is localised, reactive, and has a visible skin change at the site of contact.
+
+**General pregnancy skin sensitivity** produces a diffuse, lower-intensity itch typically across the abdomen, breasts, or thighs as the skin stretches. It does not concentrate specifically on the palms and soles, it does not worsen at night in the way cholestasis itch does, and it does not have the intensity that makes women scratch in their sleep.
+
+The pattern that prompts evaluation is the combination ACOG specifically identifies: itchy palms and soles, no visible rash, worse at night, third trimester. You do not need to be certain it is cholestasis to call your provider — the appropriate response to this symptom pattern is a blood test, not a self-diagnosis.
+
+## Common Questions About Pregnancy Itching and Cholestasis
+
+### I have a rash on my belly that is itchy — is that cholestasis?
+
+No — cholestasis presents without a rash. ACOG's skin conditions guidance distinguishes the two clearly: a visible rash accompanied by itching is more consistent with PUPPP or another pregnancy skin condition rather than cholestasis. That said, any significant rash during pregnancy that is spreading, uncomfortable, or accompanied by other symptoms is worth a provider conversation for its own reasons — PUPPP can be intensely uncomfortable and there are treatments to discuss. The key clinical distinction is: no rash plus palms and soles plus night-time intensity is the cholestasis pattern.
+
+### My itching is mild and only occasional — do I still need to call?
+
+ACOG's guidance does not distinguish between mild and severe palm/sole itching when advising on evaluation — the symptom location is what prompts the recommendation, not the intensity. Mild itching on the palms and soles can represent early or less severe ICP and still warrants a blood test to check bile acid levels. Early detection allows for earlier monitoring and management. A brief provider call to describe your symptoms and ask whether a bile acid test is appropriate is a proportionate response to mild symptoms — you do not need to wait for the itch to become unbearable.
+
+### I had my last prenatal appointment two weeks ago and my next one is in two weeks — should I wait?
+
+No — if you have itching on your palms and soles, this warrants contact with your provider before your next scheduled appointment. You do not need to go to an emergency department for this symptom in isolation, but calling your provider's office the same day and describing the location and pattern of the itch is appropriate. Most providers will either ask you to come in for a blood draw or direct you to a lab, and results are typically available within 24 to 48 hours. Waiting two weeks to mention this symptom at a routine appointment is not the appropriate approach given ACOG's guidance on prompt evaluation.
+
+## When to Call Your Doctor
+
+Contact your provider the same day if:
+
+- **You have itching on your palms or soles of your feet** — even if mild, even without a rash, even if you have been attributing it to dry skin. This pattern warrants a bile acid blood test, per ACOG guidance
+- **The itching is intense enough to disrupt sleep**, particularly if it is concentrated on your hands and feet rather than generalised across your skin
+- **You develop jaundice** — yellowing of the skin or whites of the eyes alongside itching — which ACOG lists as an additional sign of cholestasis that indicates significant liver involvement and requires prompt evaluation
+- **You have dark urine or pale stools** alongside itching — these can be signs of significant bile flow impairment and warrant urgent attention
+- **You have a personal or family history of intrahepatic cholestasis** from a previous pregnancy or a family member's pregnancy — this increases your risk and your provider should know to monitor bile acids proactively
+
+## Related Tools on SageNest
+
+If you are in the third trimester and managing additional monitoring as a result of a cholestasis diagnosis, understanding where you are in the pregnancy timeline matters for discussions with your provider about monitoring frequency and timing of delivery. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers what is happening week by week in the third trimester. If you are tracking your weight gain alongside increased antenatal appointments, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+Itchy skin during pregnancy is common and usually benign — the generalised itch of stretching skin and hormonal changes is a recognised normal pregnancy change. But itching specifically on the palms of the hands and soles of the feet, without a visible rash, worsening at night, in the third trimester, is the pattern ACOG identifies as a potential sign of intrahepatic cholestasis of pregnancy — a liver condition associated with increased fetal risk including preterm birth and, in severe cases, stillbirth. This symptom pattern warrants same-day provider contact and a blood test measuring bile acid levels, not home management or monitoring. The test is routine. The distinction between the benign and concerning types of pregnancy itch is the location: your belly is probably fine; your palms and feet need a call.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Skin Conditions During Pregnancy](https://www.acog.org/womens-health/faqs/skin-conditions-during-pregnancy)
+- **MedlinePlus** — [Intrahepatic cholestasis of pregnancy](https://medlineplus.gov/ency/article/007436.htm)
+- **MedlinePlus** — [Cholestasis](https://medlineplus.gov/ency/article/000215.htm)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+  `
+  },
+  {
     slug: 'pregnancy-rhinitis-stuffy-nose-not-a-cold',
     title: "That Stuffy Nose You've Had Since Week 8? It's Not a Cold. It's Pregnancy.",
     description: "Pregnancy rhinitis affects many pregnant women from the first trimester onward. It's not contagious, not a cold, and safe remedies exist — here's the mechanism and what helps.",
