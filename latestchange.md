@@ -1,3 +1,9 @@
+## 2026-03-30 (Added new blog post: itchy-palms-feet-pregnancy-cholestasis)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `itchy-palms-feet-pregnancy-cholestasis`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/itchy-palms-feet-pregnancy-cholestasis.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested cholestasis-warning pregnancy article while keeping SageNest's canonical blog source and generated blog/redirect/sitemap artifacts synchronized.
+
 ## 2026-03-29 (Added new blog post: pregnancy-rhinitis-stuffy-nose-not-a-cold)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `pregnancy-rhinitis-stuffy-nose-not-a-cold`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
