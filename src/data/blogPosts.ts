@@ -13,6 +13,123 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'pregnancy-heartburn-why-it-gets-worse',
+    title: "Why Pregnancy Heartburn Peaks in the Third Trimester — It's Not Just the Spicy Food",
+    description: "Pregnancy heartburn involves three simultaneous causes most women don't know about. Avoiding trigger foods helps — but only with the first one. Here's what's actually happening.",
+    readingTime: '8 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-30',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman sitting up in bed at night with her hand pressed to her chest and a pained expression, a glass of water on the bedside table, soft lamp light, candid and real feel, not overly styled, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Why is heartburn so common during pregnancy?',
+        answer: 'ACOG confirms that acid reflux happens more often during pregnancy, alongside obesity and smoking, as a factor that increases frequency. Two pregnancy-specific mechanisms drive this: first, pregnancy hormones affect the muscle in the esophagus that normally prevents stomach acid from rising — when this muscle does not work properly, acid refluxes upward, as ACOG describes in its digestive system guidance. Second, MedlinePlus confirms that food stays in the stomach and bowels longer during pregnancy, which increases the volume of stomach contents and the pressure pushing acid upward. In the third trimester, the growing uterus physically compresses the stomach from below, adding a mechanical element to the hormonal ones already present.'
+      },
+      {
+        question: 'Why does pregnancy heartburn get worse at night?',
+        answer: 'Lying down removes the gravitational advantage that keeps stomach contents below the esophagus during the day. MedlinePlus notes that heartburn symptoms get worse when you bend over or lie down, or after eating. During pregnancy, this effect is compounded because the muscle at the base of the esophagus — the lower esophageal sphincter — is already less effective than it was before pregnancy due to hormonal changes. MedlinePlus describes raising the head of the bed and avoiding eating within a few hours of bedtime as practical approaches to reduce nighttime acid reflux, both of which reduce the opportunity for stomach acid to travel the wrong direction while you sleep.'
+      },
+      {
+        question: 'Is it safe to take antacids for heartburn during pregnancy?',
+        answer: 'ACOG notes that several OTC medications are available for heartburn, including antacids that reduce acid content in the stomach. However, as with any medication during pregnancy, checking with your provider before starting is the right first step — not all antacid formulations are equivalent, and some contain ingredients that carry specific considerations during pregnancy. The FDA has separately flagged that aspirin-containing antacid products can cause bleeding. Your provider can confirm which antacid is appropriate for your situation and at what stage of pregnancy, alongside any other management approaches worth trying first.'
+      },
+      {
+        question: 'What foods make pregnancy heartburn worse?',
+        answer: 'ACOG identifies alcohol, caffeine, citrus fruits, tomatoes, and fried foods as foods and drinks that commonly trigger or worsen acid reflux. These worsen heartburn by relaxing the lower esophageal sphincter further or increasing stomach acid production. During pregnancy, these dietary triggers are added on top of the hormonal and mechanical factors already making the esophageal valve less effective — which is why even women who have never had heartburn before pregnancy can find it severe. Reducing these specific triggers is worth doing, but because the hormonal cause of pregnancy heartburn is not diet-dependent, dietary changes alone often do not fully resolve symptoms.'
+      },
+      {
+        question: 'When will pregnancy heartburn go away?',
+        answer: 'For most women, pregnancy heartburn resolves after birth as hormone levels normalise and the physical pressure of the uterus on the stomach is removed. In the third trimester, heartburn commonly worsens as the baby grows and the upward pressure on the stomach increases — then typically begins to improve if the baby drops lower into the pelvis in the final weeks before birth, which slightly relieves the compression. The timeline varies between women and between pregnancies. If heartburn is significantly disrupting sleep or daily function, this is worth discussing with your provider, as there are management options beyond dietary modification that are appropriate to consider during pregnancy.'
+      }
+    ],
+    content: `
+You have been doing everything the lists say to do. You cut out spicy food, you sit upright for at least an hour after eating, you have antacids on the nightstand. And the heartburn still wakes you up at 2am. By the third trimester it is worse than it was in the second, and in the second it was worse than the first, and you cannot understand what changed because your diet has not changed. What changed is your baby's position, your uterus's size, and the fact that pregnancy heartburn is not primarily a food problem. It is a three-part mechanical and hormonal problem — and most of the advice you have read addresses only one of the three.
+
+## Why the Muscle That Prevents Acid Reflux Stops Working Properly
+
+The reason stomach acid stays in your stomach rather than travelling back into your esophagus is a ring of muscle at the junction between the two — the **lower esophageal sphincter**, or LES. Under normal circumstances it stays closed, opening only to let food down and releasing briefly to allow a belch. When it stays closed properly, acid stays where it belongs.
+
+ACOG explains the acid reflux mechanism directly in its guidance on digestive problems: acid reflux happens when the muscle in your esophagus that opens and closes when you swallow does not work properly. When this happens, food and digestive fluids, which contain acid, back up into the esophagus — producing the burning feeling in the chest or throat.
+
+During pregnancy, this muscle stops working as effectively as it did before. ACOG's guidance on digestive disorders during pregnancy confirms that pregnancy itself is a factor that makes acid reflux happen more often. The underlying mechanism is hormonal: pregnancy hormones — primarily progesterone — relax smooth muscle throughout the body. This is the same hormonal effect ACOG describes in its back pain guidance, where it explains that a hormone relaxes the ligaments in the pelvis to prepare for birth. The LES is smooth muscle. Progesterone relaxes it, reducing the pressure it maintains against the stomach, and acid that was contained below can now travel upward.
+
+This is the first of the three mechanisms — and it is the one that is present from the first trimester onward. It explains why pregnancy heartburn can start earlier than women expect, before the baby is large enough to exert any physical pressure.
+
+## Why Slowed Digestion Makes the Problem Continuous
+
+The second mechanism is gastric emptying — the rate at which food moves out of the stomach and into the small intestine. Under normal circumstances, a meal begins leaving the stomach within an hour or two. The stomach is not full indefinitely, which limits the duration of the window during which acid reflux is most likely.
+
+MedlinePlus confirms a direct consequence of pregnancy on this process: food stays in the stomach and bowels longer during pregnancy, and this contributes to heartburn. The reason connects to the same hormonal changes slowing the smooth muscle of the LES — pregnancy hormones also slow the smooth muscle that moves food through the digestive tract. ACOG's digestive system guidance explicitly confirms that increased levels of hormones during pregnancy can slow down the digestive system.
+
+The practical result: a meal that would have been largely processed and passed out of the stomach within two hours before pregnancy may stay substantially longer during pregnancy. The stomach remains fuller for longer. A fuller stomach means more volume pressing upward against the already-compromised LES, and a longer window during which reflux is possible. This is why pregnancy heartburn often does not respect meals — the reflux is not just happening after dinner, it is happening hours later, at times that feel disconnected from eating, because digestion is happening on a different timeline.
+
+## What Happens in the Third Trimester Specifically
+
+The third mechanism is purely physical, and it is why heartburn accelerates from mild to significant in the final trimester for many women.
+
+By the third trimester, the uterus has grown to fill most of the abdominal cavity. ACOG's overview of changes during pregnancy describes how by week 36, the top of the uterus reaches the rib cage. The stomach — normally a relatively spacious organ situated below the diaphragm — is being compressed upward and sideways by the enlarged uterus pressing against it from below. ACOG's guidance on digestive disorders during pregnancy confirms this directly: acid reflux may become more frequent while lying down, and happens more often during pregnancy.
+
+The physical compression reduces the effective volume of the stomach. A stomach that has been compressed to a smaller functional space fills more quickly, reaches a higher pressure at that capacity, and is more easily pushed into reflux — particularly when you lie down and gravity no longer assists in keeping contents below the junction. This is why meals that caused no symptoms in the second trimester can trigger immediate and severe heartburn in the third: the stomach's capacity has been mechanically reduced by the growing uterus, not by anything you are eating differently.
+
+There is a temporary exception: if the baby drops into the pelvis in the final weeks before birth — a process called lightening — some women notice a brief improvement in heartburn as the uterus shifts lower and slightly releases the compression on the stomach. This does not happen for all women and does not happen at a predictable time, but it is one of the reasons some women report feeling slightly better in the final two weeks despite the heartburn having peaked in weeks 28 to 36.
+
+To track where you are in this progression and what other third-trimester changes to expect alongside heartburn, our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers each stage of the final trimester in detail — including the physical changes that explain why symptoms that were manageable earlier in pregnancy often intensify in the final eight weeks.
+
+## What Actually Helps — and Why Food Is Only Part of It
+
+Dietary modification addresses the trigger layer of pregnancy heartburn — the foods and drinks that worsen an already-compromised LES. ACOG identifies the specific categories that commonly trigger reflux: alcohol, caffeine, citrus fruits, tomatoes, and fried foods. Reducing these is worth doing because they add a dietary relaxation effect on top of the hormonal one, or they increase stomach acid production directly. Removing them reduces the frequency and intensity of episodes even when the underlying hormonal and mechanical factors cannot be changed.
+
+MedlinePlus adds practical guidance that addresses the positional and volume elements: avoiding eating within two to three hours of lying down, eating smaller and more frequent meals rather than large ones, raising the head of the bed, and avoiding lying flat after eating. Each of these directly counters one component of the reflux mechanism. Smaller meals reduce the volume pressing against the compressed stomach. Earlier eating means the stomach has more time to partially empty before you lie down. Raising the head of the bed maintains a partial gravitational advantage against reflux even during sleep.
+
+ACOG notes that several OTC medications are available for heartburn, including antacids that reduce the acid content in the stomach. These do not address the LES dysfunction or the gastric emptying delay — they neutralise acid that has already refluxed, which reduces the burning sensation. For many women this is enough to manage overnight symptoms. Whether a specific antacid is appropriate during pregnancy depends on its formulation, and your provider can advise — some antacid products contain ingredients with specific pregnancy considerations that make a provider conversation the right first step rather than selecting independently at the pharmacy.
+
+## Common Questions About Pregnancy Heartburn
+
+### My heartburn feels like chest pain — how do I know the difference?
+
+The burning sensation of acid reflux typically rises from the upper abdomen toward the throat and is made worse by lying down or eating. MedlinePlus notes that symptoms may get worse when you bend over or lie down, or after eating, which helps distinguish it from cardiac chest pain. However, MedlinePlus also specifically notes that if you have other symptoms such as crushing chest pain, this could be a heart attack and requires emergency attention. Any chest pain that does not clearly follow the heartburn pattern — particularly pain accompanied by shortness of breath, pain radiating to the jaw or arm, or pain that comes on with exertion rather than after eating — is a reason to seek evaluation rather than to assume it is heartburn.
+
+### Can heartburn during pregnancy harm the baby?
+
+Heartburn is a maternal symptom — the discomfort of acid reflux affects your esophagus and throat, not the baby directly. The baby is protected within the uterus and amniotic fluid, which is anatomically separate from the digestive tract. However, if severe heartburn is significantly disrupting your sleep or causing you to eat inadequately due to pain, these secondary effects on your overall wellbeing and nutrition are worth discussing with your provider, who can advise on management approaches appropriate to your stage of pregnancy.
+
+### I never had heartburn before pregnancy — is that normal?
+
+Yes, and it reflects how directly the hormonal changes of pregnancy affect the LES. ACOG's digestive system guidance identifies pregnancy itself — alongside obesity and smoking — as a factor that makes acid reflux happen more often. The LES muscle that kept stomach acid contained before pregnancy is the same muscle being affected by progesterone. Women who had no reflux symptoms before conception can develop significant pregnancy heartburn because the underlying mechanism has nothing to do with their pre-pregnancy digestive health or diet. Resolution after birth is the expected outcome for pregnancy-induced heartburn, because the hormonal driver resolves.
+
+## When to Call Your Doctor
+
+Contact your provider about heartburn if:
+
+- **Symptoms are severe enough to disrupt sleep regularly** — this is a quality-of-life issue that warrants a provider conversation about safe management options rather than continued reliance on dietary modification and OTC antacids alone
+- **You have difficulty swallowing**, or food or liquids feel like they are getting stuck — this can indicate esophageal irritation beyond typical reflux and warrants evaluation
+- **You have chest pain that does not follow the typical heartburn pattern** — any crushing, radiating, or exertion-related chest pain during pregnancy warrants urgent evaluation rather than assumption it is heartburn
+- **You have been using OTC antacids regularly and want to confirm the formulation is appropriate** — not all antacid products carry the same safety profile during pregnancy, and your provider can advise on the best option for your specific situation
+
+## Related Tools on SageNest
+
+Third-trimester heartburn tends to peak in the weeks when the uterus has reached its maximum height before the baby drops. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) shows what is happening physically each week, including how the baby's position in the third trimester relates to the upper abdominal pressure that drives late-pregnancy heartburn. If you are managing your weight gain alongside these physical changes, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+Pregnancy heartburn is caused by three simultaneous factors: progesterone relaxing the lower esophageal sphincter so acid refluxes more easily, pregnancy hormones slowing gastric emptying so the stomach stays full longer — both confirmed by ACOG's digestive system guidance and MedlinePlus — and in the third trimester, physical compression of the stomach by the expanding uterus. Dietary triggers worsen the first factor but do not touch the second or third, which is why avoiding spicy food reduces but does not eliminate pregnancy heartburn. Management that addresses all three — dietary modification, positional changes, smaller and earlier meals, and for some women provider-advised antacids — is more effective than food avoidance alone. Resolution after birth, as hormones normalise and uterine compression lifts, is the expected outcome for most women.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Problems of the Digestive System](https://www.acog.org/womens-health/faqs/problems-of-the-digestive-system)
+- **ACOG** — [Back Pain During Pregnancy](https://www.acog.org/womens-health/faqs/back-pain-during-pregnancy)
+- **MedlinePlus** — [Gastroesophageal reflux disease](https://medlineplus.gov/ency/article/000265.htm)
+- **MedlinePlus** — [Common symptoms during pregnancy](https://medlineplus.gov/ency/patientinstructions/000583.htm)
+- **MedlinePlus** — [GERD](https://medlineplus.gov/gerd.html)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+  `
+  },
+  {
     slug: 'itchy-palms-feet-pregnancy-cholestasis',
     title: "Itchy Palms and Feet at Night During Pregnancy — This One Needs a Call Today",
     description: "Itchy belly skin is normal. But itchy palms and soles at night is a different symptom — ACOG says it warrants prompt evaluation for cholestasis of pregnancy.",

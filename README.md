@@ -376,6 +376,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── pregnancy-carpal-tunnel-numb-fingers-night.html
 │   │   ├── pregnancy-dehydration-third-trimester-thirst.html
 │   │   ├── pregnancy-headaches-causes-safe-relief-red-flags.html
+│   │   ├── pregnancy-heartburn-why-it-gets-worse.html
 │   │   ├── pregnancy-ice-craving-pagophagia-iron-deficiency.html
 │   │   ├── pregnancy-insomnia-causes-safe-relief.html
 │   │   ├── pregnancy-nutrition-guide-what-to-eat-each-trimester.html

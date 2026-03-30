@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/pregnancy-heartburn-why-it-gets-worse /blog/pregnancy-heartburn-why-it-gets-worse 301
 /itchy-palms-feet-pregnancy-cholestasis /blog/itchy-palms-feet-pregnancy-cholestasis 301
 /pregnancy-rhinitis-stuffy-nose-not-a-cold /blog/pregnancy-rhinitis-stuffy-nose-not-a-cold 301
 /rib-pain-pregnancy-third-trimester /blog/rib-pain-pregnancy-third-trimester 301
@@ -66,6 +67,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/pregnancy-heartburn-why-it-gets-worse /blog-static/pregnancy-heartburn-why-it-gets-worse.html 200
+/blog/pregnancy-heartburn-why-it-gets-worse/ /blog-static/pregnancy-heartburn-why-it-gets-worse.html 200
 /blog/itchy-palms-feet-pregnancy-cholestasis /blog-static/itchy-palms-feet-pregnancy-cholestasis.html 200
 /blog/itchy-palms-feet-pregnancy-cholestasis/ /blog-static/itchy-palms-feet-pregnancy-cholestasis.html 200
 /blog/pregnancy-rhinitis-stuffy-nose-not-a-cold /blog-static/pregnancy-rhinitis-stuffy-nose-not-a-cold.html 200
