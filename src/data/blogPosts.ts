@@ -13,6 +13,123 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'hemorrhoids-pregnancy-third-trimester',
+    title: 'Why Pregnancy Hemorrhoids Get Worse in the Third Trimester (And What Actually Helps)',
+    description: 'Pregnancy hemorrhoids have three causes in the third trimester and most advice addresses only one. Here\'s what\'s driving them and what actually helps.',
+    readingTime: '8 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-31',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a visibly pregnant woman in her third trimester carefully lowering herself onto a sofa cushion with a slight wince, one hand on her large belly, warm soft indoor afternoon light, candid and real, not staged, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Why did my hemorrhoids suddenly get so much worse at 30 to 34 weeks?',
+        answer: 'The timing corresponds to the uterus reaching a size where its weight significantly increases pressure on the pelvic venous system. MedlinePlus confirms that swelling in the rectal veins is caused by the uterus pressing on veins, and that this pressure increases as women get closer to giving birth. At 30 to 34 weeks the uterus is large enough that the downward pressure on rectal veins is substantially greater than it was in the second trimester — which is why many women notice a clear worsening with no change in diet or activity.'
+      },
+      {
+        question: 'Will pregnancy hemorrhoids go away after giving birth?',
+        answer: 'ACOG notes that hemorrhoids usually get worse right after delivery — due to the pushing effort during labour — and then slowly improve during the postpartum period. As hormone levels normalise and the physical pressure of the uterus lifts, the rectal veins are no longer under the same elevated pressure, and symptoms typically resolve over the following weeks. If hemorrhoids persist or are significantly painful beyond the early postpartum weeks, a provider conversation is the right next step.'
+      },
+      {
+        question: 'Is the bleeding from pregnancy hemorrhoids dangerous?',
+        answer: 'Hemorrhoid bleeding during pregnancy is common and occurs when swollen rectal veins are irritated during a bowel movement — MedlinePlus notes this typically appears as bright red blood on toilet paper or in the toilet bowl. While hemorrhoid bleeding is not usually dangerous, any rectal bleeding during pregnancy should be confirmed as hemorrhoid-related by your provider rather than assumed. Other causes of rectal bleeding warrant evaluation, and your provider can confirm the source and advise on management appropriate to your stage of pregnancy.'
+      },
+      {
+        question: 'Is it safe to use over-the-counter hemorrhoid creams during pregnancy?',
+        answer: 'ACOG advises talking with your ob-gyn before using over-the-counter creams and suppositories during pregnancy. This is not because hemorrhoid treatments are uniformly unsafe — it is because formulations vary and some contain active ingredients that carry specific considerations during pregnancy. Your provider can confirm which product is appropriate for your situation rather than you selecting independently at the pharmacy.'
+      },
+      {
+        question: 'Can pregnancy hemorrhoids affect my baby?',
+        answer: 'No. Hemorrhoids are a condition of the maternal rectal veins, which are anatomically entirely separate from the uterus and amniotic environment where your baby develops. The discomfort affects you directly but does not affect fetal development or wellbeing. If severe hemorrhoid pain is significantly disrupting your sleep or making it difficult to eat normally, these effects on your overall wellbeing are worth raising with your provider, who can discuss management options appropriate to your pregnancy stage.'
+      }
+    ],
+    content: `You have been uncomfortable for weeks, but this week it is different — sitting is something you now think about before you do it, getting up after a bowel movement involves a deliberate moment of preparation, and the cream on the bathroom shelf has stopped making a noticeable difference. Pregnancy hemorrhoids are one of the most common symptoms of the third trimester and one of the least discussed, which means most women are managing them alone with advice that addresses only one of the three things actually causing them. Here is what is happening and what genuinely helps.
+
+## Why the Uterus — Not Constipation Alone — Is the Main Driver
+
+Most advice on pregnancy hemorrhoids focuses on diet and fibre. Both matter. But the structural reason hemorrhoids appear and then worsen specifically in the third trimester is physical pressure — and no amount of dietary adjustment changes it.
+
+MedlinePlus explains the mechanism plainly: hemorrhoids result from increased pressure on the anus, and this can occur during pregnancy or childbirth, as well as due to constipation. The key word is pressure — and during pregnancy, the primary source of that pressure is the uterus itself.
+
+ACOG's guidance on skin conditions during pregnancy explains what happens to veins under the weight of a growing uterus: the weight and pressure of the uterus can decrease blood flow from the lower body, causing veins to become swollen, sore, and enlarged. This is the same mechanism that produces varicose veins in the legs during pregnancy — and ACOG notes directly that varicose veins can also appear in the rectum, which is the clinical description of what hemorrhoids are. The rectal veins that would normally drain efficiently are now working against elevated venous pressure from above. The result is pooling, swelling, and the symptoms that go with it.
+
+The timing explains itself. In the first and second trimester, the uterus is smaller and the pressure on pelvic veins is relatively limited. By the third trimester, as the uterus grows to fill most of the abdominal cavity, that downward pressure on pelvic circulation increases substantially. Hemorrhoids that were mild at 20 weeks are often significantly worse at 32 or 34 weeks for exactly this reason, with no change in diet.
+
+## What Pregnancy Hormones Are Doing to Your Vein Walls
+
+The second mechanism is hormonal — and it involves the same progesterone that is responsible for several other third-trimester symptoms.
+
+Progesterone, which rises substantially across pregnancy, relaxes smooth muscle throughout the body. ACOG's digestive system guidance describes this in the context of heartburn — the hormone that relaxes the muscle at the base of the esophagus affects smooth muscle elsewhere in the body as well. Vein walls contain smooth muscle that helps maintain tone and support efficient blood return. When that muscle is less taut than usual, veins dilate more easily and recover more slowly under pressure.
+
+For rectal veins that are already under elevated mechanical pressure from the uterus above, reduced vein wall tone means they swell more readily and drain less efficiently. This is why pregnancy hemorrhoids can appear or worsen even in women who are eating a high-fibre diet, staying well hydrated, and doing nothing that would normally trigger them — the hormonal environment itself has made the veins more susceptible regardless of behaviour.
+
+## Why Constipation in Pregnancy Compounds Both Problems
+
+Constipation is the third mechanism, and it is the most modifiable of the three — which is why most advice focuses on it. But even here, the pregnancy-specific version is different from ordinary constipation in a way that matters.
+
+ACOG's digestive system guidance confirms that increased levels of hormones during pregnancy can slow down the digestive system and cause constipation. This is the same hormonal effect acting on gut smooth muscle — food and waste move through the digestive tract more slowly, stools spend longer in the colon where water is absorbed, and the result is harder, drier stools that require more effort to pass.
+
+The problem with straining during a bowel movement is that it directly increases pressure on the rectal veins — the same veins already under elevated mechanical pressure from the uterus and already more prone to swelling due to reduced hormonal tone. MedlinePlus notes that constipation and straining during bowel movements raise the risk for hemorrhoids. During pregnancy, straining is adding a third pressure input on top of the two that cannot be modified. This is why a degree of straining that causes no issue outside of pregnancy can push symptomatic hemorrhoids from manageable to significantly painful in the third trimester.
+
+The practical consequence of understanding all three mechanisms: dietary fibre and fluids reduce the need for straining, which removes one pressure input on already-stressed rectal veins. They do not address the uterine pressure or the hormonal vein wall relaxation. Expecting dietary changes alone to resolve third-trimester hemorrhoids is expecting one intervention to fix a three-part problem.
+
+## What Actually Helps — and What Only Treats Symptoms
+
+Understanding the three mechanisms makes it clearer why different approaches work for different parts of the problem.
+
+**For the constipation and straining component** — the most directly modifiable — ACOG's guidance recommends eating a high-fibre diet and drinking plenty of liquids to help avoid constipation, and not sitting on the toilet for long periods. Straining adds pressure; reducing or eliminating straining removes it. This is where dietary changes earn their place, even if they cannot address the full picture.
+
+**For the positional pressure component** — which relates directly to the uterus's weight on pelvic veins — ACOG specifically recommends getting up and moving around to take weight off the veins of the pelvic area, and notes that sitting for a long time increases the pressure on these veins. Short walks, changing position regularly, and resting on your left side — which reduces compression on the major vein carrying blood from the lower body back to the heart — all help reduce the vascular pressure load. Positional management is underemphasised in most advice, but it directly addresses the uterine pressure mechanism that dietary changes cannot reach.
+
+**For symptomatic relief** — for the pain, swelling, and itching itself — ACOG recommends applying an ice pack or witch hazel pads to the area, noting that witch hazel helps relieve pain and reduce swelling, and soaking in a warm sitz bath a few times a day for comfort. These approaches reduce acute symptoms without addressing the underlying pressure — but reducing acute symptoms matters significantly for daily function and sleep, and there is nothing wrong with using them alongside the other approaches.
+
+For OTC creams and suppositories, ACOG's position is clear: talk with your ob-gyn before using them. Not because they are necessarily unsafe, but because formulations vary and a provider conversation is the right step before selecting independently at the pharmacy. This is worth raising at your next appointment rather than waiting — providers address this routinely and can advise quickly.
+
+## Common Questions About Pregnancy Hemorrhoids
+
+### Why did my hemorrhoids suddenly get much worse around 30 to 34 weeks?
+
+The timing corresponds to the uterus reaching a size where its weight substantially increases pressure on the pelvic venous system. MedlinePlus confirms that swelling in the rectal veins is caused by the uterus pressing on veins, and that women may notice more swelling as they get closer to giving birth. At 30 to 34 weeks, the downward pressure on rectal veins is significantly greater than it was in the second trimester — which is why many women notice a clear worsening with no change in diet or activity.
+
+### Will pregnancy hemorrhoids go away after I give birth?
+
+ACOG notes that hemorrhoids usually get worse right after delivery — due to the pushing effort during labour — and then slowly improve during the postpartum period. As hormone levels normalise and uterine pressure lifts, the rectal veins are no longer under the same elevated pressure, and symptoms typically resolve over the following weeks. If hemorrhoids persist or are significantly painful beyond the early postpartum period, this is worth raising with your provider rather than continuing to manage independently.
+
+### Is the bleeding from hemorrhoids dangerous during pregnancy?
+
+Hemorrhoid bleeding is common and occurs when swollen rectal veins are irritated during a bowel movement — MedlinePlus notes this typically appears as bright red blood on toilet paper or in the toilet bowl. While this is not usually dangerous, any rectal bleeding during pregnancy should be confirmed as hemorrhoid-related by your provider rather than assumed. Other causes of rectal bleeding warrant evaluation, and your provider can confirm the source and advise on management appropriate to your stage of pregnancy.
+
+## When to Call Your Doctor
+
+Contact your provider about hemorrhoids if:
+
+- **You have rectal bleeding that does not clearly relate to a bowel movement**, or that appears heavier than light spotting — rectal bleeding during pregnancy always warrants provider confirmation of the cause rather than assumption
+- **You notice a hard, very painful lump near the anus that appeared suddenly** — this can indicate a thrombosed external hemorrhoid, where a blood clot has formed within the vein, which may require prompt evaluation and has a specific management approach
+- **Pain is severe enough to disrupt sleep or daily activities** — this is a quality-of-life issue that warrants a provider conversation about management options beyond what is available over the counter
+- **Symptoms have not responded to two weeks of home management** — a provider conversation can identify whether a different approach or OTC formulation is appropriate
+
+## Related Tools on SageNest
+
+Hemorrhoids in the third trimester are one of several symptoms that intensify in the final weeks as the uterus reaches its maximum size and the baby begins to descend. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) shows what is happening physically each week through the third trimester — including how the baby's position and the uterus's height change in the final eight weeks, which directly relates to the pelvic pressure driving late-pregnancy symptoms like hemorrhoids. If you are also managing weight gain targets alongside third-trimester discomfort, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+Pregnancy hemorrhoids have three simultaneous causes: the physical pressure of the growing uterus on pelvic veins — reducing blood flow from the lower body and causing rectal veins to swell, as confirmed by both ACOG and MedlinePlus — progesterone relaxing vein wall tone and making those veins more susceptible to swelling, and pregnancy-hormone-driven slowing of the gut that causes constipation and the straining that adds further pressure on top. Dietary fibre and fluids address the constipation component but not the structural or hormonal ones, which is why they help but rarely resolve third-trimester hemorrhoids on their own. ACOG's recommended combined approach — movement, positional changes, dietary modification, sitz baths, witch hazel, and a provider conversation before any OTC product — addresses all three layers simultaneously. Resolution after birth, as hormones normalise and uterine pressure lifts, is the expected outcome for most women. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to track where you are in this final stage and what other changes to expect as your due date approaches.
+
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [What can I do for hemorrhoids during pregnancy?](https://www.acog.org/womens-health/experts-and-stories/ask-acog/what-can-i-do-for-hemorrhoids-during-pregnancy)
+- **ACOG** — [Problems of the Digestive System](https://www.acog.org/womens-health/faqs/problems-of-the-digestive-system)
+- **ACOG** — [Skin Conditions During Pregnancy](https://www.acog.org/womens-health/faqs/Skin-Conditions-During-Pregnancy)
+- **MedlinePlus** — [Hemorrhoids](https://medlineplus.gov/ency/article/000292.htm)
+- **MedlinePlus** — [Common symptoms during pregnancy](https://medlineplus.gov/ency/patientinstructions/000583.htm)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
+  },
+  {
     slug: 'pregnancy-heartburn-why-it-gets-worse',
     title: "Why Pregnancy Heartburn Peaks in the Third Trimester — It's Not Just the Spicy Food",
     description: "Pregnancy heartburn involves three simultaneous causes most women don't know about. Avoiding trigger foods helps — but only with the first one. Here's what's actually happening.",
