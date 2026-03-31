@@ -13,6 +13,118 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'bleeding-gums-pregnancy-gingivitis',
+    title: "Your Gums Bleed Every Time You Brush Now — Here's What Pregnancy Is Doing",
+    description: "Pregnancy bleeding gums aren't about brushing too hard. There's a hormonal mechanism that makes gum tissue react differently — here's what it is and what helps.",
+    readingTime: '8 min read',
+    lastReviewed: 'March 2026',
+    updatedAt: '2026-03-31',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman standing at a bathroom sink in the morning, looking with concern at her toothbrush, soft natural window light, slightly worried expression, candid and real, not staged, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Is it normal to have bleeding gums when pregnant?',
+        answer: 'Yes. ACOG identifies pregnancy gingivitis as a recognised physiologic change during pregnancy — one of several noticeable changes to the oral cavity that can occur due to the hormonal shifts of pregnancy. MedlinePlus also confirms that gum bleeding is a common pregnancy symptom, caused by hormonal changes that affect blood vessels and gum tissue. While the bleeding is a normal response to pregnancy hormones, it is not something to simply ignore — good oral hygiene during pregnancy is important, and a dental visit is recommended if gums are very swollen, painful, or not responding to improved brushing and flossing.'
+      },
+      {
+        question: 'Why do my gums bleed more during pregnancy even though I am brushing the same way?',
+        answer: 'Because your gum tissue is responding differently to bacteria that it previously tolerated without reaction. MedlinePlus explains that blood vessels in the gums dilate during pregnancy and move closer to the surface, making them more vulnerable to irritation. The hormonal changes of pregnancy also cause gum tissue to mount a stronger inflammatory response to the plaque bacteria that are always present in the mouth — so the same level of plaque that caused no problem before pregnancy now triggers visible swelling, redness, and bleeding. Your brushing has not changed; your gum tissue\'s sensitivity has.'
+      },
+      {
+        question: 'Can pregnancy gum disease affect my baby?',
+        answer: 'Some research has explored a possible association between periodontal infection in pregnancy and preterm birth. ACOG\'s guidance on oral health during pregnancy notes this possible association exists in some studies but also states clearly that evidence has not shown that dental treatment during pregnancy improves birth outcomes. The takeaway ACOG emphasises is straightforward: maintaining good oral health during pregnancy is important for your own wellbeing, and dental care is safe during pregnancy — not that untreated gums will definitively cause harm to the baby. If you have concerns, raise them with both your ob-gyn and your dentist.'
+      },
+      {
+        question: 'Is it safe to go to the dentist when pregnant?',
+        answer: 'Yes. ACOG explicitly supports dental care during pregnancy and counsels women on maintaining good oral health habits throughout pregnancy and their lifespan. Routine cleaning and evaluation are appropriate during pregnancy. ACOG specifically notes that reassuring women about oral changes and reinforcing good oral health habits is important — which implies that seeking dental care is both safe and encouraged, not something to defer until after delivery. If you are concerned about any procedures, let your dentist know you are pregnant so they can plan accordingly.'
+      },
+      {
+        question: 'Will pregnancy bleeding gums go away after birth?',
+        answer: 'For most women, the exaggerated gum sensitivity of pregnancy gingivitis resolves after delivery as hormone levels normalise and blood vessel dilation in gum tissue reduces. MedlinePlus notes that gum bleeding caused by pregnancy is a symptom of the hormonal changes of pregnancy itself. However, any gum disease that was not addressed during pregnancy — plaque buildup that progressed to tartar, or early periodontitis — will not resolve on its own after birth just because the hormones change. This is why maintaining oral hygiene throughout pregnancy, rather than waiting until postpartum, is the recommended approach.'
+      }
+    ],
+    content: `You are at the sink in the morning, brushing as you always have, and when you spit there is pink in the basin. The first time it happened you rinsed and carried on. The second time you brushed more gently, thinking you had been too aggressive. The third time you stood there for a moment wondering whether something was wrong. Nothing about your brushing changed. What changed is your pregnancy — and the hormonal mechanism that is making your gums react to ordinary bacteria the way they never did before.
+
+## Why Pregnancy Changes How Your Gum Tissue Responds
+
+Pregnancy bleeding gums have a specific clinical name — **pregnancy gingivitis** — and ACOG identifies it as one of the recognised physiologic changes of pregnancy. Their guidance on oral health lists the changes that can occur in the oral cavity during pregnancy: pregnancy gingivitis, benign oral gingival lesions, tooth mobility, tooth erosion, dental caries, and periodontitis. These are not random — they are the predictable result of pregnancy hormones acting on gum tissue throughout the duration of the pregnancy.
+
+MedlinePlus explains the vascular component plainly: some women have nose and gum bleeding during pregnancy because the blood vessels dilate and move closer to the surface. The same hormonal changes that cause the increased blood volume of pregnancy and the visible vein changes in the legs and nose affect the fine blood vessels threading through gum tissue. When those vessels are dilated, swollen, and closer to the tissue surface, even the normal mechanical contact of brushing is enough to rupture small vessels and cause the bleeding you see on your toothbrush.
+
+The second mechanism sits on top of this. MedlinePlus explains that gingivitis — inflamed gums — occurs because plaque, a sticky film of bacteria, mucus, and food debris, builds up on teeth above and below the gum line. The bacteria in plaque and the toxins they produce cause the gums to become swollen and tender as part of the body's immune response. During pregnancy, this immune response is amplified: the gum tissue is more hormonally sensitised, so plaque levels that produced no visible inflammation before pregnancy now trigger redness, swelling, and easy bleeding. Your oral hygiene did not deteriorate. Your gum tissue's response to the bacteria that were always there became more intense.
+
+This is why brushing more gently does not stop pregnancy bleeding gums. The bleeding is not caused by the brushing — it is caused by inflamed, dilated gum tissue encountering normal mechanical pressure. Reducing that pressure reduces stimulation but does not address the underlying inflammation. The approach that actually helps works on the inflammation itself.
+
+## Why the Second Trimester Is When It Peaks
+
+Pregnancy gingivitis typically becomes noticeable in the first trimester and often peaks in the second, as estrogen and progesterone levels reach their sustained elevated levels. Both hormones affect how gum tissue responds to bacterial stimulation — progesterone in particular appears to amplify the inflammatory response in gingival tissue, making even low plaque levels trigger a more pronounced reaction than they would outside of pregnancy.
+
+ACOG's guidance notes that these changes are physiologic — meaning they are a direct consequence of normal pregnancy rather than a sign that something is wrong. The reassurance is genuine: what you are experiencing is a recognised response to pregnancy hormones, not a sign of sudden dental neglect or an underlying disease that appeared from nowhere.
+
+That said, ACOG is clear that recognising the change as normal does not mean leaving it unmanaged. Their guidance explicitly emphasises reinforcing good oral health habits during pregnancy. The reason is straightforward: the hormonal amplification of the inflammatory response means that plaque which would have been tolerated with minimal consequence before pregnancy now poses a more significant risk of progressing — left unchecked, gingivitis can advance to **periodontitis**, a more serious form of gum disease in which the infection spreads to the supporting bone and tissue around the teeth, and which is substantially harder to reverse than simple gingivitis.
+
+## The Plaque-Inflammation-Bleeding Chain — And How to Break It
+
+NIDCR describes the gum disease sequence clearly: it starts with plaque buildup, which harbours bacteria that irritate the gum line, which triggers swelling and redness of the gums, which — during pregnancy especially — tips readily into bleeding. Plaque that is not removed hardens into tartar, a calcified deposit that cannot be removed by brushing and requires professional cleaning to eliminate.
+
+The practical implication is that the most direct way to interrupt this chain during pregnancy is to reduce the bacterial load in the mouth — which means consistent, thorough plaque removal, more important during pregnancy than at any other time precisely because the hormonal environment makes gum tissue react more strongly to whatever plaque is left behind.
+
+MedlinePlus guidance on bleeding gums outlines the approach: brush gently with a soft-bristle toothbrush at least twice daily, floss at least twice daily to remove plaque between teeth that brushing does not reach, and have professional teeth cleaned by a dentist or dental hygienist — at least every six months, or more frequently if gums are actively inflamed. ACOG supports dental visits during pregnancy as appropriate and safe, and specifically recommends that women be counselled on maintaining good oral health habits throughout pregnancy.
+
+If nausea in the first trimester is making brushing difficult — a genuine barrier for many women — ACOG's guidance notes that for women experiencing vomiting, rinsing with a baking soda solution can help neutralise acid in the mouth, which protects both gums and tooth enamel. Brushing immediately after vomiting is not recommended as it can abrade softened enamel; rinsing first and waiting before brushing is the better approach.
+
+## The Preterm Birth Question — What ACOG Actually Says
+
+If you have searched pregnancy bleeding gums, you have likely encountered articles raising the question of whether gum disease in pregnancy is linked to preterm birth. This is worth addressing directly because the framing in online content ranges from alarmist to dismissive, and neither reflects what the evidence actually shows.
+
+ACOG's guidance on oral health during pregnancy acknowledges that some studies have found a possible association between periodontal infection and preterm birth. It then states something equally important: evidence has not shown that dental treatment during pregnancy improves birth outcomes. This means the relationship between severe gum disease and preterm birth is observed in some research but is not established as a causal one, and treating gum disease during pregnancy — while appropriate for your own oral health — has not been demonstrated to reduce preterm birth rates.
+
+The honest clinical takeaway is this: pregnancy gingivitis (mild to moderate gum inflammation) is a normal hormonal response, not the level of disease the research on periodontal infection and preterm birth is describing. Keeping your gums healthy through the ordinary measures of brushing, flossing, and dental care is the right approach for your own oral health. It should not be a source of fear about your pregnancy. If you have concerns about severe gum disease and pregnancy outcomes, that conversation belongs with your provider and your dentist, who can assess the actual state of your oral health and give you accurate guidance for your situation.
+
+## Common Questions About Pregnancy Bleeding Gums
+
+### I brush very softly now and my gums still bleed — why isn't it helping?
+
+Because the source of the bleeding is inside the gum tissue, not on its surface. MedlinePlus explains that in pregnancy, blood vessels in the gum tissue dilate and sit closer to the surface. Softer brushing reduces the mechanical force but does not change the underlying vessel dilation or reduce the bacterial plaque that is driving the inflammatory response. The more effective approach is to reduce plaque thoroughly — including flossing, which reaches bacteria between teeth that brushing misses entirely — rather than reducing brushing pressure, which leaves more plaque behind and can worsen the inflammation over time.
+
+### My gums are not just bleeding — there is a small round lump on them. Should I be worried?
+
+ACOG's guidance on oral changes during pregnancy lists benign oral gingival lesions as one of the recognised physiologic changes that can occur. These are sometimes called pregnancy epulis or pyogenic granulomas — localised growths on the gum tissue that develop in response to the same hormonal and inflammatory environment driving gingivitis. They are not cancerous and typically resolve after delivery, but they warrant a dental evaluation to confirm the diagnosis and ensure they are not progressing in a way that needs intervention. If you notice any new growth in your mouth during pregnancy, that is worth mentioning to your dentist at your next visit rather than leaving it.
+
+### My dentist wants to do a cleaning during my second trimester. Is that safe?
+
+Yes. ACOG's guidance on oral health supports dental care throughout pregnancy and specifically counsels women on the importance of maintaining oral health. Routine professional cleaning during the second trimester is generally considered an appropriate time for dental work — the nausea of the first trimester has typically eased, and the physical discomfort of the third trimester has not yet peaked. Your dentist will know you are pregnant and can plan accordingly. Deferring all dental care until after delivery is not the approach ACOG recommends.
+
+## When to Call Your Doctor or Dentist
+
+Contact your dentist if:
+
+- **Gums are significantly swollen, painful, or bleeding heavily** beyond the light bleeding on brushing that is typical of pregnancy gingivitis — heavy bleeding or pain warrants professional evaluation
+- **You notice a new growth or lump on your gum tissue** — even small, painless growths during pregnancy warrant evaluation to confirm they are benign and monitor them
+- **Bleeding does not improve after two to three weeks of improved oral hygiene** — consistent brushing, flossing twice daily, and soft bristle brushing should produce noticeable improvement in gingivitis over two to three weeks; if it does not, a dental cleaning and evaluation are the next step
+- **You have not had a dental cleaning since becoming pregnant** — ACOG supports dental visits during pregnancy and reinforces that routine care should not be deferred until after delivery
+
+## Related Tools on SageNest
+
+Pregnancy gingivitis is one of several symptoms that are driven by the same hormonal environment of rising estrogen and progesterone that is shaping every week of your pregnancy. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks what is changing physically each week — including the hormonal shifts of the second trimester that are associated with the peak of pregnancy gingivitis symptoms for many women. If you are also tracking your overall wellbeing and weight gain through this period, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+Pregnancy bleeding gums are a recognised hormonal response with a specific name — pregnancy gingivitis — confirmed by ACOG as one of the physiologic changes of pregnancy. The mechanism is two-part: blood vessels in the gum tissue dilate and move closer to the surface, as MedlinePlus confirms, and the elevated hormones of pregnancy amplify the inflammatory response to plaque bacteria that are always present in the mouth. The bleeding is not caused by brushing too hard — it is caused by gum tissue that is more reactive than it was before pregnancy. Reducing plaque through thorough and consistent brushing and flossing addresses the inflammatory driver. Dental visits during pregnancy are safe and supported by ACOG; routine professional cleaning removes the hardened tartar that home brushing cannot reach. Pregnancy gingivitis typically resolves after delivery as hormones normalise. Until then, maintaining oral hygiene is the most direct management approach available — and our [week-by-week pregnancy guide](/pregnancy-week-by-week) can help you track the broader hormonal picture of the trimester you are in.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Oral Health Care During Pregnancy and Through the Lifespan](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/08/oral-health-care-during-pregnancy-and-through-the-lifespan)
+- **MedlinePlus** — [Common symptoms during pregnancy](https://medlineplus.gov/ency/patientinstructions/000583.htm)
+- **MedlinePlus** — [Gingivitis](https://medlineplus.gov/ency/article/001056.htm)
+- **MedlinePlus** — [Bleeding gums](https://medlineplus.gov/ency/article/003062.htm)
+- **NIDCR / NIH** — [Periodontal (Gum) Disease](https://www.nidcr.nih.gov/health-info/gum-disease)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
+  },
+  {
     slug: 'restless-legs-pregnancy-third-trimester',
     title: "Your Legs Won't Stop at 2am — What Pregnancy Restless Legs Actually Is",
     description: "Pregnancy restless legs syndrome feels nothing like cramps — and most women don't know they have it. Here's the iron-dopamine mechanism and what actually helps.",
