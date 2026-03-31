@@ -564,3 +564,8 @@
 - Added unit coverage in `tests/pregnancyFlightCalc.test.ts` for verdict thresholds and validation edge cases.
 - Updated `README.md` tool/route lists to reflect the new calculator.
 - Why: to launch a high-intent SEO tool that answers “can I fly while pregnant” with week-based guidance aligned with ACOG recommendations and common airline restrictions.
+## 2026-03-31 (Matched blog article typography scale and style to BabyCenter-like reading appearance)
+
+- Updated blog/article-specific typography in `src/styles/global.css` under the `.article` scope only, so long-form post headings now use a sans-serif style and larger editorial sizing while paragraph/list copy now uses larger serif text for closer visual parity with the provided BabyCenter references.
+- Kept the change strictly typography-focused (font family, font size, weight, spacing) and limited it to existing article content selectors, without modifying layout structure, routing, components, business logic, or non-article UI sections.
+- Why: the article text on SageNest was visibly smaller than the provided BabyCenter examples (especially on mobile), so this update aligns cross-device reading size and typographic tone more closely to the requested benchmark.

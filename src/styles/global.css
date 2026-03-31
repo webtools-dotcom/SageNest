@@ -1258,6 +1258,10 @@ button:disabled {
 .article h1 {
   margin-bottom: var(--space-md);
   color: var(--charcoal);
+  font-family: var(--font-sans);
+  font-size: clamp(2.4rem, 4.4vw, 3.75rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
 }
 
 .article p:first-of-type {
@@ -1279,17 +1283,26 @@ button:disabled {
   margin-bottom: var(--space-md);
   padding-top: var(--space-lg);
   border-top: 1px solid var(--border-hairline);
+  font-family: var(--font-sans);
+  font-size: clamp(2.05rem, 3.8vw, 3.2rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .article h3 {
   margin-top: var(--space-xl);
   margin-bottom: var(--space-md);
+  font-family: var(--font-sans);
+  font-size: clamp(1.65rem, 3vw, 2.3rem);
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .article p {
   margin-bottom: var(--space-lg);
   line-height: 1.8;
-  font-size: 1.125rem;
+  font-family: var(--font-serif);
+  font-size: 1.375rem;
 }
 
 .article ul, .article ol {
@@ -1299,9 +1312,10 @@ button:disabled {
 
 .article li {
   margin-bottom: var(--space-sm);
-  line-height: 1.7;
+  line-height: 1.75;
   color: var(--text-secondary);
-  font-size: 1.0625rem;
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
 }
 
 .article strong {
