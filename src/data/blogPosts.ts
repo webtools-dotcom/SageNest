@@ -13,6 +13,136 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'dizziness-lightheadedness-pregnancy-second-trimester',
+    title: "That Sudden Dizzy Feeling in the Supermarket — Why Pregnancy Does This",
+    description: "Pregnancy dizziness in the second trimester has a specific blood pressure mechanism most women don't expect. Here's why it happens and what helps.",
+    readingTime: '8 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-01',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a visibly pregnant woman in the second trimester steadying herself against a supermarket shelf, looking pale and momentarily lightheaded, one hand on the shelf, soft overhead grocery store light, candid real moment, slightly concerned expression, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Is dizziness normal in pregnancy or should I be worried?',
+        answer: 'Dizziness and lightheadedness in pregnancy are common and often have a straightforward cause — blood pressure normally drops in the first half of pregnancy as blood vessels expand to accommodate increasing blood volume, and that lower baseline pressure makes the brain more vulnerable to brief drops when you stand up, overheat, or go long stretches without eating or drinking. However, dizziness after 16 weeks that comes with headache, blurred vision, swelling in the face or hands, or a racing heartbeat is a different pattern — ACOG identifies these as warning signs that warrant immediate provider contact, as they can indicate preeclampsia. The timing, accompanying symptoms, and whether dizziness is brief and positional or persistent and accompanied by other changes are what matters most.'
+      },
+      {
+        question: 'Why do I feel faint when I stand up quickly during pregnancy?',
+        answer: 'MedlinePlus explains this directly: many people feel lightheaded when they get up too quickly from sitting or lying down because it causes a sudden drop in blood pressure. During pregnancy this effect is amplified because your baseline blood pressure is already lower than usual — ACOG confirms that blood pressure normally drops in the first half of pregnancy. When you stand quickly, blood pools temporarily in the legs before your cardiovascular system can compensate, and the brief drop in blood reaching the brain produces the dizzy, grey-vision, unsteady feeling. Rising more slowly gives the body time to equalise pressure before you are fully upright.'
+      },
+      {
+        question: 'What trimester is dizziness worst in pregnancy?',
+        answer: 'The second trimester is typically when pregnancy-related dizziness is most pronounced. Blood pressure drops most significantly in the first half of pregnancy, and the growing uterus increasingly compresses the large vein returning blood from the lower body to the heart — especially when lying flat on your back. By the third trimester, blood pressure tends to return toward pre-pregnancy levels, which reduces one of the main drivers of positional lightheadedness, though standing for long periods can still cause pooling and dizziness due to the weight of the uterus.'
+      },
+      {
+        question: 'Can pregnancy dizziness hurt my baby?',
+        answer: 'Brief, occasional dizziness from positional blood pressure changes does not harm the baby. The dizziness is your brain signalling a momentary reduction in blood supply — it is a symptom affecting you, not a direct change to placental blood flow. The risk that matters practically is the risk of falling if you faint. Sitting or lying down immediately when you feel dizzy, avoiding standing in one position for long periods, and not rising quickly from lying or seated positions are the main protective measures. If dizziness is persistent, severe, or comes with other symptoms, that pattern warrants a provider conversation.'
+      },
+      {
+        question: 'Does drinking more water help with pregnancy dizziness?',
+        answer: 'Yes, directly. MedlinePlus confirms that dehydration is one of the causes of lightheadedness — when the body does not have enough fluid, blood volume drops and blood pressure drops with it. During pregnancy, fluid needs are higher than before pregnancy because blood volume is expanding substantially to support the placenta and growing baby. Inadequate fluid intake compounds the baseline blood pressure drop of pregnancy and makes positional dizziness more likely and more severe. Consistent fluid intake throughout the day — rather than drinking large amounts infrequently — is the most effective approach.'
+      }
+    ],
+    content: `You were standing in a queue, or maybe reaching for something on a high shelf, and without warning the edges of your vision went grey and your legs felt unreliable. You grabbed something — a trolley, a shelf, your partner's arm — and stood still until it passed. Thirty seconds later you were fine. You are trying to decide whether that was just one of those pregnancy things or whether you need to call someone. It was almost certainly a pregnancy thing — but understanding why it happens will tell you exactly which pattern is normal and which pattern is the one that warrants a call.
+
+## Why Your Blood Pressure Is Already Lower Than It Was Before Pregnancy
+
+The starting point for understanding pregnancy dizziness is a fact that surprises most women: ACOG confirms that blood pressure normally goes down in the first half of pregnancy. This is not a symptom of something wrong — it is a physiological response to the enormous vascular changes pregnancy requires.
+
+During pregnancy, your blood volume expands substantially to supply the placenta, support the growing uterus, and prepare for blood loss during delivery. To accommodate this expanded volume without putting dangerous pressure on blood vessel walls, blood vessels throughout the body relax and dilate. The result of those wider, more relaxed vessels is a lower resting blood pressure than you had before conception. For most women, blood pressure is at its lowest point somewhere in the middle of the second trimester.
+
+A lower baseline blood pressure means your cardiovascular system is working with a smaller margin before the brain notices a drop. MedlinePlus describes the mechanism plainly: **lightheadedness occurs when your brain does not get enough blood**, and this can happen when there is a sudden drop in blood pressure. Outside of pregnancy, that drop has to be more significant before it causes symptoms. During pregnancy, it takes less.
+
+This is the foundation of why pregnancy dizziness is real, predictable, and not a sign of something going wrong — it is the cardiovascular cost of the physiological adaptation your body is making on behalf of the pregnancy.
+
+## What Triggers the Dizzy Moment Specifically
+
+Knowing that your baseline blood pressure is lower explains the vulnerability. Understanding what causes the acute drop in the moment explains the pattern — why it tends to happen at particular times and not others.
+
+**Standing up too quickly** is the most common trigger. MedlinePlus explains that many people feel lightheaded when they get up too quickly from sitting or lying down. When you stand, blood is temporarily redistributed downward toward the legs and feet by gravity. Under normal circumstances, the cardiovascular system compensates within seconds — blood vessels in the legs contract, the heart rate adjusts, and blood pressure in the upper body is maintained. During pregnancy, with blood pressure already lower and blood vessels already dilated and less responsive, this compensation is slower and less complete. The brain briefly receives less blood than it needs, and the grey-vision, heavy-legged, unsteady feeling is the result. Slowing down the transition from sitting to standing — pausing at the edge of the bed before fully rising, rather than going directly from lying to upright — gives the system time to compensate.
+
+**Standing still in one position for a long period** also causes pooling. When you stand without moving, the muscle contractions in your legs that normally help pump blood back upward are absent. Blood pools in the lower extremities, venous return to the heart decreases, and blood pressure drops. This is why supermarket queues, standing at a kitchen counter for a long time, or attending an event where you stand without moving are frequent triggers for pregnancy dizziness. The uterus itself compounds this in the second and third trimesters — MedlinePlus confirms that the growing uterus presses on the veins returning blood from the lower body, reducing the flow of blood back to the heart that is needed to maintain blood pressure.
+
+**Dehydration** narrows the margin further. MedlinePlus identifies dehydration directly as a cause of lightheadedness — when blood volume drops due to insufficient fluid intake, blood pressure drops with it. During pregnancy, fluid needs are higher than before pregnancy. Inadequate hydration on top of the physiological blood pressure drop of pregnancy makes dizziness substantially more likely and more intense when any positional trigger occurs. Drinking consistently throughout the day — rather than catching up with large amounts periodically — maintains blood volume and reduces the severity of positional dips.
+
+**Prolonged time without eating** contributes through blood sugar. Low blood sugar is another recognised cause of lightheadedness, and the metabolic demands of pregnancy mean blood sugar can drop more quickly than it did before pregnancy. Small, regular meals or snacks help maintain blood sugar between the wider gaps that would have been tolerable before pregnancy.
+
+**Overheat or confined warm spaces** — a warm bath, a crowded shop, a hot day — cause blood vessels in the skin to dilate further in order to cool the body. This directs blood flow toward the skin and away from core circulation, which can tip the blood pressure balance into a symptomatic drop. Cool environments, cool water, and sitting down immediately when a warm space starts to feel oppressive are the practical responses.
+
+## How to Recognise a Normal Dizzy Episode vs One That Warrants Immediate Care
+
+Understanding the mechanism makes it possible to distinguish the two patterns clearly.
+
+The **normal pregnancy dizziness pattern** has these features: it is brief — seconds to a minute or two; it follows a recognisable trigger (standing quickly, long queue, overheating, skipped meal, low fluid intake); it improves immediately when you sit or lie down; it passes completely and you feel normal again. MedlinePlus confirms that fainting occurs when blood pressure drops suddenly and reduces blood flow to the brain — and that lying down typically resolves it because gravity no longer works against circulation when you are horizontal. A dizziness episode that fits this pattern, resolves quickly, and leaves no other symptoms is consistent with the cardiovascular changes of normal pregnancy.
+
+The **pattern that requires immediate contact with your provider** is different in character. ACOG's patient safety guidance identifies the following combination as warning signs that warrant urgent evaluation: dizziness or feeling faint that happens at or after 16 weeks of pregnancy, particularly if accompanied by any of the following — headache that does not go away, blurred vision, a racing or fast heartbeat, chest pain, shortness of breath, significant swelling in the face or hands, or vaginal bleeding. This pattern is not positional blood pressure dizziness — it can indicate conditions such as preeclampsia, which ACOG identifies as a serious high blood pressure disorder that develops during pregnancy and requires prompt medical attention. The presence of even one or two of these accompanying symptoms alongside dizziness is a reason to seek evaluation the same day rather than waiting.
+
+If you are ever uncertain which pattern you are experiencing, sitting or lying down immediately and calling your provider is always the right step. The cost of an unnecessary call is low. The cost of waiting on a symptom that turns out to be significant is not.
+
+For a clear picture of what else is shifting in your cardiovascular and circulatory system each week — including when the blood pressure drop of pregnancy typically peaks and when it begins to reverse — our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers the physiological changes of each trimester in detail.
+
+## What Actually Helps Day-to-Day
+
+The practical management of pregnancy dizziness follows directly from the mechanisms above. None of the approaches below require a provider conversation — they address the physiological triggers that are producing the symptoms.
+
+Rise slowly from every sitting or lying position. Pause at the edge of the chair or bed before fully standing, and give your circulation fifteen to thirty seconds to begin compensating before you take your first steps. This single change removes the most common acute trigger.
+
+Avoid standing in one position for prolonged periods. When standing is unavoidable — in a queue, cooking, attending an event — shift your weight between feet, perform small movements, and engage your calf muscles periodically. These movements contract the leg muscles that help pump blood back upward, maintaining venous return and blood pressure.
+
+Drink consistently across the whole day. Spreading fluid intake through waking hours maintains blood volume at a more stable level than sporadic large amounts. If you notice dizziness worsening on days when you have drunk less, dehydration is likely contributing.
+
+Eat small amounts regularly. Letting blood sugar drop by going several hours without eating is a compounding factor, especially in the second trimester when metabolic demands are increasing. A small snack every two to three hours is a straightforward buffer.
+
+When a dizzy episode begins, sit or lie down immediately. Do not try to stay upright by gripping something and waiting it out — if you lose consciousness even briefly, a fall from standing is the real risk. Sitting on the floor where you are is better than attempting to reach a chair. Lie on your left side if possible — this position takes the uterus off the large vein returning blood to the heart and improves circulation fastest.
+
+## Common Questions About Pregnancy Dizziness
+
+### I felt faint lying on my back — is that different from the standing-up dizziness?
+
+Yes, and this has a specific cause. MedlinePlus confirms that the growing uterus presses on the veins returning blood from the lower body to the heart. When you lie flat on your back in the second and third trimester, the full weight of the uterus rests directly on these veins — ACOG notes that in the second and third trimesters, lying on your back may compress this major blood vessel, making you feel dizzy. Left-side lying takes the uterus off this vein and restores blood flow most effectively. This is the same physiological reason that left-side sleeping is recommended for the second and third trimesters, and why supine dizziness is a signal to roll to your left rather than try to stay on your back.
+
+### The dizziness is worst in hot weather — why?
+
+Heat causes blood vessels in the skin to dilate in order to cool the body. This redirects blood toward the skin and away from the core circulation that maintains blood pressure. During pregnancy, with baseline blood pressure already lower and blood vessels already dilated, additional heat-driven vasodilation has a more pronounced effect than it would outside of pregnancy. Staying cool, drinking more fluid in warm weather, and sitting down immediately when a warm environment starts to feel uncomfortable are the most effective responses. Hot baths and saunas carry a related risk for the same reason and are generally not recommended during pregnancy — a separate question worth raising with your provider if relevant to you.
+
+### I haven't fainted but I feel dizzy almost every day. Is that a problem?
+
+Frequent but brief positional dizziness that follows a clear trigger and resolves with sitting is consistent with the blood pressure changes of pregnancy. However, dizziness that is happening daily and significantly affecting your function, or that is not clearly positional in nature, is worth raising at your next prenatal appointment. Your provider can confirm that your blood pressure and overall cardiovascular status are consistent with the normal physiology of pregnancy, and can identify whether any other contributing factor — such as anaemia or dehydration — is worsening the pattern. Never wait if dizziness is accompanied by headache, blurred vision, chest pain, or racing heartbeat — those combinations warrant contact the same day.
+
+## When to Call Your Doctor
+
+Contact your provider the same day if dizziness is accompanied by any of the following:
+
+- **A headache that does not go away** — particularly in the second half of pregnancy, this combination is one of ACOG's identified warning signs for preeclampsia
+- **Blurred vision or seeing spots** — another ACOG-identified warning sign when combined with dizziness at or after 16 weeks
+- **A racing or fast heartbeat, chest pain, or shortness of breath** — these accompany dizziness in patterns that warrant urgent evaluation
+- **Significant swelling of the face or hands** alongside dizziness — not routine ankle swelling, but facial or hand swelling is specifically flagged by ACOG
+- **Vaginal bleeding accompanying dizziness** — this combination always warrants same-day evaluation
+
+Go to the emergency room rather than waiting for a callback if you faint completely, if dizziness is sudden and severe, or if it comes with chest pain, difficulty speaking, or weakness on one side.
+
+## Related Tools on SageNest
+
+The blood pressure changes and cardiovascular shifts that drive second-trimester dizziness are part of a broader set of physiological changes happening week by week. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks what is changing in your body at each stage, including when the blood pressure drop of the second trimester typically peaks and what else your circulation is managing as the pregnancy progresses. If you are also keeping track of your overall weight gain through this period, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+Pregnancy dizziness in the second trimester is a predictable result of the normal cardiovascular changes of pregnancy. ACOG confirms that blood pressure drops in the first half of pregnancy as blood vessels dilate to accommodate expanding blood volume — and that lower baseline pressure means the brain is more vulnerable to brief drops when you stand quickly, stand still in a queue, overheat, get dehydrated, or let blood sugar fall. MedlinePlus confirms that lightheadedness occurs when the brain briefly does not receive enough blood, which is exactly what happens in these positional and situational moments. Rising slowly, staying hydrated, eating regularly, moving your legs when standing, and lying immediately on your left side when a dizzy episode starts are the practical responses that address the actual mechanisms. The pattern that requires same-day provider contact is dizziness at or after 16 weeks accompanied by headache, blurred vision, racing heartbeat, or facial swelling — a combination ACOG identifies as warning signs for preeclampsia rather than normal pregnancy physiology. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to understand the full picture of what your circulation is managing at each stage.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Preeclampsia and High Blood Pressure During Pregnancy](https://www.acog.org/womens-health/faqs/Preeclampsia-and-High-Blood-Pressure-During-Pregnancy)
+- **ACOG** — [Patient Safety Resources — Warning Signs During Pregnancy](https://www.acog.org/giving/programs/quality-and-safety/resources)
+- **MedlinePlus** — [Dizziness](https://medlineplus.gov/ency/article/003093.htm)
+- **MedlinePlus** — [Dizziness and Vertigo](https://medlineplus.gov/dizzinessandvertigo.html)
+- **MedlinePlus** — [Fainting](https://medlineplus.gov/fainting.html)
+- **MedlinePlus** — [Common symptoms during pregnancy](https://medlineplus.gov/ency/patientinstructions/000583.htm)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
+  },
+  {
     slug: 'bleeding-gums-pregnancy-gingivitis',
     title: "Your Gums Bleed Every Time You Brush Now — Here's What Pregnancy Is Doing",
     description: "Pregnancy bleeding gums aren't about brushing too hard. There's a hormonal mechanism that makes gum tissue react differently — here's what it is and what helps.",
