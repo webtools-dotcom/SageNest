@@ -13,6 +13,139 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'puppp-rash-pregnancy-belly-itching',
+    title: "Red Itchy Bumps All Over Your Pregnant Belly — This Is What That Is",
+    description: "A red itchy rash spreading across your pregnant belly in the third trimester has a specific name and cause. Here's what PUPPP is, why it happens, and what helps.",
+    readingTime: '7 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-01',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman in her third trimester sitting on a bed in the evening looking down at her belly with a worried and uncomfortable expression, her hand hovering near the skin but not scratching, soft warm bedroom lamp light, candid real moment, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'What is the itchy rash on my pregnant belly?',
+        answer: `The most likely cause of a red, intensely itchy rash on your pregnant belly in the third trimester is a condition called PUPPP — pruritic urticarial papules and plaques of pregnancy. ACOG describes it as small red bumps and hives that appear on the abdomen later in pregnancy and can spread to the thighs, buttocks, and breasts. MedlinePlus confirms it typically appears after 34 weeks, most often in first pregnancies. It is not harmful to you or the baby, it is not contagious, and it goes away after birth. However, because persistent itching without a rash can indicate a more serious liver condition called cholestasis, any itching during pregnancy is worth mentioning to your provider so they can confirm the diagnosis.`
+      },
+      {
+        question: 'Is PUPPP dangerous for my baby?',
+        answer: `ACOG confirms that PUPPP is not associated with harm to the baby — it is an intensely uncomfortable maternal skin condition, not a condition that affects fetal development or wellbeing. It should be distinguished from intrahepatic cholestasis of pregnancy (ICP), which ACOG identifies as a liver condition that can increase the risk of preterm birth and other serious problems. The key difference is that PUPPP involves a visible rash of bumps and hives, while ICP typically causes severe itching without any rash at all. Because the distinction matters, having your provider confirm the diagnosis rather than self-diagnosing is the right step.`
+      },
+      {
+        question: 'What does PUPPP feel like and where does it start?',
+        answer: `MedlinePlus describes PUPPP as itchy red bumps, often in large patches, that typically start on the belly and can spread to the thighs, buttocks, and arms. ACOG notes that the bumps first appear on the abdomen and can form large patches that are very itchy. Many women describe the itch as intense enough to disrupt sleep, and the urge to scratch can be difficult to resist. The bumps themselves look like small raised red welts or hives, often surrounded by a pale halo, and may merge into larger patches as the condition progresses through the third trimester.`
+      },
+      {
+        question: 'How long does PUPPP last in pregnancy?',
+        answer: `PUPPP typically appears in the third trimester — most often after 34 weeks — and resolves within a few days to a couple of weeks after delivery, as ACOG confirms it usually goes away after you give birth. In a small number of cases, symptoms may persist or even appear for the first time in the early postpartum period, but this is less common. During pregnancy, the condition can worsen as the pregnancy progresses and stretch marks develop, which is why management of the itch rather than resolution of the rash is the practical goal until delivery.`
+      },
+      {
+        question: 'What is the difference between PUPPP and cholestasis itching in pregnancy?',
+        answer: `The key difference is the presence or absence of a rash. PUPPP produces visible red bumps and hives — you can see the rash on the skin. ACOG describes intrahepatic cholestasis of pregnancy (ICP) as severe itching in the absence of a rash, typically starting on the palms and soles and often worse at night. MedlinePlus specifically notes that persistent itching without a rash should be reported to your provider as it may indicate cholestasis. If your itching came with a visible rash of bumps starting on the belly, PUPPP is the more likely diagnosis — but both warrant a provider conversation for confirmation.`
+      }
+    ],
+    content: `At some point in your third trimester, you looked down and noticed red bumps on your belly. Not a few — a spreading, intensely itchy cluster of welts that feels like nothing you have had before. You scratched. It made it worse. You are now awake at midnight wondering if this is normal, what it means, and whether it has anything to do with the baby. It has a name: PUPPP. It is one of the most common pregnancy-specific skin conditions, it is not dangerous, and understanding exactly what it is will tell you what to do next.
+
+## Why Itchy Red Bumps Appear on the Belly in the Third Trimester
+
+**PUPPP** stands for pruritic urticarial papules and plaques of pregnancy — a name that sounds alarming and means, essentially, itchy raised bumps and hive-like patches of pregnancy. ACOG identifies it clearly in their guidance on skin conditions during pregnancy: small red bumps and hives appear on the skin later in pregnancy, the bumps can form large patches that can be very itchy, and these bumps usually first appear on the abdomen and can spread to the thighs, buttocks, and breasts.
+
+What causes it exactly is not fully understood. ACOG is direct about this: it is not clear what causes PUPPP. The leading theories involve the rapid stretching of skin in the third trimester — ACOG notes that stretch marks are caused by changes in the elastic supportive tissue lying just under the skin, and PUPPP rashes frequently begin in or around the stretch marks on the abdomen. Some researchers have suggested that fetal cells entering the maternal circulation through stretched skin may trigger the immune response that produces the rash, but this remains a working theory rather than a confirmed mechanism.
+
+What is confirmed: PUPPP appears most often in first pregnancies, most often in the third trimester after around 34 weeks, and most often on the abdomen before spreading. It is significantly more common in women carrying larger babies or multiples — the increased skin stretching appears to be a consistent factor even without a fully established mechanism. MedlinePlus describes the pattern directly: a small number of women develop an itchy rash during their third trimester, most often after 34 weeks, with itchy red bumps often in large patches first appearing on the belly and potentially spreading to the thighs, buttocks, and arms.
+
+## The Most Important Distinction — PUPPP vs Cholestasis
+
+Before anything else in this post, this distinction needs to be made clearly, because it is the one that affects whether you need to call your provider today or at your next appointment.
+
+**PUPPP** is a rash. You can see it. It produces visible red bumps and hive-like patches on the skin. The itch comes from the rash.
+
+**Intrahepatic cholestasis of pregnancy (ICP)** is a liver condition. ACOG describes its main symptom as severe itching in the absence of a rash. MedlinePlus makes the same distinction in its guidance: persistent itching without a rash should be reported to your provider as it may indicate cholestasis — a more serious condition.
+
+The practical test is simple: look at your skin. If there are visible red bumps and raised patches, particularly starting on the belly and moving outward, PUPPP is the more likely diagnosis. If your skin looks normal and you are experiencing intense itching — particularly on your palms and the soles of your feet, and particularly worse at night — that pattern warrants same-day contact with your provider.
+
+This distinction matters because ACOG identifies ICP as associated with increased risk of preterm birth and other problems, including in rare cases stillbirth, and recommends close monitoring when diagnosed. PUPPP carries none of these risks to the baby. Both are real and both warrant provider awareness — but they require different levels of urgency.
+
+If you have any uncertainty about which pattern you have, your provider can assess with a physical examination and, if ICP is suspected, blood tests checking liver function. The blood tests are straightforward and give a clear answer. Do not try to diagnose this distinction yourself based on online information alone.
+
+## What PUPPP Actually Feels Like Day-to-Day
+
+The word "itchy" does not adequately describe PUPPP for most women who have had it. The intensity of the itch is the feature that makes it so disruptive — it is the kind of itching that is difficult to resist scratching, that wakes you up at night, that makes wearing anything against the skin uncomfortable. ACOG confirms that the bumps can form large patches that can be very itchy.
+
+The bumps themselves typically appear as small raised red welts, sometimes with a pale halo around each one, and they can merge into larger raised plaques as more appear. In the stretch marks on the abdomen, the rash may look different — redder, more streaked — because it is following the pattern of skin damage already present. The rash is almost always worse in the evening and overnight, which is when the body's natural anti-inflammatory cortisol is at its lowest and the inflammatory response is most active.
+
+As the pregnancy progresses and the belly grows further, the rash can extend beyond the original stretch mark areas onto intact skin. Once it spreads to the thighs and buttocks, women often describe the sensation as having hives across a large portion of the lower body simultaneously. The desire to scratch creates a secondary problem: scratching can break the skin, which creates an infection risk and often causes the rash to spread faster and feel worse in the affected area.
+
+## Why PUPPP Is Worse in First Pregnancies and With Larger Babies
+
+The pattern of PUPPP appearing predominantly in first pregnancies and in pregnancies with larger babies or twins is one of the most consistent observations about the condition, and it points toward skin stretching as the critical factor even without a fully confirmed mechanism.
+
+In a first pregnancy, the abdominal skin has never been stretched to accommodate a growing uterus before. The rapid stretching that occurs in the third trimester — particularly from around 34 weeks when fetal growth is at its fastest — happens to tissue that has not previously experienced this specific mechanical stress. The elastic supportive tissue under the skin changes, as ACOG describes in its guidance on stretch marks, and the inflammatory response that produces the rash appears to be triggered by or concentrated in areas where this change is most pronounced.
+
+In subsequent pregnancies, the abdominal skin retains some of the adaptation from the previous pregnancy, and the likelihood of PUPPP drops significantly. This is one reason women who had PUPPP severely in a first pregnancy are sometimes surprised when it does not recur in the second — the skin and immune response are already calibrated for the stretch.
+
+The connection to larger babies and twins follows the same logic: more stretch, faster, over a shorter period, creates a more pronounced trigger. If you are carrying multiples and experiencing PUPPP, this context explains why — and it also typically means the rash will be more extensive than in a singleton pregnancy, though it still resolves after delivery.
+
+## What Actually Helps With the Itch
+
+ACOG's guidance specifies the management approach for PUPPP directly: using over-the-counter anti-itch cream may help provide relief, along with gentle skin care including washing with mild, fragrance-free soaps. For the itching itself, your provider may prescribe anti-itch medication — ACOG notes this as a standard management option.
+
+MedlinePlus adds specific guidance: lotions and creams can soothe the area, but products containing perfumes or other chemicals should be avoided as they can cause the skin to react further. An antihistamine may be suggested or prescribed by your provider to relieve the itching — MedlinePlus is clear that this conversation with your provider before taking any antihistamine on your own is the right approach.
+
+The practical management approaches that help most day-to-day:
+
+Cool rather than warm baths or showers reduce the inflammatory response in the skin. Heat makes itching significantly worse. A lukewarm soak, particularly with unscented colloidal oatmeal bath products — available at pharmacies — can temporarily calm the skin and reduce the urge to scratch. Cool compresses applied to the most affected areas provide immediate short-term relief.
+
+Loose, breathable clothing minimises friction on already-irritated skin. Tight waistbands and anything that rubs directly against the rash will exacerbate both the itch and the inflammatory response. Cotton against the belly is the most tolerable option for most women.
+
+Keeping fingernails short reduces skin damage from scratching during sleep. Most women with PUPPP report scratching in their sleep even when they manage to resist during the day — short nails minimise the skin damage this causes.
+
+Moisturising immediately after bathing, while the skin is still slightly damp, helps maintain the skin barrier. Fragrance-free, thick moisturisers — the kind that come in tubs rather than pump bottles — are more effective than lighter lotions. ACOG's guidance on itchy skin during pregnancy specifically notes the importance of avoiding fragrances.
+
+For more significant symptom management, a provider conversation is the most useful step. Prescription topical steroids are effective for PUPPP and are used during pregnancy — your provider can advise on what is appropriate for your specific situation and stage of pregnancy.
+
+## Common Questions About PUPPP
+
+### The rash started in my stretch marks — is that significant?
+
+Yes, this is the most characteristic presentation of PUPPP. The rash beginning within or around stretch marks on the abdomen before spreading outward is one of the features that helps providers recognise PUPPP specifically. ACOG describes stretch marks as caused by changes in the elastic supportive tissue under the skin, and the same mechanical process that creates stretch marks appears to concentrate the inflammatory trigger that initiates PUPPP. If your rash started in your stretch marks, this is consistent with PUPPP rather than a skin infection or contact reaction.
+
+### Will PUPPP come back in my next pregnancy?
+
+PUPPP has a much lower recurrence rate in subsequent pregnancies than it does in first pregnancies, and when it does recur it is typically milder. The reduction in recurrence is consistent with the skin-stretching mechanism — abdominal skin that has previously expanded to accommodate a full-term pregnancy is better prepared for the third-trimester stretch the second time. There is no reliable way to predict with certainty whether it will recur, but most women who had PUPPP in a first pregnancy do not experience it again in subsequent ones.
+
+### It is making it impossible to sleep. Is there anything safe I can take?
+
+Sleep disruption from severe PUPPP itching is a legitimate quality-of-life issue that warrants a provider conversation, not just endurance. ACOG notes that medication is appropriate management for the itching. MedlinePlus specifies that an antihistamine may be suggested or prescribed — but talks with your provider before taking any antihistamine on your own is the right approach, as not all formulations are equivalent during pregnancy. Your provider can advise which specific option is appropriate for your situation and pregnancy stage. Do not wait through weeks of disrupted sleep without raising this at your next prenatal appointment or calling your provider.
+
+## When to Call Your Doctor
+
+Contact your provider in the next day or two if:
+
+- **You have intense itching without any visible rash** — particularly on your palms, soles, or abdomen that is worse at night. This pattern warrants evaluation for cholestasis, which ACOG identifies as requiring close monitoring due to its association with preterm birth risk. Do not wait for your next scheduled appointment
+- **The rash is spreading rapidly** — covering the breasts, face, or large areas of the arms in addition to the abdomen and legs — rapid spread can indicate a different condition than PUPPP that warrants evaluation
+- **You have a fever alongside the rash** — PUPPP does not cause fever; a fever with a rash warrants same-day evaluation for infection
+- **Scratching has broken the skin and the area is becoming red, warm, or oozing** — broken skin from scratching can become infected, and pregnancy affects immune function in ways that make skin infections worth treating promptly
+- **The itching is significantly disrupting sleep every night** — raise this at your next appointment or call your provider; prescription management options are available and appropriate
+
+## Related Tools on SageNest
+
+PUPPP appears in the final stretch of pregnancy — typically after 34 weeks — when fetal growth is at its fastest and skin stretching is most pronounced. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks what is happening physically each week through the third trimester, including the fetal growth patterns in the final weeks that correlate with the timing of PUPPP. Knowing where you are in this final stage and what to expect each week can help you understand how much longer you are likely to manage the rash before delivery. If you are also tracking your overall weight gain through the third trimester, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+PUPPP is a pregnancy-specific skin condition that causes intensely itchy red bumps and hive-like patches, typically beginning in the stretch marks on the abdomen after 34 weeks and spreading to the thighs, buttocks, and sometimes arms. ACOG confirms it is not associated with harm to the baby and resolves after delivery. The cause is not fully established but is strongly associated with skin stretching — which is why it is most common in first pregnancies and with larger babies or multiples. The critical distinction to know is that PUPPP involves a visible rash, while intrahepatic cholestasis of pregnancy causes severe itching without any rash — MedlinePlus specifically flags persistent itching without a rash as a reason to contact your provider. For managing PUPPP in the meantime, fragrance-free lotions, cool compresses, loose clothing, and a provider conversation about prescription options if the itch is disrupting sleep are the most effective approaches. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to track where you are in the final trimester while you wait for the delivery that ends it.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Skin Conditions During Pregnancy](https://www.acog.org/womens-health/faqs/skin-conditions-during-pregnancy)
+- **ACOG** — [What causes stretch marks during pregnancy?](https://www.acog.org/womens-health/experts-and-stories/ask-acog/what-causes-stretch-marks-during-pregnancy)
+- **MedlinePlus** — [Skin and hair changes during pregnancy](https://medlineplus.gov/ency/patientinstructions/000611.htm)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
+  },
+  {
     slug: 'dizziness-lightheadedness-pregnancy-second-trimester',
     title: "That Sudden Dizzy Feeling in the Supermarket — Why Pregnancy Does This",
     description: "Pregnancy dizziness in the second trimester has a specific blood pressure mechanism most women don't expect. Here's why it happens and what helps.",
