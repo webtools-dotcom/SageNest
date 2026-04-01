@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/sciatica-shooting-leg-pain-pregnancy /blog/sciatica-shooting-leg-pain-pregnancy 301
 /puppp-rash-pregnancy-belly-itching /blog/puppp-rash-pregnancy-belly-itching 301
 /dizziness-lightheadedness-pregnancy-second-trimester /blog/dizziness-lightheadedness-pregnancy-second-trimester 301
 /bleeding-gums-pregnancy-gingivitis /blog/bleeding-gums-pregnancy-gingivitis 301
@@ -72,6 +73,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/sciatica-shooting-leg-pain-pregnancy /blog-static/sciatica-shooting-leg-pain-pregnancy.html 200
+/blog/sciatica-shooting-leg-pain-pregnancy/ /blog-static/sciatica-shooting-leg-pain-pregnancy.html 200
 /blog/puppp-rash-pregnancy-belly-itching /blog-static/puppp-rash-pregnancy-belly-itching.html 200
 /blog/puppp-rash-pregnancy-belly-itching/ /blog-static/puppp-rash-pregnancy-belly-itching.html 200
 /blog/dizziness-lightheadedness-pregnancy-second-trimester /blog-static/dizziness-lightheadedness-pregnancy-second-trimester.html 200
