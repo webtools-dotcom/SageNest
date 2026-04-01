@@ -13,6 +13,131 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'sciatica-shooting-leg-pain-pregnancy',
+    title: "That Electric Jolt Down Your Leg in Pregnancy — It's Your Sciatic Nerve",
+    description: "Pregnancy sciatica sends a shooting pain from the lower back down one leg. Here's the nerve causing it, why pregnancy triggers it, and what actually helps.",
+    readingTime: '8 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-01',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman in her second trimester pausing mid-step on a staircase, one hand gripping the railing, grimacing with a sharp sudden pain radiating down her hip and leg, natural indoor light, real and candid moment, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Is sciatica dangerous during pregnancy?',
+        answer: 'Pregnancy sciatica itself is not dangerous — it is a pain symptom caused by pressure on the sciatic nerve and does not harm the baby. MedlinePlus confirms that sciatica is a symptom of pressure on or damage to the sciatic nerve rather than a condition in its own right. What matters practically is distinguishing it from symptoms that do require urgent attention: ACOG notes that back pain during pregnancy can be a sign of preterm labour, and MedlinePlus flags that pain and swelling in one leg only — as distinct from bilateral swelling — can indicate a blood clot. If your shooting leg pain comes with noticeable swelling in that same leg, contact your provider the same day.'
+      },
+      {
+        question: 'Why does sciatica in pregnancy only hurt on one side?',
+        answer: 'The sciatic nerve runs from the lower back down the back of each leg separately, and MedlinePlus confirms that sciatica most often occurs on only one side of the body. During pregnancy, the growing uterus and the changes in posture and pelvic alignment that come with it tend to create asymmetric pressure — the baby\'s position, the way your pelvis tilts, and which side has the most tension in the piriformis muscle (the deep buttock muscle that sits directly over the sciatic nerve) all influence which side is affected. The one-sided nature of the pain is one of its distinguishing features and helps differentiate it from general bilateral lower back ache.'
+      },
+      {
+        question: 'What does pregnancy sciatica feel like?',
+        answer: 'MedlinePlus describes sciatica as pain that may feel like a mild tingling, dull ache, or burning sensation — and in some cases severe enough to make movement difficult. Most women with pregnancy sciatica describe a sharp, shooting or electric-shock sensation that radiates from the lower back or deep in the buttock and travels down the back of the thigh and sometimes as far as the calf or foot. It is often triggered by specific movements — standing up from sitting, climbing stairs, rolling over in bed, or walking. Between episodes the area may feel tender, numb, or have a persistent low-level ache.'
+      },
+      {
+        question: 'Will pregnancy sciatica go away after the baby is born?',
+        answer: 'For most women, pregnancy-related sciatica improves significantly after delivery. The two main drivers — the mechanical pressure of the uterus on pelvic nerves and the hormone-related ligament loosening that ACOG describes — both resolve postpartum. The uterus no longer presses on nerves, posture normalises as the abdominal weight lifts, and ligament stability returns as hormones regulate. ACOG notes that back pain generally goes away after the baby is born, though it can linger for months in some women. If sciatica persists significantly beyond the early postpartum weeks, raising it with your provider is the appropriate step.'
+      },
+      {
+        question: 'Is it safe to use a heating pad for pregnancy sciatica?',
+        answer: 'ACOG specifically addresses heating pads for back pain in pregnancy: they can be used, but should be set at the lowest possible temperature setting and wrapped in a towel to prevent burns. ACOG also recommends limiting the time you use heat. Cold compresses are an alternative that does not carry the same temperature risk. Do not apply heat directly to the abdomen during pregnancy. For any medication beyond topical heat or cold — including over-the-counter pain relievers — a provider conversation before taking anything during pregnancy is the right step, as not all formulations are appropriate.'
+      }
+    ],
+    content: `The pain shot from somewhere deep in your buttock, down the back of your thigh, and you stopped mid-step because you did not know what it was. It felt like an electric current, or a hot wire, or something pressing on a nerve — which is exactly what it is. The sciatic nerve runs from your lower spine down through your buttock and all the way to your foot, and when your growing uterus, shifting posture, or a tight deep muscle puts pressure on it, you feel every inch of that path. Here is the mechanism, why pregnancy makes it happen, and what you can do while you wait for the delivery that will end it.
+
+## Why Pregnancy Presses on the Largest Nerve in Your Body
+
+MedlinePlus describes the sciatic nerve as the largest nerve in the body. It starts in the lower back, runs down through the deep muscles of the buttock, and continues down the back of the leg all the way to the calf, foot, and toes. Its job is to control the muscles in the back of the knee and lower leg and to carry sensation from the back of the thigh, the outer part of the lower leg, and the sole of the foot.
+
+When anything presses on this nerve — a shifted spinal disc, an inflamed muscle, the pressure of an expanding uterus — you feel it as shooting pain, burning, tingling, or numbness that follows the nerve's path down the leg. This is what sciatica means: not a specific diagnosis but a symptom of pressure on the sciatic nerve, wherever that pressure is coming from.
+
+During pregnancy, the pressure comes from multiple directions simultaneously, which is why sciatic symptoms often intensify as the pregnancy progresses rather than staying constant.
+
+## The Three Pregnancy Mechanisms That Compress the Nerve
+
+**The first is the uterus itself.** MedlinePlus explains directly: as your uterus grows, it may press on the nerves in your legs. This can cause numbness and tingling — the same nerve pathways the sciatic nerve uses. The uterus sits above and in front of the major nerve bundles exiting the lower spine, and as it expands through the second and third trimesters, the pressure on spinal nerve roots increases. When that pressure reaches the roots from which the sciatic nerve originates, the shooting pain begins.
+
+**The second is postural change.** ACOG's guidance on back pain in pregnancy explains the mechanism clearly: the expanding uterus shifts your centre of gravity and stretches and weakens your abdominal muscles. This changes your posture significantly — most pregnant women develop an increasing lower back curve (lordosis) as their belly grows forward and their centre of balance shifts. This postural change compresses the lower lumbar spine, narrows the spaces through which nerve roots exit, and creates new pressure on the sciatic nerve that was not present before pregnancy.
+
+**The third is hormone-related ligament loosening.** ACOG identifies this in its back pain guidance: a hormone relaxes the ligaments in the joints of your pelvis to prepare for birth, and back pain can occur if the joints become too flexible. Loose ligaments mean the spine and pelvic joints are less stabilised, which means the bones shift more easily under load. This shifting creates variable and unpredictable compression on nerve structures — which is why pregnancy sciatica often comes and goes unpredictably, triggered by movements that previously caused no issue.
+
+## Why the Buttock Is Often Where It Hurts Most
+
+For many women, the most intense part of the pain is not in the lower back at all — it is deep in the buttock, sometimes extending into the back of the hip. This is the location of the **piriformis muscle**, a small deep muscle that sits almost directly on top of the sciatic nerve.
+
+MedlinePlus describes piriformis syndrome precisely: it occurs when the piriformis muscle in the buttocks presses on the sciatic nerve, causing sciatica-type symptoms. The piriformis is involved in nearly every movement of the lower body — walking, shifting weight, climbing stairs, getting up from sitting. During pregnancy, the postural changes that widen the base of the gait and shift the pelvis forward place new demands on this muscle, and it often tightens or spasms in response. When it does, the sciatic nerve directly beneath it is compressed, producing the familiar shooting or burning pain that radiates down the back of the leg.
+
+This is why sciatic pain in pregnancy is often triggered most intensely by sitting for long periods on hard surfaces, getting up from a chair, or rotating the hip — all movements that directly engage or stretch the piriformis. MedlinePlus confirms that sciatica can worsen when sitting for extended periods, which is why many women find the pain peaks after being seated and then standing.
+
+## Why It Is Almost Always on Only One Side
+
+MedlinePlus confirms that sciatica most often occurs on one side of the body — this is one of its characteristic features. The reason it is typically unilateral during pregnancy is that uterine pressure, postural shifts, and piriformis tension are rarely perfectly symmetrical. The baby's position, the direction of spinal curvature, and the side on which more ligament laxity has developed all determine which sciatic nerve is under greater pressure at any given point in the pregnancy.
+
+The one-sidedness of the pain is useful as a distinguishing feature. General lower back pain from muscle strain during pregnancy tends to be more bilateral and dull. Sciatic pain shoots down one side, often bypassing or barely involving the lower back itself and starting directly in the buttock or hip. If you feel the pain clearly on both sides at once, this pattern is less consistent with sciatica and more consistent with other pregnancy back and pelvic pain — worth noting when you describe your symptoms to your provider.
+
+Our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks how your baby's position and growth shift each week through the second and third trimesters — the same changes that progressively increase spinal and pelvic pressure and explain why sciatic symptoms often intensify around the same time each week.
+
+## What Actually Helps While You Are Pregnant
+
+The approaches that reduce pregnancy sciatica target its mechanisms — the postural compression, the piriformis tension, and the sustained pressure positions.
+
+**Sleep position** makes a significant difference. ACOG recommends sleeping on your side with one or both knees bent, and using a pillow between your knees. This alignment reduces the pelvic rotation that places asymmetric stress on the piriformis and sciatic nerve. A pillow under the belly provides additional support. MedlinePlus similarly recommends sleeping on your side with a pillow between the legs to reduce back and nerve pressure. Sleeping on the affected side tends to worsen symptoms — if your right side is affected, left-side sleeping reduces the load on that sciatic pathway.
+
+**Avoiding prolonged sitting** addresses the most consistent trigger. MedlinePlus specifically notes that prolonged sitting or lying with pressure on the buttocks should be avoided. Standing regularly, shifting positions frequently, and using a cushioned seat reduce the sustained piriformis compression that drives much of the pain. If your work requires extended sitting, aiming to stand or walk briefly every 30 to 45 minutes is a practical goal.
+
+**Gentle movement** is more helpful than rest for most cases. ACOG notes that walking is generally safe during pregnancy and great for back health, and confirms that staying active during pregnancy reduces back pain. Water exercise is particularly useful — ACOG notes it can be especially helpful for back pain because the water supports your weight and removes the compressive load from the spine and pelvis entirely.
+
+**Heat and cold** both provide temporary relief. ACOG specifically recommends heating pads or warm water bottles for painful back muscles — at the lowest possible temperature setting, wrapped in a towel, and for limited time. Cold compresses are an alternative. Neither addresses the underlying compression, but both reduce the acute inflammatory response and provide enough short-term relief to allow movement.
+
+**Stretches targeting the piriformis** — gentle hip and buttock stretches in the positions your provider shows you — can reduce the muscle tightness that contributes to nerve compression. ACOG advises talking with your provider before doing any exercises to confirm they are safe for your stage of pregnancy, and stopping if any exercise causes pain.
+
+For persistent or severe symptoms, your provider may refer you to a physiotherapist. Physiotherapy that addresses pelvic alignment, strengthens the abdominal muscles that support the spine, and releases piriformis tension can reduce sciatic symptoms significantly.
+
+## Common Questions About Pregnancy Sciatica
+
+### It feels like pain plus numbness in my foot — is that normal?
+
+Yes, this is consistent with sciatic nerve compression. MedlinePlus describes sciatica as pain, weakness, numbness, or tingling that can extend from the lower back down the leg to the calf and foot, or even the toes. When the nerve is compressed, it transmits both pain signals and abnormal sensation signals — so the combination of shooting pain and numbness or tingling in the foot or outer leg is typical of sciatica rather than a sign that something more serious is wrong. Persistent numbness that does not vary with position is worth mentioning to your provider, but intermittent numbness that comes with the pain episodes is characteristic of the condition.
+
+### Standing makes it better but sitting makes it worse — why?
+
+Standing distributes your weight differently across the pelvis than sitting does, reducing the direct pressure on the piriformis muscle and sciatic nerve. When you sit, particularly on hard surfaces, the full weight of your upper body rests on the ischial bones of the pelvis, and the piriformis — directly above the sciatic nerve — is compressed underneath. MedlinePlus notes that sciatica typically worsens with prolonged sitting and that avoiding sitting with pressure on the buttocks is a management priority. This also explains why the pain often peaks right as you stand up from a long sitting period — the transition from full compression to movement is when the nerve is most irritated.
+
+### I also feel pain across the front of my hip, not just the back of my leg — could this be something else?
+
+Pain in the front of the hip or groin rather than the back of the leg follows a different nerve pathway and is more consistent with pelvic girdle pain (PGP) or symphysis pubis dysfunction — conditions involving the joints of the pelvis rather than the sciatic nerve. Pregnancy can cause both, sometimes simultaneously. ACOG notes that hormone-induced ligament loosening affects the entire pelvic joint complex, which is why multiple pain syndromes can overlap. If your pain has components both down the back of the leg and across the front of the hip or groin, describing both patterns to your provider allows them to assess which structures are involved and advise accordingly.
+
+## When to Call Your Doctor
+
+Contact your provider within the next day or two if:
+
+- **You have pain and swelling in one leg that is noticeably different from the other** — MedlinePlus specifically flags unilateral leg pain and swelling as a potential sign of a blood clot, which requires prompt evaluation, not watchful waiting
+- **Sciatic pain is accompanied by any lower abdominal tightening, cramping, or contractions** — ACOG identifies back pain as a potential symptom of preterm labour; if the pain is accompanied by uterine tightening, contact your provider immediately
+- **You have significant weakness in the affected leg** — if the leg feels unreliable or unable to bear weight, this warrants evaluation rather than home management
+- **The pain is severe, constant, and does not vary with position or movement** — MedlinePlus notes that sciatica severe enough to make movement impossible warrants evaluation; constant unvarying pain that never eases also warrants provider assessment to rule out other causes
+- **Pain has continued for more than two weeks** — ACOG recommends calling your provider if back pain lasts more than two weeks, as they will want to rule out other causes
+
+## Related Tools on SageNest
+
+Sciatic pain intensifies as the pregnancy progresses and the baby's growth and position increase spinal pressure. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks what is happening physically each week through the second and third trimesters, including the baby\'s position changes in late pregnancy that often correlate with shifts in sciatic symptoms. If you are also managing weight gain through this period, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI — staying within your recommended gain reduces the compressive load on the lower spine.
+
+## The Bottom Line
+
+Pregnancy sciatica is pain caused by pressure on the sciatic nerve — the largest nerve in the body, running from the lower spine down through the buttock and leg, as MedlinePlus confirms. Three simultaneous pregnancy mechanisms create this pressure: the expanding uterus pressing on spinal nerve roots, the postural shift and weakened abdominal support that ACOG describes as compressing the lower back, and the piriformis muscle in the buttock tightening over the nerve due to altered gait and pelvic mechanics. The result is typically a shooting or burning pain on one side, often starting deep in the buttock and radiating down the back of the thigh and calf. Side-sleeping with a pillow between the knees, avoiding prolonged sitting, gentle walking, and heat or cold on the affected area address the mechanisms. ACOG recommends calling your provider if back pain is severe or persists beyond two weeks, and MedlinePlus flags unilateral leg swelling alongside the pain as a same-day red flag. Most pregnancy sciatica resolves after delivery as uterine pressure lifts and hormones normalise. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to track what is shifting each week while you manage the discomfort until then.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Back Pain During Pregnancy](https://www.acog.org/womens-health/faqs/back-pain-during-pregnancy)
+- **MedlinePlus** — [Sciatica](https://medlineplus.gov/ency/article/000686.htm)
+- **MedlinePlus** — [Sciatica (topic page)](https://medlineplus.gov/sciatica.html)
+- **MedlinePlus** — [Aches and pains during pregnancy](https://medlineplus.gov/ency/patientinstructions/000580.htm)
+- **MedlinePlus** — [Piriformis syndrome](https://medlineplus.gov/ency/patientinstructions/000776.htm)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
+  },
+  {
     slug: 'puppp-rash-pregnancy-belly-itching',
     title: "Red Itchy Bumps All Over Your Pregnant Belly — This Is What That Is",
     description: "A red itchy rash spreading across your pregnant belly in the third trimester has a specific name and cause. Here's what PUPPP is, why it happens, and what helps.",
@@ -604,7 +729,7 @@ Contact your provider about hemorrhoids if:
 
 ## Related Tools on SageNest
 
-Hemorrhoids in the third trimester are one of several symptoms that intensify in the final weeks as the uterus reaches its maximum size and the baby begins to descend. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) shows what is happening physically each week through the third trimester — including how the baby's position and the uterus's height change in the final eight weeks, which directly relates to the pelvic pressure driving late-pregnancy symptoms like hemorrhoids. If you are also managing weight gain targets alongside third-trimester discomfort, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI.
+Hemorrhoids in the third trimester are one of several symptoms that intensify in the final weeks as the uterus reaches its maximum size and the baby begins to descend. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) shows what is happening physically each week through the third trimester — including how the baby\'s position and the uterus's height change in the final eight weeks, which directly relates to the pelvic pressure driving late-pregnancy symptoms like hemorrhoids. If you are also managing weight gain targets alongside third-trimester discomfort, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI.
 
 ## The Bottom Line
 
@@ -720,7 +845,7 @@ Contact your provider about heartburn if:
 
 ## Related Tools on SageNest
 
-Third-trimester heartburn tends to peak in the weeks when the uterus has reached its maximum height before the baby drops. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) shows what is happening physically each week, including how the baby's position in the third trimester relates to the upper abdominal pressure that drives late-pregnancy heartburn. If you are managing your weight gain alongside these physical changes, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI.
+Third-trimester heartburn tends to peak in the weeks when the uterus has reached its maximum height before the baby drops. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) shows what is happening physically each week, including how the baby\'s position in the third trimester relates to the upper abdominal pressure that drives late-pregnancy heartburn. If you are managing your weight gain alongside these physical changes, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI.
 
 ## The Bottom Line
 
@@ -1005,7 +1130,7 @@ This post draws on guidance from the following primary sources:
       },
       {
         question: 'How do I relieve rib pain from pregnancy?',
-        answer: "For mechanical rib discomfort caused by the baby's position and uterine expansion, ACOG's guidance on back pain and body positioning during pregnancy suggests that changing positions, particularly avoiding prolonged sitting and switching between sitting and supported side-lying, can help relieve pressure. Swimming and gentle exercise can reduce the compressive effect of gravity on the ribcage. A pregnancy support pillow or sleeping on your side with a pillow between your knees reduces ribcage pressure when lying down. These measures address the mechanical discomfort. They do not address rib pain that is persistent, right-sided, and potentially associated with preeclampsia — for that, provider evaluation is needed."
+        answer: "For mechanical rib discomfort caused by the baby\'s position and uterine expansion, ACOG's guidance on back pain and body positioning during pregnancy suggests that changing positions, particularly avoiding prolonged sitting and switching between sitting and supported side-lying, can help relieve pressure. Swimming and gentle exercise can reduce the compressive effect of gravity on the ribcage. A pregnancy support pillow or sleeping on your side with a pillow between your knees reduces ribcage pressure when lying down. These measures address the mechanical discomfort. They do not address rib pain that is persistent, right-sided, and potentially associated with preeclampsia — for that, provider evaluation is needed."
       },
       {
         question: 'When should I worry about rib pain during pregnancy?',
@@ -1027,7 +1152,7 @@ On top of this structural pressure, the baby itself is large enough in the third
 
 Here is where the clinical distinction matters, and it is one that MedlinePlus states explicitly in its medical encyclopedia entry on preeclampsia. Preeclampsia — the serious high blood pressure disorder that ACOG notes affects multiple organ systems and requires prompt medical attention — can cause belly pain on the right side, below the ribs. MedlinePlus's description is unusually specific: it notes that this pain may also be felt in the right shoulder, and that it can be confused with heartburn, gallbladder pain, a stomach virus, or **kicking by the baby**.
 
-The fact that preeclampsia-related right-sided pain appears in the same location where women feel baby movement is what makes it clinically dangerous. A woman who feels persistent right-sided pressure in her third trimester has a plausible, innocent explanation to reach for — the baby's position — and may wait days before realising the pain is not resolving and does not respond to movement or repositioning the way baby pressure normally does.
+The fact that preeclampsia-related right-sided pain appears in the same location where women feel baby movement is what makes it clinically dangerous. A woman who feels persistent right-sided pressure in her third trimester has a plausible, innocent explanation to reach for — the baby\'s position — and may wait days before realising the pain is not resolving and does not respond to movement or repositioning the way baby pressure normally does.
 
 The mechanism behind this pain is liver involvement. ACOG explains that preeclampsia affects multiple organ systems, and when it affects the liver, it causes liver swelling that is experienced as upper right abdominal pain. The liver sits directly under the right ribcage, which is why ACOG's expert guidance specifically directs patients to be aware of pain in the upper-right abdomen, where your liver is, and to tell their ob-gyn right away if this develops.
 
@@ -1035,7 +1160,7 @@ Preeclampsia usually develops after 20 weeks of pregnancy, most commonly in the 
 
 ## How to Read Your Own Rib Pain
 
-Most rib discomfort in the third trimester is genuinely mechanical and not a sign of preeclampsia. The features that suggest the discomfort is mechanical — positional, responsive to movement, clearly tied to the baby's position — are reassuring. These practical questions help distinguish them:
+Most rib discomfort in the third trimester is genuinely mechanical and not a sign of preeclampsia. The features that suggest the discomfort is mechanical — positional, responsive to movement, clearly tied to the baby\'s position — are reassuring. These practical questions help distinguish them:
 
 **Does the pain shift when you change position or when the baby moves?** Mechanical pressure from the baby or the uterus against the ribs tends to be dynamic — it changes when you lie on your side, when you walk, or when the baby repositions. Pain that stays exactly the same regardless of movement is less likely to be purely mechanical.
 
@@ -1089,7 +1214,7 @@ The third trimester brings a concentration of physical changes that are both exp
 
 ## The Bottom Line
 
-Rib discomfort in the third trimester is almost always mechanical — caused by the uterus expanding upward against the diaphragm and lower ribs, the baby's position pressing directly against the ribcage, and the structural adaptations a body makes to accommodate a near-term pregnancy. It changes with position, responds to baby movement, and is bilateral or variable in location. But MedlinePlus's medical encyclopedia entry on preeclampsia states directly that belly pain on the right side, below the ribs, is a warning sign of preeclampsia — and specifically notes that this pain is frequently confused with kicking by the baby. ACOG further confirms that pain in the upper-right abdomen, where the liver is, should be reported to your ob-gyn right away. Persistent right-sided rib or upper abdominal pain that does not shift with position, particularly alongside headache, visual changes, or sudden facial or hand swelling, is not a symptom to monitor. It is a symptom to call about today.
+Rib discomfort in the third trimester is almost always mechanical — caused by the uterus expanding upward against the diaphragm and lower ribs, the baby\'s position pressing directly against the ribcage, and the structural adaptations a body makes to accommodate a near-term pregnancy. It changes with position, responds to baby movement, and is bilateral or variable in location. But MedlinePlus's medical encyclopedia entry on preeclampsia states directly that belly pain on the right side, below the ribs, is a warning sign of preeclampsia — and specifically notes that this pain is frequently confused with kicking by the baby. ACOG further confirms that pain in the upper-right abdomen, where the liver is, should be reported to your ob-gyn right away. Persistent right-sided rib or upper abdominal pain that does not shift with position, particularly alongside headache, visual changes, or sudden facial or hand swelling, is not a symptom to monitor. It is a symptom to call about today.
 
 
 **Sources**
