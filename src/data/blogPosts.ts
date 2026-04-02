@@ -13,6 +13,137 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'blurry-vision-pregnancy-warning-signs',
+    title: "Your Vision Feels Different in Pregnancy — Here's What to Watch For",
+    description: "Blurry vision during pregnancy can be normal or a warning sign of preeclampsia. Here's the exact pattern that needs same-day provider contact — and what doesn't.",
+    readingTime: '8 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-02',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman in her third trimester sitting on the edge of a bed at night rubbing her eyes gently with a concerned expression, soft bedside lamp light, one hand resting on her belly, real and candid feel, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Is blurry vision normal during pregnancy?',
+        answer: 'Mild, gradual blurring that comes and goes during pregnancy is commonly reported and is associated with the fluid and vascular changes of pregnancy — the same changes that cause ankle swelling and affect other body tissues. This kind of blurring is typically subtle and does not come with other symptoms. However, blurry vision that appears suddenly, or comes alongside seeing spots, flashing lights, light sensitivity, or a persistent headache, is a different pattern entirely. MedlinePlus identifies those specific visual changes as a reason to contact your provider right away, as they can indicate preeclampsia — a serious blood pressure condition requiring prompt evaluation.'
+      },
+      {
+        question: 'What does preeclampsia vision look like?',
+        answer: 'MedlinePlus describes the preeclampsia vision warning pattern as: vision changes such as being unable to see for a short time, seeing flashing lights or spots, being sensitive to light, or having blurry vision. ACOG confirms vision changes are among the severe features of preeclampsia. The distinguishing features that separate this from ordinary eye strain are that these symptoms appear or worsen suddenly, may come with headache or upper abdominal pain, and occur after 20 weeks of pregnancy. If you experience any of these, contact your provider the same day — do not wait for your next scheduled appointment.'
+      },
+      {
+        question: 'I am seeing spots when I stand up — is that preeclampsia?',
+        answer: 'Seeing spots when standing up quickly is often related to a brief drop in blood pressure — ACOG confirms that blood pressure normally decreases in the first half of pregnancy, making the brain briefly more vulnerable to pressure changes when you rise suddenly. This positional pattern, where spots or grey vision appear only when changing position and clear within seconds, is different from the preeclampsia pattern. Preeclampsia-related visual symptoms do not depend on position and do not clear in seconds. However, if you are ever uncertain — or if the spots are accompanied by headache, swelling in your face or hands, or upper abdominal pain — contact your provider the same day rather than guessing.'
+      },
+      {
+        question: 'Can preeclampsia cause vision problems even after birth?',
+        answer: 'Yes. ACOG specifically flags vision changes as a warning sign in the postpartum period, not only during pregnancy. Postpartum preeclampsia most often develops within a few days after delivery but can occur up to six weeks later. If you experience vision changes including blurring, light sensitivity, or seeing spots in the weeks after birth — especially alongside headache or high blood pressure readings — ACOG advises calling your doctor right away. The condition can develop in women who had entirely normal blood pressure throughout pregnancy.'
+      },
+      {
+        question: 'Should I wait until my next prenatal appointment to report vision changes?',
+        answer: 'No. MedlinePlus is direct about this: contact your provider right away if you have vision changes such as being unable to see for a short time, seeing flashing lights or spots, being sensitive to light, or having blurry vision. These symptoms are listed among the signs that require same-day contact, not routine appointment reporting. Preeclampsia can worsen quickly, and the pattern of vision changes associated with it is specific enough that it should never be triaged as something to mention casually at a future visit. If you cannot reach your provider, MedlinePlus advises going to the emergency room.'
+      }
+    ],
+    content: `You noticed it gradually — or all at once, you're not sure. Your vision feels slightly off. Maybe your glasses prescription suddenly seems wrong, or you are blinking more to focus, or once or twice you saw a flash of something at the edge of your vision. You typed it into a search bar and every result said the same thing: vision changes in pregnancy can be a sign of preeclampsia, call your doctor. And now you are sitting here at some point in the evening trying to figure out whether what you experienced is that — the serious thing — or just one of the many strange ways pregnancy changes your body. Here is how to tell the difference. This distinction matters, and you deserve to understand it clearly rather than either dismiss it or panic.
+
+## Why Pregnancy Changes Your Eyes and Why It Sometimes Matters Urgently
+
+Pregnancy increases blood volume substantially — MedlinePlus confirms this directly: blood volume normally increases during pregnancy to support the fetus's growth, and the body must adjust to handle this extra fluid. The same fluid and vascular changes that cause ankle swelling, nasal congestion, and changes in skin affect the fine tissues of the eye as well. Blood vessels throughout the body respond to pregnancy hormones, blood pressure shifts, and fluid redistribution — and the delicate structures of the eye are not exempt from these changes.
+
+This is why some degree of mild visual discomfort — slight blurring that fluctuates, eyes that feel drier than usual, or the sense that your prescription no longer fits as precisely — is something many pregnant women experience and that is associated with the general physiological changes of pregnancy rather than with any specific threat.
+
+But pregnancy is also a time when the eyes can signal something serious. **Preeclampsia** — a blood pressure disorder that ACOG identifies as typically developing after 20 weeks of pregnancy — causes vision changes that have a specific and recognisable character. And that character is distinct from ordinary visual discomfort. Understanding what separates the two patterns is the most useful thing this post can give you.
+
+## The Warning Pattern: What Preeclampsia Vision Actually Looks Like
+
+MedlinePlus describes the vision changes associated with preeclampsia with clinical specificity: being unable to see for a short time, seeing flashing lights or spots, being sensitive to light, or having blurry vision — particularly if these appear alongside a headache that does not go away, swelling in the face or hands, or upper abdominal pain.
+
+ACOG, in its guidance on preeclampsia and high blood pressure during pregnancy, confirms that vision changes are among the severe features of preeclampsia. Their guidance on postpartum conditions is equally specific: changes in vision including blurring, light sensitivity, and seeing spots are among the symptoms for which ACOG advises calling your doctor right away — not at a future appointment, but immediately.
+
+The specific features of the preeclampsia visual pattern are:
+
+**Sudden onset.** The changes appear or worsen noticeably, rather than being a gradual drift you barely register over weeks. A woman who has had slightly soft focus all pregnancy and then suddenly sees flashing lights on a Tuesday evening is describing a different experience from the one who has felt her glasses are slightly less sharp since the first trimester.
+
+**Spots or flashing lights.** MedlinePlus preeclampsia self-care guidance specifically names these: seeing flashing lights or spots as a symptom warranting same-day contact. These are distinct from the dark spots some women see momentarily when standing up quickly. The preeclampsia pattern does not depend on body position and does not clear within a few seconds of standing still.
+
+**Light sensitivity.** Discomfort from normal indoor light, or a need to squint or shield the eyes, is named directly in both the MedlinePlus and ACOG guidance on preeclampsia visual symptoms. Ordinary pregnancy visual changes do not typically include heightened light sensitivity.
+
+**Temporary loss of vision.** MedlinePlus's preeclampsia encyclopedia includes temporary blindness — being unable to see for a short time — as one of the vision changes associated with preeclampsia. This is unambiguously a same-day emergency.
+
+**Blurry vision that comes with other symptoms.** Blurry vision alone in pregnancy is reported commonly and in many cases is not alarming. Blurry vision that arrives simultaneously with a persistent headache, with notable swelling in the face or hands, with upper abdominal pain below the right ribs, or with a sudden feeling of illness — this combination pattern is what ACOG identifies as requiring contact with your provider right away.
+
+## Why This Pattern Occurs in Preeclampsia — and Why It Matters
+
+ACOG describes preeclampsia as a disorder that can affect all organs in the body, not just the heart and kidneys. One of the organs affected is the eye. The mechanism involves the same abnormal blood pressure elevation and blood vessel changes that drive the condition's other features — when blood pressure rises significantly in the vessels supplying the eye and optic system, it can produce the characteristic visual disturbances described above.
+
+MedlinePlus notes that preeclampsia usually develops after the 20th week of pregnancy, often in the third trimester, but can also develop in the weeks after childbirth. This postpartum window is critically important. ACOG specifically includes vision changes in its guidance on conditions to watch for after delivery, advising that changes in vision including blurring, light sensitivity, and seeing spots warrant calling your doctor right away even after the baby is born. Postpartum preeclampsia can occur in women who had entirely normal blood pressure throughout pregnancy, which is why the warning pattern needs to remain on your radar in the weeks following delivery, not just during pregnancy itself.
+
+For a week-by-week picture of what is happening physically after 20 weeks — the period when preeclampsia risk begins — our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks the physiological changes of each trimester alongside what to watch for.
+
+## The Pattern That Is Less Alarming — and How to Recognise It
+
+Mild, gradual visual changes that have been present throughout pregnancy, vary day to day, are not accompanied by any other symptoms, and do not include the specific features named above are a different picture entirely from the preeclampsia warning pattern. The fluid and blood volume increases of pregnancy affect tissues throughout the body — the same process that causes swollen ankles and puffier faces can affect the fine structures of the eye, potentially producing mild fluctuations in how sharply you see.
+
+The practical features that distinguish benign visual discomfort from the warning pattern:
+
+It developed gradually, over weeks, rather than appearing suddenly. It fluctuates — better some days, worse on others — rather than being a new and consistent change. It occurs alone, without headache, face swelling, or upper abdominal pain. It does not include spots, flashing lights, or light sensitivity. It does not cause any moment of temporary vision loss. It is not getting progressively worse over days.
+
+If your experience matches this benign pattern, it is reasonable to mention it at your next prenatal appointment and ask whether a check with an optometrist would be useful — particularly if you wear corrective lenses and find your current prescription is bothering you. ACOG and eye care professionals advise against changing a glasses or contact lens prescription during pregnancy, as the visual changes associated with fluid shifts often resolve after delivery. If you wear contact lenses, dry, uncomfortable eyes may make glasses more comfortable during the remainder of the pregnancy.
+
+## What Positional Spots Are — and Why They Are Different
+
+A specific subset of questions about pregnancy vision involves seeing spots or darkening vision when standing up quickly. This positional pattern — which occurs when changing from sitting or lying to standing, clears within seconds, and does not occur at rest — has a different cause entirely from the preeclampsia vision pattern.
+
+ACOG confirms that blood pressure normally decreases in the first half of pregnancy as blood vessels dilate to accommodate the expanding blood volume. When blood pressure is lower than usual and you stand quickly, blood pools momentarily in the lower body, and the brain briefly receives less circulation — producing the grey or spotty vision that clears as soon as circulation equalises. This is the same mechanism that produces pregnancy dizziness, discussed separately on SageNest in our [guide to pregnancy dizziness](/dizziness-lightheadedness-pregnancy-second-trimester).
+
+The key distinction: positional spots are brief (seconds), depend entirely on the movement of standing, and are gone before you could describe them. Preeclampsia-related spots are not positional, do not disappear in seconds when you stand still, and typically come with other symptoms. If you have ever been uncertain which pattern you are experiencing, that uncertainty itself is reason to contact your provider.
+
+## Common Questions About Pregnancy Vision Changes
+
+### My glasses prescription feels wrong since I got pregnant. Should I get a new prescription?
+
+Most eye care providers advise against updating a prescription during pregnancy, because the mild visual changes associated with fluid and blood volume shifts tend to resolve after delivery. Investing in new lenses during pregnancy may mean the prescription is wrong again within weeks of the birth. If you wear contact lenses and find them uncomfortable, switching to glasses temporarily is the usual recommendation. Mention the change at your next prenatal appointment — your provider can confirm there are no other symptoms warranting evaluation and advise whether an optometrist visit is appropriate.
+
+### I had normal vision throughout pregnancy but now have visual symptoms a week after delivery — is that preeclampsia?
+
+It can be. ACOG specifically addresses postpartum preeclampsia, noting it most often develops within a few days after delivery but can occur up to six weeks later. ACOG lists changes in vision — blurring, light sensitivity, and seeing spots — among the symptoms for which it advises calling your doctor right away after delivery, not just during pregnancy. Do not assume that delivering your baby means preeclampsia is no longer a risk. If you have vision changes in the weeks after birth, particularly alongside headache or high blood pressure readings, contact your provider the same day.
+
+### My vision has been blurry for several weeks and I have no other symptoms. Do I need to go to the emergency room?
+
+Blurry vision alone that has been present for weeks without other symptoms and without any of the specific features of the preeclampsia warning pattern does not typically require emergency evaluation. The features that create urgency — sudden onset, spots, flashing lights, light sensitivity, temporary vision loss, or any accompanying headache or face/hand swelling — are absent in this scenario. However, vision changes that have persisted for weeks without explanation are worth raising at your next prenatal appointment so your provider can confirm the context and rule out any contributing factors. Never delay contacting your provider if any of those additional features develop.
+
+## When to Call Your Doctor
+
+Contact your provider the same day — or go to the emergency room if you cannot reach them — if you experience any of the following:
+
+- **Seeing flashing lights or spots at any time** — not just when standing up, not positional, just present. MedlinePlus explicitly names this as a reason to contact your provider right away
+- **Sudden blurry vision** — particularly if it appeared or worsened noticeably rather than being a gradual change, or if it is accompanied by any other symptom
+- **Sensitivity to light** — discomfort from ordinary light levels that was not present before or has increased noticeably
+- **Temporary loss of vision** — even briefly, even if it resolved. MedlinePlus lists temporary blindness as part of the preeclampsia vision pattern requiring same-day evaluation
+- **Any vision change alongside a persistent headache, swelling in your face or hands, or pain in your upper right abdomen** — ACOG identifies this combination pattern as requiring immediate provider contact for preeclampsia evaluation
+- **Vision changes appearing in the six weeks after delivery** — ACOG's postpartum guidance specifically includes this window as a period of continued risk
+
+## Related Tools on SageNest
+
+Preeclampsia typically develops after 20 weeks of pregnancy, and understanding what is happening in your body in the second half of pregnancy is part of monitoring the symptoms associated with it. Our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks what changes to expect each week through the third trimester — including the changes in blood pressure and fluid balance that define the later stages of pregnancy. If you are tracking your overall health and weight gain through this period, our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) gives you a personalised target range based on your pre-pregnancy BMI.
+
+## The Bottom Line
+
+Vision changes during pregnancy fall into two clearly different patterns. Mild, gradual blurring that varies day to day and has been present since early pregnancy is commonly reported alongside the general fluid and vascular changes of pregnancy, and is typically not alarming when it occurs alone without other symptoms. The pattern that requires same-day provider contact is specific and well-defined by both ACOG and MedlinePlus: sudden blurry vision, seeing spots or flashing lights, light sensitivity, or temporary vision loss — particularly after 20 weeks of pregnancy or in the six weeks after delivery. These are warning signs of preeclampsia, a serious blood pressure disorder that ACOG confirms can affect all organs including the eye. Never wait for a scheduled appointment to report these specific symptoms. The same applies in the postpartum period — ACOG advises calling your doctor right away for vision changes including blurring, light sensitivity, and seeing spots even after delivery. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to stay informed about what is happening physically each week as you monitor your health through the second half of pregnancy.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Preeclampsia and High Blood Pressure During Pregnancy](https://www.acog.org/womens-health/faqs/preeclampsia-and-high-blood-pressure-during-pregnancy)
+- **ACOG** — [3 Conditions to Watch for After Childbirth](https://www.acog.org/womens-health/experts-and-stories/the-latest/3-conditions-to-watch-for-after-childbirth)
+- **ACOG** — [Headaches and Pregnancy](https://www.acog.org/womens-health/faqs/headaches-and-pregnancy)
+- **MedlinePlus** — [Preeclampsia – self-care](https://medlineplus.gov/ency/patientinstructions/000606.htm)
+- **MedlinePlus** — [Preeclampsia](https://medlineplus.gov/ency/article/000898.htm)
+- **MedlinePlus** — [High Blood Pressure in Pregnancy](https://medlineplus.gov/highbloodpressureinpregnancy.html)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
+  },
+  {
     slug: 'sciatica-shooting-leg-pain-pregnancy',
     title: "That Electric Jolt Down Your Leg in Pregnancy — It's Your Sciatic Nerve",
     description: "Pregnancy sciatica sends a shooting pain from the lower back down one leg. Here's the nerve causing it, why pregnancy triggers it, and what actually helps.",
