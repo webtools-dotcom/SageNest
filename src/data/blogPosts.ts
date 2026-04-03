@@ -13,6 +13,130 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'pregnancy-food-aversions-smell-sensitivity',
+    title: "You Used to Love That Food — Why Pregnancy Makes It Unbearable Now",
+    description: "Pregnancy food aversions aren't random — they're driven by a hormone that peaks in the first trimester. Here's why it happens and when it gets better.",
+    readingTime: '7 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-03',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman in her first trimester standing at an open refrigerator, pulling back with a slightly nauseated expression, one hand covering her nose gently, natural kitchen morning light, real and candid feel, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: "Why do I suddenly hate foods I used to love when pregnant?",
+        answer: "ACOG identifies this directly: hormonal changes during pregnancy heighten your sense of smell and make you much more sensitive to certain odours, and foods or odours that never bothered you before may now trigger nausea. The hormone most associated with early pregnancy — human chorionic gonadotropin (HCG), which MedlinePlus confirms rises rapidly in the first trimester — is believed to drive both nausea and the intensified smell and taste responses that make previously enjoyable foods suddenly repulsive. The same hormonal mechanism that causes morning sickness is producing your food aversions."
+      },
+      {
+        question: "When will food aversions go away in pregnancy?",
+        answer: "For most women, food aversions peak alongside the nausea of the first trimester and ease significantly by around 14 weeks. MedlinePlus confirms that nausea and vomiting of pregnancy — driven by the same HCG surge responsible for aversions — typically begins between 4 and 8 weeks of pregnancy and goes away by 16 to 18 weeks for most women. ACOG notes that for some women symptoms last several weeks or months, and for a few they persist throughout pregnancy. If your aversions are so severe you cannot eat adequately or keep fluids down, this warrants a provider conversation rather than waiting it out."
+      },
+      {
+        question: "Is it normal to be repulsed by smells I never noticed before?",
+        answer: "Yes. ACOG confirms that hormonal changes during pregnancy heighten the sense of smell and make you much more sensitive to certain odours. This heightened smell sensitivity is closely linked to pregnancy nausea — the same smells that trigger nausea are the ones your olfactory system is now detecting at an intensity it did not before pregnancy. Common triggers include cooking meat, coffee, perfume, cleaning products, and foods with strong fat content. The sensitivity is real, not psychological, and typically mirrors the timeline of first-trimester nausea."
+      },
+      {
+        question: "What can I eat when everything smells or tastes wrong?",
+        answer: "ACOG advises eating foods that appeal to you when you have nausea — and the same applies to aversions. Cold foods often produce less aroma than hot foods, which can make them more tolerable. Bland, dry foods with minimal smell are frequently the best tolerated in the first trimester. ACOG also specifically advises eating small amounts more frequently rather than large meals, which reduces the intensity of any single exposure to food smells and keeps blood sugar stable. If a bad taste is making it hard to drink water, ACOG recommends chewing gum or eating hard candy to manage the sensation while staying hydrated."
+      },
+      {
+        question: "Can food aversions affect my baby if I can't eat my normal diet?",
+        answer: "Mild to moderate food aversions in the first trimester — where you can still eat something, even if it is a limited range of foods — are not harmful to the baby. The developing embryo in the first trimester is small and its nutritional needs are met by your body's existing stores. ACOG notes that taking a prenatal vitamin during this period helps ensure you are getting key nutrients even when your diet is restricted. If aversions are so severe that you are losing weight, unable to keep any food down, or showing signs of dehydration, contact your provider — that level of restriction warrants evaluation and may indicate hyperemesis gravidarum."
+      }
+    ],
+    content: `You opened the fridge and something hit you — a smell you have never noticed before, coming from food that has been in there for years. You closed it and stood at the kitchen counter trying to understand what just happened. The coffee you made every morning now makes you gag from across the room. Chicken, which you ate three times a week, is now out of the question. Your partner wonders if you are being dramatic. You are not. Your first-trimester hormones have physically altered how your brain processes smell, and those foods that feel unbearable now feel that way for a specific biological reason.
+
+## The Hormone Behind Your Repulsion
+
+**Human chorionic gonadotropin** — HCG — is the hormone your body begins producing almost immediately after the fertilised egg implants in the uterus. It is the hormone pregnancy tests detect, and MedlinePlus confirms it rises rapidly in the blood in the early weeks of pregnancy. HCG is believed to be the primary driver of nausea and vomiting in the first trimester, and the evidence points to the same mechanism producing the smell sensitivity and food aversions that accompany it.
+
+ACOG's guidance on morning sickness states this directly: increasing levels of hormones may play a role in nausea and vomiting of pregnancy, and hormonal changes also heighten the sense of smell and make you much more sensitive to certain odours. The practical result is that your olfactory system — your sense of smell — is operating at a sensitivity level it has never operated at before. Smells your brain previously processed as background noise are now arriving at full signal strength. Some are manageable. Others are, quite simply, intolerable.
+
+This is not a food preference. It is a neurological change. The smells and tastes that are triggering your revulsion are genuinely different now from how they registered before pregnancy.
+
+## Why Smell and Nausea Are the Same Problem
+
+The connection between heightened smell and food aversions is not coincidental — they are two outputs of the same hormonal input.
+
+ACOG notes that foods or odours that might never have bothered you before may now trigger nausea. This describes the mechanism precisely: smell triggers nausea, and nausea creates an aversion to whatever caused it. When meat cooking at 7am makes you run for the bathroom, your brain forms a rapid and powerful association between that smell and physical illness. That association is then reinforced every time the smell recurs — which is why aversions can feel absolute rather than mild.
+
+The specific foods and smells that become intolerable vary considerably between women, but the pattern is consistent: strong-smelling foods, foods with high fat content, meat and fish, coffee, alcohol, and anything pungent tend to top the list. Cold foods — which produce less vapour and therefore less smell than hot foods — are often better tolerated than the same foods served hot. This is why many women in the first trimester subsist on crackers, toast, cold cereal, and other bland low-odour foods that their nausea and aversion system can tolerate.
+
+The same foods are often fine if they are at room temperature or cold that were completely unbearable when warm. The smell, not the food itself, is the primary trigger.
+
+## When It Starts and When It Ends
+
+MedlinePlus confirms that nausea and vomiting — driven by the same HCG rise responsible for aversions — typically begins between 4 and 8 weeks of pregnancy. Food aversions follow the same timeline, emerging alongside or just before the nausea peaks, usually in weeks 6 through 10.
+
+HCG levels rise steeply in the first trimester, reach their peak at around 10 to 12 weeks of pregnancy, and then begin to decline in the second trimester as the placenta takes over the work of sustaining the pregnancy. MedlinePlus confirms that nausea and vomiting typically go away by 16 to 18 weeks for most women. Food aversions follow the same trajectory — for most women they begin to ease significantly as the second trimester starts, often between 12 and 14 weeks, as HCG levels drop and smell sensitivity normalises.
+
+ACOG acknowledges that for some women nausea lasts several weeks or months beyond this point, and for a few it continues throughout pregnancy. For those women, aversions may also persist longer, requiring ongoing management of diet rather than waiting for resolution. Our [morning sickness end date estimator](/morning-sickness-end-date-estimator) can give you a personalised estimate of when your nausea — and the aversions that accompany it — is likely to ease, based on when it started and your pregnancy week.
+
+## What Actually Helps in the First Trimester
+
+Because the mechanism driving aversions is hormonal rather than digestive, management focuses on working with the aversion pattern rather than against it — eating what you can tolerate rather than forcing what you cannot.
+
+**Eat what you can, without guilt.** ACOG's approach to nausea management accepts that first-trimester eating will not look like normal eating. If crackers and plain rice are what you can tolerate, they are what you eat. The developing embryo in the first trimester is small, and its nutritional needs during this window are met primarily by your body's existing stores. Nutritional adequacy becomes more important in the second trimester, when growth accelerates. Getting through the first trimester on a limited diet while taking a prenatal vitamin — which ACOG confirms is important — is not harming the baby.
+
+**Manage the smell, not just the food.** Since smell is the primary trigger, reducing smell exposure is often more effective than changing what food is available. ACOG specifically suggests having someone else cook, using a fan when cooking, and avoiding proximity to food preparation when possible. Cold foods are consistently better tolerated than hot ones for exactly this reason — the lower temperature means less vapour and less smell. If your partner or family member can prepare food in a different room and serve it cold or at room temperature, this can meaningfully reduce exposure.
+
+**Eat small amounts frequently.** ACOG advises eating small, more frequent meals rather than large ones for nausea management — and the same logic applies to aversions. An empty stomach worsens nausea and intensifies the sensitivity to smells. A small amount of a tolerated food every hour or two keeps something in the stomach and prevents the nausea-smell cycle from compounding.
+
+**Use gum or hard candy for taste and hydration.** ACOG specifically recommends chewing gum or eating hard candy if a bad taste in your mouth is making it difficult to drink water. This is practical and important — staying hydrated when nothing tastes right is one of the harder challenges of the first trimester, and this is a direct ACOG-recommended approach.
+
+**Ventilation.** Open windows, use a fan, and avoid enclosed spaces where food smells concentrate. Fresh air consistently reduces the intensity of smell triggers. Many women find that outdoor walks help temporarily reset their olfactory sensitivity.
+
+## Why Your Prenatal Vitamin Matters More Now
+
+When your diet is severely restricted by aversions, the nutritional gaps are real. The foods most commonly avoided in the first trimester — meat, fish, eggs, vegetables — are also the foods most likely to provide the nutrients the pregnancy requires. A prenatal vitamin does not replace these foods, but it provides a safety net for the most critical nutrients during the period when eating is hardest.
+
+ACOG notes that taking a vitamin supplement before and during pregnancy reduces the risk of having severe nausea and vomiting — and it provides coverage for the nutritional gaps that form when aversions make eating a limited, repetitive experience. Taking your prenatal vitamin at a time of day when nausea is least intense — often in the evening rather than the morning — can help if morning is when the aversions are worst.
+
+If you have concerns about your nutritional intake during the first trimester because aversions are making eating very difficult, raise this with your provider rather than trying to self-manage nutritional supplementation independently.
+
+## Common Questions About Pregnancy Food Aversions
+
+### I used to love coffee and now I can't even smell it. Will I ever get it back?
+
+Almost certainly yes. Coffee is one of the most commonly reported aversions in the first trimester, and it typically returns to tolerable — and often enjoyable again — after the HCG peak passes. Most women who lose their appetite for coffee in the first trimester find that by the second trimester it becomes at least drinkable, even if it tastes different than before pregnancy. A small number of women find their coffee preference permanently altered by pregnancy, but this is less common than a full return to previous preferences after the first trimester.
+
+### My partner keeps trying to get me to eat things I'm averse to because they're healthy. How do I explain this?
+
+The aversion is neurological, not psychological. You are not choosing to dislike these foods. ACOG confirms that hormonal changes physically alter smell sensitivity and that foods you previously enjoyed can now trigger nausea. The most useful framing is that your olfactory system is operating differently than it did before pregnancy, and no amount of willpower changes a neurological response. What does help is making the alternatives available — things you can actually eat — rather than persisting with foods your body is actively rejecting. Eating something tolerable is always better than eating nothing.
+
+### Everything smells wrong, not just specific foods. Is that normal?
+
+Yes. Heightened smell sensitivity in the first trimester is not limited to a few specific triggers — it is a general increase in olfactory sensitivity that makes the whole sensory environment of food and cooking more intense. ACOG describes this as a broad heightening of smell sensitivity caused by hormonal changes, not a selective response to particular foods. It typically extends to cleaning products, perfumes, colleagues' lunches, and any other strong smell that was previously background. Reducing general smell exposure — ventilating your home well, choosing fragrance-free products, avoiding crowded food environments — helps manage the overall sensitivity, not just specific food triggers.
+
+## When to Call Your Doctor
+
+Contact your provider if:
+
+- **You cannot keep any fluids down for more than 8 hours** — ACOG identifies inability to keep down liquids as a reason to contact your provider, as dehydration develops quickly when fluid intake is zero
+- **You have lost weight noticeably** — aversions that prevent eating adequately for several days and result in weight loss warrant evaluation, as this may indicate hyperemesis gravidarum rather than typical first-trimester aversion
+- **You have signs of dehydration** — dark urine, dizziness, dry mouth, or very infrequent urination indicate your fluid intake is insufficient
+- **Aversions are continuing significantly beyond 18 weeks** — while some aversions persist into the second trimester, severe ongoing aversions past this point are worth raising with your provider to ensure nutritional adequacy
+- **You cannot take your prenatal vitamin because of nausea or aversions** — your provider can advise on alternative formulations, timing, and supplementation approaches
+
+## Related Tools on SageNest
+
+Food aversions and smell sensitivity are features of the same first-trimester hormonal pattern that drives nausea — which means knowing when your nausea is expected to ease tells you roughly when aversions will ease too. Our [morning sickness end date estimator](/morning-sickness-end-date-estimator) gives you a personalised estimate based on when your symptoms started. If you want to track where you are in the first trimester and what else is happening with your baby's development during this intense early window, our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers the weeks when HCG is peaking and aversions are most pronounced.
+
+## The Bottom Line
+
+Pregnancy food aversions are not a preference or a phase of fussiness — they are a direct consequence of the hormonal surge of early pregnancy. ACOG confirms that rising pregnancy hormones heighten smell sensitivity and make previously tolerable foods and odours trigger nausea. MedlinePlus identifies HCG — the hormone that rises rapidly from the moment of implantation — as the primary driver of first-trimester nausea, and aversions follow the same hormonal timeline: peaking around weeks 8 to 10 and easing for most women by weeks 14 to 16. Eat what you can tolerate, take your prenatal vitamin, manage smell exposure rather than fighting the aversions directly, and know that for most women the foods you are currently unable to face will be approachable again in the second trimester. Use our [morning sickness end date estimator](/morning-sickness-end-date-estimator) to get a sense of your personal timeline.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Morning Sickness: Nausea and Vomiting of Pregnancy](https://www.acog.org/womens-health/faqs/Morning-Sickness-Nausea-and-Vomiting-of-Pregnancy)
+- **ACOG** — [What causes morning sickness (nausea and vomiting during pregnancy)?](https://www.acog.org/womens-health/experts-and-stories/ask-acog/what-causes-morning-sickness)
+- **ACOG** — [Changes During Pregnancy](https://www.acog.org/womens-health/infographics/changes-during-pregnancy)
+- **MedlinePlus** — [Hyperemesis gravidarum](https://medlineplus.gov/ency/article/001499.htm)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
+  },
+  {
     slug: 'blurry-vision-pregnancy-warning-signs',
     title: "Your Vision Feels Different in Pregnancy — Here's What to Watch For",
     description: "Blurry vision during pregnancy can be normal or a warning sign of preeclampsia. Here's the exact pattern that needs same-day provider contact — and what doesn't.",
