@@ -19,7 +19,9 @@
     <meta name="twitter:image" content="https://res.cloudinary.com/dtplyecgd/image/upload/w_1200,h_630,c_fill/sagenest-blog/pcos-ovulation-tracking-irregular-cycles.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" /></noscript>
     <style>
       :root {
         --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -35,8 +37,8 @@
         --warm-gray: #E8E6E1;
         --charcoal: #2D2D2D;
         --charcoal-light: #505050;
-        --text-secondary: #6B6B6B;
-        --text-tertiary: #9B9B9B;
+        --text-secondary: #4F4F4F;
+        --text-tertiary: #727272;
         --border-hairline: #E5E7EB;
         --border-subtle: #D1D5DB;
         --shadow-subtle: 0 1px 3px rgba(45, 45, 45, 0.04);
@@ -168,7 +170,7 @@
       a:hover { color: var(--charcoal); }
       .post-meta {
         font-size: 0.875rem;
-        color: var(--text-tertiary);
+        color: var(--text-secondary);
         margin-bottom: 1.5rem;
       }
       .post-image {
@@ -178,6 +180,7 @@
         border-radius: 18px;
         border: 1px solid var(--border-hairline);
         margin: 0 0 3rem;
+        aspect-ratio: 1200 / 630;
       }
       .author-box {
         display: flex;
@@ -273,7 +276,7 @@
         color: var(--text-tertiary);
         margin-top: 4rem;
       }
-      footer a { color: var(--sage-dark); margin: 0 0.5rem; }
+      footer a { color: var(--sage-dark); margin: 0 0.25rem; display: inline-block; padding: 0.375rem 0.5rem; }
     </style>
     <script type="application/ld+json">
 {
@@ -347,7 +350,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="brand"><img src="/sagenest-main-logo.png" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
+      <a href="/" class="brand"><img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_68,h_68,c_fill,f_auto,q_auto/sagenest-main-logo" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
       <nav>
         <a href="/similar-tools">Similar tools</a>
         <a href="/blog">Blog</a>
@@ -357,7 +360,7 @@
       <article>
         <h1>PCOS and Ovulation: Why Standard Tracking Fails and What Works Instead</h1>
         <p class="post-meta">12 min read · <span>Last reviewed: March 2026</span></p>
-        <img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_1200,h_630,c_fill/sagenest-blog/pcos-ovulation-tracking-irregular-cycles.jpg" alt="PCOS and Ovulation: Why Standard Tracking Fails and What Works Instead" class="post-image" loading="lazy" />
+        <img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_634,h_333,c_fill,f_auto,q_auto/sagenest-blog/pcos-ovulation-tracking-irregular-cycles.jpg" srcset="https://res.cloudinary.com/dtplyecgd/image/upload/w_400,h_210,c_fill,f_auto,q_auto/sagenest-blog/pcos-ovulation-tracking-irregular-cycles.jpg 400w, https://res.cloudinary.com/dtplyecgd/image/upload/w_634,h_333,c_fill,f_auto,q_auto/sagenest-blog/pcos-ovulation-tracking-irregular-cycles.jpg 634w, https://res.cloudinary.com/dtplyecgd/image/upload/w_1200,h_630,c_fill,f_auto,q_auto/sagenest-blog/pcos-ovulation-tracking-irregular-cycles.jpg 1200w" sizes="(max-width: 640px) 400px, (max-width: 1000px) 634px, 1200px" alt="PCOS and Ovulation: Why Standard Tracking Fails and What Works Instead" class="post-image" loading="lazy" width="1200" height="630" />
         <p>Your ovulation app says you should have ovulated six days ago. Your LH strips showed a positive — actually, they showed three positives across five days, which is not what the instructions described. Your BBT chart has no clear temperature rise. You are on cycle day 42 and you have no idea whether you ovulated, when you might, or whether this cycle is going anywhere. If you have PCOS and you are trying to conceive, this is not a tracking failure. It is what happens when standard ovulation tracking tools meet a hormonal environment they were not designed for.</p>
 <h2>Why PCOS Makes Ovulation Tracking Uniquely Difficult</h2>
 <p>Most ovulation tracking tools — calendar apps, LH strips, even standard BBT interpretation guides — are designed around one assumption: that the hormonal sequence leading to ovulation follows a predictable, roughly 28-day pattern. The follicle matures steadily, estrogen rises, LH surges once, ovulation occurs, progesterone rises, and the cycle resets.</p>
@@ -407,7 +410,7 @@
 <ul><li><strong>ACOG</strong> — <a href="https://www.acog.org/womens-health/faqs/polycystic-ovary-syndrome-pcos">Polycystic Ovary Syndrome</a></li><li><strong>ACOG</strong> — <a href="https://www.acog.org/womens-health/faqs/evaluating-infertility">Female Infertility</a></li><li><strong>NIH MedlinePlus</strong> — <a href="https://www.nichd.nih.gov/health/topics/factsheets/pcos">Polycystic Ovary Syndrome</a></li><li><strong>CDC</strong> — <a href="https://www.cdc.gov/diabetes/risk-factors/pcos-polycystic-ovary-syndrome.html">PCOS and Reproductive Health</a></li></ul>
 <p><strong>Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.</strong></p>
         <a href="/editorial-team" class="author-box">
-          <div class="author-avatar"><img src="/sagenest-main-logo.png" alt="" loading="lazy" width="48" height="48" /></div>
+          <div class="author-avatar"><img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_96,h_96,c_fill,f_auto,q_auto/sagenest-main-logo" alt="" loading="lazy" width="48" height="48" /></div>
           <div class="author-info">
             <p class="author-label">Written by</p>
             <p class="author-name">SageNest Editorial Team</p>

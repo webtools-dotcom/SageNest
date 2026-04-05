@@ -19,7 +19,9 @@
     <meta name="twitter:image" content="https://res.cloudinary.com/dtplyecgd/image/upload/w_1200,h_630,c_fill/sagenest-blog/ivf-due-date-guide.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" /></noscript>
     <style>
       :root {
         --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -35,8 +37,8 @@
         --warm-gray: #E8E6E1;
         --charcoal: #2D2D2D;
         --charcoal-light: #505050;
-        --text-secondary: #6B6B6B;
-        --text-tertiary: #9B9B9B;
+        --text-secondary: #4F4F4F;
+        --text-tertiary: #727272;
         --border-hairline: #E5E7EB;
         --border-subtle: #D1D5DB;
         --shadow-subtle: 0 1px 3px rgba(45, 45, 45, 0.04);
@@ -168,7 +170,7 @@
       a:hover { color: var(--charcoal); }
       .post-meta {
         font-size: 0.875rem;
-        color: var(--text-tertiary);
+        color: var(--text-secondary);
         margin-bottom: 1.5rem;
       }
       .post-image {
@@ -178,6 +180,7 @@
         border-radius: 18px;
         border: 1px solid var(--border-hairline);
         margin: 0 0 3rem;
+        aspect-ratio: 1200 / 630;
       }
       .author-box {
         display: flex;
@@ -273,7 +276,7 @@
         color: var(--text-tertiary);
         margin-top: 4rem;
       }
-      footer a { color: var(--sage-dark); margin: 0 0.5rem; }
+      footer a { color: var(--sage-dark); margin: 0 0.25rem; display: inline-block; padding: 0.375rem 0.5rem; }
     </style>
     <script type="application/ld+json">
 {
@@ -355,7 +358,7 @@
   </head>
   <body>
     <header class="site-header">
-      <a href="/" class="brand"><img src="/sagenest-main-logo.png" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
+      <a href="/" class="brand"><img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_68,h_68,c_fill,f_auto,q_auto/sagenest-main-logo" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
       <nav>
         <a href="/similar-tools">Similar tools</a>
         <a href="/blog">Blog</a>
@@ -365,7 +368,7 @@
       <article>
         <h1>IVF Due Date Calculator: How to Calculate Your Due Date After Transfer</h1>
         <p class="post-meta">11 min read · <span>Last reviewed: March 2026</span></p>
-        <img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_1200,h_630,c_fill/sagenest-blog/ivf-due-date-guide.jpg" alt="IVF Due Date Calculator: How to Calculate Your Due Date After Transfer" class="post-image" loading="lazy" />
+        <img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_634,h_333,c_fill,f_auto,q_auto/sagenest-blog/ivf-due-date-guide.jpg" srcset="https://res.cloudinary.com/dtplyecgd/image/upload/w_400,h_210,c_fill,f_auto,q_auto/sagenest-blog/ivf-due-date-guide.jpg 400w, https://res.cloudinary.com/dtplyecgd/image/upload/w_634,h_333,c_fill,f_auto,q_auto/sagenest-blog/ivf-due-date-guide.jpg 634w, https://res.cloudinary.com/dtplyecgd/image/upload/w_1200,h_630,c_fill,f_auto,q_auto/sagenest-blog/ivf-due-date-guide.jpg 1200w" sizes="(max-width: 640px) 400px, (max-width: 1000px) 634px, 1200px" alt="IVF Due Date Calculator: How to Calculate Your Due Date After Transfer" class="post-image" loading="lazy" width="1200" height="630" />
         <p>You have the exact date fertilization happened. You have the exact age of your embryo at transfer. You have a lab record that most pregnancies simply do not have. And yet calculating your IVF due date still feels more confusing than it should — partly because the formula is different from natural conception, and partly because no one explains clearly why. This guide covers the exact IVF due date calculation for Day 3 and Day 5 transfers, what gestational age means from the moment of transfer, and what your estimated due date can and cannot predict about when your baby will actually arrive.</p>
 <h2>What Is Different About IVF Due Date Calculation?</h2>
 <p>In a naturally conceived pregnancy, due dates are calculated by adding 280 days to the first day of the last menstrual period (LMP). This formula assumes ovulation occurred on approximately day 14 of a 28-day cycle — meaning fertilization happened about two weeks after the LMP. The 280-day figure equals 40 weeks of gestational age, or approximately 266 days from actual fertilization.</p>
@@ -429,7 +432,7 @@
 <ul><li><strong>ACOG</strong> — <a href="https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date">Methods for Estimating the Due Date</a></li><li><strong>ACOG</strong> — <a href="https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/11/definition-of-term-pregnancy">Definition of Term Pregnancy</a></li><li><strong>ACOG</strong> — <a href="https://www.acog.org/womens-health/faqs/how-your-fetus-grows-during-pregnancy">How Your Fetus Grows During Pregnancy</a></li><li><strong>ACOG</strong> — <a href="https://www.acog.org/womens-health/faqs/ectopic-pregnancy">Ectopic Pregnancy</a></li><li><strong>ACOG</strong> — <a href="https://www.acog.org/womens-health/faqs/treating-infertility">Treating Infertility</a></li><li><strong>NIH MedlinePlus</strong> — <a href="https://medlineplus.gov/ency/article/003432.htm">Pregnancy test — Medical Encyclopedia</a></li></ul>
 <p><strong>Clinical recommendations reflect guidance from these sources. Consult your provider for personalised advice and for any updates to current guidelines.</strong></p>
         <a href="/editorial-team" class="author-box">
-          <div class="author-avatar"><img src="/sagenest-main-logo.png" alt="" loading="lazy" width="48" height="48" /></div>
+          <div class="author-avatar"><img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_96,h_96,c_fill,f_auto,q_auto/sagenest-main-logo" alt="" loading="lazy" width="48" height="48" /></div>
           <div class="author-info">
             <p class="author-label">Written by</p>
             <p class="author-name">SageNest Editorial Team</p>
