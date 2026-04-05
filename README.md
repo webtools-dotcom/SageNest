@@ -504,6 +504,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   └── progressWheel.test.ts
 ├── .env.example
 ├── .gitignore
+├── .nvmrc
 ├── Blogpostsrule.md
 ├── codex.md
 ├── frontend.md
