@@ -13,6 +13,123 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'protein-pregnancy-first-trimester-nausea-crackers',
+    title: "Surviving on Crackers in the First Trimester? Here's What That Costs Your Baby",
+    description: "When nausea restricts you to toast and plain carbs, protein intake drops sharply. Here's what protein actually does for your baby and how to close the gap.",
+    readingTime: '8 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-05',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'a pregnant woman in her first trimester sitting on a couch looking exhausted and slightly nauseous, a plate of plain crackers and a glass of water on the cushion beside her, one hand resting on her stomach, early morning soft light, real and candid feel, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+    faq: [
+      {
+        question: 'Do I need more protein when pregnant?',
+        answer: "Yes. MedlinePlus confirms directly that you need more protein when you are pregnant. Protein provides the raw material for every new cell the fetus builds — organs, muscles, the placenta, and the amniotic fluid all require it continuously. The challenge for many women is that first-trimester nausea makes the highest-protein foods — meat, eggs, fish — among the hardest to tolerate, creating a gap between what the pregnancy needs and what the body can manage to eat during the hardest weeks."
+      },
+      {
+        question: "Is it bad for my baby if I can't eat much protein in the first trimester?",
+        answer: "The first trimester is the window when nausea is most severe and protein intake is most disrupted, but it is also the window when the embryo is smallest and its nutrient demands are met largely by your body's existing stores. The most protein-intensive period of fetal growth is the second and third trimesters, when the baby is adding weight and muscle rapidly. ACOG's approach to first-trimester nausea is practical — eat what you can tolerate. The priority is not forcing protein-rich foods that trigger nausea, but restoring a more complete diet as nausea improves and ensuring protein-dense options are reintroduced as appetite returns."
+      },
+      {
+        question: 'What are the easiest protein sources when everything makes me nauseous?',
+        answer: "The best options are those with minimal smell and a mild, bland flavour. MedlinePlus identifies beans, peas, eggs, lean meats, seafood, and nuts and seeds as healthy pregnancy protein sources. In practice, cold hard-boiled eggs, peanut butter on crackers, Greek yogurt, cottage cheese, and legume-based soups tend to be better tolerated during nausea than cooked meat or fish. Dairy foods — milk, yogurt, cheese — do double duty as both protein and calcium sources, and the ACOG nutrition guidance notes that dairy products are a good source of protein. Cold preparation reduces the smell exposure that triggers nausea."
+      },
+      {
+        question: 'Can I use protein powder or protein shakes during pregnancy?',
+        answer: "This is a provider conversation before anything else. Protein powders and supplements are not regulated by the FDA the way food is, and ACOG's healthy eating guidance cautions that vitamins and supplements should be chosen from companies with a long, reputable history and advises against supplementing without ob-gyn guidance. Some protein powders contain added ingredients — caffeine, artificial sweeteners, herbs, or other compounds — that are not appropriate during pregnancy. If your protein intake is genuinely insufficient and whole food sources remain intolerable, raise this with your provider rather than independently sourcing a supplement."
+      },
+      {
+        question: "When should I worry that I'm not getting enough nutrition in the first trimester?",
+        answer: "ACOG identifies hyperemesis gravidarum — the most severe form of pregnancy nausea — as occurring in up to 3 percent of pregnancies and defines it partly as losing 5 percent of pre-pregnancy body weight alongside signs of dehydration. If you cannot keep any fluids down for more than 8 hours, are losing weight noticeably, have dark urine or dizziness, or feel your restriction extends well beyond manageable nausea into an inability to eat anything at all, contact your provider. These are the markers that distinguish nausea you can manage around versus nausea requiring medical support."
+      }
+    ],
+    content: `The crackers are on the bedside table. Toast is the only thing that doesn't make you gag. Someone suggested chicken and you had to leave the room. You know, somewhere in the back of your mind, that this is not how pregnancy nutrition is supposed to look — but right now this is all you have. The question of what the first-trimester cracker diet is actually costing your baby nutritionally is real, and the answer is more nuanced than the standard "just eat what you can" advice gives you credit for needing to understand.
+
+## What Protein Is Actually Building During Pregnancy
+
+MedlinePlus describes protein's role with a precision worth understanding: protein is in every cell in the human body, it is the building block the body uses to repair cells and make new ones, and it is specifically important for growth and development in pregnant women. That last phrase is not incidental. Every organ the fetus develops, every muscle fibre it lays down, the placenta itself, the amniotic fluid surrounding the baby — all of it requires protein as the raw construction material. There is no substitute for it, and it is not stored the way fat or carbohydrates are. MedlinePlus notes this directly: you need to eat protein every day because your body doesn't store it.
+
+The amino acids that make up protein — the smaller units that do the actual work — come either from animal foods or from a combination of plant foods. Animal proteins, including meat, fish, poultry, eggs, and dairy, are described by MedlinePlus as **complete proteins**, meaning they supply all of the amino acids the body cannot make on its own. Most plant proteins are incomplete on their own, which means plant-based eaters need to eat a variety across each day to cover the full spectrum. This distinction matters in the first trimester specifically, because dairy foods — which many women can tolerate better than meat or fish during nausea — are complete protein sources, which makes them more nutritionally efficient per gram eaten.
+
+ACOG's nutrition guidance lists the protein food group clearly: meat, poultry, seafood, beans, peas, eggs, processed soy products, nuts, and seeds. The instruction is straightforward — eat a variety of protein each day. The practical difficulty is that this list contains many of the foods most likely to trigger nausea: cooked meat, fish, and eggs produce aromas that the hormonally altered first-trimester olfactory system processes as unbearable. The foods that tend to survive nausea — crackers, toast, plain rice, cold cereal — are almost entirely carbohydrate with minimal protein.
+
+## Why the Timing of the Protein Gap Matters Less Than You Fear
+
+Before the anxiety about first-trimester crackers escalates: the window when protein restriction hurts most is not actually the first trimester. This is worth understanding clearly.
+
+In the first trimester, the embryo is developing its basic structural blueprint — nervous system, organ primordia, limb buds — but it is doing so at a microscopic scale. The caloric and protein demands of a first-trimester embryo are small relative to what comes later, and your body's existing nutrient reserves carry a significant portion of that early load. ACOG's guidance acknowledges this directly: you do not need extra calories in the first trimester at all, only an additional 340 calories in the second and a bit more in the third.
+
+The period of peak fetal protein demand is the second and third trimesters, when the baby is gaining mass rapidly — muscle, fat, bone density, brain development — and when most women's nausea has substantially eased. ACOG confirms that for most women nausea and vomiting of pregnancy goes away by 14 weeks. MedlinePlus notes that the nausea, which is driven by the hormone HCG rising rapidly in early pregnancy, typically begins between 4 and 8 weeks and goes away by 16 to 18 weeks for most women. The cracker phase is, for most women, a holding pattern of a few weeks — not a permanent nutritional state.
+
+This does not mean protein is irrelevant in the first trimester. It means the pressure to force high-protein foods into a nauseous system is genuinely less urgent than it feels, and the priority during the worst nausea weeks is eating whatever stays down and maintaining hydration, not hitting a protein target at the cost of triggering vomiting. The nutritional catch-up happens as the second trimester arrives and appetite restores. Our [morning sickness end date estimator](/morning-sickness-end-date-estimator) can give you a personalised estimate of when nausea is likely to ease, so you have a clearer picture of how long the cracker phase is likely to last.
+
+## Finding Protein That Nausea Will Actually Tolerate
+
+The practical project in the first trimester is identifying the subset of protein foods that your specific nausea pattern can work around. The common pattern: hot foods smell more strongly than cold ones, and fatty or intensely savoury foods trigger nausea faster than mild, cool, or bland ones. This shapes what actually works.
+
+**Dairy** is the first place to look. ACOG's healthy eating guidance notes that dairy products are a great source of protein as well as calcium and phosphorus. Yogurt, cottage cheese, and cold milk are complete protein sources that most nauseous women tolerate better than cooked meat, because they have minimal cooking smell and are typically cold. Greek yogurt in particular is protein-dense and requires no preparation. Cheese — mild varieties like mozzarella or mild cheddar — is similarly well-tolerated and does not require heating.
+
+**Eggs** tolerate nausea better when cold rather than freshly cooked. A hard-boiled egg prepared at a time when you are less nauseous and eaten cold later can be one of the most nutritionally efficient first-trimester foods available. If the smell of cooking eggs is the problem rather than eggs themselves, this distinction is worth testing.
+
+**Nut butters** — peanut butter, almond butter — have minimal smell, are eaten at room temperature, and spread readily on the crackers that are already tolerable. A tablespoon of peanut butter on toast adds meaningful protein without requiring any cooking. Nuts and seeds can be eaten directly as snacks with no preparation.
+
+**Beans and legumes** in cold preparations — hummus, lentil soup eaten at room temperature — avoid the hot cooking smells that trigger nausea, while providing both protein and iron. Hummus specifically is protein-dense and pairs naturally with plain crackers.
+
+**Protein from whole grains** is worth knowing about: MedlinePlus notes that whole grains contain more protein than refined or white products. Swapping white crackers for whole grain alternatives during the cracker phase adds a small but real protein increment without any additional food challenge.
+
+## Rebuilding as the Second Trimester Arrives
+
+As nausea eases — for most women, perceptibly by 12 to 14 weeks — the reintroduction of fuller protein sources becomes the priority. ACOG's guidance on nutrition during pregnancy is clear that eating a variety of protein each day is the goal. The second trimester is when this goal becomes achievable again and when it matters most nutritionally.
+
+The practical approach: reintroduce one food at a time, starting with those most well-tolerated when nausea was at its worst and working toward the full range. Most women find that chicken tolerates earlier than fish or red meat after a nausea period. Eggs often come back before full meat tolerance is restored. There is no clinical reason to rush this reintroduction aggressively — the point is consistent daily intake of a varied protein range across the second and third trimesters.
+
+If appetite remains significantly suppressed or protein sources continue to be largely unavailable past 16 to 18 weeks, this is worth raising with your provider — both as a nutritional concern and as a signal that nausea may need clinical attention rather than simply waiting out. A registered dietitian, which ACOG recommends when nutritional planning is complex, can build a practical meal structure around specific tolerances and preferences if the standard guidance does not fit your situation.
+
+## Common Questions About Protein and First-Trimester Nausea
+
+### I'm vegetarian and the protein foods I usually rely on are the ones that make me most nauseous. What do I do?
+
+The smell-triggered nausea pattern often hits legumes and soy products harder when they are cooked hot, but both can be prepared cold or at room temperature. Hummus, cold lentil salads, room-temperature bean-based dishes, and cold tofu preparations produce less of the cooking aroma that triggers nausea. Dairy — milk, yogurt, cheese — is typically tolerated better than legume-based protein for vegetarians during the nausea peak, and adds the benefit of calcium alongside protein. MedlinePlus notes that you should eat different types of plant proteins every day to get all the amino acids your body needs — but when nausea limits which plant proteins are accessible, dairy foods bridge much of that gap if your diet includes them.
+
+### Can I make up for weeks of low protein intake once nausea passes?
+
+The body does not work on a weekly averaging system the way a simple ledger does, but the second and third trimesters provide a substantial window for nutritional recovery when nausea resolves. The practical goal is to ensure that protein intake is consistent and adequate across the majority of the pregnancy — not that every week of the first trimester hits a specific target during the hardest period of nausea. When nausea improves and appetite returns, a focus on including protein at every meal and most snacks naturally rebuilds what was missed. If you are concerned about a nutritional gap from an extended period of severe nausea, mention it at your next prenatal appointment so your provider can assess your overall nutritional status.
+
+### My prenatal vitamin doesn't have any protein in it. Is that a problem?
+
+No — prenatal vitamins cover micronutrients, not macronutrients. Protein is a macronutrient that comes only from food, and no supplement replaces it. ACOG confirms that eating healthy foods and taking a prenatal vitamin together supply what you need during pregnancy — the prenatal handles vitamin and mineral insurance while the diet handles the macronutrients. This is one reason that restoring food variety as nausea eases is more important than taking additional supplements.
+
+## When to Talk to Your Provider
+
+Contact your provider if:
+
+- **You cannot keep any fluids down for more than 8 hours** — this is a sign of dehydration that requires evaluation beyond dietary management
+- **You are losing weight noticeably** — ACOG defines hyperemesis gravidarum partly as a 5 percent loss of pre-pregnancy body weight, and significant weight loss during pregnancy warrants clinical attention
+- **Nausea has not improved by 18 to 20 weeks** — MedlinePlus notes that nausea typically resolves for most women by 16 to 18 weeks; persistent severe nausea past this point is worth discussing with your provider
+- **You have not been able to eat any protein-containing food regularly for more than two weeks** — while short-term restriction is manageable, an extended period without any protein intake is worth flagging so your provider can assess and support nutritional status
+
+## Related Tools on SageNest
+
+Knowing when your nausea is likely to ease directly tells you when normal protein intake can realistically resume — which is usually the most reassuring information during the cracker phase. Our [morning sickness end date estimator](/morning-sickness-end-date-estimator) gives you a personalised estimate based on when your nausea started. For context on what is developing week by week during this period — including the growth milestones that drive increasing nutritional demand in the second and third trimesters — our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks fetal development at every stage.
+
+## The Bottom Line
+
+First-trimester nausea that restricts you to crackers and toast is common and does not carry the protein cost many women fear during those weeks — the embryo's peak protein demands come in the second and third trimesters, when most women's nausea has resolved. MedlinePlus confirms you need more protein during pregnancy than before, and ACOG lists meat, poultry, seafood, beans, peas, eggs, nuts, and seeds as the primary sources. The practical strategy during nausea is finding which of those foods tolerates — dairy, cold eggs, nut butters, cold legume preparations — and accepting that the cracker weeks are a holding pattern, not a permanent gap. As appetite returns in the second trimester, rebuilding a varied daily protein intake at every meal becomes the real nutritional priority. Use our [morning sickness end date estimator](/morning-sickness-end-date-estimator) to gauge how long the worst of it is likely to last.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **MedlinePlus** — [Pregnancy and Nutrition](https://medlineplus.gov/pregnancyandnutrition.html)
+- **MedlinePlus** — [Protein in diet](https://medlineplus.gov/ency/article/002467.htm)
+- **MedlinePlus** — [Eating right during pregnancy](https://medlineplus.gov/ency/patientinstructions/000584.htm)
+- **ACOG** — [Nutrition During Pregnancy](https://www.acog.org/store/products/patient-education/pamphlets/pregnancy/nutrition-during-pregnancy)
+- **ACOG** — [Morning Sickness: Nausea and Vomiting of Pregnancy](https://www.acog.org/womens-health/faqs/Morning-Sickness-Nausea-and-Vomiting-of-Pregnancy)
+- **ACOG** — [Healthy Eating During Pregnancy](https://www.acog.org/womens-health/faqs/healthy-eating-during-pregnancy)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
+  },
+  {
     slug: 'zinc-pregnancy-iron-supplement-absorption',
     title: "Taking Extra Iron in Pregnancy? Here's How It Affects Your Zinc",
     description: "High-dose iron supplements reduce zinc absorption — and most pregnant women don't know it. Here's what zinc does during pregnancy and who needs to pay attention.",
