@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/zinc-pregnancy-iron-supplement-absorption /blog/zinc-pregnancy-iron-supplement-absorption 301
 /vitamin-d-deficiency-pregnancy-prenatal-test /blog/vitamin-d-deficiency-pregnancy-prenatal-test 301
 /pregnancy-food-aversions-smell-sensitivity /blog/pregnancy-food-aversions-smell-sensitivity 301
 /blurry-vision-pregnancy-warning-signs /blog/blurry-vision-pregnancy-warning-signs 301
@@ -76,6 +77,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/zinc-pregnancy-iron-supplement-absorption /blog-static/zinc-pregnancy-iron-supplement-absorption.html 200
+/blog/zinc-pregnancy-iron-supplement-absorption/ /blog-static/zinc-pregnancy-iron-supplement-absorption.html 200
 /blog/vitamin-d-deficiency-pregnancy-prenatal-test /blog-static/vitamin-d-deficiency-pregnancy-prenatal-test.html 200
 /blog/vitamin-d-deficiency-pregnancy-prenatal-test/ /blog-static/vitamin-d-deficiency-pregnancy-prenatal-test.html 200
 /blog/pregnancy-food-aversions-smell-sensitivity /blog-static/pregnancy-food-aversions-smell-sensitivity.html 200

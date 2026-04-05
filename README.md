@@ -399,7 +399,8 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── stress-delayed-ovulation-late-period.html
 │   │   ├── two-week-wait-symptoms-progesterone-not-pregnancy.html
 │   │   ├── vegetarian-pregnancy-dha-nutrient-gaps.html
-│   │   └── vitamin-d-deficiency-pregnancy-prenatal-test.html
+│   │   ├── vitamin-d-deficiency-pregnancy-prenatal-test.html
+│   │   └── zinc-pregnancy-iron-supplement-absorption.html
 │   ├── images/
 │   │   └── blog/
 │   │       └── sagenest-blog-default.jpg
