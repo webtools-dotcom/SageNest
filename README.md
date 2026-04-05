@@ -398,7 +398,8 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── shortness-of-breath-pregnancy.html
 │   │   ├── stress-delayed-ovulation-late-period.html
 │   │   ├── two-week-wait-symptoms-progesterone-not-pregnancy.html
-│   │   └── vegetarian-pregnancy-dha-nutrient-gaps.html
+│   │   ├── vegetarian-pregnancy-dha-nutrient-gaps.html
+│   │   └── vitamin-d-deficiency-pregnancy-prenatal-test.html
 │   ├── images/
 │   │   └── blog/
 │   │       └── sagenest-blog-default.jpg
