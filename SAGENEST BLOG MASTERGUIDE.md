@@ -898,78 +898,173 @@ Use these as starting frameworks. Do not copy them verbatim — adapt to the spe
 
 ---
 
-## Section 21: Image Prompt Standard
+## Section 21: Image Prompt Standard (Updated)
 
-Every blog post TypeScript object must include an `imagePrompt` field. This field is the prompt that the `generate-blog-html.mjs` script sends directly to the Pollinations API to generate the post's image. Claude writes this field as part of every post output — it is a required field in the TypeScript object, not a separate note.
+Every blog post TypeScript object must include an `imagePrompt` field. This field is sent directly to the Pollinations API. Claude writes this field as part of every post — it is required, not optional.
 
-The script reads `post.imagePrompt` at build time, sends it to Pollinations to generate a clean photorealistic image, then programmatically adds a short text overlay on top before uploading to Cloudinary. Claude's job is to write the scene — the script handles the text overlay automatically from the post title.
+The script handles text overlay automatically from `post.title`. Claude's only job is writing the scene. But how that scene is written determines whether the output looks like a real photograph or an obvious AI render.
+
+---
 
 ### 21.1 Why imagePrompt Exists
 
-The old pipeline used a keyword-matching map to pick a fixed generic prompt based on the post slug. This produced the same few images repeatedly across many posts. A post about pregnancy insomnia and a post about postpartum insomnia would get the same image because both slugs contained "sleep."
+The old pipeline used a keyword-matching map to pick generic prompts based on slug. This produced the same few images repeatedly. The new approach: Claude knows exactly what each post is about and writes a precise, post-specific prompt that produces a unique image matching the emotional tone of the title.
 
-The new approach: Claude knows exactly what each post is about, what emotional state the reader is in, and what scene would resonate with the title. Claude writes a precise, post-specific prompt. The result is a unique image for every post that matches the emotional tone of the title.
+---
 
-### 21.2 The imagePrompt Rules
+### 21.2 The Core Principle — Write Like a Photographer's Brief, Not a Scene Description
 
-**Rule 1 — Always describe a real human scene.**
-The prompt must describe a person in a specific physical situation. Never describe objects alone (a pill bottle, a vegetable, a calendar with no person). Never describe diagrams or medical illustrations.
-✅ `a visibly exhausted pregnant woman lying awake in a dark bedroom at 3am, eyes open, one hand resting on her belly, soft moonlight through curtains, warm and real, photorealistic`
-❌ `a calendar and a clock on a bedside table with soft lighting`
+This is the single most important rule in this section. Most AI image prompts fail because they are written like stage directions: *"a pregnant woman sitting on a bed looking tired."* Free models like Flux and zImage interpret these as illustrations or stock photo concepts — and that is exactly what they produce.
 
-**Rule 2 — The person's emotional state must match the title's emotional tone.**
-Read the title. Identify the emotional state of the reader it targets. The person in the image should be in that same emotional state.
-- Post about 3am insomnia → woman looks exhausted, awake, quiet
-- Post about baby movement at Week 20 → woman looks wondering, gently amazed, hand on belly
-- Post about BBT chart showing no rise → woman looking at her phone or chart with a slight frown, uncertain but calm
-- Post about round ligament pain → woman pausing mid-movement, hand on lower abdomen, surprised expression
+The prompts that produce genuinely photorealistic output are written as if briefing a photographer for a specific shot. A photographer's brief names the **camera position**, the **lens feel**, the **light source and quality**, the **subject's micro-expression and body position**, and the **environment in enough detail that the shot could actually be taken**. When a model receives this level of specificity, it produces an image that looks like it was taken — not generated.
 
-**Rule 3 — For invisible internal processes, show the external experience.**
-If the post is about something the reader cannot see — ovulation, fetal development, iron absorption, hormonal changes — show how the woman experiences it from the outside. Her posture, her expression, her environment.
-- Post about iron deficiency → woman sitting on sofa looking pale and fatigued, hand on forehead, warm indoor light
-- Post about fetal brain development at Week 24 → woman lying on her side with headphones on her belly, gentle smile, soft light
+**The difference in practice:**
 
-**Rule 4 — Avoid stock-photo perfection.**
-Do not describe perfectly lit, perfectly styled scenes. Real-feeling, slightly candid images perform better on Discover than polished advertisement-style images.
-✅ `soft candid feel, natural indoor light, not overly styled`
-❌ `professional studio photography, perfect lighting, flawless`
+❌ Scene description (produces AI-looking render):
+> a tired pregnant woman lying awake in bed at night, soft lighting
 
-**Rule 5 — Always end the prompt with these exact words:**
-`photorealistic, warm tones, sage green palette, no text, no watermark, no logo`
+✅ Photographer's brief (produces realistic photograph):
+> candid bedroom photograph, 35mm lens, a pregnant woman in her early 30s lying on her side in dim blue-grey night light, eyes open and unfocused, left hand resting loosely on her belly, cotton bedsheets slightly rumpled, bedside lamp off, faint light through thin curtains, expression is quiet exhaustion not distress, shallow depth of field, real home bedroom not staged
 
-This ensures the image is clean — the script adds the text overlay separately.
+The second prompt is longer but every additional detail pushes the model away from "AI illustration" and toward "this looks like someone took this photo."
 
-**Rule 6 — Keep the prompt to one or two sentences maximum.**
-Pollinations performs best with focused, specific prompts. Do not write long multi-clause descriptions.
+---
 
-### 21.3 imagePrompt Format in the TypeScript Object
+### 21.3 The imagePrompt Rules
 
-The field sits between `readingTime` and `faq` in the object:
+**Rule 1 — Open with a photography format tag.**
+
+Start every prompt with one of these exact openers. They prime the model to think in photographic terms:
+- `candid photograph,`
+- `documentary photography,`
+- `editorial photograph,`
+- `lifestyle photography,`
+- `natural light photography,`
+
+Choose the one that fits the scene. Bedroom at 3am = `candid photograph`. Woman at a prenatal appointment = `documentary photography`. Woman cooking or eating = `lifestyle photography`.
+
+---
+
+**Rule 2 — Name the lens feel.**
+
+Include one of these: `35mm lens`, `50mm lens`, `85mm portrait lens`. This single addition dramatically shifts model output toward photographic realism. Use `35mm` for environmental shots where you see the room. Use `85mm` for closer emotional shots where the face or expression matters most.
+
+---
+
+**Rule 3 — Describe the light source, not just "lighting."**
+
+Never write `soft lighting` or `warm lighting` alone — models ignore it. Instead name where the light comes from and what quality it has:
+
+- `faint light through thin curtains` — not `soft bedroom light`
+- `overcast window light from the left` — not `natural lighting`
+- `single lamp on a bedside table casting warm yellow light on her face` — not `warm indoor light`
+- `bright white clinical light, slightly harsh` — for a medical or appointment scene
+- `late afternoon sun through kitchen window, golden and slightly hazy` — for a daytime home scene
+
+---
+
+**Rule 4 — Describe the subject with three specific physical details.**
+
+Always include: approximate age, one specific body position detail, and one micro-expression or emotional signal. These three details eliminate the generic posed look.
+
+- **Age:** `a woman in her late 20s`, `a woman in her early 30s` — never just "a woman"
+- **Body position:** `right knee drawn up slightly`, `shoulders dropped forward`, `chin tilted down toward her chest`, `one hand flat on her belly, the other arm under her pillow`
+- **Expression:** `eyes slightly unfocused`, `jaw relaxed, not smiling`, `a small uncertain frown`, `mouth slightly open, exhaling` — never `looking sad` or `looking happy`
+
+---
+
+**Rule 5 — Describe the environment in two details, not one.**
+
+One environmental detail reads as a backdrop. Two reads as a real place.
+
+- ✅ `cluttered bedside table with a water glass, dim bedroom with laundry visible in the background`
+- ❌ `bedroom`
+- ✅ `small kitchen, fruit bowl on the counter, afternoon light through a half-open window`
+- ❌ `kitchen setting`
+
+---
+
+**Rule 6 — Always include the anti-AI-look tags at the end.**
+
+End every prompt with this exact string — do not omit any part of it:
+shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette
+The phrase `not AI generated, no illustration` explicitly suppresses the illustration and concept-art bias that free models default to.
+
+---
+
+**Rule 7 — For invisible internal processes, show the external lived experience.**
+
+If the post is about something the reader cannot see — fetal development, iron absorption, hormonal shifts — show the physical or emotional experience from the outside.
+
+- Iron deficiency in third trimester → woman sitting on sofa, slightly pale, resting her head in her hand, eyes half-closed, afternoon light
+- Fetal brain development at Week 24 → woman lying on her side, headphones resting gently on her bare belly, small private smile, soft morning light
+
+---
+
+**Rule 8 — Match the emotional state of the title precisely.**
+
+Read the title. The person in the image should look like she is living that exact moment — not posing for a stock photo about that moment.
+
+- *"Why You Can't Sleep at 32 Weeks"* → she looks awake and quietly drained, not dramatically distressed
+- *"That Sharp Pain at 20 Weeks"* → she has paused mid-movement, one hand on her lower abdomen, expression is caught-off-guard not scared
+- *"Your BBT Chart Looks Flat"* → she is looking at her phone or a piece of paper with a small uncertain frown, not crying, not fine
+- *"7 Signs of Normal Third Trimester Fatigue"* → she is sitting in ordinary clothes in an ordinary room looking genuinely tired
+
+---
+
+**Rule 9 — Keep to two to three sentences maximum.**
+
+More detail within two to three sentences, not more sentences. Long rambling prompts dilute focus. Pack specificity into each sentence.
+
+---
+
+### 21.4 Prompt Construction Sequence
+
+When writing the `imagePrompt` for any post, build it in this order:
+
+1. **Photography tag** — pick the right format opener
+2. **Lens** — 35mm or 85mm based on how close the shot is
+3. **Subject** — age + body position + micro-expression
+4. **Light** — named source and quality
+5. **Environment** — two specific environmental details
+6. **Feel** — `candid and real, not staged, not posed`
+7. **Closing tags** — always the full anti-AI string from Rule 6
+
+---
+
+### 21.5 Worked Examples
+
+**Post: *"Why You're Wide Awake at 3am in the Third Trimester"***
+candid photograph, 35mm lens, a pregnant woman in her early 30s lying on her side in a dim bedroom, eyes open and unfocused, left hand resting loosely on her round belly, cotton sheets slightly twisted, faint blue-grey light through thin curtains, bedside lamp off, expression is quiet exhaustion not distress, real home bedroom with a water glass and phone on the nightstand, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette
+---
+
+**Post: *"Why Iron Deficiency Spikes in the Third Trimester"***
+lifestyle photography, 85mm portrait lens, a pregnant woman in her late 20s sitting on a living room sofa, head resting in one hand, eyes half-closed, slightly pale, afternoon window light from the left casting soft shadows, a half-drunk glass of water on the coffee table beside her, expression is quiet weariness not illness, real home environment not staged, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette
+---
+
+**Post: *"That Sharp Shooting Pain at 20 Weeks — What Your Body Is Actually Doing"***
+candid photograph, 50mm lens, a pregnant woman in her late 20s standing in a home hallway, paused mid-step, one hand pressed flat against her lower right abdomen, expression caught-off-guard with a slight wince, natural overcast window light, wearing casual home clothes, hardwood floor visible, real domestic environment, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette
+---
+
+**Post: *"Your Baby at Week 24 — Brain Development Is Happening Fastest Right Now"***
+lifestyle photography, 85mm portrait lens, a pregnant woman in her early 30s lying on her side on a bed, headphones resting gently on her bare round belly, small private smile, eyes soft and slightly downward, morning light through off-white curtains, plain bedding, simple peaceful environment, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette
+---
+
+### 21.6 Format in the TypeScript Object
+
+The `imagePrompt` field sits between `imageUrl` and `faq` in the object:
 
 ```typescript
 {
   slug: 'why-you-cant-sleep-32-weeks',
-  title: 'Why You Can't Sleep at 32 Weeks (And What Actually Helps)',
+  title: 'Why You Can\'t Sleep at 32 Weeks (And What Actually Helps)',
   description: '...',
   readingTime: '8 min read',
   imageUrl: '/images/blog/sagenest-blog-default.jpg',
-  imagePrompt: 'a visibly exhausted pregnant woman lying awake in a dark bedroom at 3am, eyes open, one hand resting on her belly, soft moonlight through curtains, candid and real, photorealistic, warm tones, sage green palette, no text, no watermark, no logo',
+  imagePrompt: 'candid photograph, 35mm lens, a pregnant woman in her early 30s lying on her side in a dim bedroom, eyes open and unfocused, left hand resting loosely on her round belly, cotton sheets slightly twisted, faint blue-grey light through thin curtains, bedside lamp off, expression is quiet exhaustion, real home bedroom with a water glass on the nightstand, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette',
   faq: [ ... ],
   content: `...`
-}
-```
-
-### 21.4 What the Script Does With imagePrompt
-
-Claude does not need to think about this — it is documented here for transparency. After Claude delivers the TypeScript object:
-- The `generate-blog-html.mjs` script reads `post.imagePrompt`
-- Sends it to Pollinations to generate a clean 1200×630 image with no text
-- Downloads the image buffer
-- Uses the `sharp` library to add a text overlay — the first 5–6 words of `post.title`, white bold font, semi-transparent dark strip, positioned in the upper third of the image
-- Uploads the final composite to Cloudinary under `sagenest-blog/{slug}.jpg`
-- Uses the Cloudinary URL in the HTML file
-
-Claude's only responsibility is writing a good `imagePrompt`. The overlay, upload, and URL resolution are fully automated.
+} 
 
 ---
 
