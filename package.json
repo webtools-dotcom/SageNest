@@ -20,7 +20,7 @@
     "check:blog-sync": "node scripts/check-blog-static-sync.mjs",
     "sync:readme-worktree": "node scripts/sync-readme-worktree.mjs",
     "setup:hooks": "node scripts/setup-git-hooks.mjs",
-    "postinstall": "node scripts/setup-git-hooks.mjs"
+    "postinstall": "npm install --os=linux --cpu=x64 --include=optional sharp || true"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",
