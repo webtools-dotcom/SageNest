@@ -13,6 +13,140 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'listeria-pregnancy-deli-meat-foods-to-avoid',
+    title: "You Ate Deli Meat Before You Knew You Were Pregnant — Here's What to Know",
+    description: "Listeria in pregnancy is 10 times more likely to make you seriously ill than it is anyone else. Here's what the FDA and ACOG say to avoid and what to do if you ate it.",
+    readingTime: '8 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-06',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'candid photograph, 35mm lens, a pregnant woman in her early 30s standing at an open refrigerator in a home kitchen, pulling back slightly, looking at a packet of deli meat with a cautious uncertain expression, late afternoon light through a kitchen window to the right, casual home clothes, expression is concern not panic, real domestic kitchen not staged, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette',
+    faq: [
+      {
+        question: 'Why are pregnant women more at risk from Listeria?',
+        answer: 'Both the FDA and ACOG confirm that pregnant women are approximately 10 times more likely to get listeriosis than the average healthy adult. ACOG explains this is because the immune system changes during pregnancy, making it harder to fight off infections. Critically, as ACOG notes, even if the mother does not feel very sick, she can pass the infection through the placenta to the fetus — and fetal and neonatal infections can be severe, leading to fetal loss, preterm labour, neonatal sepsis, meningitis, and death.'
+      },
+      {
+        question: 'I ate deli meat a few weeks ago and feel fine. Should I be worried?',
+        answer: 'ACOG\'s guidance states that symptoms of listeriosis may appear as late as 2 months after eating contaminated food — which is one of the reasons it is difficult to detect and easy to overlook. If you ate a food that puts you at risk and are concerned, ACOG advises talking with your ob-gyn. They can work with you to monitor your symptoms and decide whether testing is warranted. For asymptomatic women with no fever, ACOG\'s clinical guidance indicates testing is not automatically required, but if any symptoms — particularly fever above 38.1°C — develop within the two-month window, contact your provider immediately.'
+      },
+      {
+        question: 'What are the actual symptoms of listeriosis in pregnancy?',
+        answer: 'ACOG describes listeriosis symptoms as mild, flu-like: fever, chills, muscle aches, diarrhea, or upset stomach. More serious symptoms include stiff neck, headache, confusion, or loss of balance. ACOG specifically notes that even if you do not feel very sick, you can still pass the infection to your fetus. The FDA\'s guidance notes that a pregnant woman may have only a mild flu-like illness or may not feel sick at all — which is exactly why the fetal risk is so significant even when the mother appears well. A fever higher than 38.1°C (100.6°F) alongside these symptoms is the threshold ACOG identifies for simultaneous testing and treatment.'
+      },
+      {
+        question: 'Can I eat deli meat if I heat it until it\'s hot?',
+        answer: 'Yes. Both ACOG and the FDA confirm that cooking and pasteurisation are the only ways to kill Listeria, and both specify that hot dogs and deli/luncheon meats become safe to eat if reheated until steaming hot — the FDA specifies this means reaching an internal temperature of 165°F (74°C). The concern with cold deli meat is that Listeria can survive and even grow under refrigeration, so factory-cooked deli products can become contaminated after cooking during packaging or handling. Heating until steaming eliminates that risk for that serving.'
+      },
+      {
+        question: 'Is feta cheese safe in pregnancy?',
+        answer: 'It depends on how it is made, not which type of cheese it is. The FDA and ACOG both specify that soft cheeses including feta, Brie, Camembert, queso fresco, queso blanco, and blue-veined cheeses are safe if — and only if — the label confirms they are made with pasteurised milk. The risk is not the soft texture itself but the fact that many traditionally-made soft cheeses use unpasteurised milk, which can harbour Listeria. Always check the label. Hard cheeses, processed cheeses, and cream cheese are not on the avoidance list because they have different moisture and acidity profiles that make Listeria growth far less likely.'
+      }
+    ],
+    content: `It came up at lunch with your work colleagues before you even had the scan. A sandwich. Turkey from the deli counter, the kind you have eaten hundreds of times. Later that week you saw the list of foods to avoid during pregnancy, and turkey deli meat was on it. The gap between discovering you are pregnant and receiving any formal food safety guidance can be days or weeks — and this is one of the most common first-trimester panics for exactly that reason. Here is the full picture of why the risk exists, what the FDA and ACOG actually say, and what to do if you have already eaten something on the list.
+
+## Why Listeria Is Different From Other Food Safety Concerns in Pregnancy
+
+Most foodborne bacteria pose the same risk to pregnant women as to anyone else — an unpleasant few days, then recovery. Listeria is different in a specific and documented way. The FDA confirms that pregnant women are approximately 10 times more likely than the average healthy adult to develop listeriosis. ACOG's clinical guidance on Listeria exposure puts the incidence at approximately 13 times higher than the general population. The reason is the immune system changes of pregnancy — a necessary adaptation that prevents the mother's immune system from rejecting the fetus, but one that reduces her ability to fight off certain bacterial infections.
+
+What makes this more serious than just a higher risk of feeling ill: ACOG is explicit that the infection can pass through the placenta to the fetus even if the mother does not feel very sick. The fetal consequences are severe — ACOG identifies fetal loss, preterm labour, neonatal sepsis, meningitis, and neonatal death as potential outcomes of listeriosis in pregnancy. The mother's experience of the illness — often mild and flu-like, or sometimes no symptoms at all — does not predict what the fetus is experiencing on the other side of the placenta.
+
+There is also a specific feature of the bacteria that explains why refrigerated foods are the primary concern. The FDA's guidance on Listeria prevention notes that unlike most foodborne bacteria, Listeria monocytogenes can grow at refrigerator temperatures. It grows more slowly when the refrigerator is at or below 40°F (4°C), but it does not stop. This means that ready-to-eat refrigerated foods — deli meat, soft cheese, smoked salmon — that are stored in the fridge for several days after opening are giving Listeria time to multiply, even in the cold.
+
+## The Specific Foods the FDA and ACOG Identify as Higher Risk
+
+ACOG's patient guidance on Listeria and pregnancy provides a clear list of higher-risk foods to avoid. The FDA's food safety guidance for pregnant women specifies the same categories with more granular detail. Both ACOG and the FDA are the authoritative sources for this list — not general pregnancy articles that may summarise or oversimplify.
+
+**Hot dogs, deli meats, and luncheon meats served cold or at room temperature.** ACOG specifies this applies when served chilled or at room temperature. The FDA's guidance explains why: even factory-cooked products can become contaminated with Listeria after cooking, during packaging or handling, before they reach the consumer. Cold serving preserves whatever Listeria contamination occurred post-cooking. Both ACOG and the FDA confirm these products become safe to eat when reheated until steaming hot — reaching an internal temperature of 165°F (74°C) as the FDA specifies.
+
+**Unpasteurised soft cheeses.** ACOG lists feta, Brie, Camembert, queso blanco, queso fresco, and blue-veined cheeses as higher-risk when made with unpasteurised milk. The FDA adds Panela to the same list. The critical point both sources emphasise: these cheeses are safe if the label confirms they are made with pasteurised milk. The avoidance is not blanket — it is conditional on pasteurisation status. ACOG's guidance specifically advises checking that the label says "made with pasteurised milk" before eating soft cheese.
+
+**Refrigerated smoked seafood.** The FDA specifies this includes salmon, trout, whitefish, cod, tuna, and mackerel found in the refrigerator section or at deli counters — products labelled as nova-style, lox, kippered, smoked, or jerky. These are safe when heated in a cooked dish such as a casserole. Canned or shelf-stable smoked seafood is not on the avoidance list, because the shelf-stable processing eliminates the growth environment.
+
+**Refrigerated pâtés and meat spreads.** The FDA includes these on the avoidance list for the same reason as deli meats — refrigerated storage of ready-to-eat meat products creates the growth window. Canned or shelf-stable versions are safe.
+
+**Raw or unpasteurised milk and foods made with it.** ACOG specifies this includes soft cheeses like feta and queso blanco made with raw milk. Raw milk cheeses, regardless of whether they are soft or hard, carry Listeria risk if the milk was not pasteurised.
+
+**Raw and undercooked seafood, eggs, and meat.** ACOG advises avoiding all raw and undercooked versions of these foods during pregnancy, noting that cooking and pasteurisation are the only ways to kill Listeria. This includes sushi made with raw fish — ACOG confirms cooked sushi is safe.
+
+## What Heating and Pasteurisation Actually Do
+
+Both the FDA and ACOG confirm the same point with clarity: cooking and pasteurisation are the only ways to kill Listeria monocytogenes. This is the mechanism that makes reheating deli meat until steaming hot genuinely effective as a risk reduction strategy, not just a precaution that might help. Heat at the temperature required for steaming — 165°F (74°C) as the FDA specifies — kills the bacteria present in the food at that moment.
+
+Pasteurisation does the same in liquid foods and the milk used to produce cheese. When ACOG and the FDA specify "made with pasteurised milk" as the condition for soft cheese safety, this is because the pasteurisation process that the dairy underwent destroyed any Listeria present in the milk before cheese production began. Cheese made from pasteurised milk can still theoretically become contaminated post-production in very rare circumstances, which is why the advice is not "pasteurised cheese is entirely risk-free" but rather that it carries substantially less risk than unpasteurised.
+
+The FDA's refrigerator temperature guidance matters for the same reason: keeping the refrigerator at 40°F (4°C) or below slows Listeria growth. It does not stop it — which is why the guidance also includes using ready-to-eat refrigerated foods as soon as possible after opening, rather than storing them for extended periods.
+
+## If You Have Already Eaten a Higher-Risk Food
+
+This is the most common situation pregnant women find themselves in — eating deli meat or soft cheese before they knew they were pregnant, or before they received the food safety guidance. ACOG's clinical guidance is practical and specific about how to think about this.
+
+ACOG advises that if you think you ate something that puts you at risk of listeriosis, talk with your ob-gyn. They can work with you to monitor your symptoms and help decide whether testing is needed. ACOG's clinical Committee Opinion on management of Listeria exposure divides pregnant women into three groups based on symptoms:
+
+For **asymptomatic women** (no symptoms at all): ACOG does not recommend automatic testing. Women should be monitored and told to contact their provider if any symptoms develop within two months of potential exposure.
+
+For women with **mild symptoms but no fever**: Testing is not required by ACOG's guidance, though it may be done. If testing is pursued, ACOG notes the laboratory should be informed of the potential Listeria concern to prevent misidentification.
+
+For women with a **fever higher than 38.1°C (100.6°F)** and symptoms consistent with listeriosis for which no other cause is identified: ACOG recommends simultaneous testing and treatment — not waiting for results before initiating treatment.
+
+The key takeaway: if you ate a higher-risk food and feel completely well with no fever, the immediate clinical urgency is low. What ACOG asks you to do is know what symptoms to watch for — fever, muscle aches, chills, flu-like illness — and contact your provider if they appear within the two-month window after potential exposure. Do not wait two months before reporting a fever.
+
+## Practical Food Safety That Doesn't Require Overhauling Your Diet
+
+Avoiding Listeria risk in pregnancy is less about eliminating entire food categories and more about making specific substitutions. Most of the higher-risk foods have a safe equivalent version:
+
+Deli meat craving: buy it, heat it until steaming before eating. The underlying food is not the issue — cold serving is.
+
+Soft cheese: check the label. "Made with pasteurised milk" printed on the packaging makes that specific product safe. Hard cheeses such as cheddar, Parmesan, or Swiss are not on the avoidance list at all.
+
+Smoked salmon (lox): avoid the refrigerated deli version; canned or shelf-stable smoked salmon is safe. Fully cooked salmon prepared from fresh or frozen is safe in the quantities that stay within mercury guidelines — see ACOG's fish guidance for the specific limits.
+
+Our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers the first trimester weeks when many women are first navigating food safety decisions, alongside what is developing with the baby during those early weeks.
+
+## Common Questions About Listeria and Pregnancy
+
+### My prenatal appointment listed foods to avoid but didn't explain why. Is Listeria actually common?
+
+The FDA notes that about one-third of listeriosis cases happen during pregnancy, which is disproportionately high given that pregnant women make up only a small percentage of the population. ACOG's clinical guidance states that the incidence of pregnancy-associated listeriosis is approximately 13 times higher than in the general population. The combination of higher susceptibility and serious fetal consequences is why food safety guidance emphasises it — not because it is common in absolute terms, but because the stakes of infection during pregnancy are uniquely high.
+
+### What about queso fresco from a restaurant?
+
+Queso fresco, queso blanco, and similar fresh Mexican-style cheeses are specifically named by both ACOG and the FDA as higher-risk, even when made from pasteurised milk — because this cheese type has been associated with outbreaks even when pasteurised milk was used. ACOG's patient guidance lists them in the avoid category without a pasteurisation exception, which differs from its handling of feta or Brie (where pasteurised versions are acceptable). When eating at a restaurant, you generally cannot verify milk source or production conditions, so ACOG's guidance applies: avoid queso fresco-type cheeses during pregnancy.
+
+### Is Caesar salad safe? I know it can have raw egg.
+
+Caesar salad dressing made with raw eggs is on the avoidance list for the raw egg reason rather than Listeria specifically — ACOG advises avoiding raw and undercooked eggs during pregnancy. Most commercial bottled Caesar dressings use pasteurised egg or egg-free formulations, which are safe. At a restaurant, it is worth asking whether the dressing is house-made from raw eggs. Restaurant anchovies used in Caesar are typically packaged and safe; the egg in the dressing is the variable.
+
+## When to Contact Your Provider
+
+Contact your ob-gyn promptly if:
+
+- **You develop fever higher than 38.1°C (100.6°F)** alongside muscle aches, chills, headache, or flu-like symptoms within two months of eating a higher-risk food — ACOG identifies this combination as the threshold for simultaneous testing and treatment
+- **You experience a stiff neck, confusion, or loss of balance** — ACOG lists these as symptoms of more severe infection requiring immediate evaluation
+- **You ate a food that was subsequently recalled for Listeria contamination** — the FDA advises not eating recalled food and contacting your provider regardless of whether you have symptoms, so your provider can assess and advise
+
+For women without any symptoms who ate something from the higher-risk list: call your provider's office and report it during regular hours. ACOG's guidance does not require emergency evaluation for asymptomatic women, but your provider should know so they can advise on what to watch for.
+
+## Related Tools on SageNest
+
+Food safety practices are one of the areas that changes most abruptly when pregnancy begins — the rules that applied to your diet before conception shift the moment you have a positive test. If you are newly pregnant and working out your due date and timeline, our [pregnancy due date calculator](/pregnancy-due-date-calculator) can give you a confirmed estimate based on your last period, which helps you understand how far along you were when any food exposures occurred. For a full picture of how the first trimester develops week by week, our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks what is happening with your baby during the early weeks when Listeria precautions matter most.
+
+## The Bottom Line
+
+The FDA and ACOG both confirm that pregnant women are approximately 10 times more likely than the general population to develop serious illness from Listeria, and that infection can reach the fetus even when the mother feels only mildly ill. The specific higher-risk foods are hot dogs and cold deli meats (safe when reheated until steaming), soft cheeses made with unpasteurised milk (safe when pasteurised — check the label), refrigerated smoked seafood, refrigerated pâtés, and raw milk. Listeria is killed by heat and pasteurisation — which is why reheating is a genuine safeguard, not just a precaution. If you have eaten a higher-risk food and develop fever above 38.1°C with flu-like symptoms within two months, contact your provider immediately. If you remain asymptomatic, ACOG does not require automatic testing — but let your provider know so they can monitor for symptoms. Use our [pregnancy due date calculator](/pregnancy-due-date-calculator) to confirm your timeline if you need to understand when a potential exposure occurred relative to your pregnancy.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Listeria and Pregnancy](https://www.acog.org/womens-health/faqs/listeria-and-pregnancy)
+- **ACOG** — [Management of Pregnant Women With Presumptive Exposure to Listeria monocytogenes](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2014/12/management-of-pregnant-women-with-presumptive-exposure-to-listeria-monocytogenes)
+- **FDA** — [Ready-to-Eat Foods (Food Safety for Moms-to-Be)](https://www.fda.gov/food/people-risk-foodborne-illness/ready-eat-foods-food-safety-moms-be)
+- **FDA** — [What You Need to Know About Preventing Listeria Infections](https://www.fda.gov/food/buy-store-serve-safe-food/what-you-need-know-about-preventing-listeria-infections)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
+  },
+  {
     slug: 'pregnancy-constipation-fiber-iron-supplements',
     title: "You Can't Go to the Bathroom and Nobody Warned You — Pregnancy Constipation Explained",
     description: "Pregnancy constipation hits harder than anyone mentions. Here's why hormones and iron supplements make it worse, and what ACOG says actually helps.",

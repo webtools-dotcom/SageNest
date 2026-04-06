@@ -1,3 +1,9 @@
+## 2026-04-06 (Added new blog post: listeria-pregnancy-deli-meat-foods-to-avoid)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `listeria-pregnancy-deli-meat-foods-to-avoid`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/listeria-pregnancy-deli-meat-foods-to-avoid.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested Listeria-and-pregnancy article while keeping SageNest's canonical blog source and generated blog/redirect/sitemap artifacts synchronized.
+
 ## 2026-04-06 (Added new blog post: pregnancy-constipation-fiber-iron-supplements)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `pregnancy-constipation-fiber-iron-supplements`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
