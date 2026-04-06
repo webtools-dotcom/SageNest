@@ -1065,7 +1065,7 @@ The `imagePrompt` field sits between `imageUrl` and `faq` in the object:
   faq: [ ... ],
   content: `...`
 } 
-
+```
 ---
 
 ## Section 22: Discover Consistency Rule
