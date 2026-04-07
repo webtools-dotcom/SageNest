@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/pregnancy-weight-gain-overweight-obese-bmi-guidelines /blog/pregnancy-weight-gain-overweight-obese-bmi-guidelines 301
 /listeria-pregnancy-deli-meat-foods-to-avoid /blog/listeria-pregnancy-deli-meat-foods-to-avoid 301
 /pregnancy-constipation-fiber-iron-supplements /blog/pregnancy-constipation-fiber-iron-supplements 301
 /protein-pregnancy-first-trimester-nausea-crackers /blog/protein-pregnancy-first-trimester-nausea-crackers 301
@@ -80,6 +81,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/pregnancy-weight-gain-overweight-obese-bmi-guidelines /blog-static/pregnancy-weight-gain-overweight-obese-bmi-guidelines.html 200
+/blog/pregnancy-weight-gain-overweight-obese-bmi-guidelines/ /blog-static/pregnancy-weight-gain-overweight-obese-bmi-guidelines.html 200
 /blog/listeria-pregnancy-deli-meat-foods-to-avoid /blog-static/listeria-pregnancy-deli-meat-foods-to-avoid.html 200
 /blog/listeria-pregnancy-deli-meat-foods-to-avoid/ /blog-static/listeria-pregnancy-deli-meat-foods-to-avoid.html 200
 /blog/pregnancy-constipation-fiber-iron-supplements /blog-static/pregnancy-constipation-fiber-iron-supplements.html 200

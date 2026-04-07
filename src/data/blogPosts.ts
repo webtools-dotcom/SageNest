@@ -13,6 +13,124 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'pregnancy-weight-gain-overweight-obese-bmi-guidelines',
+    title: "Your Doctor Said 15 Pounds. Everyone Else Gained 30. Here's Why Your Target Is Different",
+    description: "Pregnancy weight gain targets for overweight and obese women are lower than the standard advice — and ACOG explains why less gain can actually have benefits for both.",
+    readingTime: '8 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-07',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'lifestyle photography, 85mm portrait lens, a pregnant woman in her early 30s sitting at a kitchen table looking thoughtfully at a notebook with written notes, one hand resting on her round belly, expression is quietly uncertain but calm, overcast morning window light from the left, a prenatal vitamin bottle and a glass of water on the table beside her, real home kitchen environment, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette',
+    faq: [
+      {
+        question: 'How much weight should I gain if I was overweight before pregnancy?',
+        answer: 'The IOM guidelines, which ACOG references, recommend a total pregnancy weight gain of 15 to 25 pounds for women who were overweight before pregnancy — meaning a pre-pregnancy BMI between 25 and 29.9. This is lower than the 25 to 35 pounds recommended for women who started at a healthy weight. For women with a BMI of 30 or higher before pregnancy, the IOM recommendation is 11 to 20 pounds total. These targets are set by your pre-pregnancy BMI, not by how much weight you feel comfortable gaining, and your specific target should be confirmed with your ob-gyn at your first prenatal visit.'
+      },
+      {
+        question: 'Is it safe to gain less than the recommended amount if I was obese when I got pregnant?',
+        answer: 'ACOG\'s guidance addresses this directly. For overweight women gaining below the IOM-recommended range, one systematic review found no increased risk of having a low birth weight infant. ACOG\'s patient guidance also confirms that if you are gaining less than the guidelines suggest and your fetus is growing well, you do not have to increase your weight gain to reach the target number. What matters most is fetal growth — which your provider monitors at prenatal visits through measurements and sometimes ultrasound. Never restrict intake without provider guidance, but if your fetus is growing appropriately, a below-guideline gain is not automatically a problem.'
+      },
+      {
+        question: 'Will eating less to avoid gaining too much hurt my baby?',
+        answer: 'Intentional caloric restriction is different from naturally gaining less than the guidelines while eating well. ACOG confirms that your ob-gyn should be involved in developing a nutrition and exercise plan, and that if fetal growth is not progressing appropriately, changes to your diet may be needed. The concern is not the number on the scale in isolation — it is whether the baby is growing normally. Your provider tracks fetal growth at prenatal visits precisely because weight gain alone does not tell the full picture. If you are worried about your food intake, bring this to your provider rather than self-managing restriction.'
+      },
+      {
+        question: 'Why is the weight gain target lower for overweight women if the baby needs the same nutrients?',
+        answer: 'The fetus\'s nutritional needs are the same regardless of the mother\'s starting weight — and the lower target does not reduce nutritional requirements. What changes is the caloric surplus needed to support the pregnancy. Women with higher pre-pregnancy BMI already have more stored energy available, so the body needs fewer additional calories from new weight gain to sustain fetal development. The lower target also reflects the clinical evidence that excessive gestational weight gain in overweight and obese women is associated with larger birth weight, increased delivery complications, and greater postpartum weight retention, without producing better fetal outcomes than gains within the recommended range.'
+      },
+      {
+        question: 'My pre-pregnancy BMI was 32. How do I know if I\'m on track?',
+        answer: 'At your first prenatal visit, ACOG confirms that your BMI should be calculated and a specific weight gain recommendation should be made based on it. With a BMI of 32, you would fall in the obese category (BMI 30 or above), and the IOM recommendation cited by ACOG is a total gain of 11 to 20 pounds across the pregnancy. Your weight is checked at each prenatal visit and your provider also assesses fetal growth separately — these two data points together are how your care team determines whether you and your baby are on track. The specific pound-per-week rate for your situation should come from your provider, not from general information.'
+      }
+    ],
+    content: `Everyone around you seems to have gained 30 or 35 pounds during their pregnancies, and your doctor gave you a number that sounds like it barely covers the baby. You assumed pregnancy meant you needed to eat substantially more, and then you were handed a target that made you feel like you were being asked to stay almost still. The reason this feels confusing is that the standard pregnancy weight gain advice circulating in most conversations, books, and websites is not written for your starting BMI — and the guidelines for women who began pregnancy overweight or with obesity are meaningfully different, with specific clinical reasoning behind them that most sources do not bother to explain.
+
+## The Guidelines Are Tiered by Pre-Pregnancy BMI — and Here Is Why That Changes Everything
+
+ACOG's nutrition guidance during pregnancy confirms this directly: if you were overweight or obese before pregnancy, you should gain less weight. The specific numbers come from the Institute of Medicine — the same body whose guidelines ACOG references for all gestational weight gain recommendations.
+
+For women who were **overweight** before pregnancy — defined as a pre-pregnancy BMI of 25 to 29.9 — the IOM recommendation is a total gain of **15 to 25 pounds**. For women with a pre-pregnancy BMI of **30 or higher**, categorised as obese by the IOM, the recommendation is **11 to 20 pounds** across the entire pregnancy. Compare this to the 25 to 35 pounds recommended for women who started at a healthy weight, and the gap is significant — often 10 to 15 pounds less than what is discussed in mainstream pregnancy conversation.
+
+The reason is not that the baby needs fewer nutrients when the mother starts heavier. The fetus requires the same nutrition regardless of maternal BMI. What changes is the caloric equation. Women with higher pre-pregnancy BMI carry existing energy stores that the body can draw on to support fetal development — stores that normal-weight women do not have to the same degree. The lower total gain target reflects this existing reserve, not a lower nutritional standard. Your prenatal vitamin and food quality matter just as much as at any other BMI.
+
+The other reason the targets differ is that the evidence links excessive gestational weight gain in overweight and obese women specifically to higher birth weight — larger babies, which increases delivery complications — as well as greater postpartum weight retention, without producing better outcomes for the fetus than staying within the recommended range. ACOG's Committee Opinion on weight gain during pregnancy confirms that associations exist between excessive gestational weight gain and increased birth weight and postpartum weight retention.
+
+## What the Evidence Says About Gaining Less Than the Guideline
+
+One of the most practically useful things ACOG's guidance acknowledges is what happens when overweight or obese women gain below the recommended range — and the evidence is reassuring enough that ACOG incorporated it into clinical guidance.
+
+ACOG's Committee Opinion on weight gain notes that one systematic review found overweight and obese women who gained less weight than the IOM recommendations do not have an increased risk of having a low birth weight infant. For overweight women specifically, ACOG notes that several studies found those gaining 6 to 14 pounds had similar fetal growth, similar perinatal and neonatal outcomes, and less postpartum weight retention compared to those gaining within the IOM-recommended range.
+
+This led ACOG to state something important in its clinical guidance: for an overweight pregnant woman gaining less than the recommended amount but with an appropriately growing fetus, no evidence exists that encouraging increased weight gain to conform with the current IOM guidelines will improve maternal or fetal outcomes.
+
+ACOG's patient-facing guidance on obesity and pregnancy repeats this in accessible language: if you are gaining less than the recommended guidelines and your fetus is growing well, you do not have to increase your weight gain to catch up to the guidelines.
+
+This is the key distinction. The guidelines are targets, not floors that must be reached at all costs. What matters clinically is fetal growth — which your provider assesses at prenatal visits directly, through measurements and, when indicated, ultrasound. The scale number and the fetal growth measurement are two separate data points, and fetal growth is the one that guides clinical decisions.
+
+## If Fetal Growth Is the Actual Measure, What Is Your Provider Watching For?
+
+At every prenatal visit, ACOG confirms your weight is checked and the growth of your fetus is also assessed. These are distinct assessments that together tell a more complete story than either alone.
+
+Fetal growth is typically measured through fundal height — a measurement from the pubic bone to the top of the uterus — at standard prenatal appointments. When this measurement raises concern, or at specific standard timepoints in the pregnancy, an ultrasound may be ordered to assess fetal size more precisely. If your provider finds that fetal growth is not progressing appropriately, ACOG confirms that changes may need to be made to your diet and exercise plan.
+
+This is the clinical pathway that matters: it is not a sliding scale of how much weight you gained this week. It is whether the baby is growing. If the baby is growing normally and you are below the total gain guideline, that situation does not require intervention according to ACOG's guidance. If the baby is not growing appropriately regardless of your weight gain number, that does require a response.
+
+Our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) lets you enter your pre-pregnancy BMI and current pregnancy week to check whether your total gain is within the range that corresponds to your starting weight. It is a reference tool, not a substitute for the conversation with your provider — but it can help you understand where your current gain sits relative to the IOM ranges that ACOG uses.
+
+## The Complication Risk Picture for Higher BMI Pregnancies
+
+Understanding the weight gain guidelines means understanding the broader clinical context they sit in, because the two are connected. ACOG's obesity and pregnancy guidance is direct about the risks that higher pre-pregnancy BMI adds to pregnancy, independent of how much weight is gained during pregnancy itself.
+
+These risks include gestational hypertension, preeclampsia, gestational diabetes, and an increased likelihood of caesarean birth. The weight gain guidelines for overweight and obese women are calibrated partly in response to this risk picture — keeping total gain lower reduces the additive effect of excessive weight gain on top of an already-elevated baseline risk.
+
+Exercise is part of this picture too. ACOG's guidance on physical activity during pregnancy specifically notes that aerobic exercise in overweight and obese pregnant women is associated with a significantly lower incidence of gestational diabetes, and that exercise should be encouraged for this reason. Exercise has shown only a modest effect on total gestational weight gain — about 1 to 2 kilograms on average, according to ACOG's clinical guidance — so it is not a primary weight management tool during pregnancy, but it meaningfully reduces complication risk.
+
+Your provider may recommend a referral to a registered dietitian or nutritionist to help you plan for your specific nutritional needs — ACOG confirms that if you are overweight or obese, your ob-gyn may suggest this. A dietitian can build a practical eating structure that meets fetal nutritional requirements while staying within the weight gain target that is appropriate for your BMI.
+
+## Common Questions About Weight Gain at a Higher BMI
+
+### My friends all gained 30 to 35 pounds and their babies were fine. How can my target be so much lower?
+
+Their starting BMI was different from yours. The IOM guidelines are structured around pre-pregnancy BMI precisely because the caloric and physiological requirements differ by starting point. Women who begin pregnancy at a healthy weight have less stored energy available, which is why their gain target is higher — their body needs to build more of what yours already has. The 25 to 35 pound figure that circulates widely in pregnancy conversation is the healthy-weight recommendation. It is not a universal standard that everyone should aim for.
+
+### I'm barely gaining anything in the first trimester. Should I be worried?
+
+ACOG's guidance notes that during the first 12 weeks of pregnancy — the first trimester — you may gain only 1 to 5 pounds or no weight at all, regardless of starting BMI. Minimal first-trimester gain is normal and expected. The gain targets primarily apply to the second and third trimesters, when fetal growth accelerates. If your first trimester gain is minimal but you are eating adequately and your first prenatal appointments show fetal development on track, this is not a clinical concern.
+
+### I've been eating very little because I'm scared of gaining too much. Is my baby okay?
+
+This is the question to bring to your provider directly, not to answer from a general article. ACOG's guidance confirms that your nutrition and exercise plan should be developed with your ob-gyn, and that fetal growth is the measure that guides dietary decisions. If you have been significantly restricting your intake, your provider can assess whether fetal growth is proceeding normally and advise on what adequate intake looks like for your specific situation. There is no clinical basis for significant restriction during pregnancy without provider involvement — the goal is appropriate total gain within your BMI range, not minimal gain.
+
+## When to Talk to Your Provider About Weight Gain
+
+Contact your ob-gyn between scheduled prenatal visits if:
+
+- **You have lost weight** in the second or third trimester without an obvious explanation — first-trimester weight loss from nausea is common, but second and third trimester loss warrants a conversation
+- **You have been significantly restricting food intake** and are concerned about whether you are meeting nutritional needs — your provider can assess fetal growth and advise on appropriate intake
+- **You are gaining much faster than expected** — the relationship between total gain and complication risk is real, and if your gain rate significantly exceeds the IOM range for your BMI, this is worth discussing rather than waiting for your next scheduled appointment
+- **Your provider gives you a weight gain target and does not explain which BMI category it is based on** — it is entirely appropriate to ask: what is my BMI, what range does that put me in, and what is the total gain target for that range?
+
+## Related Tools on SageNest
+
+Our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) uses your pre-pregnancy BMI to give you a personalised target range based on the IOM guidelines that ACOG references. You can also track how your current gain compares to where you would be expected to be at your current week. For a picture of what is happening with your baby's development at each stage of pregnancy alongside the weeks when growth monitoring matters most, our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers fetal development from the first trimester through the final weeks.
+
+## The Bottom Line
+
+The IOM guidelines that ACOG uses set pregnancy weight gain targets by pre-pregnancy BMI — not by a universal standard. For women who were overweight before pregnancy (BMI 25 to 29.9), the recommended total gain is 15 to 25 pounds. For women with a pre-pregnancy BMI of 30 or above, it is 11 to 20 pounds. ACOG's clinical guidance confirms that for overweight and obese women gaining below these ranges with appropriately growing fetuses, there is no evidence that encouraging higher gain improves outcomes — and one systematic review found no increased risk of low birth weight in women who gain below the IOM targets. What your provider is actually monitoring is fetal growth, not just the number on the scale. If fetal growth is on track, below-guideline gain is not automatically a problem. Develop your nutrition and exercise plan with your provider, and use our [pregnancy weight gain calculator](/pregnancy-weight-gain-calculator) to understand where your total gain sits relative to your BMI-appropriate target range.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Weight Gain During Pregnancy](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/01/weight-gain-during-pregnancy)
+- **ACOG** — [Obesity and Pregnancy](https://www.acog.org/womens-health/faqs/obesity-and-pregnancy)
+- **ACOG** — [Nutrition During Pregnancy](https://www.acog.org/store/products/patient-education/pamphlets/pregnancy/nutrition-during-pregnancy)
+- **ACOG** — [How much weight should I gain during pregnancy?](https://www.acog.org/womens-health/experts-and-stories/ask-acog/how-much-weight-should-i-gain-during-pregnancy)
+- **ACOG** — [Physical Activity and Exercise During Pregnancy and the Postpartum Period](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2020/04/physical-activity-and-exercise-during-pregnancy-and-the-postpartum-period)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**`
+  },
+  {
     slug: 'listeria-pregnancy-deli-meat-foods-to-avoid',
     title: "You Ate Deli Meat Before You Knew You Were Pregnant — Here's What to Know",
     description: "Listeria in pregnancy is 10 times more likely to make you seriously ill than it is anyone else. Here's what the FDA and ACOG say to avoid and what to do if you ate it.",
