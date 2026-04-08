@@ -1,3 +1,9 @@
+## 2026-04-08 (Added new blog post: calcium-pregnancy-prenatal-vitamin-gap)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `calcium-pregnancy-prenatal-vitamin-gap`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/calcium-pregnancy-prenatal-vitamin-gap.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested calcium-in-prenatal gap article while keeping SageNest's canonical blog source and generated blog/redirect/sitemap artifacts synchronized.
+
 ## 2026-04-07 (Added new blog post: pregnancy-weight-gain-overweight-obese-bmi-guidelines)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `pregnancy-weight-gain-overweight-obese-bmi-guidelines`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
