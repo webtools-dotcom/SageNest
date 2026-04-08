@@ -1,3 +1,9 @@
+## 2026-04-08 (Added new blog post: gestational-diabetes-glucose-test-failed-causes)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `gestational-diabetes-glucose-test-failed-causes`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata field `updatedAt` used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/gestational-diabetes-glucose-test-failed-causes.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested gestational-diabetes glucose-test explainer article while keeping SageNest's canonical blog source and generated blog/redirect/sitemap artifacts synchronized.
+
 ## 2026-04-08 (Added new blog post: vitamin-b12-absorption-pregnancy-risk-factors)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `vitamin-b12-absorption-pregnancy-risk-factors`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
