@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/vitamin-k-pregnancy-placenta-newborn /blog/vitamin-k-pregnancy-placenta-newborn 301
 /vitamin-b12-absorption-pregnancy-risk-factors /blog/vitamin-b12-absorption-pregnancy-risk-factors 301
 /calcium-pregnancy-prenatal-vitamin-gap /blog/calcium-pregnancy-prenatal-vitamin-gap 301
 /pregnancy-weight-gain-overweight-obese-bmi-guidelines /blog/pregnancy-weight-gain-overweight-obese-bmi-guidelines 301
@@ -83,6 +84,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/vitamin-k-pregnancy-placenta-newborn /blog-static/vitamin-k-pregnancy-placenta-newborn.html 200
+/blog/vitamin-k-pregnancy-placenta-newborn/ /blog-static/vitamin-k-pregnancy-placenta-newborn.html 200
 /blog/vitamin-b12-absorption-pregnancy-risk-factors /blog-static/vitamin-b12-absorption-pregnancy-risk-factors.html 200
 /blog/vitamin-b12-absorption-pregnancy-risk-factors/ /blog-static/vitamin-b12-absorption-pregnancy-risk-factors.html 200
 /blog/calcium-pregnancy-prenatal-vitamin-gap /blog-static/calcium-pregnancy-prenatal-vitamin-gap.html 200
