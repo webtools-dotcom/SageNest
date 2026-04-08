@@ -13,6 +13,129 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'vitamin-k-pregnancy-placenta-newborn',
+    title: "Why Vitamin K Doesn't Cross the Placenta — And What That Means for You Both",
+    description: "Vitamin K doesn't transfer easily to your baby during pregnancy. CDC and NIH explain why, what it means for the newborn shot, and how to get enough K1 and K2.",
+    readingTime: '8 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-08',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'lifestyle photography, 85mm portrait lens, a pregnant woman in her early 30s sitting at a kitchen table with a dark leafy green salad in front of her, one hand resting on her round belly, eyes cast slightly downward in thought, jaw relaxed not smiling, late afternoon sun through a window to her left casting warm directional light, a glass of water on the table, real home kitchen with wooden table visible, candid and real not staged, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette',
+    faq: [
+      {
+        question: "Why does my baby need a vitamin K shot if I eat plenty of greens?",
+        answer: "Because vitamin K doesn't transfer easily from mother to baby through the placenta. The CDC confirms that \"vitamin K from the mom is not easily shared with the developing baby during pregnancy,\" so a baby's vitamin K stores at birth are very low regardless of how much you consume. Breast milk also contains only low amounts of vitamin K, and newborns don't yet have the gut bacteria that help produce it internally — which is why the shot is given at birth as a preventive measure, not because something went wrong with your diet."
+      },
+      {
+        question: "What is the difference between vitamin K1 and vitamin K2?",
+        answer: "The NIH identifies two main forms. Vitamin K1 (phylloquinone) is found in green leafy vegetables, vegetable oils, and some fruits — it is the primary dietary form for most people. Vitamin K2 (menaquinones, often abbreviated as MK) is found in fermented foods and certain animal products, and has a longer half-life in the body. Both forms support blood clotting, but K2 has been studied for its additional role in bone mineralisation. Most prenatal vitamins contain K1, and most people meet the recommended intake through green vegetables."
+      },
+      {
+        question: "Is it safe to take vitamin K supplements during pregnancy?",
+        answer: "Vitamin K in food and in prenatal vitamins is safe during pregnancy — the NIH confirms no established upper limit for vitamin K, meaning no toxicity has been identified at amounts typically consumed from food and standard supplements. However, if you take any anticoagulant medications such as warfarin, vitamin K intake directly affects how those medications work, and changes to your intake require a conversation with your provider before adjusting anything. Do not add a separate high-dose vitamin K supplement without provider guidance if you are on any blood-thinning medication."
+      },
+      {
+        question: "Does cooking destroy vitamin K in leafy greens?",
+        answer: "Cooking has a modest effect on vitamin K but does not eliminate it significantly. According to the NIH, leafy greens such as kale, spinach, broccoli, and collard greens remain among the most concentrated food sources of vitamin K1 whether raw or cooked. Because vitamin K is fat-soluble, pairing these vegetables with a small amount of healthy fat — olive oil on a salad, or cooking spinach in a little oil — improves how well your body absorbs the vitamin K they contain."
+      },
+      {
+        question: "Should I refuse the vitamin K shot for my newborn?",
+        answer: "The CDC is clear: infants who do not receive the vitamin K shot at birth are 81 times more likely to develop vitamin K deficiency bleeding (VKDB) than those who do. VKDB can cause bleeding into the brain and other organs, often with no warning signs beforehand. The CDC and the American Academy of Pediatrics have recommended this single shot at birth since 1961, and decades of evidence support both its safety and effectiveness. Your provider is the right person to discuss any specific concerns before delivery."
+      }
+    ],
+    content: `
+Vitamin K doesn't cross the placenta easily. The CDC states this directly: vitamin K from the mother is not easily shared with the developing baby during pregnancy. Every green vegetable you eat, every portion of your daily intake — very little of it reaches your baby before birth. That is the reason the vitamin K shot exists, and understanding it changes how you think about your own vitamin K intake for the rest of this pregnancy.
+
+## What Your Baby's Low Vitamin K at Birth Actually Tells You
+
+The newborn vitamin K shot has been routine in the United States since 1961, recommended continuously by the American Academy of Pediatrics for over six decades. Most parents hear about it at the hospital but are not told why it is necessary — the explanation tends to get lost in the speed of delivery and the first hour after birth.
+
+The CDC's guidance on vitamin K deficiency bleeding in newborns lays out the specific reasons babies are born with very low vitamin K stores. The first is the placental barrier: vitamin K from the mother does not cross easily, so cord blood and infant liver levels of vitamin K are substantially below adult levels at birth regardless of maternal intake. The second is that the gut bacteria that produce a portion of an adult's vitamin K supply are not yet present in a newborn's intestines — they take weeks to become established. The third is that breast milk contains only low amounts of vitamin K, meaning exclusively breastfed babies do not receive significant supplementation through feeding alone.
+
+The result is a specific vulnerability window that exists for all newborns regardless of how well-nourished their mother is. The condition that can develop when vitamin K stores are insufficient is called **vitamin K deficiency bleeding (VKDB)** — internal bleeding that can occur anywhere in the body, including in the brain, often with no visible warning signs before it starts. The CDC confirms that infants who do not receive the vitamin K shot at birth are 81 times more likely to develop late VKDB than those who do. A single intramuscular injection at birth reduces this risk to less than 1 in 100,000 infants.
+
+This is worth understanding before your delivery — not because you need to do anything differently during pregnancy, but because knowing the mechanism means you can ask informed questions about the shot and understand exactly what it is protecting against.
+
+## The Two Forms of Vitamin K — and Why They Come from Different Foods
+
+Most pregnancy nutrition conversations treat vitamin K as a single nutrient. The NIH's vitamin K fact sheet clarifies it is actually a family of compounds, and the two main forms come from entirely different food sources and behave differently in the body.
+
+**Vitamin K1** — also called phylloquinone — is the form found in green leafy vegetables, vegetable oils, and some fruits. This is what most people think of when they hear "vitamin K." Spinach, kale, broccoli, collard greens, Brussels sprouts, and lettuce are all concentrated sources. Most prenatal vitamins contain K1 when they include vitamin K at all, and green vegetables are reliably the most efficient way to meet daily needs.
+
+**Vitamin K2** — the menaquinones, abbreviated as MK-4 through MK-13 — comes primarily from fermented foods and certain animal products. The NIH identifies these as found in foods such as fermented cheeses, some meats, and fermented soy products. K2 has a longer half-life in the body than K1, meaning it circulates for longer before being cleared. Research into K2's specific roles, including its relationship to bone mineralisation in addition to blood clotting, is ongoing, but the NIH notes that the primary dietary form for most people eating a varied diet is K1 from vegetables.
+
+Both forms support the same fundamental function: activating the clotting proteins that your blood needs to stop bleeding. This is the mechanism that makes vitamin K essential at birth — without it, clotting factors cannot form properly, and uncontrolled bleeding can occur anywhere.
+
+Because vitamin K is **fat-soluble**, the NIH's guidance on dietary patterns notes that pairing vitamin K-containing vegetables with healthy fat improves absorption meaningfully. A salad dressed with olive oil, or kale sautéed in a small amount of oil, delivers substantially more absorbable K1 than the same greens eaten without fat. This is a practical point: the raw kale in a zero-dressing salad is a less efficient source than the same kale cooked briefly in olive oil.
+
+## What Your Daily Intake During Pregnancy Actually Looks Like
+
+The adequate intake for vitamin K is established by the Food and Nutrition Board, and unlike many pregnancy nutrients, the target does not increase substantially during pregnancy compared to the standard adult level. The NIH notes that insufficient data existed to establish an Estimated Average Requirement for vitamin K — meaning the target is set as an Adequate Intake rather than an RDA, reflecting the boundaries of current evidence rather than a clinical gap. The NIH also confirms that most people in the United States get enough vitamin K from the foods they eat.
+
+In practical terms, a single cup of raw spinach provides a substantial portion of the daily target. A half-cup of cooked broccoli, a serving of kale, or a side of Brussels sprouts all contribute meaningfully. For women eating any regular quantity of dark leafy greens or salads, the K1 target is rarely a concern.
+
+K2 is harder to track because it comes from less commonly eaten fermented foods — natto (a Japanese fermented soy product) contains very high amounts, while aged cheeses like Gouda and Brie contain moderate amounts, and some organ meats contribute as well. For women eating a varied diet that includes some dairy and occasional fermented foods, K2 intake is generally adequate. For women with very limited diets due to first-trimester food aversions or ongoing nausea, it is worth discussing overall dietary variety with your provider.
+
+Our [week-by-week pregnancy guide](/pregnancy-week-by-week) covers the fetal development stages when blood vessel and organ formation is most active — the periods when the maternal vitamin K picture is most relevant to what is happening with your baby's developing system.
+
+## The Specific Situations That Require a Provider Conversation
+
+For most pregnant women eating a reasonably varied diet, vitamin K is not a nutrient that requires active management. But there are specific circumstances where your provider should know about your vitamin K intake.
+
+The most clinically important is **anticoagulant medication use**. Warfarin — a blood thinner — works directly by antagonising vitamin K's role in clotting. Women on warfarin during pregnancy are managed very carefully by their providers because the interaction between warfarin dosing and vitamin K intake is precise and consequential. If you are on warfarin or any other anticoagulant, your provider should be actively managing your vitamin K intake — do not make changes to your diet or supplementation without telling them.
+
+The NIH also identifies people with **malabsorption conditions** — including celiac disease, Crohn's disease, cystic fibrosis, and short bowel syndrome — as being at higher risk of vitamin K deficiency. These conditions reduce how effectively fat-soluble vitamins, including K, are absorbed from food. If any of these conditions apply to you, your provider should already be monitoring your fat-soluble vitamin levels, but raising vitamin K specifically is worth doing if it has not come up.
+
+**Severe and prolonged first-trimester vomiting** that has limited your vegetable intake for weeks is also worth raising, particularly if leafy greens have been among your strongest food aversions. This is not an emergency situation, but it is relevant context for your provider to have.
+
+The NIH Consumer fact sheet also notes that **certain medications can reduce vitamin K absorption**, including some antibiotics and anti-seizure medications. If you are on any long-term prescription medication, checking whether it affects vitamin K status is a reasonable question for your provider.
+
+## Common Questions About Vitamin K in Pregnancy
+
+### My prenatal doesn't seem to have much vitamin K in it. Is that a problem?
+
+Not for most women. Unlike iron, folate, or iodine — nutrients where prenatal vitamins are designed to close a documented dietary gap — vitamin K is generally obtainable from food for women eating any quantity of leafy greens or other vegetables. The NIH confirms that most people in the United States meet vitamin K requirements through diet. Your prenatal's vitamin K content is supplemental to a diet that should be the primary source, not the main delivery mechanism.
+
+### Can I decline the vitamin K shot for my baby?
+
+This is a decision that belongs with your provider, but the CDC's guidance is unambiguous about the risk. Infants who do not receive the shot are 81 times more likely to develop VKDB, and in the majority of cases there are no warning signs before life-threatening bleeding begins. One in five babies who develop VKDB dies from it, and about half of those with late VKDB develop bleeding into the brain, which can cause permanent damage. The shot has been recommended since 1961 and the safety data now spans more than sixty years. Discuss specific concerns with your provider before delivery so you have accurate information when you arrive.
+
+### Does taking extra vitamin K during pregnancy help the baby absorb more?
+
+No — the placental barrier limitation is not changed by increasing maternal intake. The CDC is explicit that vitamin K from the mother is not easily shared with the developing baby during pregnancy. Eating more leafy greens will not meaningfully raise your baby's vitamin K levels at birth because the limiting factor is the transport mechanism, not the maternal supply. This is precisely why the shot is given directly to the newborn rather than relying on maternal intake or breast milk transfer.
+
+## When to Talk to Your Provider About Vitamin K
+
+Raise vitamin K specifically with your provider if:
+
+- **You take warfarin or any anticoagulant medication** — vitamin K intake directly affects how these medications work, and any dietary changes require coordination with your prescribing provider
+- **You have been diagnosed with celiac disease, Crohn's disease, cystic fibrosis, or any condition affecting fat-soluble vitamin absorption** — these conditions reduce K absorption regardless of dietary intake, and monitoring is appropriate
+- **You have had bariatric surgery** — fat-soluble vitamin absorption may be reduced long-term, and vitamin K status should be part of your nutritional monitoring during pregnancy
+- **You take anti-seizure medications** — the CDC's VKDB guidance specifically notes that mothers on these medications are at higher risk of having infants with early VKDB, and your provider should be aware of this risk and discuss management before delivery
+- **Your first trimester nausea has meant almost no vegetable intake for more than four to six weeks** — a brief dietary review with your provider is worthwhile to assess whether any supplementation is needed for fat-soluble vitamins generally
+
+## Related Tools on SageNest
+
+If you want to understand what is developing in your baby week by week — including the stages of organ and vascular development when adequate maternal nutrition is most relevant — our [pregnancy week-by-week guide](/pregnancy-week-by-week) tracks fetal milestones from the earliest weeks through the third trimester. To confirm where you are in your pregnancy and which nutritional priorities apply to your current trimester, our [pregnancy due date calculator](/pregnancy-due-date-calculator) gives you an accurate timeline based on your last menstrual period.
+
+## The Bottom Line
+
+Vitamin K doesn't cross the placenta easily — the CDC is direct about this — which means every newborn arrives with low vitamin K stores regardless of maternal intake. This is why the vitamin K injection has been given at birth since 1961 and why infants who don't receive it are 81 times more likely to develop potentially fatal bleeding. For you during pregnancy, the picture is simpler: vitamin K comes in two forms (K1 from leafy greens and K2 from fermented foods and some animal products), it is fat-soluble so it absorbs better with dietary fat, and most women eating any quantity of dark vegetables are meeting their daily target. The situations that require active management are specific — anticoagulant medications, malabsorption conditions, and certain prescription drugs. If none of those apply to you, the most useful thing you can do is eat your greens with a little oil and have an informed conversation with your provider before delivery about the vitamin K shot. Use our [pregnancy week-by-week guide](/pregnancy-week-by-week) to track the developmental stages when vitamin K's role in your baby's clotting system is most actively being built.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **NIH Office of Dietary Supplements** — [Vitamin K: Health Professional Fact Sheet](https://ods.od.nih.gov/factsheets/VitaminK-HealthProfessional/)
+- **NIH Office of Dietary Supplements** — [Vitamin K: Consumer Fact Sheet](https://ods.od.nih.gov/factsheets/VitaminK-Consumer/)
+- **CDC** — [About Vitamin K Deficiency Bleeding](https://www.cdc.gov/vitamin-k-deficiency/about/index.html)
+- **CDC** — [Protect Your Baby from Bleeds](https://www.cdc.gov/vitamin-k-deficiency/fact-sheet/index.html)
+- **CDC** — [Frequently Asked Questions About Vitamin K Deficiency Bleeding](https://www.cdc.gov/vitamin-k-deficiency/faq/index.html)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+`
+  },
+  {
     slug: 'vitamin-b12-absorption-pregnancy-risk-factors',
     title: 'You Eat Meat and Take Your Prenatal — But Your B12 Might Still Be Low',
     description: 'Vitamin B12 absorption requires more than just eating it. NIH explains who is actually at risk during pregnancy and what low B12 means for fetal development.',
