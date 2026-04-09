@@ -99,11 +99,12 @@ export async function getSitemapEntries(options = {}) {
     { path: '/similar-tools', priority: '0.7', lastmod: '2026-02-01' }
   ];
 
-  const tools = (await loadTools()).map((tool) => ({ path: tool.path, priority: tool.path === '/pregnancy-due-date-calculator' ? '1.0' : '0.9' }));
-
+  const tools = (await loadTools()).map((tool) => ({ path: tool.path, priority: tool.path === '/pregnancy-due-date-calculator' ? '1.0' : '0.9', lastmod: '2026-02-01' }));
+  
   const weekRoutes = Array.from({ length: 40 }, (_, index) => ({
     path: `/pregnancy-week-by-week/week-${index + 1}`,
-    priority: '0.8'
+    priority: '0.8',
+    lastmod: '2026-02-01'
   }));
 
   const localBlogPosts = await loadLocalBlogPosts();
