@@ -13,6 +13,130 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'fiber-pregnancy-constipation-not-helping',
+    title: "You're Eating More Fiber. You're Still Constipated. Here's Exactly Why.",
+    description: 'Fiber alone won\'t fix pregnancy constipation — ACOG and NIH explain the missing piece most women skip, and why iron supplements make everything harder.',
+    readingTime: '7 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-09',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'candid photograph, 35mm lens, a pregnant woman in her late 20s sitting on a bathroom floor with her back against the wall, knees drawn up, one hand resting on her round belly, head tilted back slightly with eyes closed, expression is exhausted resignation not distress, single overhead light casting a slightly harsh white glow, real home bathroom with cabinet and towel visible, wearing comfortable cotton shorts and a loose top, candid and real not staged, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette',
+    faq: [
+      {
+        question: 'Why am I so constipated during pregnancy even though I eat healthy?',
+        answer: 'Pregnancy constipation is primarily caused by hormonal changes, not diet. MedlinePlus confirms that hormone changes during pregnancy slow down the digestive system, meaning food moves more slowly through your bowels regardless of what you eat. Later in pregnancy, the growing uterus pressing on the rectum compounds this. A healthy diet helps manage symptoms, but it cannot override the hormonal mechanism behind pregnancy constipation — which is why even women who eat well and exercise regularly still experience it.'
+      },
+      {
+        question: 'Can eating more fiber make constipation worse during pregnancy?',
+        answer: 'Yes, if it is not paired with enough fluid. MedlinePlus explicitly states that adding foods with fiber to your diet slowly is important, because eating more fiber too quickly can cause bloating and gas — and without adequate water, increased insoluble fiber can actually make stools harder and more difficult to pass. ACOG\'s clinical guidance also confirms that dehydration contributes to constipation, and that ensuring adequate fluid intake is essential alongside any fiber increase. Fiber pulls water into the bowel to do its job — without that water, it cannot work.'
+      },
+      {
+        question: 'Do iron supplements make pregnancy constipation worse?',
+        answer: 'For many women, yes. Iron supplementation — including the iron in prenatal vitamins — is a well-documented contributor to constipation because iron salts are irritating to the gastrointestinal lining and slow bowel transit. If your constipation worsened around the time you started prenatal vitamins or an additional iron supplement, this is a likely contributor. Discuss this specifically with your provider; they may adjust the form, dose, or timing of your iron to reduce the effect without compromising iron intake.'
+      },
+      {
+        question: 'How much water do I actually need during pregnancy to help with constipation?',
+        answer: 'ACOG\'s healthy eating guidance recommends 8 to 12 cups of water per day during pregnancy — and this amount is particularly important if you are increasing fiber intake. Fiber draws water into the bowel to soften stool and promote movement, so the two must increase together. Drinking water throughout the day rather than in large amounts at once is more effective, and warm liquids — particularly in the morning — can also help stimulate the gastrocolic reflex, the natural bowel-movement signal that is strongest after eating breakfast.'
+      },
+      {
+        question: 'Is it safe to use a stool softener during pregnancy?',
+        answer: 'MedlinePlus guidance on common pregnancy symptoms recommends asking your provider about trying a stool softener, and also advises asking before using any laxatives during pregnancy. Stool softeners and laxatives vary significantly — some are considered safe in pregnancy and some are not. ACOG\'s clinical guidance identifies specific categories of laxatives that are appropriate during pregnancy, including osmotic agents. This is a conversation to have with your provider rather than a decision to make independently at the pharmacy.'
+      }
+    ],
+    content: `
+You switched to whole grain bread. You added an extra portion of vegetables at dinner. You ate prunes. You have been doing everything the advice said — and you are still dealing with the same blocked, uncomfortable feeling you have had since the first trimester. If more fiber was the answer, it should have worked by now. The reason it has not is that fiber is only half of the equation, and nobody explained what the other half is.
+
+## Why Pregnancy Changes Your Digestive System Before You Change Anything Else
+
+The starting point for understanding pregnancy constipation is understanding why the problem exists regardless of what you eat. MedlinePlus confirms this directly: hormone changes during pregnancy slow down the digestive system. This is not a nutrition problem — it is a hormonal one. The elevated progesterone that your body produces throughout pregnancy relaxes smooth muscle tissue throughout the body, including the muscles of the intestinal wall that normally contract in rhythmic waves to move stool through the bowel. When those muscles work more slowly, transit time increases, and slower transit means more water is absorbed from the stool before it reaches the rectum — producing the hard, dry, difficult-to-pass stool that defines pregnancy constipation.
+
+MedlinePlus also confirms that later in pregnancy, the physical pressure from the growing uterus on the rectum compounds this further. By the third trimester, the combination of hormonal slowing and mechanical pressure can make the problem significantly worse than it was in the first trimester even if your diet has not changed at all.
+
+This matters because it reframes what fiber can and cannot do. Fiber is a genuine and effective part of managing pregnancy constipation — ACOG confirms this — but it cannot override the hormonal mechanism. What it can do is work with that mechanism to keep things moving as efficiently as possible. When fiber fails to help, it is almost always because the conditions it needs to function are not in place.
+
+## The Single Reason Fiber Stops Working
+
+Fiber works by drawing water into the bowel to soften stool and add bulk — and that bulk stimulates the intestinal walls to contract and move the stool forward. The water it draws on comes from what you drink. When your fluid intake is insufficient, fiber cannot do its job. It sits in the bowel, drawing what moisture it can from the intestinal lining itself, and the result is harder, drier stool — not softer.
+
+ACOG's clinical guidance is direct about this: dehydration contributes to constipation, and adequate fluid intake is essential alongside any dietary approach to constipation management. Their guidance on high-fiber diets for bowel function specifically notes that reviewing dietary habits and encouraging adequate fluid intake go together as a pair. One without the other is incomplete management.
+
+ACOG recommends 8 to 12 cups of water per day during pregnancy. Most women do not reach this. If you have increased your fiber intake and not correspondingly increased your fluid intake, the fiber you added may be working against you. MedlinePlus also specifically flags the problem: adding foods with fiber to your diet should be done slowly, because eating more fiber quickly can cause bloating and gas — and in an already slow-moving pregnancy bowel, a sudden fiber increase without enough water creates exactly this outcome.
+
+The practical implication is simple but specific: fiber and fluid must increase together. If you start your day with a bowl of oats and a glass of water instead of just oats, you have given the fiber what it needs to function. If you add prunes without also adding two extra glasses of water, you have not.
+
+## Iron Supplements and the Factor Nobody Mentions
+
+There is a second factor that worsens pregnancy constipation for a large proportion of women, and it is not discussed nearly as much as fiber: iron supplementation. The iron in prenatal vitamins — and any additional iron supplements your provider may have recommended — is a documented contributor to constipation in pregnancy. Iron salts irritate the gastrointestinal lining and slow bowel transit, and the higher the iron dose, the more pronounced the effect.
+
+If your constipation began or noticeably worsened when you started prenatal vitamins, this is a likely contributor. The timing is not coincidental. If you have subsequently been prescribed additional iron for low ferritin or iron-deficiency anaemia, the dose increase may be compounding what was already a difficult situation.
+
+This does not mean stopping iron — iron requirements during pregnancy are substantially higher than outside of pregnancy, and deficiency carries its own serious consequences. What it means is that the iron-constipation connection is worth raising specifically with your provider. Different iron preparations — including ferrous bisglycinate as opposed to ferrous sulphate — are associated with less gastrointestinal disruption in some women. The timing of your iron dose relative to meals and relative to your fiber intake also matters. Your provider can advise on whether any adjustment is appropriate for your specific situation. Do not change your supplementation without that conversation.
+
+## What Actually Moves Things Forward
+
+ACOG's guidance on constipation in pregnancy identifies the same core approach consistently: increase fiber from foods, increase fluid intake, and stay physically active. The third element — movement — is as important as the first two and is frequently left out of discussions about dietary fiber.
+
+Physical activity directly stimulates intestinal motility. Walking, in particular, is highly effective and safe throughout pregnancy. ACOG recommends regular exercise for uncomplicated pregnancies, and for women with constipation, the bowel-stimulating effect of even a 20-to-30-minute walk is clinically meaningful. The gastrocolic reflex — the natural signal that triggers bowel movements — is also strongest in the morning, particularly after a warm drink and breakfast. ACOG's clinical guidance specifically notes that setting aside unhurried time after breakfast for defecation, rather than rushing or suppressing the urge, is a genuinely useful intervention, not just a suggestion.
+
+The types of fiber also matter. MedlinePlus highlights specific foods that are effective natural laxatives: prunes, raw fruits and vegetables, and whole grains. Prunes in particular contain both fibre and sorbitol, a naturally occurring sugar that draws water into the bowel through an osmotic mechanism — which is why they work more reliably than simply adding wheat bran or fibre powder. Among grains, oats provide soluble fibre that forms a gel-like consistency in the bowel and moves more easily than insoluble fibre from wheat bran, which can be more irritating without adequate hydration.
+
+If dietary changes alongside adequate hydration and movement are not producing relief, MedlinePlus guidance on common pregnancy symptoms recommends asking your provider about a stool softener — and specifically notes to ask your provider before using any laxatives during pregnancy. ACOG's clinical guidance on pregnancy gastrointestinal management identifies specific agents considered appropriate in pregnancy. These decisions belong with your provider, not at the pharmacy on instinct.
+
+For a sense of where you are in your pregnancy and what the coming weeks will bring physically — including the period when uterine pressure on the bowel is at its most significant — our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks physical changes from the first trimester through the final weeks.
+
+## When the Standard Approach Genuinely Is Not Enough
+
+Most pregnancy constipation responds to the combination of adequate fibre, fluid, movement, and timing. When it does not, there is usually a specific reason that needs to be addressed with your provider rather than managed through more dietary changes alone.
+
+Women who are taking iron supplements in addition to their prenatal vitamins, women who have a history of irritable bowel syndrome or slow-transit constipation before pregnancy, and women in the third trimester with significant uterine pressure on the rectum may all find that dietary management alone is insufficient. This is not a failure of the approach — it is a signal that medication support, whether a stool softener, a fibre supplement like psyllium, or an osmotic agent, is appropriate.
+
+ACOG's clinical guidance notes that several classes of laxatives are available for constipation management, and that the polyethylene glycol class of osmotic agents is considered safe in pregnancy. Your provider can determine which, if any, is appropriate for your situation and at what dose.
+
+## Common Questions About Pregnancy Constipation
+
+### I have been drinking more water and eating more fibre for two weeks and nothing has changed.
+
+Two possibilities are most likely. First, check whether your iron supplement timing is interfering — taking iron at the same time as your highest-fibre meal can compound both iron absorption issues and gastrointestinal effects. Ask your provider about spacing these apart. Second, consider whether you are consistently reaching ACOG's recommended 8 to 12 cups of water per day, not just occasionally. Two weeks of consistent hydration and fibre together should produce some improvement. If not, this warrants a direct conversation with your provider about whether medication support is appropriate.
+
+### Can constipation hurt the baby?
+
+Constipation itself does not harm the baby. The discomfort and straining it involves, however, can worsen haemorrhoids — which are already more common in pregnancy due to increased pressure from the uterus. ACOG's guidance notes that constipation exacerbates haemorrhoid symptoms including pain, itching, and bleeding. Severe straining should be avoided, both for haemorrhoid reasons and for general pelvic floor health. This is another reason to address constipation actively rather than waiting it out.
+
+### Is constipation worse in the third trimester?
+
+For most women, yes. MedlinePlus confirms that later in pregnancy, the pressure from the uterus on the rectum worsens the constipation that hormonal slowing began in the first trimester. The third trimester also coincides with the period when iron needs are highest, so supplementation doses may have increased — compounding the effect. Women who managed well in the first and second trimesters sometimes find that third-trimester constipation requires more active management, including a conversation with their provider about whether pharmaceutical support is needed.
+
+## When to Talk to Your Provider About Constipation
+
+Bring constipation specifically to your provider's attention if:
+
+- **You have not had a bowel movement in more than three days** despite dietary and fluid changes — this warrants assessment rather than continued waiting
+- **You experience significant abdominal pain or cramping** alongside constipation — while constipation commonly causes discomfort, severe or increasing abdominal pain has other causes that need to be ruled out
+- **You notice blood in your stool or on toilet paper** — this may indicate haemorrhoids, which are common in pregnancy, but should be assessed by your provider rather than assumed
+- **Your constipation began or significantly worsened when you started a supplement** — this is worth flagging so your provider can consider whether an adjustment to the form or timing of iron is appropriate
+- **You are tempted to try a laxative from the pharmacy** — MedlinePlus is clear that you should ask your provider before using any laxative during pregnancy, as not all are appropriate
+
+## Related Tools on SageNest
+
+If you want to understand what is happening with your baby and your body week by week — including when third-trimester physical changes are likely to affect your bowel habits most significantly — our [week-by-week pregnancy guide](/pregnancy-week-by-week) tracks pregnancy milestones from the first trimester through to delivery. To understand your current trimester and what nutritional priorities apply to your specific stage, our [pregnancy due date calculator](/pregnancy-due-date-calculator) confirms your exact gestational age and trimester.
+
+## The Bottom Line
+
+Pregnancy constipation is driven by hormones, not by what you eat — MedlinePlus confirms that hormonal changes slow the digestive system throughout pregnancy, and uterine pressure worsens this in the third trimester. Fiber is an effective management tool, but only when paired with adequate fluid: ACOG's clinical guidance confirms that dehydration contributes to constipation and that fluid intake must be considered alongside any fiber increase. Adding fiber without increasing water can make constipation worse, not better. Iron supplements — including the iron in prenatal vitamins — are a frequently overlooked contributor that is worth discussing specifically with your provider. The combination that reliably helps: adequate fiber from fruits, vegetables, and whole grains, 8 to 12 cups of water per day as ACOG recommends, regular movement especially after meals, and responding promptly to the urge to go rather than suppressing it. If this combination is not producing relief, talk to your provider about whether medication support is appropriate — not all laxatives are safe in pregnancy, and the right one at the right dose is a provider decision. Use our [week-by-week pregnancy guide](/pregnancy-week-by-week) to stay oriented on the physical changes ahead.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [What can help with constipation during pregnancy?](https://www.acog.org/womens-health/experts-and-stories/ask-acog/what-can-help-with-constipation-during-pregnancy)
+- **ACOG** — [Healthy Eating During Pregnancy](https://www.acog.org/womens-health/faqs/healthy-eating-during-pregnancy)
+- **NIH MedlinePlus** — [Common symptoms during pregnancy](https://medlineplus.gov/ency/patientinstructions/000583.htm)
+- **NIH MedlinePlus** — [Constipation - self-care](https://medlineplus.gov/ency/patientinstructions/000120.htm)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+`
+  },
+  {
     slug: 'gestational-diabetes-glucose-test-failed-causes',
     title: 'You Failed the Glucose Test. Here\'s What Actually Caused Your GDM.',
     description: 'ACOG is clear: eating sugar doesn\'t cause gestational diabetes. Placental hormones do. Here\'s what the glucose test measures, the real risk factors, and what comes next.',
