@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/pregnancy-food-cravings-what-they-mean-pica /blog/pregnancy-food-cravings-what-they-mean-pica 301
 /fiber-pregnancy-constipation-not-helping /blog/fiber-pregnancy-constipation-not-helping 301
 /gestational-diabetes-glucose-test-failed-causes /blog/gestational-diabetes-glucose-test-failed-causes 301
 /vitamin-k-pregnancy-placenta-newborn /blog/vitamin-k-pregnancy-placenta-newborn 301
@@ -86,6 +87,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/pregnancy-food-cravings-what-they-mean-pica /blog-static/pregnancy-food-cravings-what-they-mean-pica.html 200
+/blog/pregnancy-food-cravings-what-they-mean-pica/ /blog-static/pregnancy-food-cravings-what-they-mean-pica.html 200
 /blog/fiber-pregnancy-constipation-not-helping /blog-static/fiber-pregnancy-constipation-not-helping.html 200
 /blog/fiber-pregnancy-constipation-not-helping/ /blog-static/fiber-pregnancy-constipation-not-helping.html 200
 /blog/gestational-diabetes-glucose-test-failed-causes /blog-static/gestational-diabetes-glucose-test-failed-causes.html 200

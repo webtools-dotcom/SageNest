@@ -1,3 +1,9 @@
+## 2026-04-09 (Added new blog post: pregnancy-food-cravings-what-they-mean-pica)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `pregnancy-food-cravings-what-they-mean-pica`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/pregnancy-food-cravings-what-they-mean-pica.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested pregnancy cravings-vs-deficiency explainer while keeping SageNest's canonical blog source and generated blog/redirect/sitemap artifacts synchronized.
+
 ## 2026-04-09 (Added new blog post: fiber-pregnancy-constipation-not-helping)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `fiber-pregnancy-constipation-not-helping`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
