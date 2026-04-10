@@ -1,3 +1,9 @@
+## 2026-04-10 (Added new blog post: calcium-pregnancy-prenatal-vitamin-gap)
+
+- Replaced the previous `calcium-pregnancy-prenatal-vitamin-gap` content with the newly provided blog object and moved it to the top of `blogPosts` in `src/data/blogPosts.ts`, keeping the exact requested metadata, FAQ set, image prompt, and long-form article body, plus `updatedAt: '2026-04-10'` to align sitemap lastmod values.
+- Regenerated publish/index artifacts to keep outputs synchronized with the updated canonical source: `public/blog-static/calcium-pregnancy-prenatal-vitamin-gap.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the newly requested calcium-prenatal-gap article revision while preserving slug continuity and ensuring blog source, static output, redirects, and sitemap remain in sync.
+
 ## 2026-04-09 (Added new blog post: pregnancy-food-cravings-what-they-mean-pica)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `pregnancy-food-cravings-what-they-mean-pica`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
