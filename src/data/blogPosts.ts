@@ -13,6 +13,126 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "thiamine-pregnancy-severe-nausea-vitamin-b1",
+    title: "Been Too Sick to Eat for Weeks? Here's the Vitamin Your Body Burns Through First.",
+    description: "Prolonged pregnancy nausea depletes thiamine (vitamin B1) faster than most women know. ACOG flags a serious risk for severe vomiting — here's what to tell your provider.",
+    readingTime: "8 min read",
+    lastReviewed: "April 2026",
+    updatedAt: "2026-04-15",
+    imageUrl: "/images/blog/sagenest-blog-default.jpg",
+    imagePrompt: "candid photograph, 35mm lens, a pregnant woman in her late 20s sitting on the edge of a bathroom floor, back resting against the bathtub, knees drawn up, eyes closed and head leaned back slightly, one hand loosely resting on her round belly, expression is exhaustion and quiet misery not drama, cool white overhead bathroom light casting soft shadows, a glass of water on the floor beside her, real home bathroom with tiled floor and blurred towel rack in background, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette",
+    faq: [
+      {
+        question: "Can severe morning sickness cause a vitamin deficiency?",
+        answer: "Yes. Prolonged vomiting and inability to eat during pregnancy can deplete several nutrients, and thiamine (vitamin B1) is among the most clinically significant. Thiamine is a water-soluble B vitamin the body does not store in large amounts, which means it needs continuous replenishment from food. When weeks of vomiting prevent normal food intake, thiamine stores can fall. ACOG's clinical guidance on nausea and vomiting of pregnancy specifically recommends thiamine administration for women who have been vomiting for more than three weeks and require intravenous rehydration — to prevent a serious neurological complication called Wernicke's encephalopathy."
+      },
+      {
+        question: "What is Wernicke's encephalopathy and can it happen in pregnancy?",
+        answer: "Wernicke's encephalopathy is a serious neurological condition caused by severe thiamine deficiency. It is characterised by confusion, disorientation, difficulty with eye movement, and coordination problems. While it is more commonly associated with alcoholism or bariatric surgery in non-pregnant populations, ACOG's clinical practice bulletin on nausea and vomiting of pregnancy identifies it as a rare but serious maternal complication that can occur when prolonged vomiting goes untreated. ACOG specifically recommends thiamine before IV fluids are given to women who have vomited for more than three weeks, precisely because of this risk."
+      },
+      {
+        question: "How long does morning sickness have to last before it becomes dangerous for nutrition?",
+        answer: "Most morning sickness resolves by the end of the first trimester and does not cause significant nutritional depletion in women who are otherwise eating adequately. The concern shifts when nausea and vomiting are persistent and severe — particularly hyperemesis gravidarum, the most severe form, which ACOG confirms occurs in up to 3 percent of pregnancies and involves significant weight loss and dehydration. The thiamine concern becomes clinically relevant when vomiting has persisted for more than three weeks with very limited food intake, which is the threshold at which ACOG's guidance explicitly recommends thiamine supplementation."
+      },
+      {
+        question: "Does a prenatal vitamin cover my thiamine needs during pregnancy?",
+        answer: "Most standard prenatal vitamins do contain some thiamine, typically enough to meet the increased requirement during pregnancy when a woman can actually take and retain the vitamin. The challenge with severe nausea and vomiting is that oral supplements may be vomited up before being absorbed — or a woman may be unable to take them at all on her worst days. If you have been unable to consistently keep your prenatal vitamin down due to nausea, this is worth mentioning specifically to your provider, rather than assuming your thiamine needs are being covered."
+      },
+      {
+        question: "What foods are high in thiamine during pregnancy?",
+        answer: "The best dietary sources of thiamine confirmed by the NIH include fortified breakfast cereals, whole grains, enriched bread and pasta, pork, fish, legumes like black beans and lentils, and sunflower seeds. During pregnancy, when nausea may be limiting your food choices, fortified cereals and enriched grains are particularly practical sources because they tend to be bland, easily tolerated, and reliably high in thiamine. However, when vomiting has been severe and prolonged, dietary sources alone may not be sufficient, and a provider conversation about your nutritional status is more useful than trying to manage it through food choices alone."
+      }
+    ],
+    content: `
+You have been sick for six weeks. Not just queasy — genuinely unable to eat much of anything for days at a stretch. You are holding down crackers and ginger ale and not much else. You know pregnancy nausea is normal, so you are waiting it out. What most pregnancy resources do not tell you clearly is that there is a specific vitamin your body burns through with unusual speed — and when weeks of vomiting prevent you from replenishing it, the consequences can go well beyond feeling unwell.
+
+## Why Thiamine Disappears Faster Than Other Nutrients During Prolonged Vomiting
+
+**Thiamine** — also called vitamin B1 — is a water-soluble B vitamin with one property that makes it particularly vulnerable when you cannot eat: unlike fat-soluble vitamins such as D and A, your body stores only very small amounts of thiamine at any one time. The NIH confirms that the total amount of thiamine stored in the adult body is approximately 25 to 30 mg — most of it in the liver — and that the vitamin has a short half-life, meaning the body requires a continuous supply from food to maintain adequate levels.
+
+During normal pregnancy, the recommended intake for thiamine increases above the standard adult amount to support the higher energy demands of pregnancy and the growing fetus. This increased requirement means the body is drawing on thiamine more actively during pregnancy than outside of it. When weeks of severe nausea and vomiting make consistent eating impossible, the combination of depleted replenishment and elevated demand can lead to a meaningful drop in thiamine status in a way that does not happen as quickly with nutrients the body stores in larger quantities.
+
+This is not a theoretical concern. ACOG's clinical practice bulletin on nausea and vomiting of pregnancy — its authoritative clinical guidance document for ob-gyns — explicitly recommends thiamine administration for women who require intravenous rehydration and have been vomiting for more than three weeks. The specific reason ACOG gives is to prevent a serious maternal complication called Wernicke's encephalopathy. This recommendation exists because the complication is real, documented, and preventable when thiamine is given before IV fluids are started.
+
+## What Wernicke's Encephalopathy Is — and Why It Matters Here
+
+**Wernicke's encephalopathy** is a serious neurological condition that results from severe thiamine deficiency. Most people associate it with alcoholism or, more recently, with complications after bariatric surgery — both contexts where thiamine availability is significantly disrupted. What is less widely known is that it can also occur in pregnancy as a consequence of prolonged, undertreated hyperemesis.
+
+The NIH's thiamine fact sheet for health professionals describes the condition as involving confusion, short-term memory loss, and other neurological signs. ACOG's clinical bulletin flags it as rare but serious — serious enough that its management protocol includes a thiamine-first step before IV fluids are administered, because giving large volumes of glucose without first correcting thiamine deficiency can acutely worsen the neurological situation. This protocol detail, which most pregnant women never read, illustrates how clinically established the thiamine-vomiting link is at the severe end of the spectrum.
+
+The takeaway here is not that everyone with morning sickness is at neurological risk — the vast majority of women with typical first-trimester nausea are not. The takeaway is that if your nausea and vomiting have been severe and prolonged, and you have been unable to eat or retain your prenatal vitamin for more than a few weeks, this is not just a matter of feeling miserable. It is a clinical nutrition issue that warrants active management, not patient endurance.
+
+## The Difference Between Morning Sickness and Hyperemesis Gravidarum
+
+ACOG distinguishes between the spectrum of nausea and vomiting that occurs in pregnancy and the most severe form, **hyperemesis gravidarum** (HG). ACOG confirms that hyperemesis gravidarum occurs in up to 3 percent of pregnancies and is diagnosed when a woman has lost 5 percent of her pre-pregnancy weight alongside other signs of dehydration and physical deterioration.
+
+Women with hyperemesis gravidarum often require hospital admission for IV fluids and nutritional support. They may be unable to keep any food or liquid down for extended periods. For this group, the risk of thiamine depletion — and of more serious consequences — is clearly elevated. But the line between "severe morning sickness" and hyperemesis is not always sharp in a woman's experience of it, and the degree of food restriction that contributes to thiamine depletion does not require meeting a formal HG diagnosis. The relevant threshold, per ACOG's clinical guidance, is vomiting lasting more than three weeks with enough severity to warrant IV hydration.
+
+ACOG's patient-facing guidance also notes that taking a prenatal vitamin before and during pregnancy is associated with reduced risk of having severe nausea and vomiting. This is one reason starting a prenatal vitamin before conception — rather than waiting until a positive test — has clinical support: the first trimester, when nausea peaks, is exactly when consistent oral nutrient intake becomes most difficult, and having adequate nutritional status entering that period matters.
+
+If your nausea is affecting when you can take your prenatal vitamin, our [morning sickness end date estimator](/morning-sickness-end-date-estimator) can give you a personalised estimate of when first-trimester nausea typically improves, which helps you understand whether the window of nutritional disruption is likely to be brief or extended.
+
+## What Thiamine Does That Makes Its Absence So Consequential
+
+Understanding why thiamine specifically matters helps explain why its depletion is more than just another nutritional gap. Thiamine's central role in the body is in **energy metabolism** — it is an essential cofactor for the enzymatic processes that convert carbohydrates, amino acids, and fats into usable cellular energy. The NIH confirms that thiamine's active form, thiamin diphosphate, is required by five key enzymes involved in glucose, amino acid, and lipid metabolism.
+
+For a pregnant woman already under physical stress from persistent vomiting and reduced food intake, the disruption of energy metabolism at the cellular level adds a layer of physiological strain that goes beyond simple caloric deficit. Nerve cells and brain tissue are particularly dependent on continuous glucose metabolism, which explains why severe thiamine deficiency produces neurological symptoms — those systems are among the first affected when thiamine-dependent energy processes are compromised.
+
+This is distinct from what happens with, say, a temporary dip in folate intake — where the concern is developmental risk to the fetus over a specific early window. Thiamine depletion during prolonged vomiting is a risk to the mother's own neurological function, which is why the ACOG clinical protocol addresses it as a maternal safety issue in the management of severe pregnancy nausea.
+
+## Food Sources That Help — and When Food Is Not Enough
+
+The NIH confirms that the best dietary sources of thiamine include: fortified breakfast cereals, enriched breads, pasta, and rice, whole grains, pork, fish, legumes including black beans and lentils, and sunflower seeds. During pregnancy, when severe nausea may be severely limiting food variety, fortified breakfast cereals and enriched white bread or crackers are the most practically accessible sources — they are bland, familiar, and typically well-tolerated in small quantities even when appetite is poor.
+
+The challenge with managing thiamine through food choices during severe nausea is real: when the foods you can tolerate are limited to a narrow range, the chance that they provide adequate thiamine is reduced. And when oral supplements are being vomited up before absorption — which is common in hyperemesis — a prenatal vitamin that contains thiamine offers little benefit.
+
+This is the point at which food and oral supplement strategies reach their limit. When vomiting has been severe and persistent for weeks and you are unable to reliably retain food or supplements, the appropriate response is a provider conversation about your nutritional status — not a revised meal plan. Your ob-gyn can assess whether IV hydration with thiamine support is indicated, and can evaluate your overall nutritional picture in a way that a dietary adjustment cannot. ACOG's guidance is explicit that thiamine should precede IV fluids in this situation — and that clinical decision is made by your provider, not managed independently.
+
+## Common Questions About Thiamine and Pregnancy Nausea
+
+### I've had nausea for two weeks but I'm still managing to eat a little. Do I need to worry?
+
+Not urgently. Two weeks of reduced appetite with some food intake is within the range of normal first-trimester nausea that the majority of pregnant women experience. The clinical concern with thiamine depletion is specifically tied to prolonged vomiting — more than three weeks — with very limited food intake. If you are still eating, even in smaller amounts and a narrower range of foods than normal, you are likely maintaining some thiamine replenishment. The more useful action at this stage is ensuring you can consistently take your prenatal vitamin, even if it means trying different timings, splitting the dose, or switching formulations to find one you can retain.
+
+### My nausea is so bad I can't keep my prenatal vitamin down most days. What should I do?
+
+Tell your provider. This is specific clinical information your ob-gyn needs to know — not just because of thiamine, but because inability to consistently retain a prenatal vitamin in the first trimester affects multiple nutritional pathways including folate. Your provider may be able to recommend alternative formulations, different timing strategies, or a liquid or gummy version that is better tolerated. They may also want to assess how much food you are retaining and whether your situation meets the threshold for more active intervention.
+
+### Can I just take extra thiamine supplements to be safe?
+
+This is a conversation to have with your provider rather than a decision to make independently. The NIH notes that thiamine is water-soluble with no established tolerable upper intake level based on adverse effects from food or supplement intake, but decisions about supplementation during pregnancy — including the dose and form — should be made with your provider. If you are experiencing severe or prolonged vomiting, the more important step is telling your ob-gyn that this is happening, not adjusting supplements on your own.
+
+## When to Talk to Your Provider About Nausea and Nutrition
+
+Contact your ob-gyn promptly — not at your next scheduled appointment — if:
+
+- **Vomiting has been occurring for more than two to three weeks** and is severe enough that you are eating and retaining very little on most days
+- **You have been unable to keep your prenatal vitamin down consistently** for a week or more — this is specific information your provider needs, not just a symptom to manage on your own
+- **You notice signs of dehydration**: ACOG lists dark or minimal urine, dizziness when standing, racing heartbeat, or inability to keep any liquids down as signs that warrant calling your provider
+- **You have lost visible weight** during the first trimester — ACOG flags a 5 percent loss of pre-pregnancy weight as a criterion for hyperemesis gravidarum requiring active treatment
+- **You notice any neurological symptoms alongside prolonged vomiting** — confusion, disorientation, difficulty with vision or coordination, or significant memory problems — these are signals to seek care urgently, not to wait and see
+
+## Related Tools on SageNest
+
+If you are in the middle of first-trimester nausea and trying to understand how much longer it is likely to last, our [morning sickness end date estimator](/morning-sickness-end-date-estimator) gives you a personalised estimate based on your current gestational week. Understanding whether you are likely a week or six weeks from improvement changes how you and your provider should be thinking about nutritional management. Our [pregnancy week-by-week guide](/pregnancy-week-by-week) also covers the first-trimester milestones, including the weeks when nausea typically peaks and the physiological reasons for it.
+
+## The Bottom Line
+
+Thiamine (vitamin B1) is a water-soluble nutrient the body stores only in small amounts, which means prolonged vomiting during pregnancy can deplete it faster than most people realise — and faster than nutrients the body holds in larger reserves. ACOG's clinical guidance on nausea and vomiting of pregnancy explicitly recommends thiamine administration before IV fluids for women who have been vomiting for more than three weeks, specifically to prevent a serious neurological complication called Wernicke's encephalopathy. This does not mean typical morning sickness puts you at risk — the concern is targeted at severe, prolonged vomiting with very limited food intake. If that describes your experience, this is clinical information your provider needs: not vague reassurance that nausea is normal, but a clear picture of how long you have been vomiting, how little you have been eating, and whether you are consistently retaining your prenatal vitamin. Use our [morning sickness end date estimator](/morning-sickness-end-date-estimator) to understand where you are in the timeline — and if vomiting has been severe and is approaching or past three weeks, contact your provider this week rather than waiting it out.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Morning Sickness: Nausea and Vomiting of Pregnancy](https://www.acog.org/womens-health/faqs/morning-sickness-nausea-and-vomiting-of-pregnancy)
+- **ACOG** — [Nausea and Vomiting of Pregnancy (Practice Bulletin)](https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2018/01/nausea-and-vomiting-of-pregnancy)
+- **NIH Office of Dietary Supplements** — [Thiamin: Health Professional Fact Sheet](https://ods.od.nih.gov/factsheets/Thiamin-HealthProfessional/)
+- **NIH Office of Dietary Supplements** — [Thiamin: Consumer Fact Sheet](https://ods.od.nih.gov/factsheets/Thiamin-Consumer/)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+`
+  },
+  {
     slug: 'dha-pregnancy-flaxseed-not-enough-brain-development',
     title: "Flaxseed Won't Cover Your DHA. Here's What Your Baby's Brain Actually Needs.",
     description: "Plant omega-3s don't convert to DHA efficiently — NIH confirms this. Here's what ACOG and NIH say about the DHA gap in pregnancy and how to actually close it.",
