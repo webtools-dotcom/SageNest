@@ -357,11 +357,15 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── blurry-vision-pregnancy-warning-signs.html
 │   │   ├── braxton-hicks-vs-real-contractions.html
 │   │   ├── caffeine-200mg-limit-pregnancy-what-counts.html
+│   │   ├── calcium-pregnancy-prenatal-vitamin-gap.html
 │   │   ├── cervical-mucus-ovulation-guide.html
 │   │   ├── choline-pregnancy-prenatal-vitamins-miss.html
+│   │   ├── dha-pregnancy-flaxseed-not-enough-brain-development.html
 │   │   ├── dizziness-lightheadedness-pregnancy-second-trimester.html
+│   │   ├── fiber-pregnancy-constipation-not-helping.html
 │   │   ├── fish-pregnancy-what-to-eat-avoid-mercury.html
 │   │   ├── folic-acid-vs-methylfolate-pregnancy-mthfr.html
+│   │   ├── gestational-diabetes-glucose-test-failed-causes.html
 │   │   ├── gestational-diabetes-pregnancy-weight-gain.html
 │   │   ├── healthy-pregnancy-weight-gain-complete-guide.html
 │   │   ├── hemorrhoids-pregnancy-third-trimester.html
@@ -384,6 +388,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── pregnancy-constipation-fiber-iron-supplements.html
 │   │   ├── pregnancy-dehydration-third-trimester-thirst.html
 │   │   ├── pregnancy-food-aversions-smell-sensitivity.html
+│   │   ├── pregnancy-food-cravings-what-they-mean-pica.html
 │   │   ├── pregnancy-headaches-causes-safe-relief-red-flags.html
 │   │   ├── pregnancy-heartburn-why-it-gets-worse.html
 │   │   ├── pregnancy-ice-craving-pagophagia-iron-deficiency.html
@@ -393,6 +398,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── pregnancy-swelling-edema-normal-vs-warning-sign.html
 │   │   ├── pregnancy-week-by-week-milestones.html
 │   │   ├── pregnancy-weight-gain-myths-facts.html
+│   │   ├── pregnancy-weight-gain-overweight-obese-bmi-guidelines.html
 │   │   ├── protein-pregnancy-first-trimester-nausea-crackers.html
 │   │   ├── puppp-rash-pregnancy-belly-itching.html
 │   │   ├── restless-legs-pregnancy-third-trimester.html
@@ -402,9 +408,12 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   │   ├── short-luteal-phase-10-days-what-it-means.html
 │   │   ├── shortness-of-breath-pregnancy.html
 │   │   ├── stress-delayed-ovulation-late-period.html
+│   │   ├── thiamine-pregnancy-severe-nausea-vitamin-b1.html
 │   │   ├── two-week-wait-symptoms-progesterone-not-pregnancy.html
 │   │   ├── vegetarian-pregnancy-dha-nutrient-gaps.html
+│   │   ├── vitamin-b12-absorption-pregnancy-risk-factors.html
 │   │   ├── vitamin-d-deficiency-pregnancy-prenatal-test.html
+│   │   ├── vitamin-k-pregnancy-placenta-newborn.html
 │   │   └── zinc-pregnancy-iron-supplement-absorption.html
 │   ├── images/
 │   │   └── blog/
@@ -511,6 +520,8 @@ Below is the exact tracked file tree of this repository at the time of this upda
 ├── .gitignore
 ├── .npmrc
 ├── .nvmrc
+├── Agents.md
+├── Agents2.md
 ├── Blogpostsrule.md
 ├── codex.md
 ├── frontend.md

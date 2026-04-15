@@ -1,3 +1,8 @@
+## 2026-04-15 (Synced README worktree structure with current tracked repository files)
+
+- Ran the repository's `npm run sync:readme-worktree` automation to refresh the `README.md` worktree section from live `git ls-files`, adding newly tracked files that were missing in documentation (including recent static blog HTML entries and newly tracked root docs).
+- Why: keep the README's repository structure accurate and real-time so contributors can trust it as the current source-of-truth for tracked files.
+
 ## 2026-04-10 (Added new blog post: calcium-pregnancy-prenatal-vitamin-gap)
 
 - Replaced the previous `calcium-pregnancy-prenatal-vitamin-gap` content with the newly provided blog object and moved it to the top of `blogPosts` in `src/data/blogPosts.ts`, keeping the exact requested metadata, FAQ set, image prompt, and long-form article body, plus `updatedAt: '2026-04-10'` to align sitemap lastmod values.
