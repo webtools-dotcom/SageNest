@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/dha-pregnancy-flaxseed-not-enough-brain-development /blog/dha-pregnancy-flaxseed-not-enough-brain-development 301
 /calcium-pregnancy-prenatal-vitamin-gap /blog/calcium-pregnancy-prenatal-vitamin-gap 301
 /pregnancy-food-cravings-what-they-mean-pica /blog/pregnancy-food-cravings-what-they-mean-pica 301
 /fiber-pregnancy-constipation-not-helping /blog/fiber-pregnancy-constipation-not-helping 301
@@ -87,6 +88,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/dha-pregnancy-flaxseed-not-enough-brain-development /blog-static/dha-pregnancy-flaxseed-not-enough-brain-development.html 200
+/blog/dha-pregnancy-flaxseed-not-enough-brain-development/ /blog-static/dha-pregnancy-flaxseed-not-enough-brain-development.html 200
 /blog/calcium-pregnancy-prenatal-vitamin-gap /blog-static/calcium-pregnancy-prenatal-vitamin-gap.html 200
 /blog/calcium-pregnancy-prenatal-vitamin-gap/ /blog-static/calcium-pregnancy-prenatal-vitamin-gap.html 200
 /blog/pregnancy-food-cravings-what-they-mean-pica /blog-static/pregnancy-food-cravings-what-they-mean-pica.html 200
