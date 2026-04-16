@@ -1,3 +1,9 @@
+## 2026-04-16 (Added new blog post: post-dates-pregnancy-past-40-weeks)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `post-dates-pregnancy-past-40-weeks`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog-static/post-dates-pregnancy-past-40-weeks.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested post-dates pregnancy guidance article while keeping SageNest's canonical blog source and generated blog/redirect/sitemap artifacts synchronized.
+
 ## 2026-04-15 (Synced README worktree structure with current tracked repository files)
 
 - Ran the repository's `npm run sync:readme-worktree` automation to refresh the `README.md` worktree section from live `git ls-files`, adding newly tracked files that were missing in documentation (including recent static blog HTML entries and newly tracked root docs).
