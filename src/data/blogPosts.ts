@@ -13,6 +13,128 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'post-dates-pregnancy-past-40-weeks',
+    title: "Your Due Date Came and Went. Here's What Your Provider Is Actually Watching For.",
+    description: 'Passed your due date with no baby? ACOG explains the difference between late-term and postterm, when monitoring starts, and what induction at 41 weeks really means.',
+    readingTime: '8 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-16',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'candid photograph, 35mm lens, a heavily pregnant woman in her early 30s sitting on a sofa with her hands resting on her very round belly, looking down at her phone with a small tired frown, overcast morning light through a large window to the left, bare feet tucked under her, a hospital bag visible but zipped closed on the floor nearby, real living room with a blanket draped over the armrest, expression is quiet impatience not distress, candid and real not staged, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette',
+    faq: [
+      {
+        question: 'Is it normal to go past your due date?',
+        answer: "Yes. The average length of pregnancy, as ACOG confirms, is 40 weeks counted from the first day of your last menstrual period — but this is an average, not a deadline. Pregnancies that continue past 40 weeks are common. ACOG distinguishes between \"late-term\" (41 weeks through 41 weeks and 6 days) and \"postterm\" (42 weeks and beyond). Most women who deliver after their due date have uncomplicated labor and healthy babies, according to ACOG, though monitoring becomes more active as weeks progress past 40."
+      },
+      {
+        question: 'When will my doctor recommend inducing labour if I go past my due date?',
+        answer: "ACOG's patient guidance states that induction may be recommended if your pregnancy reaches 41 weeks. Between 40 and 41 weeks, testing is not necessarily required but your provider may recommend it. At 41 weeks, your ob-gyn may recommend fetal wellbeing tests and is likely to discuss induction timing with you. Induction is recommended after 42 weeks. The exact timing is a shared decision between you and your provider that takes into account your individual circumstances, cervical readiness, and fetal monitoring results."
+      },
+      {
+        question: 'What tests are done when you go past your due date?',
+        answer: 'ACOG describes several tests used to monitor fetal wellbeing in late and postterm pregnancies. The nonstress test (NST) monitors the fetal heart rate for a period of time — usually 20 minutes — to assess how the baby responds. A biophysical profile combines electronic fetal monitoring with ultrasound to evaluate fetal movement, tone, breathing, and amniotic fluid levels. A contraction stress test assesses how the fetal heart rate responds to uterine contractions. These may be done weekly or twice weekly from 41 weeks onwards, and your provider will interpret the results to guide decisions about timing of delivery.'
+      },
+      {
+        question: 'What are the risks of going past 42 weeks pregnant?',
+        answer: "ACOG confirms that health risks for both mother and baby may increase in late-term and postterm pregnancies, though most women who deliver after their due dates have uncomplicated outcomes. The specific concerns ACOG identifies include the possibility of the baby growing larger than average (macrosomia), the risk of meconium — a greenish substance from the fetal bowel — entering the amniotic fluid which can affect the baby's breathing if inhaled, and postmaturity syndrome in some babies born significantly past term. This is why monitoring intensifies and induction is considered — not because going past 40 weeks is automatically dangerous, but because the risk picture changes as weeks accumulate."
+      },
+      {
+        question: 'Why do some pregnancies go past 40 weeks?',
+        answer: 'ACOG confirms that the causes of postterm pregnancy are not fully understood, but identifies several factors associated with it: being pregnant with a first baby, carrying a male fetus, having had a prior postterm pregnancy, and obesity. Inaccurate dating of the pregnancy — particularly when the last menstrual period date or early ultrasound was uncertain — can also mean a pregnancy appears postterm when its gestational age is actually less advanced than calculated. This is one reason accurate early dating, ideally confirmed by a first-trimester ultrasound, matters for everyone but particularly for women with longer or irregular cycles.'
+      }
+    ],
+    content: `
+Your due date was yesterday. Or three days ago. You are still here, still pregnant, still waiting — and the combination of physical exhaustion and the particular anxiety of not knowing when this ends is its own specific kind of hard. You have probably been told not to worry, that babies come when they are ready. What you actually want is a clear explanation of what your provider is watching for, what the clinical thresholds are, and what will happen and when. Here is exactly that.
+
+## Why "Due Date" Is Less Precise Than It Sounds
+
+The first thing that helps when you are past 40 weeks is understanding what the 40-week mark actually represents. ACOG confirms that the average length of pregnancy is 280 days, or 40 weeks, counted from the first day of your last menstrual period. The key word is average. Your due date was always an estimate — a statistically derived midpoint around which birth normally occurs, not a biological deadline. Pregnancies that continue past it are not late in a clinical sense until they cross specific thresholds that ACOG defines precisely.
+
+ACOG uses four specific terms for gestational age at delivery. **Full term** is 39 weeks and 0 days through 40 weeks and 6 days — this window is considered the optimal delivery range. **Late term** is 41 weeks and 0 days through 41 weeks and 6 days. **Postterm** is 42 weeks and beyond. And **early term** covers 37 and 38 weeks, which is why elective induction before 39 weeks is not recommended except for specific medical reasons.
+
+What this means for you at 40 weeks and 2 days, or 40 weeks and 5 days: you are still technically within the full-term window. You have not crossed into "late term" yet. Your provider is not ignoring a problem — they are monitoring a pregnancy that is progressing normally through the later end of the full-term range. The clinical picture shifts more specifically at 41 weeks, which is why that week tends to bring a more concrete conversation about next steps.
+
+## What Actually Changes at 41 Weeks
+
+ACOG is specific about the 41-week mark. Between 40 and 41 weeks, your provider does not necessarily recommend formal fetal wellbeing testing — though they may choose to. At 41 weeks, that calculation changes. ACOG's patient-facing guidance confirms that at 41 weeks, your ob-gyn may recommend testing, and that induction may be recommended if your pregnancy reaches this point.
+
+This shift is not arbitrary. The clinical logic is that while most postterm pregnancies end without complications, the probability of certain issues rises as the pregnancy extends — particularly past 42 weeks. ACOG's clinical practice documentation acknowledges the incidence of postterm pregnancy in the United States and notes that management with antepartum fetal surveillance and induction of labor has been evaluated as the primary strategies for reducing the associated risks. The 41-week conversation is your provider working through that framework with your specific situation.
+
+The decision about timing is also not one-size-fits-all. ACOG describes it as a shared decision-making process. Your cervical readiness — whether the cervix has begun to soften, thin, and open in preparation for labour — is a significant practical factor, because induction works differently depending on how prepared the cervix already is. A cervix that has not yet started to change requires a ripening process before contractions can effectively progress, which affects how and when induction proceeds. Your provider will check this and factor it into the timing discussion.
+
+Use our [pregnancy due date calculator](/pregnancy-due-date-calculator) to confirm your exact gestational age if there is any uncertainty about your dates — knowing precisely where you are relative to 41 weeks matters for understanding your provider's management timeline.
+
+## The Tests Your Provider May Use and What They Are Measuring
+
+When monitoring begins, ACOG describes three main tests of fetal wellbeing used in late and postterm pregnancies. Understanding what each one actually measures helps you know what your provider is looking for — and what a reassuring result means.
+
+The **nonstress test (NST)** monitors the fetal heart rate for a set period, typically around 20 minutes, using electronic sensors placed around your abdomen. The test is specifically looking at how your baby's heart rate responds — ideally, a healthy baby will show accelerations in heart rate that correspond to fetal movement, which indicates the nervous system is functioning well and the baby is not under stress. A "reactive" NST, where these accelerations are present, is a reassuring result. A "non-reactive" result does not automatically mean something is wrong — it may simply mean the baby was asleep during the monitoring window — but it prompts further assessment.
+
+The **biophysical profile (BPP)** combines electronic fetal monitoring with an ultrasound examination. It evaluates several components: fetal breathing movements, body movements, muscle tone, and the volume of amniotic fluid around the baby. The amniotic fluid component is particularly relevant in postterm monitoring because fluid levels can decrease as a pregnancy extends past term, and low fluid (oligohydramnios) is one of the signs that delivery timing may need to be moved up.
+
+The **contraction stress test** assesses how the fetal heart rate responds when the uterus contracts — either through mild stimulation or induced contractions — to identify any signs that the placenta may not be adequately supporting the baby under the stress of contractions. These tests may be done weekly or twice weekly once they begin, and your provider will use the results alongside the overall clinical picture to guide recommendations.
+
+## The Risks ACOG Identifies — and the Context Around Them
+
+ACOG's patient guidance is direct about the fact that health risks for both mother and baby may increase in late-term and postterm pregnancies, while also being clear that most women who give birth after their due dates have uncomplicated labour and deliver healthy babies. These two things are simultaneously true, and holding both is useful.
+
+The specific risks ACOG identifies include the possibility of **macrosomia** — a term for a baby estimated to weigh more than a certain threshold, which can complicate delivery. There is also the concern about **meconium** in the amniotic fluid. Meconium is a greenish substance that accumulates in the fetal bowel during pregnancy. If the baby passes meconium before birth, it can enter the amniotic fluid, and if the baby inhales it during delivery, it can cause respiratory problems. ACOG specifically names this as a risk in postterm pregnancies. The third concern is **postmaturity syndrome** — a pattern in some postterm babies involving thin wrinkled skin, low body fat, alertness, and long nails, reflecting a pregnancy that has extended beyond what the placenta is optimally designed to sustain.
+
+None of these risks means that reaching 41 weeks is a clinical emergency. They mean that past 40 weeks, your provider's job is to maintain active oversight — not passive waiting — and to make timing decisions that balance the risks of continuing against the risks of intervention. That is exactly what the monitoring is doing.
+
+## What Risk Factors Mean You May Be Watched More Closely
+
+ACOG identifies several factors that are associated with a higher likelihood of going postterm, which your provider may also factor into how actively they monitor your situation. These include being pregnant with a **first baby**, carrying a **male fetus**, having had a **prior postterm pregnancy**, and **obesity**. The reasons behind most of these are not fully understood — ACOG acknowledges that the causes of postterm pregnancy in general remain incompletely explained. But knowing these factors exist means that if you have one or more of them, your provider may be more proactive about monitoring timelines than they might be otherwise.
+
+There is also the question of dating accuracy. ACOG notes that accurate determination of gestational age is essential to the diagnosis and management of late-term and postterm pregnancies. A pregnancy that appears postterm because the due date was calculated from an uncertain last menstrual period — particularly common in women with irregular cycles — may not actually be as far along as the calendar suggests. If your cycles were irregular or if your first-trimester ultrasound gave a different date than your LMP calculation, that early scan dating is generally considered more reliable, and your provider will have taken that into account when establishing your estimated due date.
+
+If you have any uncertainty about how your due date was calculated, our [pregnancy week-by-week guide](/pregnancy-week-by-week) can help you understand the developmental milestones at your current gestational age, and our [pregnancy due date calculator](/pregnancy-due-date-calculator) can help you verify the calculation based on your LMP and cycle length.
+
+## Common Questions When You Are Past Your Due Date
+
+### My due date passed but I feel fine and the baby is moving well. Do I really need to be induced?
+
+Feeling well and having a baby who is moving normally are genuinely reassuring signs — and your provider will take them into account. But fetal movement, while important to monitor, is not the same as fetal wellbeing testing. The monitoring ACOG recommends at 41 weeks — nonstress tests, biophysical profiles — provides information about placental function and amniotic fluid levels that cannot be assessed by feel alone. Induction is not typically urgent at 40 weeks when everything looks well. At 41 weeks, the conversation shifts to weighing the evidence on risks and benefits of continuing versus delivering, which is a clinical and shared decision — not one that your comfort level alone determines, and not one your provider makes without involving you.
+
+### Will induction at 41 weeks mean I am more likely to end up with a caesarean section?
+
+This is a reasonable concern, and the evidence is relevant here. ACOG's clinical guidance on induction of labour notes that induction may be considered for healthy women at 39 weeks to reduce — not increase — the chance of caesarean birth. The relationship between induction timing and caesarean risk is more nuanced than the common assumption that induction leads to more caesareans. Your cervical readiness at the time of induction is a key practical factor, because an induction begun when the cervix is more prepared tends to progress differently than one started when the cervix is entirely unfavourable. This is a specific conversation worth having with your provider — not to argue against their recommendation, but to understand the reasoning and what your own cervical exam shows.
+
+### Is there anything I can do to help labour start naturally before induction?
+
+There are popular suggestions circulating online about ways to encourage labour, and most have either limited evidence or no evidence behind them. ACOG's guidance does not endorse specific natural labour-starting methods for routine use. What ACOG does describe as a clinical option — often discussed and offered during a 40 or 41 week appointment — is **membrane sweeping or stripping**: a procedure where your ob-gyn sweeps a gloved finger over the membranes connecting the amniotic sac to the uterine wall. This is a clinical intervention, not a home remedy, and ACOG lists it among the methods used as part of the induction process. Whether this is appropriate for your situation is a discussion for your provider.
+
+## When to Call Your Provider
+
+At 40 weeks and beyond, you should have clear guidance from your ob-gyn about when to call and when to go directly to the hospital. In addition to the usual signs of active labour, contact your provider promptly if you notice:
+
+- **A significant decrease in fetal movement** — reduced movement from your baby's established pattern is always worth reporting, regardless of gestational age, but it is particularly important to act on promptly when you are past your due date
+- **Any fluid leaking or a gush of fluid** — this may indicate your waters have broken, which changes the clinical picture and the urgency of your provider conversation
+- **Green or brown-tinged fluid** — this could indicate meconium in the amniotic fluid, which ACOG specifically flags as a concern in postterm pregnancies and warrants same-day assessment
+- **Decreased or absent movement combined with contractions that are not progressing** — this combination warrants immediate contact, not a wait-and-see approach
+- **Any signs of reduced fetal movement at night** that do not resolve with cold water, lying on your left side, or light activity — call rather than waiting until morning
+
+## Related Tools on SageNest
+
+To confirm exactly where you are gestational-age-wise and understand what the clinical thresholds mean for your specific dates, our [pregnancy due date calculator](/pregnancy-due-date-calculator) gives you your exact week and day count. If you want to understand what is developmentally happening with your baby at 40, 41, or 42 weeks — including the final physical maturation that happens in these last weeks — our [pregnancy week-by-week guide](/pregnancy-week-by-week) covers each week with specific developmental detail.
+
+## The Bottom Line
+
+Your due date is an average, not a deadline. ACOG defines full term as 39 weeks through 40 weeks and 6 days, late term as 41 weeks through 41 weeks and 6 days, and postterm as 42 weeks and beyond. Between 40 and 41 weeks, active monitoring is not necessarily required though your provider may begin it. At 41 weeks, ACOG confirms that fetal wellbeing testing may be recommended and induction may be considered — because the risk picture shifts as a pregnancy extends, even though most women who deliver past their due date have uncomplicated outcomes and healthy babies. The monitoring your provider orders — nonstress tests, biophysical profiles, fluid checks — is not bureaucratic caution. It is the specific clinical apparatus designed to catch the small number of situations where the placenta is no longer supporting the baby optimally, and to make induction timing decisions based on real data rather than calendar dates alone. Use our [pregnancy due date calculator](/pregnancy-due-date-calculator) to know precisely where you are, and bring any concerns about fetal movement or fluid to your provider the same day — not at your next scheduled appointment.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [When Pregnancy Goes Past Your Due Date](https://www.acog.org/womens-health/faqs/when-pregnancy-goes-past-your-due-date)
+- **ACOG** — [Labor Induction](https://www.acog.org/womens-health/faqs/labor-induction)
+- **ACOG** — [Definition of Term Pregnancy](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/11/definition-of-term-pregnancy)
+- **ACOG** — [Management of Late-Term and Postterm Pregnancies](https://www.acog.org/clinical/clinical-guidance/practice-bulletin/articles/2014/08/management-of-late-term-and-postterm-pregnancies)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+`
+  },
+  {
     slug: "thiamine-pregnancy-severe-nausea-vitamin-b1",
     title: "Been Too Sick to Eat for Weeks? Here's the Vitamin Your Body Burns Through First.",
     description: "Prolonged pregnancy nausea depletes thiamine (vitamin B1) faster than most women know. ACOG flags a serious risk for severe vomiting — here's what to tell your provider.",
