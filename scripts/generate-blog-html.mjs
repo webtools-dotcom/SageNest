@@ -88,6 +88,7 @@ function buildStaticStyle(tokens) {
         font-family: var(--font-sans);
         background: var(--cream);
         color: var(--charcoal);
+        font-size: 1.125rem;
         line-height: 1.7;
         -webkit-font-smoothing: antialiased;
       }
@@ -160,9 +161,9 @@ function buildStaticStyle(tokens) {
         margin: 2.5rem 0 1rem;
         color: var(--charcoal);
       }
-      p { margin: 0 0 1.5rem; color: var(--text-secondary); font-size: 1rem; line-height: 1.8; }
+      p { margin: 0 0 1.5rem; color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; }
       ul { margin: 1.5rem 0 2rem 2rem; }
-      li { margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.7; }
+      li { margin-bottom: 1rem; color: var(--text-secondary); line-height: 1.7; font-size: 1.0625rem; }
       strong { color: var(--charcoal); font-weight: 600; }
       a { color: var(--sage-dark); }
       a:hover { color: var(--charcoal); }

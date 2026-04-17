@@ -15,7 +15,7 @@ body {
   background: var(--cream);
   color: var(--charcoal);
   font-family: var(--font-sans);
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -62,7 +62,7 @@ p {
   margin: 0 0 var(--space-md) 0;
   color: var(--text-secondary);
   line-height: 1.7;
-  font-size: 1.0625rem;
+  font-size: 1.125rem;
 }
 
 a {
