@@ -93,7 +93,7 @@ The app uses SPA routing with `_redirects` fallback:
 - `/pregnancy-flight-calculator`
 - `/pregnancy-week-by-week`
 - `/pregnancy-week-by-week/:weekSlug`
-- `/similar-tools`
+- `/pregnancy-tools`
 - Catch-all app route: `*` (renders in-app not-found page with noindex metadata)
 
 Cloudflare still serves `index.html` for hydration (`/* /index.html 200`), and the React catch-all route handles unknown paths so users and crawlers get proper not-found content instead of a soft-404-like calculator page.

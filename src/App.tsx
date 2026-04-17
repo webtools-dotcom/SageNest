@@ -1,4 +1,4 @@
-import { Link, NavLink, Route, Routes } from 'react-router-dom';
+import { Link, Navigate, NavLink, Route, Routes } from 'react-router-dom';
 import { BlogList } from './components/BlogList';
 import { BlogPost } from './components/BlogPost';
 import { Footer } from './components/Footer';
@@ -39,7 +39,7 @@ function App() {
           SageNest
         </Link>
         <nav aria-label="Primary">
-          <NavLink to="/similar-tools" className="nav-pill">Similar tools</NavLink>
+          <NavLink to="/pregnancy-tools" className="nav-pill">Pregnancy tools</NavLink>
           <NavLink to="/blog" className="nav-pill">Blog</NavLink>
         </nav>
       </header>
@@ -67,7 +67,8 @@ function App() {
         <Route path="/morning-sickness-end-date-estimator" element={<MorningSicknessEstimatorPage />} />
         <Route path="/colostrum-harvesting-calculator" element={<ColostrumHarvestingCalculatorPage />} />
         <Route path="/pregnancy-flight-calculator" element={<PregnancyFlightCalculatorPage />} />
-        <Route path="/similar-tools" element={<SimilarToolsPage />} />
+        <Route path="/pregnancy-tools" element={<SimilarToolsPage />} />
+        <Route path="/similar-tools" element={<Navigate to="/pregnancy-tools" replace />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <Footer />

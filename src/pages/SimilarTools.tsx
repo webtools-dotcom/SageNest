@@ -4,16 +4,16 @@ import tools from '../data/tools';
 
 export default function SimilarToolsPage() {
   return (
-    <main id="main-content" className="container" aria-labelledby="similar-tools-title">
+    <main id="main-content" className="container" aria-labelledby="pregnancy-tools-title">
       <SEOHead
-        title="Similar tools"
+        title="Pregnancy tools"
         description="Discover all pregnancy calculators and planning tools available on SageNest."
-        canonicalPath="/similar-tools"
+        canonicalPath="/pregnancy-tools"
       />
 
       <header className="tool-header">
         <div>
-          <h1 id="similar-tools-title">Similar tools</h1>
+          <h1 id="pregnancy-tools-title">Pregnancy tools</h1>
           <p className="muted">Discover all helpful calculators and tools we provide.</p>
         </div>
       </header>

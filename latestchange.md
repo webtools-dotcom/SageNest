@@ -1,3 +1,11 @@
+## 2026-04-17 (Renamed Similar tools to Pregnancy tools across navigation, route metadata, and static pages)
+
+- Replaced all user-facing references of `Similar tools` with `Pregnancy tools` in app navigation and key UI pages (`src/App.tsx`, `src/pages/SimilarTools.tsx`, and `src/pages/NotFound.tsx`) so the renamed tab/page label is consistent across the live React app.
+- Updated SEO and routing sources to make `/pregnancy-tools` the canonical tools hub route (sitemap source and page canonical metadata), while preserving backward compatibility by redirecting legacy `/similar-tools` traffic to `/pregnancy-tools` via React route redirect and generated Cloudflare redirects.
+- Updated static blog navigation output and regenerated static artifacts (`public/blog-static/*.html`, `public/_redirects`, and `public/sitemap.xml`) so blog pages and deployment routing no longer show the old label.
+- Updated `README.md` route documentation to reflect the new canonical route name.
+- Why: ensure the old “Similar tools” naming is fully removed from user-facing website surfaces while keeping old inbound links working safely without breakage.
+
 ## 2026-04-17 (Increased global website typography scale for better readability across tools and blogs)
 
 - Increased the shared frontend base text sizing in `src/styles/global.css` by raising the default `body` and paragraph `p` font sizes from `1.0625rem` to `1.125rem`, so everyday reading text appears larger across all app routes (tools, blog listing pages, and supporting content) without changing layout structure or feature behavior.
