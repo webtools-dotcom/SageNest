@@ -13,6 +13,140 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'ultrasound-changed-due-date-what-it-means',
+    title: 'Your Ultrasound Changed Your Due Date — Here\'s What That Actually Means',
+    description: 'Due date shifted after your scan? ACOG sets exact rules for when ultrasound overrides your LMP date — and why a later scan can\'t change your date again.',
+    readingTime: '8 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-17',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'documentary photography, 85mm portrait lens, a pregnant woman in her early 30s lying on an ultrasound table in a clinical room, turned slightly toward the monitor screen beside her, one hand resting on her round belly, expression is focused and slightly uncertain as she reads the screen, bright white clinical light slightly harsh, gel applicator and tissue visible on the tray nearby, the ultrasound monitor showing a blurry fetal image, candid and real not staged, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette',
+    faq: [
+      {
+        question: 'Why did my due date change after my ultrasound?',
+        answer: 'Your due date changed because the ultrasound measurement of your baby disagreed with the date calculated from your last menstrual period (LMP) by enough of a margin that ACOG guidelines required an update. ACOG\'s guidance confirms that ultrasound measurement of the embryo or fetus in the first trimester is the most accurate method to establish or confirm gestational age — more reliable than LMP dating, which assumes a perfectly regular 28-day cycle and accurate recall of period dates. When the gap between ultrasound dating and LMP dating crosses specific thresholds — which vary depending on how early in pregnancy the scan was done — ACOG guidelines say the due date should be adjusted to match the ultrasound.'
+      },
+      {
+        question: 'Can my due date change again at a later ultrasound?',
+        answer: 'No. ACOG\'s patient guidance is explicit: once a due date has been selected, it does not change no matter how many additional ultrasound exams you have during your pregnancy. This is because as pregnancy progresses, ultrasound becomes less accurate at estimating gestational age — by the third trimester, the natural range of fetal size variation between babies means a scan cannot reliably distinguish a smaller but appropriately grown baby from a genuinely younger one. Later scans are used to monitor your baby\'s growth, not to re-date your pregnancy.'
+      },
+      {
+        question: 'Which is more accurate for due date — LMP or ultrasound?',
+        answer: 'Ultrasound, particularly when done early in the first trimester. ACOG\'s committee opinion on due date estimation confirms that first-trimester ultrasound using crown-rump length measurement has an accuracy of ±5–7 days, and is the most accurate dating method available. LMP-based dating assumes a regular 28-day cycle with ovulation on day 14 — which does not account for irregular cycles, variable ovulation timing, or inaccurate recall of period dates. ACOG research found that only around half of women accurately recall their LMP, which is one reason ultrasound confirmation matters so much early in pregnancy.'
+      },
+      {
+        question: 'My due date changed by 2 weeks at my 20-week scan. Is that normal?',
+        answer: 'A two-week shift at the anatomy scan is a significant change and warrants a direct conversation with your provider about what it means for your specific situation. ACOG\'s guidelines state that between 16 and 21 weeks and 6 days, a discrepancy of more than 10 days between ultrasound and LMP dating is sufficient reason to change the due date. A 14-day (two-week) discrepancy within this window does meet that threshold. However, the anatomy scan is not the ideal timing for dating — first-trimester ultrasound is more accurate. If you did not have an early scan, your provider will use their clinical judgement alongside the second-trimester measurements to determine the most reliable estimate.'
+      },
+      {
+        question: 'What happens if I never had a first-trimester ultrasound?',
+        answer: 'ACOG has a specific term for this situation: a "suboptimally dated pregnancy." Any pregnancy without an ultrasound confirming or revising the estimated due date before 22 weeks and 0 days of gestation is considered suboptimally dated. This matters clinically because accurate gestational age affects decisions about timing of delivery, interpretation of screening results, and management of any complications. If your pregnancy is suboptimally dated, your provider may recommend an interval ultrasound to assess growth, and may apply slightly different timing thresholds for things like fetal wellbeing testing as your due date approaches.'
+      }
+    ],
+    content: `
+You had your scan, and then the sonographer or your provider mentioned a different date than the one you had been counting from. Maybe it moved by five days. Maybe by nearly two weeks. You left the appointment with a new number — and no clear explanation of what changed, why, or whether the next scan might change it again. ACOG\'s guidance on due date estimation contains precise, specific rules for exactly this question, and most women never see them. Here is what is actually happening.
+
+## Why the LMP Calculation Was Never As Reliable As It Seemed
+
+Your original due date — the one calculated before any ultrasound — was computed using a formula that assumes a perfectly regular 28-day menstrual cycle with ovulation occurring on day 14. ACOG\'s committee opinion on methods for estimating the due date is direct about this limitation: the calculation does not account for inaccurate recall of the last menstrual period, irregularities in cycle length, or variability in the timing of ovulation.
+
+The recall problem alone is significant. ACOG\'s guidance cites research finding that only approximately half of women accurately recall their LMP. For women with cycles longer or shorter than 28 days, or with irregular cycles, the gap between the assumed and actual ovulation date compounds the inaccuracy further. A woman with a consistently 35-day cycle ovulates roughly a week later than the formula assumes — meaning her fetus is around a week younger than the LMP calculation suggests, and her true due date is a week later than what the calendar initially produces.
+
+This is why ultrasound dating exists: not because something went wrong, but because the LMP calculation was always an approximation with known sources of error, and early ultrasound provides a more direct measurement of how far along the pregnancy actually is.
+
+## How Ultrasound Dating Works — and Why Earlier Is More Accurate
+
+The measurement used in first-trimester dating is the **crown-rump length (CRL)**: the distance from the top of the embryo or fetus to the bottom, measured in a specific standardised plane. ACOG confirms that up to 13 weeks and 6 days of gestation, CRL measurement has an accuracy of ±5–7 days — and critically, measurements are more accurate the earlier in the first trimester they are performed.
+
+In practical terms, this means a CRL measurement at 8 weeks is more precise than one at 13 weeks, and both are significantly more precise than a second-trimester measurement. By the mid-second trimester and beyond, individual variation between fetuses — some babies are naturally longer-limbed, others more compact, regardless of gestational age — widens the range of normal enough that measurements become less reliable as a dating tool.
+
+ACOG also specifies which measurements to use and which to avoid. The mean of three separate CRL measurements is preferred over a single reading. Mean sac diameter measurements — an older approach used early in the first trimester — are specifically not recommended for estimating due dates, because they are less accurate than CRL.
+
+After the first trimester, dating shifts to a combination of biometric parameters: the fetal head circumference, abdominal circumference, femur bone length, and biparietal diameter (the width across the skull). These measurements together produce a gestational age estimate — but the accuracy range is wider than first-trimester CRL, and it widens further as pregnancy progresses.
+
+Our [pregnancy due date calculator](/pregnancy-due-date-calculator) uses your LMP and cycle length to produce an initial estimate — but as this article explains, the first ultrasound your provider performs remains the most important refinement of that number.
+
+## The Exact Rules for When Your Due Date Should Change
+
+ACOG\'s guidelines are not vague on this. There are specific discrepancy thresholds — gaps between ultrasound dating and LMP dating — that determine whether the due date should be officially updated. These thresholds vary based on when in pregnancy the scan was performed, because the accuracy of ultrasound dating changes with gestational age.
+
+**Before 9 weeks:** A discrepancy of more than 5 days between ultrasound and LMP dating is sufficient reason to change the due date to match the ultrasound.
+
+**9 weeks through 13 weeks and 6 days:** If the discrepancy exceeds 7 days, the due date should be updated. ACOG notes that the clinical reliability of the LMP date is also factored in — a provider who has reason to doubt the LMP accuracy may adjust for smaller discrepancies.
+
+**14 weeks through 15 weeks and 6 days:** A discrepancy of more than 7 days warrants changing the due date.
+
+**16 weeks through 21 weeks and 6 days:** The threshold rises to more than 10 days. This is the window that includes many women\'s anatomy scan results.
+
+**22 weeks through 27 weeks and 6 days:** Ultrasound dating at this stage has an accuracy of ±10–14 days. A discrepancy of more than 14 days would warrant a date change, though ACOG notes that smaller discrepancies in this range may also be considered depending on clinical assessment.
+
+The pattern in these thresholds reflects the declining precision of ultrasound dating as pregnancy advances. Early scans earn a low threshold for due date changes because they are highly accurate. Later scans require a larger discrepancy to justify a change, because the measurement is less precise and a smaller difference might fall within the normal range of variation.
+
+## Why Your Due Date Will Not Change Again — Even If Later Scans Show Different Numbers
+
+This is one of the most confusing aspects of due date management, and it has a specific clinical rationale. ACOG\'s patient guidance states clearly: once a due date has been selected, it does not change no matter how many additional ultrasound exams you have during pregnancy.
+
+The reason is that by the mid-second trimester and especially by the third trimester, ultrasound biometric measurements are no longer reliable enough to date a pregnancy accurately. ACOG\'s guidelines note specifically that management decisions based on third-trimester ultrasound alone are especially problematic, and that providers must consider the entire clinical picture carefully.
+
+The particular concern is this: a baby who is measuring small at 32 weeks might be small because the pregnancy is genuinely younger than estimated — or it might be because the fetus has restricted growth and is not growing adequately for its gestational age. These two scenarios require completely different clinical responses. If a third-trimester measurement were allowed to push a due date later, a growth-restricted fetus could be misclassified as simply younger than thought, delaying the monitoring and intervention it actually needs.
+
+This is why "the scan says the baby is measuring at 29 weeks and I\'m 32 weeks" does not move your due date to 29 weeks. Your established due date — set by your earliest reliable scan — remains fixed, and the discrepancy between that date and the current measurement becomes information about your baby\'s growth pattern, not a reason to revise the timeline.
+
+## What It Means If You Never Had an Early Scan
+
+ACOG has a formal term for pregnancies that reached 22 weeks without an ultrasound confirming or revising the due date: **suboptimally dated**. This is not a minor administrative category — it has specific clinical implications.
+
+ACOG\'s guidance on suboptimally dated pregnancies specifies that there is no role for elective delivery in these cases, and that management of indicated deliveries should proceed according to the best available clinical estimate of gestational age. The guidance also recommends that providers consider initiating fetal wellbeing monitoring somewhat earlier than usual — from around 39–40 weeks — because the uncertainty about exact gestational age means the pregnancy could be further along than estimated.
+
+If your pregnancy is considered suboptimally dated, your provider may recommend an additional ultrasound several weeks after your initial scan to assess fetal growth interval. This serves a dual purpose: it helps refine the gestational age estimate, and it provides early information about whether growth is proceeding normally. The critical window ACOG identifies for establishing adequate dating is before 22 weeks and 0 days — which is why the anatomy scan, typically performed between 18 and 22 weeks, represents the last opportunity to confirm dating before the suboptimally dated threshold is reached.
+
+If you are approaching or have passed this window without a confirmed early scan, this is worth raising specifically with your provider at your next appointment, not waiting for it to come up on its own.
+
+## Common Questions About Due Date Changes After Ultrasound
+
+### My first scan and second scan gave different gestational ages. Which one counts?
+
+The earlier scan takes precedence. ACOG\'s guidance establishes a clear hierarchy: first-trimester ultrasound, ideally with a crown-rump length measurement, is the gold standard for dating. When the first scan was performed early in the first trimester, its dating supersedes any later scan discrepancies because it was obtained when measurement accuracy was highest. A later scan giving a different number does not override the established date — it may instead reflect the natural variation in fetal biometric measurements as pregnancy progresses.
+
+### My due date was moved back by 10 days at my 20-week scan. Does that mean I ovulated later than I thought?
+
+Quite possibly, yes. A due date shifted later by 10 days is clinically consistent with ovulation occurring approximately 10 days later in your cycle than the standard formula assumed. For women with longer cycles, cycles that vary in length, or cycles affected by stress, illness, or breastfeeding, late ovulation is common — and the LMP calculation has no way to account for it without actual ovulation data. The ultrasound measurement, which reflects the actual developmental stage of the fetus regardless of when ovulation occurred, is a more direct indicator of gestational age. A shift of this magnitude at the anatomy scan, while larger than typical, falls within what ACOG\'s guidelines contemplate as a reason to update the due date at 16–22 weeks.
+
+### My anatomy scan showed my baby measuring ahead of my due date. Will I deliver early?
+
+Not necessarily. A baby measuring a week or two ahead of the established due date at the anatomy scan is common and in most cases reflects normal variation in fetal size — some babies are naturally larger than average at a given gestational age. Measuring ahead does not predict an early delivery, and if your due date was already confirmed by a first-trimester scan, it does not change. What your provider will monitor as pregnancy progresses is whether the baby continues growing proportionally within its own growth curve. Consistent growth is more meaningful than a single measurement at one point in time.
+
+## When to Discuss Dating Concerns With Your Provider
+
+Bring up questions about your due date specifically if:
+
+- **You never had an ultrasound before 22 weeks** — tell your provider and ask whether your pregnancy is being managed as suboptimally dated, and what that means for your care
+- **Your due date shifted significantly at the anatomy scan** — by more than a week in either direction — and you have not received a clear explanation of why that threshold was met and what it means for your estimated timeline
+- **Your earliest scan and your anatomy scan gave substantially different dates** — ask your provider which number is being used as your established due date and confirm that it will not change again
+- **You have irregular cycles** and your LMP-based date was never confirmed by an early ultrasound — this combination increases the likelihood of dating inaccuracy and is worth flagging early if not already addressed
+- **You are approaching 39–40 weeks** with an uncertain due date — ask specifically whether your pregnancy is considered optimally or suboptimally dated, and what that means for the timing of any monitoring or induction discussions
+
+## Related Tools on SageNest
+
+Our [pregnancy due date calculator](/pregnancy-due-date-calculator) generates your initial LMP-based estimate and accounts for cycle length, which gives a more accurate starting point for women with cycles longer or shorter than 28 days before the first ultrasound. Our [pregnancy week-by-week guide](/pregnancy-week-by-week) tracks what is developmentally happening at your confirmed gestational age, which is only as useful as the due date it is calculated from — making that early ultrasound confirmation the foundation for everything that follows.
+
+## The Bottom Line
+
+Your due date changed after an ultrasound because ultrasound measurement of the embryo or fetus is more accurate than a calendar calculation based on your last period — particularly when that calculation assumes a 28-day cycle with fixed ovulation that does not reflect your actual biology. ACOG sets specific thresholds for when due dates must be updated depending on how early the scan was performed: the earlier the scan, the smaller the required discrepancy, because early measurement is more precise. Once your due date is set from a reliable early scan, it does not change with later ultrasounds — later scans monitor growth, not gestational age. Pregnancies without any confirming ultrasound before 22 weeks are formally classified as suboptimally dated by ACOG, with specific management implications. If you are uncertain whether your due date was properly established or have questions about a date that changed, those questions belong at your next prenatal appointment — not left as background uncertainty for the rest of your pregnancy. Use our [pregnancy due date calculator](/pregnancy-due-date-calculator) to understand what your LMP-based estimate is, knowing that your provider\'s earliest ultrasound measurement remains the most reliable anchor for everything that follows.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Methods for Estimating the Due Date](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date)
+- **ACOG** — [Management of Suboptimally Dated Pregnancies](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/03/management-of-suboptimally-dated-pregnancies)
+- **ACOG** — [When Pregnancy Goes Past Your Due Date](https://www.acog.org/womens-health/faqs/when-pregnancy-goes-past-your-due-date)
+- **ACOG** — [Ultrasound Exams](https://www.acog.org/womens-health/faqs/Ultrasound-Exams)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+`
+  },
+  {
     slug: 'post-dates-pregnancy-past-40-weeks',
     title: "Your Due Date Came and Went. Here's What Your Provider Is Actually Watching For.",
     description: 'Passed your due date with no baby? ACOG explains the difference between late-term and postterm, when monitoring starts, and what induction at 41 weeks really means.',
