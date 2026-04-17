@@ -1,3 +1,9 @@
+## 2026-04-17 (Increased global website typography scale for better readability across tools and blogs)
+
+- Increased the shared frontend base text sizing in `src/styles/global.css` by raising the default `body` and paragraph `p` font sizes from `1.0625rem` to `1.125rem`, so everyday reading text appears larger across all app routes (tools, blog listing pages, and supporting content) without changing layout structure or feature behavior.
+- Updated static blog generation typography in `scripts/generate-blog-html.mjs` by raising static blog `body` and paragraph font sizes and slightly increasing list-item size, then regenerated all static blog pages in `public/blog-static/*.html` so the live `/blog-static/...` URLs match the new readability baseline.
+- Why: users reported that copy looked too small on both mobile and desktop; this applies a site-wide font-only readability improvement similar to clearer editorial websites while keeping design, spacing system, and functionality unchanged.
+
 ## 2026-04-16 (Added new blog post: post-dates-pregnancy-past-40-weeks)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `post-dates-pregnancy-past-40-weeks`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
