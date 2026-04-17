@@ -24,7 +24,7 @@ export const NotFoundPage = () => {
           <Link to="/blog">Blog</Link>
         </li>
         <li>
-          <Link to="/similar-tools">Similar tools</Link>
+          <Link to="/pregnancy-tools">Pregnancy tools</Link>
         </li>
       </ul>
     </main>

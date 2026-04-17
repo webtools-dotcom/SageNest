@@ -96,7 +96,7 @@ export async function getSitemapEntries(options = {}) {
     { path: '/blog', priority: '0.8', lastmod: '2026-01-01' },
     { path: '/about', priority: '0.5', lastmod: '2026-01-01' },
     { path: '/privacy', priority: '0.4', lastmod: '2026-01-01' },
-    { path: '/similar-tools', priority: '0.7', lastmod: '2026-02-01' }
+    { path: '/pregnancy-tools', priority: '0.7', lastmod: '2026-02-01' }
   ];
 
   const tools = (await loadTools()).map((tool) => ({ path: tool.path, priority: tool.path === '/pregnancy-due-date-calculator' ? '1.0' : '0.9', lastmod: '2026-02-01' }));

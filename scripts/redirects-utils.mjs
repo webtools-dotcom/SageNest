@@ -17,7 +17,8 @@ const baseRedirects = [
   '/colostrum-harvesting /colostrum-harvesting-calculator 301',
   '/antenatal-colostrum /colostrum-harvesting-calculator 301',
   '/flying-while-pregnant /pregnancy-flight-calculator 301',
-  '/pregnant-flying /pregnancy-flight-calculator 301'
+  '/pregnant-flying /pregnancy-flight-calculator 301',
+  '/similar-tools /pregnancy-tools 301'
 ];
 
 const canonicalNoTrailingSlashRoutes = [
@@ -33,7 +34,7 @@ const canonicalNoTrailingSlashRoutes = [
   '/morning-sickness-end-date-estimator',
   '/colostrum-harvesting-calculator',
   '/pregnancy-flight-calculator',
-  '/similar-tools'
+  '/pregnancy-tools'
 ];
 
 function buildTrailingSlashRedirects() {
