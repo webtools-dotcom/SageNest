@@ -12,6 +12,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /antenatal-colostrum /colostrum-harvesting-calculator 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
+/ultrasound-changed-due-date-what-it-means /blog/ultrasound-changed-due-date-what-it-means 301
 /post-dates-pregnancy-past-40-weeks /blog/post-dates-pregnancy-past-40-weeks 301
 /thiamine-pregnancy-severe-nausea-vitamin-b1 /blog/thiamine-pregnancy-severe-nausea-vitamin-b1 301
 /dha-pregnancy-flaxseed-not-enough-brain-development /blog/dha-pregnancy-flaxseed-not-enough-brain-development 301
@@ -90,6 +91,8 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /colostrum-harvesting-calculator/ /colostrum-harvesting-calculator 301
 /pregnancy-flight-calculator/ /pregnancy-flight-calculator 301
 /similar-tools/ /similar-tools 301
+/blog/ultrasound-changed-due-date-what-it-means /blog-static/ultrasound-changed-due-date-what-it-means.html 200
+/blog/ultrasound-changed-due-date-what-it-means/ /blog-static/ultrasound-changed-due-date-what-it-means.html 200
 /blog/post-dates-pregnancy-past-40-weeks /blog-static/post-dates-pregnancy-past-40-weeks.html 200
 /blog/post-dates-pregnancy-past-40-weeks/ /blog-static/post-dates-pregnancy-past-40-weeks.html 200
 /blog/thiamine-pregnancy-severe-nausea-vitamin-b1 /blog-static/thiamine-pregnancy-severe-nausea-vitamin-b1.html 200
