@@ -54,7 +54,7 @@ export async function buildRedirectsContent() {
     ...legacyBlogRedirects,
     ...trailingSlashRedirects,
     ...slugs.flatMap((slug) => {
-      const staticTarget = `/blog-static/${slug}.html`;
+      const staticTarget = `/blog/${slug}.html`;
       return [
         `/blog/${slug} ${staticTarget} 200`,
         `/blog/${slug}/ ${staticTarget} 200`

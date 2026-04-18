@@ -606,7 +606,7 @@ console.log(`Generating static HTML for ${posts.length} blog posts...`);
 const pollinationsState = { hasCalled: false };
 
 for (const post of posts) {
-  const dir = join(ROOT, 'public', 'blog-static');
+  const dir = join(ROOT, 'public', 'blog');
   mkdirSync(dir, { recursive: true });
   const staticFilePath = join(dir, `${post.slug}.html`);
   if (!imageConfig.isReady && existsSync(staticFilePath)) {
@@ -621,7 +621,7 @@ for (const post of posts) {
     : resolvedImageUrl;
   const html = buildPostHtml({ ...post, imageUrl: resolvedImageUrl, ogImageUrl }, styleBlock);
   writeFileSync(join(dir, `${post.slug}.html`), html, 'utf8');
-  console.log(`  ✓ public/blog-static/${post.slug}.html`);
+  console.log(`  ✓ public/blog/${post.slug}.html`);
 }
 
 if (imageErrors.length > 0) {
@@ -630,5 +630,83 @@ if (imageErrors.length > 0) {
     console.log(`  - ${error}`);
   }
 }
+
+// Generate static blog index page
+function buildBlogIndexHtml(allPosts, blogStyleBlock) {
+  const postLinks = allPosts.map(post => {
+    const thumbUrl = post.imageUrl
+      ? post.imageUrl.includes('res.cloudinary.com')
+        ? post.imageUrl.replace('/image/upload/', '/image/upload/w_400,h_210,c_fill,f_auto,q_auto/')
+        : post.imageUrl
+      : null;
+    const imageHtml = thumbUrl
+      ? `<img src="${thumbUrl}" alt="${fullHtmlEscape(post.title)}" loading="lazy" width="400" height="210" style="width:100%;aspect-ratio:40/21;object-fit:cover;border-radius:12px;border:1px solid #E5E7EB;margin-bottom:0.75rem;" />`
+      : '';
+    return `
+      <article style="background:#FEFDFB;border:1px solid #E5E7EB;border-radius:16px;padding:1.25rem;display:flex;flex-direction:column;gap:0.5rem;">
+        <a href="/blog/${post.slug}" style="text-decoration:none;color:inherit;">
+          ${imageHtml}
+          <h2 style="font-family:'Playfair Display',Georgia,serif;font-size:1.15rem;font-weight:700;color:#2D2D2D;line-height:1.3;margin:0 0 0.4rem;">${fullHtmlEscape(post.title)}</h2>
+          <p style="font-size:0.9rem;color:#4F4F4F;margin:0 0 0.5rem;line-height:1.5;">${fullHtmlEscape(post.description)}</p>
+          <span style="font-size:0.8rem;color:#9AA88D;font-weight:500;">${post.readingTime}${post.lastReviewed ? ` · Last reviewed: ${post.lastReviewed}` : ''}</span>
+        </a>
+      </article>`;
+  }).join('\n');
+
+  return `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pregnancy &amp; Women's Health Blog | SageNest Health</title>
+    <meta name="description" content="Evidence-based articles on pregnancy symptoms, nutrition, ovulation, and women's wellness. Researched from ACOG, NIH, CDC, and WHO guidelines." />
+    <link rel="canonical" href="https://sagenesthealth.com/blog" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pregnancy &amp; Women's Health Blog | SageNest Health" />
+    <meta property="og:description" content="Evidence-based articles on pregnancy symptoms, nutrition, ovulation, and women's wellness." />
+    <meta property="og:url" content="https://sagenesthealth.com/blog" />
+    <meta property="og:image" content="https://res.cloudinary.com/dtplyecgd/image/upload/w_1200,h_630,c_fill/sagenest-main-logo" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" media="print" onload="this.media='all'" />
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" /></noscript>
+    <style>
+${blogStyleBlock}
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="brand"><img src="https://res.cloudinary.com/dtplyecgd/image/upload/w_68,h_68,c_fill,f_auto,q_auto/sagenest-main-logo" alt="" class="brand-logo" loading="eager" width="34" height="34" /> SageNest</a>
+      <nav>
+        <a href="/pregnancy-tools">Pregnancy tools</a>
+        <a href="/blog">Blog</a>
+      </nav>
+    </header>
+    <main style="max-width:1100px;margin:0 auto;padding:3rem 1.5rem 5rem;">
+      <h1 style="font-family:'Playfair Display',Georgia,serif;font-size:clamp(2rem,4vw,3.5rem);font-weight:700;color:#2D2D2D;margin-bottom:0.75rem;">Pregnancy &amp; Women's Health Blog</h1>
+      <p style="color:#4F4F4F;font-size:1.1rem;margin-bottom:2.5rem;line-height:1.7;">Evidence-based articles researched from ACOG, NIH, CDC, and WHO guidelines.</p>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;">
+        ${postLinks}
+      </div>
+    </main>
+    <footer>
+      <a href="/">Home</a>
+      <a href="/pregnancy-due-date-calculator">Due Date Calculator</a>
+      <a href="/ovulation-calculator">Ovulation Calculator</a>
+      <a href="/pregnancy-weight-gain-calculator">Weight Gain Calculator</a>
+      <a href="/blog">Blog</a>
+      <a href="/about">About</a>
+      <a href="/editorial-team">Editorial Team</a>
+      <a href="/privacy">Privacy</a>
+      <br /><br />
+      \u00a9 2026 SageNest. For informational purposes only.
+    </footer>
+  </body>
+</html>`;
+}
+
+writeFileSync(join(ROOT, 'public', 'blog', 'index.html'), buildBlogIndexHtml(posts, styleBlock), 'utf8');
+console.log('  \u2713 public/blog/index.html (static blog listing generated)');
 
 console.log('Done.');

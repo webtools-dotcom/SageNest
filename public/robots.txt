@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /blog-static/
 
 Sitemap: https://sagenesthealth.com/sitemap.xml
