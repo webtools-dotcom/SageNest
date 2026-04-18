@@ -10,3 +10,6 @@
   Cross-Origin-Resource-Policy: same-origin
   X-Permitted-Cross-Domain-Policies: none
   Origin-Agent-Cluster: ?1
+
+/blog-static/*
+  X-Robots-Tag: noindex
