@@ -46,12 +46,14 @@ function buildTrailingSlashRedirects() {
 export async function buildRedirectsContent() {
   const slugs = await loadBlogSlugs();
   const legacyBlogRedirects = slugs.map((slug) => `/${slug} /blog/${slug} 301`);
+  const blogStaticLegacyRedirects = slugs.map((slug) => `/blog-static/${slug} /blog/${slug} 301`);
   const trailingSlashRedirects = buildTrailingSlashRedirects();
 
   const lines = [
     ...canonicalHostRedirects,
     ...baseRedirects,
     ...legacyBlogRedirects,
+    ...blogStaticLegacyRedirects,
     ...trailingSlashRedirects,
     ...slugs.flatMap((slug) => {
       const staticTarget = `/blog/${slug}.html`;

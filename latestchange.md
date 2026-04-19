@@ -1,3 +1,9 @@
+## 2026-04-19 (Fixed legacy /blog-static URL fallback and aligned redirect docs)
+
+- Added legacy redirect generation in `scripts/redirects-utils.mjs` so every `/blog-static/<slug>` request now permanently redirects to `/blog/<slug>` before the canonical blog rewrite runs, preventing old `/blog-static/...` links from landing on 404 pages.
+- Updated the README sitemap/indexing section to reflect the current static output path (`public/blog/<slug>.html`) and document the new legacy `/blog-static/<slug>` → `/blog/<slug>` safety redirect behavior.
+- Why: production traffic and old backlinks can still hit historical `/blog-static/...` URLs; this preserves compatibility and guarantees users end up on the canonical `/blog/...` route.
+
 ## 2026-04-17 (Renamed Similar tools to Pregnancy tools across navigation, route metadata, and static pages)
 
 - Replaced all user-facing references of `Similar tools` with `Pregnancy tools` in app navigation and key UI pages (`src/App.tsx`, `src/pages/SimilarTools.tsx`, and `src/pages/NotFound.tsx`) so the renamed tab/page label is consistent across the live React app.
