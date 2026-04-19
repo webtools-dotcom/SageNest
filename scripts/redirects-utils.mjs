@@ -55,13 +55,6 @@ export async function buildRedirectsContent() {
     ...legacyBlogRedirects,
     ...blogStaticLegacyRedirects,
     ...trailingSlashRedirects,
-    ...slugs.flatMap((slug) => {
-      const staticTarget = `/blog/${slug}.html`;
-      return [
-        `/blog/${slug} ${staticTarget} 200`,
-        `/blog/${slug}/ ${staticTarget} 200`
-      ];
-    }),
     '',
     '/ /pregnancy-due-date-calculator 301',
     '/* /index.html 200'

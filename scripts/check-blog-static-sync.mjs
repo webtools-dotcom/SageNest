@@ -29,10 +29,6 @@ for (const slug of slugs) {
     errors.push(`Canonical tag mismatch in public/blog-static/${slug}.html`);
   }
 
-  if (!redirects.includes(`/blog/${slug} /blog/${slug}.html 200`)) {
-    errors.push(`Missing static rewrite rule for /blog/${slug} in public/_redirects`);
-  }
-
   if (!sitemapLocs.has(canonicalUrl)) {
     errors.push(`Missing sitemap entry for ${canonicalUrl}`);
   }
