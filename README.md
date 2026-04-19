@@ -350,7 +350,7 @@ Below is the exact tracked file tree of this repository at the time of this upda
 │   └── workflows/
 │       └── ci.yml
 ├── public/
-│   ├── blog-static/
+│   ├── blog/
 │   │   ├── anovulation-what-it-is-causes-treatment.html
 │   │   ├── bbt-charting-ovulation.html
 │   │   ├── bleeding-gums-pregnancy-gingivitis.html
