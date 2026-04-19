@@ -13,6 +13,133 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "gestational-age-vs-fetal-age-two-week-difference",
+    title: 'You\'re "6 Weeks Pregnant" But Your Baby Is Only 4 Weeks Old — Here\'s Why',
+    description: 'Gestational age and fetal age are not the same thing. ACOG explains why medicine counts from your last period — and what it means when your scan says "6 weeks."',
+    readingTime: "7 min read",
+    lastReviewed: "April 2026",
+    updatedAt: "2026-04-19",
+    imageUrl: "/images/blog/sagenest-blog-default.jpg",
+    imagePrompt: "lifestyle photography, 85mm portrait lens, a pregnant woman in her late 20s sitting at a kitchen table looking at a pregnancy week-by-week app on her phone, brow slightly furrowed in mild puzzlement, chin tilted down toward the screen, overcast morning light from the left through a window, a half-drunk mug of tea on the table beside her, real home kitchen with blurred shelves in the background, expression is thoughtful confusion not distress, candid and real not staged, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette",
+    faq: [
+      {
+        question: `Why does my doctor say I'm 6 weeks pregnant when I only conceived 4 weeks ago?`,
+        answer: `This is the gestational age versus fetal age distinction. Gestational age is counted from the first day of your last menstrual period (LMP), which is typically about two weeks before conception actually occurred. ACOG's fetal growth guidance confirms this counting convention: the first trimester starts at the first day of the LMP, not at fertilization. Your fetal age — the actual time since conception — is roughly two weeks less than your gestational age. Medicine uses gestational age as the standard because the LMP date is known, while the exact date of conception usually is not.`
+      },
+      {
+        question: `What is the difference between gestational age and fetal age?`,
+        answer: `Gestational age counts from the first day of your last menstrual period and is the standard clinical measurement used throughout pregnancy. Fetal age counts from the moment of fertilisation — roughly two weeks later in a 28-day cycle, when ovulation and conception occur. A pregnancy at 10 weeks of gestational age is approximately 8 weeks of fetal age. ACOG uses gestational age universally in clinical guidelines because it is based on an observable date (the LMP), whereas the exact date of conception is rarely known with certainty.`
+      },
+      {
+        question: `Why does medicine count pregnancy weeks from the last period and not conception?`,
+        answer: `Because conception happens internally with no direct way to observe it in real time, while the first day of the last menstrual period is a date most women can identify or recall. ACOG confirms that the EDD is 280 days after the first day of the LMP, assuming a regular 28-day cycle with ovulation on day 14. Using the LMP as the starting point gives clinicians a consistent, universally applicable anchor for dating — even though the pregnancy technically did not begin until fertilisation around two weeks later.`
+      },
+      {
+        question: `Does the two-week difference between gestational and fetal age matter clinically?`,
+        answer: `Not in practice for most purposes, as long as everyone is using the same system — and in medicine, gestational age is always the system. All prenatal screening timelines, developmental milestones, scan schedules, and delivery planning decisions are calibrated to gestational age, not fetal age. The distinction matters most for understanding why week-by-week pregnancy guides describe a "2-week pregnant" person as not yet having conceived, and why a 40-week pregnancy represents 38 weeks of actual fetal development. Knowing which system you are reading is the key.`
+      },
+      {
+        question: `How is gestational age calculated if I don't know my last period date?`,
+        answer: `When the LMP date is uncertain or unknown, ACOG states that ultrasound dating should be used instead — ideally a first-trimester crown-rump length measurement, which is accurate to within approximately 5 to 7 days. ACOG considers first-trimester ultrasound the most accurate method to establish gestational age when LMP dating is unreliable. Any pregnancy without an ultrasound confirming the due date before 22 weeks is classified as suboptimally dated, and your provider will manage it with a modified monitoring approach.`
+      }
+    ],
+    content: `
+You have been tracking your cycle for months. You know exactly when you ovulated and roughly when you conceived. You are four weeks past that date. And yet your first prenatal appointment puts you at "six weeks pregnant." The numbers do not match — and no one has explained why the pregnancy app, the ultrasound, and your own calculation are all using different starting points. The answer is the distinction between gestational age and fetal age, and once you understand it, the confusion dissolves completely.
+
+## Why the Pregnancy Clock Starts Before Conception
+
+Gestational age — the number of weeks pregnant you are — is counted from the first day of your last menstrual period, not from the day you conceived. ACOG confirms that the estimated due date is 280 days after the first day of the LMP, counted on the assumption of a regular 28-day cycle with ovulation occurring on day 14.
+
+This means that at the moment of conception — which happens at ovulation, typically around day 14 of a 28-day cycle — you are already considered two weeks pregnant by gestational age. Your fetal age at that moment is zero days. Your gestational age is 14 days.
+
+By the time you take a positive pregnancy test, usually around week 4 of gestational age, your embryo is approximately two weeks old by fetal age. By the time many women have their first prenatal ultrasound at 6 to 8 weeks gestational age, the embryo or fetus is actually 4 to 6 weeks post-fertilisation.
+
+The reason medicine adopted this convention is practical: the first day of the last menstrual period is an observable date that most women can identify or at least approximate. The exact moment of ovulation and fertilisation is rarely known in real time. ACOG's guidance on fetal growth and development uses the LMP as the anchor for all trimester boundaries: the first trimester runs from the first day of the LMP through 13 weeks and 6 days, the second from 14 weeks through 27 weeks and 6 days, and the third from 28 weeks onwards. These are gestational age weeks — not weeks of actual embryonic or fetal development.
+
+## What the Two-Week Difference Looks Like in Practice
+
+The gap between gestational age and fetal age is consistently approximately two weeks in a standard 28-day cycle, because the first two weeks of gestational age represent the time from the start of the menstrual period to ovulation — the period during which the body prepares to release an egg but has not yet conceived.
+
+This creates a situation that confuses many women when they first encounter it. A pregnancy described as being at **"4 weeks gestational age"** means the LMP was four weeks ago — and in a regular 28-day cycle, conception occurred approximately two weeks ago. The embryo is about two weeks old, not four. A pregnancy at **"8 weeks gestational age"** means the embryo has been developing for roughly six weeks since fertilisation.
+
+ACOG's fetal growth guidance defines the embryo stage as the period from fertilisation through 8 weeks of fetal age — which corresponds to approximately weeks 10 of gestational age. After that point, the developing baby is referred to as a fetus. This is why ACOG's patient guidance on fetal development states that for 8 weeks after fertilisation, the developing baby is called an embryo, and from 9 weeks after fertilisation until birth, it is called a fetus — but when this is translated into gestational age terminology, the embryo stage runs through roughly 10 gestational weeks, not 8.
+
+Understanding this conversion also resolves a common source of confusion with week-by-week pregnancy guides. If you are reading a guide that describes development at "week 4," it may be describing what is happening in the embryo at 2 weeks post-fertilisation. The terminology is not wrong — it is just calibrated to gestational age, which starts two weeks before conception did.
+
+Use our [pregnancy week-by-week guide](/pregnancy-week-by-week) with this understanding: all the developmental milestones it describes are calibrated to gestational age, which is the universal clinical standard, and are two weeks ahead of what a fetal-age count would produce.
+
+## Why Fetal Age Matters in IVF — and Why Gestational Age Is Handled Differently
+
+The one situation where fetal age is used directly and precisely is **IVF (in vitro fertilisation)**. Because the exact age of the embryo is known — it is documented from the laboratory — ACOG's guidance on due date methods states specifically that for pregnancies resulting from assisted reproductive technology, the ART-derived gestational age should be used to assign the estimated due date.
+
+For a day-5 embryo transfer, ACOG specifies the EDD is calculated as 261 days from the embryo replacement date. For a day-3 transfer, it is 263 days. These calculations work backwards from the known embryo age to establish a gestational age timeline that aligns with the standard 40-week system. The IVF dating ends up expressed in the same gestational age framework that all other pregnancies use — it just arrives there through a different calculation because the precise conception date is known.
+
+This is why women who conceive through IVF sometimes find that their gestational age on records is slightly different from what an LMP-based calculation would suggest. Their date was set more precisely using embryo age, then converted into the gestational age system, rather than estimated from the LMP.
+
+For women who did not conceive through IVF but who know approximately when they ovulated — through BBT charting, ovulation tests, or cycle tracking — this knowledge can help them understand where their "true" fetal age sits relative to the gestational age their provider is using. It will not change the gestational age on their medical records, because gestational age is the standard clinical measure regardless of how conception timing was tracked. But it can help make sense of why the weeks on paper feel misaligned with lived experience.
+
+Our [pregnancy due date calculator](/pregnancy-due-date-calculator) accounts for cycle length in its calculation, which helps produce a more accurate gestational age estimate for women with cycles longer or shorter than 28 days — since the two-week convention assumes ovulation on day 14, which shifts meaningfully when cycles are, say, 35 or 21 days.
+
+## Where Fetal Age Still Shows Up — and Why It Creates Confusion
+
+Although clinical care runs entirely on gestational age, fetal age appears frequently in popular pregnancy content — particularly in educational descriptions of developmental stages. This is because describing a heartbeat at "3 weeks post-fertilisation" is biologically more precise than "week 5 of pregnancy," and consumer content sometimes uses the developmentally accurate language.
+
+ACOG's guidance on fetal development describes the embryo stage as running through 8 weeks after fertilisation, which in gestational age terms places it through approximately the 10th gestational week. If you have read that a heartbeat can be detected at "6 weeks," that is gestational age — around 4 weeks post-fertilisation. If you have read that the embryo is the size of a grain of rice at "4 weeks," that may be fetal age — equivalent to around 6 gestational weeks.
+
+The mismatch becomes most confusing when a woman who knows her conception date reads content that does not clarify which system it is using. A description of "week 8 development" written in gestational age language will describe a more developed embryo than a woman who is 8 weeks post-fertilisation would expect — because gestational week 8 corresponds to fetal week 6.
+
+When you encounter any week-by-week pregnancy description, the simplest check is whether the source refers to the LMP as the starting point. If it does, it is using gestational age — add two weeks to convert to approximate fetal age. If it refers to fertilisation or conception as the starting point, it is using fetal age — subtract two weeks to find the corresponding gestational age.
+
+## How This Plays Out When You Talk to Your Provider
+
+Your provider works exclusively in gestational age. When they say you are "10 weeks pregnant," they mean 10 weeks from the start of your last menstrual period. When screening test windows are described — the nuchal translucency scan between 11 and 13 weeks, the anatomy scan at 18 to 22 weeks — those are gestational age weeks, not fetal age weeks. When preterm birth is defined as delivery before 37 weeks, that is gestational age.
+
+ACOG's guidance on fetal development confirms that gestational age is how far along a woman is in her pregnancy, usually reported in weeks and days, and this is the definition that governs all clinical timelines. There is no situation in routine prenatal care where a provider would ask for or use fetal age instead of gestational age, unless the pregnancy was conceived through ART and the embryo transfer date is relevant to establishing the EDD.
+
+What this means practically: if you know your conception date and feel that it does not align with the gestational age your provider is using, the most likely explanation is the two-week gap. If the discrepancy is larger than two weeks — suggesting the gestational age your provider has is significantly different from what your conception date would imply — that is worth raising specifically at your next appointment. ACOG's dating guidelines require updating the estimated due date when ultrasound and LMP calculations diverge by more than specific thresholds, and an accurately established gestational age affects the interpretation of every screening test and growth assessment throughout the pregnancy.
+
+## Common Questions About Gestational Age and Fetal Age
+
+### My pregnancy app says I'm 5 weeks. Does that mean my baby is 5 weeks old?
+
+No. At 5 weeks of gestational age, your embryo is approximately 3 weeks old from the moment of fertilisation, assuming a standard 28-day cycle with ovulation at day 14. The app is using gestational age counted from your LMP, which is the clinical standard. The developmental descriptions in week-by-week guides at "week 5" describe what is happening at approximately 3 weeks of fetal development — including the early formation of the neural tube, cardiac tissue beginning to develop, and the embryo being about the size of a sesame seed.
+
+### If my embryo is only 4 weeks old at 6 weeks pregnant, why does the ultrasound show more development than I expected?
+
+Because the developmental changes in the first six weeks of fetal life are extremely rapid — a 4-week-old embryo has already developed from a two-cell zygote through a blastocyst, implanted in the uterine wall, begun forming the neural tube, and initiated the development of what will become the heart. ACOG's fetal growth guidance notes that fertilisation is followed immediately by a small cluster of dividing cells moving through the fallopian tube to the uterus, where implantation occurs, and the placenta begins forming from that cluster. Four weeks of development from a single fertilised egg produces a genuinely visible embryo on a transvaginal ultrasound. The pace of early development makes the first month particularly packed.
+
+### I conceived through ovulation tracking and know my exact conception date. Can I use that instead of gestational age?
+
+You can use it for your own understanding of your baby's fetal age, but your medical records and clinical management will remain in gestational age. Your provider will not switch systems based on known conception timing outside of ART — the standard dating approach using either LMP or early ultrasound produces gestational age, which governs all care decisions. Knowing your conception date can help you contextualise developmental descriptions, convert between fetal and gestational age when reading pregnancy content, and understand why your provider's week count is two weeks ahead of your own. It does not change any clinical threshold or screening timeline.
+
+## When to Discuss Gestational Age With Your Provider
+
+Bring up the topic if:
+
+- **Your LMP-based gestational age and your known conception date differ by more than two weeks** — meaning the gap is larger than the standard ovulation-day assumption would produce, which could suggest your cycle timing is outside the 28-day norm and the LMP calculation may be less accurate for you
+- **Your first-trimester ultrasound gestational age disagrees significantly with your LMP calculation** — ACOG guidelines require updating the due date when the discrepancy exceeds specific thresholds depending on how early the scan was done, so this is a clinical question worth confirming
+- **You are using a pregnancy app or guide and the developmental descriptions seem weeks out of sync with what your scan shows** — this is often the fetal-age versus gestational-age confusion, and your provider can clarify which system the content you are reading uses
+
+## Related Tools on SageNest
+
+Our [pregnancy due date calculator](/pregnancy-due-date-calculator) calculates gestational age from your LMP and cycle length, and accounts for the fact that longer cycles shift ovulation — and therefore conception — later than the 28-day standard assumes. Our [pregnancy week-by-week guide](/pregnancy-week-by-week) covers fetal development week by week in gestational age terms — the universal clinical standard — so you can track your baby's development on the same timeline your provider uses.
+
+## The Bottom Line
+
+Gestational age is counted from the first day of your last menstrual period and is approximately two weeks ahead of fetal age, which is counted from fertilisation. This is not a discrepancy — it is a deliberate convention adopted because the LMP date is observable and conception is not, making gestational age the more consistent anchor for clinical care. ACOG defines gestational age as how far along a pregnancy is, reported in weeks and days from the LMP, and all prenatal screening timelines, developmental milestones, and delivery planning decisions use this system. Fetal age appears in some educational content and is used precisely in IVF, where embryo age is documented — but in routine prenatal care, gestational age is always the measure. If your conception date produces a number two weeks less than your gestational age, that is exactly correct. If the difference is significantly more than two weeks, that is worth discussing with your provider. Use our [pregnancy due date calculator](/pregnancy-due-date-calculator) to confirm your gestational age, and our [pregnancy week-by-week guide](/pregnancy-week-by-week) to follow your baby's development on the timeline your provider is tracking.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [How Your Fetus Grows During Pregnancy](https://www.acog.org/womens-health/faqs/how-your-fetus-grows-during-pregnancy)
+- **ACOG** — [Methods for Estimating the Due Date](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date)
+- **ACOG** — [Management of Suboptimally Dated Pregnancies](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/03/management-of-suboptimally-dated-pregnancies)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+`
+  },
+  {
     slug: 'ultrasound-changed-due-date-what-it-means',
     title: 'Your Ultrasound Changed Your Due Date — Here\'s What That Actually Means',
     description: 'Due date shifted after your scan? ACOG sets exact rules for when ultrasound overrides your LMP date — and why a later scan can\'t change your date again.',

@@ -1,3 +1,10 @@
+## 2026-04-19 (Added gestational age vs fetal age two-week difference blog post)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `gestational-age-vs-fetal-age-two-week-difference`, including SEO metadata (`title`, `description`, `readingTime`, `lastReviewed`, `updatedAt`), image metadata, five FAQ entries, and the full long-form markdown content provided for publication.
+- Regenerated blog publishing artifacts so this post is included in static and indexing outputs: `public/blog/gestational-age-vs-fetal-age-two-week-difference.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: this publishes the newly requested gestational-age vs fetal-age education article and keeps newest content first in feed/index ordering while maintaining static blog, redirect, and sitemap sync guarantees.
+
+
 ## 2026-04-19 (Fixed legacy /blog-static URL fallback and aligned redirect docs)
 
 - Added legacy redirect generation in `scripts/redirects-utils.mjs` so every `/blog-static/<slug>` request now permanently redirects to `/blog/<slug>` before the canonical blog rewrite runs, preventing old `/blog-static/...` links from landing on 404 pages.
