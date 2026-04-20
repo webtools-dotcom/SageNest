@@ -1,3 +1,10 @@
+## 2026-04-20 (Added new blog post: irregular-cycles-due-date-inaccurate-long-cycle)
+
+- Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `irregular-cycles-due-date-inaccurate-long-cycle`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
+- Regenerated the derived publish/index artifacts so the new article is live and consistent across static outputs: `public/blog/irregular-cycles-due-date-inaccurate-long-cycle.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: publish the requested irregular-cycles due-date accuracy explainer while keeping SageNest's canonical blog source and generated blog, redirect, and sitemap artifacts synchronized.
+
+
 ## 2026-04-19 (Added gestational age vs fetal age two-week difference blog post)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` with slug `gestational-age-vs-fetal-age-two-week-difference`, including SEO metadata (`title`, `description`, `readingTime`, `lastReviewed`, `updatedAt`), image metadata, five FAQ entries, and the full long-form markdown content provided for publication.

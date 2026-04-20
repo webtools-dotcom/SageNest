@@ -13,6 +13,136 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'irregular-cycles-due-date-inaccurate-long-cycle',
+    title: "Your Due Date Is Probably Wrong If Your Cycles Aren't 28 Days",
+    description: 'LMP-based due dates assume a 28-day cycle with ovulation on day 14. ACOG confirms this fails for irregular cycles — and why your first scan matters most.',
+    readingTime: '7 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-20',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'candid photograph, 35mm lens, a pregnant woman in her late 20s sitting cross-legged on a bed looking at her phone with a cycle-tracking app visible on the screen, one hand resting on her round belly, expression is quiet puzzlement with a small frown, overcast morning light from the left casting even shadows, an open notebook with handwritten dates visible on the duvet beside her, real home bedroom with soft blurred background, candid and real not staged, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette',
+    faq: [
+      {
+        question: 'Can irregular periods make your due date wrong?',
+        answer: "Yes, significantly. The standard LMP-based due date calculation assumes a regular 28-day cycle with ovulation on day 14 — and ACOG's guidance on estimating the due date explicitly states that this method does not account for irregularities in cycle length or variability in ovulation timing. If your cycles are longer than 28 days, you ovulate later in your cycle than the formula assumes, meaning conception occurred later than the calculation implies — and your true due date is later than your LMP-based date. This is exactly why ACOG recommends first-trimester ultrasound to confirm or correct the due date, particularly for women with cycles that do not follow the 28-day pattern."
+      },
+      {
+        question: 'How much can a long cycle shift my due date?',
+        answer: 'The shift is directly proportional to how much later than day 14 your ovulation falls. ACOG confirms that in a 35-day cycle, ovulation occurs around day 21 — approximately one week later than the standard formula assumes. This means conception in a 35-day cycle typically happens about a week later than an LMP calculation would suggest, and the accurate due date is around a week later than the calendar initially produces. For women with cycles of 40 days or more, the gap is proportionally larger. A first-trimester ultrasound catches and corrects this shift because it measures the actual developmental age of the embryo directly.'
+      },
+      {
+        question: 'I have PCOS and my cycles are very irregular. How does that affect my due date?',
+        answer: "PCOS causes the ovaries to not release an egg consistently or on a predictable schedule, and ACOG confirms that high androgen levels associated with PCOS can prevent regular ovulation. This makes the LMP calculation particularly unreliable for women with PCOS, because the assumption that ovulation happened on day 14 breaks down entirely when ovulation is irregular or unpredictable. For women with PCOS, ACOG's approach of using first-trimester ultrasound to establish gestational age is especially important — the scan measures embryonic development directly rather than relying on a cycle assumption that does not apply to you."
+      },
+      {
+        question: 'What happens at my first ultrasound if my due date shifts?',
+        answer: "If your first-trimester ultrasound measurement of crown-rump length disagrees with your LMP-based due date by more than a certain number of days — 5 days before 9 weeks, or 7 days from 9 through 13 weeks and 6 days, according to ACOG's dating guidelines — your provider will update your estimated due date to match the ultrasound. This is not a cause for concern; it is the system working correctly. The scan's measurement of your embryo's actual size overrides the calendar calculation for women whose cycles don't match the 28-day assumption. The earlier in the first trimester this scan is done, the more precise the correction will be."
+      },
+      {
+        question: 'If I know when I ovulated, can I use that to calculate my due date instead of my LMP?',
+        answer: "Your ovulation date is useful context and helps you understand why your LMP-based date may be off — but clinical due dates are still set through the official process of LMP calculation refined by first-trimester ultrasound. If you tracked ovulation and know it happened later than day 14, you can share this with your provider, who will factor it into their assessment of your dating reliability. But the definitive correction comes from an early ultrasound crown-rump length measurement, which ACOG considers the most accurate available method for confirming gestational age and sets the due date that governs all subsequent care decisions."
+      }
+    ],
+    content: `
+You have a 35-day cycle. Or a 40-day cycle. Or cycles that come every three to four weeks but land on a different day each time. You used an app or a calendar to calculate your due date from your last period, and now you are pregnant and wondering whether the number you are working with is actually right. It probably is not — and ACOG's guidance explains precisely why, and what actually corrects it.
+
+## Why the Standard Due Date Formula Fails for Irregular Cycles
+
+The calculation your provider uses, and that every pregnancy app defaults to, is built on a specific assumption: that you have a 28-day cycle, and that you ovulated on day 14 of that cycle. ACOG's committee opinion on methods for estimating the due date states this directly — the EDD (estimated due date) is 280 days after the first day of the last menstrual period, and this practice assumes a regular 28-day cycle with ovulation occurring on day 14. The guidance explicitly notes that this practice does not account for irregularities in cycle length or variability in the timing of ovulation.
+
+The reason ovulation timing matters so much for due date accuracy is that conception can only happen at ovulation. The due date is essentially a count of 280 days from the LMP, which in a 28-day cycle aligns with conception occurring approximately two weeks in. But if your ovulation happens later in your cycle — as it does for almost everyone with cycles longer than 28 days — then conception happened later than the formula assumes, and your true due date is later than your calendar says.
+
+ACOG's guidance on timing intercourse for conception makes the mechanism clear: ovulation typically happens about 14 days before your period starts, which is consistent regardless of cycle length. So if your cycle is 35 days long, you ovulate around day 21. If your cycle is 40 days long, you ovulate around day 26. In both cases, the LMP formula — which assumes ovulation on day 14 — would place conception about a week or more earlier than it actually occurred. The formula produces a due date that is correspondingly earlier than your real one.
+
+## How Large the Error Actually Is — and Why It Compounds
+
+For a woman with a consistently 35-day cycle, the error is roughly seven days. Her LMP-based due date is approximately a week earlier than her true due date. That week matters more than it might seem. A due date that is a week early means that at 40 weeks according to her records, she is actually only at around 39 weeks of true gestational age — and conversations about late-pregnancy monitoring, induction timing, and postterm classification all hinge on which number is being used.
+
+For women with longer cycles — 40 or 45 days — the gap is proportionally larger. The LMP calculation assigns conception to approximately two weeks after the period, regardless of cycle length. Every day that actual ovulation falls beyond day 14 of the cycle is a day by which the LMP due date is wrong.
+
+This is not a rare edge case. ACOG's dating guidance notes that in a study of women who received first-trimester ultrasounds, 40 percent had their due dates adjusted because of a discrepancy of more than five days between the ultrasound measurement and the LMP-based calculation. That is a substantial proportion — and it reflects the real-world reality that cycle variation is common, and the 28-day assumption frequently does not hold.
+
+The direction of the error for women with long cycles is consistent and predictable: the LMP date will assign a due date that is too early. The embryo will measure slightly younger at the first scan than the LMP calculation would suggest, because it is actually younger — it was conceived later in the cycle. When this happens and the discrepancy meets ACOG's threshold for a date change, the provider updates the due date to reflect the scan measurement. This is not an anomaly. It is the dating system working correctly.
+
+Our [pregnancy due date calculator](/pregnancy-due-date-calculator) accounts for cycle length in its calculation, which produces a more accurate LMP-based starting point for women with cycles outside the 28-day range before they have had their first scan. But the first-trimester ultrasound remains the definitive correction.
+
+## Why PCOS Creates a Particularly Significant Uncertainty
+
+Polycystic ovary syndrome adds another layer to this problem beyond simply having a long cycle. ACOG's patient guidance on PCOS confirms that high androgen levels associated with the condition can prevent the ovaries from releasing an egg regularly — meaning that in some months, ovulation may not occur at all, and when it does occur, the timing is often unpredictable from cycle to cycle.
+
+For a woman with PCOS, the LMP-based due date is not just shifted by a fixed amount based on a longer average cycle — it is unreliable in a more fundamental way because there is no consistent pattern for when in the cycle ovulation occurred. A period that came 60 days after the last one does not reliably place ovulation at day 46. The conception that led to the pregnancy could have happened at a wide range of points within that long cycle, and the LMP calculation cannot account for which point it was.
+
+This is why ACOG's emphasis on first-trimester ultrasound for establishing gestational age is particularly important for women with PCOS. The scan does not need to know when ovulation happened — it measures the embryo or fetus directly. The crown-rump length gives the provider a gestational age estimate based on actual developmental size, which is the most accurate available method for establishing dating regardless of what the cycle looked like beforehand.
+
+For women with PCOS who conceived naturally — rather than through medically timed or assisted cycles where ovulation timing is documented — the first scan may show a meaningful discrepancy from the LMP date, and a date adjustment is entirely expected.
+
+## What Accurate Dating Actually Affects
+
+Understanding why this matters goes beyond just knowing your due date. ACOG's guidance is clear that an accurately assigned due date early in prenatal care is among the most important results of early evaluation, because it is vital for scheduling and interpreting specific tests, determining the appropriateness of fetal growth, and for any decisions about timing of delivery.
+
+Screening tests are among the most time-sensitive. The nuchal translucency ultrasound, which screens for chromosomal conditions, must be performed between 11 weeks and 13 weeks and 6 days of gestational age. If a woman's gestational age is incorrectly set a week too early, she may schedule this scan too late, potentially missing the window. The anatomy scan, performed between 18 and 22 weeks, involves measurements that are interpreted against gestational age norms — a date that is a week off shifts those interpretations.
+
+Later in pregnancy, fetal growth assessment relies heavily on comparing the baby's size to what is expected at a given gestational age. If the gestational age on file is a week early, a baby who is growing perfectly normally for their true age will appear to be measuring slightly large, which can trigger unnecessary follow-up. Conversely, a growth concern could be masked if the baby appears appropriately sized for an incorrectly younger gestational age.
+
+The postterm classification — and the conversations about induction it triggers — is also directly tied to due date accuracy. A woman whose due date is a week early by LMP calculation will be classified as 41 weeks a week before she actually reaches 41 weeks of true gestational age. ACOG's management guidelines for late and postterm pregnancy are calibrated to gestational age — a correct date is not a paperwork matter, it is a clinical safety matter.
+
+## What to Do If You Have an Irregular Cycle
+
+The most practically useful action is the same regardless of how irregular your cycles are: get a first-trimester ultrasound as early as possible in pregnancy, and know that a date change at that scan is normal and expected — it is not a sign that something went wrong.
+
+ACOG considers first-trimester crown-rump length measurement the most accurate available method for establishing gestational age. The earlier in the first trimester it is done, the more precise the result — a CRL measurement before 9 weeks has an accuracy of approximately ±5 days, while one between 9 and 13 weeks is accurate to approximately ±7 days. Both are significantly more accurate than an LMP calculation that assumed a cycle pattern you do not have.
+
+When you attend your first prenatal appointment, tell your provider specifically that your cycles are irregular — the length, whether they vary, and if you have a condition like PCOS that disrupts ovulation timing. This information helps your provider assess how much weight to give the LMP date before the scan, and whether to prioritise an early ultrasound over waiting for the standard first-trimester timing.
+
+ACOG's guidance also notes that pregnancies without an ultrasound confirming or revising the due date before 22 weeks of gestational age are classified as suboptimally dated — a formal clinical category that triggers modified management approaches. For women with irregular cycles who may not realise how much their LMP date could be off, reaching 22 weeks without a scan could mean months of clinical decisions being made against an incorrect gestational age baseline.
+
+Our [pregnancy week-by-week guide](/pregnancy-week-by-week) tracks developmental milestones based on gestational age — the universal clinical standard. That guide is only as accurate as the due date underpinning it, which is why a corrected, ultrasound-confirmed date is the foundation for understanding what your baby is doing week by week.
+
+## Common Questions About Cycles and Due Date Accuracy
+
+### My cycle is 32 days. Is my due date likely to be wrong?
+
+By a small amount, yes. A 32-day cycle places ovulation around day 18 — four days later than the 28-day formula assumes. Your LMP-based date is likely around four days earlier than your true due date. This is a modest discrepancy and may or may not meet ACOG's threshold for an official date change at your first scan, which is more than five days before 9 weeks of gestation, or more than seven days from 9 weeks through 13 weeks and 6 days. Your provider will make that determination at the scan. Knowing your cycle is 32 days rather than 28 is still useful context to share.
+
+### I had an early miscarriage and my cycles since then have been irregular. How does that affect dating?
+
+Cycles that have recently been disrupted by pregnancy loss often take several cycles to return to a consistent pattern, and ovulation timing in those early post-loss cycles can be unpredictable. This is a specific reason to mention recent pregnancy history to your provider at your first prenatal appointment, and to prioritise an early first-trimester scan. Your provider will note the uncertainty about your LMP reliability and rely more heavily on the ultrasound to establish gestational age. This is standard practice for any situation where cycle timing is uncertain.
+
+### My app calculated my due date adjusting for my 35-day cycle. Is that accurate enough?
+
+Cycle-adjusted apps produce a better estimate than a standard 28-day calculation, but they still assume ovulation happened exactly 14 days before the period — which may not be true for any specific cycle. For women with consistently longer cycles and very regular patterns, the adjustment is a meaningful improvement. For women with variable cycles, PCOS, or any other source of ovulation unpredictability, an app-based estimate is still an estimate. The first-trimester ultrasound measurement supersedes any calendar calculation, including app-adjusted ones, when the discrepancy meets clinical thresholds.
+
+## When to Discuss Cycle Irregularity With Your Provider
+
+Bring up your cycle history specifically if:
+
+- **Your cycles are consistently longer than 28 days** — tell your provider the typical length so they can assess how much the LMP date may be off before your first scan
+- **Your cycles are variable in length** — varying by more than a few days from month to month means the formula's assumption of consistent ovulation timing is even less reliable
+- **You have PCOS, a thyroid condition, or another diagnosis that affects ovulation timing** — these conditions make the LMP date particularly unreliable and make early first-trimester ultrasound especially important
+- **Your first-trimester scan shows a significant discrepancy from your LMP date** — ask your provider to confirm that the date has been updated to reflect the scan measurement and understand what the corrected date means for your care
+- **You have not had a first-trimester ultrasound and you are approaching 20 weeks** — ask specifically whether your pregnancy is considered optimally or suboptimally dated, and what that means for your care plan
+
+## Related Tools on SageNest
+
+Our [pregnancy due date calculator](/pregnancy-due-date-calculator) includes a cycle length adjustment that produces a more accurate LMP-based starting point before your first scan. Our [pregnancy week-by-week guide](/pregnancy-week-by-week) tracks everything from first-trimester milestones through delivery, calibrated to the gestational age your provider establishes — which for women with irregular cycles means the ultrasound-confirmed date, not the raw LMP calculation.
+
+## The Bottom Line
+
+The standard due date formula assumes a 28-day cycle with ovulation on day 14 — and ACOG explicitly states it does not account for irregularities in cycle length or ovulation timing. If your cycles are longer than 28 days, you ovulate later, you conceived later, and your LMP-based due date is earlier than it should be. ACOG confirms that in a 35-day cycle, ovulation falls around day 21 — about a week later than the formula assumes, shifting your true due date approximately a week later. For women with PCOS or highly variable cycles, the degree of LMP inaccuracy is less predictable and potentially larger. The solution is the same in all cases: first-trimester ultrasound, as early as possible. ACOG considers this the most accurate method for establishing gestational age, and it is the measurement that corrects the LMP calculation for everyone whose cycle does not match the formula's assumption. A date change at your first scan is not a complication — for women with irregular cycles, it is expected. Use our [pregnancy due date calculator](/pregnancy-due-date-calculator) for a cycle-adjusted starting estimate, and bring your full cycle history to your first prenatal appointment so your provider can prioritise early dating.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [Methods for Estimating the Due Date](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/05/methods-for-estimating-the-due-date)
+- **ACOG** — [Polycystic Ovary Syndrome (PCOS)](https://www.acog.org/womens-health/faqs/polycystic-ovary-syndrome-pcos)
+- **ACOG** — [Trying to Get Pregnant? Here's When to Have Sex.](https://www.acog.org/womens-health/experts-and-stories/the-latest/trying-to-get-pregnant-heres-when-to-have-sex)
+- **ACOG** — [Management of Suboptimally Dated Pregnancies](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2017/03/management-of-suboptimally-dated-pregnancies)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+`
+  },
+  {
     slug: "gestational-age-vs-fetal-age-two-week-difference",
     title: 'You\'re "6 Weeks Pregnant" But Your Baby Is Only 4 Weeks Old — Here\'s Why',
     description: 'Gestational age and fetal age are not the same thing. ACOG explains why medicine counts from your last period — and what it means when your scan says "6 weeks."',
