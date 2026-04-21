@@ -1,3 +1,10 @@
+## 2026-04-21 (Added blog: Your Due Date Is Not a Deadline — Here's the Normal Birth Window Around It)
+
+- Added a new blog post object at the top of `src/data/blogPosts.ts` with slug `due-date-normal-delivery-window-full-term`, including metadata (`lastReviewed`, `updatedAt`, `imageUrl`, `imagePrompt`), FAQ entries, and full long-form content.
+- Regenerated blog publishing artifacts so the new post is included in static and indexing outputs: `public/blog/due-date-normal-delivery-window-full-term.html`, `public/blog/index.html`, `public/_redirects`, and `public/sitemap.xml`.
+- Why: to publish the requested due-date delivery-window educational article and keep static blog pages, redirects, and sitemap fully synchronized for SEO and discovery.
+
+
 ## 2026-04-20 (Added new blog post: irregular-cycles-due-date-inaccurate-long-cycle)
 
 - Added a new top-of-list blog post object in `src/data/blogPosts.ts` for slug `irregular-cycles-due-date-inaccurate-long-cycle`, including the provided title, description, reading time, image prompt, FAQ entries, and full long-form content, plus required schema metadata fields (`lastReviewed` and `updatedAt`) used by the existing blog pipeline.
