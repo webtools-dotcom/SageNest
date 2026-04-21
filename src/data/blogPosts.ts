@@ -13,6 +13,131 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'due-date-normal-delivery-window-full-term',
+    title: "Your Due Date Is Not a Deadline — Here's the Normal Birth Window Around It",
+    description: "Only 1 in 20 women deliver on their due date, per ACOG. Here's what full-term actually means, and the real week range where most uncomplicated births happen.",
+    readingTime: '7 min read',
+    lastReviewed: 'April 2026',
+    updatedAt: '2026-04-21',
+    imageUrl: '/images/blog/sagenest-blog-default.jpg',
+    imagePrompt: 'candid photograph, 35mm lens, a heavily pregnant woman in her early 30s sitting at a kitchen table looking at a paper calendar on the wall with a circle around a date, one hand resting flat on her round belly, expression is quiet uncertainty with a small frown, warm golden afternoon light from a window to the right casting soft shadows, a half-drunk mug of tea on the table and a phone face-down beside it, real home kitchen with soft blurred background, candid and real not staged, shot on Canon EOS R, photorealistic, not AI generated, no illustration, no painting, no watermark, no text, no logo, warm tones, sage green palette',
+    faq: [
+      {
+        question: 'What percentage of babies are born on their due date?',
+        answer: "Very few. ACOG confirms that only about 1 in 20 women give birth on their estimated due date. The due date is a statistical midpoint — the most likely single day — but it is not a prediction that labour will begin on that specific date. Most births in uncomplicated pregnancies occur within a spread of several weeks around the due date, which is why ACOG's clinical guidance defines the normal \"full-term\" window as running from 39 weeks through 40 weeks and 6 days, not as a single target day."
+      },
+      {
+        question: 'What is considered full term in pregnancy?',
+        answer: "ACOG defines full term as 39 weeks and 0 days through 40 weeks and 6 days of gestation. This is the window in which neonatal outcomes are consistently the best in uncomplicated pregnancies. Births between 37 and 38 weeks and 6 days are classified as \"early term\" — not preterm, but not the optimal window either. Births at 41 weeks through 41 weeks and 6 days are \"late term,\" and beyond 42 weeks is \"postterm.\" Knowing these categories helps put a due date into context: it sits at the end of the full-term window, not at the centre of it."
+      },
+      {
+        question: 'Is it normal to give birth 2 weeks before your due date?',
+        answer: "Giving birth at 38 weeks is classified as \"early term\" by ACOG — not preterm, and not unusual, but slightly before the full-term window that starts at 39 weeks. ACOG guidance notes that neonatal outcomes are lowest for births in the early-term period (37 through 38 weeks and 6 days) compared with full-term births, particularly for respiratory health. An early-term birth at 38 weeks in an otherwise uncomplicated pregnancy is generally manageable, but it is worth understanding that 38 weeks sits in a different clinical category than 39 or 40 weeks."
+      },
+      {
+        question: 'What week do most women go into labour naturally?',
+        answer: "Most women in uncomplicated pregnancies go into labour spontaneously somewhere between 39 and 41 weeks of gestational age, with 40 weeks representing the statistical average. ACOG confirms that the average length of pregnancy is 40 weeks counted from the first day of the last menstrual period. Since only about 1 in 20 women deliver on their exact due date, the realistic natural labour window spans several weeks on either side of 40 weeks — with the full-term range of 39 through 40 weeks and 6 days representing the period in which outcomes are optimal."
+      },
+      {
+        question: "If I reach 39 weeks and haven't gone into labour, should I be worried?",
+        answer: "No. Reaching 39 weeks without labour is entirely normal — 39 weeks is the start of the full-term window, not the end of it. ACOG defines full term as 39 weeks through 40 weeks and 6 days, and this entire span represents normal timing for an uncomplicated pregnancy. Spontaneous labour before 40 weeks is common, but so is labour that begins at 40 weeks or slightly beyond. Your provider will begin closer monitoring if you reach 41 weeks, but being at 39 or 40 weeks with no labour yet is not a clinical concern in an otherwise straightforward pregnancy."
+      }
+    ],
+    content: `
+Only about 1 in 20 women give birth on their due date. ACOG states this directly — and yet the due date is treated throughout pregnancy as a specific target, circled on calendars, counted down to daily, and mentally weighted as the moment everything should happen. Understanding what a due date actually is, and what the normal delivery window around it looks like, changes how the final weeks of pregnancy feel in a way that no amount of reassurance about "babies come when they're ready" actually manages.
+
+## Why the Due Date Is a Midpoint, Not a Deadline
+
+The estimated due date (EDD) is calculated as 280 days from the first day of the last menstrual period. ACOG confirms this figure, noting that the average length of a singleton pregnancy is 40 weeks from the LMP. The operative word is average. An average is the midpoint of a distribution — meaning roughly half of all births in uncomplicated pregnancies will happen before 40 weeks, and roughly half will happen after. The due date marks the centre of the distribution, not the moment at which labour should begin.
+
+This is why ACOG can simultaneously say that the EDD is useful — it determines gestational age, tracks fetal growth, schedules screening tests, and provides the timeline for all prenatal care decisions — while also confirming that only about 1 in 20 women actually give birth on that date. Those two things are not in contradiction. The due date is a powerful clinical tool and a poor delivery prediction at the same time.
+
+The practical consequence of this is that every woman approaching her due date is approaching a statistical midpoint, not a deadline. Reaching 38 weeks without labour is normal. Reaching the due date without labour is normal. For a significant proportion of women, going several days or a week past the due date before labour begins is also normal — and ACOG's terminology reflects this, classifying pregnancies from 39 weeks through 40 weeks and 6 days as "full term," the range in which outcomes are consistently best for uncomplicated pregnancies.
+
+## What ACOG's Gestational Age Categories Actually Mean for You
+
+ACOG and the Society for Maternal-Fetal Medicine jointly established specific gestational age categories to replace the old, imprecise label of "term" — which previously referred to the entire 37 to 42 week range as if it were a uniform period. ACOG's guidance on the definition of term pregnancy replaced that single label with four distinct categories, each with different clinical implications.
+
+**Early term** covers 37 weeks and 0 days through 38 weeks and 6 days. A baby born in this window is not premature — the threshold for preterm birth is before 37 weeks — but early-term births carry slightly higher rates of neonatal respiratory and other complications than full-term births. Research cited in ACOG's guidance confirms that adverse neonatal outcomes decrease progressively with advancing gestational age through this range, with the lowest rates occurring from 39 weeks onwards. This is why ACOG specifically recommends against non-medically indicated deliveries before 39 weeks.
+
+**Full term** covers 39 weeks and 0 days through 40 weeks and 6 days — a two-week window that spans the due date and includes the week before it. ACOG's guidance confirms that the frequency of adverse neonatal outcomes is lowest among uncomplicated pregnancies delivered within this window. The due date itself — 40 weeks — falls at the later end of the full-term range, not at its midpoint. This means that spontaneous labour beginning anywhere from 39 weeks through the day before 41 weeks is occurring squarely within the optimal delivery window.
+
+**Late term** covers 41 weeks and 0 days through 41 weeks and 6 days. At this point, monitoring becomes more active and induction is typically discussed. The clinical picture is different from the full-term window, but late-term birth is still not postterm.
+
+**Postterm** begins at 42 weeks. ACOG recommends induction be considered from 41 weeks and implemented after 42 weeks for this reason.
+
+Understanding these categories reframes the due date: it sits at the later boundary of the full-term window, one week before late-term begins. Labour beginning at 39 weeks, 39 weeks and 4 days, 40 weeks exactly, or 40 weeks and 5 days are all occurring within the same full-term classification — all within the normal, optimal range.
+
+Our [pregnancy week-by-week guide](/pregnancy-week-by-week) tracks your baby's development through the final weeks of pregnancy, covering what is happening at 38, 39, 40, and 41 weeks so you can follow the changes that happen during this normal late-pregnancy window — not just focus on a single target date.
+
+## Why Birth Timing Varies Even Within the Normal Window
+
+The variability in when spontaneous labour begins within the full-term range reflects real biological variation — not inaccurate due dates or problems with the pregnancy. Several factors influence when labour naturally begins, and none of them are fully predictable or controllable.
+
+**Cervical readiness** is one of the most significant. In preparation for labour, the cervix gradually softens, shortens, and begins to open — a process called effacement and dilation. This process can begin weeks before labour actually starts, or it can happen very quickly in the days immediately before. A cervix that has begun effacing at 38 weeks does not guarantee imminent labour. A cervix that is entirely closed at 40 weeks does not mean labour is abnormally delayed.
+
+**Whether this is a first pregnancy** is another factor. First-time mothers statistically tend to deliver somewhat later than women who have previously given birth — ACOG notes that being a first-time mother is one of the factors associated with pregnancies that extend past the due date. This is not a concern; it is a pattern that reflects how the body responds differently to a first pregnancy.
+
+**Individual variation in pregnancy duration** is also real. Just as height, cycle length, and metabolism vary between individuals, so does natural pregnancy length. A woman who routinely goes into spontaneous labour at 39 weeks in every pregnancy and a woman who routinely goes into labour at 41 weeks are both within the normal range — their biology simply sits at different points in the distribution.
+
+The important clinical implication of all this variation is that monitoring increases as gestational age advances past 40 weeks — not because anything is wrong, but because the probability distribution of when labour begins is being actively managed. Our [pregnancy due date calculator](/pregnancy-due-date-calculator) can help you calculate exactly where you are relative to the full-term window and the late-term threshold, which helps you understand your provider's monitoring timeline.
+
+## What "Preparing for Labour" Actually Looks Like Across the Full-Term Window
+
+One of the more useful things to understand about the full-term window is that your body is actively preparing for labour throughout it — and many of the signs of that preparation are not signs that labour is about to start imminently.
+
+**Braxton Hicks contractions** — irregular tightening sensations that do not progress into a regular pattern — are common throughout the third trimester and become more noticeable in the full-term window. They are part of the uterus practising the contractions that will eventually become labour, but their presence does not predict when true labour will begin.
+
+**Increased pelvic pressure** as the baby drops lower is common in the final weeks, particularly in first pregnancies. It signals that the baby's position is changing in preparation for delivery, not that labour is immediately imminent.
+
+**Cervical changes**, including a mucus plug passing or bloody show, can precede labour by hours, days, or even weeks. These are signs the cervix is changing, not precise labour timers.
+
+This matters because the full-term window involves a lot of physical change that feels significant but often does not predict the specific timing of labour onset. The body is doing real work across the entire 39 to 40 week and 6 day range, and that work does not always translate into a clear signal of when active labour will begin.
+
+## Common Questions About the Due Date and Delivery Timing
+
+### My due date is in 3 days and I have no signs of labour. Is something wrong?
+
+No. Given that only about 1 in 20 women deliver on their due date, being three days away with no labour signs is an entirely unremarkable situation. Most labour begins either shortly before or after the due date, with the full-term window running until 40 weeks and 6 days. Your provider will discuss monitoring options if you reach 41 weeks, but at 3 days before your due date with an otherwise uncomplicated pregnancy, there is nothing clinically concerning about the absence of labour signs.
+
+### I went into labour at 38 weeks and 4 days. Was my baby early?
+
+Your baby was delivered in the early-term window — ACOG defines early term as 37 weeks through 38 weeks and 6 days. This is distinct from preterm (before 37 weeks) and not categorised the same way as full-term (39 through 40 weeks and 6 days). Early-term babies are generally healthy, but this window is associated with slightly higher rates of neonatal respiratory issues compared with full-term deliveries. If your 38-week delivery was spontaneous with no complications, it is within the normal range of birth timing — just in a different clinical category than a 39 or 40 week birth.
+
+### Can I request an induction at my due date just to get the uncertainty over with?
+
+Elective induction before 39 weeks is not recommended by ACOG because of the early-term risk profile described above. At 39 weeks, the evidence shifts — research does support that induction at 39 weeks in uncomplicated pregnancies does not increase caesarean risk and may have benefits. At 40 weeks, induction is a reasonable option to discuss with your provider based on your specific circumstances, cervical readiness, and preferences. Whether induction at 40 weeks versus expectant management to 41 weeks is the right choice for you is a shared decision that belongs in a direct conversation with your ob-gyn, not one to make independently based on general guidance.
+
+## When to Talk to Your Provider
+
+Contact your provider promptly — not at your next scheduled appointment — if you notice:
+
+- **Reduced or absent fetal movement** at any point in the full-term window, particularly if the pattern changes significantly from what you have been experiencing. Do not wait until your next appointment to report this.
+- **Any leaking or gushing of fluid** that may indicate your waters have broken, regardless of whether contractions have started
+- **Regular, tightening contractions** that come at consistent intervals and become stronger, longer, and closer together — this pattern distinguishes active labour from Braxton Hicks
+- **Any concerning symptoms alongside a pregnancy that is not progressing toward labour past 41 weeks** — your provider will be guiding monitoring at this point, but any new symptoms should be reported promptly
+
+## Related Tools on SageNest
+
+Our [pregnancy due date calculator](/pregnancy-due-date-calculator) confirms your exact gestational age in weeks and days — helping you place yourself precisely within the full-term window (39 through 40 weeks and 6 days), the early-term range (37 through 38 weeks and 6 days), or the late-term period (41 through 41 weeks and 6 days). Knowing which category you are currently in clarifies what your provider is monitoring and why. Our [pregnancy week-by-week guide](/pregnancy-week-by-week) covers the specific developmental and physical changes happening at 38, 39, 40, and 41 weeks — giving the final month of pregnancy a more specific picture than a single due date date allows.
+
+## The Bottom Line
+
+Only about 1 in 20 women deliver on their due date, according to ACOG — a figure that should reframe how the EDD is understood from the start of pregnancy. The due date is the midpoint of a normal delivery distribution, not a biological deadline. ACOG defines full term as 39 weeks through 40 weeks and 6 days, confirming this two-week span as the window in which neonatal outcomes are lowest in uncomplicated pregnancies and in which spontaneous labour most commonly begins. Births from 37 weeks are not preterm, but the early-term range of 37 to 38 weeks and 6 days carries slightly different clinical considerations than full term. The late-term period (41 weeks) triggers more active monitoring, and postterm begins at 42 weeks. Placing your due date within this full picture — as the later boundary of full term, one week before late-term — changes the emotional weight of reaching it without labour from a sign of a problem to a normal position within a normal range. Use our [pregnancy due date calculator](/pregnancy-due-date-calculator) to know exactly where you sit in the gestational age calendar right now.
+
+**Sources**
+
+This post draws on guidance from the following primary sources:
+
+- **ACOG** — [How Your Fetus Grows During Pregnancy](https://www.acog.org/womens-health/faqs/how-your-fetus-grows-during-pregnancy)
+- **ACOG** — [Definition of Term Pregnancy](https://www.acog.org/clinical/clinical-guidance/committee-opinion/articles/2013/11/definition-of-term-pregnancy)
+- **ACOG** — [When Pregnancy Goes Past Your Due Date](https://www.acog.org/womens-health/faqs/when-pregnancy-goes-past-your-due-date)
+- **ACOG** — [A Partner's Guide to Pregnancy](https://www.acog.org/womens-health/faqs/a-partners-guide-to-pregnancy)
+
+**Clinical recommendations reflect guidance from these sources. This article is for informational purposes only and is not a substitute for professional medical advice. Always consult your healthcare provider with any concerns about your pregnancy.**
+`
+  },
+  {
     slug: 'irregular-cycles-due-date-inaccurate-long-cycle',
     title: "Your Due Date Is Probably Wrong If Your Cycles Aren't 28 Days",
     description: 'LMP-based due dates assume a 28-day cycle with ovulation on day 14. ACOG confirms this fails for irregular cycles — and why your first scan matters most.',
