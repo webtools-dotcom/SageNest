@@ -26,7 +26,7 @@ for (const slug of slugs) {
 
   const html = readFileSync(staticPath, 'utf8');
   if (!html.includes(`<link rel="canonical" href="${canonicalUrl}" />`)) {
-    errors.push(`Canonical tag mismatch in public/blog-static/${slug}.html`);
+    errors.push(`Canonical tag mismatch in public/blog/${slug}.html`);
   }
 
   if (!sitemapLocs.has(canonicalUrl)) {
