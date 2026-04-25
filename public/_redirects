@@ -13,6 +13,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /flying-while-pregnant /pregnancy-flight-calculator 301
 /pregnant-flying /pregnancy-flight-calculator 301
 /similar-tools /pregnancy-tools 301
+/pregnant-before-period-returned-due-date-no-lmp /blog/pregnant-before-period-returned-due-date-no-lmp 301
 /suboptimally-dated-pregnancy-no-early-scan /blog/suboptimally-dated-pregnancy-no-early-scan 301
 /baby-measuring-ahead-behind-gestational-age-scan /blog/baby-measuring-ahead-behind-gestational-age-scan 301
 /due-date-normal-delivery-window-full-term /blog/due-date-normal-delivery-window-full-term 301
@@ -84,6 +85,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /pregnancy-week-by-week-milestones /blog/pregnancy-week-by-week-milestones 301
 /ivf-due-date-guide /blog/ivf-due-date-guide 301
 /how-due-dates-are-calculated /blog/how-due-dates-are-calculated 301
+/blog-static/pregnant-before-period-returned-due-date-no-lmp /blog/pregnant-before-period-returned-due-date-no-lmp 301
 /blog-static/suboptimally-dated-pregnancy-no-early-scan /blog/suboptimally-dated-pregnancy-no-early-scan 301
 /blog-static/baby-measuring-ahead-behind-gestational-age-scan /blog/baby-measuring-ahead-behind-gestational-age-scan 301
 /blog-static/due-date-normal-delivery-window-full-term /blog/due-date-normal-delivery-window-full-term 301
@@ -156,6 +158,7 @@ https://www.sagenesthealth.com/* https://sagenesthealth.com/:splat 301
 /blog-static/ivf-due-date-guide /blog/ivf-due-date-guide 301
 /blog-static/how-due-dates-are-calculated /blog/how-due-dates-are-calculated 301
 /pregnancy-due-date-calculator/ /pregnancy-due-date-calculator 301
+/blog/ /blog 301
 /admin/login/ /admin/login 301
 /admin/blogposter/ /admin/blogposter 301
 /about/ /about 301
