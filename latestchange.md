@@ -699,3 +699,10 @@
 - Updated blog/article-specific typography in `src/styles/global.css` under the `.article` scope only, so long-form post headings now use a sans-serif style and larger editorial sizing while paragraph/list copy now uses larger serif text for closer visual parity with the provided BabyCenter references.
 - Kept the change strictly typography-focused (font family, font size, weight, spacing) and limited it to existing article content selectors, without modifying layout structure, routing, components, business logic, or non-article UI sections.
 - Why: the article text on SageNest was visibly smaller than the provided BabyCenter examples (especially on mobile), so this update aligns cross-device reading size and typographic tone more closely to the requested benchmark.
+
+## 2026-04-27 (Fix Cloudflare npm ci lockfile mismatch for @emnapi packages)
+
+- Updated `package.json` to add explicit dev dependencies `@emnapi/core@1.10.0` and `@emnapi/runtime@1.10.0` so lockfile resolution remains deterministic with Cloudflare's npm 10.9.2.
+- Updated `.npmrc` from `include=optional=true` to valid npm syntax `include=optional` to remove invalid-config warnings during install.
+- Regenerated `package-lock.json` with the new dependency graph so required `@emnapi/*` entries are present and in sync.
+- Why: Cloudflare Pages builds were failing at `npm ci` with `EUSAGE` due lockfile/package mismatch (`Missing: @emnapi/runtime@1.10.0`, `Missing: @emnapi/core@1.10.0`), which prevented deployment from starting.
