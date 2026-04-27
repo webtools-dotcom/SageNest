@@ -23,6 +23,7 @@ const baseRedirects = [
 
 const canonicalNoTrailingSlashRoutes = [
   '/pregnancy-due-date-calculator',
+  '/blog',
   '/admin/login',
   '/admin/blogposter',
   '/about',

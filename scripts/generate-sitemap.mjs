@@ -7,10 +7,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
 
 const entries = await getSitemapEntries();
-const xml = buildSitemapXml(entries).replace(
-  '<loc>https://sagenesthealth.com/blog</loc>',
-  '<loc>https://sagenesthealth.com/blog/</loc>'
-);
+const xml = buildSitemapXml(entries);
 const outputPath = join(ROOT, 'public', 'sitemap.xml');
 
 writeFileSync(outputPath, xml, 'utf8');
