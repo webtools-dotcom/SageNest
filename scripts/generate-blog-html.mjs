@@ -660,12 +660,12 @@ function buildBlogIndexHtml(allPosts, blogStyleBlock) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Pregnancy &amp; Women's Health Blog | SageNest Health</title>
     <meta name="description" content="Evidence-based articles on pregnancy symptoms, nutrition, ovulation, and women's wellness. Researched from ACOG, NIH, CDC, and WHO guidelines." />
-    <link rel="canonical" href="https://sagenesthealth.com/blog" />
+    <link rel="canonical" href="https://sagenesthealth.com/blog/" />
     <meta name="robots" content="index,follow" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Pregnancy &amp; Women's Health Blog | SageNest Health" />
     <meta property="og:description" content="Evidence-based articles on pregnancy symptoms, nutrition, ovulation, and women's wellness." />
-    <meta property="og:url" content="https://sagenesthealth.com/blog" />
+    <meta property="og:url" content="https://sagenesthealth.com/blog/" />
     <meta property="og:image" content="https://res.cloudinary.com/dtplyecgd/image/upload/w_1200,h_630,c_fill/sagenest-main-logo" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
