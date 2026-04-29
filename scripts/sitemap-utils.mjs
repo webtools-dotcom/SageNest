@@ -93,7 +93,7 @@ export async function getSitemapEntries(options = {}) {
   const blogSource = options.blogSource || process.env.SITEMAP_BLOG_SOURCE || 'hybrid';
 
   const fixedRoutes = [
-    { path: '/blog', priority: '0.8', lastmod: '2026-04-23' },
+    { path: '/blog/', priority: '0.8', lastmod: '2026-04-23' },
     { path: '/about', priority: '0.5', lastmod: '2026-04-23' },
     { path: '/privacy', priority: '0.4', lastmod: '2026-04-23' },
     { path: '/pregnancy-tools', priority: '0.7', lastmod: '2026-04-23' }
